@@ -1,0 +1,3515 @@
+.genzgalaxy {
+  width: 1440px;
+  min-height: 5427px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #dfe6e9;
+  overflow-x: hidden;
+  overflow-y: visible;
+  text-align: left;
+  font-size: 48px;
+  color: #31344b;
+  font-family: "Segoe UI";
+  zoom: 0.89;
+}
+
+.genzHeroFrame {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1280px;
+  height: 1072px;
+  overflow: visible;
+  border: none;
+  outline: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.frameContainer {
+  z-index: 1;
+}
+
+.frameContainer {
+  position: absolute;
+  top: 32px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 1156px;
+  flex-shrink: 0;
+  font-size: 24px;
+  color: #2d4cc8;
+}
+.frameDiv {
+  position: absolute;
+  top: 439.15px;
+  left: calc(50% - 620px);
+  width: 1240px;
+  height: 717px;
+}
+.frameWrapper {
+  position: absolute;
+  top: 0px;
+  left: 413px;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 10000px;
+  background-color: #dfe6e9;
+  width: 380px;
+  height: 600px;
+  overflow: hidden;
+}
+.frameChild {
+  position: absolute;
+  top: calc(50% - 260px);
+  left: calc(50% - 170px);
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px #fff;
+  border-radius: 500px;
+  width: 300px;
+  height: 520px;
+  object-fit: cover;
+  object-position: top center;
+  transform: translateX(20px);
+}
+.frameParent2 {
+  position: absolute;
+  top: 117px;
+  left: calc(50% - 620px);
+  width: 1240px;
+  height: 600px;
+}
+.frameWrapper2 {
+  height: 600px;
+  width: 380px;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 10000px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameSlotMiddle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.frameSlotLast {
+  position: absolute;
+  top: 0px;
+  left: 860px;
+}
+.frameParent3 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 555px);
+  width: 1111px;
+  height: 375.2px;
+}
+.frameParent4 {
+  position: absolute;
+  top: 315px;
+  left: calc(50% - 257.01px);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.frameIcon {
+  height: 60px;
+  width: 198px;
+  position: relative;
+  border-radius: 16px;
+  background: #dfe6e9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 28px;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow:
+    inset -3px -3px 6px rgba(255, 255, 255, 0.85),
+    inset 3px 3px 6px rgba(198, 198, 201, 0.45);
+}
+
+.learnMoreFlat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 198px;
+  height: 60px;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  font-weight: 600;
+  color: #31344b;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.frameWrapper4 {
+  height: 60px;
+  width: 240px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.explorePlatformParent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.explorePlatform {
+  width: 185px;
+  position: relative;
+  line-height: 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.frameParent5 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 555.5px);
+  width: 1111px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  font-size: 64px;
+}
+.genzgalaxyGroup {
+  width: 977px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.genzgalaxy3 {
+  align-self: stretch;
+  height: 79px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 62px;
+  display: inline-block;
+  flex-shrink: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.gen {
+  line-height: 62px;
+}
+.z {
+  font-size: 80px;
+  color: #31344b;
+  line-height: 62px;
+}
+.aLearningSpace {
+  width: 1037px;
+  position: relative;
+  font-size: 47px;
+  letter-spacing: 0.02em;
+  line-height: 60px;
+  display: inline-block;
+  color: #2f3547;
+  flex-shrink: 0;
+}
+.genzgalaxyIsBuilt {
+  width: 1087px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+}
+.frameParent6 {
+  position: absolute;
+  top: 1224px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.frameParent7 {
+  width: 780px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+}
+.frameParent8 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.frameChild2 {
+  width: 242.6px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}
+.outcomeDrivenBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 13px 24px;
+  white-space: nowrap;
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 8px rgba(198, 198, 201, 0.75);
+  overflow: hidden;
+}
+.builtForTheContainer {
+  align-self: stretch;
+  height: 60px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.builtForThe {
+  line-height: 60px;
+}
+.futureOfLearning {
+  color: #2d4cc8;
+  line-height: 60px;
+}
+.modernLearnersExpect {
+  width: 704px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+}
+.frameParent9 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  flex-shrink: 0;
+  font-size: 24px;
+}
+.frameParent10 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.polygonParent {
+  height: 310px;
+  width: 300px;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  will-change: transform;
+}
+.polygonParent:hover {
+  transform: translateY(-8px);
+}
+
+.polygonIcon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 310px;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.gamifiedElements {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 67px);
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  width: 134px;
+}
+.interactiveContent {
+  position: absolute;
+  top: calc(50% - 32.19px);
+  left: calc(50% - 67px);
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  width: 134px;
+  height: 64px;
+}
+.shortFocusedLessons {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 90px);
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  width: 180px;
+}
+.groupBasedLearning {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 77px);
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  width: 154px;
+}
+.mobileFriendlyDesign {
+  position: absolute;
+  top: calc(50% - 32.19px);
+  left: calc(50% - 97px);
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  width: 194px;
+}
+.challengesRewards {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 81px);
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  width: 163px;
+}
+
+.image20Parent {
+  position: absolute;
+  top: 2208px;
+  left: calc(50% - 640px);
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #dfe6e9 0%, #cdd4d6 100%);
+  width: 1280px;
+  height: 1003px;
+  overflow: hidden;
+  flex-shrink: 0;
+  text-align: center;
+}
+.image20 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 800px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  width: 1216px;
+  height: 932px;
+  overflow: hidden;
+}
+.rectangleIcon {
+  position: absolute;
+  top: -14px;
+  left: 9px;
+  width: 1207px;
+  height: 946px;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.08;
+}
+.wrapperPolygon14 {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 820px;
+  height: 800px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.wrapperPolygon14Child {
+  width: 97%;
+  height: 97%;
+  object-fit: contain;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: translateY(230px) translateX(200px);
+}
+.successfulYoungBusinessmanSIcon {
+  position: absolute;
+  top: 13px;
+  right: -30px;
+  width: 653px;
+  height: 978px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.frameChild18 {
+  position: absolute;
+  top: 298px;
+  left: 50px;
+  width: 314px;
+  height: 107px;
+  flex-shrink: 0;
+}
+.frameParent12 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 685px;
+  height: 832px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 46px;
+  flex-shrink: 0;
+}
+.frameParent13 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.frameParent14 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.whatMakesUsDifferentBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 13px 24px;
+  white-space: nowrap;
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 8px rgba(198, 198, 201, 0.75);
+  overflow: hidden;
+}
+.learnYourWay {
+  width: 700px;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: block;
+  margin-left: -35px;
+}
+.learnAtYour {
+  width: 566px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  text-align: left;
+  display: inline-block;
+}
+.frameParent15 {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+  font-size: 24px;
+  color: #fff;
+}
+.frameParent16 {
+  align-self: stretch;
+  height: 124px;
+  position: relative;
+}
+.frameChild20 {
+  position: absolute;
+  top: -0.27px;
+  left: 0px;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px #c4c4c4 inset;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  width: 293px;
+  height: 124px;
+  overflow: hidden;
+}
+.skillPathWrapper {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.6),
+    8px 8px 16px #c6c6c9;
+  border-radius: 100px;
+  background-color: #2d4cc8;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  width: 345px;
+  height: 84px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  isolation: isolate;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.skillPathWrapper:hover {
+  transform: translateX(8px);
+}
+.skillPath {
+  height: 32px;
+  width: 114px;
+  position: absolute;
+  margin: 0;
+  top: calc(50% - 16px);
+  left: 32px;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.frameChild21 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px #c4c4c4 inset;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  width: 293px;
+  height: 124px;
+  overflow: hidden;
+}
+.usefulResourcesWrapper {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.6),
+    8px 8px 16px #c6c6c9;
+  border-radius: 100px;
+  background-color: #bf1869;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  width: 345px;
+  height: 84px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  isolation: isolate;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.usefulResourcesWrapper:hover {
+  transform: translateX(8px);
+}
+.usefulResources {
+  height: 32px;
+  width: 198px;
+  position: absolute;
+  margin: 0;
+  top: calc(50% - 16.27px);
+  left: 32px;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.practiceTasksWrapper {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.6),
+    8px 8px 16px #c6c6c9;
+  border-radius: 100px;
+  background-color: #0b9ba0;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  width: 345px;
+  height: 84px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  isolation: isolate;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.practiceTasksWrapper:hover {
+  transform: translateX(8px);
+}
+.practiceTasks {
+  height: 32px;
+  width: 159px;
+  position: absolute;
+  margin: 0;
+  top: calc(50% - 16.27px);
+  left: 32px;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.careerFocusedModulesWrapper {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.6),
+    8px 8px 16px #c6c6c9;
+  border-radius: 100px;
+  background-color: #162562;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  width: 345px;
+  height: 84px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  isolation: isolate;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.careerFocusedModulesWrapper:hover {
+  transform: translateX(8px);
+}
+.careerFocusedModules {
+  height: 32px;
+  width: 281px;
+  position: absolute;
+  margin: 0;
+  top: calc(50% - 16.27px);
+  left: 32px;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.genzgalaxyInner2 {
+  position: absolute;
+  top: 3276px;
+  left: calc(50% - 616px);
+  width: 1232px;
+  height: 566px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.frameParent20 {
+  position: absolute;
+  top: -8px;
+  left: 0px;
+  width: 1232px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  flex-shrink: 0;
+}
+.frameParent21 {
+  width: 1030px;
+  height: 254px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.frameChild24 {
+  width: 354.4px;
+  height: 50.3px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}
+.turnLearningInto {
+  width: 898px;
+  height: 60px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.lessTheoryMore {
+  width: 684px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+}
+.frameParent23 {
+  align-self: stretch;
+  height: 258px;
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  font-size: 24px;
+  color: #861109;
+}
+.frameParent24 {
+  height: 234px;
+  width: 203px;
+  position: relative;
+  color: #bf1869;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.frameChild25 {
+  position: absolute;
+  top: 247.71px;
+  left: 2.7px;
+  box-shadow:
+    inset -8px -8px 16px #fff,
+    inset 8px 8px 16px #c4c4c4;
+  border-radius: 500px;
+  background-color: #dfe6e9;
+  width: 246px;
+  height: 200px;
+  overflow: hidden;
+  transform: rotate(-90.6deg);
+  transform-origin: 0 0;
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease;
+}
+.technicalAwarenessParent {
+  position: absolute;
+  top: -19.44px;
+  left: calc(50% - 68.5px);
+  width: 138px;
+  height: 201.7px;
+  flex-shrink: 0;
+}
+.technicalAwareness {
+  position: absolute;
+  top: calc(50% + 44.15px);
+  left: calc(50% - 69px);
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 138px;
+  flex-shrink: 0;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+.frameChild26 {
+  position: absolute;
+  top: 0px;
+  left: 11px;
+  width: 117px;
+  height: 117px;
+  flex-shrink: 0;
+}
+.frameChild27 {
+  position: absolute;
+  top: -19.44px;
+  left: 44px;
+  width: 117px;
+  height: 117px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #ef97c2;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+.frameParent25 {
+  height: 212px;
+  width: 204px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.frameChild28 {
+  position: absolute;
+  top: 236.71px;
+  left: 2.98px;
+  box-shadow:
+    inset -8px -8px 16px #fff,
+    inset 8px 8px 16px #c4c4c4;
+  border-radius: 500px;
+  background-color: #dfe6e9;
+  width: 246px;
+  height: 200px;
+  overflow: hidden;
+  transform: rotate(-90.6deg);
+  transform-origin: 0 0;
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease;
+}
+.problemSolvingWrapper {
+  position: absolute;
+  top: -30.44px;
+  left: calc(50% - 69px);
+  width: 138px;
+  height: 201.7px;
+  flex-shrink: 0;
+}
+.problemSolving {
+  position: absolute;
+  top: calc(50% + 44.15px);
+  left: calc(50% - 69px);
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  display: flex;
+  white-space: pre-wrap;
+  align-items: flex-end;
+  justify-content: center;
+  width: 138px;
+  flex-shrink: 0;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+.frameChild29 {
+  position: absolute;
+  top: -30.44px;
+  left: 44px;
+  width: 117px;
+  height: 117px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #f2afaa;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+.frameChild29b {
+  position: absolute;
+  top: -30.44px;
+  left: 44px;
+  width: 117px;
+  height: 117px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #e790ed;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+.frameParent26 {
+  height: 212px;
+  width: 203px;
+  position: relative;
+  color: #67096e;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.frameChild30 {
+  position: absolute;
+  top: 236.71px;
+  left: 2.25px;
+  box-shadow:
+    inset -8px -8px 16px #fff,
+    inset 8px 8px 16px #c4c4c4;
+  border-radius: 500px;
+  background-color: #dfe6e9;
+  width: 246px;
+  height: 200px;
+  overflow: hidden;
+  transform: rotate(-90.6deg);
+  transform-origin: 0 0;
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease;
+}
+.criticalThinkingWrapper {
+  position: absolute;
+  top: -30.44px;
+  left: calc(50% - 68.5px);
+  width: 138px;
+  height: 201.7px;
+  flex-shrink: 0;
+}
+.criticalThinking {
+  position: absolute;
+  top: calc(50% + 44.15px);
+  left: calc(50% - 69px);
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 138px;
+  flex-shrink: 0;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+.frameParent27 {
+  height: 208px;
+  width: 203px;
+  position: relative;
+  color: #046f73;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.frameChild32 {
+  position: absolute;
+  top: 234.71px;
+  left: 2.53px;
+  box-shadow:
+    inset -8px -8px 16px #fff,
+    inset 8px 8px 16px #c4c4c4;
+  border-radius: 500px;
+  background-color: #dfe6e9;
+  width: 246px;
+  height: 200px;
+  overflow: hidden;
+  transform: rotate(-90.6deg);
+  transform-origin: 0 0;
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease;
+}
+.workingWithOthersWrapper {
+  position: absolute;
+  top: -32.72px;
+  left: calc(50% - 68.5px);
+  width: 138px;
+  height: 202px;
+  flex-shrink: 0;
+}
+.workingWithOthers {
+  position: absolute;
+  top: calc(50% + 44px);
+  left: calc(50% - 69px);
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 138px;
+  flex-shrink: 0;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+.frameChild33 {
+  position: absolute;
+  top: -32.72px;
+  left: 44.17px;
+  width: 117px;
+  height: 117px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #4ddade;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+.frameParent28 {
+  height: 234px;
+  width: 203px;
+  position: relative;
+  color: #09248f;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.frameChild34 {
+  position: absolute;
+  top: 247.71px;
+  left: 2.81px;
+  box-shadow:
+    inset -8px -8px 16px #fff,
+    inset 8px 8px 16px #c4c4c4;
+  border-radius: 500px;
+  background-color: #dfe6e9;
+  width: 246px;
+  height: 200px;
+  overflow: hidden;
+  transform: rotate(-90.6deg);
+  transform-origin: 0 0;
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease;
+}
+.vectorParent {
+  position: absolute;
+  top: 0px;
+  left: -18.11px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  flex-shrink: 0;
+}
+.ellipseIcon {
+  width: 117px;
+  height: 117px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #9ca7d2;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+.jobReadySkills {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.frameParent24:hover {
+  transform: translateY(-6px);
+}
+.frameParent24:hover .frameChild25 {
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+}
+.frameParent24:hover .frameChild27 {
+  box-shadow:
+    10px 10px 20px #c6c6c9,
+    -10px -10px 20px #fff;
+  transform: scale(1.06);
+}
+.frameParent24:hover .technicalAwareness {
+  color: #e91e8c;
+  transform: translateY(-4px);
+}
+
+.frameParent25:hover {
+  transform: translateY(-6px);
+}
+.frameParent25:hover .frameChild28 {
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+}
+.frameParent25:hover .frameChild29 {
+  box-shadow:
+    10px 10px 20px #c6c6c9,
+    -10px -10px 20px #fff;
+  transform: scale(1.06);
+}
+.frameParent25:hover .problemSolving {
+  color: #a5140b;
+  transform: translateY(-4px);
+}
+
+.frameParent26:hover {
+  transform: translateY(-6px);
+}
+.frameParent26:hover .frameChild30 {
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+}
+.frameParent26:hover .frameChild29b {
+  box-shadow:
+    10px 10px 20px #c6c6c9,
+    -10px -10px 20px #fff;
+  transform: scale(1.06);
+}
+.frameParent26:hover .criticalThinking {
+  color: #830a8a;
+  transform: translateY(-4px);
+}
+
+.frameParent27:hover {
+  transform: translateY(-6px);
+}
+.frameParent27:hover .frameChild32 {
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+}
+.frameParent27:hover .frameChild33 {
+  box-shadow:
+    10px 10px 20px #c6c6c9,
+    -10px -10px 20px #fff;
+  transform: scale(1.06);
+}
+.frameParent27:hover .workingWithOthers {
+  color: #06c2c8;
+  transform: translateY(-4px);
+}
+
+.frameParent28:hover {
+  transform: translateY(-6px);
+}
+.frameParent28:hover .frameChild34 {
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+}
+.frameParent28:hover .ellipseIcon {
+  box-shadow:
+    10px 10px 20px #c6c6c9,
+    -10px -10px 20px #fff;
+  transform: scale(1.06);
+}
+.frameParent28:hover .jobReadySkills {
+  color: #0b30b8;
+  transform: translateY(-4px);
+}
+
+.frameParent29 {
+  position: absolute;
+  top: 3938px;
+  left: -127px;
+  display: flex;
+  align-items: center;
+  gap: 78px;
+  flex-shrink: 0;
+  color: #2d4cc8;
+}
+.wrapperPolygon16Parent {
+  height: 841px;
+  width: 870px;
+  position: relative;
+}
+.wrapperPolygon16 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 870px;
+  height: 841px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hexagonStack {
+  position: relative;
+  width: 780px;
+  height: 750px;
+  margin: 0 auto;
+}
+
+.hexagonMaroonOuter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: #bf1869;
+  z-index: 0;
+}
+
+.hexagonMaroonCut {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: #dfe6e9;
+  z-index: 1;
+}
+
+.hexagonWhiteHex {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.hexagonPhotoWrap {
+  position: absolute;
+  top: 34px;
+  left: 34px;
+  right: 30px;
+  bottom: 34px;
+  overflow: hidden;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 3;
+}
+
+.wrapperPolygon16Child {
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.frameChild35 {
+  position: absolute;
+  top: 41px;
+  left: 51px;
+  width: 768px;
+  height: 759px;
+  object-fit: cover;
+}
+.frameWrapper6 {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.frameParent30 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.frameWrapper7 {
+  align-self: stretch;
+  height: 305px;
+  position: relative;
+}
+.frameParent31 {
+  position: absolute;
+  top: -0.25px;
+  left: 0px;
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.frameParent32 {
+  align-self: stretch;
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.frameChild36 {
+  width: 257.8px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.learningTogetherBadge {
+  display: inline-flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 13px 24px;
+  white-space: nowrap;
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 8px rgba(198, 198, 201, 0.75);
+  overflow: hidden;
+  transform: translateX(-45px);
+}
+
+.greatLearningHappensContainer {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+  text-align: left;
+}
+.nowrapLine {
+  white-space: nowrap;
+}
+.happensTogether {
+  color: #31344b;
+  line-height: 60px;
+}
+.growTogetherWith {
+  align-self: stretch;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  text-align: left;
+}
+.frameParent33 {
+  width: 513px;
+  height: 447.5px;
+  position: relative;
+  font-size: 28px;
+  color: #2f3547;
+}
+.frameParent34 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 368px;
+  height: 320.5px;
+}
+
+.frameWrapper8 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  box-sizing: border-box;
+  width: 368px;
+  height: 67px;
+  overflow: hidden;
+  background-image: linear-gradient(90deg, #2a7308 50%, transparent 50%), linear-gradient(90deg, #2a7308 50%, transparent 50%), linear-gradient(0deg, #2a7308 50%, transparent 50%), linear-gradient(0deg, #2a7308 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size:
+    16px 2px,
+    16px 2px,
+    2px 16px,
+    2px 16px;
+  background-position:
+    0 0,
+    0 100%,
+    0 0,
+    100% 0;
+  animation: dashMove 0.6s infinite linear;
+}
+.frameWrapper9 {
+  position: absolute;
+  top: 253.5px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  box-sizing: border-box;
+  width: 368px;
+  height: 67px;
+  overflow: hidden;
+  background-image: linear-gradient(90deg, #861109 50%, transparent 50%), linear-gradient(90deg, #861109 50%, transparent 50%), linear-gradient(0deg, #861109 50%, transparent 50%), linear-gradient(0deg, #861109 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size:
+    16px 2px,
+    16px 2px,
+    2px 16px,
+    2px 16px;
+  background-position:
+    0 0,
+    0 100%,
+    0 0,
+    100% 0;
+  animation: dashMove 0.6s infinite linear;
+}
+.frameParent37 {
+  position: absolute;
+  top: 126.5px;
+  left: 145px;
+  width: 368px;
+  height: 321px;
+}
+.frameWrapper10 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  box-sizing: border-box;
+  width: 368px;
+  height: 67px;
+  overflow: hidden;
+  background-image: linear-gradient(90deg, #67096e 50%, transparent 50%), linear-gradient(90deg, #67096e 50%, transparent 50%), linear-gradient(0deg, #67096e 50%, transparent 50%), linear-gradient(0deg, #67096e 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size:
+    16px 2px,
+    16px 2px,
+    2px 16px,
+    2px 16px;
+  background-position:
+    0 0,
+    0 100%,
+    0 0,
+    100% 0;
+  animation: dashMove 0.6s infinite linear;
+}
+.frameWrapper11 {
+  position: absolute;
+  top: 254px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  box-sizing: border-box;
+  width: 368px;
+  height: 67px;
+  overflow: hidden;
+  background-image: linear-gradient(90deg, #0b9ba0 50%, transparent 50%), linear-gradient(90deg, #0b9ba0 50%, transparent 50%), linear-gradient(0deg, #0b9ba0 50%, transparent 50%), linear-gradient(0deg, #0b9ba0 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size:
+    16px 2px,
+    16px 2px,
+    2px 16px,
+    2px 16px;
+  background-position:
+    0 0,
+    0 100%,
+    0 0,
+    100% 0;
+  animation: dashMove 0.6s infinite linear;
+}
+
+@keyframes dashMove {
+  to {
+    background-position:
+      16px 0,
+      -16px 100%,
+      0 -16px,
+      100% 16px;
+  }
+}
+
+.frameChild37 {
+  height: 41px;
+  width: 41px;
+  position: relative;
+}
+
+.checkCircle {
+  height: 41px;
+  width: 41px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow:
+    4px 4px 8px rgba(198, 198, 201, 0.65),
+    -4px -4px 8px rgba(255, 255, 255, 0.9);
+}
+
+.checkCircleGreen {
+  background-color: #2a73084d;
+  color: #2a7308;
+}
+
+.checkCirclePink {
+  background-color: #8611094d;
+  color: #861109;
+}
+
+.checkCirclePurple {
+  background-color: #67096e4d;
+  color: #67096e;
+}
+
+.checkCircleTeal {
+  background-color: #0b9ba04d;
+  color: #0b9ba0;
+}
+
+.shareThoughts {
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+}
+.frameParent35 {
+  position: absolute;
+  top: calc(50% - 20.5px);
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 1;
+}
+.rectangleGroup {
+  position: absolute;
+  top: 4863px;
+  left: calc(50% - 640px);
+  box-shadow:
+    -8px -8px 8px rgba(255, 255, 255, 0.5) inset,
+    8px 8px 8px #c4c4c4 inset;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 1280px;
+  height: 500px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.rectangleIcon2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 500px;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.04;
+}
+.image202 {
+  position: absolute;
+  top: -561px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}
+.frameParent46 {
+  position: absolute;
+  top: calc(50% - 211px);
+  left: 737px;
+  width: 493px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 58px;
+  flex-shrink: 0;
+}
+.frameParent47 {
+  align-self: stretch;
+  height: 305px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.frameParent48 {
+  width: 469px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+}
+.genzgalaxyCtaBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 13px 24px;
+  white-space: nowrap;
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 8px rgba(198, 198, 201, 0.75);
+  overflow: hidden;
+}
+
+.aSimplerWayContainer {
+  width: 530px;
+  height: 119px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.smarterFlexibleLearning {
+  width: 509px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameWrapper12 {
+  width: 227px;
+  height: 60px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  font-size: 22px;
+  color: #2d4cc8;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.frameWrapper12:hover {
+  background-color: #e8edf0;
+}
+.explorePlatformWrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.explorePlatform2 {
+  width: 169px;
+  position: relative;
+  line-height: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.youngPeopleRowWithThumbsUIcon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 772px;
+  height: 500px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.frameChild27 svg,
+.frameChild29 svg,
+.frameChild29b svg,
+.frameChild33 svg {
+  width: 77px;
+  height: 77px;
+}
+
+.ellipseIcon svg {
+  width: 62px;
+  height: 62px;
+}
+
+.whyGenzBadge {
+  width: 242.6px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 8px rgba(198, 198, 201, 0.75);
+  overflow: hidden;
+}
+.frameRotate1st,
+.frameRotateMiddle,
+.frameRotateLast {
+  transform: none;
+}
+
+.heroImageStep {
+  opacity: 0;
+  animation-name: heroImageStep;
+  animation-duration: 9s;
+  animation-timing-function: steps(1, end);
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes heroImageStep {
+  0%,
+  33.3% {
+    opacity: 1;
+  }
+
+  33.4%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.frameChildCenterFix {
+  object-position: center center;
+}
+
+.polygonParent:hover,
+.polygonParent:focus-visible,
+.polygonParent:active {
+  transform: translateY(-8px);
+}
+
+.skillPathWrapper:focus-visible,
+.skillPathWrapper:active,
+.usefulResourcesWrapper:focus-visible,
+.usefulResourcesWrapper:active,
+.practiceTasksWrapper:focus-visible,
+.practiceTasksWrapper:active,
+.careerFocusedModulesWrapper:focus-visible,
+.careerFocusedModulesWrapper:active {
+  transform: translateX(8px);
+}
+
+.frameParent24:focus-visible,
+.frameParent24:active,
+.frameParent25:focus-visible,
+.frameParent25:active,
+.frameParent26:focus-visible,
+.frameParent26:active,
+.frameParent27:focus-visible,
+.frameParent27:active,
+.frameParent28:focus-visible,
+.frameParent28:active {
+  transform: translateY(-6px);
+}
+
+.frameParent24:focus-visible .frameChild25,
+.frameParent24:active .frameChild25,
+.frameParent25:focus-visible .frameChild28,
+.frameParent25:active .frameChild28,
+.frameParent26:focus-visible .frameChild30,
+.frameParent26:active .frameChild30,
+.frameParent27:focus-visible .frameChild32,
+.frameParent27:active .frameChild32,
+.frameParent28:focus-visible .frameChild34,
+.frameParent28:active .frameChild34 {
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+}
+
+.frameParent24:focus-visible .frameChild27,
+.frameParent24:active .frameChild27,
+.frameParent25:focus-visible .frameChild29,
+.frameParent25:active .frameChild29,
+.frameParent26:focus-visible .frameChild29b,
+.frameParent26:active .frameChild29b,
+.frameParent27:focus-visible .frameChild33,
+.frameParent27:active .frameChild33,
+.frameParent28:focus-visible .ellipseIcon,
+.frameParent28:active .ellipseIcon {
+  box-shadow:
+    10px 10px 20px #c6c6c9,
+    -10px -10px 20px #fff;
+  transform: scale(1.06);
+}
+
+@media screen and (max-width: 768px) {
+  .genzgalaxy {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    height: auto;
+    margin: 0;
+    padding: 16px 0 32px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    zoom: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    box-sizing: border-box;
+  }
+
+  .genzgalaxyChild {
+    position: absolute;
+    inset: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .frameContainer,
+  .frameParent6,
+  .image20Parent,
+  .genzgalaxyInner2,
+  .frameParent29,
+  .rectangleGroup {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin: 0;
+    flex: 0 0 auto;
+  }
+
+  .frameContainer {
+    order: 1;
+    width: 1280px;
+    height: 1156px;
+    zoom: 0.58;
+    transform: none;
+    transform-origin: top center;
+  }
+
+  .frameParent6 {
+    order: 2;
+    width: calc(100% - 24px);
+    height: auto;
+    min-height: 0;
+    padding: 18px 0 28px;
+    gap: 24px;
+    box-sizing: border-box;
+  }
+
+  .frameParent7,
+  .frameParent8,
+  .frameParent9 {
+    width: 100%;
+    height: auto;
+  }
+
+  .frameParent7,
+  .frameParent8 {
+    gap: 18px;
+  }
+
+  .whyGenzBadge,
+  .outcomeDrivenBadge {
+    width: auto;
+    height: auto;
+    min-height: 40px;
+    padding: 9px 18px;
+    font-size: clamp(15px, 3.7vw, 20px);
+    line-height: 1.2;
+  }
+
+  .builtForTheContainer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 4px;
+    box-sizing: border-box;
+    font-size: clamp(23px, 6.2vw, 40px);
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .builtForThe,
+  .futureOfLearning {
+    display: inline;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+  .modernLearnersExpect {
+    width: min(100%, 680px);
+    height: auto;
+    margin: 4px auto 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: clamp(15px, 3.7vw, 22px);
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  .frameParent10 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 10px;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .polygonParent {
+    width: min(100%, 245px);
+    height: auto;
+    aspect-ratio: 300 / 310;
+  }
+
+  .polygonIcon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gamifiedElements,
+  .interactiveContent,
+  .shortFocusedLessons,
+  .groupBasedLearning,
+  .mobileFriendlyDesign,
+  .challengesRewards {
+    top: 50%;
+    left: 50%;
+    width: 76%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    font-size: clamp(14px, 3.3vw, 21px);
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .image20Parent {
+    order: 3;
+    width: 1280px;
+    height: 1003px;
+    zoom: 0.58;
+    transform: none;
+    transform-origin: top center;
+  }
+
+  .genzgalaxyInner2 {
+    order: 4;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 22px 8px 30px;
+    box-sizing: border-box;
+    zoom: 1;
+    overflow: visible;
+  }
+
+  .frameParent20 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .frameParent21 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .frameChild24 {
+    width: min(70vw, 290px);
+    height: auto;
+  }
+
+  .turnLearningInto {
+    width: 100%;
+    height: auto;
+    padding: 0 4px;
+    box-sizing: border-box;
+    font-size: clamp(22px, 5.8vw, 38px);
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .lessTheoryMore {
+    width: min(100%, 660px);
+    height: auto;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: clamp(15px, 3.7vw, 21px);
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  .frameParent23 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    column-gap: 4px;
+    row-gap: 28px;
+    justify-items: center;
+    align-items: start;
+    overflow: visible;
+  }
+
+  .frameParent24,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27,
+  .frameParent28 {
+    width: 203px;
+    height: 234px;
+    margin: 0;
+    zoom: 0.62;
+    transform: none;
+    transform-origin: top center;
+  }
+
+  .frameParent24 {
+    grid-column: 1 / span 2;
+  }
+  .frameParent25 {
+    grid-column: 3 / span 2;
+  }
+  .frameParent26 {
+    grid-column: 5 / span 2;
+  }
+  .frameParent27 {
+    grid-column: 2 / span 2;
+  }
+  .frameParent28 {
+    grid-column: 4 / span 2;
+  }
+
+  .frameParent29 {
+    order: 5;
+    width: 1530px;
+    height: 841px;
+    max-width: 100%;
+    zoom: clamp(0.22, calc(102vw / 1530px), 0.56);
+    transform: none;
+    transform-origin: top center;
+    overflow: visible;
+    margin: 0 auto;
+  }
+
+  .frameWrapper8,
+  .frameWrapper9,
+  .frameWrapper10,
+  .frameWrapper11 {
+    animation-name: dashMove;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+
+  .rectangleGroup {
+    order: 6;
+    width: 1280px;
+    height: 500px;
+    zoom: 0.58;
+    transform: none;
+    transform-origin: top center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .genzgalaxy {
+    gap: 20px;
+    padding-top: 12px;
+  }
+
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.45;
+  }
+
+  .frameParent6 {
+    width: calc(100% - 16px);
+    padding-top: 14px;
+  }
+
+  .frameParent10 {
+    gap: 14px 8px;
+  }
+
+  .polygonParent {
+    width: min(100%, 215px);
+  }
+
+  .frameParent24,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27,
+  .frameParent28 {
+    zoom: 0.57;
+  }
+
+  .frameParent23 {
+    row-gap: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .genzgalaxy {
+    gap: 18px;
+    padding-top: 8px;
+    padding-bottom: 24px;
+  }
+
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.35;
+  }
+
+  .builtForTheContainer {
+    font-size: clamp(21px, 5.7vw, 28px);
+  }
+
+  .modernLearnersExpect,
+  .lessTheoryMore {
+    font-size: clamp(14px, 3.6vw, 18px);
+  }
+
+  .frameParent10 {
+    gap: 12px 6px;
+  }
+
+  .polygonParent {
+    width: min(100%, 185px);
+  }
+
+  .turnLearningInto {
+    font-size: clamp(12px, 5.4vw, 18px);
+  }
+
+  .frameParent23 {
+    column-gap: 2px;
+    row-gap: 22px;
+  }
+
+  .frameParent24,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27,
+  .frameParent28 {
+    zoom: 0.51;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.29;
+  }
+
+  .builtForTheContainer {
+    font-size: 21px;
+  }
+
+  .polygonParent {
+    width: min(100%, 165px);
+  }
+
+  .frameParent24,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27,
+  .frameParent28 {
+    zoom: 0.46;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.26;
+  }
+
+  .builtForTheContainer {
+    font-size: 19px;
+  }
+
+  .turnLearningInto {
+    font-size: 19px;
+  }
+
+  .polygonParent {
+    width: min(100%, 150px);
+  }
+
+  .frameParent24,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27,
+  .frameParent28 {
+    zoom: 0.42;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .polygonParent:hover,
+  .frameParent24:hover,
+  .frameParent25:hover,
+  .frameParent26:hover,
+  .frameParent27:hover,
+  .frameParent28:hover,
+  .skillPathWrapper:hover,
+  .usefulResourcesWrapper:hover,
+  .practiceTasksWrapper:hover,
+  .careerFocusedModulesWrapper:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .genzgalaxy {
+    gap: 14px;
+    padding-top: 6px;
+    padding-bottom: 18px;
+  }
+
+  .frameParent6 {
+    width: calc(100% - 10px);
+    padding: 10px 2px 18px;
+    gap: 16px;
+  }
+
+  .frameParent7,
+  .frameParent8 {
+    gap: 10px;
+  }
+
+  .whyGenzBadge {
+    min-height: 34px;
+    padding: 7px 14px;
+    font-size: 13px;
+    line-height: 1.15;
+  }
+
+  .builtForTheContainer {
+    padding-inline: 0;
+    font-size: 17px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+  }
+
+  .builtForThe,
+  .futureOfLearning {
+    line-height: inherit;
+  }
+
+  .modernLearnersExpect {
+    width: 100%;
+    max-width: 310px;
+    margin-top: 2px;
+    padding-inline: 2px;
+    font-size: 11.5px;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+
+  .frameParent9 {
+    gap: 14px;
+  }
+
+  .frameParent10 {
+    gap: 9px 5px;
+  }
+
+  .polygonParent {
+    width: min(100%, 142px);
+  }
+
+  .gamifiedElements,
+  .interactiveContent,
+  .shortFocusedLessons,
+  .groupBasedLearning,
+  .mobileFriendlyDesign,
+  .challengesRewards {
+    width: 78%;
+    font-size: 12px;
+    line-height: 1.22;
+    letter-spacing: 0.01em;
+  }
+
+  .genzgalaxyInner2 {
+    padding: 12px 3px 20px;
+  }
+
+  .frameParent20 {
+    gap: 15px;
+  }
+
+  .frameParent21 {
+    gap: 8px;
+  }
+
+  .frameChild24 {
+    width: min(66vw, 210px);
+  }
+
+  .turnLearningInto {
+    padding-inline: 0;
+    font-size: 17px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+  }
+
+  .lessTheoryMore {
+    width: 100%;
+    max-width: 310px;
+    padding-inline: 2px;
+    font-size: 11.5px;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+  }
+
+  .frameParent23 {
+    column-gap: 0;
+    row-gap: 15px;
+  }
+
+  .frameParent24,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27,
+  .frameParent28 {
+    zoom: 0.39;
+  }
+
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.23;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .whyGenzBadge,
+  .outcomeDrivenBadge {
+    width: auto;
+    height: 34px;
+    min-height: 34px;
+    padding: 0 16px;
+    border-radius: 18px;
+    font-size: clamp(13px, 3.4vw, 18px);
+    line-height: 1;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+
+  .gamifiedElements,
+  .interactiveContent,
+  .shortFocusedLessons,
+  .groupBasedLearning,
+  .mobileFriendlyDesign,
+  .challengesRewards {
+    width: 72%;
+    height: auto;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .gamifiedElements {
+    width: 58%;
+  }
+
+  .mobileFriendlyDesign {
+    width: 70%;
+  }
+
+  .challengesRewards {
+    width: 64%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .whyGenzBadge,
+  .outcomeDrivenBadge {
+    height: 31px;
+    min-height: 31px;
+    padding-inline: 13px;
+    border-radius: 16px;
+    font-size: clamp(12px, 3.2vw, 15px);
+  }
+
+  .gamifiedElements,
+  .interactiveContent,
+  .shortFocusedLessons,
+  .groupBasedLearning,
+  .mobileFriendlyDesign,
+  .challengesRewards {
+    font-size: clamp(12px, 3.1vw, 16px);
+    line-height: 1.18;
+  }
+
+  .gamifiedElements {
+    width: 56%;
+  }
+
+  .mobileFriendlyDesign {
+    width: 68%;
+  }
+
+  .challengesRewards {
+    width: 62%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .whyGenzBadge,
+  .outcomeDrivenBadge {
+    height: 28px;
+    min-height: 28px;
+    padding-inline: 10px;
+    border-radius: 14px;
+    font-size: 11px;
+  }
+
+  .gamifiedElements,
+  .interactiveContent,
+  .shortFocusedLessons,
+  .groupBasedLearning,
+  .mobileFriendlyDesign,
+  .challengesRewards {
+    font-size: 11px;
+    line-height: 1.15;
+  }
+
+  .gamifiedElements {
+    width: 54%;
+  }
+
+  .mobileFriendlyDesign {
+    width: 66%;
+  }
+
+  .challengesRewards {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aLearningSpace {
+    width: 1080px;
+    max-width: none;
+    height: auto;
+    margin: 0 auto;
+    font-size: 50px;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: visible;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aLearningSpace {
+    width: 1080px;
+    font-size: 46px;
+    line-height: 1.12;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .aLearningSpace {
+    width: 1080px;
+    font-size: 42px;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interactiveContent {
+    width: 54%;
+    height: auto;
+    white-space: normal;
+    line-height: 1.18;
+    text-align: center;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .wrapperPolygon16Parent {
+    transform: translateX(-22vw);
+  }
+
+  .frameWrapper6 {
+    transform: translateX(-4vw);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .interactiveContent {
+    width: 52%;
+  }
+
+  .wrapperPolygon16Parent {
+    transform: translateX(-22vw);
+  }
+
+  .frameWrapper6 {
+    transform: translateX(-4vw);
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .interactiveContent {
+    width: 50%;
+  }
+
+  .wrapperPolygon16Parent {
+    transform: translateX(-22vw);
+  }
+
+  .frameWrapper6 {
+    transform: translateX(-4vw);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aSimplerWayContainer {
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    line-height: 1.25;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    max-width: 340px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aSimplerWayContainer {
+    font-size: 24px;
+    line-height: 1.25;
+    max-width: 260px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aSimplerWayContainer {
+    width: 190px;
+    max-width: 190px;
+    height: auto;
+    font-size: 30px;
+    line-height: 40px;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aSimplerWayContainer {
+    width: 170px;
+    max-width: 170px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+.polygonParent,
+.frameParent24,
+.frameParent25,
+.frameParent26,
+.frameParent27,
+.frameParent28,
+.skillPathWrapper,
+.usefulResourcesWrapper,
+.practiceTasksWrapper,
+.careerFocusedModulesWrapper,
+.frameChild27,
+.frameChild29,
+.frameChild29b,
+.frameChild33,
+.ellipseIcon,
+.technicalAwareness,
+.problemSolving,
+.criticalThinking,
+.workingWithOthers,
+.jobReadySkills {
+  -webkit-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+.polygonParent:active,
+.polygonParent:focus,
+.polygonParent:focus-visible,
+.skillPathWrapper:active,
+.skillPathWrapper:focus,
+.skillPathWrapper:focus-visible,
+.usefulResourcesWrapper:active,
+.usefulResourcesWrapper:focus,
+.usefulResourcesWrapper:focus-visible,
+.practiceTasksWrapper:active,
+.practiceTasksWrapper:focus,
+.practiceTasksWrapper:focus-visible,
+.careerFocusedModulesWrapper:active,
+.careerFocusedModulesWrapper:focus,
+.careerFocusedModulesWrapper:focus-visible,
+.frameParent24:active,
+.frameParent24:focus,
+.frameParent24:focus-visible,
+.frameParent25:active,
+.frameParent25:focus,
+.frameParent25:focus-visible,
+.frameParent26:active,
+.frameParent26:focus,
+.frameParent26:focus-visible,
+.frameParent27:active,
+.frameParent27:focus,
+.frameParent27:focus-visible,
+.frameParent28:active,
+.frameParent28:focus,
+.frameParent28:focus-visible {
+  transform: none;
+}
+
+.frameParent24:active .frameChild27,
+.frameParent24:focus .frameChild27,
+.frameParent24:focus-visible .frameChild27,
+.frameParent25:active .frameChild29,
+.frameParent25:focus .frameChild29,
+.frameParent25:focus-visible .frameChild29,
+.frameParent26:active .frameChild29b,
+.frameParent26:focus .frameChild29b,
+.frameParent26:focus-visible .frameChild29b,
+.frameParent27:active .frameChild33,
+.frameParent27:focus .frameChild33,
+.frameParent27:focus-visible .frameChild33,
+.frameParent28:active .ellipseIcon,
+.frameParent28:focus .ellipseIcon,
+.frameParent28:focus-visible .ellipseIcon {
+  transform: none;
+}
+
+.frameParent24:active .technicalAwareness,
+.frameParent24:focus .technicalAwareness,
+.frameParent24:focus-visible .technicalAwareness,
+.frameParent25:active .problemSolving,
+.frameParent25:focus .problemSolving,
+.frameParent25:focus-visible .problemSolving,
+.frameParent26:active .criticalThinking,
+.frameParent26:focus .criticalThinking,
+.frameParent26:focus-visible .criticalThinking,
+.frameParent27:active .workingWithOthers,
+.frameParent27:focus .workingWithOthers,
+.frameParent27:focus-visible .workingWithOthers,
+.frameParent28:active .jobReadySkills,
+.frameParent28:focus .jobReadySkills,
+.frameParent28:focus-visible .jobReadySkills {
+  transform: none;
+}
+
+.polygonParent:hover {
+  transform: translateY(-8px);
+}
+
+.skillPathWrapper:hover,
+.usefulResourcesWrapper:hover,
+.practiceTasksWrapper:hover,
+.careerFocusedModulesWrapper:hover {
+  transform: translateX(8px);
+}
+
+.frameParent24:hover,
+.frameParent25:hover,
+.frameParent26:hover,
+.frameParent27:hover,
+.frameParent28:hover {
+  transform: translateY(-6px);
+}
+
+.frameParent24:hover .frameChild25,
+.frameParent25:hover .frameChild28,
+.frameParent26:hover .frameChild30,
+.frameParent27:hover .frameChild32,
+.frameParent28:hover .frameChild34 {
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+}
+
+.frameParent24:hover .frameChild27,
+.frameParent25:hover .frameChild29,
+.frameParent26:hover .frameChild29b,
+.frameParent27:hover .frameChild33,
+.frameParent28:hover .ellipseIcon {
+  transform: scale(1.06);
+  box-shadow:
+    10px 10px 20px #c6c6c9,
+    -10px -10px 20px #fff;
+}
+
+.frameParent24:hover .technicalAwareness {
+  color: #e91e8c;
+  transform: translateY(-4px);
+}
+
+.frameParent25:hover .problemSolving {
+  color: #a5140b;
+  transform: translateY(-4px);
+}
+
+.frameParent26:hover .criticalThinking {
+  color: #830a8a;
+  transform: translateY(-4px);
+}
+
+.frameParent27:hover .workingWithOthers {
+  color: #06c2c8;
+  transform: translateY(-4px);
+}
+
+.frameParent28:hover .jobReadySkills {
+  color: #0b30b8;
+  transform: translateY(-4px);
+}
+
+@media screen and (min-width: 401px) and (max-width: 425px) {
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.328;
+  }
+
+  .rectangleGroup .aSimplerWayContainer {
+    width: 530px;
+    max-width: 530px;
+    height: auto;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .rectangleGroup .frameParent46 {
+    width: 493px;
+  }
+
+  .rectangleGroup .frameParent47,
+  .rectangleGroup .frameParent48 {
+    width: 100%;
+    height: auto;
+  }
+
+  .rectangleGroup .smarterFlexibleLearning {
+    width: 509px;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .frameParent6,
+  .genzgalaxyInner2 {
+    width: calc(100% - 16px);
+    max-width: calc(100% - 16px);
+    box-sizing: border-box;
+  }
+
+  .builtForTheContainer,
+  .turnLearningInto {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 2px;
+    box-sizing: border-box;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .frameParent10 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 6px;
+  }
+
+  .polygonParent {
+    width: min(100%, 180px);
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 425px) {
+  .genzgalaxy {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.318;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: top center;
+  }
+
+  .frameParent6,
+  .genzgalaxyInner2 {
+    width: calc(100% - 12px);
+    max-width: calc(100% - 12px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .frameParent29 {
+    max-width: calc(100% - 12px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .frameParent10 {
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    box-sizing: border-box;
+  }
+
+  .polygonParent {
+    width: min(100%, 176px);
+  }
+
+  .builtForTheContainer,
+  .turnLearningInto,
+  .modernLearnersExpect,
+  .lessTheoryMore {
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .rectangleGroup .frameParent46 {
+    left: 727px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .genzgalaxy {
+    width: 1440px;
+    max-width: none;
+    margin: 0 auto;
+    zoom: 0.7;
+    overflow-x: hidden;
+    transform-origin: top center;
+  }
+
+  .frameContainer,
+  .frameParent6,
+  .image20Parent,
+  .genzgalaxyInner2,
+  .rectangleGroup {
+    left: calc(50% - 640px);
+  }
+
+  .genzgalaxyInner2 {
+    left: calc(50% - 616px);
+  }
+
+  .frameParent29 {
+    left: -45px;
+  }
+
+  .rectangleGroup {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 425px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .genzgalaxy {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    width: 1280px;
+    max-width: none;
+    zoom: 0.313;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: top center;
+  }
+
+  .frameParent29 {
+    width: 1530px;
+    max-width: none;
+    zoom: 0.262;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: top center;
+    overflow: visible;
+  }
+
+  .frameParent6,
+  .genzgalaxyInner2 {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+
+  .frameParent10,
+  .frameParent23 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .frameParent10 {
+    padding-left: 2px;
+    padding-right: 2px;
+    column-gap: 6px;
+  }
+
+  .polygonParent {
+    width: min(100%, 174px);
+  }
+
+  .builtForTheContainer,
+  .turnLearningInto,
+  .modernLearnersExpect,
+  .lessTheoryMore {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .rectangleGroup .aSimplerWayContainer {
+    width: 530px;
+    max-width: 530px;
+    height: auto;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .rectangleGroup .frameParent46 {
+    left: 725px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .genzgalaxy {
+    width: 100%;
+  }
+
+  .genzHeroFrame {
+    top: -26px;
+    width: min(1280px, calc(100% - 32px));
+    height: auto;
+    aspect-ratio: 1280 / 1072;
+  }
+}
+
+@media (max-width: 1180px) {
+  .genzHeroFrame {
+    top: -24px;
+    width: calc(100% - 24px);
+  }
+
+  .frameContainer {
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1280px, calc(100% - 24px));
+  }
+}
+
+@media (max-width: 900px) {
+  .genzHeroFrame {
+    top: -20px;
+    width: calc(100% - 18px);
+  }
+
+  .frameContainer {
+    width: calc(100% - 18px);
+  }
+}
+
+@media (max-width: 620px) {
+  .genzHeroFrame {
+    top: -16px;
+    width: calc(100% - 12px);
+  }
+
+  .frameContainer {
+    width: calc(100% - 12px);
+  }
+}
+
+@media (max-width: 390px) {
+  .genzHeroFrame {
+    top: -12px;
+    width: calc(100% - 8px);
+  }
+
+  .frameContainer {
+    width: calc(100% - 8px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .genzHeroFrame {
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88.8889%;
+    max-width: none;
+    height: auto;
+    aspect-ratio: 1280 / 1072;
+    overflow: visible;
+    border: none;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .genzHeroFrame {
+    top: -20px;
+    width: 88.8889%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .genzHeroFrame {
+    top: -16px;
+    width: calc(100% - 28px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .genzHeroFrame {
+    top: -12px;
+    left: 12px;
+    right: 12px;
+    width: calc(100% - 24px);
+    max-width: calc(100% - 24px);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .genzHeroFrame {
+    top: -10px;
+    left: 10px;
+    right: 10px;
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .genzHeroFrame {
+    top: -8px;
+    left: 8px;
+    right: 8px;
+    width: calc(100% - 16px);
+    max-width: calc(100% - 16px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .genzgalaxy {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+  }
+
+  .genzHeroFrame {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 1280 / 1072;
+    display: block;
+    overflow: visible;
+    box-sizing: border-box;
+  }
+
+  .frameContainer {
+    max-width: 100vw;
+    overflow: visible;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 425px) {
+  .genzgalaxy {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+  }
+
+  .genzHeroFrame {
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    right: 24px;
+    transform: none;
+
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 1280 / 1072;
+
+    display: block;
+    overflow: visible;
+    box-sizing: border-box;
+  }
+
+  .genzHeroFrame path {
+    vector-effect: non-scaling-stroke;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    width: 1280px;
+    max-width: none;
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+    transform-origin: top center;
+    zoom: 0.58;
+  }
+
+  .genzHeroFrame {
+    left: 50%;
+    right: auto;
+    width: calc(100% - 24px);
+    max-width: calc(100% - 24px);
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.45;
+  }
+
+  .genzHeroFrame {
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.35;
+  }
+
+  .genzHeroFrame {
+    width: calc(100% - 16px);
+    max-width: calc(100% - 16px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .genzgalaxy {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+  }
+
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    width: 1280px;
+    max-width: none;
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    zoom: 0.3;
+    transform: none;
+    transform-origin: top center;
+  }
+
+  .genzHeroFrame {
+    top: -12px;
+    left: 50%;
+    right: auto;
+    width: calc(100% - 16px);
+    max-width: calc(100% - 16px);
+    height: auto;
+    transform: translateX(-50%);
+    aspect-ratio: 1280 / 1072;
+    overflow: visible;
+  }
+
+  .rectangleParent {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.29;
+  }
+
+  .genzHeroFrame {
+    width: calc(100% - 14px);
+    max-width: calc(100% - 14px);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.26;
+  }
+
+  .genzHeroFrame {
+    width: calc(100% - 12px);
+    max-width: calc(100% - 12px);
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    zoom: 0.24;
+  }
+
+  .genzHeroFrame {
+    width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 425px) {
+  .genzgalaxy {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .frameContainer,
+  .image20Parent,
+  .rectangleGroup {
+    width: 1280px;
+    max-width: none;
+    left: 50%;
+    right: auto;
+    margin-left: 0;
+    margin-right: 0;
+    zoom: 0.285;
+    transform: translateX(-50%);
+    transform-origin: top center;
+  }
+
+  .image20Parent {
+    overflow: hidden;
+  }
+
+  .rectangleParent {
+    left: 32px;
+    right: auto;
+    overflow: hidden;
+  }
+}
+
+.heroImg6Position {
+  object-position: 46% top;
+  transform: translateX(8px);
+}
+
+.heroImg9Position {
+  object-position: 44% top;
+  transform: translateX(4px);
+}
+
+@media screen and (max-width: 768px) {
+  .heroImg6Position {
+    object-position: 46% top;
+    transform: translateX(8px);
+  }
+
+  .heroImg9Position {
+    object-position: 44% top;
+    transform: translateX(4px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroImg6Position {
+    object-position: 45% top;
+    transform: translateX(6px);
+  }
+
+  .heroImg9Position {
+    object-position: 43% top;
+    transform: translateX(2px);
+  }
+}
