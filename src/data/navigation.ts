@@ -34,10 +34,10 @@ export const navItems: NavItem[] = [
     label: "Neuro Labs",
     href: "/neuro-labs",
     items: [
-      { label: "Coding Labs", href: "/neuro-labs/coding-labs" },
-      { label: "Coding Bootcamps", href: "/neuro-labs/coding-bootcamps" },
-      { label: "Coding Challenges", href: "/neuro-labs/coding-challenges" },
-      { label: "Coding Resources", href: "/neuro-labs/coding-resources" },
+      { label: "Coding Labs", href: "/coding-labs" },
+      { label: "Coding Bootcamps", href: "/coding-bootcamps" },
+      { label: "Coding Challenges", href: "/Coding-Challenge" },
+      { label: "Coding Resources", href: "/coding-resources" },
     ],
   },
   {
@@ -49,7 +49,7 @@ export const navItems: NavItem[] = [
         label: "Industries we Serve",
         items: [
           { label: "Higher Education", href: "/our-customers/higher-education" },
-          { label: "BFSI", href: "/our-customers/bfsi" },
+          { label: "BFSI", href: "/bfsi" },
           { label: "Retail & Healthcare", href: "/our-customers/retail-healthcare" },
           { label: "States", href: "/our-customers/states" },
           { label: "NonProfit", href: "/our-customers/nonprofit" },
@@ -60,7 +60,7 @@ export const navItems: NavItem[] = [
         items: [
           { label: "Corporate Training", href: "/our-customers/corporate-training" },
           { label: "E-Learning", href: "/our-customers/e-learning" },
-          { label: "Education", href: "/our-customers/education" },
+          { label: "Education", href: "/university" },
           { label: "Government", href: "/our-customers/government" },
           { label: "Training Management", href: "/our-customers/training-management" },
         ],

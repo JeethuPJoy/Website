@@ -46,7 +46,7 @@ const MediaLiteracy: NextPage = () => {
                       >
                         <Image
                           className="tickIcon"
-                          src="/icons/tick-03-1.svg"
+                          src="/icons/tick-03-2.svg"
                           width={24}
                           height={24}
                           sizes="24px"
@@ -64,7 +64,7 @@ const MediaLiteracy: NextPage = () => {
                       >
                         <Image
                           className="tickIcon"
-                          src="/icons/tick-03-2.svg"
+                          src="/icons/tick-03-3.svg"
                           width={24}
                           height={24}
                           sizes="24px"
@@ -164,11 +164,94 @@ const MediaLiteracy: NextPage = () => {
             className="heroImages"
             aria-label="Media literacy learners"
           >
-            <div className="heroFramePolygon" aria-hidden="true" />
+            <svg
+              className="heroFramePolygon"
+              width="524"
+              height="526"
+              viewBox="0 0 524 526"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <g filter="url(#filter0_ii_2022_2)">
+                <path
+                  d="M261.973 0L523.945 131.5V394.5L261.973 526L-3.05176e-05 394.5V131.5L261.973 0Z"
+                  fill="#DFE6E9"
+                />
+              </g>
+
+              <defs>
+                <filter
+                  id="filter0_ii_2022_2"
+                  x="-8"
+                  y="-8"
+                  width="539.945"
+                  height="542"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dx="-8" dy="-8" />
+                  <feGaussianBlur stdDeviation="8" />
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"
+                  />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="shape"
+                    result="effect1_innerShadow_2022_2"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dx="8" dy="8" />
+                  <feGaussianBlur stdDeviation="8" />
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"
+                  />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="effect1_innerShadow_2022_2"
+                    result="effect2_innerShadow_2022_2"
+                  />
+                </filter>
+              </defs>
+            </svg>
 
             <div
               className="heroPhotoPolygon"
-              style={{ backgroundImage: "url(/images/polygon1.png)" }}
+              style={{
+                backgroundImage: "url('/images/polygon1.png')",
+              }}
               role="img"
               aria-label="Media literacy learner"
             />
@@ -286,7 +369,7 @@ const MediaLiteracy: NextPage = () => {
               <div className="search02Wrapper">
                 <Image
                   className="search02Icon"
-                  src="/icons/search-02.svg"
+                  src="/icons/search-02-1.svg"
                   width={56}
                   height={56}
                   sizes="56px"
@@ -458,7 +541,7 @@ const MediaLiteracy: NextPage = () => {
               />
               <Image
                 className="featureIcon"
-                src="/icons/search-02-1.svg"
+                src="/icons/search-02.svg"
                 alt=""
                 width={72}
                 height={72}
@@ -498,6 +581,15 @@ const MediaLiteracy: NextPage = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mediaLiteracyChild">
+        <Image
+          src="/icons/arrow-up-01.svg"
+          width={28}
+          height={28}
+          sizes="28px"
+          alt="Back to top"
+        />
       </div>
     </div>
   );

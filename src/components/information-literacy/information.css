@@ -9,7 +9,7 @@
   	text-align: center;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI";
 	zoom: 0.89;
 }
 .image20Parent {
@@ -44,7 +44,7 @@
 .researchBackgroundImage {
 	object-fit: cover;
 	object-position: center;
-	opacity: 1 !important;
+	opacity: 1;
 	mix-blend-mode: normal;
 }
 
@@ -83,29 +83,22 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-
 	min-width: 260px;
 	height: 48px;
 	padding: 0 24px;
-
 	border-radius: 999px;
 	border: none;
-
 	background: #dfe6e9;
 	color: #2d4cc8;
-
 	font-size: 24px;
 	line-height: 1;
 	font-weight: 600;
 	letter-spacing: 0.02em;
 	white-space: nowrap;
-
 	box-sizing: border-box;
-
-	/* soft inner neumorphic shadow - no white line */
 	box-shadow:
-		inset 3px 3px 7px rgba(190, 198, 202, 0.45),
-		inset -3px -3px 7px rgba(255, 255, 255, 0.75);
+		inset 5px 5px 10px rgba(190, 198, 202, 0.45),
+		inset -5px -5px 10px rgba(255, 255, 255, 0.75);
 }
 
 .frameChild {
@@ -269,7 +262,7 @@
 	text-align: center;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1023px) {
 	.image20Parent {
 		height: auto;
 		min-height: 760px;
@@ -715,113 +708,6 @@
 	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.28);
 }
 
-@media (max-width: 1180px) {
-	.frameParent13 {
-		width: calc(100% - 28px);
-		height: auto;
-		aspect-ratio: 1424 / 279;
-	}
-
-	.statsContent {
-		width: min(760px, calc(100% - 140px));
-		gap: 26px;
-	}
-
-	.crore {
-		font-size: clamp(27px, 3vw, 34px);
-	}
-
-	.skillDomains {
-		font-size: clamp(17px, 2vw, 21px);
-	}
-
-	.statsDivider {
-		height: 92px;
-	}
-}
-
-@media (max-width: 900px) {
-	.frameParent13 {
-		width: calc(100% - 20px);
-	}
-
-	.statsContent {
-		width: calc(100% - 100px);
-		grid-template-columns: 1fr 3px 1fr 3px 1fr;
-		gap: 18px;
-	}
-
-	.crore {
-		font-size: clamp(22px, 4vw, 30px);
-	}
-
-	.skillDomains {
-		font-size: clamp(14px, 2.7vw, 18px);
-	}
-
-	.statsDivider {
-		width: 3px;
-		height: 76px;
-	}
-}
-
-@media (max-width: 620px) {
-	.frameParent13 {
-		width: calc(100% - 12px);
-		min-height: 120px;
-	}
-
-	.statsContent {
-		width: calc(100% - 54px);
-		grid-template-columns: 1fr 2px 1fr 2px 1fr;
-		gap: 8px;
-	}
-
-	.croreParent,
-	.parent,
-	.group {
-		gap: 5px;
-	}
-
-	.crore {
-		font-size: clamp(16px, 5vw, 22px);
-	}
-
-	.skillDomains {
-		font-size: clamp(10px, 3vw, 13px);
-		white-space: normal;
-	}
-
-	.statsDivider {
-		width: 2px;
-		height: 56px;
-	}
-}
-
-@media (max-width: 390px) {
-	.frameParent13 {
-		width: calc(100% - 8px);
-		min-height: 108px;
-	}
-
-	.statsContent {
-		width: calc(100% - 36px);
-		gap: 5px;
-	}
-
-	.crore {
-		font-size: 15px;
-	}
-
-	.skillDomains {
-		font-size: 9px;
-	}
-
-	.statsDivider {
-		height: 48px;
-	}
-}
-
 .frameParent19 {
   	position: absolute;
   	top: 931.16px;
@@ -913,308 +799,96 @@
 	flex:none;
 }
 
-
-
-/* .thinkingCardSvg {
-	position:absolute;
-	inset:0;
-	width:100%;
-	height:100%;
-	background:#DFE6E9;
-
-	border-radius:500px;
-
-	box-shadow:
-		inset -4px -4px 8px #FFFFFF,
-		inset 4px 4px 8px rgba(196,196,196,0.8);
-} */
-
-/* .thinkingCardSvg {
-	position:absolute;
-	inset:0;
-
-	width:100%;
-	height:100%;
-
-	background:#DFE6E9;
-
-	border-radius:500px;
-
-	box-shadow:
-		inset -4px -4px 8px #FFFFFF,
-		inset 4px 4px 8px rgba(196,196,196,0.8);
-
-	overflow:hidden;
-} */
-
 .thinkingCardSvg {
-	position:absolute;
-	inset:0;
-
-	width:100%;
-	height:100%;
-
-	background:#DFE6E9;
-
-	border-radius:500px;
-
-	box-shadow:
-		10px 10px 20px #C4C4C4,
-		-10px -10px 20px #FFFFFF;
-
-	overflow:hidden;
+    background: #dfe6e9;
+    border-radius: 500px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    box-shadow: inset 10px 10px 20px #c4c4c4, -6px -6px 14px #fff, inset 10px 10px 20px #c4c4c4, -6px -6px 14px #fff;
 }
-
-/* .thinkingCardInner {
-	position:absolute;
-	width:230px;
-	height:290px;
-	left:50%;
-	top:44%;
-	transform:translate(-50%, -50%);
-	background:#DFE6E9;
-	border-radius:500px;
-	box-shadow:
-		10px 10px 20px #C4C4C4,
-		-10px -10px 20px #FFFFFF;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:flex-start;
-	padding-top:40px;
-	box-sizing:border-box;
-	z-index:2;
-} */
-/* .thinkingCardInner {
-	position:absolute;
-	width:230px;
-	height:290px;
-	left:50%;
-	top:48%;   
-	transform:translate(-50%, -50%);
-	background:#DFE6E9;
-	border-radius:0 0 500px 500px;
-	box-shadow:
-		6px 6px 14px rgba(196,196,196,0.45),
-		-6px -6px 14px rgba(255,255,255,0.85);
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:flex-start;
-	padding-top:40px;
-	box-sizing:border-box;
-	z-index:2;
-} */
- /* .thinkingCardInner {
-	position:absolute;
-
-	width:230px;
-	height:290px;
-
-	left:50%;
-	top:50%;
-
-	transform:translate(-50%, -50%);
-
-	background:#DFE6E9;
-
-	
-	border-radius:500px;
-
-	box-shadow:
-		10px 10px 20px rgba(196,196,196,0.45),
-		-10px -10px 20px rgba(255,255,255,0.85);
-
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:flex-start;
-
-	padding-top:40px;
-
-	box-sizing:border-box;
-
-	z-index:2;
-
-	
-	clip-path: inset(12px 0 0 0 round 500px);
-} */
-/* .thinkingCardInner {
-	position:absolute;
-
-	width:230px;
-	height:310px;
-
-	left:50%;
-	top:0;
-
-	transform:translateX(-50%);
-
-	background:#DFE6E9;
-
-	border-radius:500px;
-
-	box-shadow:
-		10px 10px 20px #C4C4C4,
-		-10px -10px 20px #FFFFFF;
-
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:flex-start;
-
-	padding-top:40px;
-
-	box-sizing:border-box;
-
-	z-index:2;
-} */
 
 .thinkingCardInner {
-	position:absolute;
-
-	width:230px;
-	height:310px;
-
-	left:50%;
-	top:50%;
-
-	transform:translate(-50%, -50%);
-
-	background:#DFE6E9;
-
-	border-radius:500px;
-
-	box-shadow:
-		inset -4px -4px 8px #FFFFFF,
-		inset 4px 4px 8px rgba(196,196,196,0.8);
-
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:flex-start;
-
-	padding-top:40px;
-
-	box-sizing:border-box;
-
-	z-index:2;
+    box-sizing: border-box;
+    z-index: 2;
+    background: #dfe6e9;
+    border-radius: 0 0 500px 500px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 230px;
+    height: 310px;
+    padding-top: 40px;
+    display: flex;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:  -8px -8px 16px #fff,  8px 8px 16px #c4c4c4cc, 5px 7px 12px rgba(120, 130, 135, 0.45);
+	
 }
 
-/* Hide only the top edge inside the outer frame */
-/* .thinkingCardInner::before {
-	content:"";
-
-	position:absolute;
-
-	top:-20px;
-	left:0;
-
-	width:100%;
-	height:50px;
-
-	background:#DFE6E9;
-
-	border-radius:500px 500px 0 0;
-
-	z-index:-1;
-} */
 .thinkingCardTitle {
-
-	width:119px;
+    width:119px;
 	height:64px;
-
 	margin:0 0 24px;
-
-	font-family:'Segoe UI';
-
+	font-family:"Segoe UI";
 	font-weight:600;
-
+    transform: translatey(10);
 	font-size:24px;
-
 	line-height:32px;
-
 	letter-spacing:.03em;
-
 	text-align:center;
-
 	color:#000;
-
 }
 .evidenceBasedTitle {
 	width:180px;
 	height:64px;
-
-	font-family:'Segoe UI', sans-serif;
+	font-family:"Segoe UI", sans-serif;
 	font-style:normal;
 	font-weight:600;
-
 	font-size:24px;
 	line-height:32px;
-transform: translatey(5);
+    transform: translatey(15);
 	letter-spacing:0.03em;
-
 	text-align:center;
-
 	color:#000000;
-
 }
 
 .thinkingCardDesc {
-
 	width:201.07px;
-
 	height:85px;
-
 	margin:0;
-
-	font-family:'Segoe UI';
-
+	font-family:"Segoe UI";
 	font-weight:400;
-
-	font-size:20px;
-
+	font-size:21px;
+    transform: translatey(5);
 	line-height:28px;
-
 	letter-spacing:.03em;
-
 	text-align:center;
-
 	color:#000;
-
 }
 
 
 .thinkingCardTriangle {
-
 	position:absolute;
-
-	width:35px;
-
-	height:35px;
-
+	width:37px;
+	height:37px;
 	left:50%;
-
 	bottom:0;
-
 	transform:translateX(-50%) rotate(-90deg);
-
 	background:var(--triangle-color);
-
 	clip-path:polygon(0 0,100% 50%,0 100%);
-
 }
-
 
 .thinkingCardPurple {--triangle-color:#67096E;}
 .thinkingCardTeal {--triangle-color:#0B9BA0;}
 .thinkingCardPink {--triangle-color:#BF1869;}
 .thinkingCardBlue {--triangle-color:#2D4CC8;}
 
-
-
-@media(max-width:1180px){
-
+@media(max-width:1023px){
 	.frameParent21{
 		grid-template-columns:repeat(4,220px);
 		gap:28px;
@@ -1225,14 +899,10 @@ transform: translatey(5);
 		height:267px;
 	}
 
-
 	.thinkingCardInner{
-
 		width:182px;
 		height:245px;
-
 		padding-top:34px;
-
 	}
 
 
@@ -1251,30 +921,21 @@ transform: translatey(5);
 		font-size:15px;
 		line-height:22px;
 	}
-
 }
 
-
 @media(max-width:900px){
-
 	.frameParent21{
 		grid-template-columns:repeat(2,220px);
 	}
-
 }
 
-
 @media(max-width:620px){
-
 	.frameParent21{
 		grid-template-columns:1fr;
 	}
-
 }
 
-
 @media(max-width:390px){
-
 	.thinkingCard{
 		width:220px;
 		height:267px;
@@ -1287,11 +948,10 @@ transform: translatey(5);
 
 }
 
-
 .frameParent22 {
-  	position: absolute;
+  	position: relative;
   	top: 2466.21px;
-  	left: 80px;
+  	left: 190px;
   	display: flex;
   	align-items: center;
   	gap: 112px;
@@ -1328,7 +988,7 @@ transform: translatey(5);
   	height: 60px;
   	width: 60px;
   	position: absolute;
-  	margin: 0 !important;
+  	margin: 0;
   	top: 0px;
   	left: 0px;
   	z-index: 0;
@@ -1358,7 +1018,7 @@ transform: translatey(5);
 }
 .citationExcellenceParent {
   	width: 256px;
-  	margin: 0 !important;
+  	margin: 0;
   	position: absolute;
   	top: calc(50% - 52px);
   	left: 85px;
@@ -1430,7 +1090,7 @@ transform: translatey(5);
   	height: 60px;
   	width: 60px;
   	position: absolute;
-  	margin: 0 !important;
+  	margin: 0;
   	top: 0px;
   	left: 0px;
   	border-radius: 16px;
@@ -1449,7 +1109,7 @@ transform: translatey(5);
 }
 .academicIntegrityParent {
   	width: 252px;
-  	margin: 0 !important;
+  	margin: 0;
   	position: absolute;
   	top: calc(50% - 52px);
   	left: 85px;
@@ -1505,7 +1165,7 @@ transform: translatey(5);
 }
 .intellectualPropertyParent {
   	width: 270px;
-  	margin: 0 !important;
+  	margin: 0;
   	position: absolute;
   	top: calc(50% - 52px);
   	left: 85px;
@@ -1539,7 +1199,7 @@ transform: translatey(5);
   	height: 60px;
   	width: 60px;
   	position: absolute;
-  	margin: 0 !important;
+  	margin: 0;
   	top: 0px;
   	left: 0px;
   	border-radius: 8px;
@@ -1558,7 +1218,7 @@ transform: translatey(5);
 }
 .ethicalKnowledgeParent {
   	width: 270px;
-  	margin: 0 !important;
+  	margin: 0;
   	position: absolute;
   	top: calc(50% - 52px);
   	left: 85px;
@@ -1666,7 +1326,7 @@ transform: translatey(5);
 	display: none;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1023px) {
 	.vectorParent {
 		width: min(662px, 100%);
 		height: auto;
@@ -1770,18 +1430,21 @@ transform: translatey(5);
 
 	.ethicsIntegrityBadge {
 		min-width: 132px;
-		height: 28px;
-		font-size: 11px;
-		margin-bottom: 10px;
+		height: 29px;
+		font-size: 14px;
+		margin-bottom: 14px;
+		transform: translatey(10);
 	}
 
 	.integrityTitle {
-		font-size: 18px;
+		font-size: 22px;
+		transform: translatey(10);
 	}
 
 	.integrityDescription {
-		font-size: 11.5px;
-		margin-top: 10px;
+		font-size: 14px;
+		margin-top: 18px;
+		transform: translatey(6);
 	}
 }
 
@@ -1824,14 +1487,9 @@ transform: translatey(5);
 	column-gap: 54px;
 }
 
-/* Original long recessed track */
 .journeyTrack {
 	position: absolute;
 	top: 25px;
-	/*
-	 * The track now starts at the center of circle 1 and ends at the
-	 * center of circle 4, matching the supplied reference image.
-	 */
 	left: 12.5%;
 	right: 12.5%;
 	height: 50px;
@@ -1843,7 +1501,6 @@ transform: translatey(5);
 	z-index: 0;
 }
 
-/* Thin raised line inside the original track */
 .journeyTrack::after {
 	content: "";
 	position: absolute;
@@ -1870,7 +1527,6 @@ transform: translatey(5);
 	gap: 24px;
 }
 
-/* 100px outer circle with the exact requested inner shadows */
 .journeyCircle {
 	position: relative;
 	width: 100px;
@@ -1885,7 +1541,6 @@ transform: translatey(5);
 		inset 4px 4px 8px rgba(196, 196, 196, 0.8);
 }
 
-/* 70px raised inner circle */
 .journeyCircle::before {
 	content: "";
 	position: absolute;
@@ -1969,7 +1624,7 @@ transform: translatey(5);
 	color: #31344b;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1023px) {
 	.journeyTimeline {
 		column-gap: 32px;
 	}
@@ -2161,7 +1816,7 @@ transform: translatey(5);
 	}
 
 	.journeyCardDescription {
-		font-size: 13px;
+		font-size: 14px;
 	}
 }
 
@@ -2314,25 +1969,6 @@ transform: translatey(5);
 	z-index: 1;
 }
 
-/* .skillCircleProgress {
-	position: absolute;
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	background:
-		conic-gradient(
-			var(--circle-color) 0deg,
-			var(--circle-color) calc(var(--progress) * 3.6deg),
-			transparent calc(var(--progress) * 3.6deg),
-			transparent 360deg
-		);
-
-	mask: radial-gradient(circle, transparent 72%, #000 73%);
-	-webkit-mask: radial-gradient(circle, transparent 72%, #000 73%);
-
-	z-index: 2;
-} */
-
 .skillCircleInner {
 	position: absolute;
 	width: 120px;
@@ -2353,7 +1989,7 @@ transform: translatey(5);
 
 
 .skillCircleValue {
-	font-family:'Segoe UI';
+	font-family:"Segoe UI";
 	font-size:26px;
 	font-weight:700;
 	color:var(--circle-color);
@@ -2363,7 +1999,7 @@ transform: translatey(5);
 
 .skillCircleLabel {
 	margin-top:16px;
-	font-family:'Segoe UI';
+	font-family:"Segoe UI";
 	font-size:24px;
 	font-weight:700;
 	line-height:18px;
@@ -2374,7 +2010,7 @@ transform: translatey(5);
 }
 
 
-@media(max-width:1180px){
+@media(max-width:1023px){
 
 	.skillCircleRow{
 		gap:50px;
@@ -2416,7 +2052,7 @@ transform: translatey(5);
   	height: 542px;
   	width: 677px;
   	position: absolute;
-  	margin: 0 !important;
+  	margin: 0;
   	top: 142px;
   	left: 652px;
   	z-index: 1;
@@ -2464,13 +2100,11 @@ transform: translatey(5);
   	align-items: center;
   	flex-shrink: 0;
 }
-/* =========================================================
-   ETHICAL KNOWLEDGE FOUR CARDS — RESPONSIVE
-========================================================= */
-@media (max-width: 1180px) {
+
+@media (max-width: 1023px) {
 	.frameParent22 {
 		left: 50%;
-		transform: translateX(-50%);
+		transform: translate(-50%, -40px);
 		width: calc(100% - 48px);
 		gap: 64px;
 	}
@@ -2494,7 +2128,14 @@ transform: translatey(5);
 		left: auto;
 		width: 100%;
 		height: 150px;
+		min-height: 150px;
+		max-height: 150px;
 	}
+
+	.frameParent24 { order: 1; }
+	.frameParent27 { order: 2; }
+	.frameParent29 { order: 3; }
+	.frameParent30 { order: 4; }
 
 	.frameParent26 {
 		position: contents;
@@ -2513,7 +2154,7 @@ transform: translatey(5);
 	.frameParent22 {
 		width: calc(100% - 32px);
 		left: 50%;
-		transform: translateX(-50%);
+		transform: translate(-50%, -70px);
 		flex-direction: column;
 		align-items: center;
 		gap: 48px;
@@ -2521,7 +2162,9 @@ transform: translatey(5);
 
 	.frameParent23 {
 		width: 100%;
+		display: grid;
 		grid-template-columns: repeat(2, minmax(240px, 1fr));
+		grid-auto-rows: 150px;
 		gap: 24px;
 	}
 
@@ -2530,7 +2173,16 @@ transform: translatey(5);
 	.frameParent29,
 	.frameParent30 {
 		min-width: 0;
+		width: 100%;
+		height: 150px;
+		min-height: 150px;
+		max-height: 150px;
 	}
+
+	.frameParent24 { order: 1; }
+	.frameParent27 { order: 2; }
+	.frameParent29 { order: 3; }
+	.frameParent30 { order: 4; }
 
 	.citationExcellence,
 	.academicIntegrityParent .citationExcellence,
@@ -2550,11 +2202,13 @@ transform: translatey(5);
 @media (max-width: 620px) {
 	.frameParent22 {
 		width: calc(100% - 24px);
+		transform: translate(-50%, -120px);
 	}
 
 	.frameParent23 {
+		display: grid;
 		grid-template-columns: 1fr;
-		grid-auto-rows: auto;
+		grid-auto-rows: 150px;
 		gap: 20px;
 	}
 
@@ -2562,12 +2216,21 @@ transform: translatey(5);
 	.frameParent27,
 	.frameParent29,
 	.frameParent30 {
+		order: 0;
 		width: 100%;
-		min-height: 142px;
-		height: auto;
+		height: 150px;
+		min-height: 150px;
+		max-height: 150px;
 		padding: 12px 20px 14px;
 		border-radius: 40px 40px 0 40px;
+		box-sizing: border-box;
+		overflow: hidden;
 	}
+
+	.frameParent24 { order: 1; }
+	.frameParent27 { order: 2; }
+	.frameParent29 { order: 3; }
+	.frameParent30 { order: 4; }
 
 	.frameParent25,
 	.frameParent28,
@@ -2584,7 +2247,6 @@ transform: translatey(5);
 		height: 54px;
 	}
 
-
 	.citationExcellenceParent,
 	.academicIntegrityParent,
 	.intellectualPropertyParent,
@@ -2593,7 +2255,7 @@ transform: translatey(5);
 		top: auto;
 		left: auto;
 		width: 100%;
-		margin: 0 !important;
+		margin: 0;
 		padding: 14px 4px 4px 58px;
 		box-sizing: border-box;
 		gap: 10px;
@@ -2617,13 +2279,20 @@ transform: translatey(5);
 @media (max-width: 390px) {
 	.frameParent22 {
 		width: calc(100% - 16px);
+		transform: translate(-50%, -160px);
+	}
+
+	.frameParent23 {
+		grid-auto-rows: 138px;
 	}
 
 	.frameParent24,
 	.frameParent27,
 	.frameParent29,
 	.frameParent30 {
-		min-height: 132px;
+		height: 138px;
+		min-height: 138px;
+		max-height: 138px;
 		border-radius: 34px 34px 0 34px;
 	}
 
@@ -2638,23 +2307,11 @@ transform: translatey(5);
 		height: 48px;
 	}
 
-
 	.citationExcellenceParent,
 	.academicIntegrityParent,
 	.intellectualPropertyParent,
 	.ethicalKnowledgeParent {
 		padding-left: 52px;
-	}
-
-	.citationExcellence {
-		font-size: 18px;
-		line-height: 25px;
-	}
-
-	.citeSourcesAccuratelyContainer,
-	.createOriginalPlagiarismContainer {
-		font-size: 14px;
-		line-height: 21px;
 	}
 }
 
@@ -2670,259 +2327,12 @@ transform: translatey(5);
 	transform: translate(-50%, -50%);
 }
 
-/* Hero SVG — responsive across all devices */
-@media (max-width: 1440px) {
-	.informationLiteracyChild {
-		width: 100%;
-		height: auto;
-		aspect-ratio: 1440 / 637;
-	}
-}
-
-@media (max-width: 1024px) {
-	.informationLiteracyChild {
-		top: 72px;
-		width: 1220px;
-		height: 540px;
-	}
-}
-
-@media (max-width: 768px) {
-	.informationLiteracyChild {
-		top: 68px;
-		width: 1080px;
-		height: 478px;
-	}
-}
-
-@media (max-width: 560px) {
-	.informationLiteracyChild {
-		top: 64px;
-		width: 900px;
-		height: 398px;
-	}
-}
-
-@media (max-width: 390px) {
-	.informationLiteracyChild {
-		top: 62px;
-		width: 780px;
-		height: 345px;
-	}
-}
-
-
 .breadcrumbDoubleArrow {
 	width: 16px;
 	height: 16px;
 	flex: 0 0 16px;
 }
 
-
-/* Breadcrumb, hero badge and CTA responsiveness */
-@media (max-width: 1024px) {
-	.frameParent8 {
-		top: 102px;
-		left: 32px;
-		font-size: 14px;
-	}
-
-	.informationLiteracyBadge {
-		min-width: 240px;
-		height: 46px;
-		font-size: 18px;
-	}
-
-	.requestDemoWrapper,
-	.frameWrapper5 {
-		width: 190px;
-		height: 56px;
-	}
-}
-
-@media (max-width: 768px) {
-	.frameParent8 {
-		top: 94px;
-		left: 22px;
-		font-size: 13px;
-		gap: 6px;
-	}
-
-	.breadcrumbDoubleArrow {
-		width: 14px;
-		height: 14px;
-		flex-basis: 14px;
-	}
-
-	.informationLiteracyBadge {
-		min-width: 200px;
-		height: 42px;
-		padding: 0 22px;
-		font-size: 16px;
-	}
-
-	.frameParent12 {
-		gap: 18px;
-	}
-
-	.requestDemoWrapper,
-	.frameWrapper5 {
-		width: 170px;
-		height: 52px;
-		padding: 12px 20px;
-	}
-
-	.requestDemo,
-	.startLearning {
-		font-size: 16px;
-	}
-}
-
-@media (max-width: 560px) {
-	.frameParent8 {
-		top: 88px;
-		left: 14px;
-		font-size: 12px;
-	}
-
-	.informationLiteracyBadge {
-		min-width: 170px;
-		height: 38px;
-		padding: 0 18px;
-		font-size: 14px;
-	}
-
-	.frameParent12 {
-		width: 100%;
-		gap: 12px;
-		justify-content: center;
-	}
-
-	.requestDemoWrapper,
-	.frameWrapper5 {
-		width: calc(50% - 6px);
-		max-width: 160px;
-		height: 48px;
-		padding: 10px 12px;
-	}
-
-	.requestDemo,
-	.startLearning {
-		font-size: 14px;
-		line-height: 1.2;
-	}
-}
-
-@media (max-width: 390px) {
-	.frameParent8 {
-		top: 84px;
-		left: 10px;
-		font-size: 11px;
-	}
-
-	.informationLiteracyBadge {
-		min-width: 150px;
-		height: 34px;
-		font-size: 12px;
-	}
-
-	.requestDemoWrapper,
-	.frameWrapper5 {
-		height: 44px;
-	}
-
-	.requestDemo,
-	.startLearning {
-		font-size: 12px;
-	}
-}
-
-/* =========================================================
-   HERO TEXT PANEL — "Find, Evaluate & Use Knowledge
-   Responsibly" block. Keeps pace with the hero background
-   shape/breadcrumb breakpoints above so the panel never
-   overlaps or overflows on smaller screens.
-========================================================= */
-@media (max-width: 1024px) {
-	.frameParent9 {
-		top: 152px;
-		width: min(920px, calc(100% - 56px));
-		gap: 44px;
-	}
-
-	.frameParent10 {
-		gap: 26px;
-	}
-
-	.frameParent11 {
-		gap: 26px;
-	}
-}
-
-@media (max-width: 768px) {
-	.frameParent9 {
-		top: 150px;
-		width: calc(100% - 44px);
-		gap: 36px;
-	}
-
-	.frameParent10 {
-		gap: 22px;
-	}
-
-	.frameParent11 {
-		gap: 22px;
-	}
-
-	.neurolxpEquipsLearners {
-		max-width: 640px;
-	}
-}
-
-@media (max-width: 560px) {
-	.frameParent9 {
-		top: 168px;
-		width: calc(100% - 28px);
-		gap: 28px;
-	}
-
-	.frameParent10 {
-		gap: 18px;
-	}
-
-	.frameParent11 {
-		gap: 18px;
-	}
-
-	.neurolxpEquipsLearners {
-		max-width: 480px;
-	}
-}
-
-@media (max-width: 390px) {
-	.frameParent9 {
-		top: 176px;
-		width: calc(100% - 20px);
-		gap: 22px;
-	}
-
-	.frameParent10 {
-		gap: 14px;
-	}
-
-	.frameParent11 {
-		gap: 14px;
-	}
-
-	.neurolxpEquipsLearners {
-		max-width: 100%;
-	}
-}
-
-/* =========================================================
-   LEARNING JOURNEY HEADING
-   Flat pill matching the supplied reference image.
-========================================================= */
 .frameParent34 .frameParent20 {
 	width: 100%;
 	max-width: 1280px;
@@ -2995,126 +2405,6 @@ transform: translatey(5);
 	color: #2f3547;
 }
 
-@media (max-width: 1180px) {
-	.frameParent34 {
-		left: 50%;
-		transform: translateX(-50%);
-		width: calc(100% - 48px);
-		gap: 42px;
-	}
-
-	.frameParent34 .frameParent20 {
-		max-width: 100%;
-		gap: 28px;
-	}
-
-	.frameChild21 {
-		min-width: 200px;
-		height: 42px;
-		padding: 0 20px;
-		font-size: 18px;
-	}
-
-	.masterInformationUnlockContainer {
-		font-size: clamp(32px, 4.2vw, 44px);
-	}
-
-	.frameParent34 .empowerLearnersTo {
-		max-width: 820px;
-		font-size: clamp(19px, 2.5vw, 25px);
-	}
-}
-
-@media (max-width: 820px) {
-	.frameParent34 {
-		width: calc(100% - 32px);
-		gap: 34px;
-	}
-
-	.frameParent34 .frameParent20 {
-		gap: 24px;
-	}
-
-	.frameChild21 {
-		min-width: 184px;
-		height: 40px;
-		padding: 0 18px;
-		font-size: 17px;
-	}
-
-	.masterInformationUnlockContainer {
-		max-width: 720px;
-		font-size: clamp(28px, 5.4vw, 38px);
-		line-height: 1.3;
-	}
-
-	.frameParent34 .empowerLearnersTo {
-		max-width: 680px;
-		font-size: clamp(17px, 3.1vw, 22px);
-	}
-}
-
-@media (max-width: 560px) {
-	.frameParent34 {
-		width: calc(100% - 24px);
-		gap: 28px;
-	}
-
-	.frameParent34 .frameParent20 {
-		gap: 20px;
-	}
-
-	.frameChild21 {
-		min-width: 164px;
-		height: 36px;
-		padding: 0 16px;
-		font-size: 15px;
-		letter-spacing: 0.025em;
-	}
-
-	.masterInformationUnlockContainer {
-		max-width: 480px;
-		font-size: clamp(24px, 7vw, 32px);
-		line-height: 1.28;
-	}
-
-	.frameParent34 .empowerLearnersTo {
-		max-width: 460px;
-		font-size: clamp(15px, 4.2vw, 19px);
-		line-height: 1.45;
-	}
-
-	.frameParent34 .criticalThinking {
-		display: inline;
-	}
-}
-
-@media (max-width: 390px) {
-	.frameParent34 {
-		width: calc(100% - 18px);
-	}
-
-	.frameChild21 {
-		min-width: 150px;
-		height: 34px;
-		padding: 0 14px;
-		font-size: 14px;
-	}
-
-	.masterInformationUnlockContainer {
-		font-size: 23px;
-		line-height: 1.3;
-	}
-
-	.frameParent34 .empowerLearnersTo {
-		font-size: 14px;
-		line-height: 1.4;
-	}
-}
-
-
-
-/* Final percentage circle overrides */
 .frameParent44 .b8 {
 	color:#2a7308;
 }
@@ -3125,25 +2415,23 @@ transform: translatey(5);
 	color:#c05512;
 }
 
-
-/* "Why NeuroLXP" badge above "Built for the Way Learners Actually Think" */
 .builtForTheWayLearnersActParent {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 32px;
-	border: none !important;
-	outline: none !important;
-	box-shadow: none !important;
+	border: none;
+	outline: none;
+	box-shadow: none;
 }
 
 .builtForTheWayLearnersActParent::before,
 .builtForTheWayLearnersActParent::after,
 .learnersThinkBadge::before,
 .learnersThinkBadge::after {
-	content: none !important;
-	display: none !important;
+	content: none;
+	display: none;
 }
 
 .learnersThinkBadge {
@@ -3160,7 +2448,7 @@ transform: translatey(5);
 	line-height: 1;
 	letter-spacing: 0.02em;
 	white-space: nowrap;
-	border: none !important;
+	border: none;
 	box-shadow:
 		inset -4px -4px 8px rgba(255,255,255,0.85),
 		inset 4px 4px 8px rgba(196,196,196,0.65);
@@ -3200,8 +2488,8 @@ transform: translatey(5);
 
 .image20Parent::before,
 .image20Parent::after {
-	content: none !important;
-	display: none !important;
+	content: none;
+	display: none;
 }
 
 .researchBackgroundImage {
@@ -3212,7 +2500,7 @@ transform: translatey(5);
 
 .frameWrapper,
 .frameWrapper2 {
-	border: none !important;
+	border: none;
 	box-shadow:
 		inset -6px -6px 12px rgba(255,255,255,.9),
 		inset 6px 6px 12px rgba(196,196,196,.55);
@@ -3251,27 +2539,20 @@ transform: translatey(5);
 .frameWrapper2,
 .accessCredibleResearchAcrosWrapper,
 .turnResearchIntoClearActiWrapper {
-
-    border: none !important;
-
+    border: none;
     box-shadow:
         -10px -10px 20px rgba(255,255,255,0.95),
-        10px 10px 20px rgba(190,190,190,0.75) !important;
+        10px 10px 20px rgba(190,190,190,0.75);
 }
-
-
 
 .frameItem,
 .accessCredibleResearchAcrosWrapper,
 .turnResearchIntoClearActiWrapper {
-
     box-shadow:
         -6px -6px 12px rgba(255,255,255,0.9),
-        6px 6px 12px rgba(190,190,190,0.55) !important;
+        6px 6px 12px rgba(190,190,190,0.55);
 }
 
-
-/* Keep text/content unchanged */
 .academicResearch,
 .discoverTrustedAcademic,
 .accessCredibleResearch,
@@ -3280,37 +2561,28 @@ transform: translatey(5);
     z-index: 2;
 }
 
-
 @media (max-width: 768px) {
-
     .frameWrapper,
     .frameWrapper2,
     .accessCredibleResearchAcrosWrapper,
     .turnResearchIntoClearActiWrapper {
-
         box-shadow:
             -7px -7px 14px rgba(255,255,255,0.9),
-            7px 7px 14px rgba(190,190,190,0.65) !important;
+            7px 7px 14px rgba(190,190,190,0.65);
     }
 }
 
-
-/* Duplicate thinkingCard override removed. Original Figma-aligned thinkingCard styles retained above. */
-
 .informationLiteracyChild image {
-    opacity: 0.35 !important;
+    opacity: 0.35;
 }
 
 .researchBackgroundImage {
-    opacity: 0.35 !important;
+    opacity: 0.35;
 }
-
 
 .informationLiteracyChild {
-    opacity: 1 !important;
+    opacity: 1;
 }
-
-
 
 .skillCircleRow{
 	position:absolute;
@@ -3371,7 +2643,7 @@ transform: translatey(5);
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	font-family: 'Segoe UI';
+	font-family: "Segoe UI";
 	font-size: 46px;
 	font-weight: 700;
 	line-height: 54px;
@@ -3383,7 +2655,7 @@ transform: translatey(5);
 .title {
 	width: 245.97px;
 	height: 32px;
-	font-family: 'Segoe UI';
+	font-family: "Segoe UI";
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 32px;
@@ -3424,7 +2696,6 @@ transform: translatey(5);
     gap:24px;
 }
 
-
 .frameParent43 {
     display:flex;
     align-items:center;
@@ -3433,199 +2704,75 @@ transform: translatey(5);
 .frameParent44,
 .frameParent45,
 .frameParent46 {
-
     width:230px;
-
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
 }
 
 .parent3 {
-
     width:230px;
-
     height:230px;
-
     position:relative;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
 }
 
 .ellipseDiv {
-
     position:absolute;
-
     top:15px;
-
     left:15px;
-
     width:200px;
-
     height:200px;
-
     border-radius:50%;
-
     background:#dfe6e9;
-
     border:38px solid #dfe6e9;
-
     box-sizing:border-box;
-
     box-shadow:
-
     inset -6px -6px 12px #ffffff,
-
     inset 6px 6px 12px #c4c4c4;
-
 }
 
 .wrapperEllipse353,
 .wrapperEllipse351,
 .wrapperEllipse350 {
-
     position:absolute;
-
     top:0;
-
     left:0;
-
     width:230px;
-
     height:230px;
-
     border-radius:50%;
-
     overflow:hidden;
-
 }
-
 .b8 {
-
     position:absolute;
-
     top:50%;
-
     left:50%;
-
     transform:translate(-50%,-50%);
-
     z-index:5;
-
     font-size:42px;
-
     font-weight:700;
-
     line-height:1;
-
 }
 
 .sourceAccuracy {
-
     margin-top:12px;
-
     font-size:22px;
-
     font-weight:700;
-
     color:#31344b;
-
     text-align:center;
-
 }
-
 .frameParent44 {
-
     color:#2a7308;
-
 }
-
 
 .frameParent45 {
-
     color:#2d4cc8;
-
 }
-
 
 .frameParent46 {
-
     color:#c05512;
-
-}
-
-
-@media(max-width:900px){
-
-    .frameParent43{
-
-        gap:35px;
-
-    }
-
-
-    .parent3,
-
-    .wrapperEllipse353,
-
-    .wrapperEllipse351,
-
-    .wrapperEllipse350{
-
-        width:180px;
-
-        height:180px;
-
-    }
-
-
-    .b8{
-
-        font-size:32px;
-
-    }
-
-}
-
-
-@media(max-width:600px){
-
-    .frameParent43{
-
-        flex-direction:column;
-
-    }
-
-
-    .parent3,
-
-    .wrapperEllipse353,
-
-    .wrapperEllipse351,
-
-    .wrapperEllipse350{
-
-        width:150px;
-
-        height:150px;
-
-    }
-
-
-    .b8{
-
-        font-size:28px;
-
-    }
-
 }
 
 .whyNeuroLxpSection {
@@ -3638,7 +2785,6 @@ transform: translatey(5);
 	justify-content: center;
 	box-sizing: border-box;
 }
-
 
 .whyNeuroLxpContainer {
 	width: 100%;
@@ -3654,246 +2800,134 @@ transform: translatey(5);
 	flex-direction: column;
 	align-items: flex-start;
 }
-
-
 .whyNeuroLxpBadge {
 	display: inline-flex;
 	padding: 12px 35px;
 	border-radius: 40px;
 	background: #dfe6e9;
-
 	color: #2d4cc8;
 	font-size: 22px;
 	font-weight: 600;
-
 	box-shadow:
 		inset -5px -5px 10px #ffffff,
 		inset 5px 5px 10px #c4c4c4;
-
 	margin-bottom: 35px;
 }
-
-
 .whyNeuroLxpTitle {
 	font-size: 54px;
 	line-height: 1.2;
 	font-weight: 700;
 	color:#31344b;
-
 	margin:0 0 25px;
-
 	letter-spacing:0.02em;
 }
 
-
 .whyNeuroLxpDescription {
-
 	font-size:28px;
 	line-height:1.5;
-
 	color:#31344b;
-
 	max-width:620px;
-
 	margin-bottom:50px;
 }
 
 .skillCircleContainer {
-
 	display:flex;
 	align-items:flex-start;
 	gap:55px;
 }
 
-
 .skillCircleItem {
-
 	position:relative;
-
 	width:150px;
 	height:190px;
-
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-
 }
-
 
 .skillCircleSvg {
-
 	position:absolute;
-
 	top:0;
 	left:0;
-
 	width:150px;
 	height:150px;
-
 	transform:rotate(-90deg);
-
 }
-
-/* .skillCircleLabel {
-
-	position:absolute;
-
-	top:170px;
-
-	width:200px;
-
-	text-align:center;
-
-	font-size:20px;
-
-	font-weight:600;
-
-	color:#31344b;
-
-} */
-
-
 
 .whyNeuroLxpVisual {
-
 	width:100%;
-
 	height:450px;
-
 	border-radius:35px;
-
 	overflow:hidden;
-
 	background:#dfe6e9;
-
-
 	box-shadow:
-
 		-12px -12px 25px #ffffff,
 		12px 12px 25px #c4c4c4;
-
 	position:relative;
-
 }
-
-
 
 .whyNeuroLxpVisual img {
-
 	width:100%;
 	height:100%;
-
 	object-fit:cover;
-
 }
 
-@media(max-width:1100px){
-
-
+@media(max-width:1023px){
 .whyNeuroLxpSection{
-
 	padding:60px 40px;
-
 }
-
-
 
 .whyNeuroLxpContainer{
-
 	grid-template-columns:1fr;
-
 }
-
-
 
 .whyNeuroLxpContent{
-
 	align-items:center;
-
 	text-align:center;
-
 }
-
-
 
 .whyNeuroLxpDescription{
-
 	max-width:700px;
-
 }
-
-
 
 .skillCircleContainer{
-
 	justify-content:center;
-
 	flex-wrap:wrap;
-
 }
-
-
 
 .whyNeuroLxpVisual{
-
 	height:350px;
-
 }
-
-
 }
-
-
 
 @media(max-width:600px){
-
-
 .whyNeuroLxpSection{
-
 	padding:40px 20px;
-
 }
-
 
 .whyNeuroLxpTitle{
-
 	font-size:34px;
-
 }
-
 
 .whyNeuroLxpDescription{
-
 	font-size:18px;
-
 }
-
-
 
 .skillCircleContainer{
-
 	gap:25px;
-
 }
 
-
-
 .skillCircleItem{
-
 	width:120px;
 	height:160px;
-
 }
 
 
 .skillCircleSvg{
-
 	width:120px;
 	height:120px;
 
-}
-
-}
+}}
 
 .skillCircleRow {
     display: grid;
@@ -3903,15 +2937,12 @@ transform: translatey(5);
     row-gap: 90px;
 }
 
-
 .skillCircleRow .skillCircleItem:nth-child(3) {
     grid-column: 1 / 3;
     justify-self: center;
-	
 }
 
 @media(max-width:900px){
-
     .skillCircleRow {
         grid-template-columns: repeat(2,120px);
         column-gap:40px;
@@ -3921,74 +2952,51 @@ transform: translatey(5);
     .skillCircleLabel {
         font-size:24px;
     }
-
 }
 
 @media(max-width:620px){
-
     .skillCircleRow {
         grid-template-columns:1fr;
         row-gap:45px;
     }
 
-
     .skillCircleRow .skillCircleItem:nth-child(3) {
         grid-column:auto;
     }
 
-
     .skillCircleLabel {
         font-size:24px;
     }
-
 }
 
 .skillCircleSvg circle:first-child {
-
-	stroke:#dfe6e9 !important;
-
-	stroke-width:45px !important;
-
-	fill:none !important;
-
+	stroke:#dfe6e9;
+	stroke-width:45px;
+	fill:none;
 }
 
 .skillCircleSvg circle:last-child {
-
-	stroke-width:12px !important;
-
-	stroke-linecap:round !important;
-
-	fill:none !important;
-
+	stroke-width:12px;
+	stroke-linecap:round;
+	fill:none;
 }
 
 .skillCircleItem:nth-child(1)
 .skillCircleSvg circle:last-child {
-
-	stroke:#287508 !important;
-
-	stroke-dasharray:506px 550px !important;
-
+	stroke:#287508;
+	stroke-dasharray:506px 550px;
 }
 
 .skillCircleItem:nth-child(2)
 .skillCircleSvg circle:last-child {
-
-	stroke:#3156d3 !important;
-
-	stroke-dasharray:462px 550px !important;
-
+	stroke:#3156d3;
+	stroke-dasharray:462px 550px;
 }
-
 
 .skillCircleItem:nth-child(3)
 .skillCircleSvg circle:last-child {
-
-	stroke:#d66a0a !important;
-
-	stroke-dasharray:462px 550px !important;
-
+	stroke:#d66a0a;
+	stroke-dasharray:462px 550px;
 }
 
 .skillCircleSvg {
@@ -3998,493 +3006,179 @@ transform: translatey(5);
 }
 
 .skillCircleValue {
-  font-size:32px !important;
-	font-weight:700 !important;
-
+  font-size:32px;
+	font-weight:700;
 }
 
 .skillCircleItem:nth-child(1)
 .skillCircleValue {
-
-	color:#287508 !important;
-
-}
-@media(max-width:768px){
-
-    .frameParent19{
-
-        width:100%;
-
-        top:720px;
-
-        left:50%;
-
-        transform:translateX(-50%);
-
-        padding:0 12px;
-
-        gap:18px;
-
-    }
-
-
-    .frameParent20{
-
-        width:100%;
-
-        gap:12px;
-
-    }
-
-
-    /* Track Learning Outcomes badge */
-
-    .trackOutcomesBadge{
-
-        width:auto;
-
-        height:auto;
-
-        padding:8px 18px;
-
-        border-radius:30px;
-
-        font-size:13px;
-
-        line-height:1.2;
-
-    }
-
-
-
-    /* Heading */
-
-    .buildConfidenceThroughContainer{
-
-        font-size:18px;
-
-        line-height:1.25;
-
-        margin:0;
-
-        padding:0 5px;
-
-        text-align:center;
-
-    }
-
-
-
-    /* Description */
-
-    .empowerLearnersTo{
-
-        width:95%;
-
-        max-width:320px;
-
-        font-size:12px;
-
-        line-height:1.35;
-
-        margin:0 auto;
-
-    }
-
-
-
-    /* Cards move upward */
-
-    .frameParent21{
-
-        margin-top:5px;
-
-        gap:12px;
-
-    }
-
-
-
+	color:#287508;
 }
 
-
-
-/* Small mobile */
-
-@media(max-width:390px){
-
-    .frameParent19{
-
-        top:690px;
-
-        gap:15px;
-
-    }
-
-
-    .trackOutcomesBadge{
-
-        font-size:12px;
-
-        padding:7px 15px;
-
-    }
-
-
-    .buildConfidenceThroughContainer{
-
-        font-size:16px;
-
-    }
-
-
-    .empowerLearnersTo{
-
-        font-size:11px;
-
-    }
-
-}
-/* ==========================================
-   RESPONSIVE MEDIA QUERIES
-========================================== */
-
-
-@media (max-width:1200px){
-
+@media (max-width:1023px){
     .researchSection{
-
         width:calc(100% - 40px);
-
     }
-
 
     .researchContent{
-
         left:40px;
-
         width:45%;
-
     }
-
 
     .researchTitle{
-
         font-size:42px;
-
     }
-
 
     .researchDescription{
-
         width:100%;
-
         font-size:22px;
-
     }
-
 
     .researchCards{
-
         right:30px;
-
     }
-
 }
-
-
-
-/* ==========================================
-   TABLET
-========================================== */
-
 
 @media (max-width:900px){
-
-
     .researchSection{
-
         width:calc(100% - 32px);
-
         height:auto;
-
         min-height:900px;
-
     }
-
 
     .researchContent{
-
         position:relative;
-
         top:auto;
-
         left:auto;
-
         width:100%;
-
         padding:60px 35px 0;
-
     }
-
 
     .researchTitle{
-
         font-size:38px;
-
     }
-
 
     .researchDescription{
-
         width:100%;
-
         font-size:20px;
-
     }
-
-
     .researchCards{
-
         position:relative;
-
         top:auto;
-
         right:auto;
-
         margin-top:60px;
-
         padding:0 35px;
-
         display:flex;
-
         flex-direction:column;
-
         align-items:center;
-
         gap:30px;
-
     }
-
 
     .researchCardMiddle{
-
         position:relative;
-
         right:auto;
-
         top:auto;
-
     }
-
 
     .researchCard{
-
         width:270px;
-
         height:270px;
-
     }
-
-
 }
-
-
-
-/* ==========================================
-   MOBILE
-========================================== */
-
 
 @media (max-width:600px){
-
-
     .researchSection{
-
         width:calc(100% - 20px);
-
         min-height:auto;
-
         padding-bottom:50px;
-
         border-radius:24px;
-
     }
-
-
 
     .researchContent{
-
         padding:35px 20px 0;
-
         width:100%;
-
     }
-
-
 
     .researchBadge{
-
         width:190px;
-
         height:38px;
-
         font-size:14px;
-
     }
-
-
 
     .researchTitle{
-
         margin-top:25px;
-
         font-size:30px;
-
-        line-height:1.25;
-
+       line-height:1.25;
     }
-
-
 
     .researchDescription{
-
         margin-top:20px;
-
         width:100%;
-
         font-size:16px;
-
         line-height:1.45;
-
     }
-
-
-
-    /* Cards one by one */
 
     .researchCards{
-
         position:relative;
-
         top:auto;
-
         right:auto;
-
         width:100%;
-
         margin-top:45px;
-
         padding:0;
-
         display:flex;
-
         flex-direction:column;
-
         align-items:center;
-
         gap:25px;
-
     }
-
-
 
     .researchCardMiddle{
-
         position:relative;
-
         top:auto;
-
         right:auto;
-
         order:2;
-
     }
-
-
 
     .researchCards .researchCard:nth-child(1){
-
         order:1;
-
     }
-
 
     .researchCards .researchCard:nth-child(2){
-
         order:2;
-
     }
-
 
     .researchCards .researchCard:nth-child(3){
-
         order:3;
-
     }
-
-
 
     .researchCard{
-
         width:260px;
-
         height:240px;
-
         padding:20px;
-
     }
-
-
 
     .researchCardInner{
-
         height:150px;
-
         font-size:16px;
-
-        line-height:1.45;
+       line-height:1.45;
 
     }
-
-
 }
 
-
-
-/* ==========================================
-   SMALL MOBILE
-========================================== */
-
-
 @media (max-width:390px){
-
-
     .researchContent{
-
         padding:30px 15px 0;
-
     }
-
 
     .researchTitle{
-
         font-size:26px;
-
     }
-
 
     .researchDescription{
-
         font-size:14px;
-
     }
 
-
     .researchCard{
-
         width:230px;
-
         height:220px;
     }
     .researchCardInner{
@@ -4492,172 +3186,110 @@ transform: translatey(5);
         font-size:13px;
     }
 }
-/* ================================
-   Thinking Card Titles - Individual
-================================ */
 
-
-/* 1. Source Credibility */
 .sourceCredibilityTitle {
-
 	width:180px;
 	height:64px;
-
-	font-family:'Segoe UI', sans-serif;
+	font-family:"Segoe UI", sans-serif;
 	font-weight:600;
-
 	font-size:24px;
 	line-height:32px;
-
 	letter-spacing:0.03em;
-
 	text-align:center;
-
 	color:#000;
-
 }
 
-
-/* 2. Bias Detection */
 .biasDetectionTitle {
-
 	width:180px;
 	height:64px;
-
-	font-family:'Segoe UI', sans-serif;
+	font-family:"Segoe UI", sans-serif;
 	font-weight:600;
-
 	font-size:24px;
 	line-height:32px;
-
 	letter-spacing:0.03em;
-
 	text-align:center;
-
 	color:#000;
-
 }
 
-
-/* 3. Evidence Based Thinking */
 .evidenceBasedTitle {
-
 	width:180px;
 	height:64px;
-
-	font-family:'Segoe UI', sans-serif;
+	font-family:"Segoe UI", sans-serif;
 	font-weight:600;
-
 	font-size:24px;
 	line-height:32px;
-
 	letter-spacing:0.03em;
-
 	text-align:center;
-
 	color:#000;
-
 	white-space:pre-line;
-
 }
 
 .digitalVerificationTitle {
-
 	width:180px;
 	height:64px;
-
-	font-family:'Segoe UI', sans-serif;
+	font-family:"Segoe UI", sans-serif;
 	font-weight:600;
-
 	font-size:24px;
 	line-height:32px;
-
 	letter-spacing:0.03em;
-
 	text-align:center;
-
 	color:#000;
-
 }
 
-@media(max-width:1180px){
-
+@media(max-width:1023px){
 	.sourceCredibilityTitle,
 	.biasDetectionTitle,
 	.evidenceBasedTitle,
 	.digitalVerificationTitle{
-
 		width:150px;
-
 		font-size:18px;
-
 		line-height:25px;
-
 		height:auto;
-
 	}
-
 }
 
 
 @media(max-width:620px){
-
 	.sourceCredibilityTitle,
 	.biasDetectionTitle,
 	.evidenceBasedTitle,
 	.digitalVerificationTitle{
-
 		width:160px;
-
 		font-size:18px;
-
 		line-height:25px;
-
 	}
-
 }
 
 
 @media(max-width:390px){
-
 	.sourceCredibilityTitle,
 	.biasDetectionTitle,
 	.evidenceBasedTitle,
 	.digitalVerificationTitle{
-
 		width:150px;
-
 		font-size:17px;
-
 		line-height:24px;
-
 	}
-
 }
 
 .thinkingCardTitle.evidenceBasedTitle {
 	width: 180px;
 	height: 64px;
-
-	font-family: 'Segoe UI', sans-serif;
+	font-family: "Segoe UI", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-
 	font-size: 24px;
 	line-height: 32px;
-
 	letter-spacing: 0.03em;
-
 	text-align: center;
 	color: #000000;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
-@media (max-width:1180px) {
+@media (max-width:1023px) {
 	.thinkingCardTitle.evidenceBasedTitle {
 		width: 150px;
 		font-size: 18px;
@@ -4673,853 +3305,138 @@ transform: translatey(5);
 	}
 }
 
-@media (max-width: 1024px) {
-	.informationLiteracy {
-		height: auto;
-		min-height: 0;
-		top: 0;
-		margin-bottom: 0;
-		zoom: 1;
-		overflow: visible;
-		padding-bottom: 80px;
-		box-sizing: border-box;
-	}
-
-	.informationLiteracyChild {
-		display: none;
-	}
-
-	.frameParent9 {
-		position: relative;
-		top: 0;
-		left: 0;
-		transform: none;
-		width: 100%;
-		max-width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 56px;
-		padding: 40px 24px 0;
-		box-sizing: border-box;
-	}
-
-	.frameParent13,
-	.frameParent19,
-	.frameParent22,
-	.frameParent34,
-	.frameParent40,
-	.frameParent41 {
-		position: relative !important;
-		top: auto !important;
-		left: auto !important;
-		right: auto !important;
-		bottom: auto !important;
-		transform: none !important;
-		width: 100% !important;
-		max-width: 900px;
-		margin: 0 auto !important;
-	}
-
-	.rectangle2,
-	.image203,
-	.informationLiteracyInner,
-	.informationLiteracyInner2 {
-		display: none;
-	}
-
-	.frameParent22 {
-		flex-direction: column;
-		gap: 48px;
-	}
-
-	.frameParent41 {
-		flex-direction: column;
-		align-items: center;
-		height: auto;
-		gap: 48px;
-	}
-
-	.frameParent47 {
-		position: relative !important;
-		top: auto !important;
-		left: auto !important;
-		width: 100%;
-		max-width: 420px;
-		height: 360px;
-	}
-
-	.frameChild35 {
-		width: 100%;
-		height: 100%;
-		left: 0;
-	}
-
-	.creativeExcitedBrunetteBusiIcon {
-		position: relative !important;
-		top: 0 !important;
-		right: 0 !important;
-		transform: none !important;
-		width: 100% !important;
-		height: 100% !important;
-	}
-}
-
-@media (max-width: 768px) {
-	.frameParent9 {
-		gap: 44px;
-		padding: 32px 18px 0;
-	}
-}
-
-@media (max-width: 560px) {
-	.frameParent9 {
-		gap: 36px;
-		padding: 28px 14px 0;
-	}
-}
-
-@media (max-width: 390px) {
-	.frameParent9 {
-		gap: 28px;
-		padding: 22px 10px 0;
-	}
-}
-
-
-/* =====================================================
-   FINAL MOBILE RESPONSIVE OVERRIDE
-   ===================================================== */
-
-@media (max-width: 768px) {
-
-    .informationLiteracy {
-        height: auto !important;
-        min-height: 100vh !important;
-        top: 0 !important;
-        margin-bottom: 0 !important;
-        zoom: 1 !important;
-        overflow-x: hidden !important;
-        overflow-y: visible !important;
-    }
-
-
-    /* Remove desktop absolute canvas positioning */
-    .frameParent13,
-    .frameParent19,
-    .frameParent22,
-    .frameParent34,
-    .frameParent40,
-    .frameParent41,
-    .image20Parent {
-
-        position: relative !important;
-
-        top:auto !important;
-        left:auto !important;
-        right:auto !important;
-        bottom:auto !important;
-
-        transform:none !important;
-
-        width:100% !important;
-
-        height:auto !important;
-
-        margin:40px auto !important;
-
-    }
-
-
-    /* Hero section */
-    .frameParent9 {
-
-        position:relative !important;
-
-        top:auto !important;
-        left:auto !important;
-
-        transform:none !important;
-
-        width:100% !important;
-
-        padding:30px 16px !important;
-
-        gap:35px !important;
-
-    }
-
-
-    /* Main heading */
-
-    .findEvaluate {
-
-        font-size:30px !important;
-
-        line-height:1.25 !important;
-
-        width:100% !important;
-
-    }
-
-
-    .neurolxpEquipsLearners {
-
-        font-size:16px !important;
-
-        line-height:1.5 !important;
-
-        width:100% !important;
-
-    }
-
-
-    .frameParent12 {
-
-        flex-direction:column !important;
-
-        width:100% !important;
-
-        gap:15px !important;
-
-    }
-
-
-    .requestDemoWrapper,
-    .frameWrapper5 {
-
-        width:90% !important;
-
-        max-width:280px !important;
-
-    }
-
-    .statsContent {
-
-        display:flex !important;
-
-        flex-direction:column !important;
-
-        gap:20px !important;
-
-    }
-
-
-    .statsDivider {
-
-        width:100px !important;
-
-        height:2px !important;
-
-    }
-    .frameParent21 {
-
-        display:flex !important;
-
-        flex-direction:column !important;
-
-        align-items:center !important;
-
-        gap:30px !important;
-
-    }
-
-
-
-    .thinkingCard {
-
-        width:220px !important;
-
-        height:270px !important;
-
-    }
-
-
-
-    /* Ethics cards */
-
-    .frameParent23 {
-
-        display:flex !important;
-
-        flex-direction:column !important;
-
-        width:100% !important;
-
-        gap:25px !important;
-
-    }
-
-
-    .frameParent24,
-    .frameParent27,
-    .frameParent29,
-    .frameParent30 {
-
-        width:95% !important;
-
-        margin:auto !important;
-
-    }
-
-
-
-    /* Hexagon */
-
-    .vectorParent {
-
-        width:95vw !important;
-
-        height:auto !important;
-
-        aspect-ratio:662/541;
-
-    }
-
-
-
-    .integrityTitle {
-
-        font-size:22px !important;
-
-    }
-
-
-    .integrityDescription {
-
-        font-size:14px !important;
-
-    }
-
-    .journeyTimeline {
-
-        display:flex !important;
-
-        flex-direction:column !important;
-
-        gap:30px !important;
-
-    }
-
-
-    .journeyTrack {
-
-        display:none !important;
-
-    }
-
-
-    .journeyStage {
-
-        width:100% !important;
-
-    }
-
-
-    .journeyCard {
-
-        width:90% !important;
-
-        margin:auto !important;
-
-    }
-
-    .skillCircleRow {
-
-        flex-direction:column !important;
-
-        align-items:center !important;
-
-        gap:50px !important;
-
-    }
-
-
-}
-
-@media (max-width:768px){
-
-.informationLiteracy{
-
-    height:auto !important;
-    min-height:0 !important;
-
-    position:relative !important;
-
-    top:0 !important;
-    margin:0 !important;
-
-    overflow:visible !important;
-
-    zoom:1 !important;
-
-}
-
-.frameParent8,
-.frameParent9,
-.frameParent13,
-.frameParent19,
-.frameParent22,
-.frameParent34,
-.frameParent40,
-.frameParent41,
-.image20Parent {
-
-
-    position:relative !important;
-
-    top:auto !important;
-    left:auto !important;
-    right:auto !important;
-    bottom:auto !important;
-
-    transform:none !important;
-
-    width:100% !important;
-
-    margin:0 auto 80px !important;
-
-
-}
-
-.frameParent8{
-    order:1;
-}
-
-
-.frameParent9{
-
-    padding:40px 18px 20px !important;
-
-    display:flex !important;
-
-}
-
-
-.frameParent13{
-
-    margin-top:20px !important;
-
-}
-
-.statsContent{
-
-    position:relative !important;
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-    gap:25px !important;
-
-}
-
-
-.statsDivider{
-
-    width:120px !important;
-
-    height:2px !important;
-
-}
-
-.frameParent19{
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-    gap:30px !important;
-
-}
-
-
-
-.frameParent21{
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-    align-items:center !important;
-
-}
-
-.frameParent22{
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-    gap:50px !important;
-
-}
-
-
-
-.frameParent23{
-
-    position:relative !important;
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-    gap:25px !important;
-
-}
-
-
-.frameParent24,
-.frameParent27,
-.frameParent29,
-.frameParent30,
-.frameParent26{
-
-    position:relative !important;
-
-    top:auto !important;
-
-    left:auto !important;
-
-}
-
-.citationExcellenceParent,
-.academicIntegrityParent,
-.intellectualPropertyParent,
-.ethicalKnowledgeParent{
-
-    position:relative !important;
-
-    top:auto !important;
-
-    left:auto !important;
-
-}
-
-
-.vectorParent{
-
-    order:2 !important;
-
-    width:95vw !important;
-
-    height:auto !important;
-
-}
-
-
-.integrityContent{
-
-    position:absolute !important;
-
-}
-
-.frameParent34{
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-}
-
-
-
-.journeyTimeline{
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-}
-
-.frameParent41{
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-    align-items:center !important;
-
-}
-
-.skillCircleRow{
-    display:flex !important;
-    flex-direction:column !important;
-}
-}
-
-@media(max-width:768px){
-
-.informationLiteracy{
-    display:flex !important;
-    flex-direction:column !important;
-    height:auto !important;
-    overflow:visible !important;
-}
-
-.frameParent9{
-    order:1 !important;
-}
-
-.frameParent13{
-    order:2 !important;
-}
-
-.image20Parent{
-    order:3 !important;
-
-    position:relative !important;
-
-    top:auto !important;
-    left:auto !important;
-
-    transform:none !important;
-
-    margin:40px auto !important;
-
-}
-
-
-.frameParent19{
-    order:4 !important;
-}
-
-
-.frameParent22{
-    order:5 !important;
-}
-
-
-.frameParent34{
-    order:6 !important;
-}
-
-.frameParent40{
-    order:7 !important;
-}
-
-.frameParent41{
-    order:8 !important;
-}
-}
-
 @media(max-width:768px){
 .image20Parent{
-
-    width:calc(100% - 32px) !important;
-
-    margin:40px auto !important;
-
-    padding:0 !important;
-
-    min-height:auto !important;
-
+    width:calc(100% - 32px);
+    margin:40px auto;
+    padding:0;
+    min-height:auto;
 }
 
 .image20Parent .frameParent{
-
-    position:relative !important;
-
-    inset:auto !important;
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-    align-items:center !important;
-
-    gap:35px !important;
-
-    padding:30px 20px !important;
-
+    position:relative;
+    inset:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:35px;
+    padding:30px 20px;
 }
 
 .frameGroup{
-
-    width:100% !important;
-
-    align-items:center !important;
-
-    text-align:center !important;
-
+    width:100%;
+    align-items:center;
+    text-align:center;
 }
 
 .researchDiscoveryBadge{
-
-    margin:auto !important;
-
+    margin:auto;
 }
 
 .researchSmarterLearn{
-
-    text-align:center !important;
-
+    text-align:center;
 }
 
 .buildResearchSkills{
-
-    text-align:center !important;
-
+    text-align:center;
 }
 
 .frameDiv{
-
-    width:100% !important;
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-    align-items:center !important;
-
-    gap:25px !important;
-
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
 }
 
 .frameWrapper,
 .frameWrapper2{
-
-    width:260px !important;
-
-    height:260px !important;
-
-    margin:auto !important;
-
+    width:260px;
+    height:260px;
+    margin:auto;
 }
 
 .frameParent2,
 .digitalLibrariesParent{
-
-    position:relative !important;
-
-    top:auto !important;
-
-    left:auto !important;
-
+    position:relative;
+    top:auto;
+    left:auto;
 }
 
 .frameParent2,
 .digitalLibrariesParent{
-
-    width:210px !important;
-
-    height:auto !important;
-
+    width:210px;
+    height:auto;
 }
 
 .accessCredibleResearchAcrosWrapper,
 .turnResearchIntoClearActiWrapper,
 .frameParent3{
-
-    position:relative !important;
-
-    width:210px !important;
-
-    margin:auto !important;
-
+    position:relative;
+    width:210px;
+    margin:auto;
 }
 
 .frameParent4{
-    width:100% !important;
-    align-items:center !important;
-    gap:25px !important;
+    width:100%;
+    align-items:center;
+    gap:25px;
 }
 }
 @media(max-width:768px){
 
     .frameWrapper,
     .frameWrapper2{
-
-        display:flex !important;
-
-        justify-content:center !important;
-
-        align-items:center !important;
-
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
-
 
     .frameParent2,
     .digitalLibrariesParent,
     .frameParent3{
-
-        position:relative !important;
-
-        top:auto !important;
-
-        left:auto !important;
-
-        right:auto !important;
-
-        bottom:auto !important;
-
-        transform:none !important;
-
-        width:100% !important;
-
-        height:auto !important;
-
-        display:flex !important;
-
-        flex-direction:column !important;
-
-        align-items:center !important;
-
-        justify-content:center !important;
-
+        position:relative;
+        top:auto;
+        left:auto;
+        right:auto;
+        bottom:auto;
+        transform:none;
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
     }
-
 
     .academicResearchWrapper{
-
-        position:relative !important;
-
-        width:100% !important;
-
-        justify-content:center !important;
-
-        text-align:center !important;
-
+        position:relative;
+        width:100%;
+        justify-content:center;
+        text-align:center;
     }
-
 
     .frameItem,
     .accessCredibleResearchAcrosWrapper,
     .turnResearchIntoClearActiWrapper{
-
-        position:relative !important;
-
-        width:210px !important;
-
-        height:150px !important;
-
-        margin:10px auto !important;
-
-        left:auto !important;
-
-        top:auto !important;
-
+        position:relative;
+        width:210px;
+        height:150px;
+        margin:10px auto;
+        left:auto;
+        top:auto;
     }
-
 
     .discoverTrustedAcademic,
     .accessCredibleResearch,
     .turnResearchInto{
-
-        position:relative !important;
-
-        top:auto !important;
-
-        left:auto !important;
-
-        transform:none !important;
-
-        width:180px !important;
-
-        text-align:center !important;
-
-        margin:auto !important;
+        position:relative;
+        top:auto;
+        left:auto;
+        transform:none;
+        width:180px;
+        text-align:center;
+        margin:auto;
     }
 }
 
@@ -5547,420 +3464,15 @@ transform: translatey(5);
 		transparent calc(100% - 10px),
 		#000 calc(100% - 9px)
 	);
-
-
 	z-index:2;
 
 }
 
 .skillCircleLabel {
-
-	font-family:'Segoe UI';
-
+	font-family:"Segoe UI";
 	font-size:16px;
-
 	font-weight:700;
-
 	color:#31344B;
-
-}
-
-@media (max-width:1024px){
-
-    .informationLiteracy{
-        height:auto;
-        min-height:100vh;
-        top:0;
-        margin-bottom:0;
-        zoom:1;
-        overflow:hidden;
-        background:#dfe6e9;
-    }
-
-
-    /* keep background design visible */
-    .informationLiteracyChild{
-        display:block;
-        position:absolute;
-        top:0;
-        left:50%;
-        transform:translateX(-50%);
-        width:140%;
-        height:520px;
-        opacity:.55;
-        z-index:0;
-    }
-
-
-    /* breadcrumb */
-    .frameParent8{
-        position:relative;
-        top:auto;
-        left:auto;
-        margin:30px 20px 0;
-        justify-content:center;
-        font-size:14px;
-        z-index:5;
-    }
-
-
-    /* Hero content */
-    .frameParent9{
-
-        position:relative;
-
-        top:auto;
-        left:auto;
-
-        transform:none;
-
-        width:100%;
-
-        padding:80px 20px 40px;
-
-        display:flex;
-
-        gap:30px;
-
-        z-index:2;
-
-    }
-
-
-    .frameParent10,
-    .frameParent11{
-
-        width:100%;
-
-        gap:22px;
-
-    }
-
-
-    .informationLiteracyBadge{
-
-        min-width:auto;
-
-        width:max-content;
-
-        height:42px;
-
-        padding:0 24px;
-
-        font-size:16px;
-
-    }
-
-
-    .findEvaluate{
-
-        max-width:700px;
-
-        font-size:clamp(32px,7vw,48px);
-
-        line-height:1.25;
-
-        text-align:center;
-
-    }
-
-
-    .neurolxpEquipsLearners{
-
-        max-width:650px;
-
-        font-size:clamp(18px,3vw,26px);
-
-        line-height:1.5;
-
-        text-align:center;
-
-    }
-
-
-    .frameParent12{
-
-        flex-direction:column;
-
-        gap:16px;
-
-    }
-
-
-    .requestDemoWrapper,
-    .frameWrapper5{
-
-        width:220px;
-
-        height:55px;
-
-    }
-
-
-}
-
-
-/* Tablet */
-@media(max-width:768px){
-
-    .informationLiteracyChild{
-
-        width:180%;
-
-        height:450px;
-
-        opacity:.45;
-
-    }
-
-
-    .frameParent9{
-
-        padding-top:90px;
-
-    }
-
-
-    .findEvaluate{
-
-        font-size:36px;
-
-    }
-
-
-    .neurolxpEquipsLearners{
-
-        font-size:20px;
-
-        padding:0 15px;
-
-    }
-
-
-}
-
-
-/* Mobile */
-@media(max-width:560px){
-
-
-    .informationLiteracyChild{
-
-        width:230%;
-
-        height:390px;
-
-        opacity:.35;
-
-    }
-
-
-
-    .frameParent8{
-
-        margin-top:20px;
-
-        font-size:12px;
-
-    }
-
-
-    .frameParent9{
-
-        padding:90px 16px 30px;
-
-        gap:24px;
-
-    }
-
-
-    .informationLiteracyBadge{
-
-        height:36px;
-
-        font-size:14px;
-
-    }
-
-
-    .findEvaluate{
-
-        font-size:30px;
-
-        line-height:1.3;
-
-    }
-
-
-    .neurolxpEquipsLearners{
-
-        font-size:17px;
-
-        line-height:1.55;
-
-    }
-
-
-}
-
-
-/* Small phones */
-@media(max-width:390px){
-
-
-    .informationLiteracyChild{
-
-        width:260%;
-
-        height:350px;
-
-    }
-
-
-    .frameParent9{
-
-        padding-top:80px;
-
-    }
-
-
-    .findEvaluate{
-
-        font-size:27px;
-
-    }
-
-
-    .neurolxpEquipsLearners{
-
-        font-size:15px;
-
-    }
-
-
-}
-
-/* =========================================================
-   FINAL MOBILE HERO FIX
-   Keeps desktop design unchanged and scales hero section
-   like the web layout on mobile devices.
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .informationLiteracy {
-        height: auto !important;
-        min-height: 100vh !important;
-        overflow: hidden !important;
-        background-color: #dfe6e9 !important;
-    }
-
-    /* Background pattern stays visible like desktop */
-    .informationLiteracyChild {
-        top: 0 !important;
-        width: 100% !important;
-        height: auto !important;
-        min-height: 420px !important;
-        object-fit: cover !important;
-        opacity: 1 !important;
-    }
-
-    .frameParent8 {
-        top: 70px !important;
-        left: 20px !important;
-        font-size: 12px !important;
-    }
-
-    /* Hero content scaling */
-    .frameParent9 {
-        position: relative !important;
-        top: 0 !important;
-        left: 0 !important;
-        transform: none !important;
-        width: 100% !important;
-        padding: 150px 20px 40px !important;
-        box-sizing: border-box !important;
-        gap: 24px !important;
-    }
-
-    .frameParent10,
-    .frameParent11 {
-        width: 100% !important;
-        gap: 18px !important;
-    }
-
-    .informationLiteracyBadge {
-        min-width: auto !important;
-        width: fit-content !important;
-        height: 38px !important;
-        padding: 0 22px !important;
-        font-size: 15px !important;
-    }
-
-    .findEvaluate {
-        width: 100% !important;
-        max-width: 380px !important;
-        font-size: clamp(28px, 7vw, 36px) !important;
-        line-height: 1.22 !important;
-        text-align: center !important;
-    }
-
-    .neurolxpEquipsLearners {
-        width: 100% !important;
-        max-width: 390px !important;
-        font-size: 16px !important;
-        line-height: 1.5 !important;
-        text-align: center !important;
-    }
-
-    /* Buttons stay inside design */
-    .frameParent12 {
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 14px !important;
-    }
-
-    .requestDemoWrapper,
-    .frameWrapper5 {
-        width: min(280px, 90%) !important;
-        height: 50px !important;
-        padding: 10px 20px !important;
-    }
-
-    .requestDemo,
-    .startLearning {
-        font-size: 15px !important;
-        line-height: 1.2 !important;
-    }
-}
-
-
-@media (max-width: 390px) {
-
-    .frameParent9 {
-        padding: 140px 14px 30px !important;
-    }
-
-    .findEvaluate {
-        font-size: 27px !important;
-    }
-
-    .neurolxpEquipsLearners {
-        font-size: 14px !important;
-    }
-
-    .requestDemoWrapper,
-    .frameWrapper5 {
-        width: 95% !important;
-        height: 46px !important;
-    }
-
-    .requestDemo,
-    .startLearning {
-        font-size: 13px !important;
-    }
 }
 
 .skillCircleGraphic {
@@ -5974,19 +3486,6 @@ transform: translatey(5);
     height: 170px;
 }
 
-
-/* .skillCircleProgress {
-    width: 132px;
-    height: 132px;
-    border-radius: 50%;
-    z-index: 2;
-
-    mask: radial-gradient(circle, transparent 66%, #000 67%);
-    -webkit-mask: radial-gradient(circle, transparent 66%, #000 67%);
-} */
-
-
-/* Increase inner circle size */
 .skillCircleInner {
     width: 125px;
     height: 125px;
@@ -6004,9 +3503,7 @@ transform: translatey(5);
     line-height: 30px;
 }
 
-
-/* Tablet */
-@media(max-width:1180px){
+@media(max-width:1023px){
 
     .skillCircleGraphic::before {
         width:150px;
@@ -6026,7 +3523,6 @@ transform: translatey(5);
     .skillCircleLabel {
         font-size:24px;
     }
-
 }
 
 
@@ -6053,21 +3549,17 @@ transform: translatey(5);
     }
 
 }
-/* Move only Ethical Usage circle towards right */
+
 .skillCircle:nth-child(3) {
     transform: translateX(120px);
 }
 
-
-/* Tablet */
-@media (max-width:1180px) {
+@media (max-width:1023px) {
     .skillCircle:nth-child(3) {
         transform: translateX(50px);
     }
 }
 
-
-/* Mobile */
 @media (max-width:820px) {
     .skillCircle:nth-child(3) {
         transform: translateX(0);
@@ -6075,31 +3567,5553 @@ transform: translatey(5);
 }
 
 .skillCircleGraphic .skillCircleProgress {
-    width: 135px !important;
-    height: 135px !important;
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.05);
+    z-index: 2;
+}
 
-    position: absolute !important;
+.skillCircleGraphic .skillCircleInner {
+    width: 92px;
+    height: 92px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
 
-    left: 50% !important;
-    top: 50% !important;
+@media (max-width: 768px) {
+	.informationLiteracyChild {
+		top: 42px;
+		width: 1080px;
+		height: 478px;
+	}
 
-    transform: translate(-50%, -50%) scale(1.05) !important;
+	.frameParent8 {
+		top: 78px;
+		font-size: 13px;
+		gap: 6px;
+	}
 
-    z-index: 2 !important;
+	.breadcrumbDoubleArrow {
+		width: 14px;
+		height: 14px;
+		flex-basis: 14px;
+	}
+
+	.frameParent9 {
+		top: 112px;
+		width: calc(100% - 22px);
+		gap: 18px;
+	}
+
+	.frameParent10,
+	.frameParent11 {
+		gap: 15px;
+	}
+
+	.informationLiteracyBadge {
+		min-width: 230px;
+		height: 42px;
+		padding: 0 22px;
+		font-size: 16px;
+	}
+
+	.findEvaluate {
+		max-width: 720px;
+		font-size: clamp(25px, 5.5vw, 32px);
+		line-height: 1.14;
+		letter-spacing: 0.01em;
+	}
+
+	.neurolxpEquipsLearners {
+		max-width: 700px;
+		font-size: clamp(14px, 2.8vw, 18px);
+		line-height: 1.34;
+	}
+
+	.frameParent12 {
+		gap: 12px;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		width: 170px;
+		height: 48px;
+		padding: 10px 16px;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 14px;
+		line-height: 1.2;
+	}
+
+	.frameParent13 {
+		top: 430px;
+		width: calc(100% - 12px);
+		aspect-ratio: 1424 / 279;
+	}
+
+	.statsContent {
+		top: 53%;
+		width: calc(100% - 58px);
+		grid-template-columns: 1fr 2px 1fr 2px 1fr;
+		gap: 8px;
+	}
+
+	.crore {
+		font-size: clamp(17px, 4.2vw, 22px);
+	}
+
+	.skillDomains {
+		font-size: clamp(9px, 2.2vw, 12px);
+	}
+
+	.statsDivider {
+		width: 2px;
+		height: 52px;
+	}
+
+	.frameParent19 {
+		top: 610px;
+		width: calc(100% - 28px);
+	}
+}
+
+@media (max-width: 560px) {
+	.informationLiteracyChild {
+		top: 34px;
+		width: 900px;
+		height: 398px;
+	}
+
+	.frameParent8 {
+		top: 68px;
+		font-size: 11.5px;
+	}
+
+	.frameParent9 {
+		top: 98px;
+		width: calc(100% - 16px);
+		gap: 13px;
+	}
+
+	.frameParent10,
+	.frameParent11 {
+		gap: 12px;
+	}
+
+	.informationLiteracyBadge {
+		min-width: 215px;
+		height: 39px;
+		padding: 0 18px;
+		font-size: 15px;
+	}
+
+	.findEvaluate {
+		max-width: 520px;
+		font-size: clamp(22px, 6.1vw, 28px);
+		line-height: 1.12;
+		letter-spacing: 0;
+	}
+
+	.neurolxpEquipsLearners {
+		max-width: 500px;
+		font-size: clamp(12px, 3.2vw, 15px);
+		line-height: 1.3;
+	}
+
+	.frameParent12 {
+		width: 100%;
+		gap: 10px;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		width: calc(50% - 5px);
+		max-width: none;
+		height: 45px;
+		padding: 9px 10px;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 13px;
+		white-space: nowrap;
+	}
+	.frameParent13 {
+		top: 382px;
+		width: calc(100% - 8px);
+		aspect-ratio: 1424 / 279;
+	}
+	.statsContent {
+		width: calc(100% - 42px);
+		gap: 5px;
+	}
+
+	.crore {
+		font-size: clamp(15px, 4.5vw, 19px);
+	}
+
+	.skillDomains {
+		font-size: clamp(8px, 2.35vw, 10px);
+	}
+
+	.statsDivider {
+		height: 44px;
+	}
+
+	.frameParent19 {
+		top: 520px;
+		width: calc(100% - 20px);
+	}
+}
+
+@media (max-width: 390px) {
+	.informationLiteracyChild {
+		top: 28px;
+		width: 780px;
+		height: 345px;
+	}
+
+	.frameParent8 {
+		top: 62px;
+		font-size: 10px;
+		gap: 4px;
+	}
+
+	.frameParent9 {
+		top: 90px;
+		width: calc(100% - 12px);
+		gap: 11px;
+	}
+
+	.informationLiteracyBadge {
+		min-width: 190px;
+		height: 35px;
+		font-size: 13px;
+		padding: 0 15px;
+	}
+
+	.findEvaluate {
+		max-width: 370px;
+		font-size: clamp(19px, 6.5vw, 24px);
+		line-height: 1.1;
+	}
+
+	.neurolxpEquipsLearners {
+		max-width: 365px;
+		font-size: clamp(11px, 3.4vw, 13px);
+		line-height: 1.28;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		height: 41px;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 11.5px;
+	}
+
+	.frameParent13 {
+		top: 348px;
+		width: calc(100% - 6px);
+		aspect-ratio: 1424 / 279;
+	}
+
+	.statsContent {
+		width: calc(100% - 34px);
+		gap: 3px;
+	}
+
+	.crore {
+		font-size: 13px;
+	}
+
+	.skillDomains {
+		font-size: 7.5px;
+	}
+
+	.statsDivider {
+		height: 38px;
+	}
+
+	.frameParent19 {
+		top: 465px;
+		width: calc(100% - 14px);
+	}
+}
+
+@media (max-width: 560px) {
+	.frameParent8 {
+		display: flex;
+		visibility: visible;
+		opacity: 1;
+		top: 52px;
+		left: 22px;
+		transform: none;
+		width: auto;
+		max-width: calc(100% - 32px);
+		align-items: center;
+		justify-content: flex-start;
+		gap: 6px;
+		font-size: 11px;
+		line-height: 1.2;
+		white-space: nowrap;
+		z-index: 10;
+	}
+
+	.frameParent8 * {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.breadcrumbDoubleArrow {
+		width: 12px;
+		height: 12px;
+		flex: 0 0 12px;
+	}
+
+	.informationLiteracyChild {
+		top: 30px;
+		left: 50%;
+		width: 900px;
+		height: 398px;
+		max-width: none;
+		transform: translateX(-50%);
+		overflow: visible;
+	}
+
+	.frameParent9 {
+		top: 86px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: calc(100% - 18px);
+		gap: 13px;
+	}
+
+	.frameParent10,
+	.frameParent11 {
+		gap: 11px;
+	}
+
+	.informationLiteracyBadge {
+		min-width: 214px;
+		height: 38px;
+		padding: 0 18px;
+		font-size: 14px;
+	}
+
+	.findEvaluate {
+		width: 100%;
+		max-width: none;
+		font-size: clamp(16px, 4.15vw, 20px);
+		line-height: 1.14;
+		letter-spacing: 0;
+		white-space: nowrap;
+		text-wrap: nowrap;
+	}
+
+	.neurolxpEquipsLearners {
+		width: 100%;
+		max-width: 470px;
+		margin-inline: auto;
+		font-size: clamp(10px, 2.55vw, 12.5px);
+		line-height: 1.3;
+		letter-spacing: 0;
+		white-space: normal;
+		text-wrap: balance;
+	}
+
+	.frameParent12 {
+		width: 100%;
+		gap: 12px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		width: calc(50% - 6px);
+		height: 46px;
+		padding: 0 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.requestDemo,
+	.startLearningWrapper,
+	.startLearning {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.requestDemo,
+	.startLearning {
+		position: static;
+		transform: none;
+		font-size: 13px;
+		white-space: nowrap;
+	}
+
+	.frameParent13 {
+		top: 372px;
+		left: 50%;
+		width: calc(100% - 14px);
+		height: auto;
+		min-height: 0;
+		aspect-ratio: 1424 / 279;
+		transform: translateX(-50%);
+		overflow: visible;
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+	}
+
+	.statsPanelShape {
+		display: block;
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		max-width: none;
+		overflow: visible;
+		object-fit: fill;
+	}
+
+	.statsContent {
+		top: 52%;
+		left: 50%;
+		width: calc(100% - 64px);
+		grid-template-columns: 1fr 2px 1fr 2px 1fr;
+		gap: 7px;
+		transform: translate(-50%, -50%);
+	}
+
+	.croreParent,
+	.parent,
+	.group {
+		gap: 4px;
+	}
+
+	.crore {
+		font-size: clamp(14px, 4vw, 18px);
+	}
+
+	.skillDomains {
+		font-size: clamp(7.5px, 2vw, 9.5px);
+		line-height: 1.15;
+		white-space: nowrap;
+	}
+
+	.statsDivider {
+		width: 2px;
+		height: 44px;
+	}
+
+	.frameParent19 {
+		top: 505px;
+		left: 50%;
+		width: calc(100% - 24px);
+		transform: translateX(-50%);
+	}
+}
+
+@media (max-width: 390px) {
+	.frameParent8 {
+		top: 46px;
+		left: 16px;
+		font-size: 9.5px;
+	}
+
+	.informationLiteracyChild {
+		top: 26px;
+		width: 780px;
+		height: 345px;
+	}
+
+	.frameParent9 {
+		top: 76px;
+		width: calc(100% - 12px);
+		gap: 10px;
+	}
+
+	.informationLiteracyBadge {
+		min-width: 186px;
+		height: 34px;
+		font-size: 12px;
+		padding: 0 14px;
+	}
+
+	.findEvaluate {
+		font-size: clamp(14px, 4.1vw, 16px);
+	}
+
+	.neurolxpEquipsLearners {
+		max-width: 370px;
+		font-size: clamp(8.7px, 2.55vw, 10px);
+		line-height: 1.25;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		height: 41px;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 11px;
+	}
+
+	.frameParent13 {
+		top: 334px;
+		width: calc(100% - 10px);
+		aspect-ratio: 1424 / 279;
+	}
+
+	
+	 .statsContent {
+    width: calc(100% - 48px);
+    gap: 4px;
+    transform: translate(-50%, calc(-50% + 8px));
+}
+
+	.crore {
+		font-size: 12.5px;
+	}
+
+	.skillDomains {
+		font-size: 7px;
+	}
+
+	.statsDivider {
+		height: 38px;
+	}
+
+	.frameParent19 {
+		top: 445px;
+		width: calc(100% - 18px);
+	}
+}
+
+@media (max-width: 560px) {
+	.informationLiteracyChild {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 430px;
+		max-width: none;
+		transform: none;
+		overflow: visible;
+		object-fit: fill;
+	}
+
+	.frameParent8 {
+		top: 52px;
+	}
+
+	.frameParent9 {
+		top: 86px;
+	}
+
+	.frameParent13 {
+		top: 360px;
+		left: 50%;
+		width: calc(100% - 14px);
+		height: auto;
+		min-height: 0;
+		aspect-ratio: 1424 / 279;
+		transform: translateX(-50%);
+		overflow: visible;
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+	}
+
+	.statsPanelShape {
+		display: block;
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		max-width: none;
+		overflow: visible;
+		object-fit: fill;
+		
+	}
+
+	.statsContent {
+		top: 52%;
+	}
+
+	.frameParent19 {
+		top: 505px;
+	}
+}
+
+@media (max-width: 390px) {
+	.informationLiteracyChild {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 385px;
+		transform: none;
+		object-fit: fill;
+	}
+
+	.frameParent8 {
+		top: 46px;
+	}
+
+	.frameParent9 {
+		top: 76px;
+	}
+
+	.frameParent13 {
+		top: 326px;
+		width: calc(100% - 10px);
+		aspect-ratio: 1424 / 279;
+	}
+
+	.frameParent19 {
+		top: 445px;
+	}
+}
+
+@media (max-width: 560px) {
+	.frameParent8 {
+		display: flex;
+		visibility: visible;
+		opacity: 1;
+		top: 18px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: max-content;
+		max-width: calc(100% - 20px);
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+		font-size: 10.5px;
+		line-height: 1.2;
+		white-space: nowrap;
+		z-index: 20;
+	}
+
+	.frameParent8 * {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.informationLiteracyChild {
+		top: -18px;
+	}
+
+	.frameParent9 {
+		top: 48px;
+		gap: 10px;
+	}
+
+	.frameParent10,
+	.frameParent11 {
+		gap: 9px;
+	}
+
+	.informationLiteracyBadge {
+		min-width: 190px;
+		height: 34px;
+		padding: 0 15px;
+		font-size: 13px;
+		border-radius: 22px;
+	}
+
+	.findEvaluate {
+		font-size: clamp(15px, 4vw, 19px);
+	}
+
+	.neurolxpEquipsLearners {
+		font-size: clamp(9.5px, 2.45vw, 12px);
+		line-height: 1.28;
+	}
+
+	.frameParent12 {
+		gap: 10px;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		width: calc(50% - 5px);
+		height: 40px;
+		padding: 0 9px;
+		border-radius: 7px;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 12px;
+	}
+
+	.frameParent13 {
+		top: 336px;
+	}
+
+	.frameParent19 {
+		top: 475px;
+	}
+}
+
+@media (max-width: 390px) {
+	.frameParent8 {
+		top: 14px;
+		font-size: 14px;
+	}
+
+	.informationLiteracyChild {
+		top: -16px;
+	}
+
+	.frameParent9 {
+		top: 42px;
+		gap: 8px;
+	}
+
+	.informationLiteracyBadge {
+		min-width: 170px;
+		height: 31px;
+		font-size: 14px;
+		padding: 0 13px;
+		transform: translatey(10);
+	}
+
+	.findEvaluate {
+		font-size: clamp(14px, 4vw, 15.5px);
+		transform: translatey(8);
+	}
+
+	.neurolxpEquipsLearners {
+		font-size: clamp(10px, 2.45vw, 9.8px);
+		line-height: 1.24;
+		transform: translatey(8);
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		height: 37px;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 14px;
+	}
+
+	.frameParent13 {
+		top: 302px;
+	}
+
+	.frameParent19 {
+		top: 415px;
+	}
+}
+
+@media (max-width: 560px) {
+	.frameParent9 {
+		transform: translate(-50%, 12px);
+	}
+}
+
+@media (max-width: 390px) {
+	.frameParent9 {
+		transform: translate(-50%, 10px);
+	}
+}
+
+@media (max-width: 560px) {
+	.frameParent9 {
+		transform: translate(-50%, 24px);
+	}
+
+	.informationLiteracyBadge {
+		min-width: 174px;
+		height: 30px;
+		padding: 0 13px;
+		border-radius: 19px;
+		font-size: 12px;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		width: calc(48% - 5px);
+		height: 35px;
+		padding: 0 8px;
+		border-radius: 6px;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 11px;
+		line-height: 1;
+	}
+}
+
+@media (max-width: 390px) {
+	.frameParent9 {
+		transform: translate(-50%, 20px);
+	}
+
+	.informationLiteracyBadge {
+		min-width: 158px;
+		height: 28px;
+		padding: 0 11px;
+		font-size: 10.5px;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		width: calc(48% - 4px);
+		height: 33px;
+		padding: 0 7px;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.frameParent9 {
+		top: 105px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: calc(100% - 18px);
+		gap: 12px;
+	}
+
+	.frameParent10,
+	.frameParent11 {
+		gap: 10px;
+	}
+
+	.informationLiteracyBadge {
+		width: 165px;
+		min-width: 165px;
+		max-width: 165px;
+		height: 29px;
+		min-height: 29px;
+		padding: 0 10px;
+		border-radius: 18px;
+		font-size: 11px;
+		line-height: 1;
+	}
+
+	.frameParent12 {
+		width: 100%;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		width: 145px;
+		min-width: 145px;
+		max-width: 145px;
+		height: 34px;
+		min-height: 34px;
+		padding: 0 8px;
+		border-radius: 6px;
+		flex: 0 0 145px;
+	}
+
+	.requestDemo,
+	.startLearningWrapper,
+	.startLearning {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		position: static;
+		transform: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 10.5px;
+		white-space: nowrap;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent9 {
+		top: 96px;
+	}
+
+	.informationLiteracyBadge {
+		width: 150px;
+		min-width: 150px;
+		max-width: 150px;
+		height: 27px;
+		min-height: 27px;
+		font-size: 12px;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		width: 132px;
+		min-width: 132px;
+		max-width: 132px;
+		height: 32px;
+		min-height: 32px;
+		flex-basis: 132px;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 9.5px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.frameParent13 {
+		top: 245px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.frameParent19 {
+		top: 390px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent13 {
+		top: 225px;
+	}
+
+	.frameParent19 {
+		top: 355px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.frameParent13 {
+		top: calc(245px + 0.5rem);
+	}
+
+	.frameParent19 {
+		top: calc(390px + 0.5rem);
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent13 {
+		top: calc(225px + 0.5rem);
+	}
+
+	.frameParent19 {
+		top: calc(355px + 0.5rem);
+	}
+}
+
+@media screen and (min-width: 1181px) {
+	.frameParent19 {
+		top: 931.16px;
+		left: 50%;
+		width: min(1280px, calc(100% - 80px));
+		transform: translateX(-50%);
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	.frameParent19 {
+		top: 760px;
+		left: 50%;
+		width: calc(100% - 48px);
+		transform: translateX(-50%);
+		gap: 44px;
+	}
+
+	.frameParent20 {
+		width: 100%;
+		max-width: 980px;
+	}
+
+	.frameParent21 {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 250px));
+		justify-content: center;
+		align-items: start;
+		column-gap: 42px;
+		row-gap: 38px;
+	}
+
+	.thinkingCard {
+		width: 230px;
+		height: 279px;
+		justify-self: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.frameParent19 {
+		top: 430px;
+		left: 50%;
+		width: calc(100% - 20px);
+		transform: translateX(-50%);
+		gap: 28px;
+	}
+
+	.frameParent20 {
+		width: 100%;
+		gap: 18px;
+	}
+
+	.trackOutcomesBadge {
+		font-size: 14px;
+		line-height: 18px;
+		padding: 8px 15px;
+	}
+
+	.buildConfidenceThroughCritiParent {
+		width: 100%;
+		gap: 15px;
+	}
+
+	.buildConfidenceThroughContainer {
+		width: 100%;
+		height: auto;
+		font-size: clamp(21px, 5.8vw, 29px);
+		line-height: 1.2;
+	}
+
+	.buildConfidenceThrough,
+	.criticalThinking {
+		line-height: inherit;
+	}
+
+	.empowerLearnersTo {
+		width: 100%;
+		max-width: 620px;
+		font-size: clamp(13px, 3.3vw, 17px);
+		line-height: 1.38;
+	}
+
+	.frameParent21 {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		justify-content: center;
+		align-items: start;
+		column-gap: 12px;
+		row-gap: 22px;
+	}
+
+	.thinkingCard {
+		width: min(100%, 205px);
+		height: auto;
+		aspect-ratio: 280 / 339.57;
+		justify-self: center;
+	}
+
+	.thinkingCardSvg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.thinkingCardInner {
+		width: 82%;
+		height: 91%;
+		padding-top: 22px;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		width: 86%;
+		height: auto;
+		margin: 0 0 9px;
+		font-size: clamp(12px, 3.3vw, 16px);
+		line-height: 1.2;
+		transform: none;
+	}
+
+	.thinkingCardDesc {
+		width: 84%;
+		height: auto;
+		margin: 0;
+		font-size: clamp(9px, 2.6vw, 13px);
+		line-height: 1.28;
+		transform: none;
+	}
+
+	.thinkingCardTriangle {
+		width: 23px;
+		height: 23px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent19 {
+		top: 400px;
+		width: calc(100% - 14px);
+		gap: 24px;
+	}
+
+	.frameParent20 {
+		gap: 14px;
+	}
+
+	.trackOutcomesBadge {
+		font-size: 12px;
+		padding: 7px 12px;
+	}
+
+	.buildConfidenceThroughContainer {
+		font-size: clamp(18px, 5.5vw, 22px);
+	}
+
+	.empowerLearnersTo {
+		font-size: clamp(11px, 3.1vw, 13px);
+	}
+
+	.frameParent21 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		column-gap: 8px;
+		row-gap: 18px;
+	}
+
+	.thinkingCard {
+		width: min(100%, 176px);
+	}
+
+	.thinkingCardInner {
+		padding-top: 17px;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		margin-bottom: 7px;
+		font-size: clamp(10.5px, 3vw, 12.5px);
+	}
+
+	.thinkingCardDesc {
+		font-size: clamp(8px, 2.35vw, 10px);
+		line-height: 1.24;
+	}
+
+	.thinkingCardTriangle {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.buildConfidenceThroughContainer {
+		width: 100%;
+		max-width: none;
+		height: auto;
+		white-space: nowrap;
+		text-wrap: nowrap;
+		font-size: clamp(26px, 3.8vw, 42px);
+		line-height: 1.18;
+		letter-spacing: 0.01em;
+	}
+
+	.buildConfidenceThrough,
+	.criticalThinking {
+		line-height: inherit;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.frameParent21 {
+		column-gap: 18px;
+		row-gap: 24px;
+	}
+
+	.thinkingCard {
+		width: min(100%, 210px);
+		height: auto;
+		aspect-ratio: 280 / 339.57;
+	}
+
+	.thinkingCardInner {
+		top: 42%;
+		width: 80%;
+		height: 89%;
+		padding-top: 20px;
+		justify-content: flex-start;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		width: 88%;
+		height: auto;
+		min-height: 0;
+		margin: 0 0 12px;
+		padding: 0;
+		font-size: 15px;
+		line-height: 1.22;
+		letter-spacing: 0.01em;
+		transform: none;
+		display: block;
+		text-align: center;
+	}
+
+	.thinkingCardDesc {
+		width: 86%;
+		height: auto;
+		min-height: 0;
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		line-height: 1.3;
+		letter-spacing: 0.005em;
+		transform: none;
+		display: block;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.buildConfidenceThroughContainer {
+		font-size: clamp(16px, 4.25vw, 22px);
+		white-space: nowrap;
+	}
+
+	.frameParent21 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		column-gap: 10px;
+		row-gap: 18px;
+	}
+
+	.thinkingCard {
+		width: min(100%, 185px);
+	}
+
+	.thinkingCardInner {
+		width: 79%;
+		height: 88%;
+		padding-top: 17px;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		width: 90%;
+		margin-bottom: 2px;
+		font-size: clamp(11px, 2.9vw, 14px);
+		line-height: 1.2;
+	}
+
+	.thinkingCardDesc {
+		width: 88%;
+		font-size: clamp(8.5px, 2.3vw, 11px);
+		line-height: 1.25;
+	}
+
+	.thinkingCardTriangle {
+		width: 21px;
+		height: 21px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.buildConfidenceThroughContainer {
+		font-size: clamp(16px, 4vw, 16px);
+		white-space: nowrap;
+	}
+
+	.frameParent21 {
+		column-gap: 8px;
+		row-gap: 16px;
+	}
+
+	.thinkingCard {
+		width: min(100%, 164px);
+	}
+
+	.thinkingCardInner {
+		width: 79%;
+		height: 87%;
+		padding-top: 15px;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		width: 92%;
+		margin-bottom: 0px;
+		font-size: 10.5px;
+		line-height: 1.18;
+	}
+
+	.thinkingCardDesc {
+		width: 90%;
+		font-size: 8px;
+		line-height: 1.22;
+	}
+
+	.thinkingCardTriangle {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.frameParent19 {
+		transform: translate(-50%, -18px);
+	}
+
+	.frameParent20 {
+		align-items: center;
+	}
+
+	.buildConfidenceThroughCritiParent {
+		align-items: center;
+	}
+
+	.buildConfidenceThroughContainer,
+	.empowerLearnersTo {
+		margin: 0;
+		text-align: center;
+	}
+
+	.thinkingCardInner {
+		top: 42%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		position: static;
+		flex: 0 0 auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-weight: 600;
+		color: #000;
+	}
+
+	.thinkingCardDesc {
+		position: static;
+		flex: 0 0 auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-weight: 400;
+		color: #000;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.frameParent19 {
+		transform: translate(-50%, -24px);
+	}
+
+	.frameParent21 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		column-gap: 10px;
+		row-gap: 16px;
+	}
+
+	.thinkingCard {
+		width: min(100%, 178px);
+		height: auto;
+		aspect-ratio: 280 / 339.57;
+	}
+
+	.thinkingCardInner {
+		width: 80%;
+		height: 88%;
+		padding: 16px 8px 0;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		width: 92%;
+		height: auto;
+		min-height: 0;
+		margin-top: 0;
+		margin-bottom: 9px;
+		padding: 0;
+		font-size: clamp(11px, 2.9vw, 13.5px);
+		line-height: 1.18;
+		letter-spacing: 0.005em;
+		transform: none;
+	}
+
+	.thinkingCardDesc {
+		width: 92%;
+		height: auto;
+		min-height: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+		font-size: clamp(8.5px, 2.25vw, 10.5px);
+		line-height: 1.23;
+		letter-spacing: 0;
+		transform: none;
+	}
+
+	.thinkingCardTriangle {
+		width: 19px;
+		height: 19px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent19 {
+		transform: translate(-50%, -20px);
+	}
+
+	.frameParent21 {
+		column-gap: 7px;
+		row-gap: 14px;
+	}
+
+	.thinkingCard {
+		width: min(100%, 158px);
+	}
+
+	.thinkingCardInner {
+		width: 80%;
+		height: 87%;
+		padding: 13px 6px 0;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		width: 94%;
+		margin-bottom: 7px;
+		font-size: 9.8px;
+		line-height: 1.16;
+	}
+
+	.thinkingCardDesc {
+		width: 94%;
+		font-size: 7.5px;
+		line-height: 1.2;
+	}
+
+	.thinkingCardTriangle {
+		width: 17px;
+		height: 17px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.frameParent19 {
+		transform: translate(-50%, -42px);
+	}
+
+	.frameParent20 {
+		width: 100%;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.buildConfidenceThroughCritiParent {
+		width: 100%;
+		align-items: center;
+		gap: 18px;
+	}
+
+	.buildConfidenceThroughContainer {
+		width: 100%;
+		height: auto;
+		margin: 0;
+		text-align: center;
+		white-space: nowrap;
+		line-height: 1.18;
+	}
+
+	.empowerLearnersTo {
+		width: 100%;
+		height: auto;
+		margin: 0;
+		text-align: center;
+	}
+
+	.thinkingCard {
+		position: relative;
+		width: min(100%, 198px);
+		height: auto;
+		aspect-ratio: 280 / 339.57;
+	}
+
+	.thinkingCardSvg {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.thinkingCardInner {
+		position: absolute;
+		top: 42%;
+		left: 50%;
+		width: 82.14%;
+		height: 91.29%;
+		padding: 28px 8px 0;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		position: static;
+		width: 78%;
+		height: auto;
+		min-height: 0;
+		margin: 0 0 17px;
+		padding: 0;
+		transform: none;
+		display: block;
+		flex: 0 0 auto;
+		font-family: "Segoe UI", sans-serif;
+		font-size: 17px;
+		line-height: 1.32;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+		text-align: center;
+		color: #000;
+	}
+
+	.evidenceBasedTitle {
+		width: 88%;
+	}
+
+	.thinkingCardDesc {
+		position: static;
+		width: 87%;
+		height: auto;
+		min-height: 0;
+		margin: 0;
+		padding: 0;
+		transform: none;
+		display: block;
+		flex: 0 0 auto;
+		font-family: "Segoe UI", sans-serif;
+		font-size: 14px;
+		line-height: 1.34;
+		font-weight: 400;
+		letter-spacing: 0.015em;
+		text-align: center;
+		color: #000;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.frameParent19 {
+		transform: translate(-50%, -58px);
+	}
+
+	.frameParent21 {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		column-gap: 10px;
+		row-gap: 14px;
+	}
+
+	.thinkingCard {
+		width: min(100%, 172px);
+	}
+
+	.thinkingCardInner {
+		width: 82.14%;
+		height: 91.29%;
+		padding: 23px 6px 0;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		width: 80%;
+		margin-bottom: 14px;
+		font-size: 14px;
+		line-height: 1.3;
+	}
+
+	.evidenceBasedTitle {
+		width: 90%;
+	}
+
+	.thinkingCardDesc {
+		width: 88%;
+		font-size: 11.5px;
+		line-height: 1.32;
+	}
+
+	.thinkingCardTriangle {
+		width: 19px;
+		height: 19px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent19 {
+		transform: translate(-50%, -50px);
+	}
+
+	.frameParent21 {
+		column-gap: 7px;
+		row-gap: 12px;
+	}
+
+	.thinkingCard {
+		width: min(100%, 154px);
+	}
+
+	.thinkingCardInner {
+		padding: 20px 5px 0;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		margin-bottom: 2px;
+		font-size: 12px;
+		line-height: 1.28;
+	}
+
+	.thinkingCardDesc {
+		font-size: 9.8px;
+		line-height: 1.3;
+	}
+
+	.thinkingCardTriangle {
+		width: 17px;
+		height: 17px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.frameParent19 {
+		transform: translate(-50%, -50px);
+	}
+
+	.thinkingCardInner {
+		padding-top: 32px;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		font-size: 18px;
+		line-height: 1.32;
+		margin-bottom: 18px;
+	}
+
+	.thinkingCardDesc {
+		font-size: 15px;
+		line-height: 1.34;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.frameParent19 {
+		transform: translate(-50%, -66px);
+	}
+
+	.thinkingCardInner {
+		padding-top: 27px;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		font-size: 15px;
+		line-height: 1.3;
+		margin-bottom: 15px;
+	}
+
+	.thinkingCardDesc {
+		font-size: 12.5px;
+		line-height: 1.32;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent19 {
+		transform: translate(-50%, -58px);
+	}
+
+	.thinkingCardInner {
+		padding-top: 23px;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		margin-bottom: 14px;
+	}
+
+	.thinkingCardDesc {
+		margin-top: 2px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.frameParent19 {
+		transform: translate(-50%, -62px);
+	}
+
+	.thinkingCardInner {
+		padding-top: 40px;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		margin-bottom: 18px;
+	}
+
+	.thinkingCardDesc {
+		margin-top: 2px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.frameParent19 {
+		transform: translate(-50%, -80px);
+	}
+
+	.thinkingCardInner {
+		padding-top: 34px;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		margin-bottom: 16px;
+	}
+
+	.thinkingCardDesc {
+		margin-top: 2px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent19 {
+		transform: translate(-50%, -70px);
+	}
+
+	.thinkingCardInner {
+		padding-top: 29px;
+	}
+
+	.thinkingCardTitle,
+	.evidenceBasedTitle {
+		margin-bottom: 14px;
+	}
+	.thinkingCardDesc {
+		margin-top: 2px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.frameParent13 {
+		top: calc(245px + 0.7rem);
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent13 {
+		top: calc(225px + 0.7rem);
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.frameParent13 {
+		top: calc(245px + 1.1rem);
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent13 {
+		top: calc(225px + 1.1rem);
+	}
+}
+
+@media screen and (min-width: 901px) and (max-width: 1023px) {
+	.image20Parent {
+		top: 1420px;
+	}
+}
+
+@media screen and (min-width: 621px) and (max-width: 900px) {
+	.image20Parent {
+		top: 1070px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.image20Parent {
+		top: 900px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.image20Parent {
+		top: 865px;
+	}
 }
 
 
+@media (max-width: 900px) {
+	.frameParent22 {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		transform: none;
+		width: calc(100% - 32px);
+		max-width: 560px;
+		margin: 24px auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 32px;
+	}
 
-.skillCircleGraphic .skillCircleInner {
-    width: 92px !important;
-    height: 92px !important;
+	.frameParent23 {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
 
-    position: absolute !important;
+	.frameParent26 {
+		position: static;
+		display: contents;
+	}
 
-    left: 50% !important;
-    top: 50% !important;
+	.frameParent24,
+	.frameParent27,
+	.frameParent29,
+	.frameParent30 {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		width: 100%;
+		height: 140px;
+		min-height: 140px;
+		max-height: 140px;
+		margin: 0;
+		padding: 0 24px;
+		border-radius: 32px 32px 0 32px;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		overflow: hidden;
+	}
 
-    transform: translate(-50%, -50%) !important;
+	.frameParent24 { order: 1; }
+	.frameParent27 { order: 2; }
+	.frameParent29 { order: 3; }
+	.frameParent30 { order: 4; }
 
-    z-index: 3 !important;
+	.frameParent25,
+	.frameParent28,
+	.frameParent31 {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 52px;
+		height: 52px;
+		flex: 0 0 52px;
+		margin-right: 18px;
+	}
+
+	.frameChild15,
+	.frameChild16,
+	.frameChild17,
+	.frameChild18 {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 52px;
+		height: 52px;
+	}
+
+	.citationExcellenceParent,
+	.academicIntegrityParent,
+	.intellectualPropertyParent,
+	.ethicalKnowledgeParent {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: auto;
+		flex: 1 1 auto;
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+		gap: 8px;
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.citationExcellence {
+		height: auto;
+		font-size: 19px;
+		line-height: 25px;
+	}
+
+	.citeSourcesAccuratelyContainer,
+	.createOriginalPlagiarismContainer {
+		width: 100%;
+		height: auto;
+		font-size: 15px;
+		line-height: 21px;
+	}
+
+	.vectorParent {
+		position: relative;
+		width: min(100%, 480px);
+		height: auto;
+		aspect-ratio: 662 / 541;
+		margin: 8px auto 0;
+	}
+}
+
+@media (max-width: 620px) {
+	.frameParent22 {
+		gap: 24px;
+		margin: 20px auto;
+	}
+
+	.frameParent23 {
+		gap: 16px;
+	}
+
+	.frameParent24,
+	.frameParent27,
+	.frameParent29,
+	.frameParent30 {
+		height: 128px;
+		min-height: 128px;
+		max-height: 128px;
+		padding: 0 18px;
+		border-radius: 26px 26px 0 26px;
+	}
+
+	.frameParent25,
+	.frameParent28,
+	.frameParent31 {
+		width: 46px;
+		height: 46px;
+		flex: 0 0 46px;
+		margin-right: 14px;
+	}
+
+	.frameChild15,
+	.frameChild16,
+	.frameChild17,
+	.frameChild18 {
+		width: 46px;
+		height: 46px;
+	}
+
+	.b5 {
+		font-size: 24px;
+	}
+
+	.citationExcellence {
+		font-size: 17px;
+		line-height: 22px;
+	}
+
+	.citeSourcesAccuratelyContainer,
+	.createOriginalPlagiarismContainer {
+		font-size: 13.5px;
+		line-height: 19px;
+	}
+}
+
+@media (max-width: 390px) {
+	.frameParent22 {
+		width: calc(100% - 20px);
+		gap: 18px;
+		margin: 16px auto;
+	}
+
+	.frameParent23 {
+		gap: 12px;
+	}
+
+	.frameParent24,
+	.frameParent27,
+	.frameParent29,
+	.frameParent30 {
+		height: 112px;
+		min-height: 112px;
+		max-height: 112px;
+		padding: 0 14px;
+		border-radius: 22px 22px 0 22px;
+	}
+
+	.frameParent25,
+	.frameParent28,
+	.frameParent31 {
+		width: 40px;
+		height: 40px;
+		flex: 0 0 40px;
+		margin-right: 12px;
+	}
+
+	.frameChild15,
+	.frameChild16,
+	.frameChild17,
+	.frameChild18 {
+		width: 40px;
+		height: 40px;
+	}
+
+	.b5 {
+		font-size: 20px;
+	}
+
+	.citationExcellence {
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	.citeSourcesAccuratelyContainer,
+	.createOriginalPlagiarismContainer {
+		font-size: 12px;
+		line-height: 16px;
+		margin-bottom: -20px;
+	}
+
+	.vectorParent {
+		width: 100%;
+		margin-top: 4px;
+	}
+}
+
+@media (max-width: 900px) {
+	.frameParent22 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.frameParent23 {
+		order: 1;
+	}
+
+	.vectorParent {
+		order: 2;
+	}
+}
+
+@media (max-width: 620px) {
+	.frameParent23 {
+		order: 1;
+	}
+
+	.vectorParent {
+		order: 2;
+	}
+}
+
+@media (max-width: 390px) {
+	.frameParent23 {
+		order: 1;
+	}
+
+	.vectorParent {
+		order: 2;
+	}
+}
+
+@media (max-width: 900px) {
+	.informationLiteracy {
+		height: auto;
+		overflow: visible;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.frameParent13 { order: 2; }
+	.frameParent19 { order: 3; }
+	.image20Parent { order: 4; }
+	.frameParent22 { order: 5; }
+	.frameParent34 { order: 6; }}
+
+@media (max-width: 900px) {
+	.frameParent13 {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		transform: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 360px;
+		margin-bottom: 2px;
+	}
+}
+@media (max-width: 768px) {
+	.frameParent13 { margin-top: 320px; }
+}
+@media (max-width: 560px) {
+	.frameParent13 { margin-top: 260px; margin-bottom: 2px; }
+}
+@media (max-width: 390px) {
+	.frameParent13 { margin-top: 235px; margin-bottom: 0px; }
+}
+
+@media (max-width: 900px) {
+	.frameParent19 {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		transform: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 560px) {
+	.frameParent19 { margin-bottom: 32px; }
+}
+@media (max-width: 390px) {
+	.frameParent19 { margin-bottom: 24px; }
+}
+
+@media (max-width: 900px) {
+	.image20Parent {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		transform: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 560px) {
+	.image20Parent { margin-bottom: 32px; }
+}
+@media (max-width: 390px) {
+	.image20Parent { margin-bottom: 24px; }
+}
+
+@media (max-width: 900px) {
+	.frameParent22 {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		transform: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 560px) {
+	.frameParent22 { margin-bottom: 32px; }
+}
+@media (max-width: 390px) {
+	.frameParent22 { margin-bottom: 24px; }
+}
+
+@media (max-width: 900px) {
+	.frameParent34 {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		transform: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 40px;
+		width: calc(100% - 32px);
+		max-width: 1280px;
+	}
+
+	.frameChild21 {
+		min-width: 170px;
+		height: 36px;
+		padding: 0 16px;
+		font-size: 15px;
+	}
+
+	.masterInformationUnlockContainer {
+		white-space: nowrap;
+		font-size: clamp(20px, 4.4vw, 34px);
+	}
+
+	.frameParent34 .buildConfidenceThroughCritiParent {
+		gap: 8px;
+	}
+
+	.journeyCard {
+		width: auto;
+		max-width: 240px;
+		min-height: 130px;
+		padding: 14px 12px 12px;
+	}
+}
+@media (max-width: 560px) {
+	.frameParent34 { margin-bottom: 32px; width: calc(100% - 24px); }
+
+	.frameChild21 {
+		min-width: 150px;
+		height: 32px;
+		padding: 0 13px;
+		font-size: 13px;
+	}
+
+	.masterInformationUnlockContainer {
+		font-size: clamp(17px, 5vw, 24px);
+	}
+
+	.frameParent34 .buildConfidenceThroughCritiParent {
+		gap: 5px;
+	}
+
+	.journeyCard {
+		max-width: none;
+		min-height: 96px;
+		padding: 12px 14px;
+	}
+}
+@media (max-width: 390px) {
+	.frameParent34 { margin-bottom: 24px; width: calc(100% - 16px); }
+
+	.frameChild21 {
+		min-width: 136px;
+		height: 32px;
+		padding: 0 11px;
+		font-size: 14px;
+	}
+
+	.masterInformationUnlockContainer {
+		font-size: clamp(15px, 5.3vw, 20px);
+	}
+
+	.journeyCard {
+		min-height: 88px;
+		padding: 10px 12px;
+	}
+}
+
+@media (max-width: 900px) {
+	.frameParent40 {
+		order: 7;
+		position: relative;
+		top: auto;
+		left: auto;
+		transform: none;
+		width: calc(100% - 32px);
+		max-width: 959px;
+		margin: -12px auto 32px;
+	}
+
+	.builtForTheWayLearnersActParent {
+		width: 100%;
+		gap: 2px;
+	}
+
+	.learnersThinkBadge {
+		height: 38px;
+		padding: 0 18px;
+		font-size: 17px;
+	}
+
+	.builtForTheContainer {
+		white-space: nowrap;
+		font-size: clamp(20px, 4.5vw, 35px);
+		text-align: center;
+	}
+
+	.skillCircleRow {
+		position: relative;
+		left: auto;
+		top: auto;
+		width: auto;
+		margin: 0 auto;
+		justify-content: center;
+	}
+
+	.skillCircle:nth-child(3) {
+		transform: none;
+	}
+
+	.frameParent41 {
+		order: 8;
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.frameParent47 {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: min(100%, 480px);
+		height: auto;
+		aspect-ratio: 677 / 542;
+		margin: 0 auto;
+	}
+
+	.frameChild35 {
+		width: 75%;
+		height: 100%;
+		left: 25%;
+	}
+
+	.creativeExcitedBrunetteBusiIcon {
+		width: 100%;
+		height: 106%;
+		top: -3%;
+		right: 0;
+		transform: none;
+	}
+
+	.skillCircleGraphic .skillCircleProgress {
+		width: 132px;
+		height: 132px;
+	}
+
+	.skillCircleGraphic .skillCircleInner {
+		width: 86px;
+		height: 86px;
+	}
+
+	.skillCircleLabel {
+		margin-top: 16px;
+	}
+}
+
+@media (max-width: 620px) {
+	.frameParent40 {
+		margin-top: -8px;
+		margin-bottom: 24px;
+	}
+
+	.builtForTheWayLearnersActParent {
+		gap: 0px;
+	}
+
+	.learnersThinkBadge {
+		height: 34px;
+		padding: 0 14px;
+		font-size: 15px;
+	}
+
+	.builtForTheContainer {
+		font-size: clamp(18px, 5vw, 26px);
+	}
+
+	.frameParent41 {
+		gap: 24px;
+	}
+
+	.frameParent47 {
+		width: min(100%, 380px);
+	}
+
+	.skillCircleGraphic .skillCircleProgress {
+		width: 122px;
+		height: 122px;
+	}
+
+	.skillCircleGraphic .skillCircleInner {
+		width: 78px;
+		height: 78px;
+	}
+
+	.skillCircleLabel {
+		margin-top: 13px;
+	}
+}
+
+@media (max-width: 390px) {
+	.frameParent40 {
+		margin-top: -6px;
+		margin-bottom: 20px;
+	}
+
+	.learnersThinkBadge {
+		height: 30px;
+		padding: 0 12px;
+		font-size: 14px;
+	}
+
+	.builtForTheContainer {
+		font-size: clamp(17px, 5.3vw, 23px);
+	}
+
+	.frameParent41 {
+		gap: 20px;
+	}
+
+	.frameParent47 {
+		width: 100%;
+	}
+
+	.skillCircleRow {
+		column-gap: 24px;
+		row-gap: 32px;
+	}
+
+	.builtForTheContainer {
+		font-size: clamp(15px, 4.5vw, 20px);
+	}
+
+	.skillCircleGraphic .skillCircleProgress {
+		width: 110px;
+		height: 110px;
+	}
+
+	.skillCircleGraphic .skillCircleInner {
+		width: 70px;
+		height: 70px;
+	}
+
+	.skillCircleLabel {
+		margin-top: 10px;
+	}
+
+	.skillCircleValue {
+		font-size: 22px;
+	}
+}
+
+@media (max-width:900px){
+  .frameParent19{
+    margin-top: 28px;
+  }
+}
+@media (max-width:768px){
+  .frameParent19{
+    margin-top: 32px;
+  }
+}
+@media (max-width:620px){
+  .frameParent19{
+    margin-top: 36px;
+  }
+}
+@media (max-width:480px){
+  .frameParent19{
+    margin-top: 40px;
+  }
+}
+@media (max-width:390px){
+  .frameParent19{
+    margin-top: 42px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+	.frameParent8 {
+		display: flex;
+		visibility: visible;
+		opacity: 1;
+		top: 84px;
+		left: 12px;
+		right: auto;
+		transform: none;
+		width: auto;
+		max-width: calc(100% - 24px);
+		justify-content: flex-start;
+		align-items: center;
+		gap: 5px;
+		font-size: 10px;
+		line-height: 1.2;
+		white-space: nowrap;
+		z-index: 30;
+	}
+
+	.frameParent8 * {
+		display: inline-flex;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.frameParent12 {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		width: 128px;
+		min-width: 128px;
+		max-width: 128px;
+		height: 32px;
+		min-height: 32px;
+		padding: 0 7px;
+		flex: 0 0 128px;
+		border-radius: 6px;
+	}
+
+	.requestDemo,
+	.startLearningWrapper,
+	.startLearning {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		line-height: 1;
+		white-space: nowrap;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent8 {
+		top: 82px;
+		left: 10px;
+		max-width: calc(100% - 20px);
+		font-size: 8.8px;
+		gap: 4px;
+	}
+
+	.requestDemoWrapper,
+	.frameWrapper5 {
+		transform: translatey(10);
+		width: 112px;
+		min-width: 112px;
+		max-width: 112px;
+		height: 28px;
+		min-height: 28px;
+		flex: 0 0 118px;
+		padding: 0 6px;
+	}
+
+	.requestDemo,
+	.startLearning {
+		font-size: 10.5px;
+	}
+}
+@media (max-width: 390px) {
+    .statsPanelShape {
+		transform: translatey(10);
+	}}
+
+@media screen and (max-width: 620px) {
+	.frameParent21 {
+		display: grid;
+		grid-template-columns: 280px;
+		justify-content: center;
+		align-items: start;
+		column-gap: 0;
+		row-gap: 28px;
+		width: 100%;
+	}
+
+	.thinkingCard {
+		width: 280px;
+		height: 339.57px;
+		aspect-ratio: auto;
+	}
+
+	.thinkingCardSvg {
+		width: 280px;
+		height: 339.57px;
+	}
+
+	.thinkingCardInner {
+		width: 230px;
+		height: 310px;
+		padding: 40px 10px 0;
+		top: 42%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.thinkingCardTitle,
+	.sourceCredibilityTitle,
+	.biasDetectionTitle,
+	.evidenceBasedTitle,
+	.digitalVerificationTitle,
+	.thinkingCardTitle.evidenceBasedTitle {
+		width: 180px;
+		height: 64px;
+		margin: 0 0 24px;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: 0.03em;
+		transform: none;
+	}
+
+	.thinkingCardDesc {
+		width: 201.07px;
+		height: 85px;
+		margin: 0;
+		font-size: 21px;
+		line-height: 28px;
+		letter-spacing: 0.03em;
+		transform: none;
+	}
+
+	.thinkingCardTriangle {
+		width: 37px;
+		height: 37px;
+	}
+
+	.frameParent22,
+	.image20Parent,
+	.frameParent34,
+	.rectangle2,
+	.image203,
+	.frameParent40,
+	.frameParent41,
+	.informationLiteracyInner,
+	.informationLiteracyInner2 {
+		translate: 0 950px;
+	}
+
+	.informationLiteracy {
+		height: 5821px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.frameParent21 {
+		grid-template-columns: 270px;
+	}
+
+	.thinkingCard {
+		width: 270px;
+		height: 327.44px;
+	}
+
+	.thinkingCardSvg {
+		width: 270px;
+		height: 327.44px;
+	}
+}
+
+@media screen and (max-width:620px){
+
+  .frameParent21{
+    row-gap:18px;
+  }
+
+  .thinkingCard{
+    width:255px;
+    height:308px;
+  }
+
+  .thinkingCardSvg{
+    width:255px;
+    height:308px;
+  }
+
+  .thinkingCardInner{
+    width:212px;
+    height:282px;
+    padding-top:34px;
+  }
+
+  .thinkingCardTitle,
+  .evidenceBasedTitle{
+    width:170px;
+    font-size:21px;
+    line-height:28px;
+    margin-bottom:16px;
+  }
+
+  .thinkingCardDesc{
+    width:185px;
+    font-size:18px;
+    line-height:24px;
+  }
+
+  .frameParent22,
+  .image20Parent,
+  .frameParent34,
+  .rectangle2,
+  .image203,
+  .frameParent40,
+  .frameParent41,
+  .informationLiteracyInner,
+  .informationLiteracyInner2{
+      translate:0 860px;
+  }
+
+  .informationLiteracy{
+      height:5680px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+	.frameParent21 {
+		grid-template-columns: 255px;
+		row-gap: 14px;
+		justify-content: center;
+	}
+
+	.thinkingCard {
+		width: 255px;
+		height: 308px;
+	}
+
+	.thinkingCardSvg {
+		width: 255px;
+		height: 308px;
+	}
+
+	.thinkingCardInner {
+		width: 212px;
+		height: 282px;
+		padding: 34px 8px 0;
+	}
+
+	.thinkingCardTitle,
+	.sourceCredibilityTitle,
+	.biasDetectionTitle,
+	.evidenceBasedTitle,
+	.digitalVerificationTitle,
+	.thinkingCardTitle.evidenceBasedTitle {
+		width: 180px;
+		height: 64px;
+		margin: 0 0 18px;
+		font-family: "Segoe UI", sans-serif;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: 0.03em;
+		text-align: center;
+		color: #000;
+		transform: none;
+	}
+
+	.thinkingCardDesc {
+		width: 198px;
+		height: auto;
+		margin: 0;
+		font-family: "Segoe UI", sans-serif;
+		font-weight: 400;
+		font-size: 21px;
+		line-height: 28px;
+		letter-spacing: 0.03em;
+		text-align: center;
+		color: #000;
+		transform: none;
+	}
+
+	.frameParent22,
+	.image20Parent,
+	.frameParent34,
+	.rectangle2,
+	.image203,
+	.frameParent40,
+	.frameParent41,
+	.informationLiteracyInner,
+	.informationLiteracyInner2 {
+		translate: none;
+	}
+
+	.frameParent19 {
+		margin-bottom: 10px;
+	}
+
+	.image20Parent {
+		margin-top: 0;
+	}
+
+	.informationLiteracy {
+		height: auto;
+		min-height: 0;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.frameParent21 {
+		grid-template-columns: 250px;
+		row-gap: 12px;
+	}
+
+	.thinkingCard,
+	.thinkingCardSvg {
+		width: 250px;
+		height: 302px;
+	}
+
+	.thinkingCardInner {
+		width: 208px;
+		height: 276px;
+		padding-top: 32px;
+	}
+
+	.frameParent19 {
+		margin-bottom: 8px;
+	}
+}
+
+@media screen and (max-width:620px){
+  .biasDetectionTitle{
+      width:120px;
+      white-space:normal;
+      line-height:32px;
+      word-break:normal;
+  }
+
+  .evidenceBasedTitle{
+      transform:translateY(10px);
+  }
+
+}
+
+@media screen and (max-width:620px){
+  .biasDetectionTitle,
+  .thinkingCard:nth-child(2) .thinkingCardTitle{
+      width:105px;
+      max-width:105px;
+      white-space:normal;
+      overflow-wrap:break-word;
+      word-break:normal;
+      line-height:30px;
+      display:block;
+      margin:8px auto 18px;
+      transform:none;
+  }
+  .evidenceBasedTitle,
+  .thinkingCard:nth-child(3) .thinkingCardTitle{
+      margin-top:18px;
+      transform:translateY(18px);
+  }
+}
+
+@media screen and (max-width:620px){
+
+  .biasDetectionTitle,
+  .thinkingCard:nth-child(2) .thinkingCardTitle{
+      width:128px;   
+      max-width:128px;
+      line-height:30px;
+  }
+
+  .evidenceBasedTitle,
+  .thinkingCard:nth-child(3) .thinkingCardTitle{
+      margin-top:8px;
+      transform:translateY(8px); 
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+    .frameWrapper .frameParent2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 220px;
+        height: 225px;
+        padding-top: 14px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        overflow: visible;
+    }
+
+    .frameWrapper .academicResearchWrapper {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 220px;
+        height: 36px;
+        min-height: 36px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .frameWrapper .academicResearch {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        line-height: 32px;
+        text-align: center;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .frameWrapper .frameParent3 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 210px;
+        height: 150px;
+        min-height: 150px;
+        margin: 0 auto;
+        display: block;
+        flex-shrink: 0;
+        overflow: visible;
+    }
+
+    .frameWrapper .frameItem {
+        position: absolute;
+        inset: 0;
+        width: 210px;
+        height: 150px;
+        margin: 0;
+        display: block;
+        border-radius: 24px;
+    }
+
+    .frameWrapper .discoverTrustedAcademic {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 180px;
+        height: auto;
+        margin: 0;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        line-height: 30px;
+        text-align: center;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .frameWrapper .frameParent2 {
+        width: 210px;
+        padding-top: 12px;
+        gap: 14px;
+    }
+
+    .frameWrapper .academicResearchWrapper {
+        width: 210px;
+    }
+
+    .frameWrapper .frameParent3,
+    .frameWrapper .frameItem {
+        width: 205px;
+    }
+
+    .frameWrapper .discoverTrustedAcademic {
+        width: 176px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+  .academicResearchWrapper{
+      justify-content:center;
+  }
+
+  .academicResearch{
+      width:190px;
+      white-space:nowrap;
+      font-size:22px;
+      line-height:30px;
+      text-align:center;
+  }
+
+  .frameParent3,
+  .accessCredibleResearchAcrosWrapper,
+  .turnResearchIntoClearActiWrapper{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+  }
+
+  .discoverTrustedAcademic,
+  .accessCredibleResearch,
+  .turnResearchInto{
+      width:170px;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      text-align:center;
+      line-height:30px;
+      margin:0;
+  }
+}
+
+@media screen and (max-width:768px){
+  .accessCredibleResearch,
+  .turnResearchInto{
+      position:absolute;
+      top:50%;
+      left:50%;
+      width:170px;
+      transform:translate(-51%, -51%);
+      text-align:center;
+      line-height:30px;
+      margin:0;
+  }
+}
+
+@media screen and (max-width: 820px) {
+
+    .frameParent36 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+    }
+
+    .journeyTimeline {
+        position: relative;
+        width: min(100%, 620px);
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 34px;
+        overflow: visible;
+    }
+
+
+    .journeyTrack {
+        display: block;
+        position: absolute;
+        top: 50px;
+        bottom: 50px;
+        left: 50px;
+        right: auto;
+        width: 50px;
+        height: auto;
+        transform: translateX(-50%);
+        border-radius: 50px;
+        background: #dfe6e9;
+        box-shadow:
+            inset -4px -4px 8px #ffffff,
+            inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+        z-index: 0;
+    }
+
+    .journeyTrack::after {
+        content: "";
+        position: absolute;
+        top: 1.4%;
+        bottom: 1.4%;
+        left: 50%;
+        right: auto;
+        width: 15px;
+        height: auto;
+        transform: translateX(-50%);
+        border-radius: 100px;
+        background: #dfe6e9;
+        box-shadow:
+            -4px -4px 8px #ffffff,
+            4px 4px 8px #c6c6c9;
+    }
+
+    .journeyStage {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        min-width: 0;
+        display: grid;
+        grid-template-columns: 100px minmax(0, 1fr);
+        align-items: center;
+        gap: 26px;
+    }
+
+    .journeyStage::after {
+        content: none;
+        display: none;
+    }
+
+    .journeyCircle {
+        position: relative;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        flex: 0 0 100px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: #dfe6e9;
+        box-shadow:
+            inset -4px -4px 8px #ffffff,
+            inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    }
+
+    .journeyCircle::before {
+        width: 70px;
+        height: 70px;
+        border: 1.5px solid var(--stage-color);
+        box-shadow:
+            8px 8px 16px #c6c6c9,
+            -8px -8px 16px #ffffff;
+    }
+
+    .journeyCircle span {
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 600;
+        color: var(--stage-color);
+    }
+
+    .journeyCard {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        min-width: 0;
+        min-height: 150px;
+        padding: 20px 16px 18px;
+        border-radius: 14px;
+        background: #dfe6e9;
+        box-shadow:
+            inset 4px 4px 8px rgba(190, 198, 202, 0.5),
+            inset -4px -4px 8px rgba(255, 255, 255, 0.86);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .journeyCorner {
+        width: 35px;
+        height: 35px;
+    }
+
+    .journeyStage:nth-child(2) .journeyCorner,
+    .journeyStage:nth-child(4) .journeyCorner {
+        top: -14px;
+        left: -14px;
+        right: auto;
+        bottom: auto;
+    }
+
+    .journeyStage:nth-child(3) .journeyCorner,
+    .journeyStage:nth-child(5) .journeyCorner {
+        right: -14px;
+        bottom: -14px;
+        top: auto;
+        left: auto;
+    }
+
+    .journeyCardTitle {
+        margin: 0 0 22px;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: var(--stage-color);
+        text-align: center;
+    }
+
+    .journeyCardDescription {
+        max-width: 220px;
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.4;
+        font-weight: 400;
+        color: #31344b;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .journeyTimeline {
+        gap: 28px;
+    }
+
+    .journeyTrack {
+        top: 35px;
+        bottom: 35px;
+        left: 35px;
+        width: 36px;
+    }
+
+    .journeyTrack::after {
+        width: 10px;
+    }
+
+    .journeyStage {
+        grid-template-columns: 70px minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .journeyCircle {
+        width: 70px;
+        height: 70px;
+        flex-basis: 70px;
+    }
+
+    .journeyCircle::before {
+        width: 50px;
+        height: 50px;
+        box-shadow:
+            5px 5px 10px #c6c6c9,
+            -5px -5px 10px #ffffff;
+    }
+
+    .journeyCircle span {
+        font-size: 17px;
+    }
+
+    .journeyCard {
+        min-height: 132px;
+        padding: 16px 14px;
+    }
+
+    .journeyCardTitle {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .journeyCardDescription {
+        max-width: 200px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .journeyTimeline {
+        gap: 24px;
+    }
+
+    .journeyTrack {
+        top: 31px;
+        bottom: 31px;
+        left: 31px;
+        width: 32px;
+    }
+
+    .journeyTrack::after {
+        width: 8px;
+    }
+
+    .journeyStage {
+        grid-template-columns: 62px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .journeyCircle {
+        width: 62px;
+        height: 62px;
+        flex-basis: 62px;
+    }
+
+    .journeyCircle::before {
+        width: 44px;
+        height: 44px;
+        box-shadow:
+            4px 4px 8px #c6c6c9,
+            -4px -4px 8px #ffffff;
+    }
+
+    .journeyCircle span {
+        font-size: 15px;
+    }
+
+    .journeyCard {
+        min-height: 122px;
+        padding: 14px 12px;
+    }
+
+    .journeyCardTitle {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .journeyCardDescription {
+        max-width: 180px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:820px){
+
+  .journeyCard{
+    min-height:170px;
+    padding:24px 20px 22px;
+  }
+
+  .journeyCardTitle{
+    font-size:26px;
+    margin-bottom:24px;
+  }
+
+  .journeyCardDescription{
+    max-width:240px;
+    font-size:21px;
+    line-height:1.5;
+  }
+
+  .journeyCircle span{
+    font-size:30px;
+  }
+}
+
+@media screen and (max-width:560px){
+
+  .journeyCard{
+    min-height:145px;
+    padding:18px 16px;
+  }
+
+  .journeyCardTitle{
+    font-size:19px;
+  }
+
+  .journeyCardDescription{
+    max-width:220px;
+    font-size:16px;
+    line-height:1.45;
+  }
+
+  .journeyCircle span{
+    font-size:19px;
+  }
+}
+
+@media screen and (max-width:390px){
+
+  .journeyCardTitle{
+    font-size:17px;
+  }
+
+  .journeyCardDescription{
+    font-size:14px;
+  }
+
+  .journeyCircle span{
+    font-size:17px;
+  }
+}
+
+@media screen and (max-width:820px){
+.journeyTimeline>.journeyStage:nth-of-type(1) .journeyCircle,
+.journeyTimeline>.journeyStage:nth-child(2) .journeyCircle{
+    transform:translateY(-32px);
+}
+
+.journeyTimeline>.journeyStage:nth-of-type(4) .journeyCircle,
+.journeyTimeline>.journeyStage:nth-child(5) .journeyCircle{
+    transform:translateY(32px);
+}
+
+.journeyTimeline .journeyCard{
+    height:138px;
+    min-height:138px;
+    padding:16px 18px;
+    justify-content:center;
+}
+
+.journeyTimeline .journeyCardTitle{
+    margin-bottom:12px;
+}
+}
+
+@media screen and (max-width:560px){
+.journeyTimeline>.journeyStage:nth-of-type(1) .journeyCircle,
+.journeyTimeline>.journeyStage:nth-child(2) .journeyCircle{
+    transform:translateY(-22px);
+}
+.journeyTimeline>.journeyStage:nth-of-type(4) .journeyCircle,
+.journeyTimeline>.journeyStage:nth-child(5) .journeyCircle{
+    transform:translateY(22px);
+}
+.journeyTimeline .journeyCard{
+    height:112px;
+    min-height:112px;
+}
+}
+
+@media screen and (max-width:390px){
+.journeyTimeline>.journeyStage:nth-of-type(1) .journeyCircle,
+.journeyTimeline>.journeyStage:nth-child(2) .journeyCircle{
+    transform:translateY(-18px);
+}
+.journeyTimeline>.journeyStage:nth-of-type(4) .journeyCircle,
+.journeyTimeline>.journeyStage:nth-child(5) .journeyCircle{
+    transform:translateY(18px);
+}
+.journeyTimeline .journeyCard{
+    height:104px;
+    min-height:104px;
+}
+}
+
+@media (max-width:425px){
+
+.vectorParent{
+    width:calc(100vw - 10px);
+}
+
+.integrityContent{
+    width:84%;
+    top:11.5%;
+}
+
+.ethicsIntegrityBadge{
+    min-width:145px;
+    height:32px;
+    font-size:14px;
+}
+
+.integrityTitle{
+    font-size:24px;
+}
+
+.integrityDescription{
+    font-size:15px;
+    line-height:1.45;
+}
+
+.journeyStage{
+    grid-template-columns:66px 1fr;
+    gap:14px;
+}
+
+.journeyCircle{
+    width:66px;
+    height:66px;
+    flex-basis:66px;
+}
+
+.journeyCircle::before{
+    width:48px;
+    height:48px;
+}
+
+.journeyCard{
+    width:100%;
+    min-height:128px;
+    padding:18px 20px;
+}
+
+.journeyCardTitle{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.journeyCardDescription{
+    font-size:15px;
+    line-height:1.45;
+}
+}
+
+@media (max-width:375px){
+.vectorParent{
+    width:calc(100vw - 8px);
+}
+
+.integrityContent{
+    width:85%;
+    top:11%;
+}
+
+.ethicsIntegrityBadge{
+    min-width:150px;
+    height:34px;
+    font-size:15px;
+}
+
+.integrityTitle{
+    font-size:20px;
+}
+
+.integrityDescription{
+    font-size:12px;
+    line-height:1.45;
+}
+
+.journeyStage{
+    grid-template-columns:68px 1fr;
+    gap:15px;
+}
+
+.journeyCircle{
+    width:68px;
+    height:68px;
+    flex-basis:68px;
+}
+
+.journeyCircle::before{
+    width:50px;
+    height:50px;
+}
+
+.journeyCard{
+    width:100%;
+    min-height:132px;
+    padding:19px 20px;
+}
+
+.journeyCardTitle{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.journeyCardDescription{
+    font-size:15px;
+    line-height:1.5;
+}
+
+}
+
+@media screen and (min-width: 740px) and (max-width: 790px) {
+  .informationLiteracy {
+    height: 3200px;
+    min-height: 3200px;
+    overflow: visible;
+  }
+
+  .informationLiteracyChild {
+    top: 5px;
+    left: 50%;
+    width: 1180px;
+    height: 522px;
+    max-width: none;
+    transform: translateX(-50%);
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .frameParent8 {
+    top: 126px;
+    left: 42px;
+    transform: translatey(-20);
+    font-size: 14px;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+  }
+
+  .frameParent9 {
+    top: 174px;
+    left: 50%;
+    width: 744px;
+    max-width: 744px;
+    transform: translateX(-50%);
+    gap: 38px;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  .frameParent10,
+	.frameParent11 {
+    gap: 22px;
+  }
+
+  .informationLiteracyBadge {
+    min-width: 260px;
+    height: 46px;
+    font-size: 18px;
+    margin-top: 10px;
+    display: inline-flex;
+    visibility: visible;
+    opacity: 1;
+    transform: translatey(-35);
+    margin: 0;
+  }
+
+  .findEvaluate {
+    max-width: 720px;
+    font-size: 34px;
+    line-height: 1.2;
+    width: 720px;
+    white-space: nowrap;
+    letter-spacing: 0.015em;
+    overflow: visible;
+    text-align: center;
+    transform: translatey(-30);
+  }
+
+  .neurolxpEquipsLearners {
+    max-width: 660px;
+    margin-inline: auto;
+    font-size: 22px;
+    line-height: 1.45;
+    white-space: normal;
+    width: 660px;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0.015em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transform: translatey(-30);
+  }
+
+  .frameParent12 {
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(-12px);
+  }
+
+  .frameParent13 {
+    top: 170px;
+    left: calc(50% - 16px);
+    width: 780px;
+    height: 160px;
+    min-height: 160px;
+    transform: translateX(-50%);
+  }
+
+  .statsContent {
+    width: 650px;
+    grid-template-columns: 1fr 3px 1fr 3px 1fr;
+    gap: 22px;
+  }
+
+  .crore {
+    font-size: 29px;
+  }
+
+  .skillDomains {
+    font-size: 17px;
+    white-space: nowrap;
+  }
+
+  .statsDivider {
+    width: 3px;
+    height: 78px;
+  }
+
+  .frameParent19 {
+    top: 210px;
+    left: calc(50% - 12px);
+    width: 1280px;
+    max-width: none;
+    transform: translateX(-50%) scale(0.61);
+    transform-origin: top center;
+    gap: 64px;
+    margin: 0;
+  }
+
+  .frameParent20 {
+    width: 1061px;
+    gap: 26px;
+  }
+
+  .frameParent21 {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: center;
+    align-items: start;
+    gap: 45px;
+    width: auto;
+  }
+
+  .thinkingCard {
+    width: 280px;
+    height: 339.57px;
+  }
+
+  .thinkingCardSvg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .thinkingCardInner {
+    width: 230px;
+    height: 310px;
+    padding-top: 40px;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .thinkingCardTitle,
+	.sourceCredibilityTitle,
+	.biasDetectionTitle,
+	.evidenceBasedTitle,
+	.digitalVerificationTitle {
+    width: 180px;
+    height: 64px;
+    margin: 0 0 24px;
+    font-size: 24px;
+    line-height: 32px;
+    transform: none;
+  }
+
+  .thinkingCardDesc {
+    width: 201px;
+    height: 85px;
+    font-size: 21px;
+    line-height: 28px;
+    transform: none;
+  }
+
+  .image20Parent {
+    top: 40px;
+    left: calc(50% - 10px);
+    width: 1252px;
+    height: 690px;
+    min-height: 690px;
+    max-width: none;
+    margin: 0;
+    transform: translateX(-50%) scale(0.58);
+    transform-origin: top center;
+    border-radius: 32px;
+    overflow: hidden;
+  }
+
+  .image20Parent .frameParent {
+    inset: 10px 42px 50px;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    align-items: center;
+    gap: 46px;
+    overflow: visible;
+  }
+
+  .image20Parent .frameGroup {
+    width: 500px;
+    max-width: 500px;
+    gap: 28px;
+    flex: 0 0 500px;
+  }
+
+  .image20Parent .frameContainer {
+    gap: 26px;
+  }
+
+  .researchDiscoveryBadge {
+    min-width: 260px;
+    height: 48px;
+    padding: 0 24px;
+    font-size: 24px;
+  }
+
+  .researchSmarterLearn {
+    font-size: 48px;
+    line-height: 1.24;
+  }
+
+  .buildResearchSkills {
+    max-width: 475px;
+    font-size: 28px;
+    line-height: 1.45;
+  }
+
+  .image20Parent .frameDiv {
+    display: grid;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+    width: 580px;
+    min-width: 580px;
+    grid-template-columns: 270px 270px;
+    justify-content: start;
+    overflow: visible;
+  }
+
+  .image20Parent .frameWrapper,
+	.image20Parent .frameWrapper2 {
+    width: 270px;
+    height: 270px;
+    min-width: 270px;
+    max-width: 270px;
+    min-height: 270px;
+    flex: 0 0 270px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .image20Parent .frameParent2 {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 222px;
+    height: 222px;
+    padding: 0;
+    display: block;
+  }
+
+  .image20Parent .academicResearchWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 222px;
+    height: 36px;
+  }
+
+  .image20Parent .academicResearch {
+    width: 100%;
+    font-size: 24px;
+    line-height: 32px;
+    white-space: normal;
+  }
+
+  .image20Parent .frameParent3 {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 222px;
+    height: 170px;
+    font-size: 20px;
+    display: block;
+  }
+
+  .image20Parent .discoverTrustedAcademic {
+    width: 184px;
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .image20Parent .frameParent4 {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 50px;
+    min-width: 270px;
+    max-width: 270px;
+    height: 590px;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex: 0 0 270px;
+    overflow: visible;
+  }
+
+  .image20Parent .digitalLibrariesParent {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 222px;
+    height: 222px;
+    gap: 16px;
+  }
+
+  .image20Parent .accessCredibleResearchAcrosWrapper,
+	.image20Parent .turnResearchIntoClearActiWrapper {
+    width: 222px;
+    height: 170px;
+    font-size: 20px;
+  }
+
+  .image20Parent .accessCredibleResearch,
+	.image20Parent .turnResearchInto {
+    width: 182px;
+    font-size: 20px;
+    line-height: 36px;
+    transform: translate(-50%, -50%);
+  }
+
+  .frameParent22 {
+    top: -180px;
+    left: -75px;
+    width: 1280px;
+    max-width: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 112px;
+    margin: 0;
+    translate: none;
+    transform: scale(0.82);
+    transform-origin: top left;
+    z-index: 6;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .frameParent23 {
+    width: 511.5px;
+    height: 696px;
+    display: block;
+    transform: scale(0.82);
+    zoom: 1;
+    visibility: visible;
+    opacity: 1;
+    margin-left: -20px;
+    transform-origin: top left;
+  }
+
+  .vectorParent {
+    width: 662px;
+    height: 541px;
+    aspect-ratio: auto;
+    transform: scale(0.82);
+    zoom: 1;
+    visibility: visible;
+    opacity: 1;
+    margin-left: -25px;
+    transform-origin: top left;
+  }
+
+  .integrityHexagonSvg {
+    width: 662px;
+    height: 541px;
+  }
+
+  .integrityContent {
+    top: 70px;
+    width: 520px;
+  }
+
+  .ethicsIntegrityBadge {
+    min-width: 200px;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+
+  .integrityTitle {
+    font-size: 46px;
+  }
+
+  .integrityDescription {
+    max-width: 500px;
+    margin-top: 28px;
+    font-size: 24px;
+    line-height: 1.42;
+  }
+
+  .frameParent34 {
+    top: 180px;
+    left: 50%;
+    width: 1280px;
+    max-width: none;
+    margin: 0;
+    translate: none;
+    transform: translateX(-50%) scale(0.56);
+    transform-origin: top center;
+    gap: 50px;
+    z-index: 4;
+  }
+
+  .frameParent36 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .journeyTimeline {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: start;
+    column-gap: 54px;
+    row-gap: 0;
+  }
+
+  .journeyTrack {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 12.5%;
+    right: 12.5%;
+    bottom: auto;
+    width: auto;
+    height: 50px;
+    transform: none;
+  }
+
+  .journeyTrack::after {
+    display: block;
+    top: 50%;
+    left: 1.4%;
+    right: 1.4%;
+    bottom: auto;
+    width: auto;
+    height: 15px;
+    transform: translateY(-50%);
+  }
+
+  .journeyStage {
+    display: flex;
+    grid-template-columns: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: auto;
+  }
+
+  .journeyStage::after {
+    display: none;
+    content: none;
+  }
+
+  .journeyCircle {
+    width: 100px;
+    height: 100px;
+    flex: 0 0 100px;
+    transform: none;
+  }
+
+  .journeyCircle::before {
+    width: 70px;
+    height: 70px;
+  }
+
+  .journeyCircle span {
+    font-size: 28px;
+  }
+
+  .journeyCard {
+    width: 280px;
+    min-height: 150px;
+    height: auto;
+    padding: 20px 16px 18px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .journeyCardTitle {
+    margin-bottom: 22px;
+    font-size: 24px;
+  }
+
+  .journeyCardDescription {
+    max-width: 220px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .whyNeuroLxpSection {
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    width: 1440px;
+    min-height: 700px;
+    padding: 80px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%) scale(0.46);
+    transform-origin: top center;
+    overflow: visible;
+    z-index: 8;
+  }
+
+  .whyNeuroLxpContainer {
+    width: 100%;
+    max-width: 1250px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .whyNeuroLxpContent {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .whyNeuroLxpBadge {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+
+  .whyNeuroLxpTitle {
+    font-size: 54px;
+    line-height: 1.2;
+  }
+
+  .whyNeuroLxpDescription {
+    max-width: 620px;
+    margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .skillCircleContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 55px;
+  }
+
+  .skillCircleItem {
+    width: 150px;
+    height: 190px;
+  }
+
+  .skillCircleSvg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .whyNeuroLxpVisual {
+    width: 100%;
+    height: 450px;
+  }
+
+  .image20Parent .frameParent4 > * {
+    width: 270px;
+    min-width: 270px;
+    max-width: 270px;
+    height: 270px;
+    min-height: 270px;
+    flex: 0 0 270px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .image20Parent .frameParent2,
+	.image20Parent .digitalLibrariesParent {
+    box-sizing: border-box;
+  }
+
+  .image20Parent .academicResearch,
+	.image20Parent .discoverTrustedAcademic,
+	.image20Parent .accessCredibleResearch,
+	.image20Parent .turnResearchInto {
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  .frameParent10 {
+    padding-top: 18px;
+  }
+
+  .frameParent11 {
+    margin-top: 12px;
+  }
+
+  .neurolxp21Parent,
+  .neurolxp21Wrapper,
+  .neurolxp21,
+  .neurolxp212,
+  .arrowRightDoubleParent {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .frameParent10,
+  .frameParent11 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .requestDemoWrapper,
+  .frameWrapper5 {
+    transform: translateY(-12px);
+  }
+
+  .trackOutcomesBadge {
+    font-size: 24px;
+    padding: 16px 34px;
+    border-radius: 34px;
+    line-height: 30px;
+  }
+
+  .buildConfidenceThroughContainer {
+    max-width: 900px;
+    height: auto;
+    font-size: 46px;
+    line-height: 1.4;
+    white-space: normal;
+    margin: 0 auto;
+  }
+
+  .empowerLearnersTo {
+    max-width: 860px;
+    font-size: 26px;
+    line-height: 1.45;
+  }
+
+  .frameParent23 {
+    width: 620px;
+    height: 290px;
+    display: grid;
+    grid-template-columns: repeat(2, 290px);
+    grid-template-rows: repeat(2, 125px);
+    column-gap: 26px;
+    row-gap: 24px;
+    position: relative;
+    transform: none;
+    transform-origin: top left;
+    margin-left: 0;
+    align-items: stretch;
+    justify-content: start;
+  }
+
+  .frameParent26 {
+    display: contents;
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  .frameParent24,
+  .frameParent27,
+  .frameParent29,
+  .frameParent30 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 290px;
+    height: 125px;
+    min-height: 125px;
+    max-height: 125px;
+    padding: 8px 20px 12px;
+    border-radius: 34px 34px 0 34px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .frameParent24 { grid-column: 1; grid-row: 1; }
+  .frameParent27 { grid-column: 2; grid-row: 1; }
+  .frameParent29 { grid-column: 1; grid-row: 2; }
+  .frameParent30 { grid-column: 2; grid-row: 2; }
+
+  .frameParent25,
+  .frameParent28,
+  .frameParent31,
+  .frameChild15,
+  .frameChild16,
+  .frameChild17,
+  .frameChild18 {
+    width: 48px;
+    height: 48px;
+  }
+
+  .b5 {
+    font-size: 25px;
+  }
+
+  .citationExcellenceParent,
+  .academicIntegrityParent,
+  .intellectualPropertyParent,
+  .ethicalKnowledgeParent {
+    width: 210px;
+    top: 19px;
+    left: 64px;
+    gap: 7px;
+  }
+
+  .citationExcellence,
+  .academicIntegrity,
+  .intellectualProperty,
+  .ethicalKnowledge {
+    height: auto;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .citeSourcesAccuratelyContainer,
+  .createOriginalPlagiarismContainer,
+  .respectCopyrightGiveContainer,
+  .useKnowledgeResponsiblyContainer {
+    width: 205px;
+    height: auto;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .frameParent23 {
+    position: relative;
+    width: 511.5px;
+    height: 696px;
+    display: block;
+    margin: 0;
+    transform: none;
+    transform-origin: top left;
+  }
+
+  .frameParent26 {
+    position: absolute;
+    top: 182px;
+    left: 131.5px;
+    width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .frameParent24,
+  .frameParent27,
+  .frameParent29,
+  .frameParent30 {
+    width: 380px;
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    padding: 9px 32px 16px;
+    border-radius: 50px 50px 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .frameParent24 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .frameParent27,
+  .frameParent29 {
+    position: relative;
+    top: auto;
+    left: auto;
+    align-self: stretch;
+  }
+
+  .frameParent30 {
+    position: absolute;
+    top: 546px;
+    left: 0;
+  }
+
+  .frameParent25,
+  .frameParent28,
+  .frameParent31 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+  }
+
+  .frameChild15,
+  .frameChild16,
+  .frameChild17,
+  .frameChild18 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+  }
+
+  .b5 {
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .citationExcellenceParent,
+  .academicIntegrityParent,
+  .intellectualPropertyParent,
+  .ethicalKnowledgeParent {
+    position: absolute;
+    top: calc(50% - 52px);
+    left: 85px;
+    width: 270px;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .citationExcellenceParent {
+    width: 256px;
+  }
+
+  .academicIntegrityParent {
+    width: 252px;
+  }
+
+  .citationExcellence,
+  .academicIntegrity,
+  .intellectualProperty,
+  .ethicalKnowledge {
+    height: 32px;
+    font-size: 24px;
+    line-height: 32px;
+    white-space: nowrap;
+  }
+
+  .citeSourcesAccuratelyContainer,
+  .createOriginalPlagiarismContainer,
+  .respectCopyrightGiveContainer,
+  .useKnowledgeResponsiblyContainer {
+    width: 270px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+.frameParent22{
+    transform: scale(0.90);
+    transform-origin: top left;
+    top: -210px;
+    left: -45px;
+}
+
+.frameParent23{
+    transform: scale(0.90);
+    transform-origin: top left;
+}
+
+.vectorParent{
+    transform: scale(0.90);
+    transform-origin: top left;
+}
+
+.frameParent34{
+    top: 120px;
+}
+.frameParent22{
+  transform:scale(0.78);
+  transform-origin:top left;
+  top:-250px;
+  left:-65px;
+}
+
+.frameParent23{
+  transform:scale(0.78);
+  transform-origin:top left;
+}
+
+.vectorParent{
+  transform:scale(0.78);
+  transform-origin:top left;
+}
+
+.frameParent24,
+.frameParent27,
+.frameParent29,
+.frameParent30{
+  width:340px;
+  height:132px;
+}
+
+.citationExcellence,
+.academicIntegrity,
+.intellectualProperty,
+.ethicalKnowledge{
+  font-size:21px;
+}
+
+.citeSourcesAccuratelyContainer,
+.createOriginalPlagiarismContainer,
+.respectCopyrightGiveContainer,
+.useKnowledgeResponsiblyContainer{
+  font-size:17px;
+  line-height:23px;
+}
+
+.frameParent34{
+  top:40px;
+}
+  .frameParent22 {
+    top: -210px;
+    left: 10px;
+    gap: 0;
+  }
+
+  .vectorParent {
+    margin-left: -100px;
+  }
+
+  .frameParent34 {
+    top: 80px;
+  }
+  .frameParent22{
+    left: 35px;
+  }
+
+  .frameParent23{
+    margin-left: 20px;
+  }
+
+  .vectorParent{
+    margin-left: -70px;
+  }
+  .frameParent34{
+      top: -40px;
+      margin-top: 0;
+      transform: translateY(-120px);
+      z-index: 2;
+  }
+  .frameParent34{
+      top: -120px;
+      left: -25px;
+      margin-top: 0;
+      transform: translateY(-180px);
+      z-index: 2;
+  }
+  
+  .frameParent34{
+      top: -190px;
+      left: -40px;
+      transform: scale(0.88) translateY(-220px);
+      transform-origin: top left;
+      margin-top: 0;
+      z-index: 2;
+  }
+
+.frameParent34{
+    top:-160px;          
+    left:-30px;
+    transform:scale(0.84) translateY(-180px);
+    transform-origin:top left;
+}
+
+.frameChild19,
+.frameChild20,
+.frameChild21,
+.frameChild22,
+.frameChild23,
+.frameChild24{
+    width:52px;
+    height:52px;
+}
+
+.b1,
+.b3{
+    font-size:24px;
+    line-height:52px;
+}
+
+.b1,.b2,.b3,.b4,.b5,.b6{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:52px;
+    height:52px;
+    font-size:24px;
+    font-weight:700;
+}
+
+.frameParent34{
+    top:-260px;          
+    left:-30px;
+    transform:scale(0.80); 
+    transform-origin:top left;
+}
+
+.frameChild19,
+.frameChild20,
+.frameChild21,
+.frameChild22,
+.frameChild23,
+.frameChild24{
+    width:48px;
+    height:48px;
+}
+
+.b1,.b2,.b3,.b4,.b5,.b6{
+    width:48px;
+    height:48px;
+    font-size:22px;
+    line-height:48px;
+}
+
+.frameParent34{
+    top:-440px;
+    left:-30px;
+    transform:scale(0.78) translateY(0);
+    transform-origin:top left;
+    margin-top:0;
+}
+  .frameParent34 {
+    top: -440px;
+    left: 50%;
+    width: 1280px;
+    transform: translateX(-50%) scale(0.78);
+    transform-origin: top center;
+    gap: 42px;
+    margin-top: 0;
+  }
+  
+  .frameChild21 {
+    width: 310px;
+    height: 62px;
+    min-width: 310px;
+    min-height: 62px;
+    max-width: 310px;
+    object-fit: contain;
+    flex: 0 0 auto;
+  }
+
+  .journeyTimeline {
+    width: 100%;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 42px;
+    align-items: start;
+  }
+
+  .journeyTrack {
+    display: block;
+    top: 16px;
+    left: 12.5%;
+    right: 12.5%;
+    height: 50px;
+    transform: none;
+  }
+
+  .journeyTrack::after {
+    top: 50%;
+    height: 14px;
+    transform: translateY(-50%);
+  }
+
+  .journeyStage,
+  .journeyStage:nth-child(2),
+  .journeyStage:nth-child(3),
+  .journeyStage:nth-child(4),
+  .journeyStage:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    transform: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .journeyCircle,
+  .journeyStage:nth-child(2) .journeyCircle,
+  .journeyStage:nth-child(3) .journeyCircle,
+  .journeyStage:nth-child(4) .journeyCircle,
+  .journeyStage:nth-child(5) .journeyCircle {
+    width: 82px;
+    height: 82px;
+    flex: 0 0 82px;
+    margin: 0 auto;
+    transform: none;
+    top: auto;
+    left: auto;
+  }
+
+  .journeyCircle::before {
+    width: 58px;
+    height: 58px;
+  }
+
+  .journeyCircle span,
+  .journeyStage:nth-child(2) .journeyCircle span,
+  .journeyStage:nth-child(3) .journeyCircle span,
+  .journeyStage:nth-child(4) .journeyCircle span,
+  .journeyStage:nth-child(5) .journeyCircle span {
+    width: auto;
+    height: auto;
+    display: block;
+    font-size: 21px;
+    line-height: 1;
+    transform: none;
+    margin: 0;
+  }
+
+  .journeyCard {
+    width: 245px;
+    min-height: 122px;
+    height: 122px;
+    padding: 15px 13px 13px;
+    border-radius: 12px;
+  }
+
+  .journeyCardTitle {
+    margin: 0 0 10px;
+    font-size: 19px;
+    line-height: 1.15;
+  }
+
+  .journeyCardDescription {
+    max-width: 205px;
+    font-size: 15px;
+    line-height: 1.32;
+  }
+
+  .journeyCorner {
+    width: 29px;
+    height: 29px;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 790px){
+  .journeyCard{
+    width:220px;
+    min-height:108px;
+    height:108px;
+    padding:12px 10px;
+  }
+
+  .journeyCardTitle{
+    font-size:17px;
+    margin-bottom:8px;
+  }
+
+  .journeyCardDescription{
+    max-width:185px;
+    font-size:13px;
+    line-height:1.25;
+  }
+
+  .journeyTimeline{
+    column-gap:28px;
+  }
+
+  .journeyCircle{
+    width:76px;
+    height:76px;
+    flex:0 0 76px;
+  }
+
+  .journeyCircle::before{
+    width:54px;
+    height:54px;
+  }
+
+  .journeyCircle span{
+    font-size:20px;
+  }
+
+  .frameChild21{
+    width:330px;
+    height:66px;
+  }
+}
+
+@media screen and (min-width:740px) and (max-width:790px){
+  .frameParent34{
+    transform:translateX(-50%) scale(0.68);
+    transform-origin:top center;
+    width:1280px;
+  }
+
+  .journeyTimeline{
+    column-gap:18px;
+  }
+
+  .journeyCard{
+    width:200px;
+    min-height:96px;
+    height:96px;
+    padding:10px 8px;
+  }
+
+  .journeyCardTitle{
+    font-size:15px;
+    margin-bottom:6px;
+  }
+
+  .journeyCardDescription{
+    max-width:168px;
+    font-size:12px;
+    line-height:1.2;
+  }
+
+  .journeyCircle{
+    width:70px;
+    height:70px;
+    flex:0 0 70px;
+  }
+
+  .journeyCircle::before{
+    width:50px;
+    height:50px;
+  }
+
+  .journeyCircle span{
+    font-size:18px;
+  }
+
+  .journeyTrack{
+    top:12px;
+  }
+  .frameChild21{
+    width:300px;
+    height:60px;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 790px) {
+  .frameParent34 {
+    left: 50%;
+    width: 1280px;
+    transform: translateX(-50%) scale(0.68);
+    transform-origin: top center;
+  }
+
+  .frameChild21 {
+    width: 285px;
+    height: 56px;
+    min-width: 285px;
+    min-height: 56px;
+    max-width: 285px;
+    object-fit: contain;
+    flex: 0 0 auto;
+  }
+
+  .learningJourneyBadge,
+  .frameParent34 [class*="Badge"] {
+    min-width: 285px;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  
+  .masterInformationUnlockContainer {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+
+  .frameParent34 [class*="awareness"],
+  .frameParent34 [class*="mastery"] {
+    font-size: 23px;
+    line-height: 1.35;
+  }
+
+  .journeyTimeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: start;
+    column-gap: 18px;
+    width: 100%;
+  }
+
+  .journeyTrack {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 12.5%;
+    right: 12.5%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+    background: #dfe6e9;
+    box-shadow:
+      inset -4px -4px 8px #ffffff,
+      inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    transform: none;
+    z-index: 0;
+  }
+
+  .journeyTrack::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 1.4%;
+    right: 1.4%;
+    height: 15px;
+    transform: translateY(-50%);
+    border-radius: 100px;
+    background: #dfe6e9;
+    box-shadow:
+      -4px -4px 8px #ffffff,
+      4px 4px 8px #c6c6c9;
+  }
+
+  .journeyStage,
+  .journeyStage:nth-child(2),
+  .journeyStage:nth-child(3),
+  .journeyStage:nth-child(4),
+  .journeyStage:nth-child(5) {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+  }
+
+  .journeyCircle,
+  .journeyStage:nth-child(2) .journeyCircle,
+  .journeyStage:nth-child(3) .journeyCircle,
+  .journeyStage:nth-child(4) .journeyCircle,
+  .journeyStage:nth-child(5) .journeyCircle {
+    position: relative;
+    z-index: 2;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    flex: 0 0 70px;
+    margin: 0 auto;
+    padding: 0;
+    transform: none;
+    display: grid;
+    place-items: center;
+  }
+
+  .journeyCircle::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .journeyCircle span,
+  .journeyStage:nth-child(2) .journeyCircle span,
+  .journeyStage:nth-child(3) .journeyCircle span,
+  .journeyStage:nth-child(4) .journeyCircle span,
+  .journeyStage:nth-child(5) .journeyCircle span {
+    position: relative;
+    z-index: 3;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transform: none;
+    display: block;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+  }
+  .journeyCard {
+    width: 210px;
+    min-height: 108px;
+    height: 108px;
+    padding: 12px 10px;
+  }
+
+  .journeyCardTitle {
+    margin: 0 0 8px;
+    font-size: 18px;
+    line-height: 1.15;
+  }
+
+  .journeyCardDescription {
+    max-width: 185px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 790px) {
+  .frameParent34 > .frameChild21,
+  .frameParent34 .frameChild21 {
+    width: 330px;
+    height: 66px;
+    min-width: 330px;
+    min-height: 66px;
+    max-width: 330px;
+    object-fit: contain;
+    transform: none;
+  }
+
+  .frameParent34 .learningJourneyBadge,
+  .frameParent34 [class*="learningJourney"],
+  .frameParent34 [class*="LearningJourney"] {
+    min-width: 330px;
+    height: 66px;
+    padding: 0 26px;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+
+  .frameParent34 .journeyTimeline > .journeyTrack {
+    display: block;
+  }
+
+  .frameParent34 .journeyTimeline > .journeyStage .journeyCircle,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-child(1) .journeyCircle,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-child(2) .journeyCircle,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-child(3) .journeyCircle,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-child(4) .journeyCircle,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-child(5) .journeyCircle,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-of-type(1) .journeyCircle,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-of-type(2) .journeyCircle,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-of-type(3) .journeyCircle,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-of-type(4) .journeyCircle,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-of-type(5) .journeyCircle {
+    position: relative;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    transform: translateY(0);
+    translate: 0 0;
+  }
+
+  .frameParent34 .journeyTimeline > .journeyStage,
+  .frameParent34 .journeyTimeline > .journeyStage:nth-child(1),
+  .frameParent34 .journeyTimeline > .journeyStage:nth-child(2),
+  .frameParent34 .journeyTimeline > .journeyStage:nth-child(3),
+  .frameParent34 .journeyTimeline > .journeyStage:nth-child(4),
+  .frameParent34 .journeyTimeline > .journeyStage:nth-child(5),
+  .frameParent34 .journeyTimeline > .journeyStage:nth-of-type(1),
+  .frameParent34 .journeyTimeline > .journeyStage:nth-of-type(2),
+  .frameParent34 .journeyTimeline > .journeyStage:nth-of-type(3),
+  .frameParent34 .journeyTimeline > .journeyStage:nth-of-type(4),
+  .frameParent34 .journeyTimeline > .journeyStage:nth-of-type(5) {
+    top: 0;
+    bottom: auto;
+    margin-top: 0;
+    transform: translateY(0);
+    translate: 0 0;
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1099px) {
+  .informationLiteracy {
+    width: 138.89%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: top center;
+    zoom: 0.72;
+    overflow: hidden;
+  }
+  .informationLiteracyChild,
+  .frameParent13,
+  .frameParent19,
+  .image20Parent,
+  .frameParent22,
+  .frameParent34,
+  .whyNeuroLxpSection {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1099px){
+    .frameParent8{
+        left:350px;
+		font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1099px) {
+  .frameParent41 {
+    position: absolute;
+    left: 320px;
+    right: auto;
+    margin-left: 0;
+    translate: none;
+    transform: none;
+  }
+}
+
+@media screen and (min-width:740px) and (max-width:790px){
+  .frameParent40,
+  .frameParent41{
+      margin-top:-60px;
+  }
+
+  .builtForTheWayLearnersActParent{
+      gap:6px;
+  }
+
+  .neurolxpTransformsInformation{
+      max-width:520px;
+      width:520px;
+      white-space:normal;
+      line-height:30px;
+      font-size:22px;
+      margin:0 auto;
+  }
+
+  .frameParent47{
+      top:-28px;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 790px) {
+  .frameParent40 {
+    margin-top: -105px;
+    margin-bottom: 0;
+    translate: 0 -20px;
+  }
+
+  .frameParent41 {
+    margin-top: -105px;
+    translate: 0 -20px;
+  }
+
+  .builtForTheWayLearnersActParent {
+    gap: 4px;
+  }
+
+  .neurolxpTransformsInformation {
+    width: 520px;
+    max-width: 520px;
+    margin: 0 auto;
+    white-space: normal;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  .frameParent47 {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 790px) {
+  .frameParent40 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 24px);
+    margin: -55px auto 8px;
+    translate: none;
+    transform: none;
+  }
+
+  .builtForTheWayLearnersActParent {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .builtForTheContainer {
+    height: auto;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 27px;
+    line-height: 34px;
+  }
+
+  .neurolxpTransformsInformation {
+    width: 600px;
+    max-width: calc(100% - 70px);
+    margin: 0 auto;
+    white-space: normal;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  .frameParent41 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 385px;
+    margin: -4px 0 0;
+    padding: 0 8px 0 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    translate: none;
+    transform: none;
+    overflow: visible;
+  }
+  .skillCircleRow {
+    position: relative;
+    top: 8px;
+    left: auto;
+    width: 350px;
+    min-width: 350px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    align-content: start;
+    column-gap: 34px;
+    row-gap: 34px;
+    flex-wrap: nowrap;
+  }
+
+  .skillCircle {
+    width: 150px;
+    min-width: 150px;
+  }
+
+  .skillCircle:nth-child(3) {
+    grid-column: 1 / 3;
+    justify-self: center;
+    transform: none;
+  }
+
+  .skillCircleGraphic,
+  .skillCircleGraphic::before,
+  .skillCircleGraphic .skillCircleProgress {
+    width: 108px;
+    height: 108px;
+  }
+
+  .skillCircleGraphic .skillCircleInner {
+    width: 70px;
+    height: 70px;
+  }
+
+  .skillCircleValue {
+    font-size: 19px;
+  }
+
+  .skillCircleLabel {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  .frameParent47 {
+    position: relative;
+    top: 2px;
+    left: auto;
+    width: 360px;
+    min-width: 360px;
+    height: 370px;
+    margin: 0 -8px 0 0;
+    flex: 0 0 360px;
+    aspect-ratio: auto;
+    overflow: visible;
+  }
+
+  .frameChild35 {
+    top: 0;
+    left: 24%;
+    width: 76%;
+    height: 100%;
+    border-radius: 120px 0 0 34px;
+  }
+
+  .creativeExcitedBrunetteBusiIcon {
+    top: -5%;
+    right: -2px;
+    width: 100%;
+    height: 108%;
+    object-fit: cover;
+    transform: none;
+  }
+}
+
+@media screen and (min-width:740px) and (max-width:790px){ 
+  .whyNeuroLxpSection{
+      margin-top:-90px;
+      transform:translateY(-90px) scale(0.46);
+      transform-origin:top center;
+  }
+  
+  .frameParent40,
+  .frameParent41{
+      position:relative;
+      top:-450px;
+  }
+}
+
+@media screen and (min-width:740px) and (max-width:790px){
+
+  .frameParent40{
+      margin-bottom:28px;
+  }
+
+  .builtForTheWayLearnersActParent{
+      gap:12px;
+      margin-bottom:20px;
+  }
+
+  .neurolxpTransformsInformation{
+      margin-bottom:20px;
+      line-height:30px;
+  }
+
+  .frameParent41{
+      margin-top:20px;
+      gap:16px;
+  }
+}
+
+@media screen and (min-width:740px) and (max-width:790px){
+
+    .whyNeuroLxpSection{
+        margin-top:-90px;
+        margin-bottom:-520px;
+        transform:translateY(-90px) scale(0.46);
+        transform-origin:top center;
+        height:auto;
+        min-height:0;
+        padding-bottom:0;
+    }
+
+    .frameParent40,
+    .frameParent41{
+        position:relative;
+        top:-450px;
+    }
+
+    .informationLiteracy{
+        height:auto;
+        min-height:unset;
+        padding-bottom:0;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 790px) {
+
+  .informationLiteracy {
+    height: auto;
+    min-height: 0;
+    padding-bottom: 0;
+    margin-bottom: -80px;
+    overflow: hidden;
+  }
+
+  .frameParent41 {
+    margin-bottom: -450px;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 790px) {
+
+  .frameParent47 {
+    position: relative;
+    width: 360px;
+    min-width: 360px;
+    height: 370px;
+    overflow: visible;
+    isolation: isolate;
+  }
+
+  .frameChild35 {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    bottom: 0;
+    left: 24%;
+    width: 76%;
+    height: auto;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .creativeExcitedBrunetteBusiIcon {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: auto;
+
+    width: auto;
+    height: 370px;
+    max-width: none;
+    max-height: none;
+
+    object-fit: contain;
+    object-position: right bottom;
+
+    transform: none;
+    translate: none;
+    clip-path: none;
+
+    z-index: 2;
+    overflow: visible;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 790px) {
+  .frameParent47 {
+    position: relative;
+    width: 360px;
+    min-width: 360px;
+    height: 370px;
+    overflow: visible;
+    isolation: isolate;
+  }
+
+  .frameChild35 {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    bottom: 0;
+    left: 24%;
+    width: 76%;
+    height: auto;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .creativeExcitedBrunetteBusiIcon {
+    position: absolute;
+    top: auto;
+    right: -2px;
+    bottom: 0;
+    left: auto;
+    width: auto;
+    height: 420px;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+    object-position: right bottom;
+    transform: none;
+    translate: none;
+    clip-path: none;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1099px) {
+  .frameParent47 {
+    position: relative;
+    width: 500px;
+    min-width: 500px;
+    height: 430px;
+    overflow: visible;
+    isolation: isolate;
+  }
+
+  .frameChild35 {
+    position: absolute;
+    top: 58px;
+    right: 0;
+    bottom: 0;
+    left: 24.5%;
+    width: 75.5%;
+    height: auto;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .creativeExcitedBrunetteBusiIcon {
+    position: absolute;
+    top: auto;
+    right: -2px;
+    bottom: 0;
+    left: auto;
+    width: auto;
+    height: 510px;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+    object-position: right bottom;
+    transform: none;
+    translate: none;
+    clip-path: none;
+    z-index: 2;
+  }
+}
+
+
+@media screen and (min-width: 1100px) {
+  .frameParent47 {
+    position: absolute;
+    width: 677px;
+    height: 542px;
+    overflow: visible;
+    isolation: isolate;
+  }
+
+  .frameChild35 {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 166px;
+    width: 511px;
+    height: auto;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .creativeExcitedBrunetteBusiIcon {
+    position: absolute;
+    top: auto;
+    right: -1px;
+    bottom: 0;
+    left: auto;
+    width: auto;
+    height: 650px;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+    object-position: right bottom;
+    transform: none;
+    translate: none;
+    clip-path: none;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width:740px) and (max-width:790px){
+.creativeExcitedBrunetteBusiIcon{right:-200px;}
+}
+@media screen and (min-width:1000px) and (max-width:1099px){
+.creativeExcitedBrunetteBusiIcon{right:-200px;}
+}
+@media screen and (min-width:1100px){
+.creativeExcitedBrunetteBusiIcon{right:-200px;}
 }

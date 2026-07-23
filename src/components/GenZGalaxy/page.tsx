@@ -30,46 +30,46 @@ const GenZgalaxy: NextPage = () => {
       </svg>
 
       <div className="frameContainer">
-        <div className="frameDiv">
-          <div className="frameWrapper frameRotate1st">
-            <Image className="frameChild heroImageStep" style={{ animationDelay: "0s" }} src="/images/img2.png" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
-            <Image className="frameChild heroImageStep heroImg6Position" style={{ animationDelay: "-3s" }} src="/images/img6.jpg" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
-            <Image className="frameChild heroImageStep" style={{ animationDelay: "-6s" }} src="/images/img4.jpg" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
-          </div>
-          <div className="frameParent2">
-            <div className="frameWrapper2 frameSlotMiddle frameRotateMiddle">
-              <Image className="frameChild heroImageStep" style={{ animationDelay: "-1s" }} src="/images/img1.png" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
-              <Image className="frameChild heroImageStep" style={{ animationDelay: "-4s" }} src="/images/img3.png" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
-              <Image className="frameChild heroImageStep" style={{ animationDelay: "-7s" }} src="/images/img5.jpg" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
-            </div>
-            <div className="frameWrapper2 frameSlotLast frameRotateLast">
-              <Image className="frameChild heroImageStep" style={{ animationDelay: "-2s" }} src="/images/success.png" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
-              <Image className="frameChild heroImageStep" style={{ animationDelay: "-5s" }} src="/images/img8.jpg" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
-              <Image className="frameChild heroImageStep heroImg9Position" style={{ animationDelay: "-8s" }} src="/images/img9.jpg" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
-            </div>
-          </div>
-        </div>
         <div className="frameParent3">
           <div className="frameParent4">
-            <div className="frameIcon">
-              <div className="learnMoreFlat">Learn More</div>
-            </div>
+            <button type="button" className="frameIcon">
+              <span className="learnMoreFlat">Learn More</span>
+            </button>
             <div className="frameWrapper4">
               <div className="explorePlatformParent">
-                <div className="explorePlatform">Explore Platform</div>
+                <a href="#platform-overview" className="explorePlatform">Explore Platform</a>
               </div>
             </div>
           </div>
           <div className="frameParent5">
             <div className="genzgalaxyGroup">
-              <b className="genzgalaxy3">
+              <h1 className="genzgalaxy3">
                 <span className="gen">Gen</span>
                 <span className="z">Z</span>
                 <span className="gen">galaxy</span>
-              </b>
-              <b className="aLearningSpace">A Learning Space that Actually Feels Modern</b>
+              </h1>
+              <p className="aLearningSpace">A Learning Space that Actually Feels Modern</p>
             </div>
-            <div className="genzgalaxyIsBuilt">GenZGalaxy is built for the digital generation. Fast, interactive learning that turns every journey into an experience worth exploring</div>
+            <p className="genzgalaxyIsBuilt">GenZGalaxy is built for the digital generation. Fast, interactive learning that turns every journey into an experience worth exploring</p>
+          </div>
+        </div>
+        <div className="frameDiv">
+          <div className="frameWrapper">
+            <Image className="frameChild heroImageStep" style={{ animationDelay: "0s" }} src="/images/img2.png" width={300} height={520} sizes="300px" alt="" aria-hidden="true" priority />
+            <Image className="frameChild heroImageStep heroImg6Position" style={{ animationDelay: "-3s" }} src="/images/img6.jpg" width={300} height={520} sizes="300px" alt="" aria-hidden="true" />
+            <Image className="frameChild heroImageStep" style={{ animationDelay: "-6s" }} src="/images/img4.jpg" width={300} height={520} sizes="300px" alt="" aria-hidden="true" />
+          </div>
+          <div className="frameParent2">
+            <div className="frameWrapper2 frameSlotMiddle">
+              <Image className="frameChild heroImageStep" style={{ animationDelay: "-1s" }} src="/images/img1.png" width={300} height={520} sizes="300px" alt="" aria-hidden="true" priority />
+              <Image className="frameChild heroImageStep" style={{ animationDelay: "-4s" }} src="/images/img3.png" width={300} height={520} sizes="300px" alt="" aria-hidden="true" />
+              <Image className="frameChild heroImageStep" style={{ animationDelay: "-7s" }} src="/images/img5.jpg" width={300} height={520} sizes="300px" alt="" aria-hidden="true" />
+            </div>
+            <div className="frameWrapper2 frameSlotLast">
+              <Image className="frameChild heroImageStep" style={{ animationDelay: "-2s" }} src="/images/success.png" width={300} height={520} sizes="300px" alt="" aria-hidden="true" priority />
+              <Image className="frameChild heroImageStep" style={{ animationDelay: "-5s" }} src="/images/img8.jpg" width={300} height={520} sizes="300px" alt="" aria-hidden="true" />
+              <Image className="frameChild heroImageStep heroImg9Position" style={{ animationDelay: "-8s" }} src="/images/img9.jpg" width={300} height={520} sizes="300px" alt="" aria-hidden="true" />
+            </div>
           </div>
         </div>
       </div>
@@ -77,12 +77,12 @@ const GenZgalaxy: NextPage = () => {
         <div className="frameParent7">
           <div className="frameParent8">
             <div className="whyGenzBadge">Why genZgalaxy</div>
-            <b className="builtForTheContainer">
+            <h2 className="builtForTheContainer">
               <span className="builtForThe">{`Built for the `}</span>
               <span className="futureOfLearning">Future of Learning</span>
-            </b>
+            </h2>
           </div>
-          <div className="modernLearnersExpect">Modern learners expect fast, intuitive, and interactive experiences that keep them engaged</div>
+          <p className="modernLearnersExpect">Modern learners expect fast, intuitive, and interactive experiences that keep them engaged</p>
         </div>
         <div className="frameParent9">
           <div className="frameParent10">
@@ -98,7 +98,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#b39ddb" />
               </svg>
 
-              <div className="gamifiedElements">Gamified Elements</div>
+              <h3 className="gamifiedElements">Gamified Elements</h3>
             </div>
             <div className="polygonParent">
               <svg className="polygonIcon" viewBox="0 0 300 310" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -112,10 +112,10 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#f4a6c6" />
               </svg>
 
-              <div className="interactiveContent">
+              <h3 className="interactiveContent">
                 Interactive content
                 <br />
-              </div>
+              </h3>
             </div>
             <div className="polygonParent">
               <svg className="polygonIcon" viewBox="0 0 300 310" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -129,7 +129,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#f78888" />
               </svg>
 
-              <div className="shortFocusedLessons">Short, Focused lessons</div>
+              <h3 className="shortFocusedLessons">Short, Focused lessons</h3>
             </div>
             <div className="polygonParent">
               <svg className="polygonIcon" viewBox="0 0 300 310" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -143,7 +143,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#7fae5c" />
               </svg>
 
-              <div className="groupBasedLearning">Group-Based learning</div>
+              <h3 className="groupBasedLearning">Group-Based learning</h3>
             </div>
           </div>
           <div className="frameParent10">
@@ -159,7 +159,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#c9a227" />
               </svg>
 
-              <div className="mobileFriendlyDesign">Mobile-Friendly design</div>
+              <h3 className="mobileFriendlyDesign">Mobile-Friendly design</h3>
             </div>
             <div className="polygonParent">
               <svg className="polygonIcon" viewBox="0 0 300 310" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -173,7 +173,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#9694d4" />
               </svg>
 
-              <div className="challengesRewards">{`Challenges & Rewards`}</div>
+              <h3 className="challengesRewards">{`Challenges & Rewards`}</h3>
             </div>
             <div className="polygonParent">
               <svg className="polygonIcon" viewBox="0 0 300 310" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -187,7 +187,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#4fb8b6" />
               </svg>
 
-              <div className="gamifiedElements">Responsive Quizzes</div>
+              <h3 className="gamifiedElements">Responsive Quizzes</h3>
             </div>
             <div className="polygonParent">
               <svg className="polygonIcon" viewBox="0 0 300 310" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -201,51 +201,50 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#a99bc9" />
               </svg>
 
-              <div className="gamifiedElements">Peer Discussion</div>
+              <h3 className="gamifiedElements">Peer Discussion</h3>
             </div>
           </div>
         </div>
       </div>
       <div className="image20Parent">
-        <div className="image20" />
         <div className="rectangleParent">
-          <Image className="rectangleIcon" src="/images/bg.png" width={1207} height={946} sizes="100vw" alt="" aria-hidden="true" />
+          <Image className="rectangleIcon" src="/images/bg.png" width={1207} height={946} sizes="1216px" alt="" aria-hidden="true" />
           <div className="wrapperPolygon14">
-            <Image className="wrapperPolygon14Child" src="/images/octagon.png" width={1062.2} height={1023.7} sizes="100vw" alt="" aria-hidden="true" />
+            <Image className="wrapperPolygon14Child" src="/images/octagon.png" width={1062} height={1024} sizes="820px" alt="" aria-hidden="true" />
           </div>
-          <Image className="successfulYoungBusinessmanSIcon" src="/images/success.png" width={653} height={978} sizes="100vw" alt="" aria-hidden="true" />
+          <Image className="successfulYoungBusinessmanSIcon" src="/images/success.png" width={653} height={978} sizes="653px" alt="" aria-hidden="true" />
           <div className="frameChild18" />
           <div className="frameParent12">
             <div className="frameParent13">
               <div className="frameParent14">
                 <div className="whatMakesUsDifferentBadge">What Makes Us Different</div>
-                <b className="learnYourWay">Learn Your Way, Every Day</b>
+                <h2 className="learnYourWay">Learn Your Way, Every Day</h2>
               </div>
-              <div className="learnAtYour">Learn at your pace with smart suggestions</div>
+              <p className="learnAtYour">Learn at your pace with smart suggestions</p>
             </div>
             <div className="frameParent15">
               <div className="frameParent16">
                 <div className="frameChild20" />
                 <div className="skillPathWrapper">
-                  <div className="skillPath">{`Skill Path `}</div>
+                  <a href="#skill-path" className="skillPath">{`Skill Path `}</a>
                 </div>
               </div>
               <div className="frameParent16">
                 <div className="frameChild21" />
                 <div className="usefulResourcesWrapper">
-                  <div className="usefulResources">Useful Resources</div>
+                  <a href="#useful-resources" className="usefulResources">Useful Resources</a>
                 </div>
               </div>
               <div className="frameParent16">
                 <div className="frameChild21" />
                 <div className="practiceTasksWrapper">
-                  <div className="practiceTasks">Practice Tasks</div>
+                  <a href="#practice-tasks" className="practiceTasks">Practice Tasks</a>
                 </div>
               </div>
               <div className="frameParent16">
                 <div className="frameChild21" />
                 <div className="careerFocusedModulesWrapper">
-                  <div className="careerFocusedModules">Career focused modules</div>
+                  <a href="#career-modules" className="careerFocusedModules">Career focused modules</a>
                 </div>
               </div>
             </div>
@@ -257,15 +256,15 @@ const GenZgalaxy: NextPage = () => {
           <div className="frameParent21">
             <div className="frameParent8">
               <div className="outcomeDrivenBadge">Outcome- Driven Learning</div>
-              <b className="turnLearningInto">Turn learning into real-world results</b>
+              <h2 className="turnLearningInto">Turn learning into real-world results</h2>
             </div>
-            <div className="lessTheoryMore">Less theory, more real-world value making learning truly useful not just complete</div>
+            <p className="lessTheoryMore">Less theory, more real-world value making learning truly useful not just complete</p>
           </div>
           <div className="frameParent23">
             <div className="frameParent24">
               <div className="frameChild25" />
               <div className="technicalAwarenessParent">
-                <b className="technicalAwareness">Technical Awareness</b>
+                <h3 className="technicalAwareness">Technical Awareness</h3>
                 <div className="frameChild26" />
               </div>
               <div className="frameChild27">
@@ -279,7 +278,7 @@ const GenZgalaxy: NextPage = () => {
             <div className="frameParent25">
               <div className="frameChild28" />
               <div className="problemSolvingWrapper">
-                <b className="problemSolving">Problem Solving</b>
+                <h3 className="problemSolving">Problem Solving</h3>
               </div>
               <div className="frameChild29">
                 <svg width="48" height="48" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -296,7 +295,7 @@ const GenZgalaxy: NextPage = () => {
             <div className="frameParent26">
               <div className="frameChild30" />
               <div className="criticalThinkingWrapper">
-                <b className="technicalAwareness">Critical Thinking</b>
+                <h3 className="technicalAwareness">Critical Thinking</h3>
               </div>
               <div className="frameChild29b">
                 <svg width="48" height="48" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -308,7 +307,7 @@ const GenZgalaxy: NextPage = () => {
             <div className="frameParent27">
               <div className="frameChild32" />
               <div className="workingWithOthersWrapper">
-                <b className="workingWithOthers">Working with others</b>
+                <h3 className="workingWithOthers">Working with others</h3>
               </div>
               <div className="frameChild33">
                 <svg width="48" height="48" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -332,7 +331,7 @@ const GenZgalaxy: NextPage = () => {
                       <path d="M27.3389 16.7543L14.1367 23.1224C8.98958 25.6052 6.41602 26.8465 6.41602 28.8456C6.41602 30.8447 8.98958 32.0862 14.1367 34.5688L27.5846 41.0554C32.9194 43.6288 35.5868 44.9154 38.4403 44.9154C41.2941 44.9154 43.9615 43.6288 49.2964 41.0554L63.0065 34.4421C68.0612 32.0041 70.5885 30.7851 70.5827 28.7795C70.5769 26.7739 68.0629 25.5794 63.0344 23.1904C58.4484 21.0114 54.1191 19.0086 49.5136 16.8163C43.9237 14.1552 41.1286 12.8247 38.2918 12.8321C35.4553 12.8394 32.7497 14.1444 27.3389 16.7543Z" stroke="#162562" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
-                  <b className="jobReadySkills">Job-Ready Skills</b>
+                  <h3 className="jobReadySkills">Job-Ready Skills</h3>
                 </div>
               </div>
             </div>
@@ -359,14 +358,14 @@ const GenZgalaxy: NextPage = () => {
               <div className="frameParent31">
                 <div className="frameParent32">
                   <div className="learningTogetherBadge">Learning Together</div>
-                  <b className="greatLearningHappensContainer">
+                  <h2 className="greatLearningHappensContainer">
                     <span className="futureOfLearning">Great Learning</span>
                     <span className="happensTogether nowrapLine"> Happens</span>
                     <br />
                     <span className="happensTogether">Together</span>
-                  </b>
+                  </h2>
                 </div>
-                <div className="growTogetherWith">Grow together with collaborative learning experiences</div>
+                <p className="growTogetherWith">Grow together with collaborative learning experiences</p>
               </div>
             </div>
             <div className="frameParent33">
@@ -420,26 +419,25 @@ const GenZgalaxy: NextPage = () => {
       </div>
 
       <div className="rectangleGroup">
-        <Image className="rectangleIcon2" src="/images/background2.jpeg" width={1280} height={500} sizes="100vw" alt="" aria-hidden="true" />
-        <div className="image202" />
+        <Image className="rectangleIcon2" src="/images/background2.jpeg" width={1280} height={500} sizes="1280px" alt="" aria-hidden="true" />
         <div className="frameParent46">
           <div className="frameParent47">
             <div className="frameParent48">
               <div className="genzgalaxyCtaBadge">genZgalaxy</div>
-              <b className="aSimplerWayContainer">
+              <h2 className="aSimplerWayContainer">
                 <span className="builtForThe">{`A Simpler Way to Approach `}</span>
                 <span className="futureOfLearning">Learning</span>
-              </b>
+              </h2>
             </div>
-            <div className="smarterFlexibleLearning">Smarter, flexible learning that adapts to your pace and goals</div>
+            <p className="smarterFlexibleLearning">Smarter, flexible learning that adapts to your pace and goals</p>
           </div>
           <div className="frameWrapper12">
             <div className="explorePlatformWrapper">
-              <div className="explorePlatform2">Explore Platform</div>
+              <a href="#platform-overview" className="explorePlatform2">Explore Platform</a>
             </div>
           </div>
         </div>
-        <Image className="youngPeopleRowWithThumbsUIcon" src="/images/young.png" width={772} height={500} sizes="100vw" alt="" aria-hidden="true" />
+        <Image className="youngPeopleRowWithThumbsUIcon" src="/images/young.png" width={772} height={500} sizes="772px" alt="" aria-hidden="true" />
       </div>
     </div>
   );

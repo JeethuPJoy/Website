@@ -2,8 +2,6 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import "./literacy3rs8cs3ms.css";
 
-// const EMPTY_IMAGE = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-
 const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
   return (
     <div className="neurolxp2103rs8cs3msLite">

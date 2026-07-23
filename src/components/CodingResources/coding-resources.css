@@ -1,0 +1,2070 @@
+.page {
+  min-height: 100vh;
+  background: #dfe6e9;
+  color: #2f3547;
+  font-family: "Segoe UI";
+}
+
+.navbar {
+  height: 80px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  position: relative;
+  z-index: 2;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  line-height: 0.9;
+  min-width: 120px;
+}
+
+.brand span {
+  color: #38e4ef;
+  font-size: 28px;
+}
+
+.brand b {
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+.brand small {
+  color: #2d4cc8;
+  font-size: 12px;
+  margin-left: 2px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.navLinks span {
+  white-space: nowrap;
+}
+
+.navLinks small {
+  margin-left: 6px;
+}
+
+.navbar button {
+  border: 0;
+  border-radius: 28px;
+  background: #dfe6e9;
+  color: #2d4cc8;
+  padding: 12px 22px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+}
+
+.shell {
+  width: min(1280px, calc(100% - 80px));
+  margin: auto;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 88px;
+  font-size: 15px;
+}
+
+.breadcrumb b {
+  color: #243fa8;
+}
+
+.heroFrame,
+.growthFrame {
+  padding: 32px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+}
+
+.hero {
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #dfe6e9;
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px rgba(255, 255, 255, 0.65);
+}
+
+.heroShape {
+  position: absolute;
+  width: 700px;
+  height: 760px;
+  left: -145px;
+  top: -105px;
+  border-radius: 50%;
+  background: #2f3547;
+}
+
+.heroCopy {
+  position: absolute;
+  z-index: 2;
+  left: 36px;
+  top: 88px;
+  width: 540px;
+  color: #fff;
+}
+
+.pill {
+  display: inline-block;
+  color: #2d4cc8;
+  background: #eef2f4;
+  border-radius: 28px;
+  padding: 10px 26px;
+
+  box-shadow:
+    inset -4px -4px 8px #FFFFFF,
+    inset 4px 4px 8px #C4C4C4;
+
+  font-family: "Segoe UI";
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.heroCopy h1 {
+  font-size: 45px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  margin: 32px 0 22px;
+}
+
+.heroCopy p {
+  font-size: 24px;
+  line-height: 1.45;
+  max-width: 500px;
+}
+
+.heroImage {
+  position: absolute;
+  right: -267px;
+  bottom: -14px;
+  width: 831px;
+  height: 585px;
+  object-fit: contain;
+
+  /* Flip the image horizontally */
+  transform: scaleX(-1);
+
+  /* Keep the image aligned to the right after flipping */
+  transform-origin: center center;
+}
+
+.learning {
+  text-align: center;
+  padding: 80px 0 55px;
+}
+
+.learning h2,
+.practice h2,
+.growth h2 {
+  font-size: 42px;
+  line-height: 1.25;
+  margin: 0 0 22px;
+}
+
+.learning > p,
+.practiceIntro p {
+  font-size: 21px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.learningCards {
+  width: 100%;
+  max-width: 1280px;
+  height: 132px;
+  margin: 45px auto 0;
+  display: grid;
+  grid-template-columns: repeat(5, 248px);
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.learningCard {
+  --arrow-border: #2d4cc8;
+  position: relative;
+  width: 248px;
+  height: 132px;
+  flex: 0 0 248px;
+  isolation: isolate;
+}
+
+.learningCardOuter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 248px;
+  height: 128px;
+  object-fit: fill;
+  pointer-events: none;
+  user-select: none;
+}
+
+.learningCardInner {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  width: 219px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  filter:
+    drop-shadow(-4px -4px 8px #ffffff)
+    drop-shadow(4px 4px 8px #c4c4c4);
+}
+
+.learningCardInner::before,
+.learningCardInner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(
+    0 0,
+    82% 0,
+    100% 50%,
+    82% 100%,
+    0 100%,
+    11% 50%
+  );
+}
+
+.learningCardInner::before {
+  z-index: -2;
+  background: var(--arrow-border);
+}
+
+.learningCardInner::after {
+  inset: 1px;
+  z-index: -1;
+  background: #dfe6e9;
+}
+
+.learningCardText {
+  position: relative;
+  z-index: 3;
+  width: 150px;
+  margin-left: -10px;
+  color: #31344b;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+
+.learningCard:nth-child(1) {
+  --arrow-border: #2d4cc8;
+}
+
+.learningCard:nth-child(2) {
+  --arrow-border: #0b9ba0;
+}
+
+.learningCard:nth-child(3) {
+  --arrow-border: #bf1869;
+}
+
+.learningCard:nth-child(4) {
+  --arrow-border: #67096e;
+}
+
+.learningCard:nth-child(5) {
+  --arrow-border: #046f73;
+}
+
+.practiceIntro {
+  padding: 70px 35px;
+  text-align: center;
+  border-radius: 8px 100px 8px 100px;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+}
+
+.practiceIntro h2 {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.supportGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 115px;
+  padding: 58px 110px;
+}
+
+.supportCard {
+  min-height: 105px;
+  padding: 28px 30px;
+  display: flex;
+  align-items: center;
+  background: #dfe6e9;
+  border-radius: 28px 28px 0 28px;
+  box-shadow:
+    -10px -10px 20px #fff,
+    10px 10px 20px #c4c4c4;
+  border-top: 5px solid #2d4cc8;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.accent2,
+.accent3 {
+  border-top-color: #bf1869;
+}
+
+.practiceOval {
+  position: relative;
+  margin: 20px auto 70px;
+  width: 92%;
+  padding: 35px;
+  text-align: center;
+  border: 2px solid #2d4cc8;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 34px;
+  font-weight: 700;
+  isolation: isolate;
+}
+
+/* Outer teal oval: touches the blue oval only at the left and right edges */
+.practiceOval::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: -14px;
+  bottom: -14px;
+  border: 2px solid #0b9ba0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Pillar cards */
+.pillars {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  align-items: start;
+  gap: 36px;
+}
+
+.pillar {
+  position: relative;
+  width: 400px;
+  height: 610px;
+  padding: 0 31px 48px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #DFE6E9;
+  border-radius: 20px;
+  box-shadow:
+    -4px -4px 8px #FFFFFF,
+    4px 4px 8px #C6C6C6;
+}
+
+.pillarHead {
+  position: relative;
+  width: calc(100% + 62px);
+  height: 271px;
+  min-height: 271px;
+  margin-left: -31px;
+  padding: 24px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  background: #DFE6E9;
+  border-radius: 20px 20px 0 0;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 76.4%,
+    50% 100%,
+    0 76.4%
+  );
+  box-shadow:
+    inset -8px -8px 16px #FFFFFF,
+    inset 8px 8px 16px #C6C6C6;
+}
+
+/* Soft highlight inside the pointed header */
+.pillarHead::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px 20px 0 0;
+  clip-path: inherit;
+  pointer-events: none;
+  z-index: 0;
+
+  /* Inner neumorphic shadow */
+  box-shadow:
+    inset -8px -8px 16px rgba(255, 255, 255, 0.9),
+    inset 8px 8px 16px rgba(198, 198, 198, 0.8);
+}
+
+.pillarHead::after {
+  content: none;
+}
+
+.pillarHead b {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-family: "Segoe UI";
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0.03em;
+  background: linear-gradient(180deg, #bf1869 0%, #590b31 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.pillarHead span {
+  position: relative;
+  z-index: 2;
+  color: #000000;
+  font-family: "Segoe UI";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.pillar h3 {
+  width: calc(100% + 62px);
+  margin: 32px 0 31px -31px;
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.checkList {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.checkItem {
+  width: 100%;
+  height: 44px;
+  min-height: 44px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.checkIconCircle {
+  position: relative;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #DFE6E9;
+  border-radius: 50%;
+  box-shadow:
+    -8px -8px 16px #FFFFFF,
+    8px 8px 16px #C6C6C6;
+}
+
+.checkIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: none;
+}
+
+.checkText {
+  color: #31344b;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+}
+
+
+.growthFrame {
+  margin: 95px 0;
+}
+
+.growth {
+  height: 480px;
+  border-radius: 18px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px rgba(255, 255, 255, 0.65);
+}
+
+.growthCopy {
+  padding: 64px 70px;
+}
+
+.growthCopy h2 {
+  margin-top: 38px;
+}
+
+.growthCopy p {
+  font-size: 22px;
+  line-height: 1.55;
+  max-width: 520px;
+}
+
+.videoVisual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 25%, #8a96a2, #293442 65%, #131a22);
+  overflow: hidden;
+}
+
+.videoVisual::before,
+.videoVisual::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 330px;
+  border-radius: 50%;
+  background: rgba(223, 230, 233, 0.18);
+  transform: rotate(-15deg);
+}
+
+.videoVisual::before {
+  left: 40px;
+}
+
+.videoVisual::after {
+  right: 15px;
+}
+
+.videoVisual img {
+  z-index: 2;
+}
+
+.codeGlow {
+  position: absolute;
+  font-size: 130px;
+  color: rgba(255, 255, 255, 0.12);
+  font-family: "Segoe UI";
+}
+
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 38px;
+  padding: 58px 55px 95px;
+  background: #dfe6e9;
+  box-shadow:
+    -10px -10px 20px #fff inset,
+    8px 8px 16px #c4c4c4 inset;
+  font-size: 15px;
+}
+
+.footer h4 {
+  font-size: 18px;
+  color: #2d4cc8;
+  margin: 0 0 20px;
+}
+
+.footer p {
+  line-height: 1.8;
+}
+
+.footerBrand strong {
+  display: block;
+  margin: 22px 0;
+}
+
+.socials {
+  grid-column: 3/5;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: -55px;
+}
+
+.socials img {
+  width: 56px;
+  height: auto;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #2d4cc8;
+}
+
+@media (max-width: 1050px) {
+  .navLinks {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .shell {
+    width: min(92%, 900px);
+  }
+
+  .heroImage {
+    right: -170px;
+  }
+
+  .heroCopy {
+    width: 50%;
+  }
+
+  .heroCopy h1 {
+    font-size: 36px;
+  }
+
+  .heroCopy p {
+    font-size: 19px;
+  }
+
+  .learningCards {
+    width: min(100%, 512px);
+    height: auto;
+    grid-template-columns: repeat(2, 248px);
+    justify-content: center;
+  }
+
+  .pillars {
+    grid-template-columns: repeat(2, 400px);
+  }
+
+  .supportGrid {
+    padding: 50px 20px;
+    gap: 30px;
+  }
+
+  .footer {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+
+  .footer > div:nth-child(4) {
+    display: none;
+  }
+
+  .socials {
+    grid-column: 2/4;
+  }
+}
+
+@media (max-width: 820px) {
+  .pillars {
+    width: min(100%, 400px);
+    grid-template-columns: 400px;
+    gap: 32px;
+  }
+
+  .pillar {
+    width: 400px;
+    height: 610px;
+    min-height: 610px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    height: 66px;
+    padding: 0 18px;
+  }
+
+  .shell {
+    width: 92%;
+  }
+
+  .breadcrumb {
+    height: 70px;
+  }
+
+  .heroFrame,
+  .growthFrame {
+    padding: 14px;
+  }
+
+  .hero {
+    height: 640px;
+  }
+
+  .heroShape {
+    width: 700px;
+    height: 500px;
+    left: -220px;
+    top: -70px;
+  }
+
+  .heroCopy {
+    left: 24px;
+    top: 40px;
+    width: 86%;
+  }
+
+  .heroCopy h1 {
+    font-size: 30px;
+  }
+
+  .heroCopy p {
+    font-size: 17px;
+    max-width: 340px;
+  }
+
+  .heroImage {
+    width: 560px;
+    right: -145px;
+    bottom: -12px;
+  }
+
+  .learning {
+    padding-top: 55px;
+  }
+
+  .learning h2,
+  .practice h2,
+  .growth h2 {
+    font-size: 30px;
+  }
+
+  .learning > p,
+  .practiceIntro p {
+    font-size: 16px;
+  }
+
+  .learningCards {
+    width: 248px;
+    height: auto;
+    grid-template-columns: 248px;
+    justify-content: center;
+  }
+
+  .supportGrid {
+    grid-template-columns: 1fr;
+    padding: 40px 0;
+  }
+
+  .practiceOval {
+    font-size: 21px;
+    padding: 25px 15px;
+  }
+
+  .growth {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .growthCopy {
+    padding: 45px 30px;
+  }
+
+  .videoVisual {
+    min-height: 300px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    padding: 45px 25px 90px;
+  }
+
+  .footerBrand {
+    grid-column: 1/3;
+  }
+
+  .socials {
+    grid-column: 1/3;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .footer > div:nth-child(4) {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .pillars {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pillar {
+    width: 100%;
+    height: 550px;
+    min-height: 550px;
+    padding: 0 22px 38px;
+  }
+
+  .pillarHead {
+    width: calc(100% + 44px);
+    height: 232px;
+    min-height: 232px;
+    margin-left: -22px;
+    padding-top: 20px;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 75%,
+      50% 100%,
+      0 75%
+    );
+  }
+
+  .pillarHead b {
+    font-size: 46px;
+    line-height: 54px;
+  }
+
+  .pillarHead span {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .pillar h3 {
+    width: calc(100% + 44px);
+    margin: 28px 0 26px -22px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .checkList {
+    gap: 14px;
+  }
+
+  .checkIconCircle {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    min-height: 42px;
+    box-shadow:
+      -7px -7px 14px #FFFFFF,
+      7px 7px 14px #C6C6C6;
+  }
+
+  .checkIcon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .checkText {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+/* ===== Learning Cards (Updated Arrow Design) ===== */
+
+.learningCard {
+  --arrow-border: #2D4CC8;
+  position: relative;
+  width: 248px;
+  height: 132px;
+  isolation: isolate;
+}
+
+.learningCardOuter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 248px;
+  height: 128px;
+  object-fit: fill;
+  z-index: 1;
+}
+
+.learningCardInner {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 219px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+  filter:
+    drop-shadow(-4px -4px 8px #FFFFFF)
+    drop-shadow(4px 4px 8px #C4C4C4);
+}
+
+.learningCardInner::before,
+.learningCardInner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* Straight back like Figma */
+  clip-path: polygon(
+    0 0,
+    82% 0,
+    100% 50%,
+    82% 100%,
+    0 100%
+  );
+}
+
+.learningCardInner::before {
+  background: var(--arrow-border);
+  z-index: -2;
+}
+
+.learningCardInner::after {
+  inset: 1px;
+  background: #DFE6E9;
+  z-index: -1;
+}
+
+.learningCardText {
+  position: relative;
+  z-index: 3;
+  width: 150px;
+  text-align: center;
+  color: #31344B;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+/* Border colours */
+.learningCard:nth-child(1) {
+  --arrow-border: #2D4CC8;
+}
+
+.learningCard:nth-child(2) {
+  --arrow-border: #0B9BA0;
+}
+
+.learningCard:nth-child(3) {
+  --arrow-border: #BF1869;
+}
+
+.learningCard:nth-child(4) {
+  --arrow-border: #67096E;
+}
+
+.learningCard:nth-child(5) {
+  --arrow-border: #046F73;
+}/* FORCE STRAIGHT LEFT SIDE FOR INNER ARROW */
+
+.learningCardInner::before,
+.learningCardInner::after {
+  content: "" !important;
+  position: absolute !important;
+
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+
+  border-radius: 0 !important;
+
+  -webkit-clip-path: polygon(
+    0% 0%,
+    82% 0%,
+    100% 50%,
+    82% 100%,
+    0% 100%,
+    0% 0%
+  ) !important;
+
+  clip-path: polygon(
+    0% 0%,
+    82% 0%,
+    100% 50%,
+    82% 100%,
+    0% 100%,
+    0% 0%
+  ) !important;
+}
+
+.learningCardInner::before {
+  background: var(--arrow-border) !important;
+  z-index: -2 !important;
+}
+
+.learningCardInner::after {
+  top: 1px !important;
+  right: 1px !important;
+  bottom: 1px !important;
+  left: 1px !important;
+
+  background: #dfe6e9 !important;
+  z-index: -1 !important;
+}
+/* ==================================================
+   PILLAR CARDS — PNG MATCH OVERRIDE
+   Paste at the bottom of the CSS file
+================================================== */
+
+.pillars {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  align-items: stretch;
+  gap: 36px;
+}
+
+.pillar {
+  position: relative;
+  width: 400px;
+  height: 610px;
+  padding: 0 30px 42px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #dfe6e9;
+  border-radius: 20px;
+
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c6c6c6;
+}
+
+/* Pointed curved top section */
+.pillarHead {
+  position: relative;
+  width: calc(100% + 60px);
+  height: 220px;
+  min-height: 220px;
+  margin-left: -30px;
+  padding: 25px 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+
+  background: #dfe6e9;
+  border-radius: 20px 20px 0 0;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 72%,
+    52% 100%,
+    48% 100%,
+    0 72%
+  );
+
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c6c6c6;
+}
+
+/* Soft white light around the curved point */
+.pillarHead::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  /* background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.08) 52%,
+    rgba(255, 255, 255, 0.95) 100%
+  ); */
+
+  clip-path: inherit;
+  border-radius: 20px 20px 0 0;
+}
+
+.pillarHead::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  width: 230px;
+  height: 52px;
+  z-index: 0;
+  pointer-events: none;
+
+  background: rgba(255, 255, 255, 0.55);
+  filter: blur(18px);
+  transform: translateX(-50%);
+}
+
+/* Numbers */
+.pillarHead b {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+
+  font-family: "Segoe UI";
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+
+  background: linear-gradient(
+    180deg,
+    #bf1869 0%,
+    #8f0e4e 55%,
+    #590b31 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Top titles */
+.pillarHead span {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 1px;
+  color: #000000;
+
+  font-family: "Segoe UI";
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* Blue heading under pointed section */
+.pillar h3 {
+  width: calc(100% + 60px);
+  margin: 40px 0 28px -30px;
+
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* Checklist spacing */
+.checkList {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.checkItem {
+  width: 100%;
+  height: 44px;
+  min-height: 44px;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Check circle */
+.checkIconCircle {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dfe6e9;
+  border-radius: 50%;
+
+  box-shadow:
+    -7px -7px 14px rgba(255, 255, 255, 0.95),
+    7px 7px 14px rgba(174, 183, 187, 0.72);
+}
+
+.checkIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.checkText {
+  color: #31344b;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+}
+.growthVideo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+/* Remove all old decorative marks from the video */
+
+.videoVisual {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 18px 18px 0;
+}
+
+.videoVisual::before,
+.videoVisual::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.codeGlow {
+  display: none !important;
+}
+
+.growthVideo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: none;
+  outline: none;
+}
+/* =========================
+   MOBILE VIEW FIX
+   ========================= */
+
+@media (max-width: 480px) {
+  .page {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .shell {
+    width: 100%;
+    padding: 0 14px;
+  }
+
+  /* HERO SECTION */
+
+  .heroFrame {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    margin: 0;
+  }
+
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: 610px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 22px;
+  }
+
+  .heroShape {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .heroCopy {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    padding: 40px 24px 200px;
+  }
+
+  .heroCopy .pill {
+    margin-bottom: 28px;
+    padding: 10px 26px;
+    font-size: 15px;
+  }
+
+  .heroCopy h1 {
+    margin: 0 0 22px;
+    font-size: 31px;
+    line-height: 1.2;
+  }
+
+  .heroCopy p {
+    width: 100%;
+    max-width: 285px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .heroImage {
+    position: absolute;
+    z-index: 2;
+    right: -15px;
+    bottom: 10px;
+    width: 210px;
+    height: auto;
+    object-fit: contain;
+    transform: scaleX(-1);
+  }
+
+  /* REMOVE LARGE EMPTY SPACE UNDER HERO */
+
+  .hero::after {
+    display: none;
+    content: none;
+  }
+
+  /* PILLAR CARDS */
+
+  .pillars {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 100%;
+    margin: 40px 0;
+    padding: 0;
+  }
+
+  .pillar {
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    padding-bottom: 34px;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .pillarHead {
+    min-height: 220px;
+    height: auto;
+    padding: 28px 20px 62px;
+  }
+
+  .pillarHead b {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 52px;
+    line-height: 1;
+  }
+
+  .pillarHead span {
+    display: block;
+    font-size: 27px;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .pillar h3 {
+    margin: 34px 20px 25px;
+    font-size: 25px;
+    line-height: 1.25;
+    text-align: center;
+    padding-right: 108px;
+  }
+
+  .checkList {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 30px;
+  }
+
+  .checkItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .checkIconCircle {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .checkText {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  /* GROWTH VIDEO SECTION */
+
+  .growthFrame {
+    width: 100%;
+    height: auto;
+    padding: 16px 10px;
+  }
+
+  .growth {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 22px;
+  }
+
+  .growthCopy {
+    width: 100%;
+    padding: 34px 24px;
+  }
+
+  .growthCopy h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .growthCopy p {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .videoVisual {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 0 0 18px 18px;
+  }
+
+  .videoVisual::before,
+  .videoVisual::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  .codeGlow {
+    display: none !important;
+  }
+
+  .growthVideo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border: 0;
+    outline: 0;
+  }
+}
+/* =====================================
+   CORRECT MOBILE HERO DESIGN
+   ===================================== */
+
+@media (max-width: 480px) {
+  .heroFrame {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 610px;
+    min-height: 610px;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #dfe6e9;
+  }
+
+  /* Keep the dark area only at the top */
+  .heroShape {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    height: 390px !important;
+
+    background: #30374b !important;
+
+    border-radius: 0 0 50% 50% / 0 0 9% 9% !important;
+    clip-path: none !important;
+    transform: none !important;
+  }
+
+  .heroCopy {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    padding: 78px 40px 0 !important;
+  }
+
+  .heroCopy .pill {
+    margin: 0 0 28px;
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .heroCopy h1 {
+    max-width: 280px;
+    margin: 0 0 24px;
+    font-size: 31px;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+
+  .heroCopy p {
+    max-width: 285px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+
+  /* Place the image only in the lower white area */
+  .heroImage {
+    position: absolute !important;
+    z-index: 4;
+    top: auto !important;
+    left: auto !important;
+    right: 5px !important;
+    bottom: 15px !important;
+
+    width: 205px !important;
+    height: auto !important;
+
+    object-fit: contain;
+    transform: scaleX(-1) !important;
+  }
+
+  .hero::before,
+  .hero::after {
+    display: none !important;
+    content: none !important;
+  }
+}
+/* ==========================================
+   HERO TEXT ALIGNMENT - MOBILE ONLY
+   Paste at the bottom of the CSS
+========================================== */
+
+@media (max-width: 480px) {
+
+  .heroCopy {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    max-width: 100%;
+
+    padding: 72px 28px 0 !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .heroCopy .pill {
+    margin-bottom: 24px;
+    padding: 10px 26px;
+  }
+
+  .heroCopy h1 {
+    width: 100%;
+    max-width: 255px;
+
+    margin: 0 0 22px;
+
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 600;
+
+    text-align: left;
+    color: #FFFFFF;
+  }
+
+  .heroCopy p {
+    width: 100%;
+    max-width: 265px;
+
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+}
+/* ==========================================
+   MOBILE HERO TEXT ALIGNMENT FIX
+========================================== */
+
+@media (max-width: 480px) {
+
+  .heroCopy {
+    position: absolute !important;
+    top: 65px;
+    left: 26px;
+    right: 26px;
+
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .heroCopy .pill {
+    margin: 0 0 24px 0 !important;
+    align-self: flex-start;
+  }
+
+  .heroCopy h1 {
+    margin: 0 0 22px 0 !important;
+
+    width: 250px;
+
+    font-size: 31px;
+    line-height: 1.2;
+    font-weight: 600;
+
+    text-align: left;
+    color: #FFFFFF;
+  }
+
+  .heroCopy p {
+    margin: 0 !important;
+
+    width: 255px;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+}
+/* ==========================================
+   MOBILE HERO CONTENT POSITION FIX
+========================================== */
+
+@media (max-width: 480px) {
+
+  .heroCopy{
+    position:absolute !important;
+    top:38px !important;          /* Move the whole content higher */
+    left:50% !important;
+    transform:translateX(-50%) !important;
+
+    width:100%;
+    max-width:280px;
+
+    padding:0 !important;
+    margin:0 !important;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+
+    text-align:center;
+    z-index:5;
+  }
+
+  .heroCopy .pill{
+    margin:0 0 22px 0 !important;
+  }
+
+  .heroCopy h1{
+    width:100%;
+    margin:0 0 20px !important;
+
+    font-size:31px;
+    line-height:1.22;
+
+    text-align:center;
+  }
+
+  .heroCopy p{
+    width:100%;
+    max-width:255px;
+
+    margin:0 auto !important;
+
+    font-size:16px;
+    line-height:1.6;
+
+    text-align:center;
+  }
+
+}
+@media (max-width: 480px) {
+
+  .heroCopy {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .heroCopy .pill {
+    align-self: center !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    margin: 0 auto 22px !important;
+
+    min-width: 170px;
+    text-align: center !important;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .heroImage {
+    position: absolute !important;
+    right: 5px !important;
+    bottom: -2px !important;
+
+    width: 400px !important;
+    height: auto !important;
+
+    object-fit: contain;
+    transform: scaleX(-1) !important;
+    z-index: 4;
+  }
+}
+/* ==========================================
+   HOVER EFFECT FOR ALL CARDS
+   ========================================== */
+
+.learningCard,
+.supportCard,
+.pillar {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease,
+    filter 0.35s ease;
+  cursor: pointer;
+}
+
+/* Learning Cards */
+.learningCard:hover {
+  transform: translateY(-10px) scale(1.02);
+
+  filter: drop-shadow(0 18px 30px rgba(45, 76, 200, 0.15));
+}
+
+.learningCard:hover .learningCardInner {
+  filter:
+    drop-shadow(-6px -6px 12px #ffffff)
+    drop-shadow(8px 8px 16px rgba(160, 170, 180, 0.55));
+}
+
+/* Practice Cards */
+.supportCard:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    -14px -14px 28px #ffffff,
+    14px 14px 28px #bfc6ca;
+
+  border-top-width: 6px;
+}
+
+/* Pillar Cards */
+.pillar:hover {
+  transform: translateY(-12px);
+
+  box-shadow:
+    -10px -10px 22px #ffffff,
+    12px 12px 24px #c0c7cb;
+}
+
+.pillar:hover .pillarHead {
+  box-shadow:
+    inset -10px -10px 20px #ffffff,
+    inset 10px 10px 20px #c6c6c6;
+}
+
+.pillar:hover .checkIconCircle {
+  box-shadow:
+    -10px -10px 18px #ffffff,
+    10px 10px 18px #c6c6c6;
+}
+
+/* Smooth animation */
+.learningCard *,
+.supportCard *,
+.pillar * {
+  transition: all 0.35s ease;
+}
+
+/* ==================================================
+   MOBILE TYPOGRAPHY & SPACING SYSTEM
+   Based on the provided mobile specification.
+   Design, shapes, colours and shadows remain unchanged.
+================================================== */
+
+@media (max-width: 480px) {
+
+  /* ------------------------------
+     FONT SIZES
+  ------------------------------ */
+
+  /* Hero Heading (H1): 32 / 40 / 700 */
+  .heroCopy h1 {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+  }
+
+  /* Section Heading (H2): 24 / 32 / 700 */
+  .learning h2,
+  .practice h2,
+  .practiceIntro h2,
+  .growth h2,
+  .growthCopy h2 {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    line-height: 32px !important;
+  }
+
+  /* Card Heading (H3): 18 / 26 / 600 */
+  .learningCardText,
+  .supportCard,
+  .pillarHead span,
+  .pillar h3 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 26px !important;
+  }
+
+  /* Body Text: 16 / 24 / 400 */
+  .heroCopy p,
+  .learning > p,
+  .practiceIntro p,
+  .growthCopy p,
+  .checkText {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+  }
+
+  /* Small Body: 14 / 22 / 400 */
+  .breadcrumb {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 22px !important;
+  }
+
+  /* Button / pill text: 16 / 24 / 600 */
+  .pill,
+  .heroCopy .pill {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
+  }
+
+  /* ------------------------------
+     SPACING
+  ------------------------------ */
+
+  /* Heading → Body Text: 12px */
+  .heroCopy h1,
+  .learning h2,
+  .practice h2,
+  .practiceIntro h2,
+  .growth h2,
+  .growthCopy h2 {
+    margin-bottom: 12px !important;
+  }
+
+  /* Heading → Cards: 24px */
+  .learningCards {
+    margin-top: 24px !important;
+  }
+
+  .supportGrid {
+    padding-top: 24px !important;
+  }
+
+  .pillars {
+    margin-top: 24px !important;
+  }
+
+  /* Card → Card: 16px */
+  .learningCards {
+    gap: 16px !important;
+  }
+
+  .supportGrid {
+    gap: 16px !important;
+  }
+
+  .pillars {
+    gap: 16px !important;
+  }
+
+  /* Section → Section: 48px */
+  .learning {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .practiceIntro {
+    margin-top: 0 !important;
+  }
+
+  .practiceOval {
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
+  }
+
+  .growthFrame {
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
+  }
+
+  /* Image → Heading: 24px */
+  .growthCopy h2 {
+    margin-top: 24px !important;
+  }
+
+  /* Icon → Title: 12px */
+  .checkItem {
+    gap: 12px !important;
+  }
+
+  /* Title → Description: 8px */
+  .pillar h3 {
+    margin-bottom: 8px !important;
+  }
+}
+/* ==========================================
+   MOBILE GROWTH SECTION - CENTER ALIGNMENT
+   Paste this at the VERY BOTTOM of your CSS
+========================================== */
+
+@media (max-width: 480px) {
+
+  .growth {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .growthCopy {
+    width: 100% !important;
+    padding: 34px 24px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    text-align: center !important;
+  }
+
+  .growthCopy .pill {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    margin: 0 auto 22px !important;
+  }
+
+  .growthCopy h2 {
+    width: 100% !important;
+    max-width: 320px !important;
+
+    margin: 18px auto 14px !important;
+
+    text-align: center !important;
+  }
+
+  .growthCopy p {
+    width: 100% !important;
+    max-width: 320px !important;
+
+    margin: 0 auto !important;
+
+    text-align: center !important;
+    line-height: 1.7 !important;
+  }
+
+  .videoVisual {
+    width: 100% !important;
+    height: 260px !important;
+  }
+
+}

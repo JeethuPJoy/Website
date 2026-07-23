@@ -134,7 +134,7 @@ export default function FinancialLiteracyPage() {
           <div className={'heroInnerCircle'}>
             <Image
               className={'ellipseIcon'}
-              src="/images/hero-portrait.jpg"
+              src="/images/Ellipse 357.png"
               width={560}
               height={560}
               sizes="560px"
@@ -266,17 +266,17 @@ export default function FinancialLiteracyPage() {
             <TickRow
               label="Understand credit, loans, and interest"
               color="#67096E"
-              tick="/icons/tick-3.svg"
+              tick="/icons/tick-03-3.svg"
             />
             <TickRow
               label="Compare Financial Products"
               color="#2A7308"
-              tick="/icons/tick-2.svg"
+              tick="/icons/tick-03-2.svg"
             />
             <TickRow
               label="Assess risks before making decisions"
               color="#0B9BA0"
-              tick="/icons/tick-1.svg"
+              tick="/icons/tick-03.svg"
               stretch
             />
             <TickRow

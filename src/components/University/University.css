@@ -1,0 +1,117 @@
+.univ-hero-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 64px 16px;
+  box-sizing: border-box;
+}
+
+.univ-hero-card {
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  border-radius: 100px 0px;
+  padding: 50px 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.univ-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 1078px;
+  text-align: center;
+}
+
+.univ-hero-badge {
+  padding: 9px 24px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  border-radius: 28px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  color: #2d4cc8;
+}
+
+.univ-hero-heading {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: #31344b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.univ-hero-subtext {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: clamp(16px, 1.8vw, 28px);
+  line-height: 1.43;
+  letter-spacing: 0.03em;
+  color: #2f3547;
+  max-width: 1078px;
+}
+
+.univ-hero-photo-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1242 / 595;
+  border-radius: 9999px;
+  overflow: hidden;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+}
+
+.univ-hero-photo {
+  object-fit: cover;
+}
+
+@media (min-width: 2560px) {
+  .univ-hero-card {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .univ-hero-card {
+    padding: 40px 24px;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .univ-hero-badge {
+    font-size: 18px;
+    padding: 7px 18px;
+  }
+
+  .univ-hero-card {
+    padding: 32px 20px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .univ-hero-section {
+    padding: 40px 12px;
+  }
+
+  .univ-hero-card {
+    border-radius: 48px 0px;
+    padding: 28px 16px;
+  }
+}
