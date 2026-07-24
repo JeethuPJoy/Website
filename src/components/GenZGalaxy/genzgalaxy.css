@@ -77,7 +77,7 @@
   height: 520px;
   object-fit: cover;
   object-position: top center;
-  transform: translate(calc(-50% + 20px), -50%);
+  transform: translate(calc(-50% + 0px), -50%);
 }
 .frameParent2 {
   position: absolute;
@@ -3438,12 +3438,10 @@
 
 .heroImg6Position {
   object-position: 46% top;
-  transform: translateX(8px);
 }
 
 .heroImg9Position {
-  object-position: 44% top;
-  transform: translateX(4px);
+  object-position: 44% top; 
 }
 
 @media screen and (max-width: 480px) {

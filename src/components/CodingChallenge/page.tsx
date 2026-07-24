@@ -95,6 +95,7 @@ export default function CodingChallengePage() {
           <Image
             className={'arrowDown01Icon'}
             src={`${ASSET}/icons/arrow-right-double.svg`}
+            
             width={16}
             height={16}
             alt=""

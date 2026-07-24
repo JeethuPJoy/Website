@@ -189,6 +189,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+
+  transition: transform 0.3s ease;
 }
 
 .odyssey-card-inner {
@@ -209,6 +212,9 @@
   gap: 20px;
   padding: 24px 12px;
   box-sizing: border-box;
+
+
+  transition: box-shadow 0.3s ease;
 }
 
 .odyssey-card-bar {
@@ -247,6 +253,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+   transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .odyssey-card:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+  }
+
+  .odyssey-card:hover .odyssey-card-inner {
+    box-shadow:
+      6px 6px 14px #c4c4c4,
+      -6px -6px 14px #ffffff;
+  }
+
+  .odyssey-card:hover .odyssey-card-icon-circle {
+    transform: scale(1.08);
+    box-shadow:
+      10px 10px 20px #c6c6c9,
+      -10px -10px 20px #ffffff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .odyssey-card,
+  .odyssey-card-inner,
+  .odyssey-card-icon-circle {
+    transition: none;
+  }
 }
 
 .odyssey-card-icon {
@@ -2089,6 +2127,13 @@
   color: #000000;
 }
 
+@media (max-width: 2000px) {
+  why-choose-blob {
+    top: -81px;
+    left: 374px;
+  }
+}
+
 @media (max-width: 1024px) {
   .odyssey-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -2296,7 +2341,7 @@
     padding: 10px;
     border-radius: 18px;
   }
-  
+
   .hero-caption {
     border-radius: 40px 40px 0 0;
     padding-top: 3%;
@@ -2372,27 +2417,27 @@
     font-size: 22px;
   }
 
-   .why-choose-body {
-  flex-direction: column; 
-  align-items: center;   
-}
+  .why-choose-body {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .why-choose-text {
-  align-items: center;    
-  text-align: center;    
-  flex: none;           
-  width: 100%;          
-  max-width: 480px;     
-}
+    align-items: center;
+    text-align: center;
+    flex: none;
+    width: 100%;
+    max-width: 480px;
+  }
 
- .why-choose-grid {
-  grid-template-columns: repeat(2, minmax(0, 220px)); 
-  justify-content: center;                            
-  gap: 24px;                                          
-  flex: none;               
-  width: 100%;             
-  max-width: 480px;        
-}
+  .why-choose-grid {
+    grid-template-columns: repeat(2, minmax(0, 220px));
+    justify-content: center;
+    gap: 24px;
+    flex: none;
+    width: 100%;
+    max-width: 480px;
+  }
 
   .why-choose-icon-ring {
     width: 60px;
@@ -2674,26 +2719,26 @@
   }
 
   .why-choose-body {
-  flex-direction: column;
-  align-items: center;
-}
+    flex-direction: column;
+    align-items: center;
+  }
 
-.why-choose-text {
-  flex: none;
-  width: 100%;
-  max-width: 480px;
-  align-items: center;
-  text-align: center;
-}
+  .why-choose-text {
+    flex: none;
+    width: 100%;
+    max-width: 480px;
+    align-items: center;
+    text-align: center;
+  }
 
- .why-choose-grid {
-  flex: none;
-  width: 100%;
-  max-width: 480px;
-  grid-template-columns: repeat(1, minmax(0, 220px));
-  justify-content: center;
-  gap: 24px;
-}
+  .why-choose-grid {
+    flex: none;
+    width: 100%;
+    max-width: 480px;
+    grid-template-columns: repeat(1, minmax(0, 220px));
+    justify-content: center;
+    gap: 24px;
+  }
 
   .why-choose-blob {
     display: none;

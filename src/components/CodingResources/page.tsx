@@ -61,7 +61,7 @@ const CodingResources: NextPage = () => {
           <span>Neuro Labs</span>
 
           <Image
-            src="/assets/coding-resources.icons/arrow-right-double.svg"
+            src="/icons/arrow-right-double.svg"
             width={16}
             height={16}
             alt=""
@@ -91,7 +91,7 @@ const CodingResources: NextPage = () => {
 
             <Image
               className="heroImage"
-              src="/assets/coding-resources.icons/coding-resources.png"
+              src="/icons/coding-resources.png"
               width={1536}
               height={1024}
               priority
@@ -118,7 +118,7 @@ const CodingResources: NextPage = () => {
               <div className="learningCard" key={label}>
                 <Image
                   className="learningCardOuter"
-                  src="/assets/coding-resources.icons/Rectangle 40 copy.svg"
+                  src="/icons/Rectangle 40 copy.svg"
                   width={248}
                   height={128}
                   sizes="248px"
@@ -177,7 +177,7 @@ const CodingResources: NextPage = () => {
                   <div className="checkItem" key={item}>
                     <span className="checkIconCircle">
                       <Image
-                        src="/assets/coding-resources.icons/checkmark-circle-02.svg"
+                        src="/icons/checkmark-circle-02.svg"
                         width={24}
                         height={24}
                         alt=""
@@ -223,7 +223,7 @@ const CodingResources: NextPage = () => {
                 controlsList="nodownload nofullscreen noremoteplayback"
               >
                 <source
-                  src="/assets/coding-resources.icons/coding-resources.mp4"
+                  src="/icons/coding-resources.mp4"
                   type="video/mp4"
                 />
 

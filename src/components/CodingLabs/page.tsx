@@ -6,7 +6,7 @@ import Image from "next/image";
 import "./codingLabs.css";
 
 const NeurolabsCodingLabs: NextPage = () => {
-  const sliderVideos = ["/icons/women-holding-diploma.mp4", "/icons/secondvideo.mp4", "/icons/third.mp4"];
+  const sliderVideos = ["/videos/women-holding-diploma.mp4", "/videos/secondvideo.mp4", "/videos/third.mp4"];
 
   const [videoOrder, setVideoOrder] = useState([0, 1, 2]);
 
@@ -66,7 +66,7 @@ const NeurolabsCodingLabs: NextPage = () => {
         <div className="image20" />
         <div className="image21Parent">
           <div className="image21" />
-          <Image className="groupYoungBusinesspeopleUsiIcon" src="/icons/group-young-businesspeople-using-laptop-meeting 1.png" width={1216} height={555} sizes="100vw" alt="" />
+          <Image className="groupYoungBusinesspeopleUsiIcon" src="/images/group-young-businesspeople-using-laptop-meeting 1.png" width={1216} height={555} sizes="100vw" alt="" />
           <div className="ellipseParent">
             <div className="frameItem" />
             <div className="frameWrapper">

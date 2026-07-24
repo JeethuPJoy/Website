@@ -40,7 +40,7 @@ function HeroCarousel() {
         <div className="hero-image-stage">
           {heroSlides.map((slide, index) => (
             <div key={slide.id} className={`hero-slide${index === activeSlide ? " hero-slide-active" : ""}`}>
-              <Image src={slide.image} alt={slide.heading} fill priority={index === 0} className="hero-slide-image" />
+              <Image src={slide.image} alt={slide.heading} fill priority={index === 0} sizes="(min-width: 1312px) 1208px, 100vw" className="hero-slide-image" />
               <div className="hero-caption">
                 <h2 className="hero-heading">{slide.heading}</h2>
                 <div className="hero-dots">
@@ -263,7 +263,7 @@ function StoryMissionVisionCard({ title, description, image, accentColor, Icon }
       </h3>
       <p className="smv-card-description">{description}</p>
       <div className="smv-card-image-frame">
-        <Image src={image} alt={title} fill className="smv-card-image" />
+        <Image src={image} alt={title} fill sizes="(max-width: 480px) 100vw, 348px" className="smv-card-image" />
       </div>
     </div>
   );
@@ -431,7 +431,7 @@ function MeetNeuroLXP() {
     <section className="meet-neurolxp-section">
       <div className="meet-neurolxp-frame">
         <div className="meet-neurolxp-overlay">
-          <Image src="/images/friends-learning-with-laptop.jpg" alt="Students collaborating on a laptop" fill className="meet-neurolxp-image" />
+          <Image src="/images/friends-learning-with-laptop.jpg" alt="Students collaborating on a laptop" fill sizes="(min-width: 1312px) 1216px, 100vw" className="meet-neurolxp-image" />
         </div>
         <div className="meet-neurolxp-text">
           <span className="meet-neurolxp-badge">Meet NeuroLXP</span>
@@ -603,7 +603,7 @@ function LearningModuleCard({ title, description, image, isFeatured, isTextExpan
   return (
     <div className={`learning-module-card${isFeatured ? " learning-module-card-featured" : ""}`}>
       <div className="learning-module-image-frame">
-        <Image src={image} alt={title} fill className="learning-module-image" />
+        <Image src={image} alt={title} fill sizes="(max-width: 375px) 230px, (max-width: 480px) 290px, (max-width: 768px) 320px, (max-width: 1024px) 400px, 500px" className="learning-module-image" />
       </div>
       <div className="learning-module-text">
         <h3 className="learning-module-title">{title}</h3>
@@ -749,7 +749,7 @@ function TestimonialCard({ name, role, quote, image, accentColor }: TestimonialD
     <div className="testimonial-card-wrapper">
       <div className="testimonial-photo-frame">
         <div className="testimonial-photo-inner">
-          <Image src={image} alt={name} fill className="testimonial-photo" />
+          <Image src={image} alt={name} fill sizes="(max-width: 480px) 90px, (max-width: 768px) 110px, 154px" className="testimonial-photo" />
         </div>
       </div>
       <div className="testimonial-card" style={{ borderRightColor: accentColor }}>
@@ -938,7 +938,7 @@ function FAQSection() {
     <section className="faq-section">
       <div className="faq-card">
         <div className="faq-background-image">
-          <Image src="/images/fc52be16-4788-44b6-9212-f93370a7f939 2.png" alt="" fill className="faq-background-photo" />
+          <Image src="/images/fc52be16-4788-44b6-9212-f93370a7f939 2.png" alt="" fill sizes="(min-width: 1280px) 1280px, 100vw" className="faq-background-photo" />
         </div>
         <div className="faq-content">
           <div className="faq-left">
@@ -946,7 +946,7 @@ function FAQSection() {
               Frequently Asked <span className="faq-heading-accent">Question</span>
             </h2>
             <div className="faq-illustration">
-              <Image src="/images/Adobe Express - file - 2026-07-02T153440.006.png" alt="Question and answer illustration" fill className="faq-illustration-image" />
+              <Image src="/images/Adobe Express - file - 2026-07-02T153440.006.png" alt="Question and answer illustration" fill sizes="(max-width: 1024px) 100vw, 432px" className="faq-illustration-image" />
             </div>
           </div>
           <div className="faq-right">
@@ -992,7 +992,7 @@ function GetInTouch() {
         <div className="get-in-touch-media">
           <div className="get-in-touch-frame" />
           <div className="get-in-touch-photo-wrapper">
-            <Image src="/images/smiling-blonde-business-woman-eyeglasses-with-pen-hand-having-idea-looking-away-white-wall.png" alt="Smiling businesswoman with glasses" fill className="get-in-touch-photo" />
+            <Image src="/images/smiling-blonde-business-woman-eyeglasses-with-pen-hand-having-idea-looking-away-white-wall.png" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className="get-in-touch-photo" />
           </div>
         </div>
       </div>

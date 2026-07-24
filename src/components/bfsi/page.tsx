@@ -7,7 +7,7 @@ import Image from "next/image";
 
 function BfsiHeroBackground() {
   return (
-    <svg className="bfsi-hero-bg" width="100%" height="100%" preserveAspectRatio="xMidYMin slice" viewBox="0 0 1440 624" fill="none">
+    <svg className="bfsi-hero-bg" width="100%" height="100%" preserveAspectRatio="xMidYMax slice" viewBox="0 0 1440 624" fill="none" aria-hidden="true">
       <g filter="url(#filter0_ii_903_12871)">
         <ellipse cx="720" cy="-136.5" rx="780" ry="760.5" fill="#DFE6E9" />
         <ellipse cx="720" cy="-136.5" rx="780" ry="760.5" fill="url(#pattern0_903_12871)" fillOpacity="0.1" />
@@ -53,13 +53,20 @@ export default function BfsiPage() {
     });
   };
 
+  const handleCardKeyDown = (e: React.KeyboardEvent, index: number) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleCard(index);
+    }
+  };
+
   const challengeCards = [
     {
       title: "Compliance Updates",
       desc: "Track compliance, certifications and audits.",
       color: "#2D4CC8",
       icon: (
-        <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="26" height="29" viewBox="0 0 26 29" fill="none" aria-hidden="true">
           <path d="M21.9533 3.00048C19.4312 1.74314 16.3443 1.00228 13.0098 0.999664C9.67523 0.997044 6.58718 1.73304 4.06308 2.98642C2.82529 3.60108 2.20639 3.9084 1.60618 4.87574C1.00595 5.8431 1.00522 6.78021 1.00374 8.65442L1.00009 13.3064C0.994132 20.8842 7.0473 25.1022 10.5534 26.9095C11.5313 27.4136 12.0201 27.6656 12.9888 27.6663C13.9575 27.6671 14.4467 27.4159 15.4253 26.9133C18.9343 25.1115 24.9941 20.9031 25.0001 13.3252L25.0037 8.67328C25.0052 6.79908 25.0059 5.86197 24.4072 4.89366C23.8085 3.92536 23.1901 3.61708 21.9533 3.00048Z" stroke="#2D4CC8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
@@ -69,7 +76,7 @@ export default function BfsiPage() {
       desc: "Role-based learning for modern finance.",
       color: "#BF1869",
       icon: (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
           <path d="M29.334 12V20" stroke="#BF1869" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M24 16V20.0892C24 21.5111 24 22.222 23.6493 22.8095L23.6421 22.8212C23.2881 23.4068 22.6457 23.7651 21.3608 24.4815C18.7527 25.9357 17.4485 26.6629 16.0145 26.6667H15.9855C14.5515 26.6629 13.2473 25.9357 10.6392 24.4815C9.35432 23.7651 8.71188 23.4068 8.35787 22.8212L8.35073 22.8095C8 22.222 8 21.5111 8 20.0892V16" stroke="#BF1869" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M11.3613 6.96401L5.87462 9.61052C3.73555 10.6423 2.66602 11.1582 2.66602 11.989C2.66602 12.8198 3.73555 13.3357 5.87462 14.3675L11.4633 17.0632C13.6804 18.1326 14.7889 18.6673 15.9748 18.6673C17.1608 18.6673 18.2693 18.1326 20.4864 17.0632L26.1841 14.3148C28.2848 13.3016 29.3351 12.795 29.3327 11.9615C29.3303 11.128 28.2855 10.6316 26.1958 9.63874C24.2899 8.73318 22.4907 7.90086 20.5767 6.98977C18.2536 5.88389 17.092 5.33094 15.9131 5.334C14.7343 5.33704 13.6099 5.87937 11.3613 6.96401Z" stroke="#BF1869" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -81,7 +88,7 @@ export default function BfsiPage() {
       desc: "Consistent training across teams.",
       color: "#67096E",
       icon: (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
           <path d="M11.3327 4.94338C10.9244 4.76498 10.4734 4.66602 9.99935 4.66602C8.1584 4.66602 6.66602 6.1584 6.66602 7.99935C6.66602 9.08975 7.18958 10.0579 7.99903 10.666" stroke="#67096E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M4.49935 22.0017C3.48683 22.0017 2.66602 21.1468 2.66602 20.092C2.66602 17.9464 4.88794 15.8007 8.66602 15.3887" stroke="#67096E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M20.666 4.94338C21.0743 4.76499 21.5252 4.66602 21.9994 4.66602C23.8403 4.66602 25.3327 6.1584 25.3327 7.99935C25.3327 9.08975 24.8091 10.0579 23.9996 10.666" stroke="#67096E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -96,7 +103,7 @@ export default function BfsiPage() {
       desc: "Banking, Finance & Insurance Training.",
       color: "#C05512",
       icon: (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
           <path d="M7.11046 4.00001C10.3911 3.99543 13.5573 5.18279 15.9993 7.33333V28C13.5573 25.8495 10.3911 24.6621 7.11046 24.6667C5.02778 24.6667 3.98644 24.6667 3.52636 24.3723C3.25015 24.1955 3.1373 24.0825 2.9605 23.8063C2.66602 23.3463 2.66602 22.5255 2.66602 20.8839V8.53763C2.66602 6.63391 2.66602 5.68205 3.39767 4.91048C4.12932 4.13891 4.87832 4.09909 6.37631 4.01947C6.61935 4.00655 6.86412 4.00001 7.11046 4.00001Z" stroke="#C05512" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M24.8889 4.00001C21.6083 3.99543 18.442 5.18279 16 7.33333V28C18.442 25.8495 21.6083 24.6621 24.8889 24.6667C26.9716 24.6667 28.0129 24.6667 28.4729 24.3723C28.7492 24.1955 28.862 24.0825 29.0388 23.8063C29.3333 23.3463 29.3333 22.5255 29.3333 20.8839V8.53763C29.3333 6.63391 29.3333 5.68205 28.6017 4.91048C27.87 4.13891 27.1211 4.09909 25.6231 4.01947C25.38 4.00655 25.1352 4.00001 24.8889 4.00001Z" stroke="#C05512" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
@@ -107,7 +114,7 @@ export default function BfsiPage() {
       desc: "Learning Analytics & Progress Tracking.",
       color: "#2A7308",
       icon: (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
           <path d="M11.334 16C12.4386 16 13.334 15.1046 13.334 14C13.334 12.8954 12.4386 12 11.334 12C10.2294 12 9.33398 12.8954 9.33398 14C9.33398 15.1046 10.2294 16 11.334 16Z" stroke="#2A7308" strokeWidth="2" />
           <path d="M19.334 22.666C20.4386 22.666 21.334 21.7706 21.334 20.666C21.334 19.5614 20.4386 18.666 19.334 18.666C18.2294 18.666 17.334 19.5614 17.334 20.666C17.334 21.7706 18.2294 22.666 19.334 22.666Z" stroke="#2A7308" strokeWidth="2" />
           <path d="M24.666 12C25.7706 12 26.666 11.1046 26.666 10C26.666 8.89543 25.7706 8 24.666 8C23.5614 8 22.666 8.89543 22.666 10C22.666 11.1046 23.5614 12 24.666 12Z" stroke="#2A7308" strokeWidth="2" />
@@ -118,17 +125,19 @@ export default function BfsiPage() {
     },
   ];
 
+  const benefitCards = ["Structured compliance and regulatory training", "Industry-relevant employee upskilling", "Efficient branch network training", "Improved product and advisory knowledge", "Advanced training performance analytics", "Audit-ready compliance records"];
+
   return (
     <main className="bfsi-page">
       <section className="bfsi-hero">
         <BfsiHeroBackground />
 
-        <div className="bfsi-breadcrumb">
+         <nav className="bfsi-breadcrumb" aria-label="breadcrumb">
           <Link href="/our-customers" className="bfsi-breadcrumb-link">
             Our Customers
           </Link>
           <span className="bfsi-breadcrumb-arrow">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M4 3L8 8L4 13" stroke="#31344B" strokeWidth="1.5" />
               <path d="M8 3L12 8L8 13" stroke="#31344B" strokeWidth="1.5" />
             </svg>
@@ -137,13 +146,15 @@ export default function BfsiPage() {
             Industries we Serve
           </Link>
           <span className="bfsi-breadcrumb-arrow">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M4 3L8 8L4 13" stroke="#31344B" strokeWidth="1.5" />
               <path d="M8 3L12 8L8 13" stroke="#31344B" strokeWidth="1.5" />
             </svg>
           </span>
-          <span className="bfsi-breadcrumb-current">BFSI</span>
-        </div>
+          <span className="bfsi-breadcrumb-current" aria-current="page">
+            BFSI
+          </span>
+        </nav>
 
         <div className="bfsi-hero-content">
           <div className="bfsi-hero-badge">
@@ -173,7 +184,7 @@ export default function BfsiPage() {
             <div className="bfsi-secure-card">
               <div className="bfsi-secure-icon-bubble">
                 <div className="bfsi-secure-icon-circle">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                     <path d="M10 14.5V10.5C10 7.46 12.46 5 15.5 5H16.5C19.54 5 22 7.46 22 10.5V14.5" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" />
                     <rect x="6.5" y="14.5" width="19" height="14" rx="3" stroke="#FFFFFF" strokeWidth="2" />
                     <path d="M16 20V23" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" />
@@ -194,7 +205,7 @@ export default function BfsiPage() {
         <div className="bfsi-cards-wrapper">
           <div className="bfsi-card bfsi-card-blue">
             <div className="bfsi-card-icon">
-              <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true">
                 <g filter="url(#filter0_dd_903_12986)">
                   <path d="M59.9995 34.5C59.9995 48.5833 48.5828 60 34.4995 60C20.4163 60 8.99953 48.5833 8.99953 34.5C8.99953 20.4167 20.4163 9 34.4995 9C48.5828 9 59.9995 20.4167 59.9995 34.5Z" fill="#2D4CC8" />
                 </g>
@@ -226,7 +237,7 @@ export default function BfsiPage() {
 
           <div className="bfsi-card bfsi-card-green">
             <div className="bfsi-card-icon">
-              <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true">
                 <g filter="url(#filter0_dd_903_12964)">
                   <path d="M59.9995 34.5C59.9995 48.5833 48.5828 60 34.4995 60C20.4163 60 8.99953 48.5833 8.99953 34.5C8.99953 20.4167 20.4163 9 34.4995 9C48.5828 9 59.9995 20.4167 59.9995 34.5Z" fill="#2A7308" />
                 </g>
@@ -258,7 +269,7 @@ export default function BfsiPage() {
 
           <div className="bfsi-card  bfsi-card-orange">
             <div className="bfsi-card-icon">
-              <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true">
                 <g filter="url(#filter0_dd_903_12975)">
                   <path d="M59.9995 34.5C59.9995 48.5833 48.5828 60 34.4995 60C20.4163 60 8.99953 48.5833 8.99953 34.5C8.99953 20.4167 20.4163 9 34.4995 9C48.5828 9 59.9995 20.4167 59.9995 34.5Z" fill="#C05512" />
                 </g>
@@ -303,20 +314,20 @@ export default function BfsiPage() {
         <div className="bfsi-challenges-row bfsi-challenges-row-3">
           {challengeCards.slice(0, 3).map((card, i) => (
             <div className="bfsi-challenge-card" key={card.title}>
-              <div className={`bfsi-challenge-top ${openCards.has(i) ? "open" : ""}`} onClick={() => toggleCard(i)}>
+              <div className={`bfsi-challenge-top ${openCards.has(i) ? "open" : ""}`} onClick={() => toggleCard(i)} onKeyDown={(e) => handleCardKeyDown(e, i)} role="button" tabIndex={0} aria-expanded={openCards.has(i)} aria-controls={`bfsi-challenge-panel-${i}`}>
                 <div className="bfsi-challenge-icon-circle" style={{ borderColor: card.color }}>
                   {card.icon}
                 </div>
                 <h3 className="bfsi-challenge-title">{card.title}</h3>
                 {!openCards.has(i) && (
                   <span className="bfsi-challenge-chevron">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                       <path d="M8 13L16 21L24 13" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                 )}
               </div>
-              <div className={`bfsi-challenge-panel ${openCards.has(i) ? "open" : ""}`}>
+              <div id={`bfsi-challenge-panel-${i}`} className={`bfsi-challenge-panel ${openCards.has(i) ? "open" : ""}`}>
                 <p className="bfsi-challenge-desc">{card.desc}</p>
               </div>
             </div>
@@ -328,20 +339,20 @@ export default function BfsiPage() {
             const index = i + 3;
             return (
               <div className="bfsi-challenge-card" key={card.title}>
-                <div className={`bfsi-challenge-top ${openCards.has(index) ? "open" : ""}`} onClick={() => toggleCard(index)}>
+                <div className={`bfsi-challenge-top ${openCards.has(index) ? "open" : ""}`} onClick={() => toggleCard(index)} onKeyDown={(e) => handleCardKeyDown(e, index)} role="button" tabIndex={0} aria-expanded={openCards.has(index)} aria-controls={`bfsi-challenge-panel-${index}`}>
                   <div className="bfsi-challenge-icon-circle" style={{ borderColor: card.color }}>
                     {card.icon}
                   </div>
                   <h3 className="bfsi-challenge-title">{card.title}</h3>
                   {!openCards.has(index) && (
                     <span className="bfsi-challenge-chevron">
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                         <path d="M8 13L16 21L24 13" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </span>
                   )}
                 </div>
-                <div className={`bfsi-challenge-panel ${openCards.has(index) ? "open" : ""}`}>
+                <div id={`bfsi-challenge-panel-${index}`} className={`bfsi-challenge-panel ${openCards.has(index) ? "open" : ""}`}>
                   <p className="bfsi-challenge-desc">{card.desc}</p>
                 </div>
               </div>
@@ -352,7 +363,8 @@ export default function BfsiPage() {
 
       <section className="bfsi-stat-banner">
         <div className="bfsi-stat-panel">
-          <Image src="/images/business-advisor-giving-his-option.jpg" alt="BFSI professional discussing NeuroLXP training" fill sizes="(max-width: 1024px) 100vw, 1280px" className="bfsi-stat-photo" style={{ objectPosition: "75% center" }} />
+          <Image src="/images/rupee-growth-graphic.png" alt="Rupee symbol with an ascending growth chart representing BFSI training returns" fill sizes="(max-width: 1024px) 100vw, 1280px" className="bfsi-stat-photo" style={{ objectPosition: "75% 40%" }} />
+          <div className="bfsi-stat-shadow-overlay" />
           <div className="bfsi-stat-content">
             <div className="bfsi-stat-badge">
               <span className="bfsi-stat-badge-text">NeuroLXP</span>
@@ -362,6 +374,53 @@ export default function BfsiPage() {
             <p className="bfsi-stat-subtext">Secure compliance. Smarter learning. Stronger BFSI teams.</p>
           </div>
         </div>
+      </section>
+
+      <section className="bfsi-benefits">
+        <div className="bfsi-benefits-header">
+          <div className="bfsi-benefits-badge">
+            <span>Organization Benefit</span>
+          </div>
+          <h2 className="bfsi-benefits-heading">Benefits of NeuroLXP for BFSI Organisations</h2>
+          <p className="bfsi-benefits-subtext">NeuroLXP helps BFSI organizations strengthen compliance, build skills, and improve workforce performance through intelligent learning.</p>
+        </div>
+
+        <div className="bfsi-benefits-grid">
+          {benefitCards.map((text) => (
+            <div className="bfsi-benefit-card" key={text}>
+              <span className="bfsi-benefit-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                  <rect x="3" y="3" width="26" height="26" rx="6" fill="#D9D9D9" stroke="#2A7308" strokeWidth="3" />
+                  <path d="M10 16.5L14 20.5L22 11.5" stroke="#2A7308" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+              <p className="bfsi-benefit-text">{text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bfsi-finance-banner">
+        <div className="bfsi-finance-panel">
+          <Image src="/images/Buillding-bfsi.png" alt="High-rise buildings representing future-ready finance learning" fill sizes="(max-width: 1024px) 100vw, 1280px" className="bfsi-finance-photo" />
+          <div className="bfsi-finance-overlay" />
+          <div className="bfsi-finance-content">
+            <div className="bfsi-finance-blur" />
+            <div className="bfsi-finance-badge">
+              <span>Future Ready</span>
+            </div>
+            <h2 className="bfsi-finance-heading">Future-Ready Finance Learning</h2>
+            <p className="bfsi-finance-subtext">Empowering BFSI with secure, intelligent learning.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bfsi-cta">
+        <div className="bfsi-cta-badge">
+          <span>NeuroLXP</span>
+        </div>
+        <h2 className="bfsi-cta-heading">Enabling Smarter Learning for the BFSI Industry</h2>
+        <p className="bfsi-cta-subtext">With AI-powered learning tools, compliance-ready training modules, and advanced analytics, NeuroLXP empowers BFSI organisations to build knowledgeable, compliant, and future-ready workforces.</p>
       </section>
     </main>
   );
