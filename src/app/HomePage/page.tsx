@@ -3,8 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState, type JSX } from "react";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
 import { LightbulbIcon, CursorClickIcon, TargetIcon, UsersIcon, SmartphoneIcon, GraduationCapIcon, SettingsGearIcon, LibraryIcon, BuildingIcon, ContentWritingIcon, BrainIcon, AnalyticsUpIcon, UniversityIcon, HandshakeIcon, LandmarkIcon, UserIcon, PlayIcon } from "@/components/icons/Icons";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const heroSlides = [
   { id: 1, image: "/images/8595828.jpg", heading: "Transform the Way the World Learns" },

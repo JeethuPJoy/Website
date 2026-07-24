@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-const VIDEO_SRC = '/coding-challenge/videos/interview.mp4';
+const VIDEO_SRC = '/videos/interview.mp4';
 const TABLET_MIN = 768;
 
 function CareerBadge() {

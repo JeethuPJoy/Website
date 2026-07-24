@@ -16,13 +16,13 @@ export type NavItem =
 
 export const navItems: NavItem[] = [
   { type: "link", label: "Home", href: "/", active: true },
-  { type: "link", label: "genZgalaxy", href: "/genzgalaxy" },
+  { type: "link", label: "genZgalaxy", href: "/GenZGalaxy" },
   {
     type: "simple",
     label: "NeuroLXP 2.1",
     href: "/neurolxp-2-1",
     items: [
-      { label: "Digital Literacy", href: "/digital-literacy" },
+      { label: "Digital Literacy", href: "/DigitalLiteracy" },
       { label: "Information Literacy", href: "/information-literacy" },
       { label: "Media Literacy", href: "/MediaLiteracy" },
       { label: "Financial Literacy", href: "/FinancialLitracy" },
@@ -34,10 +34,10 @@ export const navItems: NavItem[] = [
     label: "Neuro Labs",
     href: "/neuro-labs",
     items: [
-      { label: "Coding Labs", href: "/coding-labs" },
-      { label: "Coding Bootcamps", href: "/coding-bootcamps" },
-      { label: "Coding Challenges", href: "/Coding-Challenge" },
-      { label: "Coding Resources", href: "/coding-resources" },
+      { label: "Coding Labs", href: "/CodingLabs" },
+      { label: "Coding Bootcamps", href: "/CodingBootCamps" },
+      { label: "Coding Challenges", href: "/CodingChallenge" },
+      { label: "Coding Resources", href: "/CodingResources" },
     ],
   },
   {
@@ -60,7 +60,7 @@ export const navItems: NavItem[] = [
         items: [
           { label: "Corporate Training", href: "/our-customers/corporate-training" },
           { label: "E-Learning", href: "/our-customers/e-learning" },
-          { label: "Education", href: "/university" },
+          { label: "Education", href: "/University" },
           { label: "Government", href: "/our-customers/government" },
           { label: "Training Management", href: "/our-customers/training-management" },
         ],

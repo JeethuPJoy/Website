@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'Solve real-world coding challenges and build coding confidence with NeuroLabs.',
 };
 
-const ASSET = '/coding-challenge';
+// const ASSET = '/images';
 
 function SectionBadge({
   label,
@@ -94,7 +94,7 @@ export default function CodingChallengePage() {
         <div className={'arrowRightDoubleParent'}>
           <Image
             className={'arrowDown01Icon'}
-            src={`${ASSET}/icons/arrow-right-double.svg`}
+            src="/icons/arrow-right-double.svg"
             
             width={16}
             height={16}
@@ -130,7 +130,7 @@ export default function CodingChallengePage() {
         </div>
         <Image
           className={'businessStyleYoungBeautifulIcon'}
-          src={`${ASSET}/images/hero-people.png`}
+          src="/images/hero-people.png"
           width={663}
           height={541}
           sizes="663px"
@@ -143,7 +143,7 @@ export default function CodingChallengePage() {
               <div className={`heroStripSeg heroStripPractice`}>
                 <Image
                   className={'heroStripShape'}
-                  src={`${ASSET}/icons/rect-3.svg`}
+                  src="/icons/rect-3.svg"
                   width={225}
                   height={98}
                   alt=""
@@ -151,7 +151,7 @@ export default function CodingChallengePage() {
                 <div className={'heroStripContent'}>
                   <Image
                     className={'heroStripIcon'}
-                    src={`${ASSET}/icons/code-xml-1.svg`}
+                    src="/icons/code-xml-1.svg"
                     width={45}
                     height={43}
                     alt=""
@@ -164,7 +164,7 @@ export default function CodingChallengePage() {
               <div className={`heroStripSeg heroStripThink`}>
                 <Image
                   className={'heroStripShape'}
-                  src={`${ASSET}/icons/rect-3-1.svg`}
+                  src="/icons/rect-3-1.svg"
                   width={253}
                   height={98}
                   alt=""
@@ -172,7 +172,7 @@ export default function CodingChallengePage() {
                 <div className={'heroStripContent'}>
                   <Image
                     className={'heroStripIcon'}
-                    src={`${ASSET}/icons/ai-brain-01-1.svg`}
+                    src="/icons/ai-brain-01-1.svg"
                     width={36}
                     height={36}
                     alt=""
@@ -185,7 +185,7 @@ export default function CodingChallengePage() {
               <div className={`heroStripSeg heroStripShowcase`}>
                 <Image
                   className={'heroStripShape'}
-                  src={`${ASSET}/icons/rect-4.svg`}
+                  src="/icons/rect-4.svg"
                   width={253}
                   height={98}
                   alt=""
@@ -193,7 +193,7 @@ export default function CodingChallengePage() {
                 <div className={'heroStripContent'}>
                   <Image
                     className={'heroStripIcon'}
-                    src={`${ASSET}/icons/champion.svg`}
+                    src="/icons/champion.svg"
                     width={41}
                     height={43}
                     alt=""
@@ -232,7 +232,7 @@ export default function CodingChallengePage() {
                   <div className={'ellipseDiv'} />
                   <Image
                     className={'puzzleIcon'}
-                    src={`${ASSET}/icons/puzzle.svg`}
+                    src="/icons/puzzle.svg"
                     width={36}
                     height={36}
                     alt=""
@@ -254,7 +254,7 @@ export default function CodingChallengePage() {
                     <div className={'frameChild4'} />
                     <Image
                       className={'search02Icon'}
-                      src={`${ASSET}/icons/search-02.svg`}
+                      src="/icons/search-02.svg"
                       width={36}
                       height={36}
                       alt=""
@@ -276,7 +276,7 @@ export default function CodingChallengePage() {
                   <div className={'frameChild6'} />
                   <Image
                     className={'aiBrain01Icon'}
-                    src={`${ASSET}/icons/ai-brain-01.svg`}
+                    src="/icons/ai-brain-01.svg"
                     width={36}
                     height={36}
                     alt=""
@@ -294,7 +294,7 @@ export default function CodingChallengePage() {
                   <div className={'frameChild8'} />
                   <Image
                     className={'codeXmlIcon'}
-                    src={`${ASSET}/icons/code-xml.svg`}
+                    src="/icons/code-xml.svg"
                     width={36}
                     height={36}
                     alt=""
@@ -416,7 +416,7 @@ export default function CodingChallengePage() {
       <div className={'rectangleParent4'}>
         <Image
           className={'colleaguesDiscussingWorkProIcon'}
-          src={`${ASSET}/images/colleagues.png`}
+          src="/images/colleagues.png"
           width={702}
           height={505}
           sizes="(max-width: 767px) 100vw, 702px"

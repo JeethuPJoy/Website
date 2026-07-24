@@ -3,6 +3,8 @@
   z-index: 1;
   display: flex;
   align-items: center;
+  max-width: 1373px;
+  margin-inline: auto;
   gap: 8px;
   padding: 16px 0px 0;
 }
