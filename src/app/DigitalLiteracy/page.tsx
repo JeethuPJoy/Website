@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import "./DigitalLiteracy.css";
 
 function TopographicPattern({ className }: { className?: string }) {
   return (

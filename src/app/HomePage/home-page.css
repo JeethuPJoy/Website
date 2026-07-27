@@ -1,3 +1,55 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+.hero-dot:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
+.odyssey-toggle-button:focus-visible .odyssey-toggle-pill {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 3px;
+}
+
+.learning-modules-nav-button:focus-visible,
+.testimonials-nav-button:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 4px;
+}
+
+.faq-item-header:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: -3px;
+  border-radius: 16px;
+}
+
+.get-in-touch-button:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 3px;
+}
+
+.odyssey-demo-button:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 3px;
+}
+
 .hero-section {
   width: 100%;
   padding: 32px 16px;
@@ -83,13 +135,26 @@
 }
 
 .hero-dot {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s ease;
+}
+
+.hero-dot::after {
+  content: "";
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #ffffff;
-  border: none;
-  padding: 0;
-  cursor: pointer;
   transition:
     width 0.3s ease,
     background 0.3s ease,
@@ -97,6 +162,10 @@
 }
 
 .hero-dot-active {
+  width: 48px;
+}
+
+.hero-dot-active::after {
   width: 40px;
   border-radius: 30px;
   background: #2d4cc8;
@@ -190,7 +259,6 @@
   align-items: center;
   justify-content: center;
 
-
   transition: transform 0.3s ease;
 }
 
@@ -212,7 +280,6 @@
   gap: 20px;
   padding: 24px 12px;
   box-sizing: border-box;
-
 
   transition: box-shadow 0.3s ease;
 }
@@ -254,7 +321,7 @@
   align-items: center;
   justify-content: center;
 
-   transition:
+  transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
@@ -277,12 +344,89 @@
       10px 10px 20px #c6c6c9,
       -10px -10px 20px #ffffff;
   }
+
+  .smv-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .smv-card:hover .smv-card-icon-circle {
+    transform: scale(1.08);
+    box-shadow:
+      10px 10px 20px #c6c6c9,
+      -10px -10px 20px #ffffff;
+  }
+
+  .smv-card:hover .smv-card-image {
+    transform: scale(1.08);
+  }
+
+  .platform-overview-list-item:hover .platform-overview-capsule {
+    transform: translateY(-4px);
+  }
+
+  .platform-overview-list-item:hover .platform-overview-icon-circle {
+    transform: scale(1.08);
+  }
+
+  .purpose-pill:hover {
+    transform: translateY(-6px);
+    border-width: 0 10px;
+    box-shadow:
+      inset -4px -4px 8px #ffffff,
+      inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  }
+
+  .why-choose-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .why-choose-card:hover .why-choose-icon-circle {
+    transform: scale(1.08);
+    box-shadow:
+      8px 8px 16px #c6c6c9,
+      -8px -8px 16px #ffffff,
+      0 0 0 3px var(--dash-color);
+  }
+
+  .why-choose-card:hover .why-choose-diamond-shape {
+    border-style: solid;
+    transform: translateX(-50%) rotate(49deg);
+  }
+
+  .get-in-touch-button:hover {
+    box-shadow:
+      inset -8px -8px 16px #ffffff,
+      inset 8px 8px 16px #c6c6c9;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .odyssey-card,
   .odyssey-card-inner,
-  .odyssey-card-icon-circle {
+  .odyssey-card-icon-circle,
+  .odyssey-toggle-icon,
+  .odyssey-extra-wrapper,
+  .hero-slide,
+  .hero-dot,
+  .hero-dot::after,
+  .learning-modules-track,
+  .learning-module-card,
+  .learning-module-image-frame,
+  .learning-module-description-wrapper,
+  .testimonials-track,
+  .faq-item-answer-wrapper,
+  .smv-card,
+  .smv-card-icon-circle,
+  .smv-card-image,
+  .platform-overview-capsule,
+  .platform-overview-icon-circle,
+  .purpose-pill {
+    transition: none;
+  }
+
+  .why-choose-card,
+  .why-choose-icon-circle,
+  .why-choose-diamond-shape {
     transition: none;
   }
 }
@@ -563,6 +707,7 @@
   gap: 24px;
   padding: 16px 32px 16px 24px;
   box-sizing: border-box;
+  transition: transform 0.3s ease;
 }
 
 .platform-overview-icon-circle {
@@ -577,6 +722,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .platform-overview-icon {
@@ -672,6 +820,10 @@
   padding: 16px 24px;
   box-sizing: border-box;
   text-align: center;
+  transition:
+    transform 0.3s ease,
+    border-width 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .purpose-pill-line {
@@ -901,6 +1053,8 @@
   width: 100%;
   max-width: 301px;
   aspect-ratio: 301 / 343;
+
+  transition: transform 0.3s ease;
 }
 
 .why-choose-icon-ring {
@@ -931,6 +1085,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .why-choose-icon {
@@ -966,6 +1124,8 @@
   border: 1px dashed;
   border-radius: 24px;
   z-index: 0;
+
+  transition: transform 0.3s ease;
 }
 
 .why-choose-diamond-inner-shape {
@@ -1577,6 +1737,10 @@
   width: 100%;
 }
 
+.faq-item-heading {
+  margin: 0;
+}
+
 .faq-item-header {
   width: 100%;
   display: flex;
@@ -1934,6 +2098,7 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  transition: transform 0.3s ease;
 }
 
 .smv-card-icon-ring {
@@ -1966,6 +2131,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .smv-card-icon {
@@ -2029,6 +2197,7 @@
 
 .smv-card-image {
   object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
 .smv-stats {
@@ -2125,6 +2294,52 @@
   line-height: 1.4;
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+.book-demo-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(49, 52, 75, 0.55);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px 16px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.book-demo-modal-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 762px;
+  outline: none;
+}
+
+.book-demo-modal-close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #dfe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.book-demo-modal-close-icon {
+  width: 30px;
+  height: 30px;
+  color: #31344b;
+}
+
+.book-demo-modal-close:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 3px;
 }
 
 @media (max-width: 2000px) {
@@ -2350,6 +2565,9 @@
     height: 22%;
   }
   .hero-dot-active {
+    width: 32px;
+  }
+  .hero-dot-active::after {
     width: 28px;
   }
 
@@ -2900,6 +3118,17 @@
   }
   .smv-stat {
     flex: 1 1 100%;
+  }
+
+  .book-demo-modal-overlay {
+    padding: 24px 12px;
+  }
+
+  .book-demo-modal-close {
+    top: -12px;
+    right: -4px;
+    width: 40px;
+    height: 40px;
   }
 }
 
