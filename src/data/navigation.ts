@@ -77,8 +77,8 @@ export const navItems: NavItem[] = [
         items: [
           { label: "Learning Style Analysis", href: "/features/learning-style-analysis" },
           { label: "Goal Setting & Planning", href: "/features/goal-setting-planning" },
-          { label: "Learning Paths", href: "/features/learning-paths" },
-          { label: "Personalization", href: "/features/personalization" },
+          // { label: "Learning Paths", href: "/features/learning-paths" },
+          { label: "Personalization", href: "/personalized-learning-paths" },
           { label: "Progress Tracking", href: "/features/progress-tracking" },
         ],
       },

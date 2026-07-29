@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
 import "@/components/Header/Header.css";
 import "@/components/Footer/Footer.css";
 import "./globals.css";
@@ -25,10 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
+        <a href="#main-content" className="skip-to-main-link">
+          Skip to main content
+        </a>
         <Header />
         {children}
         <Footer />
-        <ScrollToTopButton />
       </body>
     </html>
   );

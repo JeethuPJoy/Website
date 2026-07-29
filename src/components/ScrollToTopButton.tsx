@@ -34,7 +34,7 @@ export default function ScrollToTopButton() {
       onClick={handleClick}
       aria-label="Scroll to top"
     >
-      <span className="scroll-top-button-inner">
+      <span className="scroll-top-button-inner" aria-hidden="true">
         {arrowAnimationData && <Lottie animationData={arrowAnimationData} loop autoplay className="scroll-top-button-icon" />}
       </span>
     </button>

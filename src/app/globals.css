@@ -31,3 +31,23 @@ ul,
 ol {
   list-style: none;
 }
+
+.skip-to-main-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: 2000;
+  padding: 16px 24px;
+  background: #2d4cc8;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-to-main-link:focus {
+  top: 16px;
+}

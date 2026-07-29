@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { flushSync } from "react-dom";
 import { useEffect, useRef, useState, type JSX, type CSSProperties, type RefObject } from "react";
 import dynamic from "next/dynamic";
 import { LightbulbIcon, CursorClickIcon, TargetIcon, UsersIcon, SmartphoneIcon, GraduationCapIcon, SettingsGearIcon, LibraryIcon, BuildingIcon, ContentWritingIcon, BrainIcon, AnalyticsUpIcon, UniversityIcon, HandshakeIcon, LandmarkIcon, UserIcon, PlayIcon } from "@/components/icons/Icons";
@@ -9,13 +10,17 @@ import BookADemo from "@/components/Bookademo/Bookademo";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
-const heroSlides = [
-  { id: 1, image: "/images/8595828.jpg", heading: "Transform the Way the World Learns" },
-  { id: 2, image: "/images/brainstorm-meeting.jpg", heading: "Empowering Lifelong learning" },
-  { id: 3, image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.jpg", heading: "Transform Your Learning, Transform Your Future" },
-  { id: 4, image: "/images/businesswoman-with-tablet-pc-meeting.jpg", heading: "Learn Beyond Limits" },
-  { id: 5, image: "/images/college-graduates-smiling-camera.jpg", heading: "Empowering Lifelong learning" },
-  { id: 6, image: "/images/group-different-people-volunteering-foodbank.jpg", heading: "Empowering Communities Through Learning." },
+type HeroSlide = { id: number; type: "image"; image: string; heading: string } | { id: number; type: "video"; src: string; heading: string };
+
+const heroSlides: HeroSlide[] = [
+  { id: 1, type: "image", image: "/images/brainstorm-meeting.jpg", heading: "Empowering Lifelong learning" },
+  { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.jpg", heading: "Transform Your Learning, Transform Your Future" },
+  { id: 3, type: "video", src: "/videos/asking-doubts-to-teacher.mp4", heading: "Every Question Leads to Growth" },
+  { id: 4, type: "image", image: "/images/businesswoman-with-tablet-pc-meeting.jpg", heading: "Learn Beyond Limits" },
+  { id: 5, type: "image", image: "/images/college-graduates-smiling-camera.jpg", heading: "Unlock Your Full Potential" },
+  { id: 6, type: "video", src: "/videos/discussing-in-class.mp4", heading: "Where Great Ideas Take Shape Together" },
+  { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank.jpg", heading: "Empowering Communities Through Learning." },
+  { id: 8, type: "image", image: "/images/8595828.jpg", heading: "Transform the Way the World Learns" },
 ];
 
 function HeroCarousel() {
@@ -36,7 +41,7 @@ function HeroCarousel() {
     if (isPaused || prefersReducedMotion) return;
     intervalRef.current = setInterval(() => {
       setActiveSlide((current) => (current + 1) % heroSlides.length);
-    }, 5000);
+    }, 4000);
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
@@ -52,14 +57,22 @@ function HeroCarousel() {
         <div className="hero-image-stage">
           {heroSlides.map((slide, index) => (
             <div key={slide.id} className={`hero-slide${index === activeSlide ? " hero-slide-active" : ""}`} role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${heroSlides.length}`} aria-hidden={index !== activeSlide}>
-              <Image src={slide.image} alt="" fill priority={index === 0} sizes="(min-width: 1312px) 1208px, 100vw" className="hero-slide-image" />
+              {slide.type === "video" ? (
+                <video className="hero-slide-image hero-slide-video" autoPlay muted loop playsInline aria-hidden="true">
+                  <source src={slide.src} type="video/mp4" />
+                </video>
+              ) : (
+                <Image src={slide.image} alt="" fill priority={index === 0} sizes="(min-width: 1312px) 1208px, 100vw" className="hero-slide-image" />
+              )}
               <div className="hero-caption">
                 <h1 className="hero-heading">{slide.heading}</h1>
-                <div className="hero-dots">
-                  {heroSlides.map((dotSlide, dotIndex) => (
-                    <button key={dotSlide.id} type="button" aria-label={`Go to slide ${dotIndex + 1}`} aria-current={dotIndex === activeSlide ? "true" : undefined} className={`hero-dot${dotIndex === activeSlide ? " hero-dot-active" : ""}`} onClick={() => goToSlide(dotIndex)} />
-                  ))}
-                </div>
+                {index === activeSlide && (
+                  <div className="hero-dots">
+                    {heroSlides.map((dotSlide, dotIndex) => (
+                      <button key={dotSlide.id} type="button" aria-label={`Go to slide ${dotIndex + 1}`} aria-current={dotIndex === activeSlide ? "true" : undefined} className={`hero-dot${dotIndex === activeSlide ? " hero-dot-active" : ""}`} onClick={() => goToSlide(dotIndex)} />
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           ))}
@@ -74,17 +87,17 @@ function HeroCarousel() {
 
 const odysseyCards = [
   { id: 1, title: "Personalized Learning", description: "Personalized learning tailored to every learner", color: "#2D4CC8", Icon: LightbulbIcon },
-  { id: 2, title: "Interactive Content", description: "Interactive learning that inspires active participation", color: "#31344B", Icon: CursorClickIcon },
+  { id: 2, title: "Interactive Content", description: "Interactive learning that inspires active participation", color: "#BF1869", Icon: CursorClickIcon },
   { id: 3, title: "Skill Development", description: "Build practical skills for future success", color: "#861109", Icon: TargetIcon },
   { id: 4, title: "Collaborative Learning", description: "Collaborate, learn, and grow together seamlessly", color: "#907507", Icon: UsersIcon },
   { id: 5, title: "Mobile-First Design", description: "Learn anytime, anywhere, on any device", color: "#2A7308", Icon: SmartphoneIcon },
   { id: 6, title: "Career Pathways", description: "Build skills. Advance your career confidently", color: "#67096E", Icon: GraduationCapIcon },
-  { id: 7, title: "Customizable Interface", description: "Customize learning your way, effortlessly", color: "#BF1869", Icon: SettingsGearIcon },
-  { id: 8, title: "Learning Insights", description: "Turn insights into smarter learning decisions", color: "#0B9BA0", Icon: LibraryIcon },
-  { id: 9, title: "Multi-Tenant", description: "Manage multiple organizations from one platform", color: "#BCCF10", Icon: BuildingIcon },
+  { id: 7, title: "Customizable Interface", description: "Customize learning your way, effortlessly", color: "#8D0884", Icon: SettingsGearIcon },
+  { id: 8, title: "Learning Insights", description: "Turn insights into smarter learning decisions", color: "#052C74", Icon: LibraryIcon },
+  { id: 9, title: "Multi-Tenant", description: "Manage multiple organizations from one platform", color: "#3B1D5A", Icon: BuildingIcon },
   { id: 10, title: "Content Management", description: "Manage content with complete version control", color: "#09248F", Icon: ContentWritingIcon },
-  { id: 11, title: "Adaptive Learning", description: "Personalized learning that adapts to everyone", color: "#BA06AE", Icon: BrainIcon },
-  { id: 12, title: "Learner Tracking", description: "Track every learner's complete learning journey", color: "#2DC8BB", Icon: AnalyticsUpIcon },
+  { id: 11, title: "Adaptive Learning", description: "Personalized learning that adapts to everyone", color: "#134E4A", Icon: BrainIcon },
+  { id: 12, title: "Learner Tracking", description: "Track every learner's complete learning journey", color: "#4E342E", Icon: AnalyticsUpIcon },
 ];
 
 function OdysseyCard({ title, description, color, Icon }: { title: string; description: string; color: string; Icon: (props: { className?: string }) => JSX.Element }) {
@@ -243,7 +256,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
     id: 2,
     title: "Our Mission",
     description: "To transform learning and skilling through one intelligent ecosystem that empowers academic entities, corporates, and learners to achieve measurable, future-ready success.",
-    image: "/images/interested-coworkers-with-new-project.jpg",
+    image: "/images/interested-coworkers-project.jpg",
     accentColor: "#2A7308",
     Icon: GoalIcon,
   },
@@ -251,7 +264,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
     id: 3,
     title: "Our Vision",
     description: "To provide the world's most comprehensive digital learning and skilling ecosystem, shaping the future of lifelong learning through innovation, excellence, and inclusive growth.",
-    image: "/images/teacher-class-explaining-lesson-student.jpg",
+    image: "/images/coworkers-interested.png",
     accentColor: "#67096E",
     Icon: EyeIcon,
   },
@@ -347,7 +360,7 @@ const platformOverviewItems = [
   { id: 3, label: "Corporates", title: "Empowering future-ready teams", color: "#67096E", Icon: BuildingIcon },
   { id: 4, label: "NGOs", title: "Driving meaningful social impact", color: "#BF1869", Icon: HandshakeIcon },
   { id: 5, label: "Governments", title: "Future-ready workforce skilling", color: "#2A7308", Icon: LandmarkIcon },
-  { id: 6, label: "Individuals", title: "Unlocking career opportunities", color: "#0B9BA0", Icon: UserIcon },
+  { id: 6, label: "Individuals", title: "Unlocking career opportunities", color: "#086F73", Icon: UserIcon },
 ];
 
 function PlatformOverview() {
@@ -377,7 +390,7 @@ function PlatformOverview() {
       <div className="platform-overview-inner">
         <div className="platform-overview-media">
           <div className="platform-overview-media-frame">
-            <video className="platform-overview-video" src="/videos/6561564-uhd_3840_2160_25fps.mp4" aria-label="NeuroLXP platform walkthrough" autoPlay muted loop playsInline controls />
+            <video className="platform-overview-video" src="/videos/6561564-uhd_3840_2160_25fps.mp4" autoPlay muted loop playsInline />
           </div>
         </div>
 
@@ -461,7 +474,7 @@ function MeetNeuroLXP() {
     <section className="meet-neurolxp-section" aria-labelledby="meet-neurolxp-heading">
       <div className="meet-neurolxp-frame">
         <div className="meet-neurolxp-overlay">
-          <Image src="/images/friends-learning-with-laptop.jpg" alt="Students collaborating on a laptop" fill sizes="(min-width: 1312px) 1216px, 100vw" className="meet-neurolxp-image" />
+          <Image src="/images/friends-learning-with-laptop.png" alt="Students collaborating on a laptop" fill sizes="(min-width: 1312px) 1216px, 100vw" className="meet-neurolxp-image" />
         </div>
         <div className="meet-neurolxp-text">
           <span className="meet-neurolxp-badge">Meet NeuroLXP</span>
@@ -539,7 +552,7 @@ function WhyChooseCard({ title, description, dashColor, iconBg, Icon }: WhyChoos
           <Icon className="why-choose-icon" />
         </div>
       </div>
-      <div className="why-choose-diamond-shape" style={{ borderColor: dashColor }} />
+      {/* <div className="why-choose-diamond-shape" style={{ borderColor: dashColor }} /> */}
       <div className="why-choose-diamond-inner-shape" />
       <div className="why-choose-card-content">
         <h3 className="why-choose-card-title">{title}</h3>
@@ -584,7 +597,7 @@ const learningModuleCards = [
   {
     id: 2,
     image: "/images/elevated-view-businessman-businesswoman-stacking-each-other-s-hand-project.jpg",
-    title: "Career Pathways",
+    title: "Career Growth",
     description: "Develop in-demand skills, monitor your achievements, and build a successful career through continuous learning.",
   },
   {
@@ -613,6 +626,10 @@ const learningModuleCards = [
   },
 ];
 
+const CARD_CLONE_COUNT = 2;
+
+const extendedLearningModuleCards = [...learningModuleCards.slice(-CARD_CLONE_COUNT), ...learningModuleCards, ...learningModuleCards.slice(0, CARD_CLONE_COUNT)];
+
 function ArrowLeftIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 47 47" fill="none" className={className} aria-hidden="true" focusable="false">
@@ -631,14 +648,15 @@ function ArrowRightIcon({ className }: { className?: string }) {
   );
 }
 
-function LearningModuleCard({ title, description, image, isFeatured, isTextExpanded }: { title: string; description: string; image: string; isFeatured: boolean; isTextExpanded: boolean }) {
+function LearningModuleCard({ title, description, image, isFeatured, isTextExpanded, isClone }: { title: string; description: string; image: string; isFeatured: boolean; isTextExpanded: boolean; isClone: boolean }) {
+  const TitleTag = isClone ? "p" : "h3";
   return (
     <div className={`learning-module-card${isFeatured ? " learning-module-card-featured" : ""}`}>
       <div className="learning-module-image-frame">
         <Image src={image} alt={title} fill sizes="(max-width: 375px) 230px, (max-width: 480px) 290px, (max-width: 768px) 320px, (max-width: 1024px) 400px, 500px" className="learning-module-image" />
       </div>
       <div className="learning-module-text">
-        <h3 className="learning-module-title">{title}</h3>
+        <TitleTag className="learning-module-title">{title}</TitleTag>
         <div className="learning-module-description-wrapper">
           <p className={`learning-module-description${isTextExpanded ? " learning-module-description-expanded" : ""}`}>{description}</p>
         </div>
@@ -648,24 +666,43 @@ function LearningModuleCard({ title, description, image, isFeatured, isTextExpan
 }
 
 function LearningModules() {
-  const [activeIndex, setActiveIndex] = useState(2);
-  const [settledIndex, setSettledIndex] = useState(2);
+  const realCount = learningModuleCards.length;
+  const [trackIndex, setTrackIndex] = useState(CARD_CLONE_COUNT + 2);
+  const [settledActiveId, setSettledActiveId] = useState(extendedLearningModuleCards[CARD_CLONE_COUNT + 2].id);
+  const [transitionsEnabled, setTransitionsEnabled] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
   const viewportRef = useRef<HTMLDivElement | null>(null);
+  const trackRef = useRef<HTMLDivElement | null>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [translateX, setTranslateX] = useState(0);
+  const isAnimatingRef = useRef(false);
 
-  const goToPrevious = () => {
-    setActiveIndex((current) => (current - 1 + learningModuleCards.length) % learningModuleCards.length);
+  const activeId = extendedLearningModuleCards[trackIndex].id;
+
+  const goToPreviousOnly = () => {
+    if (isAnimatingRef.current) return;
+    isAnimatingRef.current = true;
+    setTrackIndex((current) => current - 1);
   };
 
-  const goToNext = () => {
-    setActiveIndex((current) => (current + 1) % learningModuleCards.length);
+  const goToNextOnly = () => {
+    if (isAnimatingRef.current) return;
+    isAnimatingRef.current = true;
+    setTrackIndex((current) => current + 1);
   };
+
+  useEffect(() => {
+    if (isHovered) return;
+    const timer = setInterval(() => {
+      goToNextOnly();
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [isHovered, trackIndex]);
 
   useEffect(() => {
     const recalculate = () => {
       const viewport = viewportRef.current;
-      const activeCard = cardRefs.current[activeIndex];
+      const activeCard = cardRefs.current[trackIndex];
       if (!viewport || !activeCard) return;
       const viewportCenter = viewport.offsetWidth / 2;
       const cardCenter = activeCard.offsetLeft + activeCard.offsetWidth / 2;
@@ -675,29 +712,71 @@ function LearningModules() {
     recalculate();
 
     const viewport = viewportRef.current;
-    const handleTransitionEnd = (event: TransitionEvent) => {
+    const handleCardResize = (event: TransitionEvent) => {
       if (event.propertyName === "width" || event.propertyName === "height") {
         recalculate();
-        setSettledIndex(activeIndex);
+        setSettledActiveId(activeId);
       }
     };
 
-    viewport?.addEventListener("transitionend", handleTransitionEnd);
+    viewport?.addEventListener("transitionend", handleCardResize);
     const fallbackTimer = setTimeout(() => {
       recalculate();
-      setSettledIndex(activeIndex);
+      setSettledActiveId(activeId);
     }, 550);
     window.addEventListener("resize", recalculate);
 
     return () => {
       window.removeEventListener("resize", recalculate);
-      viewport?.removeEventListener("transitionend", handleTransitionEnd);
+      viewport?.removeEventListener("transitionend", handleCardResize);
       clearTimeout(fallbackTimer);
     };
-  }, [activeIndex]);
+  }, [trackIndex, activeId]);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const handleTrackTransitionEnd = (event: TransitionEvent) => {
+      if (event.propertyName !== "transform") return;
+
+      const isPastEnd = trackIndex >= CARD_CLONE_COUNT + realCount;
+      const isBeforeStart = trackIndex < CARD_CLONE_COUNT;
+
+      if (isPastEnd || isBeforeStart) {
+        const nextIndex = isPastEnd ? trackIndex - realCount : trackIndex + realCount;
+        const viewport = viewportRef.current;
+        const nextCard = cardRefs.current[nextIndex];
+
+        flushSync(() => {
+          setTransitionsEnabled(false);
+          setTrackIndex(nextIndex);
+          if (viewport && nextCard) {
+            const viewportCenter = viewport.offsetWidth / 2;
+            const cardCenter = nextCard.offsetLeft + nextCard.offsetWidth / 2;
+            setTranslateX(viewportCenter - cardCenter);
+          }
+        });
+      } else {
+        isAnimatingRef.current = false;
+      }
+    };
+
+    track.addEventListener("transitionend", handleTrackTransitionEnd);
+    return () => track.removeEventListener("transitionend", handleTrackTransitionEnd);
+  }, [trackIndex, realCount]);
+
+  useEffect(() => {
+    if (transitionsEnabled) return;
+    const raf = requestAnimationFrame(() => {
+      setTransitionsEnabled(true);
+      isAnimatingRef.current = false;
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [transitionsEnabled]);
 
   return (
-    <section className="learning-modules-section" aria-labelledby="learning-modules-heading">
+    <section className="learning-modules-section" aria-labelledby="learning-modules-heading" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onFocus={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
       <div className="learning-modules-heading-block">
         <span className="learning-modules-badge">Learning Modules</span>
         <h2 className="learning-modules-heading" id="learning-modules-heading">
@@ -707,28 +786,32 @@ function LearningModules() {
       </div>
 
       <span className="sr-only" aria-live="polite" aria-atomic="true">
-        {`Now showing: ${learningModuleCards[activeIndex].title}`}
+        {`Now showing: ${extendedLearningModuleCards[trackIndex].title}`}
       </span>
 
       <div className="learning-modules-viewport" ref={viewportRef}>
-        <div className="learning-modules-track" style={{ transform: `translateX(${translateX}px)` }}>
-          {learningModuleCards.map((card, index) => (
-            <div
-              key={card.id}
-              ref={(element) => {
-                cardRefs.current[index] = element;
-              }}>
-              <LearningModuleCard title={card.title} description={card.description} image={card.image} isFeatured={index === activeIndex} isTextExpanded={index === activeIndex && index === settledIndex} />
-            </div>
-          ))}
+        <div className="learning-modules-track" ref={trackRef} style={{ transform: `translateX(${translateX}px)`, transition: transitionsEnabled ? undefined : "none" }}>
+          {extendedLearningModuleCards.map((card, index) => {
+            const isClone = index < CARD_CLONE_COUNT || index >= CARD_CLONE_COUNT + realCount;
+            return (
+              <div
+                key={`${card.id}-${index}`}
+                aria-hidden={isClone}
+                ref={(element) => {
+                  cardRefs.current[index] = element;
+                }}>
+                <LearningModuleCard title={card.title} description={card.description} image={card.image} isFeatured={card.id === activeId} isTextExpanded={card.id === activeId && card.id === settledActiveId} isClone={isClone} />
+              </div>
+            );
+          })}
         </div>
       </div>
 
       <div className="learning-modules-nav">
-        <button type="button" className="learning-modules-nav-button" onClick={goToPrevious} aria-label="Previous module">
+        <button type="button" className="learning-modules-nav-button" onClick={goToPreviousOnly} aria-label="Previous module">
           <ArrowLeftIcon className="learning-modules-nav-icon" />
         </button>
-        <button type="button" className="learning-modules-nav-button" onClick={goToNext} aria-label="Next module">
+        <button type="button" className="learning-modules-nav-button" onClick={goToNextOnly} aria-label="Next module">
           <ArrowRightIcon className="learning-modules-nav-icon" />
         </button>
       </div>
@@ -767,10 +850,38 @@ const testimonials: TestimonialData[] = [
     name: "Ramesh",
     role: "Lecturer",
     quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
-    image: "/images/handsome-businessman-suit-glasses-cross-arms-chest-look.jpg",
+    image: "/images/confident-businessman.jpg",
     accentColor: "#907507",
   },
+  {
+    id: 4,
+    name: "Joanna",
+    role: "Software Engineer",
+    quote: "NeuroLXP made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
+    image: "/images/confident-young-businesswoman.jpg",
+    accentColor: "#BF1869",
+  },
+  {
+    id: 5,
+    name: "Janoah",
+    role: "Institute Admin",
+    quote: "Managing courses and learners is now seamless. NeuroLXP has simplified administration and improved learner engagement.",
+    image: "/images/young-businesswoman.jpg",
+    accentColor: "#67096E",
+  },
+  {
+    id: 6,
+    name: "Aben Sabu",
+    role: "Lecturer",
+    quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
+    image: "/images/happy-businessman.jpg",
+    accentColor: "#861109",
+  },
 ];
+
+const TESTIMONIAL_CLONE_COUNT = 2;
+
+const extendedTestimonials = [...testimonials.slice(-TESTIMONIAL_CLONE_COUNT), ...testimonials, ...testimonials.slice(0, TESTIMONIAL_CLONE_COUNT)];
 
 function StarIcon({ className }: { className?: string }) {
   return (
@@ -780,7 +891,8 @@ function StarIcon({ className }: { className?: string }) {
   );
 }
 
-function TestimonialCard({ name, role, quote, image, accentColor }: TestimonialData) {
+function TestimonialCard({ name, role, quote, image, accentColor, isClone }: TestimonialData & { isClone: boolean }) {
+  const NameTag = isClone ? "p" : "h3";
   return (
     <div className="testimonial-card-wrapper">
       <div className="testimonial-photo-frame">
@@ -797,7 +909,7 @@ function TestimonialCard({ name, role, quote, image, accentColor }: TestimonialD
         </div>
         <div className="testimonial-content">
           <div className="testimonial-person">
-            <h3 className="testimonial-name">{name}</h3>
+            <NameTag className="testimonial-name">{name}</NameTag>
             <span className="testimonial-role">{role}</span>
           </div>
           <div className="testimonial-underline" style={{ background: accentColor }} />
@@ -809,23 +921,40 @@ function TestimonialCard({ name, role, quote, image, accentColor }: TestimonialD
 }
 
 function Testimonials() {
-  const [activeIndex, setActiveIndex] = useState(1);
+  const realCount = testimonials.length;
+  const [trackIndex, setTrackIndex] = useState(TESTIMONIAL_CLONE_COUNT + 1);
+  const [transitionsEnabled, setTransitionsEnabled] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
   const viewportRef = useRef<HTMLDivElement | null>(null);
+  const trackRef = useRef<HTMLDivElement | null>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [translateX, setTranslateX] = useState(0);
+  const isAnimatingRef = useRef(false);
 
-  const goToPrevious = () => {
-    setActiveIndex((current) => (current - 1 + testimonials.length) % testimonials.length);
+  const goToPreviousOnly = () => {
+    if (isAnimatingRef.current) return;
+    isAnimatingRef.current = true;
+    setTrackIndex((current) => current - 1);
   };
 
-  const goToNext = () => {
-    setActiveIndex((current) => (current + 1) % testimonials.length);
+  const goToNextOnly = () => {
+    if (isAnimatingRef.current) return;
+    isAnimatingRef.current = true;
+    setTrackIndex((current) => current + 1);
   };
+
+  useEffect(() => {
+    if (isHovered) return;
+    const timer = setInterval(() => {
+      goToNextOnly();
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [isHovered, trackIndex]);
 
   useEffect(() => {
     const recalculate = () => {
       const viewport = viewportRef.current;
-      const activeCard = cardRefs.current[activeIndex];
+      const activeCard = cardRefs.current[trackIndex];
       if (!viewport || !activeCard) return;
       const viewportCenter = viewport.offsetWidth / 2;
       const cardCenter = activeCard.offsetLeft + activeCard.offsetWidth / 2;
@@ -834,10 +963,52 @@ function Testimonials() {
     recalculate();
     window.addEventListener("resize", recalculate);
     return () => window.removeEventListener("resize", recalculate);
-  }, [activeIndex]);
+  }, [trackIndex]);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const handleTrackTransitionEnd = (event: TransitionEvent) => {
+      if (event.propertyName !== "transform") return;
+
+      const isPastEnd = trackIndex >= TESTIMONIAL_CLONE_COUNT + realCount;
+      const isBeforeStart = trackIndex < TESTIMONIAL_CLONE_COUNT;
+
+      if (isPastEnd || isBeforeStart) {
+        const nextIndex = isPastEnd ? trackIndex - realCount : trackIndex + realCount;
+        const viewport = viewportRef.current;
+        const nextCard = cardRefs.current[nextIndex];
+
+        flushSync(() => {
+          setTransitionsEnabled(false);
+          setTrackIndex(nextIndex);
+          if (viewport && nextCard) {
+            const viewportCenter = viewport.offsetWidth / 2;
+            const cardCenter = nextCard.offsetLeft + nextCard.offsetWidth / 2;
+            setTranslateX(viewportCenter - cardCenter);
+          }
+        });
+      } else {
+        isAnimatingRef.current = false;
+      }
+    };
+
+    track.addEventListener("transitionend", handleTrackTransitionEnd);
+    return () => track.removeEventListener("transitionend", handleTrackTransitionEnd);
+  }, [trackIndex, realCount]);
+
+  useEffect(() => {
+    if (transitionsEnabled) return;
+    const raf = requestAnimationFrame(() => {
+      setTransitionsEnabled(true);
+      isAnimatingRef.current = false;
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [transitionsEnabled]);
 
   return (
-    <section className="testimonials-section" aria-labelledby="testimonials-heading">
+    <section className="testimonials-section" aria-labelledby="testimonials-heading" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onFocus={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
       <div className="testimonials-heading-block">
         <span className="testimonials-badge">Testimonials</span>
         <h2 className="testimonials-heading" id="testimonials-heading">
@@ -847,28 +1018,32 @@ function Testimonials() {
       </div>
 
       <span className="sr-only" aria-live="polite" aria-atomic="true">
-        {`Now showing testimonial from ${testimonials[activeIndex].name}`}
+        {`Now showing testimonial from ${extendedTestimonials[trackIndex].name}`}
       </span>
 
       <div className="testimonials-viewport" ref={viewportRef}>
-        <div className="testimonials-track" style={{ transform: `translateX(${translateX}px)` }}>
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.id}
-              ref={(element) => {
-                cardRefs.current[index] = element;
-              }}>
-              <TestimonialCard {...testimonial} />
-            </div>
-          ))}
+        <div className="testimonials-track" ref={trackRef} style={{ transform: `translateX(${translateX}px)`, transition: transitionsEnabled ? undefined : "none" }}>
+          {extendedTestimonials.map((testimonial, index) => {
+            const isClone = index < TESTIMONIAL_CLONE_COUNT || index >= TESTIMONIAL_CLONE_COUNT + realCount;
+            return (
+              <div
+                key={`${testimonial.id}-${index}`}
+                aria-hidden={isClone}
+                ref={(element) => {
+                  cardRefs.current[index] = element;
+                }}>
+                <TestimonialCard {...testimonial} isClone={isClone} />
+              </div>
+            );
+          })}
         </div>
       </div>
 
       <div className="testimonials-nav">
-        <button type="button" className="testimonials-nav-button" onClick={goToPrevious} aria-label="Previous testimonial">
+        <button type="button" className="testimonials-nav-button" onClick={goToPreviousOnly} aria-label="Previous testimonial">
           <ArrowLeftIcon className="testimonials-nav-icon" />
         </button>
-        <button type="button" className="testimonials-nav-button" onClick={goToNext} aria-label="Next testimonial">
+        <button type="button" className="testimonials-nav-button" onClick={goToNextOnly} aria-label="Next testimonial">
           <ArrowRightIcon className="testimonials-nav-icon" />
         </button>
       </div>
@@ -889,7 +1064,7 @@ const faqItems: FAQItemData[] = [
   {
     id: 1,
     number: "01",
-    title: "What is NeuroLX?",
+    title: "What is NeuroLXP?",
     answer: "NeuroLXP™ is a next-generation Learning Experience Platform (LXP) that transforms how organizations design, deliver, and manage learning through personalized, engaging, and scalable learning experiences.",
     colorStart: "#2D4CC8",
     colorEnd: "#162562",
@@ -905,7 +1080,7 @@ const faqItems: FAQItemData[] = [
   {
     id: 3,
     number: "03",
-    title: "How is NeuroLXP different from a traditional LMS?",
+    title: "How is NeuroLXP different from an LMS?",
     answer: "Unlike a conventional LMS that focuses on course administration, NeuroLXP™ delivers learner-centric experiences through personalization, skill-based learning, collaboration, and continuous development.",
     colorStart: "#861109",
     colorEnd: "#200402",
@@ -913,7 +1088,7 @@ const faqItems: FAQItemData[] = [
   {
     id: 4,
     number: "04",
-    title: "Why is NeuroLXP considered groundbreaking in the learning domain?",
+    title: "Why is NeuroLXP groundbreaking?",
     answer: "NeuroLXP™ reimagines digital learning by combining intelligent personalization, modern learning experiences, scalable architecture, and data-driven insights into a unified platform built for the future of education and workforce development.",
     colorStart: "#162562",
     colorEnd: "#2D4CC8",
@@ -921,7 +1096,7 @@ const faqItems: FAQItemData[] = [
   {
     id: 5,
     number: "05",
-    title: "Can NeuroLXP support organizations of any size?",
+    title: "Does NeuroLXP support all organization size?",
     answer: "Yes. NeuroLXP™ is designed to scale effortlessly - from schools and universities to enterprises, skilling academies, NGOs, and nationwide government learning initiatives.",
     colorStart: "#67096E",
     colorEnd: "#C712D4",
@@ -1099,7 +1274,7 @@ export default function HomePage() {
   };
 
   return (
-    <>
+    <main id="main-content">
       <HeroCarousel />
       <LearningOdyssey onBookDemoClick={openBookDemo} bookDemoButtonRef={bookDemoButtonRef} />
       <StoryMissionVision />
@@ -1112,6 +1287,6 @@ export default function HomePage() {
       <FAQSection />
       <GetInTouch />
       {isBookDemoOpen && <BookDemoModal onClose={closeBookDemo} />}
-    </>
+    </main>
   );
 }
