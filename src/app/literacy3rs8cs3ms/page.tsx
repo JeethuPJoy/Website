@@ -4,7 +4,7 @@ import "./literacy3rs8cs3ms.css";
 
 const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
   return (
-    <div className="neurolxp2103rs8cs3msLite">
+    <main className="neurolxp2103rs8cs3msLite">
       <div className="frameDiv">
         <div className="homeParent">
           <div className="neurolxp21Wrapper">
@@ -84,7 +84,7 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
             </div>
             <div className="iconFrame">
               <div className="iconCircleGreen">
-                <Image src="/icons/plant-03.svg" className="iconImage" width={32} height={32} alt="Plant icon" />
+                <Image src="/icons/plant-03.svg" alt="Plant" width={32} height={32} className="iconImage" />
               </div>
             </div>
           </div>
@@ -162,7 +162,7 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
             </div>
             <div className="iconFrame">
               <div className="iconCircleOrange">
-                <Image src="/icons/idea-01.svg" className="iconImage" width={32} height={32} alt="Idea icon" />
+                <Image src="/icons/idea-01.svg" alt="Idea" width={32} height={32} className="iconImage" />
               </div>
             </div>
           </div>
@@ -226,7 +226,7 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
         </div>
       </div>
       <Image src="/images/second%20lady.png" className="smilingWomanWithBooksMortaIcon" width={414} height={571} sizes="(max-width: 768px) 70vw, 414px" alt="Woman holding books" />
-    </div>
+    </main>
   );
 };
 

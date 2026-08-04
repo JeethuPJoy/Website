@@ -105,21 +105,39 @@ const NeurolabsCodingLabs: NextPage = () => {
                 <div className="writeTestCodeParent">
                   <div className="writeTestContainer">
                     <ul className="writeTestCode">
-                      <li className="writeTest">{`Write & test code`}</li>
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <path d="M24 4.24813C22.1626 3.44535 20.1333 3 18 3C9.71572 3 3 9.71572 3 18C3 26.2842 9.71572 33 18 33C26.2842 33 33 26.2842 33 18C33 17.4937 32.9749 16.9934 32.9259 16.5" stroke="#BF1869" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M12 15.75L17.25 21L33 6" stroke="#BF1869" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <li className="writeTest">Write & test code</li>
                     </ul>
                   </div>
                   <div className="writeTestContainer">
                     <ul className="writeTestCode">
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <path d="M24 4.24813C22.1626 3.44535 20.1333 3 18 3C9.71572 3 3 9.71572 3 18C3 26.2842 9.71572 33 18 33C26.2842 33 33 26.2842 33 18C33 17.4937 32.9749 16.9934 32.9259 16.5" stroke="#2A7308" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M12 15.75L17.25 21L33 6" stroke="#2A7308" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+
                       <li className="writeTest">Solve real challenges</li>
                     </ul>
                   </div>
                   <div className="exploreCodingSolutionsContainer">
                     <ul className="writeTestCode">
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <path d="M24 4.24813C22.1626 3.44535 20.1333 3 18 3C9.71572 3 3 9.71572 3 18C3 26.2842 9.71572 33 18 33C26.2842 33 33 26.2842 33 18C33 17.4937 32.9749 16.9934 32.9259 16.5" stroke="#67096E" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M12 15.75L17.25 21L33 6" stroke="#67096E" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
                       <li className="writeTest">Explore coding solutions</li>
                     </ul>
                   </div>
                   <div className="buildPracticalProjectsContainer">
                     <ul className="writeTestCode">
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <path d="M24 4.24813C22.1626 3.44535 20.1333 3 18 3C9.71572 3 3 9.71572 3 18C3 26.2842 9.71572 33 18 33C26.2842 33 33 26.2842 33 18C33 17.4937 32.9749 16.9934 32.9259 16.5" stroke="#2D4CC8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M12 15.75L17.25 21L33 6" stroke="#2D4CC8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+
                       <li className="writeTest">Build practical projects</li>
                     </ul>
                   </div>
@@ -147,11 +165,11 @@ const NeurolabsCodingLabs: NextPage = () => {
                   <b className="applyConcepts">Apply concepts</b>
                   <div className="applyCodingConcepts">Apply coding concepts through guided exercises.</div>
                 </div>
-                <Image className="frameChild5" src="/icons/codepen.svg" width={42} height={42} alt="Apply concepts icon" />
+                <Image className="frameChild5" src="/icons/codepen.svg" width={42} height={42} alt="" />
               </div>
               <div className="vectorGroup">
                 <div className="frameChild6"></div>
-                <Image className="frameChild7" src="/icons/brain-cog.svg" width={42} height={42} alt="Problem solving icon" />
+                <Image className="frameChild7" src="/icons/brain-cog.svg" width={42} height={42} alt="" />
                 <div className="problemSolvingParent">
                   <b className="problemSolving">Problem-solving</b>
                   <div className="improveLogicalThinking">Improve logical thinking through guided challenges.</div>
@@ -165,7 +183,7 @@ const NeurolabsCodingLabs: NextPage = () => {
                   <b className="codeEfficiently">Code efficiently</b>
                   <div className="improveLogicalThinking">Learn cleaner and more effective coding techniques.</div>
                 </div>
-                <Image className="frameChild7" src="/icons/code-xml.svg" width={42} height={42} alt="Code efficiently icon" />
+                <Image className="frameChild7" src="/icons/brace.png" width={42} height={42} alt="" />
               </div>
               <div className="vectorGroup">
                 <div className="frameChild6"></div>
@@ -173,7 +191,7 @@ const NeurolabsCodingLabs: NextPage = () => {
                   <b className="interviewReady">Interview-ready</b>
                   <div className="improveLogicalThinking">Build confidence for coding tests and technical assessments.</div>
                 </div>
-                <Image className="frameChild7" src="/icons/checkmark-circle-02.svg" width={42} height={42} alt="Interview ready icon" />
+                <Image className="frameChild7" src="/icons/checkmark-circle-02.svg" width={42} height={42} alt="" />
               </div>
             </div>
           </div>
@@ -183,25 +201,25 @@ const NeurolabsCodingLabs: NextPage = () => {
         <div className="frameParent13">
           <div className="frameWrapper6">
             <div className="checkmarkBadge01Parent">
-              <Image className="skillCheckIcon" src="/icons/checkmark-badge-01.svg" width={36} height={36} alt="Skill check icon" />
+              <Image className="skillCheckIcon" src="/icons/checkmark-badge-01.svg" width={36} height={36} alt="" />
               <div className="writeCleanEfficient">{`Write clean, efficient code `}</div>
             </div>
           </div>
           <div className="frameWrapper7">
             <div className="checkmarkBadge01Parent">
-              <Image className="skillCheckIcon" src="/icons/checkmark-badge-01.svg" width={36} height={36} alt="Skill check icon" />
+              <Image className="skillCheckIcon" src="/icons/checkmark-badge-01.svg" width={36} height={36} alt="" />
               <div className="writeCleanEfficient">Debug and fix programs</div>
             </div>
           </div>
           <div className="frameWrapper8">
             <div className="checkmarkBadge01Container">
-              <Image className="skillCheckIcon" src="/icons/checkmark-badge-01.svg" width={36} height={36} alt="Skill check icon" />
+              <Image className="skillCheckIcon" src="/icons/checkmark-badge-01.svg" width={36} height={36} alt="" />
               <div className="writeCleanEfficient">Strengthen programming logic</div>
             </div>
           </div>
           <div className="frameWrapper9">
             <div className="checkmarkBadge01Parent2">
-              <Image className="skillCheckIcon" src="/icons/checkmark-badge-01.svg" width={36} height={36} alt="Skill check icon" />
+              <Image className="skillCheckIcon" src="/icons/checkmark-badge-01.svg" width={36} height={36} alt="" />
               <div className="writeCleanEfficient">Build real-world solutions</div>
             </div>
           </div>

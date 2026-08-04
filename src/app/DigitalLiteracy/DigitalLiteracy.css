@@ -104,11 +104,11 @@
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-weight: 400;
-  font-size: clamp(16px, 1.8vw, 28px);
+  font-size: 24px;
   line-height: 1.43;
   letter-spacing: 0.03em;
   color: #2f3547;
-  max-width: 653px;
+  max-width: 724px;
 }
 
 .dl-hero-buttons {
@@ -229,7 +229,7 @@
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.02em;
-  color: #bf1869;
+  color: #ab1868;
 }
 
 .dl-hero-stat-neutral .dl-hero-stat-value {
@@ -318,6 +318,7 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+  font-size: 36px;
 }
 
 .dl-advantage-section {
@@ -399,7 +400,9 @@
   inset: -15px 14.5px 15px -14.5px;
   background: #dfe6e9;
   border-radius: 16px;
-  box-shadow: 10px 10px 20px rgba(30, 30, 30, 0.5), -10px -10px 20px #ffffff;
+  box-shadow:
+    10px 10px 20px rgba(30, 30, 30, 0.5),
+    -10px -10px 20px #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -778,7 +781,7 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  max-width: 900px;
+  max-width: 1100px;
   text-align: center;
 }
 
@@ -1203,17 +1206,25 @@
 @media (max-width: 1024px) {
   .dl-hero-card {
     justify-content: center;
+    flex-direction: column-reverse;
   }
   .dl-hero-content {
     align-items: center;
     text-align: center;
+    flex: auto;
   }
+
   .dl-hero-buttons {
     justify-content: center;
+    margin-bottom: 26px;
   }
   .dl-hero-media {
     order: -1;
     max-width: 360px;
+  }
+
+  .dl-check-pill-outer {
+    width: auto;
   }
 
   .dl-advantage-wedge {
@@ -1222,11 +1233,15 @@
 
   .dl-step-grid {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 67px;
+    width: auto;
   }
 
-   .dl-step-card {
+  .dl-step-card {
+    min-height: 230px;
+    width: 250px;
     padding: 28px 20px 24px;
-    min-height: 260px;
   }
 
   .dl-step-card-badge {
@@ -1266,6 +1281,7 @@
   .dl-hero-card {
     padding: 32px 24px;
     gap: 32px;
+    flex-direction: column-reverse;
   }
   .dl-hero-badge {
     font-size: 18px;
@@ -1309,7 +1325,12 @@
 
   .dl-advantage-section {
     grid-template-columns: 1fr;
-    padding: 32px 16px;
+    padding: 0px 16px 32px;
+  }
+
+  .dl-howitworks-section,
+  .dl-analytics-section {
+    padding: 31px 16px;
   }
 
   .dl-bullet-list {
@@ -1336,17 +1357,26 @@
     flex-direction: column-reverse;
   }
 
+  .dl-hero-content {
+    width: 306px;
+  }
+
   .dl-hero-buttons {
     flex-direction: column;
     width: 100%;
   }
 
   .dl-hero-button {
-    width: 100%;
+    width: 64%;
     text-align: center;
   }
   .dl-hero-stats {
     flex-direction: column;
+    position: static;
+  }
+
+  .dl-skill-banner-section {
+    padding: 16px;
   }
 
   .dl-hero-stats-bg {
@@ -1361,8 +1391,40 @@
     border-radius: 8px;
   }
 
+  .dl-section-heading {
+    font-size: 36px;
+    width: 317px;
+  }
+
+  .dl-check-list {
+    width: 90%;
+  }
+
+  .dl-hero-subtext {
+    width: 312px;
+    padding: 0 6px;
+  }
+
+  .dl-bullet-item {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .dl-bullet-item svg {
+    width: 30px;
+    height: 24px;
+  }
+
+  .dl-callout-title {
+    margin: 0 8px 14px 0;
+  }
+
   .dl-hero-media {
     max-width: 340px;
+  }
+
+  .dl-accelerate-image-frame {
+    border-radius: 12px;
   }
 
   .dl-step-grid {
@@ -1395,6 +1457,7 @@
 
   .dl-advantage-text {
     align-items: center;
+    padding-top: 24px;
   }
 
   .dl-advantage-grid {

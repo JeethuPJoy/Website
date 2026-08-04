@@ -117,7 +117,7 @@
 }
 .frameDiv {
   	position: absolute;
-  	top: 112px;
+  	top: 32px;
   	left: 80px;
   	display: flex;
   	align-items: center;
@@ -142,7 +142,7 @@
 }
 .frameParent2 {
   	position: absolute;
-  	top: 168px;
+  	top: 80px;
   	left: 94px;
   	width: 1252px;
   	height: 634px;
@@ -1902,7 +1902,6 @@
   	object-fit: contain;
 }
 
-/* ---- Page shell (coding-challenge only) ---- */
 .pageScale {
   width: 100%;
   max-width: 100vw;
@@ -1917,9 +1916,9 @@
 .neurolabsCodingChallenge {
   flex-shrink: 0;
   margin: 0 auto;
+  max-width: 1440px; 
 }
 
-/* Inset neumorphic badges — all section label cards */
 .neurolabsCodingChallenge .sectionBadge {
   height: 50.2px;
   border-radius: 28px;

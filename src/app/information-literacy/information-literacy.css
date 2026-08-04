@@ -35,7 +35,7 @@
 	inset: 0;
 	z-index: 0;
 	pointer-events: none;
-	background-image: url("/assets/bg2.png");
+	background-image: url("/images/bg2.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -451,7 +451,7 @@
 .frameParent8 {
 	position: absolute;
 	top: 112px;
-	left: 80px;
+	left: 300px;
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -949,9 +949,9 @@
 }
 
 .frameParent22 {
-  	position: relative;
+  	position: absolute;
   	top: 2466.21px;
-  	left: 190px;
+  	left: 300px;
   	display: flex;
   	align-items: center;
   	gap: 112px;
@@ -1922,7 +1922,7 @@
 .frameParent41 {
 	position: absolute;
 	top: 4181px;
-	left: 80px;
+	left: 300px;
 	width: 1329px;
 	height: 643px;
 	display: flex;
@@ -4626,13 +4626,6 @@
 		align-items: start;
 		column-gap: 12px;
 		row-gap: 22px;
-	}
-
-	.thinkingCard {
-		width: min(100%, 205px);
-		height: auto;
-		aspect-ratio: 280 / 339.57;
-		justify-self: center;
 	}
 
 	.thinkingCardSvg {
@@ -8877,7 +8870,6 @@
 }
 
 @media screen and (min-width:740px) and (max-width:790px){
-
   .frameParent40{
       margin-bottom:28px;
   }
@@ -8899,7 +8891,6 @@
 }
 
 @media screen and (min-width:740px) and (max-width:790px){
-
     .whyNeuroLxpSection{
         margin-top:-90px;
         margin-bottom:-520px;
@@ -8924,7 +8915,6 @@
 }
 
 @media screen and (min-width: 740px) and (max-width: 790px) {
-
   .informationLiteracy {
     height: auto;
     min-height: 0;
@@ -8939,7 +8929,6 @@
 }
 
 @media screen and (min-width: 740px) and (max-width: 790px) {
-
   .frameParent47 {
     position: relative;
     width: 360px;
@@ -9116,4 +9105,1230 @@
 }
 @media screen and (min-width:1100px){
 .creativeExcitedBrunetteBusiIcon{right:-200px;}
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1440px) {
+    .informationLiteracy {
+        width: 100%;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        zoom: 1;
+    }
+}
+
+@media screen and (min-width: 2560px) and (max-width: 2560px) {
+    html,
+    body {
+        width: 1440px;
+        min-width: 1440px;
+        max-width: 1440px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #dfe6e9;
+    }
+
+    .informationLiteracy {
+        width: 1440px;
+        min-width: 1440px;
+        max-width: 1440px;
+        margin: 0;
+        left: 0;
+        transform: none;
+        transform-origin: top left;
+        zoom: 1.7777777778;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #dfe6e9;
+  }
+
+  .informationLiteracy {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    padding: 0 0 48px !important;
+    zoom: 1 !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+  }
+
+  .informationLiteracy > .informationLiteracyChild {
+    display: none !important;
+  }
+
+  .informationLiteracy > .frameParent8,
+  .informationLiteracy > .frameParent9,
+  .informationLiteracy > .frameParent13,
+  .informationLiteracy > .frameParent19,
+  .informationLiteracy > .image20Parent,
+  .informationLiteracy > .frameParent22,
+  .informationLiteracy > .frameParent34,
+  .informationLiteracy > .frameParent40,
+  .informationLiteracy > .frameParent41 {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+    flex-shrink: 0 !important;
+  }
+
+  .informationLiteracy > .frameParent8 { order: 1 !important; }
+  .informationLiteracy > .frameParent9 { order: 2 !important; }
+  .informationLiteracy > .frameParent13 { order: 3 !important; }
+  .informationLiteracy > .frameParent19 { order: 4 !important; }
+  .informationLiteracy > .image20Parent { order: 5 !important; }
+  .informationLiteracy > .frameParent22 { order: 6 !important; }
+  .informationLiteracy > .frameParent34 { order: 7 !important; }
+  .informationLiteracy > .frameParent40 { order: 8 !important; }
+  .informationLiteracy > .frameParent41 { order: 9 !important; }
+
+  .informationLiteracy > .rectangle2,
+  .informationLiteracy > .image203,
+  .informationLiteracy > .informationLiteracyInner,
+  .informationLiteracy > .informationLiteracyInner2 {
+    display: none !important;
+  }
+
+  .informationLiteracy > .frameParent8 {
+    z-index: 2 !important;
+    width: calc(100% - 40px) !important;
+    margin: 18px auto 0 !important;
+  }
+
+  .informationLiteracy > .frameParent9 {
+    z-index: 2 !important;
+    width: min(calc(100% - 40px), 900px) !important;
+    margin: 38px auto 0 !important;
+  }
+
+  .informationLiteracy > .frameParent13 {
+    z-index: 2 !important;
+    width: min(calc(100% - 32px), 920px) !important;
+    height: 220px !important;
+    margin: 42px auto 96px !important;
+  }
+
+  .informationLiteracy > .frameParent19,
+  .informationLiteracy > .image20Parent,
+  .informationLiteracy > .frameParent22,
+  .informationLiteracy > .frameParent34,
+  .informationLiteracy > .frameParent40,
+  .informationLiteracy > .frameParent41 {
+    width: min(calc(100% - 40px), 960px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .informationLiteracy > .frameParent19,
+  .informationLiteracy > .image20Parent,
+  .informationLiteracy > .frameParent22,
+  .informationLiteracy > .frameParent34,
+  .informationLiteracy > .frameParent41 {
+    margin-bottom: 96px !important;
+  }
+
+  .informationLiteracy > .frameParent40 {
+    margin-bottom: 48px !important;
+  }
+
+  .frameParent9,
+  .frameParent10,
+  .frameParent11,
+  .frameWrapper4 {
+    height: auto !important;
+  }
+
+  .frameParent19,
+  .frameParent20,
+  .buildConfidenceThroughCritiParent {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent21 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    justify-items: center !important;
+    gap: 32px !important;
+  }
+
+  .image20Parent {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .image20Parent .frameParent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    padding: 48px 32px !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 42px !important;
+  }
+
+  .image20Parent .frameGroup,
+  .image20Parent .frameDiv {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .image20Parent .frameDiv {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+
+  .frameParent22 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: start !important;
+    gap: 64px !important;
+  }
+
+  .frameParent23 {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 620px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .frameParent24,
+  .frameParent27,
+  .frameParent29,
+  .frameParent30 {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    width: min(100%, 380px) !important;
+    height: 150px !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .frameParent26 {
+    position: static !important;
+    width: 100% !important;
+    display: contents !important;
+  }
+
+  .vectorParent {
+    width: min(100%, 662px) !important;
+    height: auto !important;
+    aspect-ratio: 662 / 541 !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent34 {
+    height: auto !important;
+  }
+
+  .journeyTimeline {
+    width: 100% !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 32px !important;
+  }
+
+  .journeyTrack {
+    display: none !important;
+  }
+
+  .frameParent40 {
+    width: min(calc(100% - 40px), 960px) !important;
+    height: auto !important;
+  }
+
+  .frameParent41 {
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+
+  .frameParent42,
+  .frameParent43 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .frameParent43 {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    justify-items: center !important;
+    gap: 32px !important;
+  }
+
+  .frameParent44:last-child {
+    grid-column: 1 / -1 !important;
+  }
+
+  .frameParent47 {
+    position: relative !important;
+    inset: auto !important;
+    width: min(100%, 700px) !important;
+    height: auto !important;
+    min-height: 560px !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .informationLiteracy > .informationLiteracyChild {
+    height: 690px !important;
+  }
+
+  .informationLiteracy > .frameParent8 {
+    width: calc(100% - 24px) !important;
+    margin-top: 14px !important;
+    font-size: 12px !important;
+    gap: 6px !important;
+    white-space: nowrap !important;
+  }
+
+  .informationLiteracy > .frameParent9 {
+    width: calc(100% - 24px) !important;
+    margin-top: 30px !important;
+    gap: 24px !important;
+  }
+
+  .informationLiteracyBadge,
+  .trackOutcomesBadge,
+  .researchDiscoveryBadge,
+  .ethicsIntegrityBadge {
+    min-width: 0 !important;
+    max-width: calc(100% - 12px) !important;
+    height: auto !important;
+    padding: 10px 18px !important;
+    font-size: 16px !important;
+    white-space: nowrap !important;
+  }
+
+  .findEvaluate,
+  .buildConfidenceThroughContainer,
+  .masterInformationUnlockContainer,
+  .builtForTheContainer {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(27px, 8.5vw, 36px) !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+		margin: 16px 0 16px;
+  }
+
+  .neurolxpEquipsLearners,
+  .empowerLearnersTo {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+    white-space: normal !important;
+  }
+
+  .frameParent12 {
+    width: 100% !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 14px !important;
+  }
+
+  .requestDemoWrapper,
+  .frameWrapper5 {
+    width: 138px !important;
+    height: 48px !important;
+    padding: 10px 12px !important;
+    font-size: 13px !important;
+  }
+
+  .informationLiteracy > .frameParent13 {
+    width: calc(100% - 16px) !important;
+    height: 184px !important;
+    margin-top: 30px !important;
+    margin-bottom: 96px !important;
+  }
+
+  .statsContent {
+    width: calc(100% - 18px) !important;
+    grid-template-columns: 1fr 3px 1fr 3px 1fr !important;
+    gap: 6px !important;
+  }
+
+  .crore {
+    font-size: 19px !important;
+  }
+
+  .skillDomains {
+    font-size: 11px !important;
+    white-space: normal !important;
+  }
+
+  .statsDivider {
+    width: 3px !important;
+    height: 78px !important;
+  }
+
+  .informationLiteracy > .frameParent19,
+  .informationLiteracy > .image20Parent,
+  .informationLiteracy > .frameParent22,
+  .informationLiteracy > .frameParent34,
+  .informationLiteracy > .frameParent40,
+  .informationLiteracy > .frameParent41 {
+    width: calc(100% - 24px) !important;
+  }
+
+  .frameParent21 {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .thinkingCard {
+    width: min(100%, 280px) !important;
+    margin: 0 auto !important;
+  }
+
+  .image20Parent .frameParent {
+    padding: 36px 16px !important;
+    gap: 32px !important;
+  }
+
+  .image20Parent .frameGroup {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .researchSmarterLearn {
+    font-size: clamp(28px, 9vw, 38px) !important;
+  }
+
+  .buildResearchSkills {
+    font-size: 17px !important;
+  }
+
+  .image20Parent .frameDiv {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 26px !important;
+  }
+
+  .frameWrapper,
+  .frameWrapper2,
+  .frameParent4 {
+    width: min(100%, 270px) !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent22 {
+    gap: 48px !important;
+  }
+
+  .frameParent23 {
+    gap: 22px !important;
+  }
+
+  .frameParent24,
+  .frameParent27,
+  .frameParent29,
+  .frameParent30 {
+    width: min(100%, 360px) !important;
+  }
+
+  .vectorParent {
+    width: 100% !important;
+  }
+
+  .integrityContent {
+    top: 11.5% !important;
+    width: 82% !important;
+  }
+
+  .integrityTitle {
+    font-size: clamp(22px, 7vw, 29px) !important;
+  }
+
+  .integrityDescription {
+    font-size: 14px !important;
+    margin-top: 16px !important;
+  }
+
+  .journeyTimeline {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .journeyStage {
+    width: 100% !important;
+    max-width: 370px !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent43 {
+    grid-template-columns: 1fr !important;
+    gap: 34px !important;
+  }
+
+  .frameParent44:last-child {
+    grid-column: auto !important;
+  }
+
+  .frameParent47 {
+    width: 100% !important;
+    min-height: 430px !important;
+  }
+
+  .frameChild35 {
+    position: absolute !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+    width: 88% !important;
+    height: 76% !important;
+  }
+
+  .creativeExcitedBrunetteBusiIcon {
+    position: absolute !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: bottom center !important;
+    transform: none !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .informationLiteracy > .informationLiteracyChild {
+    display: none !important;
+  }
+
+  .informationLiteracy > .frameParent8,
+  .informationLiteracy > .frameParent9,
+  .informationLiteracy > .frameParent19,
+  .informationLiteracy > .image20Parent,
+  .informationLiteracy > .frameParent22,
+  .informationLiteracy > .frameParent34,
+  .informationLiteracy > .frameParent40,
+  .informationLiteracy > .frameParent41 {
+    width: calc(100% - 16px) !important;
+		margin-bottom: 36px !important;
+  }
+
+	.informationLiteracy > .frameParent41 {
+		margin-bottom: 0 !important;
+	}
+
+  .findEvaluate {
+    font-size: 24px !important;
+  }
+
+  .neurolxpEquipsLearners {
+    font-size: 14px !important;
+  }
+
+  .image20Parent .frameParent {
+    padding: 30px 12px !important;
+  }
+
+  .frameWrapper,
+  .frameWrapper2,
+  .frameParent4 {
+    width: min(100%, 250px) !important;
+  }
+
+  .integrityTitle {
+    font-size: 22px !important;
+  }
+
+  .integrityDescription {
+    font-size: 13px !important;
+  }
+
+  .frameParent47 {
+    min-height: 380px !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background: #dfe6e9;
+  }
+
+  .informationLiteracy {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    zoom: 1 !important;
+    transform: none !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    background: #dfe6e9 !important;
+    font-size: 16px !important;
+  }
+
+  .rectangle2,
+  .image203,
+  .informationLiteracyInner,
+  .informationLiteracyInner2 {
+    display: none !important;
+  }
+
+  .frameParent8,
+  .frameParent9,
+  .frameParent13,
+  .frameParent19,
+  .image20Parent,
+  .frameParent22,
+  .frameParent34,
+  .frameParent40,
+  .frameParent41 {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+    flex-shrink: 0 !important;
+  }
+
+  .frameParent8 {
+    order: 1 !important;
+  }
+
+  .frameParent9 {
+    order: 2 !important;
+  }
+
+  .frameParent13 {
+    order: 3 !important;
+  }
+
+  .frameParent19 {
+    order: 4 !important;
+  }
+
+  .image20Parent {
+    order: 5 !important;
+  }
+
+  .frameParent22 {
+    order: 6 !important;
+  }
+
+  .frameParent34 {
+    order: 7 !important;
+  }
+
+  .frameParent40 {
+    order: 8 !important;
+  }
+
+  .frameParent41 {
+    order: 9 !important;
+  }
+
+  .frameParent8 {
+    width: calc(100% - 24px) !important;
+    margin: 18px auto 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 6px !important;
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+  }
+
+  .frameParent9 {
+    width: calc(100% - 24px) !important;
+    max-width: 620px !important;
+    height: auto !important;
+    margin: 42px auto 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 26px !important;
+    text-align: center !important;
+  }
+
+  .frameWrapper4,
+  .frameParent10,
+  .frameParent11 {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
+  }
+
+  .informationLiteracyBadge {
+    min-width: 0 !important;
+    width: fit-content !important;
+    max-width: calc(100% - 16px) !important;
+    height: auto !important;
+    padding: 10px 18px !important;
+    border-radius: 999px !important;
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+  }
+
+  .findEvaluate {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: clamp(24px, 7.5vw, 36px) !important;
+    line-height: 1.3 !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .neurolxpEquipsLearners {
+    width: 100% !important;
+    max-width: 560px !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: clamp(15px, 4.4vw, 19px) !important;
+    line-height: 1.55 !important;
+    white-space: normal !important;
+  }
+
+  .frameParent12 {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 14px !important;
+  }
+
+  .requestDemoWrapper,
+  .frameWrapper5 {
+    width: min(44vw, 180px) !important;
+    min-width: 138px !important;
+    height: 52px !important;
+    padding: 10px 14px !important;
+    margin: 0 !important;
+    font-size: 14px !important;
+  }
+
+  .requestDemo,
+  .startLearning,
+  .startLearningWrapper {
+    width: auto !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+  }
+
+  .frameParent13 {
+    width: calc(100% - 24px) !important;
+    max-width: 620px !important;
+    height: auto !important;
+    margin: 42px auto 96px !important;
+    padding: 18px 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .frameParent13 .statsContent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 3px minmax(0, 1fr) 3px minmax(0, 1fr) !important;
+    align-items: center !important;
+    justify-items: stretch !important;
+    column-gap: 10px !important;
+    padding: 0 2px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent13 .croreParent,
+  .frameParent13 .parent,
+  .frameParent13 .group {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    text-align: center !important;
+  }
+
+  .frameParent13 .crore {
+    width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(18px, 5.5vw, 25px) !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+  }
+
+  .frameParent13 .skillDomains {
+    width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(10px, 3vw, 13px) !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .frameParent13 .statsDivider {
+    display: block !important;
+    width: 3px !important;
+    height: 74px !important;
+    margin: 0 !important;
+    border-radius: 999px !important;
+    background: linear-gradient(180deg, #2d4cc8 0%, #0b0e53 100%) !important;
+    box-shadow: none !important;
+  }
+
+  .frameParent19,
+  .image20Parent,
+  .frameParent22,
+  .frameParent34 {
+    width: calc(100% - 24px) !important;
+    max-width: 720px !important;
+    margin: 0 auto 96px !important;
+  }
+
+  .frameParent19 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 42px !important;
+  }
+
+  .frameParent20,
+  .buildConfidenceThroughCritiParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    gap: 24px !important;
+  }
+
+  .trackOutcomesBadge {
+    max-width: calc(100% - 16px) !important;
+    padding: 10px 18px !important;
+    font-size: 16px !important;
+  }
+
+  .buildConfidenceThroughContainer {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(28px, 9vw, 40px) !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+  }
+
+  .buildConfidenceThrough,
+  .criticalThinking {
+    line-height: inherit !important;
+  }
+
+  .empowerLearnersTo {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(16px, 4.6vw, 20px) !important;
+    line-height: 1.55 !important;
+  }
+
+  .frameParent21 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 30px !important;
+  }
+
+  .thinkingCard {
+    width: min(100%, 280px) !important;
+    height: 340px !important;
+    margin: 0 auto !important;
+  }
+
+  .image20Parent {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    border-radius: 22px !important;
+  }
+
+  .image20 {
+    position: absolute !important;
+    inset: 0 !important;
+  }
+
+  .image20Parent .frameParent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 36px 16px !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: center !important;
+    gap: 36px !important;
+  }
+
+  .frameGroup,
+  .frameContainer {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .researchDiscoveryBadge {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    font-size: 15px !important;
+  }
+
+  .researchSmarterLearn {
+    font-size: clamp(29px, 9vw, 40px) !important;
+  }
+
+  .buildResearchSkills {
+    max-width: 100% !important;
+    font-size: clamp(16px, 4.7vw, 20px) !important;
+  }
+
+  .frameDiv {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 28px !important;
+  }
+
+  .frameWrapper,
+  .frameWrapper2,
+  .frameParent4 {
+    width: min(100%, 270px) !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent4 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 28px !important;
+  }
+
+  .frameParent22 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: center !important;
+    gap: 52px !important;
+    text-align: center !important;
+  }
+
+  .frameParent23 {
+    width: 100% !important;
+    max-width: 420px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .frameParent24,
+  .frameParent27,
+  .frameParent29,
+  .frameParent30 {
+    position: relative !important;
+    inset: auto !important;
+    width: 94% !important;
+    height: 150px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent26 {
+    position: static !important;
+    width: 100% !important;
+    display: grid !important;
+    gap: 24px !important;
+  }
+
+  .vectorParent {
+    width: 100% !important;
+    max-width: 662px !important;
+    height: auto !important;
+    aspect-ratio: 662 / 541 !important;
+    margin: 0 auto !important;
+  }
+
+  .integrityHexagonSvg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .integrityContent {
+    top: 12% !important;
+    width: 82% !important;
+  }
+
+  .ethicsIntegrityBadge {
+    min-width: 0 !important;
+    height: auto !important;
+    padding: 9px 15px !important;
+    font-size: 14px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .integrityTitle {
+    font-size: clamp(22px, 7vw, 32px) !important;
+  }
+
+  .integrityDescription {
+    margin-top: 16px !important;
+    font-size: clamp(13px, 4vw, 17px) !important;
+  }
+
+  .frameParent34 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 34px !important;
+  }
+
+  .masterInformationUnlockContainer {
+    width: 100% !important;
+    font-size: clamp(28px, 9vw, 40px) !important;
+    line-height: 1.25 !important;
+  }
+
+  .frameParent36,
+  .journeyTimeline {
+    width: 100% !important;
+  }
+
+  .journeyTimeline {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+  }
+
+  .journeyTrack {
+    display: none !important;
+  }
+
+  .journeyStage {
+    width: 100% !important;
+    max-width: 390px !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: 70px minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  .journeyCard {
+    width: 100% !important;
+    min-height: 112px !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    text-align: left !important;
+    padding: 16px 18px !important;
+  }
+
+  .frameParent40 {
+    width: calc(100% - 24px) !important;
+    max-width: 720px !important;
+    margin: 0 auto 42px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .frameParent41 {
+    width: calc(100% - 24px) !important;
+    max-width: 720px !important;
+    height: auto !important;
+    margin: 0 auto 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: center !important;
+    gap: 48px !important;
+  }
+
+  .frameParent42,
+  .frameParent43 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 34px !important;
+  }
+
+  .frameParent44 {
+    width: 100% !important;
+    align-items: center !important;
+  }
+
+  .frameParent47 {
+    width: 100% !important;
+    max-width: 620px !important;
+    min-height: 420px !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+  }
+
+  .creativeExcitedBrunetteBusiIcon {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    object-fit: contain !important;
+    object-position: bottom center !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 390px) {
+  .frameParent8,
+  .frameParent9,
+  .frameParent13,
+  .frameParent19,
+  .image20Parent,
+  .frameParent22,
+  .frameParent34,
+  .frameParent40,
+  .frameParent41 {
+    width: calc(100% - 16px) !important;
+  }
+
+  .frameParent9 {
+    margin-top: 36px !important;
+  }
+
+  .informationLiteracyBadge {
+    font-size: 17px !important;
+  }
+
+  .findEvaluate {
+    font-size: 25px !important;
+  }
+
+  .neurolxpEquipsLearners {
+    font-size: 14px !important;
+  }
+
+  .requestDemoWrapper,
+  .frameWrapper5 {
+    min-width: 0 !important;
+    width: calc(50% - 7px) !important;
+    height: 48px !important;
+    font-size: 12px !important;
+  }
+
+  .frameParent13 .statsContent {
+    grid-template-columns: minmax(0, 1fr) 2px minmax(0, 1fr) 2px minmax(0, 1fr) !important;
+    column-gap: 5px !important;
+		width: calc(100% - 40px) !important;
+  }
+
+  .frameParent13 .crore {
+    font-size: 18px !important;
+  }
+
+  .frameParent13 .skillDomains {
+    font-size: 10px !important;
+  }
+
+  .frameParent13 .statsDivider {
+    width: 2px !important;
+    height: 66px !important;
+  }
+
+  .image20Parent .frameParent {
+    padding: 30px 12px !important;
+  }
+
+  .frameWrapper,
+  .frameWrapper2,
+  .frameParent4 {
+    width: min(100%, 250px) !important;
+  }
+
+  .integrityTitle {
+    font-size: 22px !important;
+  }
+
+  .integrityDescription {
+    font-size: 13px !important;
+  }
+
+  .journeyStage {
+    grid-template-columns: 62px minmax(0, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .frameParent47 {
+    min-height: 304px !important;
+  }
 }

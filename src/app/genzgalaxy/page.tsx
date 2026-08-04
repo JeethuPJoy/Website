@@ -4,7 +4,7 @@ import "./genzgalaxy.css";
 
 const GenZgalaxy: NextPage = () => {
   return (
-    <main className="genzgalaxy" tabIndex={0} role="main" aria-label="Gen Z Galaxy page content">
+    <main className="genzgalaxy" id="main-content" tabIndex={0} role="main" aria-label="Gen Z Galaxy page content">
       <svg className="genzHeroFrame" width="1280" height="1072" viewBox="0 0 1280 1072" fill="none" aria-hidden="true" focusable="false">
         <g filter="url(#genzHeroInnerShadow)">
           <path d="M0 16C0 7.16346 7.16344 0 16 0H1264C1272.84 0 1280 7.16344 1280 16V647.243C1280 652.662 1277.26 657.713 1272.71 660.663L643.278 1069.29C637.941 1072.76 631.058 1072.73 625.748 1069.23L7.18205 660.676C2.69784 657.714 0 652.699 0 647.325V16Z" fill="#DFE6E9" />
@@ -211,9 +211,9 @@ const GenZgalaxy: NextPage = () => {
       <div className="image20Parent">
         <div className="image20" />
         <div className="rectangleParent">
-          <Image className="rectangleIcon" src="/images/bg.png" width={1207} height={946} sizes="100vw" alt="" aria-hidden="true" />
+          <Image className="rectangleIcon" src="/images/bg.png" width={1207} height={946} sizes="100vw" loading="eager" alt="" aria-hidden="true" />
           <div className="wrapperPolygon14">
-            <Image className="wrapperPolygon14Child" src="/images/octagon.png" width={1062.2} height={1023.7} sizes="100vw" alt="" aria-hidden="true" />
+            <div className="wrapperPolygon14Child" aria-hidden="true" />
           </div>
           <Image className="successfulYoungBusinessmanSIcon" src="/images/success.png" width={653} height={978} sizes="100vw" alt="" aria-hidden="true" />
           <div className="frameChild18" />
@@ -221,7 +221,7 @@ const GenZgalaxy: NextPage = () => {
             <div className="frameParent13">
               <div className="frameParent14">
                 <div className="whatMakesUsDifferentBadge">What Makes Us Different</div>
-                <h2 className="learnYourWay" style={{ margin: 0, fontWeight: 700 }}>
+                <h2 className="learnYourWay" >
                   Learn Your Way, Every Day
                 </h2>
               </div>
@@ -231,7 +231,7 @@ const GenZgalaxy: NextPage = () => {
               <div className="frameParent16">
                 <div className="frameChild20" />
                 <div className="skillPathWrapper">
-                  <div className="skillPath">{`Skill Path `}</div>
+                  <div className="skillPath">Skill Path</div>
                 </div>
               </div>
               <div className="frameParent16">
@@ -321,7 +321,7 @@ const GenZgalaxy: NextPage = () => {
               <div className="frameChild32" />
               <div className="workingWithOthersWrapper">
                 <h3 className="workingWithOthers" style={{ margin: 0, fontWeight: 700 }}>
-                  Working with others
+                  Mutual Support
                 </h3>
               </div>
               <div className="frameChild33">

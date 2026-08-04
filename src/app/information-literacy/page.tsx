@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import type { ReactNode } from "react";
 import Image from "next/image";
-import "./information.css";
+import "./information-literacy.css";
 
 type ThinkingCardData = {
   id: string;
@@ -495,13 +495,7 @@ const InformationLiteracy: NextPage = () => {
         <div className="builtForTheWayLearnersActParent">
           <div className="learnersThinkBadge">Why NeuroLXP</div>
           <b className="builtForTheContainer">
-            <span className="built">{`Built `}</span>
-            <span className="forThe">for the</span>
-            <span className="built">
-              {" "}
-              way learners actually think
-              <br />
-            </span>
+            Built for the way learners actually think
           </b>
           <div className="empowerLearnersTo">NeuroLXP transforms information literacy into practical skills through structured learning and real-world application.</div>
         </div>

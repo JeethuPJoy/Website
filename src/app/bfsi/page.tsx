@@ -128,7 +128,7 @@ export default function BfsiPage() {
   const benefitCards = ["Structured compliance and regulatory training", "Industry-relevant employee upskilling", "Efficient branch network training", "Improved product and advisory knowledge", "Advanced training performance analytics", "Audit-ready compliance records"];
 
   return (
-    <main className="bfsi-page">
+    <main id="main-content" className="bfsi-page">
       <section className="bfsi-hero">
         <BfsiHeroBackground />
 

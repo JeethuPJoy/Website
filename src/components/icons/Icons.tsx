@@ -8,7 +8,7 @@ type IconProps = {
 
 export function ChevronDownIcon({ className }: IconProps) {
   return (
-    <svg className={className} viewBox="0 0 16 16" fill="none">
+    <svg className={className} viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
       <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
@@ -16,7 +16,7 @@ export function ChevronDownIcon({ className }: IconProps) {
 
 export function ChevronUpIcon({ className }: IconProps) {
   return (
-    <svg className={className} viewBox="0 0 16 16" fill="none">
+    <svg className={className} viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
       <path d="M4 10L8 6L12 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
@@ -24,7 +24,7 @@ export function ChevronUpIcon({ className }: IconProps) {
 
 export function ChevronRightIcon({ className }: IconProps) {
   return (
-    <svg className={className} viewBox="0 0 16 16" fill="none" >
+    <svg className={className} viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
       <path d="M6 4L10 8L6 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
@@ -89,7 +89,7 @@ export function LinkedinIcon({ className }: IconProps) {
 
 export function LightbulbIcon({ className }: IconProps) {
   return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className={className}>
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className={className} >
       <path d="M8.11885 19.9987C7.6143 18.8646 7.33301 17.6028 7.33301 16.2732C7.33301 11.3351 11.2132 7.33203 15.9997 7.33203C20.7862 7.33203 24.6663 11.3351 24.6663 16.2732C24.6663 17.6028 24.385 18.8646 23.8805 19.9987" stroke="#2D4CC8" strokeWidth="2" strokeLinecap="round" />
       <path d="M16 2.66602V3.99935" stroke="#2D4CC8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M29.3333 15.998H28" stroke="#2D4CC8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -126,7 +126,7 @@ export function CursorClickIcon({ className }: IconProps) {
 
 export function TargetIcon({ className }: IconProps) {
   return (
-    <svg className={className} width="32" height="32" viewBox="0 0 32 32" fill="none"  >
+    <svg className={className} width="32" height="32" viewBox="0 0 32 32" fill="none" >
       <path d="M20.5708 3.13932C19.2574 2.70672 17.854 2.47266 16.3958 2.47266C9.03203 2.47266 3.0625 8.44219 3.0625 15.806C3.0625 23.1697 9.03203 29.1393 16.3958 29.1393C23.7596 29.1393 29.7292 23.1697 29.7292 15.806C29.7292 14.4124 29.5153 13.0687 29.1188 11.806" stroke="#861109" strokeWidth="2" strokeLinecap="round" />
       <path d="M22.6663 16.0007C22.6663 19.6825 19.6815 22.6673 15.9997 22.6673C12.3178 22.6673 9.33301 19.6825 9.33301 16.0007C9.33301 12.3188 12.3178 9.33398 15.9997 9.33398" stroke="#861109" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M26 5.99935L16 15.9993M26 5.99935V2.66602M26 5.99935H29.3333" stroke="#861109" strokeWidth="2" strokeLinecap="round" />
@@ -136,7 +136,7 @@ export function TargetIcon({ className }: IconProps) {
 
 export function UsersIcon({ className }: IconProps) {
   return (
-    <svg width="34" height="37" viewBox="0 0 34 37" fill="none" className={className} >
+    <svg width="34" height="37" viewBox="0 0 34 37" fill="none" className={className} aria-hidden="true" focusable="false">
       <g filter="url(#filter0_d_903_8053)">
         <path d="M18.3327 14.6673C18.3327 11.7218 15.9448 9.33398 12.9993 9.33398C10.0538 9.33398 7.66602 11.7218 7.66602 14.6673C7.66602 17.6128 10.0538 20.0007 12.9993 20.0007C15.9448 20.0007 18.3327 17.6128 18.3327 14.6673Z" stroke="#907507" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M15.7185 10.077C15.6845 9.83396 15.667 9.58569 15.667 9.33333C15.667 6.38781 18.0549 4 21.0003 4C23.9458 4 26.3337 6.38781 26.3337 9.33333C26.3337 12.2789 23.9458 14.6667 21.0003 14.6667C20.0075 14.6667 19.0782 14.3955 18.2822 13.9231" stroke="#907507" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -161,7 +161,7 @@ export function UsersIcon({ className }: IconProps) {
 
 export function SmartphoneIcon({ className }: IconProps) {
   return (
-    <svg width="37" height="36" viewBox="0 0 37 36" fill="none" className={className} >
+    <svg width="37" height="36" viewBox="0 0 37 36" fill="none" className={className} aria-hidden="true" focusable="false">
       <g filter="url(#filter0_d_903_8100)">
         <path d="M31.667 12V20" stroke="#2A7308" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M26.334 16V20.0892C26.334 21.5111 26.334 22.222 25.9833 22.8095L25.9761 22.8212C25.6221 23.4068 24.9797 23.7651 23.6948 24.4815C21.0867 25.9357 19.7825 26.6629 18.3485 26.6667H18.3195C16.8855 26.6629 15.5813 25.9357 12.9732 24.4815C11.6883 23.7651 11.0459 23.4068 10.6919 22.8212L10.6847 22.8095C10.334 22.222 10.334 21.5111 10.334 20.0892V16" stroke="#2A7308" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -186,7 +186,7 @@ export function SmartphoneIcon({ className }: IconProps) {
 export function GraduationCapIcon({ className }: IconProps) {
   const filterId = useId();
   return (
-    <svg width="36" height="39" viewBox="0 0 36 39" fill="none" className={className} >
+    <svg width="36" height="39" viewBox="0 0 36 39" fill="none" className={className} aria-hidden="true" >
       <g filter={`url(#${filterId})`}>
         <path d="M30.34 9.52251L29.6819 8.38037C29.1841 7.5166 28.9353 7.08472 28.5119 6.91249C28.0884 6.74028 27.6095 6.87617 26.6517 7.14796L25.0248 7.60623C24.4133 7.74724 23.7717 7.66724 23.2135 7.38037L22.7643 7.12121C22.2855 6.81456 21.9172 6.36243 21.7133 5.83097L21.2681 4.50113C20.9753 3.62111 20.8289 3.18109 20.4804 2.92941C20.132 2.67773 19.6691 2.67773 18.7432 2.67773H17.2568C16.3311 2.67773 15.8681 2.67773 15.5196 2.92941C15.1711 3.18109 15.0247 3.62111 14.732 4.50113L14.2867 5.83097C14.0829 6.36243 13.7146 6.81456 13.2358 7.12121L12.7867 7.38037C12.2283 7.66724 11.5868 7.74724 10.9753 7.60623L9.34833 7.14796C8.39054 6.87617 7.91166 6.74028 7.48822 6.91249C7.06478 7.08472 6.81593 7.5166 6.3182 8.38037L5.66009 9.52251C5.19354 10.3322 4.96026 10.737 5.00554 11.168C5.05081 11.5989 5.3631 11.9462 5.98768 12.6408L7.3624 14.1777C7.6984 14.6031 7.93695 15.3444 7.93695 16.0109C7.93695 16.6777 7.69848 17.4188 7.36244 17.8443L5.98768 19.3812C5.3631 20.0759 5.05082 20.4231 5.00554 20.8541C4.96026 21.2851 5.19354 21.6899 5.66009 22.4995L6.31818 23.6416C6.8159 24.5053 7.06478 24.9373 7.48822 25.1095C7.91166 25.2817 8.39056 25.1459 9.34836 24.874L10.9753 24.4157C11.5868 24.2747 12.2285 24.3548 12.7869 24.6417L13.236 24.9009C13.7147 25.2076 14.0829 25.6596 14.2867 26.1911L14.732 27.5211C15.0247 28.4011 15.1711 28.8411 15.5196 29.0928C15.8681 29.3444 16.3311 29.3444 17.2568 29.3444H18.7432C19.6691 29.3444 20.132 29.3444 20.4804 29.0928C20.8289 28.8411 20.9753 28.4011 21.2681 27.5211L21.7135 26.1911C21.9172 25.6596 22.2853 25.2076 22.7641 24.9009L23.2132 24.6417C23.7716 24.3548 24.4132 24.2747 25.0248 24.4157L26.6517 24.874C27.6095 25.1459 28.0884 25.2817 28.5119 25.1095C28.9353 24.9373 29.1841 24.5053 29.6819 23.6416L30.34 22.4995C30.8065 21.6899 31.0397 21.2851 30.9945 20.8541C30.9492 20.4231 30.6369 20.0759 30.0124 19.3812L28.6376 17.8443C28.3016 17.4188 28.0631 16.6777 28.0631 16.0109C28.0631 15.3444 28.3017 14.6031 28.6376 14.1777L30.0124 12.6408C30.6369 11.9462 30.9492 11.5989 30.9945 11.168C31.0397 10.737 30.8065 10.3322 30.34 9.52251Z" stroke="#67096E" strokeWidth="2" strokeLinecap="round" />
         <path d="M22.6087 16.0007C22.6087 18.578 20.5194 20.6673 17.942 20.6673C15.3647 20.6673 13.2754 18.578 13.2754 16.0007C13.2754 13.4233 15.3647 11.334 17.942 11.334C20.5194 11.334 22.6087 13.4233 22.6087 16.0007Z" stroke="#67096E" strokeWidth="2" />

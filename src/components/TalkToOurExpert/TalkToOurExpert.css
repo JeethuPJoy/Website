@@ -27,7 +27,9 @@
   border: none;
   cursor: pointer;
   background: #dfe6e9;
-  box-shadow: 8px 8px 16px #c6c6c9, -8px -8px 16px #ffffff;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +37,9 @@
 }
 
 .tte-close:hover {
-  box-shadow: 6px 6px 12px #c6c6c9, -6px -6px 12px #ffffff;
+  box-shadow:
+    6px 6px 12px #c6c6c9,
+    -6px -6px 12px #ffffff;
 }
 
 .tte-close:focus-visible {
@@ -60,8 +64,12 @@
 .tte-photo-frame {
   width: 498px;
   height: 552px;
-  background: url("/images/talk-to-expert/pattern-bg.png") center / cover no-repeat, #dfe6e9;
-  box-shadow: inset -8px -8px 8px #ffffff, inset 8px 8px 8px #c4c4c4;
+  background:
+    url("/images/talk-to-expert/pattern-bg.png") center / cover no-repeat,
+    #dfe6e9;
+  box-shadow:
+    inset -8px -8px 8px #ffffff,
+    inset 8px 8px 8px #c4c4c4;
   border-radius: 32px;
   display: flex;
   align-items: center;
@@ -75,7 +83,9 @@
   border-radius: 32px;
   overflow: hidden;
   background: #dfe6e9;
-  box-shadow: -8px -8px 8px #ffffff, 8px 8px 16px #c4c4c4;
+  box-shadow:
+    -8px -8px 8px #ffffff,
+    8px 8px 16px #c4c4c4;
 }
 
 .tte-photo {
@@ -111,7 +121,9 @@
   position: relative;
   flex: 1;
   background: #dfe6e9;
-  box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #ffffff;
+  box-shadow:
+    8px 8px 16px #c4c4c4,
+    -8px -8px 16px #ffffff;
   border-radius: 12px;
   padding: 56px 80px 56px 160px;
   display: flex;
@@ -153,7 +165,9 @@
 .tte-form-surface {
   width: 100%;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 8px;
   padding: 24px;
 }
@@ -191,17 +205,25 @@
   height: 54px;
   padding: 0 16px;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 8px;
   border: none;
 }
 
 .tte-input-shell:focus-within {
-  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8), 0 0 0 2px #2d4cc8;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8),
+    0 0 0 2px #2d4cc8;
 }
 
 .tte-input-shell-error {
-  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8), 0 0 0 2px #d64545;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8),
+    0 0 0 2px #d64545;
 }
 
 .tte-input-shell-grow {
@@ -215,7 +237,9 @@
   height: 33px;
   border-radius: 50%;
   background: #dfe6e9;
-  box-shadow: 8px 8px 16px #c6c6c9, -8px -8px 16px #ffffff;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,7 +288,9 @@
   height: 54px;
   padding: 0 14px;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -308,7 +334,9 @@
   flex-direction: column;
   background: #dfe6e9;
   border-radius: 12px;
-  box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #ffffff;
+  box-shadow:
+    8px 8px 16px #c4c4c4,
+    -8px -8px 16px #ffffff;
   padding: 12px;
   z-index: 5;
 }
@@ -321,7 +349,9 @@
   border: none;
   border-radius: 8px;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #2f3547;
@@ -404,7 +434,9 @@
   padding: 32px;
   background: #dfe6e9;
   border-top: 8px solid #2d4cc8;
-  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -441,11 +473,15 @@
   align-items: center;
   justify-content: center;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.6), inset 4px 4px 8px #c4c4c4;
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.6),
+    inset 4px 4px 8px #c4c4c4;
 }
 
 .tte-interest-option[aria-selected="true"] .tte-radio-bubble {
-  box-shadow: 8px 8px 16px #c6c6c9, -8px -8px 16px #ffffff;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
 }
 
 .tte-interest-option-label {
@@ -468,7 +504,9 @@
   min-height: 154px;
   padding: 24px 40px 24px 16px;
   background: #dfe6e9;
-  box-shadow: inset -8px -8px 16px rgba(255, 255, 255, 0.8), inset 8px 8px 16px #c6c6c9;
+  box-shadow:
+    inset -8px -8px 16px rgba(255, 255, 255, 0.8),
+    inset 8px 8px 16px #c6c6c9;
   border-radius: 16px;
 }
 
@@ -521,11 +559,15 @@
   height: 24px;
   border-radius: 4px;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 6px #ffffff, inset 4px 4px 2px #c4c4c4;
+  box-shadow:
+    inset -4px -4px 6px #ffffff,
+    inset 4px 4px 2px #c4c4c4;
 }
 
 .tte-consent-checkbox:checked ~ .tte-consent-box {
-  box-shadow: 4px 4px 8px #c6c6c9, -4px -4px 8px #ffffff;
+  box-shadow:
+    4px 4px 8px #c6c6c9,
+    -4px -4px 8px #ffffff;
 }
 
 .tte-consent-checkbox:checked ~ .tte-consent-box::after {
@@ -567,7 +609,9 @@
   border: none;
   border-radius: 32px;
   background: #dfe6e9;
-  box-shadow: -8px -8px 16px #ffffff, 8px 8px 16px #c6c6c9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -577,11 +621,15 @@
 }
 
 .tte-submit:hover:not(:disabled) {
-  box-shadow: -6px -6px 12px #ffffff, 6px 6px 12px #c6c6c9;
+  box-shadow:
+    -6px -6px 12px #ffffff,
+    6px 6px 12px #c6c6c9;
 }
 
 .tte-submit:active:not(:disabled) {
-  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
 }
 
 .tte-submit:focus-visible {

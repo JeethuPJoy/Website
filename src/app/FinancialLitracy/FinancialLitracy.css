@@ -12,13 +12,12 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Ellipse 359 — cover left text only, stop near bold line */
 .wrapperEllipse359 {
   position: absolute;
   width: 1345.19px;
   height: 906.73px;
   left: -340px;
-  top: -120px;
+  top: 0px;
   border-radius: 50%;
   background-color: transparent;
   background-image: url('/images/ellipse-359.png');
@@ -171,7 +170,6 @@
   flex-shrink: 0;
 }
 
-/* Breadcrumb — Locofy .frameDiv */
 .frameDiv {
   position: absolute;
   top: 32px;
@@ -203,7 +201,6 @@
   line-height: 24px;
 }
 
-/* Hero — Locofy Frame 2095587253 */
 .frameParent2 {
   position: absolute;
   top: 80px;
@@ -216,7 +213,6 @@
   z-index: 1;
 }
 
-/* Left copy — 32px between badge, headline, and body */
 .frameParent3 {
   width: 539px;
   display: flex;
@@ -297,7 +293,6 @@
   line-height: 40px;
 }
 
-/* Layer 1 — Outer border ring (restored) */
 .heroOuterCircle {
   width: 610px;
   height: 637px;
@@ -312,7 +307,6 @@
   overflow: hidden;
 }
 
-/* Layer 2 — photo circle inside the rim */
 .heroInnerCircle {
   position: absolute;
   left: 48px;
@@ -323,13 +317,11 @@
   overflow: hidden;
   background-color: #dfe6e9;
   z-index: 2;
-  /* PHOTO outer glow (shows in the rim) */
   filter:
     drop-shadow(-8px -8px 16px #ffffff)
     drop-shadow(8px 8px 16px #c4c4c4);
 }
 
-/* PHOTO inset shadows above the image */
 .heroInnerCircle::after {
   content: '';
   position: absolute;
@@ -342,7 +334,6 @@
     -8px -8px 16px 0px #ffffff inset;
 }
 
-/* Layer 3 — person in photo circle */
 .ellipseIcon {
   width: 100%;
   height: 100%;
@@ -461,7 +452,6 @@
   z-index: 3;
 }
 
-/* Shared strip hover: larger shadow + brighter color */
 .wrapper,
 .container,
 .frame,
@@ -522,7 +512,6 @@
     transform: none;
   }
 
-  /* Keep scaled size on reduced-motion; only drop the lift */
   @media (max-width: 767.98px) {
     .frameParent9:hover {
       transform: none !important;
@@ -565,7 +554,7 @@
   max-width: 100%;
   overflow: hidden;
   z-index: 1;
-  object-fit: cover;
+  background-color: #dfe6e9;
 }
 
 .skillCardPanelAlt,
@@ -580,7 +569,21 @@
   max-width: 100%;
   overflow: hidden;
   z-index: 1;
-  object-fit: cover;
+  background-color: #dfe6e9;
+}
+
+.rectangleIcon,
+.rectangleIconAlt {
+  position: absolute;
+  top: -1px;
+  left: 68px;
+  width: 552px;
+  height: 146px;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #dfe6e9;
+  clip-path: polygon(17px 0%, 102% 0%, 100% 237%, 13% 106%, 9% 90px);
 }
 
 .smartBudgetingParent {
@@ -829,13 +832,11 @@
   will-change: transform;
 }
 
-/* 3rd section — icon lifts on hover of row (icon or text) */
 .frameParent19:hover .tickWrap,
 .frameParent21:hover .tickWrap {
   transform: translateY(-8px);
 }
 
-/* 41×41 circle — color at 30% + Figma drop shadows */
 .tickBg {
   position: absolute;
   inset: 0;
@@ -888,7 +889,6 @@
   object-fit: contain;
 }
 
-/* Tick glyph 24×24 — full color from SVG */
 .tick03Icon {
   width: 24px !important;
   height: 24px !important;
@@ -919,7 +919,6 @@
   flex-shrink: 0;
 }
 
-/* Outer oval — #BF1869, 1266×217, drop shadow 0 / 4 / 4 / 0 @ 25% */
 .frameChild10 {
   position: absolute;
   top: 0;
@@ -934,7 +933,6 @@
   z-index: 0;
 }
 
-/* Inner oval — #0B9BA0, 1130×217, left 68, same drop shadow */
 .ellipseDiv {
   position: absolute;
   top: 0;
@@ -1037,7 +1035,6 @@
   will-change: transform;
 }
 
-/* 4th section — soft lift + deeper shadow */
 .image20Parent:hover {
   transform: translateY(-8px);
   box-shadow:
@@ -1240,7 +1237,6 @@
   will-change: transform;
 }
 
-/* 5th section — only the hovered row’s card slides; icons stay fixed */
 .frameParent31 > .frameParent32:nth-child(odd):hover .frameWrapper {
   transform: translateX(16px);
 }
@@ -1274,7 +1270,6 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  /* Colored square lift + soft light rim (zoomed Figma) */
   box-shadow:
     0px 4px 4px 0 rgba(0, 0, 0, 0.25),
     -2px -2px 6px 0 rgba(255, 255, 255, 0.55);
@@ -1300,7 +1295,6 @@
   width: 38px;
   height: 38px;
   object-fit: contain;
-  /* Icon float shadow onto colored square */
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -1404,7 +1398,6 @@
   flex-shrink: 0;
 }
 
-/* CTA dashed gradient border (animated) — was wrongly named .frameDiv */
 .ctaBorderFrame {
   position: absolute;
   top: 24px;
@@ -1419,7 +1412,6 @@
   z-index: 0;
 }
 
-/* Hidden on desktop & tablet — portrait leaf border for mobile ≤768 */
 .ctaBorderFrameMobile {
   display: none;
   pointer-events: none;
@@ -1823,8 +1815,6 @@
   filter: brightness(0) invert(1);
 }
 
-/* ========== Responsive shell (scaled desktop artboard ≥768px) ========== */
-
 .pageScale {
   width: 100%;
   max-width: 100vw;
@@ -1838,7 +1828,6 @@
   flex-shrink: 0;
 }
 
-/* Artboard scale fallback (PageScaler JS owns this at ≥768) */
 @media (min-width: 768px) and (max-width: 1439.98px) {
   .pageScale {
     justify-content: flex-start;
@@ -1850,10 +1839,6 @@
     transform-origin: top left;
   }
 }
-
-/* -------------------------------------------------------------------------- */
-/* Phone only — fluid layout (tablet / laptop keep scaled desktop artboard) */
-/* -------------------------------------------------------------------------- */
 
 @media (max-width: 767.98px) {
   .pageScale {
@@ -1889,7 +1874,6 @@
     z-index: 0;
   }
 
-  /* Shared section container */
   .frameParent,
   .frameDiv,
   .frameParent2,
@@ -1970,7 +1954,6 @@
     margin-top: 0;
   }
 
-  /* ---- Section spacing (tablet default 60px) ---- */
   .frameParent2,
   .frameParent5,
   .frameParent14,
@@ -1985,7 +1968,6 @@
     margin-top: 60px !important;
   }
 
-  /* ---- Hero ---- */
   .frameParent2 {
     display: flex;
     flex-direction: column;
@@ -2059,7 +2041,6 @@
     object-fit: cover;
   }
 
-  /* ---- Foundations / feature cards ---- */
   .frameParent5 {
     display: flex;
     flex-direction: column;
@@ -2109,7 +2090,6 @@
     box-sizing: border-box;
   }
 
-  /* Flatten columns so we can reorder 01,02,03,04 (desktop stays 2×2) */
   .frameParent8,
   .frameParent11 {
     display: contents;
@@ -2128,10 +2108,6 @@
     order: 4;
   }
 
-  /*
-   * Original 620×156 card design unchanged inside.
-   * `zoom` shrinks the whole card (layout + visuals) to fit the screen.
-   */
   .frameParent9 {
     width: 620px !important;
     max-width: none !important;
@@ -2147,7 +2123,6 @@
     transform: translateY(-8px) !important;
   }
 
-  /* Firefox / older: transform scale fallback (same visual result) */
   @supports not (zoom: 1) {
     .frameParent9 {
       zoom: normal;
@@ -2161,9 +2136,6 @@
     }
   }
 
-  /* Keep desktop inner layout — do not restyle strip / panel / text */
-
-  /* ---- Smart Decisions ---- */
   .frameParent14 {
     display: flex;
     flex-direction: column;
@@ -2234,7 +2206,6 @@
     overflow: visible;
   }
 
-  /* Restore neumorphic icon background shadows (were clipped by overflow) */
   .tickBg {
     box-shadow:
       -6px -6px 12px 0px #ffffff,
@@ -2304,7 +2275,6 @@
     line-height: 1.2 !important;
   }
 
-  /* ---- Habits ---- */
   .frameParent23 {
     display: flex;
     flex-direction: column;
@@ -2339,7 +2309,6 @@
     max-width: 360px;
   }
 
-  /* ---- Who We Support ---- */
   .frameParent28 {
     display: flex;
     flex-direction: column;
@@ -2455,13 +2424,11 @@
     word-break: break-word;
   }
 
-  /* Disable horizontal slide on smaller screens — lifts only feel odd on touch */
   .frameParent31 > .frameParent32:nth-child(odd):hover .frameWrapper,
   .frameParent31 > .frameParent32:nth-child(even):hover .frameWrapper {
     transform: none;
   }
 
-  /* ---- CTA — portrait card on phones ---- */
   .image20Parent3 {
     width: calc(100% - 40px) !important;
     max-width: 400px;
@@ -2541,7 +2508,6 @@
     margin: 0 auto;
   }
 
-  /* ---- Footer ---- */
   .frameParent37 {
     padding-bottom: 24px;
     max-width: 100%;
@@ -2637,7 +2603,6 @@
   }
 }
 
-/* Phone refinements (artboard unused below 768) */
 @media (max-width: 767.98px) {
   .frameParent,
   .frameDiv,
@@ -2765,7 +2730,6 @@
     min-height: 320px;
   }
 
-  /* Portrait card: hide wide leaf SVG, show mobile border */
   .ctaBorderFrame {
     display: none !important;
   }
@@ -2818,7 +2782,6 @@
     line-height: 1.2 !important;
   }
 
-  /* Soften hover motion on touch */
   .frameParent9:hover {
     transform: translateY(-4px) !important;
   }
@@ -2855,7 +2818,6 @@
   }
 }
 
-/* Small mobile */
 @media (max-width: 480px) {
   .frameParent,
   .frameDiv,
@@ -2941,7 +2903,6 @@
   }
 }
 
-/* Touch: prefer soft lift without sticky hover where supported */
 @media (hover: none) {
   .frameParent9:hover {
     transform: none !important;

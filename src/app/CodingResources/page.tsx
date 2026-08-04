@@ -109,7 +109,6 @@ const CodingResources: NextPage = () => {
 
           <p>
             NeuroLabs provides coding resources that support both
-            <br />
             theoretical understanding and hands-on learning.
           </p>
 

@@ -4,7 +4,6 @@ import { useLayoutEffect, useRef, type ReactNode } from 'react';
 
 const ARTBOARD_WIDTH = 1440;
 const ARTBOARD_HEIGHT = 4280;
-/** Below this (phones), CSS fluid layout takes over. Tablet/laptop use scaled desktop. */
 const DESKTOP_MIN = 768;
 
 export default function PageScaler({ children }: { children: ReactNode }) {

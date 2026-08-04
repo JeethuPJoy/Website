@@ -14,14 +14,32 @@ type HeroSlide = { id: number; type: "image"; image: string; heading: string } |
 
 const heroSlides: HeroSlide[] = [
   { id: 1, type: "image", image: "/images/brainstorm-meeting.jpg", heading: "Empowering Lifelong learning" },
-  { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.jpg", heading: "Transform Your Learning, Transform Your Future" },
+  { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.jpg", heading: "Learn. Grow. Succeed" },
   { id: 3, type: "video", src: "/videos/asking-doubts-to-teacher.mp4", heading: "Every Question Leads to Growth" },
   { id: 4, type: "image", image: "/images/businesswoman-with-tablet-pc-meeting.jpg", heading: "Learn Beyond Limits" },
   { id: 5, type: "image", image: "/images/college-graduates-smiling-camera.jpg", heading: "Unlock Your Full Potential" },
   { id: 6, type: "video", src: "/videos/discussing-in-class.mp4", heading: "Where Great Ideas Take Shape Together" },
-  { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank.jpg", heading: "Empowering Communities Through Learning." },
+  { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank.jpg", heading: "Learn. Connect. Thrive" },
   { id: 8, type: "image", image: "/images/8595828.jpg", heading: "Transform the Way the World Learns" },
 ];
+
+function ChevronsLeftIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true" focusable="false">
+      <path d="M11 17L6 12L11 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M18 17L13 12L18 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function ChevronsRightIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true" focusable="false">
+      <path d="M6 17L11 12L6 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M13 17L18 12L13 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
 
 function HeroCarousel() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -51,6 +69,14 @@ function HeroCarousel() {
     setActiveSlide(index);
   };
 
+  const goToPrevious = () => {
+    setActiveSlide((current) => (current - 1 + heroSlides.length) % heroSlides.length);
+  };
+
+  const goToNext = () => {
+    setActiveSlide((current) => (current + 1) % heroSlides.length);
+  };
+
   return (
     <section className="hero-section" aria-roledescription="carousel" aria-label="NeuroLXP highlights" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onFocus={() => setIsPaused(true)} onBlur={() => setIsPaused(false)}>
       <div className="hero-frame">
@@ -64,19 +90,29 @@ function HeroCarousel() {
               ) : (
                 <Image src={slide.image} alt="" fill priority={index === 0} sizes="(min-width: 1312px) 1208px, 100vw" className="hero-slide-image" />
               )}
-              <div className="hero-caption">
-                <h1 className="hero-heading">{slide.heading}</h1>
-                {index === activeSlide && (
-                  <div className="hero-dots">
-                    {heroSlides.map((dotSlide, dotIndex) => (
-                      <button key={dotSlide.id} type="button" aria-label={`Go to slide ${dotIndex + 1}`} aria-current={dotIndex === activeSlide ? "true" : undefined} className={`hero-dot${dotIndex === activeSlide ? " hero-dot-active" : ""}`} onClick={() => goToSlide(dotIndex)} />
-                    ))}
-                  </div>
-                )}
-              </div>
             </div>
           ))}
+          <button type="button" className="hero-nav-button hero-nav-button-prev" onClick={goToPrevious} aria-label="Previous slide">
+            <ChevronsLeftIcon className="hero-nav-icon" />
+          </button>
+          <button type="button" className="hero-nav-button hero-nav-button-next" onClick={goToNext} aria-label="Next slide">
+            <ChevronsRightIcon className="hero-nav-icon" />
+          </button>
         </div>
+
+        <div className="hero-caption-stage">
+          {heroSlides.map((slide, index) => (
+            <div key={slide.id} className={`hero-caption${index === activeSlide ? " hero-caption-active" : ""}`} aria-hidden={index !== activeSlide}>
+              <h1 className="hero-heading">{slide.heading}</h1>
+            </div>
+          ))}
+          <div className="hero-dots">
+            {heroSlides.map((dotSlide, dotIndex) => (
+              <button key={dotSlide.id} type="button" aria-label={`Go to slide ${dotIndex + 1}`} aria-current={dotIndex === activeSlide ? "true" : undefined} className={`hero-dot${dotIndex === activeSlide ? " hero-dot-active" : ""}`} onClick={() => goToSlide(dotIndex)} />
+            ))}
+          </div>
+        </div>
+
         <span className="sr-only" aria-live="polite" aria-atomic="true">
           {`Slide ${activeSlide + 1} of ${heroSlides.length}: ${heroSlides[activeSlide].heading}`}
         </span>
@@ -146,9 +182,9 @@ function LearningOdyssey({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoCli
     <section className="odyssey-section" aria-labelledby="odyssey-heading">
       <div className="odyssey-heading-block">
         <h2 className="odyssey-heading" id="odyssey-heading">
-          Embark on a <span className="odyssey-heading-accent">Learning Odyssey</span> with NeuroLXP
+          Embark on a Learning<span className="odyssey-heading-accent"> Odyssey</span> with NeuroLXP
         </h2>
-        <p className="odyssey-subtext">NeuroLXP is more than a learning Platform it is an intelligent platform designed to help learners grow, adapt, and succeed in a rapidly transforming digital society.</p>
+        <p className="odyssey-subtext">NeuroLXP is more than a learning platform it's an intelligent platform that helps learners grow, adapt, and succeed.</p>
         <button type="button" className="odyssey-demo-button" onClick={onBookDemoClick} ref={bookDemoButtonRef}>
           Book a demo
         </button>
@@ -397,7 +433,8 @@ function PlatformOverview() {
         <div className="platform-overview-content">
           <span className="platform-overview-tag">Platform Overview</span>
           <h2 className="platform-overview-heading" id="platform-overview-heading">
-            NeuroLXP One Platform! Many Missions! One Future
+            NeuroLXP<sup className="smv-badge-tm">TM</sup>
+            <span className="platform-overview-heading-text"> One Platform! Many Missions! One Future</span>
           </h2>
           <div className="platform-overview-list">
             {platformOverviewItems.map((item, index) => (
@@ -539,9 +576,9 @@ function WhyChooseAnalyticsIcon({ className }: { className?: string }) {
 
 const whyChooseCards: WhyChooseCardData[] = [
   { id: 1, title: "Get Discovered", description: "Launch your White Label LMS", dashColor: "#BCCF10", iconBg: "#BCCF10", Icon: WhyChooseDiscoverIcon },
-  { id: 2, title: "Deliver Excellence", description: "Innovation in Learning", dashColor: "#BA06AE", iconBg: "#E50AD7", Icon: WhyChooseExcellenceIcon },
+  { id: 2, title: "Deliver Excellence", description: "Innovative Learning for Growth", dashColor: "#BA06AE", iconBg: "#E50AD7", Icon: WhyChooseExcellenceIcon },
   { id: 3, title: "Engage Learners", description: "Smart Learning Notifications", dashColor: "#2DC8BB", iconBg: "#2DC8BB", Icon: WhyChooseEngageIcon },
-  { id: 4, title: "Insightful Analytics", description: "Smarter Analytics. Greater Success", dashColor: "#BF1869", iconBg: "#F270AF", Icon: WhyChooseAnalyticsIcon },
+  { id: 4, title: "Smart Analytics", description: "Smarter Analytics. Greater Success", dashColor: "#BF1869", iconBg: "#F270AF", Icon: WhyChooseAnalyticsIcon },
 ];
 
 function WhyChooseCard({ title, description, dashColor, iconBg, Icon }: WhyChooseCardData) {
@@ -552,7 +589,6 @@ function WhyChooseCard({ title, description, dashColor, iconBg, Icon }: WhyChoos
           <Icon className="why-choose-icon" />
         </div>
       </div>
-      {/* <div className="why-choose-diamond-shape" style={{ borderColor: dashColor }} /> */}
       <div className="why-choose-diamond-inner-shape" />
       <div className="why-choose-card-content">
         <h3 className="why-choose-card-title">{title}</h3>
@@ -571,8 +607,8 @@ function WhyChooseNeuroLXP() {
         <div className="why-choose-body">
           <div className="why-choose-text">
             <h2 className="why-choose-heading" id="why-choose-heading">
-              Transforming the <br />
-              <span className="why-choose-heading-accent">Future of Digital Learning</span>
+              Transforming <br />
+              <span className="why-choose-heading-accent">Digital Learning</span>
             </h2>
             <p className="why-choose-subtext">NeuroLXP empowers learners with personalized learning, future-ready skills, and meaningful outcomes.</p>
           </div>
@@ -1080,7 +1116,7 @@ const faqItems: FAQItemData[] = [
   {
     id: 3,
     number: "03",
-    title: "How is NeuroLXP different from an LMS?",
+    title: "How Is NeuroLXP Different?",
     answer: "Unlike a conventional LMS that focuses on course administration, NeuroLXP™ delivers learner-centric experiences through personalization, skill-based learning, collaboration, and continuous development.",
     colorStart: "#861109",
     colorEnd: "#200402",
@@ -1096,7 +1132,7 @@ const faqItems: FAQItemData[] = [
   {
     id: 5,
     number: "05",
-    title: "Does NeuroLXP support all organization size?",
+    title: "Who Can Use NeuroLXP?",
     answer: "Yes. NeuroLXP™ is designed to scale effortlessly - from schools and universities to enterprises, skilling academies, NGOs, and nationwide government learning initiatives.",
     colorStart: "#67096E",
     colorEnd: "#C712D4",
@@ -1201,8 +1237,8 @@ function GetInTouch() {
           <span className="get-in-touch-badge">Get in touch</span>
           <div className="get-in-touch-copy">
             <h2 className="get-in-touch-heading" id="get-in-touch-heading">
-              Learn Smarter <br />
-              with <span className="get-in-touch-heading-accent">NeuroLXP</span>
+              Learn Smarter with <br />
+              <span className="get-in-touch-heading-accent">NeuroLXP</span>
             </h2>
             <p className="get-in-touch-subtext">Have questions? Our experts are here to help.</p>
           </div>

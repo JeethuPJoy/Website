@@ -5,7 +5,7 @@ import "./DigitalLiteracy.css";
 
 function TopographicPattern({ className }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 574 703" fill="none">
+    <svg className={className} viewBox="0 0 574 703" fill="none" aria-hidden="true" focusable="false">
       <path d="M338.961 315.628C305.711 334.658 287.785 400.165 301.138 433.653C315.892 470.635 408.145 465.018 418.731 456C429.317 446.982 342.776 418.127 354.585 384.099C367.7 346.329 433.556 346.278 431.763 330.15C430.001 314.282 377.395 293.635 338.961 315.628Z" stroke="#2D4CC8" strokeOpacity="0.5" strokeMiterlimit="10" />
       <path d="M328.551 310.975C289.579 327.558 272.669 406.85 289.848 444.205C309.319 486.515 409.546 470.832 424.423 464.137C437.248 458.374 353.994 419.568 363.948 378.451C374.751 333.778 434.148 326.523 429.711 316.158C424.941 305.047 374.284 291.561 328.551 310.975Z" stroke="#2D4CC8" strokeOpacity="0.5" strokeMiterlimit="10" />
       <path d="M318.142 306.331C273.508 320.417 257.583 413.525 278.557 454.746C302.787 502.424 410.146 476.512 430.114 472.283C444.63 469.173 365.284 421.06 373.298 372.779C381.852 321.287 436.076 306.185 427.657 302.237C421.375 295.24 371.339 289.53 318.142 306.331Z" stroke="#2D4CC8" strokeOpacity="0.5" strokeMiterlimit="10" />
@@ -34,7 +34,7 @@ function TopographicPattern({ className }: { className?: string }) {
 
 function StarSolidIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
       <path d="M12 2L14.85 8.36L22 9.27L16.7 14.14L18.18 21L12 17.27L5.82 21L7.3 14.14L2 9.27L9.15 8.36L12 2Z" />
     </svg>
   );
@@ -61,7 +61,7 @@ function DigitalLiteracyHero() {
           <h1 className="dl-hero-heading">
             Empower Every Employee with <span className="dl-hero-heading-accent">Digital Skills</span>
           </h1>
-          <p className="dl-hero-subtext">NeuroLXP delivers engaging digital skills training from basics to advanced workplace tools.</p>
+          <p className="dl-hero-subtext">NeuroLXP<sup className="nlxp-footer-heading-tm">TM</sup> delivers engaging digital skills training from basics to advanced workplace tools.</p>
 
           <div className="dl-hero-buttons">
             <button type="button" className="dl-hero-button dl-hero-button-secondary">
@@ -200,7 +200,7 @@ function DigitalLiteracyAdvantage() {
         </defs>
       </svg>
       <div className="dl-advantage-text">
-        <span className="dl-hero-badge">The NeuroLXP Advantage</span>
+        <span className="dl-hero-badge">The NeuroLXP<sup className="nlxp-footer-heading-tm">TM</sup> Advantage</span>
         <h2 className="dl-section-heading">Equip Every Workforce For a Digital Future</h2>
         <p className="dl-hero-subtext">From foundational skills to advanced expertise skills in one platform.</p>
       </div>
@@ -248,7 +248,7 @@ function CheckPill({ text, color }: { text: string; color: string }) {
       }>
       <div className="dl-check-pill">
         <span className="dl-check-pill-icon">
-          <svg viewBox="0 0 16 16" fill="none">
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
             <path className="dl-check-icon-check" d="M3 8l3.5 3.5L13 4.5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <path className="dl-check-icon-arrow" d="M3 8h9M8.5 4.5L13 8l-4.5 3.5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
@@ -273,9 +273,9 @@ function DigitalLiteracyAccelerate() {
           <h2 className="dl-section-heading dl-accelerate-heading">Accelerate Digital Transformation</h2>
           <p className="dl-hero-subtext">Smart skill mapping identifies gaps before they slow you down and fills them fast.</p>
           <div className="dl-check-list">
-            <CheckPill text="Role-based skill gap analysis" color="#67096E" />
+            <CheckPill text="Role-based Skill Gap Analysis Framework" color="#67096E" />
             <CheckPill text="Automated learning assignments" color="#0B9BA0" />
-            <CheckPill text="Compliance & Certification Tracking" color="#09248F" />
+            <CheckPill text="Compliance, Certification Tracking" color="#09248F" />
           </div>
         </div>
       </div>
@@ -283,15 +283,15 @@ function DigitalLiteracyAccelerate() {
   );
 }
 
-function AnalyticsCard({ value, label, description, color, icon }: { value: string; label: string; description: string; color: string; icon: React.ReactNode }) {
+function AnalyticsCard({ value, label, description, color, textColor = color, icon }: { value: string; label: string; description: string; color: string; textColor?: string; icon: React.ReactNode }) {
   return (
     <div className="dl-analytics-card" style={{ "--analytics-color": color } as React.CSSProperties}>
       <svg className="dl-analytics-card-border" aria-hidden="true">
         <rect x="0" y="0" width="100%" height="100%" ry="50%" />
       </svg>
-      <span className="dl-analytics-card-icon">{icon}</span>
+      <span className="dl-analytics-card-icon" aria-hidden="true">{icon}</span>
       <div className="dl-analytics-card-text">
-        <span className="dl-analytics-card-value" style={{ color }}>
+        <span className="dl-analytics-card-value" style={{ color: textColor }}>
           {value}
         </span>
         <span className="dl-analytics-card-label">{label}</span>
@@ -355,6 +355,7 @@ function DigitalLiteracyAnalytics() {
           label="Analytics"
           description="Compare teams and departments"
           color="#0B9BA0"
+          textColor="#08888E"
           icon={
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
               <path d="M38.75 27.5C38.75 22.6675 34.8325 18.75 30 18.75C25.1675 18.75 21.25 22.6675 21.25 27.5C21.25 32.3325 25.1675 36.25 30 36.25C34.8325 36.25 38.75 32.3325 38.75 27.5Z" stroke="#0B9BA0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -371,7 +372,7 @@ function DigitalLiteracyAnalytics() {
   );
 }
 
-function StepCard({ number, color, title, description }: { number: string; color: string; title: string; description: string }) {
+function StepCard({ number, color, textColor = color, title, description }: { number: string; color: string; textColor?: string; title: string; description: string }) {
   return (
     <div
       className="dl-step-card"
@@ -382,7 +383,7 @@ function StepCard({ number, color, title, description }: { number: string; color
         } as React.CSSProperties
       }>
       <span className="dl-step-card-badge">
-        <span style={{ color }}>{number}</span>
+        <span style={{ color: textColor }}>{number}</span>
       </span>
       <h3 className="dl-step-card-title">{title}</h3>
       <p className="dl-step-card-desc">{description}</p>
@@ -401,7 +402,7 @@ function DigitalLiteracyHowItWorks() {
       <div className="dl-step-grid">
         <StepCard number="01" color="#BF1869" title="Assess" description="Identify each employee's current digital skill level" />
         <StepCard number="02" color="#67096E" title="Assign" description="Auto-assign role based learning paths" />
-        <StepCard number="03" color="#0B9BA0" title="Learn" description="Interactive, bite-sized learning" />
+        <StepCard number="03" color="#0B9BA0" textColor="#08888E" title="Learn" description="Interactive, bite-sized learning" />
         <StepCard number="04" color="#907507" title="Optimize" description="Track progress Improve outcomes" />
       </div>
     </section>
@@ -411,7 +412,7 @@ function DigitalLiteracyHowItWorks() {
 function BulletItem({ text, color }: { text: string; color: string }) {
   return (
     <div className="dl-bullet-item" style={{ "--bullet-color": color } as React.CSSProperties}>
-      <svg width="37" height="31" viewBox="0 0 37 31" fill="none">
+      <svg width="37" height="31" viewBox="0 0 37 31" fill="none" aria-hidden="true" focusable="false">
         <path d="M19.5 8.41494V9.50294H7.5C5.63624 9.50294 4.70436 9.50294 3.96926 9.80734C2.98916 10.2133 2.21046 10.9921 1.80448 11.9721C1.5 12.7073 1.5 13.6391 1.5 15.5029C1.5 17.3667 1.5 18.2985 1.80448 19.0337C2.21046 20.0138 2.98916 20.7925 3.96926 21.1985C4.70436 21.5029 5.63624 21.5029 7.5 21.5029H19.5V22.591C19.5 26.7565 19.5 28.8392 20.7006 29.3874C21.9012 29.9355 23.3366 28.5081 26.2072 25.6532L33.3344 18.5651C34.7782 17.1293 35.5 16.4113 35.5 15.5029C35.5 14.5945 34.7782 13.8765 33.3344 12.4407L26.2072 5.35274C23.3366 2.49774 21.9012 1.07034 20.7006 1.61854C19.5 2.16674 19.5 4.24934 19.5 8.41494Z" stroke={color} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
 
@@ -445,7 +446,7 @@ function DigitalLiteracyWhyNeuroLXP() {
   return (
     <section className="dl-why-section">
       <div className="dl-why-content">
-        <span className="dl-hero-badge">Why NeuroLXP</span>
+        <span className="dl-hero-badge">Why NeuroLXP<sup className="nlxp-footer-heading-tm">TM</sup></span>
         <h2 className="dl-section-heading">The smarter way to build a Digitally-ready workforce</h2>
         <p className="dl-hero-subtext">Built around the learner driving engagement, closing gaps, and proving ROI from day one.</p>
         <div className="dl-bullet-list">
@@ -469,7 +470,7 @@ function DigitalLiteracyCTA() {
       <div className="dl-cta-card">
         <h2 className="dl-cta-heading">Ready to build a Digitally-Skilled workforce</h2>
         <p className="dl-cta-subtext">
-          Build a future-ready workforce with NeuroLXP
+          Build a future-ready workforce with NeuroLXP<sup className="nlxp-footer-heading-tm">TM</sup>
           <br />
           Empower every learner with digital skills that drive business success.
         </p>
@@ -488,7 +489,7 @@ function DigitalLiteracyCTA() {
 
 export default function DigitalLiteracyPage() {
   return (
-    <>
+    <main id="main-content">
       <DigitalLiteracyBreadcrumb />
       <DigitalLiteracyHero />
       <DigitalLiteracySkillBanner />
@@ -499,6 +500,6 @@ export default function DigitalLiteracyPage() {
       <DigitalLiteracyHowItWorks />
       <DigitalLiteracyWhyNeuroLXP />
       <DigitalLiteracyCTA />
-    </>
+    </main>
   );
 }

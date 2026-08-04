@@ -1,1429 +1,1456 @@
 .neurolxp2103rs8cs3msLite {
-  	width: 100%;
-  	height: 2526px;
-  	position: relative;
-  	background-color: #dfe6e9;
-  	overflow: hidden;
-  	text-align: left;
-  	font-size: 16px;
-  	color: #31344b;
-  	font-family: 'Segoe UI';
+  width: 100%;
+  height: 2526px;
+  position: relative;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  text-align: left;
+  font-size: 16px;
+  color: #31344b;
+  font-family: "Segoe UI";
 }
 .frameParent {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
-  	background-color: #dfe6e9;
-  	width: 1440px;
-  	height: 80px;
-  	overflow: hidden;
-  	font-family: Inter;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 80px;
+  overflow: hidden;
+  font-family: Inter;
 }
 .frameChild {
-  	position: absolute;
-  	top: calc(50% - 22px);
-  	left: 1096px;
-  	width: 132px;
-  	height: 44px;
-  	display: flex;
-  	align-items: center;
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 1096px;
+  width: 132px;
+  height: 44px;
+  display: flex;
+  align-items: center;
 }
 .frameGroup {
-  	position: absolute;
-  	top: 18px;
-  	left: 32px;
-  	width: 1376px;
-  	height: 45px;
+  position: absolute;
+  top: 18px;
+  left: 32px;
+  width: 1376px;
+  height: 45px;
 }
 .logo01SynapseSpark1Parent {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	display: flex;
-  	align-items: center;
-  	gap: 130px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 130px;
 }
 .logo01SynapseSpark1Icon {
-  	height: 45px;
-  	width: 120px;
-  	position: relative;
-  	object-fit: cover;
+  height: 45px;
+  width: 120px;
+  position: relative;
+  object-fit: cover;
 }
 .frameContainer {
-  	display: flex;
-  	align-items: center;
-  	gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 .homeParent {
-  	display: flex;
-  	align-items: center;
-  	gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .home {
-  	position: relative;
-  	line-height: 24px;
-  	font-weight: 600;
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
 }
 .arrowDown01Icon {
-  	height: 16px;
-  	width: 16px;
-  	position: relative;
+  height: 16px;
+  width: 16px;
+  position: relative;
 }
 .neurolxp21Parent {
-  	display: flex;
-  	align-items: center;
-  	gap: 8px;
-  	color: #2d4cc8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2d4cc8;
 }
 .neurolxp21 {
-  	position: relative;
-  	line-height: 24px;
+  position: relative;
+  line-height: 24px;
 }
 .signInHelpWrapper {
-  	position: absolute;
-  	top: calc(50% - 22.5px);
-  	left: 1244px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
-  	border-radius: 32px;
-  	background-color: #dfe6e9;
-  	width: 132px;
-  	height: 44px;
-  	overflow: hidden;
-  	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	padding: 16px 32px;
-  	box-sizing: border-box;
-  	text-align: center;
-  	color: #2d4cc8;
-  	font-family: 'Segoe UI';
+  position: absolute;
+  top: calc(50% - 22.5px);
+  left: 1244px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 132px;
+  height: 44px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #2d4cc8;
+  font-family: "Segoe UI";
 }
 .signInHelp {
-  	width: 97px;
-  	position: relative;
-  	letter-spacing: 0.02em;
-  	line-height: 28px;
-  	font-weight: 600;
-  	display: flex;
-  	align-items: flex-end;
-  	justify-content: center;
-  	flex-shrink: 0;
+  width: 97px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
 }
 .frameDiv {
-  	position: absolute;
-  	top: 130px;
-  	left: calc(50% - 640px);
-  	width: 1280px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 32px;
-  	color: #2f3547;
+  position: absolute;
+  top: 130px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  color: #2f3547;
 }
 .neurolxp21Wrapper {
-  	display: flex;
-  	align-items: center;
+  display: flex;
+  align-items: center;
 }
 .arrowRightDoubleParent {
-  	display: flex;
-  	align-items: center;
-  	gap: 8px;
-  	color: #243fa8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #243fa8;
 }
 .rs8cs3ms {
-  	position: relative;
-  	letter-spacing: 0.02em;
-  	line-height: 24px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 24px;
 }
 .image20Parent {
-  	align-self: stretch;
-  	height: 614px;
-  	position: relative;
-  	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
-  	border-radius: 32px;
-  	background-color: #dfe6e9;
-  	overflow: hidden;
-  	flex-shrink: 0;
-  	font-size: 48px;
-  	color: #31344b;
+  align-self: stretch;
+  height: 614px;
+  position: relative;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: 48px;
+  color: #31344b;
 }
 .image20 {
-  	position: absolute;
-  	top: 0px;
-  	left: calc(50% - 640px);
-  	width: 1280px;
-  	height: 800px;
-  	flex-shrink: 0;
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
 }
 .image21Wrapper {
-  	position: absolute;
-  	top: 32px;
-  	left: 32px;
-  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px rgba(255, 255, 255, 0.6);
-  	border-radius: 16px;
-  	background-color: #dfe6e9;
-  	width: 1216px;
-  	height: 550px;
-  	overflow: hidden;
-  	flex-shrink: 0;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  width: 1216px;
+  height: 550px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 .image21 {
-  	position: absolute;
-  	top: -1px;
-  	left: 0px;
-  	width: 1216px;
-  	height: 737px;
-  	flex-shrink: 0;
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 1216px;
+  height: 737px;
+  flex-shrink: 0;
 }
 .frameParent3 {
-  	position: absolute;
-  	top: 32px;
-  	left: 68px;
-  	display: flex;
-  	align-items: center;
-  	gap: 78px;
-  	flex-shrink: 0;
+  position: absolute;
+  top: 32px;
+  left: 68px;
+  display: flex;
+  align-items: center;
+  gap: 78px;
+  flex-shrink: 0;
 }
 .frameWrapper {
-  	width: 555px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
+  width: 555px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .frameWrapper2 {
-  	width: 646px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	flex-shrink: 0;
+  width: 646px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
 }
 .frameParent4 {
-  	align-self: stretch;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 32px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 .frameParent5 {
-  	width: 621px;
-  	height: 200px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 32px;
+  width: 621px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 .frameItem {
-  	width: 296.7px;
-  	height: 50.2px;
-  	position: relative;
-  	border-radius: 28px;
-  	object-fit: contain;
+  width: 296.7px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
 }
 .skillsThatMatter {
-  	width: 444px;
-  	height: 118px;
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 60px;
-  	display: inline-block;
-  	flex-shrink: 0;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 444px;
+  height: 118px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .poweredByThe {
-  	width: 574px;
-  	height: 120px;
-  	position: relative;
-  	font-size: 28px;
-  	letter-spacing: 0.03em;
-  	line-height: 36px;
-  	color: #2f3547;
-  	display: inline-block;
-  	flex-shrink: 0;
+  width: 574px;
+  height: 120px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .smilingStudentsWithBackpackWrapper {
-  	height: 550px;
-  	width: 547px;
-  	position: relative;
-  	border-radius: 300px 0px 0px 0px;
-  	background: linear-gradient(180deg, #2d4cc8, #bf1869 50%, #0b9ba0 96.15%);
-  	overflow: hidden;
-  	flex-shrink: 0;
+  height: 550px;
+  width: 547px;
+  position: relative;
+  border-radius: 300px 0px 0px 0px;
+  background: linear-gradient(180deg, #2d4cc8, #bf1869 50%, #0b9ba0 96.15%);
+  overflow: hidden;
+  flex-shrink: 0;
 }
 .smilingStudentsWithBackpackIcon {
-  	position: absolute;
-  	bottom: 0px;
-  	left: calc(50% - 319.5px);
-  	width: 100%;
-  	height: 426px;
-  	object-fit: cover;
-  	flex-shrink: 0;
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 319.5px);
+  width: 100%;
+  height: 426px;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 .frameParent6 {
-  	position: absolute;
-  	top: 810px;
-  	left: calc(50% - 640px);
-  	width: 1280px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	gap: 50px;
-  	text-align: center;
-  	font-size: 48px;
+  position: absolute;
+  top: 810px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  font-size: 48px;
 }
 .frameParent7 {
-  	width: 802px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	gap: 32px;
+  width: 802px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 .frameInner {
-  	width: 270px;
-  	height: 50.2px;
-  	position: relative;
-  	border-radius: 28px;
-  	object-fit: contain;
+  width: 270px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
 }
 .poweredByThe3rs8cs3msParent {
-  	align-self: stretch;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	gap: 32px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 .poweredByTheContainer {
-  	width: 1132px;
-  	height: 63px;
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 60px;
-  	display: inline-block;
-  	flex-shrink: 0;
+  width: 1132px;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .poweredByThe2 {
-  	line-height: 60px;
+  line-height: 60px;
 }
 .rs {
-  	color: #2d4cc8;
-  	line-height: 60px;
+  color: #2d4cc8;
+  line-height: 60px;
 }
 .cs {
-  	color: #c05512;
-  	line-height: 60px;
+  color: #c05512;
+  line-height: 60px;
 }
 .ms {
-  	color: #2a7308;
-  	line-height: 60px;
+  color: #2a7308;
+  line-height: 60px;
 }
 .buildingStrongFoundations {
-  	width: 740px;
-  	position: relative;
-  	font-size: 28px;
-  	letter-spacing: 0.03em;
-  	line-height: 36px;
-  	color: #2f3547;
-  	display: inline-block;
-  	flex-shrink: 0;
+  width: 740px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .frameParent8 {
-  	align-self: stretch;
-  	height: 565px;
-  	position: relative;
-  	font-size: 36px;
-  	color: #2a7308;
+  align-self: stretch;
+  height: 565px;
+  position: relative;
+  font-size: 36px;
+  color: #2a7308;
 }
 .frameParent9 {
-  	position: absolute;
-  	top: 0px;
-  	left: 960px;
-  	width: 320px;
-  	height: 442px;
+  position: absolute;
+  top: 0px;
+  left: 960px;
+  width: 320px;
+  height: 442px;
 }
 .frameParent10 {
-  	position: absolute;
-  	top: 56px;
-  	left: 0px;
-  	box-shadow: -10px -10px 20px #fff, 10px 10px 20px #c4c4c4;
-  	border-radius: 24px;
-  	background-color: #dfe6e9;
-  	border-top: 6px solid #2a7308;
-  	box-sizing: border-box;
-  	width: 320px;
-  	height: 416px;
-  	overflow: hidden;
-  	flex-shrink: 0;
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  box-shadow:
+    -10px -10px 20px #fff,
+    10px 10px 20px #c4c4c4;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  border-top: 6px solid #2a7308;
+  box-sizing: border-box;
+  width: 320px;
+  height: 416px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 .msParent {
-  	position: absolute;
-  	top: 50px;
-  	left: 35px;
-  	width: 264px;
-  	height: 91px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	gap: 14px;
+  position: absolute;
+  top: 50px;
+  left: 35px;
+  width: 264px;
+  height: 91px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
 }
 .ms2 {
-  	align-self: stretch;
-  	height: 41px;
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 44px;
-  	display: inline-block;
-  	flex-shrink: 0;
+  align-self: stretch;
+  height: 41px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 44px;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .beyondSkillsIts {
-  	width: 264px;
-  	position: relative;
-  	font-size: 24px;
-  	letter-spacing: 0.03em;
-  	line-height: 40px;
-  	display: inline-block;
-  	color: #31344b;
-  	flex-shrink: 0;
+  width: 264px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  display: inline-block;
+  color: #31344b;
+  flex-shrink: 0;
 }
 .frameParent11 {
-  	position: absolute;
-  	top: 204px;
-  	left: calc(50% - 138px);
-  	width: 276px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 16px;
-  	font-size: 20px;
-  	color: #31344b;
+  position: absolute;
+  top: 204px;
+  left: calc(50% - 138px);
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 20px;
+  color: #31344b;
 }
 .frameWrapper3 {
-  	width: 276px;
-  	height: 50px;
-  	box-shadow: -4px -4px 8px #fff inset, 4px 4px 8px rgba(196, 196, 196, 0.8) inset;
-  	border-radius: 8px;
-  	background-color: #dfe6e9;
-  	overflow: hidden;
-  	flex-shrink: 0;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: center;
-  	padding: 20px 14px;
-  	box-sizing: border-box;
-  	position: relative;
-  	isolation: isolate;
+  width: 276px;
+  height: 50px;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 8px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 14px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
 }
 .brain01Parent {
-  	margin: 0 !important;
-  	position: absolute;
-  	top: 11.04px;
-  	left: 23.97px;
-  	display: flex;
-  	align-items: center;
-  	gap: 14px;
-  	transform:  rotate(-0.1deg);
-  	transform-origin: 0 0;
-  	z-index: 0;
-  	flex-shrink: 0;
+  margin: 0 !important;
+  position: absolute;
+  top: 11.04px;
+  left: 23.97px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+  z-index: 0;
+  flex-shrink: 0;
 }
 .brain01Icon {
-  	height: 24px;
-  	width: 24px;
-  	position: relative;
-  	transform:  rotate(0.1deg);
+  height: 24px;
+  width: 24px;
+  position: relative;
+  transform: rotate(0.1deg);
 }
 .mindset {
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 28px;
-  	font-weight: 600;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  font-weight: 600;
 }
 .analyticsUpParent {
-  	width: 134px;
-  	margin: 0 !important;
-  	position: absolute;
-  	top: 11.04px;
-  	left: 23.97px;
-  	display: flex;
-  	align-items: center;
-  	gap: 14px;
-  	transform:  rotate(-0.1deg);
-  	transform-origin: 0 0;
-  	z-index: 0;
-  	flex-shrink: 0;
+  width: 134px;
+  margin: 0 !important;
+  position: absolute;
+  top: 11.04px;
+  left: 23.97px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+  z-index: 0;
+  flex-shrink: 0;
 }
 .analyticsUpIcon {
-  	height: 24px;
-  	width: 24px;
-  	position: relative;
-  	transform:  rotate(0.1deg);
-  	flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+  position: relative;
+  transform: rotate(0.1deg);
+  flex-shrink: 0;
 }
 .metacognition {
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 28px;
-  	font-weight: 600;
-  	flex-shrink: 0;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  font-weight: 600;
+  flex-shrink: 0;
 }
 .frameIcon {
-  	position: absolute;
-  	top: 10px;
-  	left: calc(50% - 40.06px);
-  	border-radius: 100px;
-  	width: 80.1px;
-  	height: 80.1px;
-  	object-fit: contain;
-  	flex-shrink: 0;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 40.06px);
+  border-radius: 100px;
+  width: 80.1px;
+  height: 80.1px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .frameParent12 {
-  	position: absolute;
-  	top: 6px;
-  	left: 352px;
-  	width: 576px;
-  	height: 559px;
-  	color: #c05512;
+  position: absolute;
+  top: 6px;
+  left: 352px;
+  width: 576px;
+  height: 559px;
+  color: #c05512;
 }
 .frameParent13 {
-  	position: absolute;
-  	top: 50px;
-  	left: 0px;
-  	box-shadow: -10px -10px 20px #fff, 10px 10px 20px #c4c4c4;
-  	border-radius: 24px;
-  	background-color: #dfe6e9;
-  	border-top: 6px solid #c05512;
-  	box-sizing: border-box;
-  	width: 576px;
-  	height: 509px;
-  	overflow: hidden;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  box-shadow:
+    -10px -10px 20px #fff,
+    10px 10px 20px #c4c4c4;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  border-top: 6px solid #c05512;
+  box-sizing: border-box;
+  width: 576px;
+  height: 509px;
+  overflow: hidden;
 }
 .csParent {
-  	position: absolute;
-  	top: 50px;
-  	left: 156px;
-  	width: 264px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	gap: 14px;
+  position: absolute;
+  top: 50px;
+  left: 156px;
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
 }
 .cs2 {
-  	align-self: stretch;
-  	height: 47px;
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 44px;
-  	display: inline-block;
-  	flex-shrink: 0;
+  align-self: stretch;
+  height: 47px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 44px;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .afterBasicsItsContainer {
-  	width: 264px;
-  	height: 80px;
-  	position: relative;
-  	font-size: 24px;
-  	letter-spacing: 0.03em;
-  	line-height: 40px;
-  	color: #31344b;
-  	display: inline-block;
-  	flex-shrink: 0;
+  width: 264px;
+  height: 80px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #31344b;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .afterBasicsIts {
-  	line-height: 40px;
+  line-height: 40px;
 }
 .frameChild2 {
-  	position: absolute;
-  	top: 228px;
-  	left: 47px;
-  	width: 150px;
-  	height: 112px;
-  	overflow: hidden;
+  position: absolute;
+  top: 228px;
+  left: 47px;
+  width: 150px;
+  height: 112px;
+  overflow: hidden;
 }
 .frameParent14 {
-  	position: absolute;
-  	top: 231px;
-  	left: 24px;
-  	width: 528px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 16px;
-  	font-size: 20px;
-  	color: #31344b;
+  position: absolute;
+  top: 231px;
+  left: 24px;
+  width: 528px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 20px;
+  color: #31344b;
 }
 .frameParent15 {
-  	align-self: stretch;
-  	display: flex;
-  	align-items: center;
-  	gap: 28px;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 .frameWrapper6 {
-  	height: 50px;
-  	width: 250px;
-  	box-shadow: -4px -4px 8px #fff inset, 4px 4px 8px rgba(196, 196, 196, 0.8) inset;
-  	border-radius: 8px;
-  	background-color: #dfe6e9;
-  	overflow: hidden;
-  	flex-shrink: 0;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: center;
-  	padding: 20px 14px;
-  	box-sizing: border-box;
-  	position: relative;
-  	isolation: isolate;
+  height: 50px;
+  width: 250px;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 8px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 14px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
 }
 .award02Parent {
-  	width: 131px;
-  	margin: 0 !important;
-  	position: absolute;
-  	top: 11.04px;
-  	left: 23.97px;
-  	display: flex;
-  	align-items: center;
-  	gap: 14px;
-  	transform:  rotate(-0.1deg);
-  	transform-origin: 0 0;
-  	z-index: 0;
-  	flex-shrink: 0;
+  width: 131px;
+  margin: 0 !important;
+  position: absolute;
+  top: 11.04px;
+  left: 23.97px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+  z-index: 0;
+  flex-shrink: 0;
 }
 .target01Parent {
-  	width: 158px;
-  	margin: 0 !important;
-  	position: absolute;
-  	top: 11.04px;
-  	left: 23.97px;
-  	display: flex;
-  	align-items: center;
-  	gap: 14px;
-  	transform:  rotate(-0.1deg);
-  	transform-origin: 0 0;
-  	z-index: 0;
-  	flex-shrink: 0;
+  width: 158px;
+  margin: 0 !important;
+  position: absolute;
+  top: 11.04px;
+  left: 23.97px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+  z-index: 0;
+  flex-shrink: 0;
 }
 .frameChild3 {
-  	position: absolute;
-  	top: 10px;
-  	left: calc(50% - 40.06px);
-  	border-radius: 100px;
-  	width: 80.1px;
-  	height: 80.1px;
-  	object-fit: contain;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 40.06px);
+  border-radius: 100px;
+  width: 80.1px;
+  height: 80.1px;
+  object-fit: contain;
 }
 .frameParent19 {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	width: 320px;
-  	height: 472px;
-  	color: #2d4cc8;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 472px;
+  color: #2d4cc8;
 }
 .frameParent20 {
-  	position: absolute;
-  	top: 56px;
-  	left: 0px;
-  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
-  	border-radius: 24px;
-  	background-color: #dfe6e9;
-  	border-top: 6px solid #2d4cc8;
-  	box-sizing: border-box;
-  	width: 320px;
-  	height: 416px;
-  	overflow: hidden;
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px #fff;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  border-top: 6px solid #2d4cc8;
+  box-sizing: border-box;
+  width: 320px;
+  height: 416px;
+  overflow: hidden;
 }
 .rsParent {
-  	position: absolute;
-  	top: 50px;
-  	left: 35px;
-  	width: 250px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	gap: 14px;
+  position: absolute;
+  top: 50px;
+  left: 35px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
 }
 .rs2 {
-  	align-self: stretch;
-  	height: 42px;
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 44px;
-  	display: inline-block;
-  	flex-shrink: 0;
+  align-self: stretch;
+  height: 42px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 44px;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .whyItMattersParent {
-  	position: absolute;
-  	top: 1792.21px;
-  	left: calc(50% - 449.5px);
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	gap: 32px;
-  	text-align: center;
-  	font-size: 48px;
+  position: absolute;
+  top: 1770.21px;
+  left: calc(50% - 449.5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  font-size: 48px;
 }
 .whyItMatters {
-  	width: 372px;
-  	height: 63px;
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 60px;
-  	display: inline-block;
-  	flex-shrink: 0;
+  width: 372px;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .transformingLearningInto {
-  	width: 900px;
-  	position: relative;
-  	font-size: 28px;
-  	letter-spacing: 0.03em;
-  	line-height: 36px;
-  	color: #2f3547;
-  	display: inline-block;
+  width: 900px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  color: #2f3547;
+  display: inline-block;
 }
 .rectangleParent {
-  	position: absolute;
-  	top: 2055.21px;
-  	left: calc(50% - 626px);
-  	border-radius: 32px;
-  	width: 1280px;
-  	height: 407px;
-  	overflow: hidden;
-  	background-size: cover;
-  	background-repeat: no-repeat;
-  	background-position: top;
-  	font-size: 54px;
+  position: absolute;
+  top: 2055.21px;
+  left: calc(50% - 626px);
+  border-radius: 32px;
+  width: 1280px;
+  height: 407px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-size: 54px;
 }
 .rectangle {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	width: 1280px;
-  	height: 500px;
-  	flex-shrink: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 500px;
+  flex-shrink: 0;
 }
 .image202 {
-  	position: absolute;
-  	top: -561px;
-  	left: calc(50% - 640px);
-  	width: 1280px;
-  	height: 800px;
-  	flex-shrink: 0;
+  position: absolute;
+  top: -561px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
 }
 .frameParent22 {
-  	position: absolute;
-  	top: calc(50% - 114.5px);
-  	left: 80px;
-  	width: 659px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 36px;
-  	flex-shrink: 0;
+  position: absolute;
+  top: calc(50% - 114.5px);
+  left: 80px;
+  width: 659px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  flex-shrink: 0;
 }
 .neurolxpWrapper {
-  	width: 469px;
-  	height: 61px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
+  width: 469px;
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .neurolxp {
-  	width: 440px;
-  	height: 61px;
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 62px;
-  	display: inline-block;
-  	flex-shrink: 0;
-  	backdrop-filter: blur(100px);
+  width: 440px;
+  height: 61px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 62px;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .bringingThe3rs8cs3msContainer {
-  	width: 659px;
-  	position: relative;
-  	font-size: 32px;
-  	letter-spacing: 0.03em;
-  	line-height: 44px;
-  	display: inline-block;
-  	backdrop-filter: blur(1000px);
-  	color: #2f3547;
+  width: 659px;
+  position: relative;
+  font-size: 32px;
+  letter-spacing: 0.03em;
+  line-height: 44px;
+  display: inline-block;
+  backdrop-filter: blur(1000px);
+  color: #2f3547;
 }
 .bringingThe {
-  	line-height: 44px;
+  line-height: 44px;
 }
 .rs8cs3m {
-  	font-weight: 600;
-  	line-height: 44px;
-  	color: #2d4cc8;
+  font-weight: 600;
+  line-height: 44px;
+  color: #2d4cc8;
 }
 .cs3 {
-  	color: #c05512;
-  	line-height: 44px;
+  color: #c05512;
+  line-height: 44px;
 }
 .m {
-  	color: #2a7308;
-  	line-height: 44px;
+  color: #2a7308;
+  line-height: 44px;
 }
 .smilingWomanWithBooksMortaIcon {
-  	position: absolute;
-  	top: 1891px;
-  	left: 968px;
-  	width: 414px;
-  	height: 571px;
-  	object-fit: cover;
+  position: absolute;
+  top: 1891px;
+  left: 968px;
+  width: 414px;
+  height: 571px;
+  object-fit: cover;
 }
 .frameParent23 {
-  	position: absolute;
-  	top: 2558.21px;
-  	left: calc(50% - 720px);
-  	width: 1440px;
-  	height: 504.6px;
-  	font-size: 26px;
-  	color: #2f3547;
+  position: absolute;
+  top: 2558.21px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 504.6px;
+  font-size: 26px;
+  color: #2f3547;
 }
 .frameParent24 {
-  	position: absolute;
-  	bottom: -0.01px;
-  	left: calc(50% - 720px);
-  	box-shadow: -10px -10px 20px #fff inset, 10px 10px 10px #c4c4c4 inset;
-  	background-color: #dfe6e9;
-  	width: 1440px;
-  	height: 459px;
-  	overflow: hidden;
+  position: absolute;
+  bottom: -0.01px;
+  left: calc(50% - 720px);
+  box-shadow:
+    -10px -10px 20px #fff inset,
+    10px 10px 10px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
 }
 .frameParent25 {
-  	position: absolute;
-  	top: 49.81px;
-  	left: 53.96px;
-  	width: 1339.5px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	gap: 24px;
+  position: absolute;
+  top: 49.81px;
+  left: 53.96px;
+  width: 1339.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 .frameParent26 {
-  	align-self: stretch;
-  	display: flex;
-  	align-items: flex-start;
-  	gap: 35px;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
 }
 .frameParent27 {
-  	width: 676px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 24px;
-  	flex-shrink: 0;
+  width: 676px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
 }
 .logo01SynapseSpark1Group {
-  	width: 577px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 20px;
+  width: 577px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 .logo01SynapseSpark1Icon2 {
-  	width: 299px;
-  	height: 112px;
-  	position: relative;
-  	object-fit: cover;
-  	flex-shrink: 0;
+  width: 299px;
+  height: 112px;
+  position: relative;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 .frameParent28 {
-  	display: flex;
-  	align-items: center;
-  	gap: 14px;
-  	flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
 }
 .onePlatformParent {
-  	display: flex;
-  	align-items: center;
-  	gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .onePlatform {
-  	position: relative;
-  	letter-spacing: -0.03em;
-  	line-height: 34px;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 34px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .sparklesIcon {
-  	height: 23px;
-  	width: 23px;
-  	position: relative;
+  height: 23px;
+  width: 23px;
+  position: relative;
 }
 .prgeeqGlobalSolutionsPrivatParent {
-  	width: 459px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 4px;
-  	font-size: 16px;
+  width: 459px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font-size: 16px;
 }
 .prgeeqGlobalSolutions {
-  	align-self: stretch;
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 24px;
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 24px;
 }
 .prestigeAtlanta1012Container {
-  	align-self: stretch;
-  	height: 77px;
-  	position: relative;
-  	line-height: 24px;
-  	display: flex;
-  	align-items: flex-end;
-  	flex-shrink: 0;
+  align-self: stretch;
+  height: 77px;
+  position: relative;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
 }
 .blankLine2 {
-  	line-height: 24px;
+  line-height: 24px;
 }
 .frameParent29 {
-  	width: 631px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-end;
-  	gap: 24px;
-  	flex-shrink: 0;
-  	font-size: 22px;
-  	color: #2d4cc8;
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
 }
 .frameParent30 {
-  	width: 619px;
-  	display: flex;
-  	align-items: flex-start;
-  	gap: 32px;
+  width: 619px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
 }
 .aboutUsParent {
-  	width: 123px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 20px;
+  width: 123px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 .aboutUs {
-  	width: 93px;
-  	position: relative;
-  	letter-spacing: -0.03em;
-  	line-height: 30px;
-  	display: flex;
-  	align-items: center;
+  width: 93px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
 }
 .ourMissionParent {
-  	align-self: stretch;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 15px;
-  	font-size: 20px;
-  	color: #2f3547;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 20px;
+  color: #2f3547;
 }
 .ourMission {
-  	align-self: stretch;
-  	height: 26px;
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 28px;
-  	display: flex;
-  	align-items: center;
-  	flex-shrink: 0;
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 .quickLinksParent {
-  	width: 207px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 20px;
+  width: 207px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 .quickLinks {
-  	align-self: stretch;
-  	height: 26px;
-  	position: relative;
-  	letter-spacing: -0.03em;
-  	line-height: 30px;
-  	display: flex;
-  	align-items: center;
-  	flex-shrink: 0;
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 .neurolxpParent {
-  	height: 181px;
-  	width: 205px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 20px;
+  height: 181px;
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 .neurolxp2 {
-  	align-self: stretch;
-  	height: 26px;
-  	position: relative;
-  	letter-spacing: -0.03em;
-  	line-height: 30px;
-  	display: flex;
-  	white-space: pre-wrap;
-  	align-items: center;
-  	flex-shrink: 0;
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  white-space: pre-wrap;
+  align-items: center;
+  flex-shrink: 0;
 }
 .ourCustomersGroup {
-  	width: 221px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 15px;
-  	flex-shrink: 0;
-  	font-size: 20px;
-  	color: #2f3547;
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #2f3547;
 }
 .smartContentCreation {
-  	width: 229px;
-  	height: 26px;
-  	position: relative;
-  	letter-spacing: 0.03em;
-  	line-height: 28px;
-  	display: flex;
-  	align-items: center;
-  	flex-shrink: 0;
+  width: 229px;
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 .frameParent31 {
-  	width: 392.4px;
-  	height: 80.1px;
-  	display: flex;
-  	align-items: center;
-  	gap: 24px;
+  width: 392.4px;
+  height: 80.1px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 .frameChild5 {
-  	height: 80.1px;
-  	width: 80.1px;
-  	position: relative;
+  height: 80.1px;
+  width: 80.1px;
+  position: relative;
 }
 .copyright2026 {
-  	align-self: stretch;
-  	height: 47px;
-  	position: relative;
-  	font-size: 16px;
-  	letter-spacing: -0.03em;
-  	line-height: 56px;
-  	font-weight: 600;
-  	color: #2d4cc8;
-  	text-align: center;
-  	display: inline-block;
-  	flex-shrink: 0;
+  align-self: stretch;
+  height: 47px;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  line-height: 56px;
+  font-weight: 600;
+  color: #2d4cc8;
+  text-align: center;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .frameParent32 {
-  	position: absolute;
-  	bottom: 0px;
-  	left: calc(50% - 720px);
-  	box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
-  	background-color: #dfe6e9;
-  	width: 1440px;
-  	height: 459px;
-  	overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 720px);
+  box-shadow:
+    -10px -10px 20px #fff inset,
+    8px 8px 16px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
 }
 .frameWrapper17 {
-  	position: absolute;
-  	bottom: 0px;
-  	left: calc(50% - 720px);
-  	box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
-  	background-color: #dfe6e9;
-  	width: 1440px;
-  	height: 459px;
-  	overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 720px);
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    10px 10px 10px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
 }
 .frameParent44 {
-  	width: 631px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-end;
-  	position: relative;
-  	isolation: isolate;
-  	gap: 24px;
-  	flex-shrink: 0;
-  	font-size: 22px;
-  	color: #2d4cc8;
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  isolation: isolate;
+  gap: 24px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
 }
 .frameParent45 {
-  	width: 619px;
-  	display: flex;
-  	align-items: flex-start;
-  	gap: 32px;
-  	z-index: 0;
-  	flex-shrink: 0;
+  width: 619px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  z-index: 0;
+  flex-shrink: 0;
 }
 .ourMissionContainer {
-  	align-self: stretch;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 15px;
-  	font-size: 18px;
-  	color: #2f3547;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 18px;
+  color: #2f3547;
 }
 .neurolxpContainer {
-  	display: flex;
-  	align-items: flex-start;
-  	flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
 }
 .neurolxp4 {
-  	height: 26px;
-  	width: 103px;
-  	position: relative;
-  	letter-spacing: -0.03em;
-  	line-height: 30px;
-  	display: flex;
-  	align-items: center;
-  	flex-shrink: 0;
+  height: 26px;
+  width: 103px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 .neurolxpTxt {
-  	width: 100%;
-  	white-space: pre-wrap;
+  width: 100%;
+  white-space: pre-wrap;
 }
 .neurolxp5 {
-  	line-height: 30px;
+  line-height: 30px;
 }
 .span {
-  	font-size: 12px;
-  	line-height: 30px;
+  font-size: 12px;
+  line-height: 30px;
 }
 .tm {
-  	height: 17px;
-  	width: 23px;
-  	position: relative;
-  	font-size: 12px;
-  	letter-spacing: -0.03em;
-  	line-height: 30px;
-  	display: flex;
-  	align-items: center;
-  	flex-shrink: 0;
+  height: 17px;
+  width: 23px;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 .ourCustomersParent2 {
-  	width: 221px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 15px;
-  	flex-shrink: 0;
-  	font-size: 18px;
-  	color: #2f3547;
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  font-size: 18px;
+  color: #2f3547;
 }
 .frameParent47 {
-  	width: 392.4px;
-  	height: 80.1px;
-  	margin: 0 !important;
-  	position: absolute;
-  	top: 217.19px;
-  	left: 135.04px;
-  	display: flex;
-  	align-items: center;
-  	gap: 24px;
-  	z-index: 1;
-  	flex-shrink: 0;
+  width: 392.4px;
+  height: 80.1px;
+  margin: 0 !important;
+  position: absolute;
+  top: 217.19px;
+  left: 135.04px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 1;
+  flex-shrink: 0;
 }
 .frameChild13 {
-  	height: 80.1px;
-  	width: 80.1px;
-  	position: relative;
-  	flex-shrink: 0;
+  height: 80.1px;
+  width: 80.1px;
+  position: relative;
+  flex-shrink: 0;
 }
 .frameChild18 {
-  	position: absolute;
-  	top: 0px;
-  	left: calc(50% - 30.07px);
-  	border-radius: 32px;
-  	width: 59.1px;
-  	height: 92px;
-  	object-fit: contain;
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 30.07px);
+  border-radius: 32px;
+  width: 59.1px;
+  height: 92px;
+  object-fit: contain;
 }
 
 .frameParent5 {
-	width: 621px;
-	height: auto;
-	min-height: 350px;
-	gap: 32px;
+  width: 621px;
+  height: auto;
+  min-height: 350px;
+  gap: 32px;
 }
 
 .frameItem {
-	width: 296.7px;
-	height: 50.2px;
-	border-radius: 28px;
-	background-color: #dfe6e9;
-	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #2d4cc8;
-	font-size: 20px;
-	font-weight: 600;
-	letter-spacing: .03em;
+  width: 296.7px;
+  height: 50.2px;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d4cc8;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 .frameInner {
-	width: 270px;
-	height: 50.2px;
-	border-radius: 28px;
-	background-color: #dfe6e9;
-	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #2d4cc8;
-	font-size: 20px;
-	font-weight: 600;
+  width: 270px;
+  height: 50.2px;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d4cc8;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .poweredByTheContainer {
-	height: auto;
-	min-height: 63px;
+  height: auto;
+  min-height: 63px;
 }
 
 .buildingStrongFoundations {
-	height: auto;
+  height: auto;
 }
 
 .rectangleParent {
-	position: absolute;
-	top: 2087px;
-	left: calc(50% - 640px);
-	width: 1280px;
-	height: 407px;
-	border-radius: 32px;
-	overflow: hidden;
+  position: absolute;
+  top: 2087px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 407px;
+  border-radius: 32px;
+  overflow: hidden;
 }
 
 .background3rs {
-	position: absolute;
-	inset: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: 1;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
 .frameParent22 {
-	position: absolute;
-	top: 90px;
-	left: 80px;
-	width: 700px;
-	z-index: 2;
-	display: flex;
-	flex-direction: column;
-	gap: 36px;
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  width: 700px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 
 .smilingWomanWithBooksMortaIcon {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 860px;
-	height: 641px;
-	object-fit: contain;
-	z-index: 3;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 860px;
+  height: 641px;
+  object-fit: contain;
+  z-index: 3;
 }
 
 .frameParent {
-	display: none;
+  display: none;
 }
 
 .frameDiv {
-	top: 32px;
+  top: 32px;
 }
 
 .frameParent23,
 .frameParent24,
 .frameParent32,
 .frameWrapper17 {
-	display: none;
+  display: none;
 }
 
 .image21Wrapper {
-	top: 32px;
-	left: 32px;
+  top: 32px;
+  left: 32px;
 }
 
 .frameParent3 {
-	top: 32px;
-	left: 68px;
-	gap: 78px;
+  top: 32px;
+  left: 68px;
+  gap: 78px;
 }
 
 .smilingStudentsWithBackpackIcon {
-	width: 640px;
-	height: auto;
-	object-fit: contain;
+  width: 640px;
+  height: auto;
+  object-fit: contain;
 }
 
 .rectangleParent {
-	top: 2087px;
+  top: 2087px;
 }
 
 .smilingWomanWithBooksMortaIcon {
-	right: 0;
-	left: auto;
-	top: auto;
-	bottom: 0;
-	object-fit: contain;
+  right: 0;
+  left: auto;
+  top: auto;
+  bottom: 0;
+  object-fit: contain;
 }
 
 .frameParent5 {
-	width: 621px;
-	height: auto;
-	min-height: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 32px;
+  width: 621px;
+  height: auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 .skillsThatMatter {
-	width: 444px;
-	height: auto;
-	margin: 0;
+  width: 444px;
+  height: auto;
+  margin: 0;
 
-	font-size: 48px;
-	line-height: 60px;
-	letter-spacing: 0.03em;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.03em;
 
-	display: block;
+  display: block;
 }
 
 .poweredByThe {
-	width: 574px;
-	height: auto;
-	margin: 0;
+  width: 574px;
+  height: auto;
+  margin: 0;
 
-	font-size: 28px;
-	line-height: 36px;
-	letter-spacing: 0.03em;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
 
-	display: block;
+  display: block;
 }
 
 .frameParent3 {
-	align-items: flex-start;
-	gap: 78px;
+  align-items: flex-start;
+  gap: 78px;
 }
 
 .frameWrapper2,
 .frameParent4 {
-	height: auto;
+  height: auto;
 }
 .frameParent5 {
-	width: 621px;
-	height: auto;
-	min-height: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 32px;
+  width: 621px;
+  height: auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 .frameItem {
-	width: 296.7px;
-	height: 50.2px;
-	flex-shrink: 0;
+  width: 296.7px;
+  height: 50.2px;
+  flex-shrink: 0;
 }
 
 .skillsThatMatter {
-	width: 444px;
-	height: auto;
-	margin: 0;
+  width: 444px;
+  height: auto;
+  margin: 0;
 
-	display: block;
+  display: block;
 
-	font-family: 'Segoe UI';
-	font-size: 48px;
-	font-weight: 700;
-	line-height: 60px;
-	letter-spacing: 0.03em;
+  font-family: "Segoe UI";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.03em;
 
-	color: #31344B;
+  color: #31344b;
 }
 
 .poweredByThe {
-	width: 574px;
-	height: auto;
-	margin: 0;
+  width: 574px;
+  height: auto;
+  margin: 0;
 
-	display: block;
+  display: block;
 
-	font-family: 'Segoe UI';
-	font-size: 28px;
-	font-weight: 400;
-	line-height: 36px;
-	letter-spacing: 0.03em;
+  font-family: "Segoe UI";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.03em;
 
-	color: #2F3547;
+  color: #2f3547;
 }
 
 .frameWrapper2 {
-	height: auto;
+  height: auto;
 }
 
 .frameParent4 {
-	height: auto;
-	gap: 32px;
+  height: auto;
+  gap: 32px;
 }
 
 .frameParent5 {
-	padding-top: 32px;
-	box-sizing: border-box;
+  padding-top: 32px;
+  box-sizing: border-box;
 }
 
 .skillIcon {
-	width: 24px;
-	height: 24px;
-	object-fit: contain;
-	flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .cardIcon {
-	position: relative;
-	width: 24px;
-	height: 24px;
-	object-fit: contain;
-	flex-shrink: 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .ellipse334Icon {
-	position: absolute;
-	width: 60px;
-	height: 60px;
-	left: 10px;
-	top: 10px;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 10px;
+  top: 10px;
 }
 
 .topBookIcon {
-	position: absolute;
-	width: 32px;
-	height: 32px;
-	left: 24px;
-	top: 24px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 24px;
+  top: 24px;
 }
 
 .iconFrame {
-	position: absolute;
-	width: 80px;
-	height: 80px;
-	border-radius: 100px;
-	background: #DFE6E9;
-	box-shadow:
-		inset -4px -4px 8px #FFFFFF,
-		inset 4px 4px 8px rgba(196,196,196,0.8);
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
 }
 
 .iconCircle {
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	width: 60px;
-	height: 60px;
-	border-radius: 100px;
-	object-fit: contain;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  object-fit: contain;
 }
 
 .iconImage {
-	position: absolute;
-	left: 24px;
-	top: 24px;
-	width: 32px;
-	height: 32px;
-	object-fit: contain;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .iconFrame {
@@ -1433,9 +1460,10 @@
   width: 80px;
   height: 80px;
   border-radius: 100px;
-  background: #DFE6E9;
-  box-shadow: inset -4px -4px 8px #FFFFFF,
-              inset 4px 4px 8px rgba(196,196,196,0.8);
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   z-index: 5;
 }
 
@@ -1448,13 +1476,20 @@
   width: 60px;
   height: 60px;
   border-radius: 100px;
-  box-shadow: 8px 8px 16px #C6C6C9,
-              -8px -8px 16px #FFFFFF;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
 }
 
-.iconCircleBlue { background: #2D4CC8; }
-.iconCircleOrange { background: #C05512; }
-.iconCircleGreen { background: #2A7308; }
+.iconCircleBlue {
+  background: #2d4cc8;
+}
+.iconCircleOrange {
+  background: #c05512;
+}
+.iconCircleGreen {
+  background: #2a7308;
+}
 
 .iconImage {
   position: absolute;
@@ -1471,597 +1506,521 @@
   width: 80px;
   height: 80px;
   border-radius: 100px;
-  background: #DFE6E9;
-  box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(196,196,196,.8);
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
 }
 .iconCircleGreen,
 .iconCircleOrange,
 .iconCircleBlue {
-  position:absolute;
-  width:60px;
-  height:60px;
-  left:10px;
-  top:10px;
-  border-radius:100px;
-  box-shadow:8px 8px 16px #C6C6C9,-8px -8px 16px #FFFFFF;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 10px;
+  top: 10px;
+  border-radius: 100px;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
 }
-.iconCircleGreen { background:#2A7308; }
-.iconCircleOrange { background:#C05512; }
-.iconCircleBlue { background:#2D4CC8; }
-.iconImage { position:absolute; width:32px; height:32px; left:14px; top:14px; }
+.iconCircleGreen {
+  background: #2a7308;
+}
+.iconCircleOrange {
+  background: #c05512;
+}
+.iconCircleBlue {
+  background: #2d4cc8;
+}
+.iconImage {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 14px;
+  top: 14px;
+}
 
 .iconFrame {
-	position: absolute;
-	top: 10px;
-	left: calc(50% - 40px);
-	width: 80px;
-	height: 80px;
-	border-radius: 100px;
-	background: #DFE6E9;
-	box-shadow:
-		inset -4px -4px 8px #FFFFFF,
-		inset 4px 4px 8px rgba(196,196,196,0.8);
-	z-index: 5;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  z-index: 5;
 }
 
 .iconCircleBlue,
 .iconCircleOrange,
 .iconCircleGreen {
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	width: 60px;
-	height: 60px;
-	border-radius: 100px;
-	box-shadow:
-		8px 8px 16px #C6C6C9,
-		-8px -8px 16px #FFFFFF;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
 }
 
 .iconCircleBlue {
-	background: #2D4CC8;
+  background: #2d4cc8;
 }
 
 .iconCircleOrange {
-	background: #C05512;
+  background: #c05512;
 }
 
 .iconCircleGreen {
-	background: #2A7308;
+  background: #2a7308;
 }
 
 .iconImage {
-	position: absolute;
-	left: 14px;
-	top: 14px;
-	width: 32px;
-	height: 32px;
-	object-fit: contain;
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .iconFrame {
-	position: absolute;
-	width: 80px;
-	height: 80px;
-	border-radius: 100px;
-	background: #DFE6E9;
-	box-shadow:
-		inset -4px -4px 8px #FFFFFF,
-		inset 4px 4px 8px rgba(196,196,196,0.8);
-	z-index: 5;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  z-index: 5;
 }
 
 .iconCircleBlue,
 .iconCircleOrange,
 .iconCircleGreen {
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	width: 60px;
-	height: 60px;
-	border-radius: 100px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	box-shadow:
-		8px 8px 16px #C6C6C9,
-		-8px -8px 16px #FFFFFF;
-	z-index: 6;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
+  z-index: 6;
 }
 
 .iconCircleBlue {
-	background: #2D4CC8;
+  background: #2d4cc8;
 }
 
 .iconCircleOrange {
-	background: #C05512;
+  background: #c05512;
 }
 
 .iconCircleGreen {
-	background: #2A7308;
+  background: #2a7308;
 }
 
 .iconImage {
-	position: relative;
-	left: auto;
-	top: auto;
-	width: 32px;
-	height: 32px;
-	object-fit: contain;
-	z-index: 7;
-	display: block;
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  z-index: 7;
+  display: block;
 }
 
 @media screen and (max-width: 600px) {
+  .neurolxp2103rs8cs3msLite {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-x: hidden !important;
+  }
 
-.neurolxp2103rs8cs3msLite {
+  .frameParent {
+    display: none !important;
+  }
 
-    width:100% !important;
-    height:auto !important;
-    min-height:100vh !important;
-    overflow-x:hidden !important;
+  .frameDiv {
+    position: relative !important;
 
+    top: 20px !important;
+
+    left: 0 !important;
+
+    width: 100% !important;
+
+    padding: 0 20px !important;
+
+    box-sizing: border-box;
+  }
+
+  .image20Parent {
+    position: relative !important;
+
+    width: calc(100% - 32px) !important;
+
+    margin: 40px 16px 0 !important;
+
+    height: auto !important;
+
+    min-height: 650px !important;
+
+    padding-bottom: 32px !important;
+
+    border-radius: 24px !important;
+  }
+
+  .image21Wrapper {
+    top: 16px !important;
+
+    left: 16px !important;
+
+    width: calc(100% - 32px) !important;
+
+    height: 260px !important;
+  }
+
+  .image21 {
+    top: 0 !important;
+
+    left: 0 !important;
+
+    transform: none !important;
+
+    width: 100% !important;
+
+    height: 260px !important;
+
+    max-width: none !important;
+
+    object-fit: cover !important;
+  }
+
+  .frameParent3 {
+    position: relative !important;
+
+    margin-top: 300px !important;
+
+    left: 0 !important;
+
+    width: 100% !important;
+
+    padding: 20px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 20px !important;
+  }
+
+  .frameWrapper,
+  .frameWrapper2 {
+    width: 100% !important;
+  }
+
+  .frameParent5 {
+    width: 100% !important;
+
+    align-items: center !important;
+
+    text-align: center !important;
+  }
+
+  .skillsThatMatter {
+    width: 100% !important;
+
+    font-size: 34px !important;
+
+    line-height: 42px !important;
+  }
+
+  .poweredByThe {
+    width: 100% !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+  .frameParent6 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    padding: 31px 20px !important;
+    box-sizing: border-box;
+  }
+
+  .frameParent7 {
+    width: 100% !important;
+  }
+
+  .poweredByTheContainer {
+    width: 100% !important;
+
+    font-size: 34px !important;
+
+    line-height: 42px !important;
+  }
+
+  .buildingStrongFoundations {
+    width: 100% !important;
+
+    font-size: 20px !important;
+
+    line-height: 30px !important;
+  }
+
+  .frameParent8 {
+    height: auto !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+  }
+
+  .frameParent9,
+  .frameParent12,
+  .frameParent19 {
+    position: relative !important;
+
+    top: auto !important;
+
+    left: auto !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    margin-bottom: 30px !important;
+  }
+
+  .frameParent10,
+  .frameParent20 {
+    position: relative !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    min-height: 380px !important;
+
+    margin-top: 56px !important;
+  }
+
+  .frameParent13 {
+    position: relative !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    min-height: 380px !important;
+
+    margin-top: 50px !important;
+  }
+
+  .csParent {
+    position: relative !important;
+
+    top: auto !important;
+
+    left: auto !important;
+
+    width: 100% !important;
+
+    padding: 0 20px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .afterBasicsItsContainer {
+    width: 100% !important;
+
+    height: auto !important;
+  }
+
+  .frameParent14 {
+    position: relative !important;
+
+    top: auto !important;
+
+    left: auto !important;
+
+    width: 100% !important;
+
+    padding: 20px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .frameParent15 {
+    flex-direction: column !important;
+
+    align-items: stretch !important;
+
+    gap: 16px !important;
+  }
+
+  .frameWrapper6 {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .whyItMattersParent {
+    position: relative !important;
+
+    top: auto !important;
+
+    left: auto !important;
+
+    width: 100% !important;
+
+    padding: 40px 20px !important;
+
+    box-sizing: border-box;
+  }
+
+  .whyItMatters {
+    width: 100% !important;
+
+    font-size: 34px !important;
+
+    line-height: 42px !important;
+  }
+
+  .transformingLearningInto {
+    width: 100% !important;
+
+    font-size: 20px !important;
+  }
+
+  .rectangleParent {
+    position: relative !important;
+
+    top: auto !important;
+
+    left: auto !important;
+
+    width: calc(100% - 32px) !important;
+
+    margin: 30px 16px !important;
+
+    height: 420px !important;
+  }
+
+  .frameParent22 {
+    top: 40px !important;
+
+    left: 20px !important;
+
+    width: calc(100% - 40px) !important;
+  }
+
+  .neurolxp {
+    width: 100% !important;
+
+    font-size: 34px !important;
+  }
+
+  .bringingThe3rs8cs3msContainer {
+    width: 100% !important;
+
+    font-size: 20px !important;
+
+    line-height: 30px !important;
+  }
+
+  .frameParent23,
+  .frameParent24,
+  .frameParent32,
+  .frameWrapper17 {
+    display: none !important;
+  }
+
+  .frameParent25 {
+    display: none !important;
+  }
+
+  .smilingStudentsWithBackpackWrapper {
+    width: 100% !important;
+
+    height: 300px !important;
+  }
+
+  .smilingStudentsWithBackpackIcon {
+    width: 100% !important;
+
+    height: 300px !important;
+
+    object-fit: cover !important;
+  }
+
+  .smilingWomanWithBooksMortaIcon {
+    display: none !important;
+  }
+
+  h1,
+  h2,
+  b {
+    max-width: 100% !important;
+
+    word-break: normal !important;
+  }
 }
 
-.frameParent {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .neurolxp2103rs8cs3msLite {
+    width: 100% !important;
+  }
 
-    display:none !important;
+  .frameParent {
+    transform: scale(0.75);
 
-}
+    transform-origin: top left;
+  }
 
-.frameDiv {
+  .image20Parent {
+    width: 95% !important;
 
-    position:relative !important;
+    margin: auto;
+  }
 
-    top:20px !important;
+  .frameParent6 {
+    left: 0 !important;
 
-    left:0 !important;
+    width: 100% !important;
+  }
 
-    width:100% !important;
+  .rectangleParent {
+    width: 90% !important;
 
-    padding:0 20px !important;
-
-    box-sizing:border-box;
-
-}
-
-.image20Parent {
-
-    position:relative !important;
-
-    width:calc(100% - 32px) !important;
-
-    margin:40px 16px 0 !important;
-
-    height:auto !important;
-
-    min-height:650px !important;
-
-    padding-bottom:32px !important;
-
-    border-radius:24px !important;
-
-}
-
-.image21Wrapper {
-
-    top:16px !important;
-
-    left:16px !important;
-
-    width:calc(100% - 32px) !important;
-
-    height:260px !important;
-
-}
-
-.image21 {
-
-    top:0 !important;
-
-    left:0 !important;
-
-    transform:none !important;
-
-    width:100% !important;
-
-    height:260px !important;
-
-    max-width:none !important;
-
-    object-fit:cover !important;
-
-}
-
-.frameParent3 {
-
-    position:relative !important;
-
-    margin-top:300px !important;
-
-    left:0 !important;
-
-    width:100% !important;
-
-    padding:20px !important;
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-    gap:20px !important;
-
-}
-
-.frameWrapper,
-.frameWrapper2 {
-
-    width:100% !important;
-
-}
-
-.frameParent5 {
-
-    width:100% !important;
-
-    align-items:center !important;
-
-    text-align:center !important;
-
-}
-
-.skillsThatMatter {
-
-    width:100% !important;
-
-    font-size:34px !important;
-
-    line-height:42px !important;
-
-}
-
-.poweredByThe {
-
-    width:100% !important;
-
-    font-size:20px !important;
-
-    line-height:30px !important;
-
-}
-
-.frameParent6 {
-
-    position:relative !important;
-
-    top:auto !important;
-
-    left:auto !important;
-
-    width:100% !important;
-
-    padding:50px 20px !important;
-
-    box-sizing:border-box;
-
-}
-
-.frameParent7 {
-
-    width:100% !important;
-
-}
-
-.poweredByTheContainer {
-
-    width:100% !important;
-
-    font-size:34px !important;
-
-    line-height:42px !important;
-
-}
-
-.buildingStrongFoundations {
-
-    width:100% !important;
-
-    font-size:20px !important;
-
-    line-height:30px !important;
-
-}
-
-.frameParent8 {
-
-    height:auto !important;
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-}
-
-.frameParent9,
-.frameParent12,
-.frameParent19 {
-
-    position:relative !important;
-
-    top:auto !important;
-
-    left:auto !important;
-
-    width:100% !important;
-
-    height:auto !important;
-
-    margin-bottom:30px !important;
-
-}
-
-.frameParent10,
-.frameParent20 {
-
-    position:relative !important;
-
-    width:100% !important;
-
-    height:auto !important;
-
-    min-height:380px !important;
-
-    margin-top:56px !important;
-
-}
-
-.frameParent13 {
-
-    position:relative !important;
-
-    width:100% !important;
-
-    height:auto !important;
-
-    min-height:380px !important;
-
-    margin-top:50px !important;
-
-}
-
-.csParent {
-
-    position:relative !important;
-
-    top:auto !important;
-
-    left:auto !important;
-
-    width:100% !important;
-
-    padding:0 20px !important;
-
-    box-sizing:border-box !important;
-
-}
-
-.afterBasicsItsContainer {
-
-    width:100% !important;
-
-    height:auto !important;
-
-}
-
-.frameParent14 {
-
-    position:relative !important;
-
-    top:auto !important;
-
-    left:auto !important;
-
-    width:100% !important;
-
-    padding:20px !important;
-
-    box-sizing:border-box !important;
-
-}
-
-.frameParent15 {
-
-    flex-direction:column !important;
-
-    align-items:stretch !important;
-
-    gap:16px !important;
-
-}
-
-.frameWrapper6 {
-
-    width:100% !important;
-
-    box-sizing:border-box !important;
-
-}
-
-.whyItMattersParent {
-
-    position:relative !important;
-
-    top:auto !important;
-
-    left:auto !important;
-
-    width:100% !important;
-
-    padding:40px 20px !important;
-
-    box-sizing:border-box;
-
-}
-
-.whyItMatters {
-
-    width:100% !important;
-
-    font-size:34px !important;
-
-    line-height:42px !important;
-
-}
-
-.transformingLearningInto {
-
-    width:100% !important;
-
-    font-size:20px !important;
-
-}
-
-.rectangleParent {
-
-    position:relative !important;
-
-    top:auto !important;
-
-    left:auto !important;
-
-    width:calc(100% - 32px) !important;
-
-    margin:30px 16px !important;
-
-    height:420px !important;
-
-}
-
-.frameParent22 {
-
-    top:40px !important;
-
-    left:20px !important;
-
-    width:calc(100% - 40px) !important;
-
-}
-
-.neurolxp {
-
-    width:100% !important;
-
-    font-size:34px !important;
-
-}
-
-.bringingThe3rs8cs3msContainer {
-
-    width:100% !important;
-
-    font-size:20px !important;
-
-    line-height:30px !important;
-
-}
-
-.frameParent23,
-.frameParent24,
-.frameParent32,
-.frameWrapper17 {
-
-    display:none !important;
-
-}
-
-.frameParent25 {
-
-    display:none !important;
-
-}
-
-.smilingStudentsWithBackpackWrapper {
-
-    width:100% !important;
-
-    height:300px !important;
-
-}
-
-.smilingStudentsWithBackpackIcon {
-
-    width:100% !important;
-
-    height:300px !important;
-
-    object-fit:cover !important;
-
-}
-
-.smilingWomanWithBooksMortaIcon {
-
-    display:none !important;
-
-}
-
-h1,
-h2,
-b {
-
-    max-width:100% !important;
-
-    word-break:normal !important;
-
-}
-
-}
-
-@media screen and (min-width:601px) and (max-width:1024px){
-
-.neurolxp2103rs8cs3msLite{
-
-    width:100% !important;
-
-}
-
-.frameParent{
-
-    transform:scale(.75);
-
-    transform-origin:top left;
-
-}
-
-.image20Parent{
-
-    width:95% !important;
-
-    margin:auto;
-
-}
-
-.frameParent6{
-
-    left:0 !important;
-
-    width:100% !important;
-
-}
-
-.rectangleParent{
-
-    width:90% !important;
-
-    left:5% !important;
-
-}
-
+    left: 5% !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
-
-  .image21Wrapper { display: none !important; }
-  .frameParent3   { margin-top: 24px !important; }
+  .image21Wrapper {
+    display: none !important;
+  }
+  .frameParent3 {
+    margin-top: 24px !important;
+  }
 
   .smilingStudentsWithBackpackWrapper {
     position: relative !important;
@@ -2077,13 +2036,16 @@ b {
     object-fit: cover !important;
   }
 
-  .frameParent9, .frameParent12, .frameParent19 {
+  .frameParent9,
+  .frameParent12,
+  .frameParent19 {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
   }
 
-  .iconFrame, .frameChild3 {
+  .iconFrame,
+  .frameChild3 {
     position: relative !important;
     top: auto !important;
     left: auto !important;
@@ -2092,15 +2054,17 @@ b {
     z-index: 10 !important;
   }
 
-  .frameParent10, .frameParent20, .frameParent13 {
+  .frameParent10,
+  .frameParent20,
+  .frameParent13 {
     order: 2 !important;
     position: relative !important;
     z-index: 1 !important;
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
-    margin-top: -80px !important;      
-    padding: 104px 20px 32px !important; 
+    margin-top: -80px !important;
+    padding: 104px 20px 32px !important;
     box-sizing: border-box !important;
     display: flex !important;
     flex-direction: column !important;
@@ -2108,7 +2072,9 @@ b {
     gap: 24px !important;
   }
 
-  .msParent, .csParent, .rsParent {
+  .msParent,
+  .csParent,
+  .rsParent {
     position: relative !important;
     top: auto !important;
     left: auto !important;
@@ -2117,7 +2083,8 @@ b {
     text-align: center !important;
   }
 
-  .beyondSkillsIts, .afterBasicsItsContainer {
+  .beyondSkillsIts,
+  .afterBasicsItsContainer {
     width: 100% !important;
   }
 
@@ -2137,19 +2104,30 @@ b {
   }
 
   .frameChild2 {
-    display: none !important; 
+    display: none !important;
   }
 }
-@media screen and (max-width: 600px) {
 
-  .frameParent9, .frameParent12, .frameParent19 {
+@media screen and (max-width: 480px) {
+  .frameItem {
+    width: 90%;
+    height: 50.2px;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .frameParent9,
+  .frameParent12,
+  .frameParent19 {
     position: relative !important;
     width: 100% !important;
     height: auto !important;
     margin-bottom: 32px !important;
   }
 
-  .iconFrame, .frameChild3 {
+  .iconFrame,
+  .frameChild3 {
     position: absolute !important;
     top: 0 !important;
     left: 50% !important;
@@ -2158,7 +2136,9 @@ b {
     z-index: 10 !important;
   }
 
-  .frameParent10, .frameParent20, .frameParent13 {
+  .frameParent10,
+  .frameParent20,
+  .frameParent13 {
     position: relative !important;
     top: auto !important;
     left: auto !important;
@@ -2166,7 +2146,7 @@ b {
     height: auto !important;
     min-height: 0 !important;
     margin-top: 40px !important;
-    padding: 64px 20px 32px !important;  
+    padding: 64px 20px 32px !important;
     box-sizing: border-box !important;
     display: flex !important;
     flex-direction: column !important;
@@ -2174,7 +2154,9 @@ b {
     gap: 16px !important;
   }
 
-  .msParent, .csParent, .rsParent {
+  .msParent,
+  .csParent,
+  .rsParent {
     position: relative !important;
     top: auto !important;
     left: auto !important;
@@ -2183,12 +2165,14 @@ b {
     text-align: center !important;
   }
 
-  .beyondSkillsIts, .afterBasicsItsContainer {
+  .beyondSkillsIts,
+  .afterBasicsItsContainer {
     width: 100% !important;
     height: auto !important;
   }
 
-  .frameParent11, .frameParent14 {
+  .frameParent11,
+  .frameParent14 {
     position: relative !important;
     top: auto !important;
     left: auto !important;
@@ -2199,7 +2183,8 @@ b {
     gap: 16px !important;
   }
 
-  .frameWrapper3, .frameWrapper6 {
+  .frameWrapper3,
+  .frameWrapper6 {
     width: 100% !important;
     box-sizing: border-box !important;
   }
@@ -2215,29 +2200,26 @@ b {
   }
 }
 @media screen and (max-width: 600px) {
-
   .frameParent5 {
     padding-top: 0 !important;
   }
 
   .image20Parent {
-    margin-top: 24px !important;   
+    margin-top: 24px !important;
   }
-
 }
 @media screen and (max-width: 600px) {
-
   .image20Parent {
     margin-top: 32px !important;
   }
 
   .frameParent3 {
-    margin-top: 0 !important;   
+    margin-top: 0 !important;
     padding-top: 32px !important;
   }
 
   .frameParent5 {
-    padding-top: 0 !important;  
+    padding-top: 0 !important;
   }
 
   .smilingStudentsWithBackpackWrapper {
@@ -2268,27 +2250,23 @@ b {
     top: 32px !important;
     left: 20px !important;
   }
-
 }
 @media screen and (max-width: 600px) {
-
   .neurolxp2103rs8cs3msLite {
     overflow-y: visible !important;
     overflow: visible !important;
   }
 
   .rectangleParent {
-    overflow: visible !important;  
+    overflow: visible !important;
   }
 
   .whyItMattersParent {
     padding: 24px 20px !important;
     gap: 24px !important;
   }
-
 }
 @media screen and (max-width: 600px) {
-
   .rectangleParent {
     overflow: hidden !important;
     height: auto !important;
@@ -2299,5 +2277,4 @@ b {
   .image202 {
     display: none !important;
   }
-
 }
