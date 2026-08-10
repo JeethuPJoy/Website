@@ -1,0 +1,3016 @@
+.standardsTraining {
+  width: 100%;
+  height: 3552px;
+  position: relative;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  text-align: left;
+  font-size: 36px;
+  color: #31344b;
+  font-family: "Segoe UI";
+  zoom: 0.97;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.frameParent {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 720px);
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 80px;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: Inter;
+}
+.frameChild {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 1096px;
+  width: 132px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frameGroup {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+  width: 1376px;
+  height: 45px;
+  flex-shrink: 0;
+}
+.logo01SynapseSpark1Parent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+.logo01SynapseSpark1Icon {
+  height: 45px;
+  width: 120px;
+  position: relative;
+  object-fit: cover;
+}
+.frameContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.homeParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.home {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}
+.arrowDown01Icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+.resourcesParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2d4cc8;
+}
+.resources {
+  position: relative;
+  line-height: 24px;
+}
+.signInHelpWrapper {
+  position: absolute;
+  top: calc(50% - 22.5px);
+  left: 1244px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 132px;
+  height: 44px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+}
+.signInHelp {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.frameItem {
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  width: 1429px;
+  height: 592.4px;
+  flex-shrink: 0;
+}
+.frameInner {
+  position: absolute;
+  top: 76px;
+  left: 4px;
+  width: 1436px;
+  height: 839px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameDiv {
+  position: absolute;
+  top: 32px;
+  left: 80px;
+  background-color: #dfe6e9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #2f3547;
+  font-family: "Segoe UI";
+}
+.resourcesWrapper {
+  display: flex;
+  align-items: center;
+}
+.useCases {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+}
+.arrowRightDoubleGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #243fa8;
+}
+.frameParent2 {
+  position: absolute;
+  top: 88px;
+  left: 80px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+  font-size: 48px;
+}
+.frameParent3 {
+  align-self: stretch;
+  height: 614px;
+  position: relative;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.image21Parent {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px rgba(255, 255, 255, 0.6);
+  border-radius: 16px 100px 100px 16px;
+  background-color: #dfe6e9;
+  width: 608px;
+  height: 550px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.image21 {
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 1216px;
+  height: 737px;
+  flex-shrink: 0;
+}
+.groupYoungBusinesspeopleUsi {
+  position: absolute;
+  top: calc(50% - 277px);
+  left: calc(50% - 332px);
+  width: 1216px;
+  height: 555px;
+  flex-shrink: 0;
+}
+.frameParent4 {
+  position: absolute;
+  top: calc(50% - 213px);
+  left: 50px;
+  width: 508px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 45px;
+  flex-shrink: 0;
+}
+.frameParent5 {
+  align-self: stretch;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.frameParent6 {
+  align-self: stretch;
+  height: 202px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+}
+.frameIcon {
+  width: 256.5px;
+  height: 50.2px;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 8px rgba(198, 198, 201, 0.85);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #2d4cc8;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.buildIndustryReadyLearningContainer {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+}
+.build {
+  line-height: 60px;
+}
+.industryReady {
+  color: #2d4cc8;
+  line-height: 60px;
+}
+.improveLearningQuality {
+  width: 521px;
+  height: 85px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameChild2 {
+  width: 220px;
+  height: 60px;
+  border-radius: 50px;
+  background: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d4cc8;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.image20 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}
+.frameParent7 {
+  position: absolute;
+  top: 68px;
+  left: 739px;
+  width: 491px;
+  height: 481px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 32px;
+  color: #bf1869;
+}
+.outcomeBasedLearningWrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50px;
+  border: 2px dashed #bf1869;
+  box-sizing: border-box;
+  width: 491px;
+  height: 106px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+.outcomeBasedLearning {
+  height: 42px;
+  width: 427px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.facultyDevelopmentWrapper {
+  position: absolute;
+  top: 188px;
+  left: 0px;
+  border-radius: 50px;
+  border: 2px dashed #2d4cc8;
+  box-sizing: border-box;
+  width: 491px;
+  height: 106px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  color: #2d4cc8;
+}
+.facultyDevelopment {
+  height: 42px;
+  width: 404px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.accreditationReadyWrapper {
+  position: absolute;
+  top: 375px;
+  left: 0px;
+  border-radius: 50px;
+  border: 2px dashed #67096e;
+  box-sizing: border-box;
+  width: 491px;
+  height: 106px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  color: #67096e;
+}
+.arrowDownBigIcon {
+  position: absolute;
+  top: 118px;
+  left: 217px;
+  width: 58px;
+  height: 58px;
+}
+.arrowDownBigIcon2 {
+  position: absolute;
+  top: 306px;
+  left: 217px;
+  width: 57px;
+  height: 57px;
+}
+.frameParent8 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  font-size: 36px;
+}
+.whyStandardsTrainingParent {
+  width: 999px;
+  height: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.whyStandardsTraining {
+  width: 883px;
+  height: 50px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.createAConsistent {
+  width: 787px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent9 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 80px;
+  text-align: left;
+  font-size: 24px;
+}
+.frameParent10 {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.frameParent11 {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.frameChild3 {
+  height: 70.1px;
+  width: 70.1px;
+  position: relative;
+}
+.alignWithIndustry {
+  height: 37px;
+  width: 375px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.improveLearningOutcomes {
+  height: 37px;
+  width: 360px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.supportAccreditationAnd {
+  height: 37px;
+  width: 514px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.scaleFutureReadyLearning {
+  height: 37px;
+  width: 344px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.standardsTrainingChild {
+  position: absolute;
+  top: 1186.11px;
+  left: calc(50% - 720px);
+  background: linear-gradient(90deg, #bf1869, #2d4cc8);
+  width: 1440px;
+  height: 5px;
+  overflow: hidden;
+}
+.frameParent16 {
+  position: absolute;
+  top: 1255.11px;
+  left: 82px;
+  display: flex;
+  align-items: center;
+  gap: 138px;
+}
+.frameParent17 {
+  width: 583px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.frameParent18 {
+  align-self: stretch;
+  height: 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.frameChild7 {
+  width: 149.7px;
+  height: 50.1px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.benefitsOfEmployee {
+  width: 593px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.organizationsCanAchieve {
+  align-self: stretch;
+  height: 81px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent19 {
+  width: 555px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32px;
+  font-size: 28px;
+  color: #bf1869;
+}
+.frameParent20 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.frameChild8 {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  flex-shrink: 0;
+}
+.standardisedCurriculumParent {
+  height: 86px;
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.standardisedCurriculum {
+  align-self: stretch;
+  height: 40px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.alignLearningWith {
+  align-self: stretch;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  color: #2f3547;
+  flex-shrink: 0;
+}
+.frameParent21 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  color: #2d4cc8;
+}
+.frameParent22 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  color: #67096e;
+}
+.frameParent23 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  color: #2a7308;
+}
+.frameParent24 {
+  position: absolute;
+  top: 1791px;
+  left: 80px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+}
+.frameParent25 {
+  width: 1103px;
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.turnStandardsIntoLearningEParent {
+  width: 999px;
+  height: 171px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.turnStandardsIntoContainer {
+  width: 893px;
+  height: 50px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.turnStandardsInto {
+  line-height: 50px;
+}
+.learningExcellence {
+  color: #2d4cc8;
+  line-height: 50px;
+}
+.neurolxpHelpsInstitutions {
+  width: 714px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  color: #2f3547;
+  display: inline-block;
+}
+.frameParent26 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+  font-size: 22px;
+}
+.frameParent27 {
+  height: 470px;
+  width: 400px;
+  position: relative;
+}
+.frameWrapper2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 470px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 401px;
+  height: 470px;
+}
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 400px;
+  height: 470px;
+  border-radius: 20px;
+  background: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c6c6c6;
+}
+.frameParent28 {
+  position: absolute;
+  top: 212px;
+  left: 32px;
+  width: 283px;
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.frameParent29 {
+  width: 283px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+.frameChild13 {
+  height: 44px;
+  width: 44px;
+  position: relative;
+}
+.structuredLearning {
+  position: relative;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  color: #31344b;
+}
+.frameChild15 {
+  height: 44px;
+  width: 44px;
+  position: relative;
+  flex-shrink: 0;
+}
+.transparentAssessments {
+  position: relative;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  color: #31344b;
+  flex-shrink: 0;
+}
+.frameWrapper3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 54px;
+  color: #000;
+  font-family: "Segoe UI";
+}
+.frameWrapper4 {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+.vectorParent {
+  align-self: stretch;
+  height: 192px;
+  position: relative;
+}
+.rectangleIcon {
+  position: absolute;
+  top: 0;
+  /* left: calc(50% - 200px + 0.5px); */
+  width: 400px;
+  height: 192px;
+  border-radius: 20px;
+  background: #dfe6e9;
+  clip-path: polygon(0 0, 100% 0, 100% 56%, 50% 100%, 0 56%);
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  filter: drop-shadow(0 7px 7px rgba(196, 196, 196, 0.75)) drop-shadow(0 -3px 4px rgba(255, 255, 255, 0.6));
+  z-index: 2;
+}
+.frameParent33 {
+  position: absolute;
+  top: 24px;
+  left: calc(50% - 158px + 0.5px);
+  width: 316px;
+  height: 111px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 3;
+}
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.b {
+  position: relative;
+  font-family: "Segoe UI";
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0.03em;
+  background: linear-gradient(180deg, #bf1869 0%, #590b31 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.forLearners {
+  align-self: stretch;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: "Segoe UI";
+  text-align: center;
+  color: #000;
+}
+.frameWrapper6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 54px;
+  color: #000;
+  font-family: "Segoe UI";
+}
+.frameWrapper7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.vectorGroup {
+  align-self: stretch;
+  height: 192px;
+  position: relative;
+}
+.peopleTakingPartBusinessEv {
+  position: absolute;
+  top: 2648.52px;
+  left: 93px;
+  width: 1216px;
+  height: 555px;
+}
+.image212 {
+  position: absolute;
+  top: 2650px;
+  left: 93px;
+  width: 1216px;
+  height: 737px;
+}
+.groupYoungBusinesspeopleUsi2 {
+  position: absolute;
+  top: 2649px;
+  left: calc(50% - 627px);
+  width: 1216px;
+  height: 555px;
+}
+.standardsTrainingItem {
+  position: absolute;
+  top: 2658px;
+  left: 672px;
+  width: 637px;
+  height: 543px;
+}
+.image202 {
+  position: absolute;
+  top: 2619px;
+  left: calc(50% - 645px);
+  width: 1280px;
+  height: 800px;
+}
+.frameParent48 {
+  position: absolute;
+  top: 2619px;
+  left: 77px;
+  width: 1286px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+}
+.frameParent49 {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.frameWrapper11 {
+  align-self: stretch;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buildAFutureReadyLearningParent {
+  width: 999px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.frameWrapper12 {
+  width: 220px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frameChild29 {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #2d4cc8;
+  white-space: nowrap;
+}
+.ellipseImageFrame {
+  position: relative;
+  width: 1286px;
+  height: 540px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ellipseBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  display: block;
+  z-index: 1;
+}
+
+.frameChild30 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  display: block;
+  z-index: 2;
+}
+
+.iconCircle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.iconCircleInner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c6c6c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconPink {
+  background: #bf1869;
+}
+.iconBlue {
+  background: #2d4cc8;
+}
+.iconPurple {
+  background: #67096e;
+}
+.iconGreen {
+  background: #2a7308;
+}
+.iconCircleInner img {
+  width: 34px;
+  height: 34px;
+}
+
+.benefitsBadge {
+  width: 149.7px;
+  height: 50px;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(198, 198, 201, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.benefitsBadge span {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  color: #2d4cc8;
+}
+.benefitIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 8px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.benefitIcon img {
+  width: 46px !important;
+  height: 46px !important;
+  object-fit: contain;
+}
+
+.checkIconCircle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.checkIconCircle img {
+  width: 24px !important;
+  height: 24px !important;
+  object-fit: contain;
+  display: block;
+}
+
+/* FINAL FUTURE-READY SECTION — PNG REFERENCE MATCH */
+.frameParent48 {
+  position: absolute;
+  top: 2619px;
+  left: 50%;
+  width: 1286px;
+  max-width: calc(100% - 48px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  text-align: center;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+.frameParent49 {
+  width: 100%;
+  max-width: 999px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.frameWrapper11 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buildAFutureReadyLearningParent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.frameParent48 .turnStandardsIntoContainer {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  font-family: "Segoe UI";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #31344b;
+  text-align: center;
+}
+
+.frameParent48 .neurolxpHelpsInstitutions {
+  width: 760px;
+  max-width: 100%;
+  margin: 0;
+  font-family: "Segoe UI";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: #2f3547;
+  text-align: center;
+}
+
+.frameWrapper12 {
+  width: 220px;
+  height: 60px;
+  margin: 0;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frameChild29 {
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+  background: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #2d4cc8;
+  white-space: nowrap;
+}
+
+.ellipseImageFrame {
+  position: relative;
+  width: 1286px;
+  height: 540px;
+  max-width: 100%;
+  margin-top: 2px;
+  overflow: visible;
+  flex-shrink: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  isolation: isolate;
+}
+
+.ellipseBg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 58px);
+  height: calc(100% - 54px);
+  max-width: none;
+  transform: translate(-50%, -48%);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  display: block;
+  z-index: 1;
+}
+
+.frameChild30 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .frameParent48 {
+    max-width: calc(100% - 32px);
+    gap: 24px;
+  }
+
+  .frameParent49 {
+    gap: 28px;
+  }
+
+  .frameParent48 .turnStandardsIntoContainer {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .frameParent48 .neurolxpHelpsInstitutions {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .ellipseImageFrame {
+    height: auto;
+    aspect-ratio: 1286 / 540;
+  }
+}
+
+@media (max-width: 600px) {
+  .frameParent48 .turnStandardsIntoContainer {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .frameParent48 .neurolxpHelpsInstitutions {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .frameWrapper12,
+  .frameChild29 {
+    width: 190px;
+    height: 52px;
+  }
+
+  .frameChild29 {
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .ellipseBg {
+    width: calc(100% - 20px);
+    height: calc(100% - 18px);
+  }
+}
+
+/* FINAL ELLIPSE BACKGROUND + VISIBLE ROUND FRAME */
+.frameParent48 {
+  background: #dfe6e9;
+}
+
+.ellipseImageFrame {
+  position: relative;
+  width: 1286px;
+  height: 540px;
+  max-width: 100%;
+  overflow: visible;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #dfe6e9;
+  isolation: isolate;
+}
+
+/* Outer white rounded border visible like the reference PNG */
+.ellipseImageFrame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #f7fafb;
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.95),
+    8px 8px 16px rgba(196, 196, 196, 0.9);
+  z-index: 0;
+}
+
+/* Soft patterned/light-grey inner ring */
+.ellipseImageFrame::after {
+  content: "";
+  position: absolute;
+  inset: 17px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 8px 8px, rgba(196, 196, 196, 0.2) 2px, transparent 2.5px) 0 0 / 18px 18px,
+    #e7edef;
+  box-shadow:
+    inset -6px -6px 12px rgba(255, 255, 255, 0.95),
+    inset 6px 6px 12px rgba(196, 196, 196, 0.65);
+  z-index: 1;
+}
+
+/* Main bg.png photo stays inside the round frame */
+.ellipseBg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 72px);
+  height: calc(100% - 72px);
+  max-width: none;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  display: block;
+  z-index: 2;
+}
+
+/* ellipse.png remains as the top decorative frame */
+.frameChild30 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Keep the full round shape visible on tablet and mobile */
+@media (max-width: 900px) {
+  .ellipseImageFrame {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1286 / 540;
+    overflow: visible;
+  }
+
+  .ellipseImageFrame::after {
+    inset: 12px;
+  }
+
+  .ellipseBg {
+    width: calc(100% - 52px);
+    height: calc(100% - 52px);
+  }
+}
+
+@media (max-width: 600px) {
+  .ellipseImageFrame::after {
+    inset: 8px;
+  }
+
+  .ellipseBg {
+    width: calc(100% - 34px);
+    height: calc(100% - 34px);
+  }
+}
+
+/* BENEFIT CARDS — SVG BOX REPLACEMENT */
+.frameParent27 {
+  position: relative;
+  width: 400px;
+  height: 470px;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.frameParent27::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 424px;
+  height: 494px;
+  background-image: url("/assets/stdimages/standards-benefit-card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.frameParent27 .rectangleDiv,
+.frameParent27 .rectangleIcon {
+  display: none !important;
+}
+
+.frameParent27 .frameWrapper2,
+.frameParent27 .frameWrapper3,
+.frameParent27 .frameWrapper6 {
+  z-index: 1;
+}
+
+.frameParent27 .frameParent28 {
+  top: 212px;
+  left: 32px;
+  z-index: 2;
+}
+
+.frameParent27 .frameParent33 {
+  top: 24px;
+  z-index: 2;
+}
+
+@media (max-width: 1320px) {
+  .frameParent26 {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .frameParent26 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .frameParent27 {
+    width: 340px;
+    height: 400px;
+    transform: scale(0.85);
+    transform-origin: top center;
+    margin-bottom: -60px;
+  }
+}
+
+/* ==========================================================================
+   BFSI-STYLE NORMAL DOCUMENT FLOW
+   Existing colours, typography, shadows, card sizes and visual treatments
+   are preserved. Only positioning and responsive flow are normalised.
+   ========================================================================== */
+
+.standardsTraining {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 32px 0 72px;
+  background-color: #dfe6e9;
+  overflow-x: hidden;
+  overflow-y: visible;
+  text-align: left;
+  font-family: "Segoe UI";
+  zoom: 1;
+  box-sizing: border-box;
+}
+
+/* Breadcrumb */
+.standardsTraining > .frameDiv {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(1280px, calc(100% - 48px));
+  min-height: 24px;
+  margin: 0 auto 32px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* Main hero + why section wrapper */
+.standardsTraining > .frameParent2 {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(1280px, calc(100% - 48px));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 80px;
+  font-size: 48px;
+  box-sizing: border-box;
+}
+
+/* Hero frame */
+.standardsTraining > .frameParent2 > .frameParent3 {
+  width: 100%;
+  height: 614px;
+  position: relative;
+  flex: none;
+  overflow: hidden;
+}
+
+/* Hero image/content area remains visually identical inside its own frame. */
+.standardsTraining .image21Parent {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* Keep existing hero decorative artwork scoped inside the hero only. */
+.standardsTraining .image21,
+.standardsTraining .groupYoungBusinesspeopleUsi,
+.standardsTraining .image20 {
+  pointer-events: none;
+}
+
+/* Why Standards section */
+.standardsTraining > .frameParent2 > .frameParent8 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.standardsTraining .whyStandardsTrainingParent {
+  width: min(999px, 100%);
+  height: auto;
+}
+
+.standardsTraining .whyStandardsTraining,
+.standardsTraining .createAConsistent {
+  width: 100%;
+  height: auto;
+}
+
+.standardsTraining .frameParent9 {
+  width: 100%;
+  justify-content: center;
+}
+
+.standardsTraining .frameParent10 {
+  width: min(600px, 100%);
+}
+
+.standardsTraining .frameParent11 {
+  width: 100%;
+}
+
+/* Divider */
+.standardsTraining > .standardsTrainingChild {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  height: 5px;
+  margin: 64px 0;
+  flex: none;
+}
+
+/* Benefits section */
+.standardsTraining > .frameParent16 {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(1276px, calc(100% - 48px));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  box-sizing: border-box;
+}
+
+.standardsTraining > .frameParent16 > .resourcesWrapper {
+  flex: 1 1 560px;
+  min-width: 0;
+}
+
+.standardsTraining .frameParent17 {
+  width: 100%;
+}
+
+.standardsTraining .frameParent18 {
+  height: auto;
+}
+
+.standardsTraining .benefitsOfEmployee,
+.standardsTraining .organizationsCanAchieve {
+  width: 100%;
+  height: auto;
+}
+
+.standardsTraining .frameParent19 {
+  flex: 1 1 555px;
+  width: auto;
+  min-width: 0;
+}
+
+.standardsTraining .frameParent20,
+.standardsTraining .frameParent21,
+.standardsTraining .frameParent22,
+.standardsTraining .frameParent23 {
+  width: 100%;
+}
+
+.standardsTraining .standardisedCurriculumParent {
+  width: calc(100% - 116px);
+  height: auto;
+}
+
+.standardsTraining .standardisedCurriculum,
+.standardsTraining .alignLearningWith {
+  height: auto;
+}
+
+/* Learners / Institutions / Faculty cards section */
+.standardsTraining > .frameParent24 {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(1280px, calc(100% - 48px));
+  margin: 96px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  box-sizing: border-box;
+}
+
+.standardsTraining .frameParent25 {
+  width: min(1103px, 100%);
+  height: auto;
+}
+
+.standardsTraining .turnStandardsIntoLearningEParent {
+  width: min(999px, 100%);
+  height: auto;
+}
+
+.standardsTraining .turnStandardsIntoContainer,
+.standardsTraining .neurolxpHelpsInstitutions {
+  width: 100%;
+  height: auto;
+}
+
+.standardsTraining .frameParent26 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 400px));
+  align-items: stretch;
+  justify-content: center;
+  gap: 40px;
+}
+
+.standardsTraining .frameParent27 {
+  position: relative;
+  width: 400px;
+  height: 470px;
+  margin: 0;
+}
+
+/* The supplied SVG remains the single card background. */
+.standardsTraining .frameParent27::before {
+  top: -12px;
+  left: -12px;
+}
+
+/* Remove old empty absolute artwork that sat behind the final section. */
+.standardsTraining > .peopleTakingPartBusinessEv,
+.standardsTraining > .image212,
+.standardsTraining > .groupYoungBusinesspeopleUsi2,
+.standardsTraining > .image202 {
+  display: none;
+}
+
+/* Final CTA section */
+.standardsTraining > .frameParent48 {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(1286px, calc(100% - 48px));
+  max-width: none;
+  margin: 96px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  text-align: center;
+  transform: none;
+  box-sizing: border-box;
+}
+
+.standardsTraining .frameParent49 {
+  width: min(999px, 100%);
+}
+
+.standardsTraining .buildAFutureReadyLearningParent {
+  width: 100%;
+}
+
+.standardsTraining .ellipseImageFrame {
+  width: 100%;
+  max-width: 1286px;
+  height: auto;
+  aspect-ratio: 1286 / 540;
+}
+
+/* Prevent fixed-width text from overflowing while retaining desktop sizing. */
+.standardsTraining .buildIndustryReadyLearningContainer,
+.standardsTraining .improveLearningQuality,
+.standardsTraining .alignWithIndustry,
+.standardsTraining .improveLearningOutcomes,
+.standardsTraining .supportAccreditationAnd,
+.standardsTraining .scaleFutureReadyLearning {
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   TABLET
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+  .standardsTraining {
+    padding-top: 28px;
+  }
+
+  .standardsTraining > .frameDiv,
+  .standardsTraining > .frameParent2,
+  .standardsTraining > .frameParent16,
+  .standardsTraining > .frameParent24,
+  .standardsTraining > .frameParent48 {
+    width: calc(100% - 64px);
+  }
+
+  .standardsTraining > .frameParent2 > .frameParent3 {
+    height: auto;
+    min-height: 614px;
+  }
+
+  .standardsTraining .frameParent9 {
+    gap: 40px;
+  }
+
+  .standardsTraining > .frameParent16 {
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+  }
+
+  .standardsTraining > .frameParent16 > .resourcesWrapper,
+  .standardsTraining .frameParent19 {
+    width: min(720px, 100%);
+    flex: none;
+  }
+
+  .standardsTraining .frameParent19 {
+    align-items: stretch;
+  }
+
+  .standardsTraining .frameParent26 {
+    grid-template-columns: repeat(2, minmax(0, 400px));
+  }
+
+  .standardsTraining .frameParent27:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+/* ==========================================================================
+   MOBILE / SMALL TABLET
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .standardsTraining {
+    padding: 20px 0 48px;
+  }
+
+  .standardsTraining > .frameDiv,
+  .standardsTraining > .frameParent2,
+  .standardsTraining > .frameParent16,
+  .standardsTraining > .frameParent24,
+  .standardsTraining > .frameParent48 {
+    width: calc(100% - 32px);
+  }
+
+  .standardsTraining > .frameDiv {
+    margin-bottom: 24px;
+    font-size: 14px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .standardsTraining > .frameParent2 {
+    gap: 56px;
+    font-size: 36px;
+  }
+
+  /* Hero switches to normal vertical flow without changing its visual styles. */
+  .standardsTraining > .frameParent2 > .frameParent3 {
+    height: auto;
+    min-height: 0;
+    padding: 24px 16px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    box-sizing: border-box;
+  }
+
+  .standardsTraining .image21Parent {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    overflow: visible;
+  }
+
+  .standardsTraining .frameParent4 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+    order: 1;
+  }
+
+  .standardsTraining .frameParent5,
+  .standardsTraining .frameParent6 {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .standardsTraining .buildIndustryReadyLearningContainer {
+    width: 100%;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .standardsTraining .build,
+  .standardsTraining .industryReady {
+    line-height: inherit;
+  }
+
+  .standardsTraining .improveLearningQuality {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .standardsTraining .frameChild2 {
+    margin: 0 auto;
+  }
+
+  .standardsTraining .frameParent7 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    order: 2;
+  }
+
+  .standardsTraining .outcomeBasedLearningWrapper,
+  .standardsTraining .facultyDevelopmentWrapper,
+  .standardsTraining .accreditationReadyWrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: min(491px, 100%);
+    height: auto;
+    min-height: 84px;
+    padding: 20px;
+  }
+
+  .standardsTraining .outcomeBasedLearning,
+  .standardsTraining .facultyDevelopment {
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .standardsTraining .arrowDownBigIcon,
+  .standardsTraining .arrowDownBigIcon2 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 48px;
+    height: 48px;
+  }
+
+  .standardsTraining .image21,
+  .standardsTraining .groupYoungBusinesspeopleUsi,
+  .standardsTraining .image20 {
+    display: none;
+  }
+
+  .standardsTraining .whyStandardsTrainingParent {
+    gap: 18px;
+  }
+
+  .standardsTraining .whyStandardsTraining {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .standardsTraining .createAConsistent {
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .standardsTraining .frameParent9 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .standardsTraining .frameParent10 {
+    gap: 24px;
+  }
+
+  .standardsTraining .frameParent11 {
+    gap: 14px;
+  }
+
+  .standardsTraining .alignWithIndustry,
+  .standardsTraining .improveLearningOutcomes,
+  .standardsTraining .supportAccreditationAnd,
+  .standardsTraining .scaleFutureReadyLearning {
+    width: calc(100% - 84px);
+    height: auto;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .standardsTraining > .standardsTrainingChild {
+    margin: 48px 0;
+  }
+
+  .standardsTraining > .frameParent16 {
+    gap: 40px;
+    text-align: center;
+  }
+
+  .standardsTraining .frameParent17,
+  .standardsTraining .frameParent18 {
+    align-items: center;
+  }
+
+  .standardsTraining .benefitsOfEmployee {
+    font-size: 30px;
+    line-height: 40px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .standardsTraining .organizationsCanAchieve {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .standardsTraining .frameParent19 {
+    gap: 24px;
+  }
+
+  .standardsTraining .frameParent20,
+  .standardsTraining .frameParent21,
+  .standardsTraining .frameParent22,
+  .standardsTraining .frameParent23 {
+    gap: 18px;
+    text-align: left;
+  }
+
+  .standardsTraining .standardisedCurriculumParent {
+    width: calc(100% - 98px);
+    gap: 8px;
+  }
+
+  .standardsTraining .standardisedCurriculum {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .standardsTraining .alignLearningWith {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .standardsTraining > .frameParent24 {
+    margin-top: 64px;
+    gap: 36px;
+  }
+
+  .standardsTraining .frameParent25,
+  .standardsTraining .turnStandardsIntoLearningEParent {
+    gap: 20px;
+  }
+
+  .standardsTraining .turnStandardsIntoContainer {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .standardsTraining .neurolxpHelpsInstitutions {
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .standardsTraining .frameParent26 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .standardsTraining .frameParent27,
+  .standardsTraining .frameParent27:nth-child(3) {
+    grid-column: auto;
+    width: 400px;
+    max-width: 100%;
+    transform: none;
+    margin: 0;
+  }
+
+  .standardsTraining > .frameParent48 {
+    margin-top: 64px;
+    gap: 24px;
+  }
+
+  .standardsTraining .frameParent48 .turnStandardsIntoContainer {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .standardsTraining .frameParent48 .neurolxpHelpsInstitutions {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+/* ==========================================================================
+   SMALL MOBILE
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .standardsTraining > .frameDiv,
+  .standardsTraining > .frameParent2,
+  .standardsTraining > .frameParent16,
+  .standardsTraining > .frameParent24,
+  .standardsTraining > .frameParent48 {
+    width: calc(100% - 24px);
+  }
+
+  .standardsTraining .frameIcon {
+    width: auto;
+    max-width: 100%;
+    font-size: 19px;
+    padding-inline: 20px;
+  }
+
+  .standardsTraining .buildIndustryReadyLearningContainer {
+    font-size: 27px;
+    line-height: 36px;
+  }
+
+  .standardsTraining .frameChild2,
+  .standardsTraining .frameWrapper12,
+  .standardsTraining .frameChild29 {
+    width: 190px;
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .standardsTraining .whyStandardsTraining,
+  .standardsTraining .benefitsOfEmployee,
+  .standardsTraining .turnStandardsIntoContainer,
+  .standardsTraining .frameParent48 .turnStandardsIntoContainer {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .standardsTraining .benefitIcon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .standardsTraining .benefitIcon img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .standardsTraining .frameParent27 {
+    width: 340px;
+    height: 400px;
+    transform: scale(0.85);
+    transform-origin: top center;
+    margin-bottom: -60px;
+  }
+
+  .standardsTraining .ellipseImageFrame {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   FINAL CENTERING + NO-OVERLAP CORRECTIONS
+   These rules only correct alignment, intrinsic sizing and flow.
+   Colours, shadows, typography and visual treatments remain unchanged.
+   ========================================================================== */
+
+.standardsTraining,
+.standardsTraining * {
+  box-sizing: border-box;
+}
+
+.standardsTraining > section,
+.standardsTraining > div,
+.standardsTraining > nav {
+  flex-shrink: 0;
+}
+
+/* Keep every primary section centered on the page. */
+.standardsTraining > .frameDiv,
+.standardsTraining > .frameParent2,
+.standardsTraining > .frameParent16,
+.standardsTraining > .frameParent24,
+.standardsTraining > .frameParent48 {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Breadcrumb remains aligned with the content container. */
+.standardsTraining > .frameDiv {
+  justify-content: flex-start;
+}
+
+/* Hero container and inner content */
+.standardsTraining > .frameParent2,
+.standardsTraining > .frameParent2 > .frameParent3,
+.standardsTraining > .frameParent2 > .frameParent8 {
+  max-width: 1280px;
+}
+
+.standardsTraining > .frameParent2 > .frameParent3 {
+  margin: 0 auto;
+}
+
+.standardsTraining .image21Parent {
+  left: 0 !important;
+  top: 0 !important;
+}
+
+/* Center the Why Standards heading and feature rows. */
+.standardsTraining .whyStandardsTrainingParent {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.standardsTraining .frameParent9 {
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.standardsTraining .frameParent10 {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.standardsTraining .frameParent11 {
+  min-width: 0;
+}
+
+.standardsTraining .alignWithIndustry,
+.standardsTraining .improveLearningOutcomes,
+.standardsTraining .supportAccreditationAnd,
+.standardsTraining .scaleFutureReadyLearning {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Benefits content — remove fixed heights so text cannot collide. */
+.standardsTraining > .frameParent16 {
+  align-items: center;
+}
+
+.standardsTraining .frameParent17,
+.standardsTraining .frameParent18 {
+  height: auto !important;
+}
+
+.standardsTraining .benefitsOfEmployee {
+  display: block;
+  margin: 0;
+}
+
+.standardsTraining .organizationsCanAchieve {
+  display: block;
+  margin: 0;
+}
+
+.standardsTraining .frameParent19 {
+  justify-content: center;
+}
+
+.standardsTraining .frameParent20,
+.standardsTraining .frameParent21,
+.standardsTraining .frameParent22,
+.standardsTraining .frameParent23 {
+  min-height: 86px;
+}
+
+.standardsTraining .standardisedCurriculumParent {
+  min-width: 0;
+}
+
+.standardsTraining .standardisedCurriculum,
+.standardsTraining .alignLearningWith {
+  overflow-wrap: anywhere;
+}
+
+/* Three SVG cards */
+.standardsTraining .frameParent25,
+.standardsTraining .turnStandardsIntoLearningEParent {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.standardsTraining .frameParent26 {
+  margin: 0 auto;
+  align-items: start;
+}
+
+.standardsTraining .frameParent27 {
+  flex: none;
+  overflow: visible;
+}
+
+.standardsTraining .frameParent27::before {
+  display: block;
+}
+
+/* Ensure all content remains above the SVG card background. */
+.standardsTraining .frameParent27 > * {
+  position: relative;
+  z-index: 2;
+}
+
+.standardsTraining .frameParent27 .frameWrapper2,
+.standardsTraining .frameParent27 .frameWrapper3,
+.standardsTraining .frameParent27 .frameWrapper6 {
+  position: absolute;
+}
+
+/* Final CTA */
+.standardsTraining > .frameParent48,
+.standardsTraining .frameParent49,
+.standardsTraining .frameWrapper11,
+.standardsTraining .buildAFutureReadyLearningParent {
+  height: auto !important;
+}
+
+.standardsTraining > .frameParent48 {
+  overflow: visible;
+}
+
+.standardsTraining .ellipseImageFrame {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+}
+
+/* ==========================================================================
+   TABLET CENTERING
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+  .standardsTraining .frameParent9 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .standardsTraining .frameParent10 {
+    max-width: 520px;
+  }
+
+  .standardsTraining > .frameParent16 {
+    text-align: center;
+  }
+
+  .standardsTraining .frameParent17,
+  .standardsTraining .frameParent18 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .standardsTraining .frameParent19 {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .standardsTraining .frameParent26 {
+    justify-items: center;
+  }
+
+  .standardsTraining .frameParent27 {
+    justify-self: center;
+  }
+}
+
+/* ==========================================================================
+   MOBILE CENTERING + OVERLAP PREVENTION
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .standardsTraining {
+    align-items: center;
+  }
+
+  .standardsTraining > .frameParent2,
+  .standardsTraining > .frameParent16,
+  .standardsTraining > .frameParent24,
+  .standardsTraining > .frameParent48 {
+    align-items: center;
+  }
+
+  .standardsTraining > .frameParent2 > .frameParent3 {
+    width: 100%;
+  }
+
+  .standardsTraining .image21Parent {
+    width: 100%;
+  }
+
+  .standardsTraining .frameParent4,
+  .standardsTraining .frameParent5,
+  .standardsTraining .frameParent6 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .standardsTraining .frameParent7 {
+    margin: 0 auto;
+  }
+
+  .standardsTraining .outcomeBasedLearningWrapper,
+  .standardsTraining .facultyDevelopmentWrapper,
+  .standardsTraining .accreditationReadyWrapper {
+    flex-shrink: 0;
+  }
+
+  .standardsTraining .frameParent8 {
+    width: 100%;
+  }
+
+  .standardsTraining .frameParent9,
+  .standardsTraining .frameParent10 {
+    align-items: center;
+  }
+
+  .standardsTraining .frameParent11 {
+    width: min(100%, 560px);
+    justify-content: flex-start;
+  }
+
+  .standardsTraining > .frameParent16 > .resourcesWrapper {
+    width: 100%;
+  }
+
+  .standardsTraining .frameParent19 {
+    width: min(100%, 620px);
+    margin: 0 auto;
+  }
+
+  .standardsTraining .frameParent20,
+  .standardsTraining .frameParent21,
+  .standardsTraining .frameParent22,
+  .standardsTraining .frameParent23 {
+    align-items: center;
+  }
+
+  .standardsTraining > .frameParent24 {
+    width: calc(100% - 32px);
+  }
+
+  .standardsTraining .frameParent25,
+  .standardsTraining .turnStandardsIntoLearningEParent {
+    width: 100%;
+  }
+
+  .standardsTraining .frameParent26 {
+    width: 100%;
+    overflow: visible;
+  }
+
+  /* Reserve the full visual height of every card; no negative margins. */
+  .standardsTraining .frameParent27,
+  .standardsTraining .frameParent27:nth-child(3) {
+    width: 400px;
+    height: 470px;
+    max-width: none;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .standardsTraining > .frameParent48 {
+    width: calc(100% - 32px);
+  }
+
+  .standardsTraining .ellipseImageFrame {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   SMALL MOBILE
+   ========================================================================== */
+
+@media (max-width: 430px) {
+  .standardsTraining > .frameDiv,
+  .standardsTraining > .frameParent2,
+  .standardsTraining > .frameParent16,
+  .standardsTraining > .frameParent24,
+  .standardsTraining > .frameParent48 {
+    width: calc(100% - 24px);
+  }
+
+  .standardsTraining .frameParent11 {
+    align-items: center;
+  }
+
+  .standardsTraining .alignWithIndustry,
+  .standardsTraining .improveLearningOutcomes,
+  .standardsTraining .supportAccreditationAnd,
+  .standardsTraining .scaleFutureReadyLearning {
+    width: calc(100% - 82px);
+  }
+
+  /* Scale the complete SVG card and reserve matching layout height. */
+  .standardsTraining .frameParent27,
+  .standardsTraining .frameParent27:nth-child(3) {
+    width: 400px;
+    height: 470px;
+    transform: scale(0.88) !important;
+    transform-origin: top center;
+    margin-bottom: -56px !important;
+  }
+
+  .standardsTraining .frameParent26 {
+    gap: 44px;
+  }
+}
+
+@media (max-width: 380px) {
+  .standardsTraining .frameParent27,
+  .standardsTraining .frameParent27:nth-child(3) {
+    transform: scale(0.8) !important;
+    margin-bottom: -94px !important;
+  }
+
+  .standardsTraining .frameParent26 {
+    gap: 52px;
+  }
+}
+
+/* ==========================================================================
+   FINAL HERO RESPONSIVE FIX
+   Desktop design above 768px is unchanged.
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* The outer hero card owns the mobile background and rounded shape. */
+  .standardsTraining > .frameParent2 > .frameParent3 {
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 24px 16px 32px !important;
+    border-radius: 28px;
+    overflow: hidden !important;
+  }
+
+  /* Remove the desktop half-frame shape that was covering mobile content. */
+  .standardsTraining .image21Parent {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  .standardsTraining .frameParent4 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px !important;
+    text-align: center;
+    order: 1;
+    box-sizing: border-box;
+  }
+
+  .standardsTraining .frameParent5,
+  .standardsTraining .frameParent6 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px !important;
+  }
+
+  .standardsTraining .frameIcon {
+    margin: 0 auto;
+  }
+
+  .standardsTraining .buildIndustryReadyLearningContainer {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+  }
+
+  .standardsTraining .improveLearningQuality {
+    width: 100% !important;
+    max-width: 360px;
+    height: auto !important;
+    margin: 0 auto !important;
+    font-size: 19px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  .standardsTraining .frameChild2 {
+    flex-shrink: 0;
+    margin: 0 auto 4px !important;
+  }
+
+  /* Put the arrows between their corresponding data boxes. */
+  .standardsTraining .frameParent7 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    row-gap: 16px !important;
+    order: 2;
+  }
+
+  .standardsTraining .frameParent7 > .outcomeBasedLearningWrapper {
+    grid-row: 1;
+  }
+
+  .standardsTraining .frameParent7 > .arrowDownBigIcon {
+    grid-row: 2;
+  }
+
+  .standardsTraining .frameParent7 > .facultyDevelopmentWrapper {
+    grid-row: 3;
+  }
+
+  .standardsTraining .frameParent7 > .arrowDownBigIcon2 {
+    grid-row: 4;
+  }
+
+  .standardsTraining .frameParent7 > .accreditationReadyWrapper {
+    grid-row: 5;
+  }
+
+  .standardsTraining .outcomeBasedLearningWrapper,
+  .standardsTraining .facultyDevelopmentWrapper,
+  .standardsTraining .accreditationReadyWrapper {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: min(100%, 491px) !important;
+    height: auto !important;
+    min-height: 84px;
+    margin: 0 !important;
+    padding: 18px 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .standardsTraining .outcomeBasedLearning,
+  .standardsTraining .facultyDevelopment {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0;
+    font-size: 23px;
+    line-height: 31px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .standardsTraining .arrowDownBigIcon,
+  .standardsTraining .arrowDownBigIcon2 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 46px !important;
+    height: 46px !important;
+    margin: 0 !important;
+    display: block;
+  }
+
+  /* Desktop decorative layers are not needed in compact flow. */
+  .standardsTraining .image21,
+  .standardsTraining .groupYoungBusinesspeopleUsi,
+  .standardsTraining .image20 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .standardsTraining > .frameParent2 > .frameParent3 {
+    padding: 20px 12px 28px !important;
+    border-radius: 24px;
+  }
+
+  .standardsTraining .image21Parent {
+    gap: 28px !important;
+  }
+
+  .standardsTraining .frameParent4 {
+    gap: 24px !important;
+    padding-inline: 0;
+  }
+
+  .standardsTraining .buildIndustryReadyLearningContainer {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  .standardsTraining .improveLearningQuality {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .standardsTraining .frameParent7 {
+    row-gap: 14px !important;
+  }
+
+  .standardsTraining .outcomeBasedLearningWrapper,
+  .standardsTraining .facultyDevelopmentWrapper,
+  .standardsTraining .accreditationReadyWrapper {
+    width: 100% !important;
+    min-height: 80px;
+    padding: 16px 14px !important;
+  }
+
+  .standardsTraining .outcomeBasedLearning,
+  .standardsTraining .facultyDevelopment {
+    font-size: 21px;
+    line-height: 29px;
+  }
+
+  .standardsTraining .arrowDownBigIcon,
+  .standardsTraining .arrowDownBigIcon2 {
+    width: 42px !important;
+    height: 42px !important;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP HERO RESTORE
+   Restores the original desktop hero composition shown in the reference PNG.
+   Tablet/mobile rules at 768px and below remain unchanged.
+   ========================================================================== */
+
+@media (min-width: 769px) {
+  .standardsTraining > .frameParent2 > .frameParent3 {
+    position: relative !important;
+    width: 100% !important;
+    height: 614px !important;
+    min-height: 614px !important;
+    padding: 0 !important;
+    display: block !important;
+    overflow: hidden !important;
+    border-radius: 32px !important;
+    background-color: #dfe6e9 !important;
+    box-shadow:
+      inset -8px -8px 16px #ffffff,
+      inset 8px 8px 16px rgba(196, 196, 196, 0.8) !important;
+  }
+
+  .standardsTraining .image21Parent {
+    position: absolute !important;
+    top: 32px !important;
+    left: 32px !important;
+    width: 608px !important;
+    height: 550px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    overflow: hidden !important;
+    border-radius: 16px 100px 100px 16px !important;
+    background-color: #dfe6e9 !important;
+    box-shadow:
+      10px 10px 20px #c4c4c4,
+      -10px -10px 20px rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .standardsTraining .frameParent4 {
+    position: absolute !important;
+    top: calc(50% - 213px) !important;
+    left: 50px !important;
+    width: 508px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 45px !important;
+    text-align: left !important;
+  }
+
+  .standardsTraining .frameParent5 {
+    width: 100% !important;
+    height: 320px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  .standardsTraining .frameParent6 {
+    width: 100% !important;
+    height: 202px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  .standardsTraining .frameIcon {
+    margin: 0 !important;
+  }
+
+  .standardsTraining .buildIndustryReadyLearningContainer {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 48px !important;
+    line-height: 60px !important;
+    text-align: left !important;
+  }
+
+  .standardsTraining .build,
+  .standardsTraining .industryReady {
+    line-height: 60px !important;
+  }
+
+  .standardsTraining .improveLearningQuality {
+    width: 521px !important;
+    height: 85px !important;
+    margin: 0 !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+    text-align: left !important;
+  }
+
+  .standardsTraining .frameChild2 {
+    margin: 0 !important;
+  }
+
+  .standardsTraining .frameParent7 {
+    position: absolute !important;
+    top: 68px !important;
+    left: 739px !important;
+    width: 491px !important;
+    height: 481px !important;
+    margin: 0 !important;
+    display: block !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining .outcomeBasedLearningWrapper {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 491px !important;
+    height: 106px !important;
+    min-height: 106px !important;
+    padding: 32px !important;
+  }
+
+  .standardsTraining .facultyDevelopmentWrapper {
+    position: absolute !important;
+    top: 188px !important;
+    left: 0 !important;
+    width: 491px !important;
+    height: 106px !important;
+    min-height: 106px !important;
+    padding: 32px !important;
+  }
+
+  .standardsTraining .accreditationReadyWrapper {
+    position: absolute !important;
+    top: 375px !important;
+    left: 0 !important;
+    width: 491px !important;
+    height: 106px !important;
+    min-height: 106px !important;
+    padding: 32px !important;
+  }
+
+  .standardsTraining .outcomeBasedLearning,
+  .standardsTraining .facultyDevelopment {
+    width: 100% !important;
+    height: 42px !important;
+    margin: 0 !important;
+    font-size: 32px !important;
+    line-height: 42px !important;
+    white-space: nowrap !important;
+  }
+
+  .standardsTraining .arrowDownBigIcon {
+    position: absolute !important;
+    top: 118px !important;
+    left: 217px !important;
+    width: 58px !important;
+    height: 58px !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .standardsTraining .arrowDownBigIcon2 {
+    position: absolute !important;
+    top: 306px !important;
+    left: 217px !important;
+    width: 57px !important;
+    height: 57px !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .standardsTraining .image21,
+  .standardsTraining .groupYoungBusinesspeopleUsi,
+  .standardsTraining .image20 {
+    display: block !important;
+  }
+}
+
+/* ==========================================================================
+   ACCESSIBILITY FIXES
+   No visual layout or desktop/mobile design changes.
+   ========================================================================== */
+
+/* Do not make <main> a keyboard-inaccessible scrolling container. */
+.standardsTraining {
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+}
+
+/* Keyboard bypass method */
+.skipLink {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10000;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #31344b;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  transform: translateY(-180%);
+  transition: transform 0.2s ease;
+}
+
+.skipLink:focus {
+  transform: translateY(0);
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Allow the skip-link target to receive programmatic keyboard focus. */
+#main-content:focus {
+  outline: none;
+}
+
+/* Preserve the exact appearance after changing bold text to heading elements. */
+.buildIndustryReadyLearningContainer,
+.whyStandardsTraining,
+.benefitsOfEmployee,
+.turnStandardsIntoContainer {
+  margin: 0;
+}
+
+/* CENTER LEARNERS / INSTITUTIONS / FACULTY CARDS */
+@media (max-width: 600px) {
+  .standardsTraining .frameParent26 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .standardsTraining .frameParent27 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
