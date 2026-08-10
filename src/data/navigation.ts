@@ -28,7 +28,7 @@ const promoPlaceholderImage = "/images/header-promo-placeholder.jpg";
 
 export const navItems: NavItem[] = [
   { type: "link", label: "Home", href: "/", active: true },
-  { type: "link", label: "GenZGalaxy", href: "/GenZGalaxy" },
+  { type: "link", label: "GenZGalaxy", href: "/genzgalaxy" },
   {
     type: "simple",
     label: "NeuroLXP 2.1",
