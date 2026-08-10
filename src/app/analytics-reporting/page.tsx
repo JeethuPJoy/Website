@@ -324,7 +324,7 @@ const AnalyticsReporting: NextPage = () => {
               </div>
               <div className="frameParent25">
                 <div className="dashboardIconCircle">
-                  <Image className="dashboardListIcon" src="/icons/award-01.svg" width={32} height={32} alt="" aria-hidden="true" />
+                  <Image className="dashboardListIcon" src="/icons/award-01-red.svg" width={32} height={32} alt="" aria-hidden="true" />
                 </div>
                 <div className="gamificationProgress">Gamification progress</div>
               </div>
@@ -360,7 +360,7 @@ const AnalyticsReporting: NextPage = () => {
                     </div>
                   </div>
                   <div className="reportIconCircle">
-                    <Image className="reportCardIcon" src="/icons/user-02.svg" width={48} height={48} alt="" aria-hidden="true" />
+                    <Image className="reportCardIcon" src="/icons/user-02-blue.svg" width={48} height={48} alt="" aria-hidden="true" />
                   </div>
                 </div>
                 <div className="frameParent35">
@@ -373,7 +373,7 @@ const AnalyticsReporting: NextPage = () => {
                     </div>
                   </div>
                   <div className="reportIconCircle">
-                    <Image className="reportCardIcon" src="/icons/book-open-text.svg" width={48} height={48} alt="" aria-hidden="true" />
+                    <Image className="reportCardIcon" src="/icons/book-open-text-purple.svg" width={48} height={48} alt="" aria-hidden="true" />
                   </div>
                 </div>
               </div>
@@ -388,7 +388,7 @@ const AnalyticsReporting: NextPage = () => {
                     </div>
                   </div>
                   <div className="reportIconCircle">
-                    <Image className="reportCardIcon" src="/icons/chart-up.svg" width={48} height={48} alt="" aria-hidden="true" />
+                    <Image className="reportCardIcon" src="/icons/chart-up-purple.svg" width={48} height={48} alt="" aria-hidden="true" />
                   </div>
                 </div>
                 <div className="frameParent35">
@@ -417,7 +417,7 @@ const AnalyticsReporting: NextPage = () => {
                   </div>
                 </div>
                 <div className="reportIconCircle">
-                  <Image className="reportCardIcon" src="/icons/building.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <Image className="reportCardIcon" src="/icons/building-green.svg" width={48} height={48} alt="" aria-hidden="true" />
                 </div>
               </div>
               <div className="frameParent35">
@@ -430,7 +430,7 @@ const AnalyticsReporting: NextPage = () => {
                   </div>
                 </div>
                 <div className="reportIconCircle">
-                  <Image className="reportCardIcon" src="/icons/student.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <Image className="reportCardIcon" src="/icons/student-green.svg" width={48} height={48} alt="" aria-hidden="true" />
                 </div>
               </div>
             </div>
@@ -450,7 +450,7 @@ const AnalyticsReporting: NextPage = () => {
                 </div>
                 <div className="aiAnalyticsSpot">AI analytics spot struggling learners early, enabling timely, targeted support.</div>
               </div>
-              <Image className="maleCoworkersDoingPaperworkIcon" src="/icons/analytics image.png" width={763} height={421} sizes="(max-width: 768px) 100vw, 763px" alt="Two coworkers reviewing documents" />
+              <Image className="maleCoworkersDoingPaperworkIcon" src="/images/analytics image.png" width={763} height={421} sizes="(max-width: 768px) 100vw, 763px" alt="Two coworkers reviewing documents" />
             </div>
           </div>
         </div>

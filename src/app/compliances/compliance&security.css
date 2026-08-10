@@ -1,0 +1,5926 @@
+.complianceSecurity {
+  	width: 100%;
+  	min-height: auto;
+  	position: relative;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 36px;
+  	color: #31344b;
+  	font-family: 'Segoe UI';
+  	padding-bottom: 96px;
+  	box-sizing: border-box;
+}
+.complianceSecurityChild {
+  position: absolute;
+  top: 49px;
+  left: 50%;
+  width: 103.34vw;
+  min-width: 103.34vw;
+  max-width: none;
+  height: 587px;
+  transform: translateX(-50%);
+  object-fit: fill;
+  object-position: top center;
+  display: block;
+  z-index: 0;
+  pointer-events: none;
+}
+.frameParent {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 720px);
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 80px;
+  	overflow: hidden;
+  	font-size: 16px;
+  	font-family: Inter;
+}
+.frameChild {
+  	position: absolute;
+  	top: calc(50% - 22px);
+  	left: 1096px;
+  	width: 132px;
+  	height: 44px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.frameGroup {
+  	position: absolute;
+  	top: 18px;
+  	left: 32px;
+  	width: 1376px;
+  	height: 45px;
+  	flex-shrink: 0;
+}
+.logo01SynapseSpark1Parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	display: flex;
+  	align-items: center;
+  	gap: 130px;
+}
+.logo01SynapseSpark1Icon {
+  	height: 45px;
+  	width: 120px;
+  	position: relative;
+  	object-fit: cover;
+}
+.frameContainer {
+  	display: flex;
+  	align-items: center;
+  	gap: 30px;
+}
+.homeParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+}
+.home {
+  	position: relative;
+  	line-height: 24px;
+  	font-weight: 600;
+}
+.arrowDown01Icon {
+  	height: 16px;
+  	width: 16px;
+  	position: relative;
+}
+.featuresParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	color: #2d4cc8;
+}
+.features {
+  	position: relative;
+  	line-height: 24px;
+}
+.signInHelpWrapper {
+  	position: absolute;
+  	top: calc(50% - 22.5px);
+  	left: 1244px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	border-radius: 32px;
+  	background-color: #dfe6e9;
+  	width: 132px;
+  	height: 44px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 16px 32px;
+  	box-sizing: border-box;
+  	text-align: center;
+  	color: #2d4cc8;
+  	font-family: 'Segoe UI';
+}
+.signInHelp {
+  	width: 97px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 28px;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: flex-end;
+  	justify-content: center;
+  	flex-shrink: 0;
+}
+.frameItem {
+  	position: absolute;
+  	top: 6px;
+  	left: 11px;
+  	width: 1429px;
+  	height: 592.4px;
+  	flex-shrink: 0;
+}
+.frameInner {
+  	position: absolute;
+  	top: 76px;
+  	left: 4px;
+  	width: 1436px;
+  	height: 839px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameDiv {
+  	position: absolute;
+  	top: 112px;
+  	left: 80px;
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	font-size: 16px;
+  	color: #2f3547;
+  	font-family: Inter;
+}
+.featuresWrapper {
+  	display: flex;
+  	align-items: center;
+}
+.learningEcoSystem {
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 24px;
+}
+.arrowRightDoubleGroup {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	color: #243fa8;
+}
+.complianceSecurityInner {
+  	position: absolute;
+  	top: 168px;
+  	left: calc(50% - 472px);
+  	width: 945px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	text-align: center;
+  	font-size: 48px;
+}
+.frameParent2 {
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 40px;
+  	max-width: 100%;
+}
+.frameWrapper {
+  	align-self: stretch;
+  	height: 280px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.frameWrapper2 {
+  	width: 100%;
+  	height: 205px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+}
+.frameParent3 {
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 24px;
+  	max-width: 100%;
+  	flex-shrink: 0;
+}
+.frameParent4 {
+  	align-self: stretch;
+  	height: 192px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameIcon {
+  	width: 309.1px;
+  	height: 50.2px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.secureLearningSmarterContainer {
+  	width: 1020px;
+  	height: 123px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 60px;
+  	display: inline-block;
+  	flex-shrink: 0;
+  	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.secureLearningSmarter {
+  	line-height: 60px;
+}
+.greaterConfidence {
+  	color: #2d4cc8;
+  	line-height: 60px;
+}
+.neurolxpCombinesCompliance {
+  	width: 844px;
+  	height: 64px;
+  	position: relative;
+  	font-size: 24px;
+  	letter-spacing: 0.03em;
+  	line-height: 32px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent5 {
+  	display: flex;
+  	align-items: center;
+  	gap: 32px;
+  	text-align: left;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameChild2 {
+  	height: 60.2px;
+  	width: 200px;
+  	position: relative;
+  	border-radius: 8px;
+  	object-fit: contain;
+}
+.frameWrapper3 {
+  	height: 60px;
+  	width: 210px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	border-radius: 8px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 16px 32px;
+  	box-sizing: border-box;
+}
+.startLearningWrapper {
+  	width: 140px;
+  	display: flex;
+  	align-items: center;
+}
+.startLearning {
+  	width: 147px;
+  	position: relative;
+  	line-height: 30px;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.frameParent6 {
+  position: absolute;
+  top: 732px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  display: grid;
+  grid-template-columns: 470px minmax(0, 743px);
+  align-items: center;
+  gap: 67px;
+  box-sizing: border-box;
+}
+
+.frameParent7 {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.frameParent8 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.frameParent9 {
+  width: 100%;
+  min-height: 174px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.complianceTrainingBadge {
+  min-width: 289px;
+  height: 56px;
+  padding: 0 28px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: inset -8px -8px 16px #ffffff, inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.structuredTrainingFor {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.neurolxpDeliversStructured {
+  width: 100%;
+  margin: 0;
+  color: #2f3547;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.frameParent10 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.frameParent11 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 24px;
+}
+
+.complianceStatus {
+  height: 60px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #ffffff, 8px 8px 16px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.complianceStatusBlue { color: #2d4cc8; }
+.complianceStatusPurple { color: #67096e; }
+.complianceStatusPink { color: #bf1869; }
+.complianceStatusGold { color: #907507; }
+
+.frameWrapper4 {
+  width: 743px;
+  height: 587px;
+  position: relative;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #ffffff, 8px 8px 16px #c4c4c4;
+  overflow: hidden;
+}
+
+.frameWrapper4::before {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border-radius: 24px;
+  box-shadow: inset -8px -8px 16px rgba(255,255,255,.9),
+              inset 8px 8px 16px rgba(196,196,196,.9);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.frameChild8 {
+  position: absolute;
+  inset: 16px;
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.frameParent13 {
+  position: absolute;
+  top: 1415px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.smartComplianceHeader {
+  width: min(1020px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.smartComplianceBadge {
+  min-width: 422px;
+  height: 56px;
+  padding: 0 30px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: inset -8px -8px 16px #ffffff,
+              inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.centralizeMonitorStayContainer {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.centralizeMonitor {
+  color: #31344b;
+}
+
+.stayReady {
+  color: #2d4cc8;
+}
+
+.simplifyComplianceTraining {
+  width: min(940px, 100%);
+  margin: 0;
+  color: #2f3547;
+  font-size: 24px;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
+.smartComplianceCards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.smartComplianceCard {
+  grid-column: span 2;
+  height: 206px;
+  position: relative;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow: -10px -10px 20px #ffffff,
+               10px 10px 20px #c4c4c4;
+  overflow: hidden;
+}
+
+.smartComplianceCard:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.smartComplianceCard:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+.smartComplianceCardInner {
+  position: absolute;
+  inset: 16px;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow: inset -8px -8px 16px #ffffff,
+              inset 8px 8px 16px #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 20px 28px;
+  box-sizing: border-box;
+}
+
+.smartComplianceIconShadow {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.95),
+              inset 6px 6px 10px rgba(196, 196, 196, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.smartComplianceIconCircle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smartCompliancePink { background-color: #bf1869; }
+.smartCompliancePurple { background-color: #67096e; }
+.smartComplianceGold { background-color: #907507; }
+.smartComplianceTeal { background-color: #046f73; }
+.smartComplianceOrange { background-color: #c05512; }
+
+.smartComplianceIcon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.smartComplianceCardTitle {
+  margin: 0;
+  color: #111111;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.frameParent24 {
+  	position: absolute;
+  	top: 2300px;
+  	left: calc(50% - 628px);
+  	width: 1280px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 50px;
+  	text-align: center;
+}
+.frameWrapper19 {
+  	width: 945px;
+  	height: 138px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.frameWrapper20 {
+  	width: 100%;
+  	height: 157px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+  	flex-shrink: 0;
+}
+.frameWrapper21 {
+  	width: 100%;
+  	height: 157px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+}
+.frameWrapper22 {
+  	width: 100%;
+  	height: 205px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+  	flex-shrink: 0;
+}
+.frameParent25 {
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 24px;
+  	max-width: 100%;
+}
+.industrySpecificComplianceWrapper {
+  	align-self: stretch;
+  	height: 50px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.industrySpecificCompliance {
+  	width: 1020px;
+  	height: 50px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 50px;
+  	display: inline-block;
+  	flex-shrink: 0;
+  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frameParent26 {
+  	width: 1272px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 30px;
+  	font-size: 24px;
+  	color: #fff;
+}
+.frameParent27 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 36px;
+}
+.frameParent28 {
+  	height: 306px;
+  	width: 400px;
+  	position: relative;
+}
+.frameChild15 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 100px;
+  	background-color: #dfe6e9;
+  	width: 400px;
+  	height: 306px;
+  	overflow: hidden;
+}
+.frameWrapper23 {
+  	position: absolute;
+  	top: 16px;
+  	left: calc(50% - 184px);
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 100px;
+  	background-color: #dfe6e9;
+  	border: 1px solid #bf1869;
+  	box-sizing: border-box;
+  	width: 368px;
+  	height: 274px;
+  	overflow: hidden;
+}
+.frameParent29 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 368px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.workplaceSafetyWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #bf1869;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.workplaceSafety {
+  	position: absolute;
+  	top: calc(50% - 18px);
+  	left: calc(50% - 102px);
+  	letter-spacing: 0.02em;
+  	line-height: 36px;
+  	display: inline-block;
+  	width: 205px;
+}
+.healthSafetyAnd {
+  	width: 294px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	white-space: pre-wrap;
+  	display: inline-block;
+}
+.frameWrapper24 {
+  	position: absolute;
+  	top: 16px;
+  	left: calc(50% - 184px);
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 100px;
+  	background-color: #dfe6e9;
+  	width: 368px;
+  	height: 274px;
+  	overflow: hidden;
+}
+.dataPrivacyWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #046f73;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.dataProtectionAnd {
+  	width: 322px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	white-space: pre-wrap;
+  	display: inline-block;
+}
+.corporateEthicsWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #2d4cc8;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.corporateEthics {
+  	position: absolute;
+  	top: calc(50% - 18px);
+  	left: calc(50% - 102px);
+  	letter-spacing: 0.02em;
+  	line-height: 36px;
+  	display: inline-block;
+  	width: 205px;
+  	height: 36px;
+}
+.codeOfConduct {
+  	width: 310px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	display: inline-block;
+}
+.workplaceConductWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #67096e;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.workplaceConduct {
+  	position: absolute;
+  	top: calc(50% - 18px);
+  	left: calc(50% - 116px);
+  	letter-spacing: 0.02em;
+  	line-height: 36px;
+  	display: inline-block;
+  	width: 233px;
+}
+.antiHarassmentAndWorkplace {
+  	width: 308px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	display: inline-block;
+}
+.financialComplianceWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #c05512;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.financialCompliance {
+  	position: absolute;
+  	top: calc(50% - 18px);
+  	left: calc(50% - 128px);
+  	letter-spacing: 0.02em;
+  	line-height: 36px;
+  	display: inline-block;
+  	width: 256px;
+}
+.sustainabilityWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #907507;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent41 {
+  	position: absolute;
+  	top: 3120px;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	width: min(1274px, calc(100% - 64px));
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 120px;
+}
+.frameParent42 {
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: 470px 622px;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 80px;
+}
+.frameWrapper29 {
+  	width: 470px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+}
+.frameChild21 {
+  	width: 408.7px;
+  	height: 50.3px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+}
+
+.engagingComplianceBadge {
+  min-width: 408px;
+  height: 56px;
+  padding: 0 28px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: inset -8px -8px 16px #ffffff,
+              inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.makeMandatoryTrainingContainer {
+  	width: 472px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+}
+.makeMandatoryTrainingContainer2 {
+  	width: 100%;
+}
+.makeComplianceLearning {
+  	width: 419px;
+  	position: relative;
+  	font-size: 24px;
+  	letter-spacing: 0.03em;
+  	line-height: 32px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent45 {
+  	width: 622px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 50px;
+  	font-size: 20px;
+  	color: #2f3547;
+}
+.frameParent46 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 50px;
+}
+.frameParent47 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 50px;
+}
+.frameWrapper30 {
+  	height: 132px;
+  	width: 286px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 16px;
+  	border: 2px dashed #bf1869;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent48 {
+  	position: absolute;
+  	top: 21px;
+  left: 16px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.mandatoryIconBox {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 88px;
+  border-radius: 18px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #ffffff,
+               8px 8px 16px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mandatoryIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.frameChild22 {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.scenarioBasedLearning {
+  	width: 152px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 28px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper31 {
+  	height: 132px;
+  	width: 286px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 16px;
+  	border: 2px dashed #2d4cc8;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent49 {
+  	position: absolute;
+  	top: 21px;
+  left: 16px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameWrapper32 {
+  	width: 286px;
+  	height: 130px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 16px;
+  	border: 2px dashed #67096e;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameWrapper33 {
+  	height: 132px;
+  	width: 286px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 16px;
+  	border: 2px dashed #046f73;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameWrapper34 {
+  	height: 132px;
+  	width: 286px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 16px;
+  	border: 2px dashed #907507;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent54 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 50px;
+  	text-align: center;
+}
+.frameChild27 {
+  	width: 465.2px;
+  	height: 50.4px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.frameParent57 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 36px;
+  	text-align: left;
+  	font-size: 24px;
+}
+.frameParent59 {
+  	width: 400px;
+  	display: flex;
+  	align-items: center;
+  	gap: 16px;
+}
+.frameChild28 {
+  	height: 70.1px;
+  	width: 70.1px;
+  	position: relative;
+}
+.courseCompletionRates {
+  	height: 37px;
+  	width: 305px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent60 {
+  	width: 400px;
+  	display: flex;
+  	align-items: center;
+  	gap: 16px;
+  	text-align: center;
+}
+.certificationStatus {
+  	height: 37px;
+  	width: 233px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.assessmentPerformance {
+  	height: 37px;
+  	width: 302px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent62 {
+  	display: flex;
+  	align-items: center;
+  	gap: 36px;
+}
+.trainingParticipation {
+  	height: 37px;
+  	width: 285px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameChild32 {
+  	height: 70.1px;
+  	width: 70.1px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.departmentComplianceMetrics {
+  	height: 37px;
+  	width: 396px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.complianceSecurityInner2 {
+  	position: absolute;
+  	top: 4275px;
+  	left: calc(50% - 640px);
+  	width: 1280px;
+  	height: 628px;
+}
+.frameWrapper39 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 50px;
+  	background-color: #dfe6e9;
+  	width: 1280px;
+  	height: 628px;
+  	overflow: hidden;
+}
+.frameParent65 {
+  	position: absolute;
+  	top: 32px;
+  	left: 32px;
+  	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	border-radius: 8px;
+  	background-color: #dfe6e9;
+  	width: 1216px;
+  	height: 564px;
+  	overflow: hidden;
+}
+.frameParent66 {
+  	position: absolute;
+  	top: calc(50% - 158.52px);
+  	left: 80px;
+  	width: 500px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+  	flex-shrink: 0;
+}
+.frameParent67 {
+  	align-self: stretch;
+  	height: 174px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+}
+.frameChild33 {
+  	width: 444.1px;
+  	height: 50.3px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+}
+.maintainVerifiableTraining {
+  	align-self: stretch;
+  	height: 100px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 50px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.issueDigitalCertificates {
+  	width: 468px;
+  	position: relative;
+  	font-size: 28px;
+  	letter-spacing: 0.03em;
+  	line-height: 40px;
+  	color: #2f3547;
+  	display: inline-block;
+}
+.rectangleIcon {
+  	position: absolute;
+  	top: calc(50% - 281.11px);
+  	left: 571px;
+  	width: 706.4px;
+  	height: 563px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.complianceSecurityItem {
+  	position: absolute;
+  	top: 5100.02px;
+  	left: 257.6px;
+  	width: 1105.2px;
+  	height: 100px;
+  	transform:  rotate(90.6deg);
+  	transform-origin: 0 0;
+}
+.frameParent68 {
+  	position: absolute;
+  	top: 4951.11px;
+  	left: 125.3px;
+  	width: 1189.4px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 50px;
+  	text-align: center;
+}
+.frameWrapper40 {
+  	width: 786px;
+  	height: 191px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.frameWrapper41 {
+  	width: 100%;
+  	height: 191px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+}
+.frameWrapper42 {
+  	width: 100%;
+  	height: 280px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+  	flex-shrink: 0;
+}
+.frameChild34 {
+  	width: 257.1px;
+  	height: 50.2px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.frameParent71 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 42px;
+  	text-align: left;
+  	font-size: 24px;
+}
+.frameChild35 {
+  	height: 2362px;
+  	width: 108.1px;
+  	position: relative;
+}
+.frameParent72 {
+  	width: 1039.3px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 32px;
+}
+.frameWrapper44 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+}
+.frameWrapper45 {
+  	width: 1039px;
+  	height: 434px;
+  	box-shadow: -4px -4px 8px #fff inset, 4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	padding: 32px 30px 32px 32px;
+  	box-sizing: border-box;
+}
+.frameParent73 {
+  	width: 975px;
+  	height: 370px;
+  	position: relative;
+}
+.frameChild36 {
+  	position: absolute;
+  	top: -11.75px;
+  	left: -1.29px;
+  	width: 720.1px;
+  	height: 85.6px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.frameWrapper46 {
+  	position: absolute;
+  	top: 105.59px;
+  	right: 0.6px;
+  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	border-right: 3px solid #bf1869;
+  	border-left: 3px solid #bf1869;
+  	box-sizing: border-box;
+  	width: 977px;
+  	height: 260px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent74 {
+  	position: absolute;
+  	top: calc(50% - 108px);
+  	left: 24px;
+  	width: 429px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 16px;
+}
+.frameParent75 {
+  	align-self: stretch;
+  	height: 60px;
+  	display: flex;
+  	align-items: center;
+  	gap: 16px;
+}
+.encryptedDataStorage {
+  	height: 37px;
+  	width: 596px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.protectionOfLearner {
+  	height: 37px;
+  	width: 539px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.secureManagementOf {
+  	height: 37px;
+  	width: 648px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper48 {
+  	width: 1039px;
+  	height: 498px;
+  	box-shadow: -4px -4px 8px #fff inset, 4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	padding: 32px 30px 32px 32px;
+  	box-sizing: border-box;
+}
+.frameWrapper49 {
+  	width: 975px;
+  	height: 165px;
+  	position: relative;
+}
+.frameWrapper50 {
+  	position: absolute;
+  	top: -11.75px;
+  	left: 0px;
+  	width: 977px;
+  	display: flex;
+  	align-items: flex-start;
+  	padding: 10px;
+  	box-sizing: border-box;
+  	flex-shrink: 0;
+}
+.frameParent78 {
+  	width: 967px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+  	flex-shrink: 0;
+}
+.frameParent79 {
+  	width: 722px;
+  	height: 153px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+}
+.frameChild40 {
+  	align-self: stretch;
+  	height: 85.6px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	object-fit: contain;
+}
+.frameChild41 {
+  	width: 644.1px;
+  	height: 43px;
+  	object-fit: contain;
+}
+.frameWrapper51 {
+  	align-self: stretch;
+  	height: 260px;
+  	position: relative;
+  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	border-right: 3px solid #2d4cc8;
+  	border-left: 3px solid #2d4cc8;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.controlViewingEditing {
+  	height: 37px;
+  	width: 618px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameChild45 {
+  	position: absolute;
+  	top: -11.75px;
+  	left: -1.29px;
+  	width: 933.1px;
+  	height: 86px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.frameWrapper54 {
+  	position: absolute;
+  	top: 105.59px;
+  	right: 0.6px;
+  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	border-right: 3px solid #67096e;
+  	border-left: 3px solid #67096e;
+  	box-sizing: border-box;
+  	width: 977px;
+  	height: 260px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameWrapper57 {
+  	position: absolute;
+  	top: 105.59px;
+  	right: 0.6px;
+  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	border-right: 3px solid #c05512;
+  	border-left: 3px solid #c05512;
+  	box-sizing: border-box;
+  	width: 977px;
+  	height: 260px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameWrapper60 {
+  	position: absolute;
+  	top: 105.59px;
+  	right: 0.6px;
+  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	border-right: 3px solid #2a7308;
+  	border-left: 3px solid #2a7308;
+  	box-sizing: border-box;
+  	width: 977px;
+  	height: 260px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent99 {
+  	position: absolute;
+  	top: 7650.11px;
+  	left: 81px;
+  	width: 1254px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 50px;
+  	text-align: center;
+}
+.frameWrapper61 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.frameWrapper63 {
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+}
+.frameWrapper64 {
+  	width: 100%;
+  	height: 132px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+}
+.neurolxpEnablesSecure {
+  	width: 789px;
+  	height: 64px;
+  	position: relative;
+  	font-size: 24px;
+  	letter-spacing: 0.03em;
+  	line-height: 32px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent101 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 50px;
+  	font-size: 24px;
+}
+.frameParent102 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 40px;
+}
+.frameParent103 {
+  	height: 158px;
+  	width: 282px;
+  	position: relative;
+}
+.frameChild57 {
+  	position: absolute;
+  	top: 0px;
+  	left: -1.5px;
+  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
+  	border-radius: 32px;
+  	background-color: #dfe6e9;
+  	width: 286px;
+  	height: 161px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent104 {
+  	position: absolute;
+  	top: calc(50% - 57px);
+  	left: calc(50% - 92px);
+  	width: 184px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 8px;
+  	flex-shrink: 0;
+}
+.universities {
+  	align-self: stretch;
+  	position: relative;
+  	line-height: 36px;
+}
+.corporateTraining {
+  	width: 226px;
+  	position: relative;
+  	line-height: 36px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.financialServices {
+  	width: 204px;
+  	position: relative;
+  	line-height: 36px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.complianceSecurityInner3 {
+  	position: absolute;
+  	top: 8300.11px;
+  	left: calc(50% - 650px);
+  	width: 1300px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	text-align: center;
+  	font-size: 48px;
+}
+.frameParent120 {
+  	width: 1002px;
+  	height: 259px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.frameChild73 {
+  	width: 188.7px;
+  	height: 50.1px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+}
+.secureLearningSmarterComplParent {
+  	align-self: stretch;
+  	height: 146px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.secureLearningSmarterContainer2 {
+  	align-self: stretch;
+  	height: 65px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 65px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.secureLearning {
+  	line-height: 65px;
+}
+.smarterCompliance {
+  	color: #2d4cc8;
+  	line-height: 65px;
+}
+.neurolxpHelpsOrganizations {
+  	align-self: stretch;
+  	height: 80px;
+  	position: relative;
+  	font-size: 28px;
+  	letter-spacing: 0.03em;
+  	line-height: 40px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent121 {
+  	position: absolute;
+  	top: 8655.11px;
+  	left: calc(50% - 720px);
+  	width: 1440px;
+  	height: 501px;
+  	font-size: 26px;
+  	color: #2f3547;
+}
+.frameParent122 {
+  	position: absolute;
+  	bottom: -0.01px;
+  	left: calc(50% - 720px);
+  	box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 459px;
+  	overflow: hidden;
+}
+.frameParent123 {
+  	position: absolute;
+  	top: 49.81px;
+  	left: 53.96px;
+  	width: 1339.5px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameParent124 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 35px;
+}
+.frameParent125 {
+  	width: 676px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+  	flex-shrink: 0;
+}
+.logo01SynapseSpark1Group {
+  	width: 577px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.logo01SynapseSpark1Icon2 {
+  	width: 299px;
+  	height: 112px;
+  	position: relative;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.frameParent126 {
+  	display: flex;
+  	align-items: center;
+  	gap: 14px;
+  	flex-shrink: 0;
+}
+.onePlatformParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 10px;
+}
+.onePlatform {
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 34px;
+  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sparklesIcon {
+  	height: 23px;
+  	width: 23px;
+  	position: relative;
+}
+.prgeeqGlobalSolutionsPrivatParent {
+  	width: 459px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 4px;
+  	font-size: 16px;
+}
+.prgeeqGlobalSolutions {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 24px;
+}
+.prestigeAtlanta1012Container {
+  	align-self: stretch;
+  	height: 77px;
+  	position: relative;
+  	line-height: 24px;
+  	display: flex;
+  	align-items: flex-end;
+  	flex-shrink: 0;
+}
+.blankLine {
+  	line-height: 24px;
+}
+.frameParent127 {
+  	width: 631px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	gap: 24px;
+  	flex-shrink: 0;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameParent128 {
+  	width: 619px;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 32px;
+}
+.aboutUsParent {
+  	width: 123px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.aboutUs {
+  	width: 93px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+}
+.ourMissionParent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	font-size: 20px;
+  	color: #2f3547;
+}
+.ourMission {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.quickLinksParent {
+  	width: 207px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.quickLinks {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.neurolxpParent {
+  	height: 181px;
+  	width: 205px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.neurolxp {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	white-space: pre-wrap;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.ourCustomersGroup {
+  	width: 221px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	flex-shrink: 0;
+  	font-size: 20px;
+  	color: #2f3547;
+}
+.smartContentCreation {
+  	width: 229px;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.frameParent129 {
+  	width: 392.4px;
+  	height: 80.1px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameChild74 {
+  	height: 80.1px;
+  	width: 80.1px;
+  	position: relative;
+}
+.copyright2026 {
+  	align-self: stretch;
+  	height: 47px;
+  	position: relative;
+  	font-size: 16px;
+  	letter-spacing: -0.03em;
+  	line-height: 56px;
+  	font-weight: 600;
+  	color: #2d4cc8;
+  	text-align: center;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper66 {
+  	position: absolute;
+  	bottom: 0px;
+  	left: calc(50% - 720px);
+  	box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 459px;
+  	overflow: hidden;
+}
+.frameParent134 {
+  	width: 631px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	position: relative;
+  	isolation: isolate;
+  	gap: 24px;
+  	flex-shrink: 0;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameParent135 {
+  	width: 619px;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 32px;
+  	z-index: 0;
+  	flex-shrink: 0;
+}
+.ourMissionGroup {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	font-size: 18px;
+  	color: #2f3547;
+}
+.neurolxpGroup {
+  	display: flex;
+  	align-items: flex-start;
+  	flex-shrink: 0;
+}
+.neurolxp2 {
+  	height: 26px;
+  	width: 103px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.neurolxpTxt {
+  	width: 100%;
+  	white-space: pre-wrap;
+}
+.neurolxp3 {
+  	line-height: 30px;
+}
+.span {
+  	font-size: 12px;
+  	line-height: 30px;
+}
+.tm {
+  	height: 17px;
+  	width: 23px;
+  	position: relative;
+  	font-size: 12px;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.ourCustomersContainer {
+  	width: 221px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	flex-shrink: 0;
+  	font-size: 18px;
+  	color: #2f3547;
+}
+.frameParent137 {
+  	width: 392.4px;
+  	height: 80.1px;
+  	margin: 0 !important;
+  	position: absolute;
+  	top: 217.19px;
+  	left: 135.04px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+  	z-index: 1;
+  	flex-shrink: 0;
+}
+.frameChild78 {
+  	height: 80.1px;
+  	width: 80.1px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.frameChild83 {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 30.07px);
+  	border-radius: 32px;
+  	width: 59.1px;
+  	height: 92px;
+  	object-fit: contain;
+}
+.complianceSecurityChild2 {
+  	position: absolute;
+  	top: 2112px;
+  	left: calc(50% - 720px);
+  	background: linear-gradient(90deg, #bf1869, #2d4cc8);
+  	width: 1440px;
+  	height: 5px;
+  	overflow: hidden;
+}
+
+
+/* Hero section SVG and visible content */
+
+.frameParent { z-index: 20; }
+.frameDiv { z-index: 3; }
+
+.complianceSecurityInner {
+  top: 156px;
+  z-index: 2;
+}
+
+.heroBadge {
+  min-width: 309px;
+  min-height: 50px;
+  padding: 8px 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+.frameParent4 {
+  height: auto;
+}
+
+.secureLearningSmarterContainer {
+  display: block;
+  height: auto;
+  margin: 0;
+}
+
+.neurolxpCombinesCompliance {
+  height: auto;
+}
+
+.frameParent5 {
+  position: relative;
+  z-index: 3;
+}
+
+.heroButton {
+  width: 210px;
+  min-height: 60px;
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 8px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  font-family: 'Segoe UI';
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.heroButtonSecondary { color: #31344b; }
+.heroButtonPrimary { color: #2d4cc8; }
+.heroButton:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 4px;
+}
+.heroButton:active {
+  box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px #c6c6c9;
+}
+
+@media (max-width: 1024px) {
+  .complianceSecurityInner {
+    left: 50%;
+    width: min(90vw, 945px);
+    transform: translateX(-50%);
+  }
+  .secureLearningSmarterContainer {
+    width: 100%;
+    font-size: clamp(34px, 5vw, 48px);
+  }
+  .neurolxpCombinesCompliance {
+    width: min(90vw, 844px);
+  }
+}
+
+@media (max-width: 600px) {
+  .complianceSecurityInner {
+    top: 145px;
+  }
+  .heroBadge {
+    min-width: 0;
+    min-height: 44px;
+    padding: 6px 22px;
+    font-size: 18px;
+  }
+  .frameParent3 { gap: 18px; }
+  .secureLearningSmarterContainer {
+    font-size: 31px;
+    line-height: 40px;
+  }
+  .secureLearningSmarter,
+  .greaterConfidence { line-height: 40px; }
+  .neurolxpCombinesCompliance {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .frameParent2 { gap: 28px; }
+  .frameParent5 {
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+  .heroButton {
+    width: 44%;
+    min-height: 52px;
+    padding: 10px 8px;
+    font-size: 17px;
+  }
+}
+
+
+/* Final full-bleed safeguard.
+   The SVG viewBox contains 24px of built-in side space, so the image is
+   enlarged slightly to make the visible curved panel touch both edges. */
+.complianceSecurity > .complianceSecurityChild {
+  left: 50% !important;
+  width: 103.34vw !important;
+  min-width: 103.34vw !important;
+  max-width: none !important;
+  transform: translateX(-50%) !important;
+  object-fit: fill !important;
+}
+
+
+@media (max-width: 1100px) {
+  .frameParent6 {
+    width: min(920px, calc(100% - 48px));
+    grid-template-columns: 380px minmax(0, 1fr);
+    gap: 40px;
+  }
+  .frameParent7 { width: 380px; }
+  .frameWrapper4 { width: 100%; height: 500px; }
+  .structuredTrainingFor { font-size: 32px; }
+  .neurolxpDeliversStructured { font-size: 21px; }
+}
+
+@media (max-width: 820px) {
+  .frameParent6 {
+    width: calc(100% - 32px);
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .frameParent7 { width: 100%; align-items: center; }
+  .frameParent8, .frameParent9 { align-items: center; }
+  .structuredTrainingFor, .neurolxpDeliversStructured { text-align: center; }
+  .frameParent10 { align-items: center; }
+  .frameParent11 { max-width: 470px; }
+  .frameWrapper4 { width: 100%; height: min(72vw, 555px); }
+}
+
+
+@media (max-width: 1100px) {
+  .frameParent13 {
+    width: min(920px, calc(100% - 48px));
+  }
+
+  .smartComplianceCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .smartComplianceCard,
+  .smartComplianceCard:nth-child(4),
+  .smartComplianceCard:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .smartComplianceCard:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 12px);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .frameParent13 {
+    width: calc(100% - 32px);
+  }
+
+  .smartComplianceBadge {
+    min-width: 0;
+    width: min(100%, 422px);
+    height: auto;
+    min-height: 56px;
+    padding: 14px 24px;
+    white-space: normal;
+  }
+
+  .centralizeMonitorStayContainer {
+    font-size: 30px;
+  }
+
+  .simplifyComplianceTraining {
+    font-size: 20px;
+  }
+
+  .smartComplianceCards {
+    grid-template-columns: 1fr;
+  }
+
+  .smartComplianceCard,
+  .smartComplianceCard:last-child {
+    grid-column: auto;
+    width: 100%;
+    height: 190px;
+  }
+
+  .smartComplianceCardTitle {
+    font-size: 20px;
+  }
+}
+
+/* =========================================================
+   FINAL VERIFIED SECTION LAYOUT
+   The bottom two cards are siblings of .frameParent46 in TSX,
+   so .frameParent45 is the actual 5-card grid.
+   ========================================================= */
+
+/* Industry section follows Smart Compliance */
+.frameParent24 {
+  top: 2240px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+}
+
+/* Engaging Compliance follows the complete two-row Industry section */
+.frameParent41 {
+  position: absolute;
+  top: 3102px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1274px, calc(100% - 64px));
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 32px;
+}
+
+/* Engaging section: left text + right card group */
+.frameParent42 {
+  width: 100%;
+  min-height: 556px;
+  display: grid;
+  grid-template-columns: 470px 622px;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 80px;
+  box-sizing: border-box;
+}
+
+.frameWrapper29 {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.frameWrapper29 .frameParent8,
+.frameWrapper29 .frameParent9 {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  align-items: flex-start;
+}
+
+.frameWrapper29 .frameParent9 {
+  gap: 32px;
+}
+
+.engagingComplianceBadge {
+  min-width: 408px;
+  width: fit-content;
+  height: 56px;
+  margin: 0;
+  padding: 0 28px;
+}
+
+.makeMandatoryTrainingContainer {
+  width: 470px;
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+.makeComplianceLearning {
+  width: 430px;
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+/*
+  Correct 5-card arrangement:
+  frameParent45 contains:
+  1) frameParent46 (top row + middle card)
+  2) frameParent47 (bottom row)
+*/
+.frameParent45 {
+  width: 622px;
+  height: 448px;
+  display: grid;
+  grid-template-columns: repeat(2, 286px);
+  grid-template-rows: repeat(3, 132px);
+  column-gap: 32px;
+  row-gap: 50px;
+  align-content: start;
+  align-self: center;
+}
+
+/* Flatten both wrappers into the parent grid */
+.frameParent45 > .frameParent46,
+.frameParent45 > .frameParent47,
+.frameParent46 > .frameParent47 {
+  display: contents;
+}
+
+/* Top row */
+.frameParent46 > .frameParent47 > .frameWrapper30 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.frameParent46 > .frameParent47 > .frameWrapper31 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* Center row */
+.frameParent46 > .frameWrapper32 {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  justify-self: center;
+}
+
+/* Bottom row — this wrapper is a direct child of frameParent45 */
+.frameParent45 > .frameParent47 > .frameWrapper33 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.frameParent45 > .frameParent47 > .frameWrapper34 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.frameWrapper30,
+.frameWrapper31,
+.frameWrapper32,
+.frameWrapper33,
+.frameWrapper34 {
+  width: 286px;
+  height: 132px;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #dfe6e9;
+}
+
+.frameParent48,
+.frameParent49 {
+  position: static;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.mandatoryIconBox {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 88px;
+}
+
+.mandatoryIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.scenarioBasedLearning {
+  width: 142px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+/* Real-Time Visibility now starts after the 556px engaging section + 80px gap */
+.frameParent54 {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.complianceSecurity {
+  height: 9400px;
+}
+
+@media (max-width: 1100px) {
+  .frameParent24 {
+    top: 2300px;
+    width: calc(100% - 48px);
+  }
+
+  .frameParent41 {
+    top: 3360px;
+    width: calc(100% - 48px);
+    gap: 100px;
+  }
+
+  .frameParent42 {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    row-gap: 72px;
+  }
+
+  .frameWrapper29 {
+    width: 100%;
+  }
+
+  .makeMandatoryTrainingContainer,
+  .makeComplianceLearning {
+    width: 100%;
+  }
+
+  .frameParent45 {
+    width: 622px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* =========================================================
+   REAL-TIME VISIBILITY SECTION
+   Two-circle icon design: outer inset-shadow circle + colored circle
+   ========================================================= */
+
+.frameParent54 {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  box-sizing: border-box;
+}
+
+.realTimeHeader {
+  width: min(1120px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  text-align: center;
+}
+
+.automatedTrackingBadge {
+  min-width: 500px;
+  height: 56px;
+  padding: 0 32px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.realTimeVisibilityTitle {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 42px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.realTimeVisibilityText {
+  width: min(1100px, 100%);
+  margin: 0;
+  color: #2f3547;
+  font-size: 24px;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.realTimeMetrics {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  column-gap: 30px;
+  row-gap: 54px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.realTimeMetric {
+  grid-column: span 2;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.realTimeMetric:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.realTimeMetric:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+/* Outer circle with inner shadow */
+.realTimeIconShadow {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -6px -6px 10px rgba(255, 255, 255, 0.95),
+    inset 6px 6px 10px rgba(196, 196, 196, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 82px;
+}
+
+/* Inner colored circle */
+.realTimeIconCircle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.realTimePink { background: #bf1869; }
+.realTimeBlue { background: #2d4cc8; }
+.realTimePurple { background: #67096e; }
+.realTimeGreen { background: #2d7f16; }
+.realTimeOrange { background: #c05512; }
+
+.realTimeIcon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.realTimeMetricTitle {
+  margin: 0;
+  color: #31344b;
+  font-size: 23px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+@media (max-width: 1100px) {
+  .automatedTrackingBadge {
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .realTimeMetrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .realTimeMetric,
+  .realTimeMetric:nth-child(4),
+  .realTimeMetric:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .realTimeVisibilityTitle {
+    font-size: 32px;
+  }
+
+  .realTimeVisibilityText {
+    font-size: 19px;
+  }
+
+  .realTimeMetrics {
+    grid-template-columns: 1fr;
+  }
+
+  .realTimeMetric {
+    justify-content: flex-start;
+  }
+}
+
+/* =========================================================
+   CERTIFICATION AND AUDIT READINESS
+   Picture-perfect Maintain Verifiable Training Records section
+   ========================================================= */
+
+.complianceSecurityInner2 {
+  position: absolute;
+  top: 4275px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  height: 628px;
+  box-sizing: border-box;
+}
+
+.trainingRecordsOuter {
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  border-radius: 50px;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  box-sizing: border-box;
+}
+
+.trainingRecordsInner {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 8px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  overflow: hidden;
+}
+
+.trainingRecordsContent {
+  min-width: 0;
+  padding: 80px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.trainingRecordsBadge {
+  min-width: 430px;
+  height: 56px;
+  padding: 0 28px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.maintainVerifiableTraining {
+  width: 100%;
+  height: auto;
+  margin: 42px 0 0;
+  color: #31344b;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.issueDigitalCertificates {
+  width: 100%;
+  margin: 38px 0 0;
+  color: #2f3547;
+  font-size: 28px;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.trainingRecordsImageWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.rectangleIcon {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .complianceSecurityInner2 {
+    width: calc(100% - 32px);
+    height: auto;
+  }
+
+  .trainingRecordsOuter {
+    padding: 20px;
+  }
+
+  .trainingRecordsInner {
+    grid-template-columns: 1fr;
+  }
+
+  .trainingRecordsContent {
+    padding: 48px 32px;
+  }
+
+  .trainingRecordsBadge {
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .trainingRecordsImageWrap {
+    min-height: 360px;
+  }
+}
+
+/* =========================================================
+   LEARNING SECURITY SECTION
+   Reference-matched timeline and cards
+   ========================================================= */
+
+.frameParent68.learningSecuritySection {
+  position: absolute;
+  top: 4951.11px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.learningSecurityHeader {
+  width: min(900px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.learningSecurityBadge {
+  min-width: 258px;
+  height: 52px;
+  padding: 0 28px;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -6px -6px 12px #ffffff,
+    inset 6px 6px 12px rgba(196, 196, 196, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.learningSecurityTitle {
+  margin: 0;
+  color: #31344b;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.learningSecurityIntro {
+  margin: 0;
+  color: #2f3547;
+  font-size: 22px;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
+.securityTimeline {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-left: 120px;
+  box-sizing: border-box;
+}
+
+.securityTimelineRail {
+  position: absolute;
+  top: 48px;
+  bottom: 48px;
+  left: 40px;
+  width: 34px;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -7px -7px 14px #ffffff,
+    inset 7px 7px 14px rgba(196, 196, 196, 0.9);
+}
+
+.securityFeature {
+  --security-color: #bf1869;
+  position: relative;
+  width: 100%;
+}
+
+.securityFeature.securityPink { --security-color: #bf1869; }
+.securityFeature.securityBlue { --security-color: #2d4cc8; }
+.securityFeature.securityPurple { --security-color: #67096e; }
+.securityFeature.securityOrange { --security-color: #c05512; }
+.securityFeature.securityGreen { --security-color: #2a7308; }
+
+.securityTimelineIcon {
+  position: absolute;
+  top: 6px;
+  left: -120px;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4,
+    inset 0 0 0 2px var(--security-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.securityTimelineIcon img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.securityFeatureCard {
+  width: 100%;
+  padding: 30px 32px 28px;
+  border-radius: 16px;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  box-sizing: border-box;
+}
+
+.securityFeatureTitle {
+  margin: 0;
+  color: var(--security-color);
+  font-size: 26px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.securityFeatureText {
+  margin: 14px 0 0;
+  color: #2f3547;
+  font-size: 19px;
+  line-height: 1.45;
+  letter-spacing: 0.015em;
+}
+
+.securityRoles {
+  margin: 22px 0 0;
+  color: #7a2786;
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.securityFeatureList {
+  margin-top: 26px;
+  padding: 24px 28px;
+  border-left: 2px solid var(--security-color);
+  border-right: 2px solid var(--security-color);
+  border-radius: 14px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -7px -7px 14px #ffffff,
+    inset 7px 7px 14px rgba(196, 196, 196, 0.85);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  box-sizing: border-box;
+}
+
+.securityFeatureItem {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: #31344b;
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.securityCheck {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -6px -6px 12px #ffffff,
+    6px 6px 12px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.securityCheck img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .frameParent68.learningSecuritySection {
+    width: calc(100% - 32px);
+  }
+
+  .securityTimeline {
+    padding-left: 86px;
+  }
+
+  .securityTimelineRail {
+    left: 28px;
+  }
+
+  .securityTimelineIcon {
+    left: -86px;
+    width: 62px;
+    height: 62px;
+  }
+
+  .securityFeatureCard {
+    padding: 24px 20px;
+  }
+
+  .securityFeatureItem {
+    font-size: 18px;
+  }
+}
+
+/* =========================================================
+   LEARNING SECURITY TIMELINE ALIGNMENT FIX
+   Two parallel lines + two-circle icon construction
+   ========================================================= */
+
+.securityTimeline {
+  padding-left: 126px;
+}
+
+/* The rail is only a positioning container. */
+.securityTimelineRail {
+  top: 37px;
+  bottom: 37px;
+  left: 35px;
+  width: 48px;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  z-index: 0;
+}
+
+/* Two equal neumorphic vertical lines. */
+.securityTimelineRail::before,
+.securityTimelineRail::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 13px;
+  border-radius: 14px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.9);
+}
+
+.securityTimelineRail::before {
+  left: 4px;
+}
+
+.securityTimelineRail::after {
+  right: 4px;
+}
+
+/*
+  Outer circle:
+  raised neumorphic circle aligned exactly over the middle
+  of the two parallel rails.
+*/
+.securityTimelineIcon {
+  top: 4px;
+  left: -126px;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -7px -7px 14px #ffffff,
+    7px 7px 14px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+/* Inner circle with inset shadow and colored ring. */
+.securityTimelineIcon::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -5px -5px 10px #ffffff,
+    inset 5px 5px 10px rgba(196, 196, 196, 0.9),
+    inset 0 0 0 2px var(--security-color);
+  z-index: 0;
+}
+
+.securityTimelineIcon img {
+  position: relative;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Keep every circle centered on the same vertical axis as both lines. */
+.securityFeature {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .securityTimeline {
+    padding-left: 96px;
+  }
+
+  .securityTimelineRail {
+    left: 24px;
+    width: 42px;
+  }
+
+  .securityTimelineRail::before,
+  .securityTimelineRail::after {
+    width: 11px;
+  }
+
+  .securityTimelineIcon {
+    left: -96px;
+    width: 72px;
+    height: 72px;
+  }
+
+  .securityTimelineIcon::before {
+    width: 52px;
+    height: 52px;
+  }
+
+  .securityTimelineIcon img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* =========================================================
+   FINAL TIMELINE CIRCLE FIX
+   Circle centered between both lines:
+   outer circle = inner shadow
+   inner circle = drop shadow
+   ========================================================= */
+
+.securityTimeline {
+  padding-left: 126px;
+}
+
+/* Two rails with a clear center gap for the circles. */
+.securityTimelineRail {
+  left: 35px;
+  width: 48px;
+}
+
+.securityTimelineRail::before {
+  left: 0;
+}
+
+.securityTimelineRail::after {
+  right: 0;
+}
+
+/*
+  The rail center is:
+  timeline left padding (126px) + rail left (35px) + rail half (24px)
+  relative to the card content.
+  The icon is 82px, so left = -(126 - 35 - 24 + 41) = -108px.
+  This places the icon exactly between both lines.
+*/
+.securityTimelineIcon {
+  left: -108px;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #dfe6e9;
+
+  /* Outer circle uses INNER shadow only. */
+  box-shadow:
+    inset -7px -7px 14px #ffffff,
+    inset 7px 7px 14px rgba(196, 196, 196, 0.9);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inner circle uses DROP shadow. */
+.securityTimelineIcon::before {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -6px -6px 12px #ffffff,
+    6px 6px 12px #c4c4c4,
+    inset 0 0 0 2px var(--security-color);
+}
+
+/* Keep the icon perfectly centered inside the inner circle. */
+.securityTimelineIcon img {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .securityTimeline {
+    padding-left: 96px;
+  }
+
+  .securityTimelineRail {
+    left: 24px;
+    width: 42px;
+  }
+
+  .securityTimelineIcon {
+    left: -81px;
+    width: 72px;
+    height: 72px;
+  }
+
+  .securityTimelineIcon::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .securityTimelineIcon img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* =========================================================
+   DIVERSE ORGANIZATIONS + NEUROLXP CLOSING
+   96px section-to-section spacing
+   ========================================================= */
+
+/*
+  End-of-page vertical order:
+  Learning Security ends before 7100px
+  Diverse Organizations starts at 7196px
+  NeuroLXP closing starts 96px after the cards
+  Footer starts 96px after the closing section
+*/
+.frameParent99.diverseOrganizationsSection {
+  position: absolute;
+  top: 7196px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.diverseOrganizationsHeader {
+  width: min(945px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.diverseOrganizationsTitle {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
+}
+
+.diverseOrganizationsText {
+  width: min(790px, 100%);
+  margin: 0;
+  color: #2f3547;
+  font-size: 24px;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
+.diverseOrganizationsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px 24px;
+}
+
+.diverseOrganizationCard {
+  min-width: 0;
+  height: 224px;
+  padding: 30px 20px 28px;
+  border-radius: 38px;
+  background: #dfe6e9;
+  box-shadow:
+    -10px -10px 20px #ffffff,
+    10px 10px 20px #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  box-sizing: border-box;
+}
+
+.diverseOrganizationIconOuter {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -6px -6px 10px #ffffff,
+    inset 6px 6px 10px rgba(196, 196, 196, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diverseOrganizationIconInner {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  box-shadow:
+    -5px -5px 10px rgba(255, 255, 255, 0.85),
+    5px 5px 10px rgba(120, 120, 120, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diverseOrganizationIconInner--pink { background: #bf1869; }
+.diverseOrganizationIconInner--orange { background: #c05512; }
+.diverseOrganizationIconInner--maroon { background: #72083f; }
+.diverseOrganizationIconInner--brown { background: #5a372f; }
+.diverseOrganizationIconInner--green { background: #2a7d0d; }
+.diverseOrganizationIconInner--teal { background: #047b80; }
+.diverseOrganizationIconInner--navy { background: #26266c; }
+.diverseOrganizationIconInner--purple { background: #73037c; }
+
+.diverseOrganizationIcon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.diverseOrganizationCardTitle {
+  margin: 0;
+  color: #31344b;
+  font-size: 27px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 7196 + 138 header + 50 gap + 476 grid = 7860; next begins at 7956. */
+.complianceSecurityInner3.neurolxpClosingSection {
+  position: absolute;
+  top: 7956px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.neurolxpClosingBadge {
+  min-width: 228px;
+  height: 56px;
+  padding: 0 32px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.neurolxpClosingTitle {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.neurolxpClosingText {
+  width: min(1000px, 100%);
+  margin: 0;
+  color: #2f3547;
+  font-size: 28px;
+  line-height: 1.45;
+  letter-spacing: 0.025em;
+}
+
+/* Closing section is approximately 286px high; footer begins after 96px. */
+.frameParent121 {
+  top: 8338px;
+}
+
+.complianceSecurity {
+  height: 8839px;
+}
+
+@media (max-width: 1050px) {
+  .diverseOrganizationsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .frameParent99.diverseOrganizationsSection,
+  .complianceSecurityInner3.neurolxpClosingSection {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .diverseOrganizationsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .diverseOrganizationCard {
+    height: 200px;
+  }
+
+  .neurolxpClosingTitle {
+    font-size: 36px;
+  }
+
+  .neurolxpClosingText {
+    font-size: 21px;
+  }
+}
+
+/* =========================================================
+   FINAL HEADER-FOOTER REMOVAL AND 96PX SECTION FLOW
+   ========================================================= */
+
+/* Header and footer are removed from TSX. */
+.frameParent,
+.frameParent121,
+.complianceSecurityChild2,
+.frameChild83 {
+  display: none !important;
+}
+
+/* Remove the original header/footer reserved space. */
+.complianceSecurity {
+  height: 8373px;
+  min-height: 8373px;
+  overflow: hidden;
+}
+
+/* Hero background begins at the top after header removal. */
+.complianceSecurityChild {
+  top: 0;
+}
+
+/* Breadcrumbs with arrows from the compliance icon folder. */
+.frameDiv {
+  position: absolute;
+  top: 32px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  color: #2f3547;
+  z-index: 3;
+}
+
+.breadcrumbArrow {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex: 0 0 16px;
+}
+
+.breadcrumbCurrent {
+  color: #243fa8;
+  font-weight: 700;
+}
+
+/*
+  Major section positions use a consistent 96px vertical gap:
+  Hero
+  Compliance Training
+  Smart Compliance
+  Industry Compliance
+  Engaging + Real-Time
+  Training Records
+  Learning Security
+  Diverse Organizations
+  NeuroLXP Closing
+*/
+
+.complianceSecurityInner {
+  top: 88px;
+}
+
+/* Hero ends near 556px; next section begins after 96px. */
+.frameParent6 {
+  top: 652px;
+}
+
+/* Compliance Training: 587px high + 96px. */
+.frameParent13 {
+  top: 1335px;
+}
+
+/* Smart Compliance: approximately 725px high + 96px. */
+.frameParent24 {
+  top: 2156px;
+}
+
+/* Industry section: approximately 830px high + 96px. */
+.frameParent41 {
+  top: 3082px;
+  gap: 96px;
+}
+
+/* Engaging + Real-Time group ends near 4286px + 96px. */
+.complianceSecurityInner2 {
+  top: 4382px;
+}
+
+/* Training Records: 628px high + 96px. */
+.frameParent68.learningSecuritySection {
+  top: 5106px;
+}
+
+/* Learning Security ends near 7135px + 96px. */
+.frameParent99.diverseOrganizationsSection {
+  top: 7231px;
+}
+
+/* Diverse Organizations: approximately 664px high + 96px. */
+.complianceSecurityInner3.neurolxpClosingSection {
+  top: 7991px;
+}
+
+/* Remove old decorative separators that occupied section space. */
+.complianceSecurityItem {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .frameDiv {
+    left: 24px;
+    right: 24px;
+    flex-wrap: wrap;
+  }
+}
+
+/* =========================================================
+   FINAL LAST TWO SECTION SPACING FIX
+   Learning Security -> Diverse Organizations -> NeuroLXP
+   ========================================================= */
+
+/*
+  The Learning Security timeline finishes lower than the earlier
+  estimated position. Move the next section down so there is a
+  clear 96px gap and no overlap with Privacy and Compliance.
+*/
+.frameParent99.diverseOrganizationsSection {
+  top: 7530px !important;
+}
+
+/*
+  Keep the NeuroLXP closing section 96px after the complete
+  Diverse Organizations header and two card rows.
+*/
+.complianceSecurityInner3.neurolxpClosingSection {
+  top: 8290px !important;
+}
+
+/* Preserve the closing section instead of clipping it. */
+.complianceSecurity {
+  height: 8700px !important;
+  min-height: 8700px !important;
+}
+
+/* =========================================================
+   ONLY TWO CORRECTIONS
+   1. Marching-ant movement for the five existing dashed borders
+   2. Correct 96px spacing for the final two sections
+   No card dimensions, layout, shadows, text or icon styles changed.
+   ========================================================= */
+
+@property --compliance-ant-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/*
+  The browser's native dashed border cannot move.
+  Hide only that native border and redraw the same 2px rounded dashed
+  border in the same position. This is one visible border, not two.
+*/
+.frameWrapper30,
+.frameWrapper31,
+.frameWrapper32,
+.frameWrapper33,
+.frameWrapper34 {
+  --compliance-ant-color: #bf1869;
+  border-color: transparent !important;
+  isolation: isolate;
+}
+
+.frameWrapper30 { --compliance-ant-color: #bf1869; }
+.frameWrapper31 { --compliance-ant-color: #2d4cc8; }
+.frameWrapper32 { --compliance-ant-color: #67096e; }
+.frameWrapper33 { --compliance-ant-color: #046f73; }
+.frameWrapper34 { --compliance-ant-color: #907507; }
+
+.frameWrapper30::before,
+.frameWrapper31::before,
+.frameWrapper32::before,
+.frameWrapper33::before,
+.frameWrapper34::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  padding: 2px;
+  border-radius: inherit;
+  pointer-events: none;
+
+  background: repeating-conic-gradient(
+    from var(--compliance-ant-angle),
+    var(--compliance-ant-color) 0deg 3deg,
+    transparent 3deg 7deg
+  );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+
+  animation: complianceMarchingAnts 18s linear infinite;
+}
+
+@keyframes complianceMarchingAnts {
+  to {
+    --compliance-ant-angle: 360deg;
+  }
+}
+
+/*
+  Learning Security is approximately 2398px tall from its effective
+  top of 5106px. Its content finishes near 7504px.
+  Diverse Organizations therefore begins at 7600px: a 96px gap.
+*/
+.frameParent99.diverseOrganizationsSection {
+  top: 7600px !important;
+}
+
+/*
+  Diverse Organizations is approximately 669px tall.
+  It finishes near 8269px, so NeuroLXP begins at 8365px:
+  another 96px gap.
+*/
+.complianceSecurityInner3.neurolxpClosingSection {
+  top: 8365px !important;
+}
+
+/* Prevent the relocated final section from being clipped. */
+.complianceSecurity {
+  height: 8800px !important;
+  min-height: 8800px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frameWrapper30::before,
+  .frameWrapper31::before,
+  .frameWrapper32::before,
+  .frameWrapper33::before,
+  .frameWrapper34::before {
+    animation: none;
+  }
+}
+
+/* =========================================================
+   ICON SHINE + CARD HOVER ONLY
+   Existing layout, sizes, spacing, colors, borders and shadows remain unchanged.
+   ========================================================= */
+
+/* Shine is applied only inside existing icon containers. */
+.mandatoryIconBox,
+.smartComplianceIconShadow,
+.realTimeIconShadow,
+.securityTimelineIcon,
+.securityCheck,
+.diverseOrganizationIconOuter,
+.diverseOrganizationIconInner {
+  position: relative;
+  overflow: hidden;
+}
+
+.mandatoryIconBox::after,
+.smartComplianceIconShadow::after,
+.realTimeIconShadow::after,
+.securityTimelineIcon::after,
+.securityCheck::after,
+.diverseOrganizationIconOuter::after,
+.diverseOrganizationIconInner::after {
+  content: "";
+  position: absolute;
+  top: -35%;
+  left: -70%;
+  width: 28%;
+  height: 170%;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.85),
+    transparent
+  );
+  transform: rotate(18deg);
+  animation: complianceIconShine 3s ease-in-out infinite;
+}
+
+@keyframes complianceIconShine {
+  0%,
+  18% {
+    left: -70%;
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  62% {
+    left: 135%;
+    opacity: 1;
+  }
+
+  78%,
+  100% {
+    left: 135%;
+    opacity: 0;
+  }
+}
+
+/*
+  Hover is applied only through transform.
+  It does not change width, height, margin, padding, gap, border or position values.
+  Hero and large photo sections are intentionally excluded.
+*/
+.smartComplianceCard,
+.frameParent28,
+.frameWrapper30,
+.frameWrapper31,
+.frameWrapper32,
+.frameWrapper33,
+.frameWrapper34,
+.diverseOrganizationCard,
+.frameParent103,
+.complianceStatus {
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.smartComplianceCard:hover,
+.frameParent28:hover,
+.frameWrapper30:hover,
+.frameWrapper31:hover,
+.frameWrapper32:hover,
+.frameWrapper33:hover,
+.frameWrapper34:hover,
+.diverseOrganizationCard:hover,
+.frameParent103:hover,
+.complianceStatus:hover {
+  transform: translateY(-5px);
+}
+
+/* Keep icon artwork visible above its original container. */
+.mandatoryIcon,
+.smartComplianceIcon,
+.realTimeIcon,
+.securityTimelineIcon img,
+.securityCheck img,
+.diverseOrganizationIcon {
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mandatoryIconBox::after,
+  .smartComplianceIconShadow::after,
+  .realTimeIconShadow::after,
+  .securityTimelineIcon::after,
+  .securityCheck::after,
+  .diverseOrganizationIconOuter::after,
+  .diverseOrganizationIconInner::after {
+    animation: none;
+  }
+
+  .smartComplianceCard,
+  .frameParent28,
+  .frameWrapper30,
+  .frameWrapper31,
+  .frameWrapper32,
+  .frameWrapper33,
+  .frameWrapper34,
+  .diverseOrganizationCard,
+  .frameParent103,
+  .complianceStatus {
+    transition: none;
+  }
+}
+
+/* FINAL THREE SECTIONS NORMAL FLOW FIX */
+
+/*
+  Only the final three sections are placed in normal document flow.
+  Their internal design, widths, cards, shadows, animations and spacing
+  remain unchanged. The container provides exactly 96px between sections.
+*/
+.finalSectionsFlow {
+  position: relative;
+  margin-top: 5106px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 96px;
+}
+
+/* Cancel only the old absolute positioning of these three sections. */
+.finalSectionsFlow > .frameParent68.learningSecuritySection,
+.finalSectionsFlow > .frameParent99.diverseOrganizationsSection,
+.finalSectionsFlow > .complianceSecurityInner3.neurolxpClosingSection {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  flex: 0 0 auto;
+}
+
+/* Preserve the existing designed widths. */
+.finalSectionsFlow > .frameParent68.learningSecuritySection {
+  width: min(1280px, calc(100% - 64px));
+}
+
+.finalSectionsFlow > .frameParent99.diverseOrganizationsSection {
+  width: min(1280px, calc(100% - 64px));
+}
+
+.finalSectionsFlow > .complianceSecurityInner3.neurolxpClosingSection {
+  width: min(1280px, calc(100% - 64px));
+}
+
+/* Existing page height is retained; this only prevents visual clipping. */
+.complianceSecurity {
+  min-height: auto;
+}
+/* ===== FINAL PAGE HEIGHT FIX ===== */
+
+.complianceSecurity {
+    position: relative;
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 96px;
+    overflow: visible !important;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+/* =========================================================
+   Gradient Divider (between Real-Time Visibility and
+   Maintain Verifiable Training Records)
+   ========================================================= */
+
+.sectionGradientDivider {
+  width: 100%;
+  height: 5px;
+  margin: 96px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.sectionGradientDivider svg {
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  height: 5px;
+  flex-shrink: 0;
+}
+/* =========================================================
+   INDUSTRY CARDS — HOVER-ONLY COLORED RING
+   All 6 cards start identical (no border at rest).
+   On hover, a colored ring fades in around the card,
+   using that card's own accent color.
+   No layout, size, shadow, or text changes.
+   ========================================================= */
+
+/* Remove the static always-on border so every card matches at rest */
+.frameWrapper23 {
+  border: none !important;
+}
+
+/* .frameParent28 is the outer circle shared by every industry card.
+   Give it a positioning context and a ring pseudo-element that's
+   invisible by default. */
+.frameParent28 {
+  position: relative;
+}
+
+.frameParent28::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 106px; /* matches the 100px card radius + inset offset */
+  border: 2px solid var(--industry-ring-color, transparent);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.frameParent28:hover::after {
+  opacity: 1;
+}
+
+.frameParent26 > .frameParent27:nth-of-type(1) > .frameParent28:nth-child(1) { --industry-ring-color: #bf1869; }
+.frameParent26 > .frameParent27:nth-of-type(1) > .frameParent28:nth-child(2) { --industry-ring-color: #046f73; }
+.frameParent26 > .frameParent27:nth-of-type(1) > .frameParent28:nth-child(3) { --industry-ring-color: #2d4cc8; }
+
+.frameParent26 > .frameParent27:nth-of-type(2) > .frameParent28:nth-child(1) { --industry-ring-color: #67096e; }
+.frameParent26 > .frameParent27:nth-of-type(2) > .frameParent28:nth-child(2) { --industry-ring-color: #c05512; }
+.frameParent26 > .frameParent27:nth-of-type(2) > .frameParent28:nth-child(3) { --industry-ring-color: #907507; }
+  .frameParent28::after {
+    transition: none;
+  }
+/* =========================================================
+   MOBILE / TABLET RESPONSIVE FIXES
+   Additive only — no desktop (base) rules are modified.
+   Breakpoints: 1200px (small laptop/tablet landscape),
+   900px (tablet portrait), 600px (mobile), 420px (small phone)
+   ========================================================= */
+
+/* ---------- Global safety net ---------- */
+@media (max-width: 1200px) {
+  .complianceSecurity {
+    overflow-x: hidden;
+  }
+}
+
+/* =========================================================
+   INDUSTRY-SPECIFIC COMPLIANCE SECTION
+   (previously had zero responsive rules)
+   ========================================================= */
+@media (max-width: 1340px) {
+  .frameParent24 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+  }
+
+  .industrySpecificCompliance {
+    width: 100%;
+  }
+
+  .frameParent26 {
+    width: 100%;
+  }
+
+  .frameParent27 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .frameParent28 {
+    flex: 0 1 320px;
+    width: min(400px, 90vw);
+    height: auto;
+    aspect-ratio: 400 / 306;
+  }
+
+  .frameChild15 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .frameWrapper23,
+  .frameWrapper24 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    height: auto;
+    aspect-ratio: 368 / 274;
+  }
+
+  .frameParent29 {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .frameParent27 {
+    gap: 24px;
+  }
+
+  .frameParent28 {
+    flex: 0 1 280px;
+  }
+
+  .workplaceSafetyWrapper,
+  .dataPrivacyWrapper,
+  .corporateEthicsWrapper,
+  .workplaceConductWrapper,
+  .financialComplianceWrapper,
+  .sustainabilityWrapper {
+    height: 96px;
+  }
+
+  .workplaceSafety,
+  .corporateEthics,
+  .workplaceConduct,
+  .financialCompliance {
+    font-size: 22px;
+    width: 90%;
+    left: 5%;
+    text-align: center;
+  }
+
+  .healthSafetyAnd,
+  .dataProtectionAnd,
+  .codeOfConduct,
+  .antiHarassmentAndWorkplace {
+    width: 88%;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .frameParent27 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frameParent28 {
+    width: min(340px, 88vw);
+    flex: 0 0 auto;
+  }
+
+  .industrySpecificCompliance {
+    font-size: 30px;
+    line-height: 1.3;
+    white-space: normal;
+  }
+}
+
+/* =========================================================
+   ENGAGING COMPLIANCE — MANDATORY TRAINING CARD GRID
+   (frameParent45 grid uses fixed 286px columns — needs to flex)
+   ========================================================= */
+@media (max-width: 1100px) {
+  .frameParent45 {
+    width: 100%;
+    max-width: 622px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .frameWrapper30,
+  .frameWrapper31,
+  .frameWrapper32,
+  .frameWrapper33,
+  .frameWrapper34 {
+    width: 100%;
+  }
+
+  .frameParent46 > .frameWrapper32 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .frameParent45 {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    row-gap: 24px;
+  }
+
+  .frameParent46 > .frameWrapper32 {
+    grid-column: 1;
+  }
+
+  .frameWrapper30,
+  .frameWrapper31,
+  .frameWrapper32,
+  .frameWrapper33,
+  .frameWrapper34 {
+    height: auto;
+    min-height: 110px;
+  }
+
+  .frameParent48,
+  .frameParent49 {
+    padding: 14px;
+    gap: 16px;
+  }
+
+  .mandatoryIconBox {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+  }
+
+  .mandatoryIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .scenarioBasedLearning {
+    width: auto;
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   SMALL-PHONE TEXT & SPACING SCALING
+   Applies gentle scale-down beyond the existing 600px rules
+   ========================================================= */
+@media (max-width: 420px) {
+  .secureLearningSmarterContainer {
+    font-size: 26px;
+  }
+
+  .neurolxpCombinesCompliance {
+    font-size: 16px;
+  }
+
+  .heroButton {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .frameParent5 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .structuredTrainingFor {
+    font-size: 26px;
+  }
+
+  .neurolxpDeliversStructured {
+    font-size: 17px;
+  }
+
+  .centralizeMonitorStayContainer {
+    font-size: 24px;
+  }
+
+  .simplifyComplianceTraining {
+    font-size: 16px;
+  }
+
+  .industrySpecificCompliance {
+    font-size: 24px;
+  }
+
+  .makeMandatoryTrainingContainer {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .makeComplianceLearning {
+    font-size: 18px;
+  }
+
+  .realTimeVisibilityTitle {
+    font-size: 26px;
+  }
+
+  .realTimeVisibilityText {
+    font-size: 16px;
+  }
+
+  .maintainVerifiableTraining {
+    font-size: 26px;
+  }
+
+  .issueDigitalCertificates {
+    font-size: 18px;
+  }
+
+  .trainingRecordsContent {
+    padding: 32px 20px;
+  }
+
+  .learningSecurityTitle {
+    font-size: 26px;
+  }
+
+  .learningSecurityIntro {
+    font-size: 17px;
+  }
+
+  .securityFeatureTitle {
+    font-size: 21px;
+  }
+
+  .securityFeatureText,
+  .securityFeatureItem {
+    font-size: 16px;
+  }
+
+  .diverseOrganizationsTitle {
+    font-size: 26px;
+  }
+
+  .diverseOrganizationsText {
+    font-size: 17px;
+  }
+
+  .diverseOrganizationCardTitle {
+    font-size: 20px;
+  }
+
+  .neurolxpClosingTitle {
+    font-size: 28px;
+  }
+
+  .neurolxpClosingText {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   TABLET-SPECIFIC (768px–1024px) FINE-TUNING
+   Covers gaps between existing 1100px and 900px breakpoints
+   for elements that skip straight from desktop to phone sizing
+   ========================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .frameParent6 {
+    grid-template-columns: 1fr;
+    width: calc(100% - 48px);
+  }
+
+  .frameParent7 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .structuredTrainingFor,
+  .neurolxpDeliversStructured {
+    text-align: center;
+  }
+
+  .frameParent11 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .frameWrapper4 {
+    width: 100%;
+    height: min(70vw, 520px);
+  }
+
+  .automatedTrackingBadge {
+    min-width: 0;
+    width: fit-content;
+  }
+
+  .realTimeMetrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .realTimeMetric:nth-child(4),
+  .realTimeMetric:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+/* =========================================================
+   PREVENT HORIZONTAL SCROLL FROM ANY LEFTOVER FIXED WIDTHS
+   Safety net only — does not alter desktop sizing
+   ========================================================= */
+@media (max-width: 1024px) {
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .frameParent68.learningSecuritySection,
+  .frameParent99.diverseOrganizationsSection,
+  .complianceSecurityInner2,
+  .complianceSecurityInner3.neurolxpClosingSection {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+/* =========================================================
+   MOBILE STACKING FIX
+   Converts all absolutely-positioned major sections into
+   normal document flow below 1024px, so they stack by real
+   content height instead of fixed desktop px offsets.
+   Desktop (>1024px) is completely untouched.
+   ========================================================= */
+@media (max-width: 1024px) {
+
+  .complianceSecurity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto !important;
+    min-height: 0 !important;
+    padding-top: 32px;
+    gap: 64px;
+  }
+
+  /* Cancel absolute positioning on every major section wrapper */
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68.learningSecuritySection,
+  .frameParent99.diverseOrganizationsSection,
+  .complianceSecurityInner3.neurolxpClosingSection,
+  .finalSectionsFlow {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    margin: 0 !important;
+    width: calc(100% - 32px) !important;
+    max-width: 100%;
+  }
+
+  /* finalSectionsFlow already stacks its own children in normal
+     flow — just remove the old margin-top offset now that the
+     parent itself is no longer absolute */
+  .finalSectionsFlow {
+    gap: 64px;
+  }
+
+  /* Background hero image no longer needs to sit behind
+     absolutely-stacked content at a fixed height */
+  .complianceSecurityChild {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .complianceSecurityInner {
+    z-index: 2;
+  }
+
+  /* Divider that was absolutely placed at a fixed px top */
+  .complianceSecurityChild2,
+  .sectionGradientDivider {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 32px auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .complianceSecurity {
+    gap: 48px;
+    padding-top: 24px;
+  }
+
+  .finalSectionsFlow {
+    gap: 48px;
+  }
+}
+/* =========================================================
+   TARGETED MOBILE FIXES
+   1. Breadcrumb overlapping hero title
+   2. Mandatory-training cards overflowing off-screen
+   Desktop (>1024px / >600px) untouched.
+   ========================================================= */
+
+/* ---- Fix 1: Breadcrumb overlap on hero ---- */
+@media (max-width: 1024px) {
+  .frameDiv {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    padding: 16px 16px 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+}
+
+/* ---- Fix 2: Cards overflowing right edge on mobile ---- */
+@media (max-width: 600px) {
+  .frameParent46 > .frameParent47 > .frameWrapper31 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .frameParent45 > .frameParent47 > .frameWrapper34 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  /* Re-sequence rows now that everything sits in one column */
+  .frameParent46 > .frameParent47 > .frameWrapper30 {
+    grid-row: 1;
+  }
+
+  .frameParent46 > .frameWrapper32 {
+    grid-row: 3;
+  }
+
+  .frameParent45 > .frameParent47 > .frameWrapper33 {
+    grid-row: 4;
+  }
+
+  .frameParent45 {
+    grid-template-rows: repeat(5, auto);
+  }
+}
+
+
+/* BFSI-style normal document flow */
+.complianceSecurity {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 96px;
+  box-sizing: border-box;
+}
+
+.complianceSecurityChild {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 103.34vw;
+  min-width: 103.34vw;
+  max-width: none;
+  height: 587px;
+  transform: translateX(-50%);
+  object-fit: fill;
+  object-position: top center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.frameDiv {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(1280px, calc(100% - 160px));
+  margin: 32px auto 0;
+  z-index: 2;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.complianceSecurityInner {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(1020px, calc(100% - 160px));
+  min-height: 572px;
+  margin: 32px auto 0;
+  z-index: 1;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.frameParent6,
+.frameParent13,
+.frameParent24,
+.frameParent41,
+.complianceSecurityInner2,
+.frameParent68,
+.frameParent99,
+.complianceSecurityInner3 {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  transform: none;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.frameParent6 {
+  width: min(1280px, calc(100% - 160px));
+  margin: 96px auto 0;
+}
+
+.frameParent13 {
+  width: min(1280px, calc(100% - 160px));
+  margin: 96px auto 0;
+}
+
+.frameParent24 {
+  width: min(1280px, calc(100% - 160px));
+  margin: 96px auto 0;
+}
+
+.frameParent41 {
+  width: min(1274px, calc(100% - 160px));
+  margin: 96px auto 0;
+}
+
+.complianceSecurityInner2 {
+  width: min(1280px, calc(100% - 160px));
+  height: 628px;
+  margin: 96px auto 0;
+}
+
+.finalSectionsFlow {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  margin: 96px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 96px;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.finalSectionsFlow > .frameParent68,
+.finalSectionsFlow > .frameParent99,
+.finalSectionsFlow > .complianceSecurityInner3 {
+  margin: 0 auto;
+}
+
+.frameParent68 {
+  width: min(1189.4px, calc(100% - 160px));
+}
+
+.frameParent99 {
+  width: min(1254px, calc(100% - 160px));
+}
+
+.complianceSecurityInner3 {
+  width: min(1300px, calc(100% - 160px));
+}
+
+@media (max-width: 1180px) {
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    width: calc(100% - 80px);
+    max-width: none;
+  }
+
+  .complianceSecurityInner {
+    min-height: 540px;
+  }
+}
+
+@media (max-width: 900px) {
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    width: calc(100% - 48px);
+  }
+
+  .complianceSecurityChild {
+    width: 110vw;
+    min-width: 110vw;
+  }
+
+  .complianceSecurityInner {
+    min-height: 500px;
+  }
+
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .finalSectionsFlow {
+    margin-top: 64px;
+  }
+
+  .finalSectionsFlow {
+    gap: 64px;
+  }
+
+  .complianceSecurityInner2 {
+    height: auto;
+    min-height: 628px;
+  }
+}
+
+@media (max-width: 600px) {
+  .complianceSecurity {
+    padding-bottom: 48px;
+  }
+
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    width: calc(100% - 32px);
+  }
+
+  .frameDiv {
+    margin-top: 24px;
+  }
+
+  .complianceSecurityInner {
+    min-height: 520px;
+    margin-top: 24px;
+  }
+
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .finalSectionsFlow {
+    margin-top: 48px;
+  }
+
+  .finalSectionsFlow {
+    gap: 48px;
+  }
+}
+
+
+/* Final BFSI-style responsive layer */
+@media (max-width: 1180px) {
+  .complianceSecurity,
+  .complianceSecurity * {
+    box-sizing: border-box;
+  }
+
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    width: calc(100% - 64px) !important;
+    max-width: 1100px !important;
+  }
+
+  .complianceSecurityInner {
+    min-height: 540px;
+  }
+
+  .secureLearningSmarterContainer,
+  .neurolxpCombinesCompliance,
+  .centralizeMonitorStayContainer,
+  .simplifyComplianceTraining,
+  .industrySpecificCompliance,
+  .makeMandatoryTrainingContainer,
+  .makeComplianceLearning,
+  .realTimeVisibilityTitle,
+  .realTimeVisibilityText,
+  .maintainVerifiableTraining,
+  .issueDigitalCertificates,
+  .learningSecurityTitle,
+  .learningSecurityIntro,
+  .diverseOrganizationsTitle,
+  .diverseOrganizationsText,
+  .neurolxpClosingTitle,
+  .neurolxpClosingText {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent6 {
+    grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
+    gap: 48px;
+  }
+
+  .frameParent7,
+  .frameWrapper4 {
+    width: 100% !important;
+  }
+
+  .frameWrapper4 {
+    height: auto;
+    aspect-ratio: 743 / 587;
+  }
+
+  .smartComplianceCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .smartComplianceCard,
+  .smartComplianceCard:nth-child(4),
+  .smartComplianceCard:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .smartComplianceCard:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 12px);
+    justify-self: center;
+  }
+
+  .frameParent24,
+  .frameParent41 {
+    align-items: center;
+  }
+
+  .frameParent26 {
+    width: 100% !important;
+  }
+
+  .frameParent27 {
+    width: 100%;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .frameParent28 {
+    width: calc((100% - 48px) / 3);
+    min-width: 0;
+  }
+
+  .frameChild15,
+  .frameWrapper23,
+  .frameWrapper24,
+  .frameParent29 {
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  .frameWrapper23,
+  .frameWrapper24 {
+    padding: 16px;
+  }
+
+  .frameParent42 {
+    grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
+    gap: 48px;
+  }
+
+  .frameWrapper29,
+  .frameParent45 {
+    width: 100% !important;
+  }
+
+  .realTimeMetrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .trainingRecordsInner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .securityTimeline,
+  .diverseOrganizationsGrid {
+    width: 100%;
+  }
+
+  .diverseOrganizationsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    width: calc(100% - 48px) !important;
+  }
+
+  .complianceSecurityChild {
+    width: 112vw;
+    min-width: 112vw;
+    height: 560px;
+  }
+
+  .complianceSecurityInner {
+    min-height: 520px;
+  }
+
+  .secureLearningSmarterContainer {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .frameParent6 {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .frameParent7 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .frameParent8,
+  .frameParent9,
+  .frameParent10 {
+    align-items: center;
+  }
+
+  .structuredTrainingFor,
+  .neurolxpDeliversStructured {
+    text-align: center;
+  }
+
+  .frameParent11 {
+    width: min(620px, 100%);
+  }
+
+  .frameWrapper4 {
+    width: min(743px, 100%) !important;
+    margin: 0 auto;
+  }
+
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .finalSectionsFlow {
+    margin-top: 64px;
+  }
+
+  .smartComplianceCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .smartComplianceCard:last-child {
+    width: calc(50% - 12px);
+  }
+
+  .frameParent27 {
+    flex-wrap: wrap;
+  }
+
+  .frameParent28 {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .frameParent42 {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .frameWrapper29 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .frameParent45 {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .realTimeMetrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .realTimeMetric:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 12px);
+    justify-self: center;
+  }
+
+  .trainingRecordsInner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .trainingRecordsContent {
+    align-items: center;
+    text-align: center;
+  }
+
+  .trainingRecordsImageWrap {
+    width: min(608px, 100%);
+    margin: 0 auto;
+  }
+
+  .securityFeature {
+    width: 100%;
+  }
+
+  .diverseOrganizationsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .frameDiv {
+    flex-wrap: wrap;
+    row-gap: 6px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .complianceSecurityInner {
+    min-height: auto;
+    padding: 36px 0 52px;
+  }
+
+  .frameParent2,
+  .frameWrapper,
+  .frameWrapper2,
+  .frameParent3,
+  .frameParent4 {
+    width: 100%;
+    height: auto;
+  }
+
+  .frameParent2 {
+    gap: 32px;
+  }
+
+  .frameParent4 {
+    gap: 20px;
+  }
+
+  .heroBadge,
+  .complianceTrainingBadge,
+  .smartComplianceBadge,
+  .engagingComplianceBadge,
+  .automatedTrackingBadge,
+  .trainingRecordsBadge,
+  .learningSecurityBadge,
+  .neurolxpClosingBadge {
+    min-width: 0 !important;
+    max-width: 100%;
+    height: auto;
+    min-height: 50px;
+    padding: 12px 24px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .secureLearningSmarterContainer {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .neurolxpCombinesCompliance,
+  .neurolxpDeliversStructured,
+  .simplifyComplianceTraining,
+  .makeComplianceLearning,
+  .realTimeVisibilityText,
+  .issueDigitalCertificates,
+  .learningSecurityIntro,
+  .diverseOrganizationsText,
+  .neurolxpClosingText {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .frameParent5 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .heroButton {
+    min-width: 190px;
+  }
+
+  .structuredTrainingFor,
+  .centralizeMonitorStayContainer,
+  .industrySpecificCompliance,
+  .makeMandatoryTrainingContainer,
+  .realTimeVisibilityTitle,
+  .maintainVerifiableTraining,
+  .learningSecurityTitle,
+  .diverseOrganizationsTitle,
+  .neurolxpClosingTitle {
+    font-size: 28px !important;
+    line-height: 38px !important;
+  }
+
+  .frameParent11 {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .complianceStatus {
+    min-width: 0;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .smartComplianceCards {
+    grid-template-columns: 1fr;
+  }
+
+  .smartComplianceCard,
+  .smartComplianceCard:last-child {
+    width: 100%;
+    grid-column: auto;
+  }
+
+  .frameParent27 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frameParent28 {
+    width: min(400px, 100%);
+  }
+
+  .frameParent45,
+  .frameParent46,
+  .frameParent47 {
+    width: 100%;
+  }
+
+  .frameParent47 {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .frameWrapper30,
+  .frameWrapper31,
+  .frameWrapper32,
+  .frameWrapper33,
+  .frameWrapper34 {
+    width: 100% !important;
+  }
+
+  .realTimeMetrics {
+    grid-template-columns: 1fr;
+  }
+
+  .realTimeMetric,
+  .realTimeMetric:last-child {
+    width: 100%;
+    grid-column: auto;
+  }
+
+  .complianceSecurityInner2 {
+    min-height: 0;
+    height: auto;
+  }
+
+  .trainingRecordsOuter,
+  .trainingRecordsInner {
+    height: auto;
+    min-height: 0;
+  }
+
+  .securityTimeline {
+    padding-left: 0;
+  }
+
+  .securityTimelineRail {
+    display: none;
+  }
+
+  .securityFeature {
+    display: block;
+    padding: 0;
+  }
+
+  .securityTimelineIcon {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto 16px;
+  }
+
+  .securityFeatureCard {
+    width: 100%;
+    margin: 0;
+  }
+
+  .diverseOrganizationsGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .complianceSecurity {
+    padding-bottom: 48px;
+  }
+
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    width: calc(100% - 32px) !important;
+  }
+
+  .complianceSecurityChild {
+    width: 124vw;
+    min-width: 124vw;
+    height: 540px;
+  }
+
+  .frameDiv {
+    margin-top: 24px;
+  }
+
+  .complianceSecurityInner {
+    margin-top: 24px;
+    padding-top: 28px;
+  }
+
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .finalSectionsFlow {
+    margin-top: 48px;
+  }
+
+  .finalSectionsFlow {
+    gap: 48px;
+  }
+
+  .secureLearningSmarterContainer {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .frameParent5 {
+    width: 100%;
+  }
+
+  .heroButton {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .frameParent11 {
+    grid-template-columns: 1fr;
+  }
+
+  .frameWrapper4 {
+    border-radius: 24px;
+  }
+
+  .frameWrapper4::before {
+    inset: 10px;
+    border-radius: 18px;
+  }
+
+  .frameChild8 {
+    inset: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 18px;
+  }
+
+  .smartComplianceCard {
+    height: 190px;
+    border-radius: 64px;
+  }
+
+  .smartComplianceCardInner {
+    inset: 12px;
+    border-radius: 56px;
+    padding: 18px;
+  }
+
+  .frameParent28 {
+    height: 286px;
+  }
+
+  .frameParent29 {
+    gap: 24px;
+  }
+
+  .workplaceSafetyWrapper,
+  .dataPrivacyWrapper,
+  .corporateEthicsWrapper,
+  .workplaceConductWrapper,
+  .financialComplianceWrapper,
+  .sustainabilityWrapper {
+    height: 104px;
+  }
+
+  .frameParent45 {
+    padding: 0;
+  }
+
+  .realTimeMetricTitle,
+  .smartComplianceCardTitle,
+  .scenarioBasedLearning,
+  .securityFeatureTitle,
+  .diverseOrganizationCardTitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .securityFeatureCard {
+    padding: 24px 18px;
+    border-radius: 28px;
+  }
+
+  .securityFeatureText,
+  .securityFeatureItem {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .diverseOrganizationsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .diverseOrganizationCard {
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .secureLearningSmarterContainer {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .structuredTrainingFor,
+  .centralizeMonitorStayContainer,
+  .industrySpecificCompliance,
+  .makeMandatoryTrainingContainer,
+  .realTimeVisibilityTitle,
+  .maintainVerifiableTraining,
+  .learningSecurityTitle,
+  .diverseOrganizationsTitle,
+  .neurolxpClosingTitle {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .heroBadge,
+  .complianceTrainingBadge,
+  .smartComplianceBadge,
+  .engagingComplianceBadge,
+  .automatedTrackingBadge,
+  .trainingRecordsBadge,
+  .learningSecurityBadge,
+  .neurolxpClosingBadge {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .neurolxpCombinesCompliance,
+  .neurolxpDeliversStructured,
+  .simplifyComplianceTraining,
+  .makeComplianceLearning,
+  .realTimeVisibilityText,
+  .issueDigitalCertificates,
+  .learningSecurityIntro,
+  .diverseOrganizationsText,
+  .neurolxpClosingText {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .complianceStatus {
+    height: 54px;
+    font-size: 16px;
+  }
+
+  .smartComplianceIconShadow,
+  .realTimeIconShadow,
+  .diverseOrganizationIconOuter {
+    transform: scale(0.9);
+  }
+
+  .frameParent28 {
+    height: 270px;
+  }
+
+  .healthSafetyAnd,
+  .dataProtectionAnd,
+  .codeOfConduct,
+  .antiHarassmentAndWorkplace {
+    width: calc(100% - 32px) !important;
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 360px) {
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    width: calc(100% - 24px) !important;
+  }
+
+  .secureLearningSmarterContainer {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .frameParent5 {
+    gap: 12px;
+  }
+
+  .heroButton {
+    min-height: 56px;
+    padding: 14px 20px;
+  }
+
+  .smartComplianceCard {
+    height: 180px;
+  }
+
+  .smartComplianceIconShadow {
+    width: 66px;
+    height: 66px;
+  }
+
+  .smartComplianceIconCircle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .frameParent28 {
+    height: 258px;
+  }
+
+  .securityFeatureCard {
+    padding: 22px 16px;
+  }
+}
+
+
+/* Stable centered mobile/tablet layout */
+@media (max-width: 1024px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .complianceSecurity {
+    width: 100%;
+    min-height: 100vh;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    background: #dfe6e9;
+  }
+
+  /* Remove the decorative background that causes clipping and sideways overflow. */
+  .complianceSecurityChild {
+    display: none !important;
+  }
+
+  .complianceSecurity > *,
+  .finalSectionsFlow > * {
+    max-width: 100%;
+  }
+
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: min(100% - 48px, 900px) !important;
+    max-width: 900px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameDiv {
+    margin-top: 32px !important;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .complianceSecurityInner {
+    margin-top: 32px !important;
+    padding: 40px 24px !important;
+    border-radius: 32px;
+    background: #dfe6e9;
+    box-shadow:
+      inset -8px -8px 16px rgba(255,255,255,.9),
+      inset 8px 8px 16px rgba(196,196,196,.75);
+  }
+
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .finalSectionsFlow {
+    margin-top: 64px !important;
+  }
+
+  .finalSectionsFlow {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    gap: 64px !important;
+    align-items: center !important;
+  }
+
+  .frameParent2,
+  .frameWrapper,
+  .frameWrapper2,
+  .frameParent3,
+  .frameParent4,
+  .frameParent5,
+  .frameParent7,
+  .frameParent8,
+  .frameParent9,
+  .frameParent10,
+  .frameParent11,
+  .smartComplianceHeader,
+  .smartComplianceCards,
+  .frameWrapper19,
+  .frameWrapper20,
+  .frameWrapper21,
+  .frameWrapper22,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27,
+  .frameParent42,
+  .frameWrapper29,
+  .frameParent45,
+  .frameParent54,
+  .realTimeHeader,
+  .realTimeMetrics,
+  .trainingRecordsOuter,
+  .trainingRecordsInner,
+  .trainingRecordsContent,
+  .securityTimeline,
+  .diverseOrganizationsHeader,
+  .diverseOrganizationsGrid {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent2,
+  .frameParent3,
+  .frameParent4,
+  .frameParent7,
+  .frameParent8,
+  .frameParent9,
+  .frameParent10,
+  .smartComplianceHeader,
+  .frameParent25,
+  .frameWrapper29,
+  .realTimeHeader,
+  .trainingRecordsContent,
+  .diverseOrganizationsHeader {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .frameParent6,
+  .frameParent42,
+  .trainingRecordsInner {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 40px !important;
+  }
+
+  .frameWrapper4,
+  .trainingRecordsImageWrap {
+    position: relative !important;
+    inset: auto !important;
+    width: min(100%, 743px) !important;
+    height: auto !important;
+    aspect-ratio: 743 / 587;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .frameChild8,
+  .rectangleIcon {
+    max-width: 100% !important;
+  }
+
+  .smartComplianceCards,
+  .realTimeMetrics,
+  .diverseOrganizationsGrid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+  }
+
+  .smartComplianceCard,
+  .smartComplianceCard:nth-child(4),
+  .smartComplianceCard:nth-child(5),
+  .smartComplianceCard:last-child,
+  .realTimeMetric,
+  .realTimeMetric:last-child,
+  .diverseOrganizationCard {
+    grid-column: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-self: stretch !important;
+  }
+
+  .frameParent27 {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 400px)) !important;
+    justify-content: center !important;
+    gap: 24px !important;
+  }
+
+  .frameParent28,
+  .frameChild15,
+  .frameWrapper23,
+  .frameWrapper24,
+  .frameParent29 {
+    position: relative !important;
+    inset: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    margin: 0 auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameChild15 {
+    position: absolute !important;
+    inset: 0 !important;
+    max-width: none !important;
+  }
+
+  .frameWrapper23,
+  .frameWrapper24 {
+    position: absolute !important;
+    top: 16px !important;
+    right: 16px !important;
+    bottom: 16px !important;
+    left: 16px !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .securityTimeline {
+    padding: 0 !important;
+  }
+
+  .securityTimelineRail {
+    display: none !important;
+  }
+
+  .securityFeature {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 820px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .securityTimelineIcon {
+    position: relative !important;
+    inset: auto !important;
+    margin: 0 auto 16px !important;
+    transform: none !important;
+  }
+
+  .securityFeatureCard {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    width: calc(100% - 32px) !important;
+  }
+
+  .frameDiv {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .complianceSecurityInner {
+    padding: 32px 18px !important;
+  }
+
+  .smartComplianceCards,
+  .realTimeMetrics,
+  .diverseOrganizationsGrid,
+  .frameParent27 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .frameParent28 {
+    max-width: 400px !important;
+  }
+
+  .frameParent45,
+  .frameParent46,
+  .frameParent47 {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 16px !important;
+  }
+
+  .frameWrapper30,
+  .frameWrapper31,
+  .frameWrapper32,
+  .frameWrapper33,
+  .frameWrapper34 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    width: calc(100% - 24px) !important;
+  }
+
+  .frameDiv {
+    margin-top: 20px !important;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .frameDiv::-webkit-scrollbar {
+    display: none;
+  }
+
+  .complianceSecurityInner {
+    margin-top: 24px !important;
+    padding: 28px 14px 32px !important;
+    border-radius: 24px;
+  }
+
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .finalSectionsFlow {
+    margin-top: 48px !important;
+  }
+
+  .finalSectionsFlow {
+    gap: 48px !important;
+  }
+
+  .frameParent5 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    gap: 16px !important;
+  }
+
+  .heroButton {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent11 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  .complianceStatus {
+    width: 100% !important;
+  }
+
+  .frameWrapper4 {
+    border-radius: 24px !important;
+  }
+
+  .smartComplianceCard {
+    min-height: 184px !important;
+    height: auto !important;
+  }
+
+  .smartComplianceCardInner {
+    position: relative !important;
+    inset: auto !important;
+    width: calc(100% - 24px) !important;
+    min-height: 160px !important;
+    margin: 12px !important;
+  }
+
+  .trainingRecordsOuter,
+  .trainingRecordsInner {
+    padding: 0 !important;
+  }
+
+  .securityFeatureCard {
+    padding: 24px 16px !important;
+  }
+
+  .diverseOrganizationCard {
+    min-height: 150px !important;
+  }
+}

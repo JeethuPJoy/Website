@@ -4234,6 +4234,10 @@ body {
   align-self: center;
 }
 
+.assessmentsInner {
+	padding: 32px;
+}
+
 .assessments > .assessmentsChild {
   width: 100%;
   max-width: 1440px;

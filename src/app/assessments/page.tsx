@@ -11,31 +11,31 @@ const Assessments: NextPage = () => {
     {
       title: "Corporate Learning",
       subtitle: "and Development.",
-      image: "/icons/Rectangle 77.png",
+      image: "/images/Rectangle 77.png",
       className: "audiencePurple",
     },
     {
       title: "Universities and Higher",
       subtitle: "Education",
-      image: "/icons/boy fifth image.png",
+      image: "/images/boy fifth image.png",
       className: "audiencePink",
     },
     {
       title: "EdTech & Course",
       subtitle: "Providers",
-      image: "/icons/Rectangle 78-2.png",
+      image: "/images/Rectangle 78-2.png",
       className: "audienceOrange",
     },
     {
       title: "Schools and Online",
       subtitle: "Learning",
-      image: "/icons/Rectangle 78-3.png",
+      image: "/images/Rectangle 78-3.png",
       className: "audienceBlue",
     },
     {
       title: "Professional",
       subtitle: "Certification",
-      image: "/icons/fourth assessments.png",
+      image: "/images/fourth assessments.png",
       className: "audienceGreen",
     },
   ];
@@ -97,7 +97,7 @@ const Assessments: NextPage = () => {
         </nav>
         <div className="frameParent2">
           <div className="ellipseParent">
-            <Image className="frameInner" src="/icons/assessments-hero-oval.svg" width={1280} height={573} sizes="(max-width: 768px) 100vw, 1280px" alt="" aria-hidden="true" priority />
+            <Image className="frameInner" src="/images/assessments-hero-oval.svg" width={1280} height={573} sizes="(max-width: 768px) 100vw, 1280px" alt="" aria-hidden="true" priority />
             <div className="ellipseGroup">
               <div className="ellipseDiv" />
               <div className="frameParent3">
@@ -207,8 +207,8 @@ const Assessments: NextPage = () => {
             <div className="frameParent13">
               <div className="frameParent14">
                 <div className="benefitCardTop" aria-hidden="true">
-                  <Image className="benefitIconCircle" src="/icons/ellipse 334-4.svg" width={61} height={61} alt="" />
-                  <Image className="benefitIconGlyph" src="/icons/sparkles.svg" width={25} height={25} alt="" />
+                  <Image className="benefitIconCircle" src="/icons/social-blue-bg.svg" width={61} height={61} alt="" />
+                  <Image className="benefitIconGlyph" src="/icons/sparkles-star.svg" width={25} height={25} alt="" />
                 </div>
                 <div className="frameWrapper8">
                   <div className="frameWrapper9">
@@ -226,8 +226,8 @@ const Assessments: NextPage = () => {
               </div>
               <div className="frameParent14">
                 <div className="benefitCardTop" aria-hidden="true">
-                  <Image className="benefitIconCircle" src="/icons/ellipse 334-3.svg" width={61} height={61} alt="" />
-                  <Image className="benefitIconGlyph" src="/icons/target-01.svg" width={25} height={25} alt="" />
+                  <Image className="benefitIconCircle" src="/icons/social-gradient-bg.svg" width={61} height={61} alt="" />
+                  <Image className="benefitIconGlyph" src="/icons/target-11.svg" width={25} height={25} alt="" />
                 </div>
                 <div className="frameWrapper11">
                   <div className="frameWrapper12">
@@ -245,8 +245,8 @@ const Assessments: NextPage = () => {
               </div>
               <div className="frameParent14">
                 <div className="benefitCardTop" aria-hidden="true">
-                  <Image className="benefitIconCircle" src="/icons/ellipse 334-2.svg" width={61} height={61} alt="" />
-                  <Image className="benefitIconGlyph" src="/icons/globe-02.svg" width={25} height={25} alt="" />
+                  <Image className="benefitIconCircle" src="/icons/Ellipse 334-2-green.svg" width={61} height={61} alt="" />
+                  <Image className="benefitIconGlyph" src="/icons/globe-round.svg" width={25} height={25} alt="" />
                 </div>
                 <div className="frameWrapper11">
                   <div className="frameWrapper12">
@@ -266,7 +266,7 @@ const Assessments: NextPage = () => {
                   <div className="image20" />
                 </div>
                 <div className="benefitCardTop" aria-hidden="true">
-                  <Image className="benefitIconCircle" src="/icons/ellipse 334-1.svg" width={61} height={61} alt="" />
+                  <Image className="benefitIconCircle" src="/icons/Ellipse 334-1-purple.svg" width={61} height={61} alt="" />
                   <Image className="benefitIconGlyph" src="/icons/chart-up.svg" width={25} height={25} alt="" />
                 </div>
                 <div className="frameWrapper8">
@@ -282,7 +282,7 @@ const Assessments: NextPage = () => {
               </div>
               <div className="frameParent14">
                 <div className="benefitCardTop" aria-hidden="true">
-                  <Image className="benefitIconCircle benefitIconCircleInset" src="/icons/ellipse 334.svg" width={61} height={61} alt="" />
+                  <Image className="benefitIconCircle benefitIconCircleInset" src="/icons/Ellipse 334-orange.svg" width={61} height={61} alt="" />
                   <Image className="benefitIconGlyph" src="/icons/clipboard-list copy.svg" width={25} height={25} alt="" />
                 </div>
                 <div className="frameWrapper8">
@@ -344,7 +344,7 @@ const Assessments: NextPage = () => {
                   </div>
                   <div className="frameWrapper27">
                     <div className="frameParent25">
-                      <Image className="frameChild11 formatCardIcon" src="/icons/puzzle.svg" width={100} height={100} sizes="100px" alt="Multimedia-based assessments" />
+                      <Image className="frameChild11 formatCardIcon" src="/icons/puzzle-pink.svg" width={100} height={100} sizes="100px" alt="Multimedia-based assessments" />
 
                       <b className="popularOnlineQuiz">
                         Multimedia-Based
@@ -362,7 +362,7 @@ const Assessments: NextPage = () => {
                   </div>
                   <div className="frameWrapper27">
                     <div className="frameParent25">
-                      <Image className="frameChild11 formatCardIcon" src="/icons/images.svg" width={100} height={100} sizes="100px" alt="Multimedia-based assessments" />
+                      <Image className="frameChild11 formatCardIcon" src="/icons/images-green.svg" width={100} height={100} sizes="100px" alt="Multimedia-based assessments" />
                       <b className="popularOnlineQuiz">
                         Multimedia-Based Assessments
                         <br />
@@ -378,7 +378,7 @@ const Assessments: NextPage = () => {
                   <div className="frameWrapper26" />
                   <div className="frameWrapper27">
                     <div className="frameParent25">
-                      <Image className="frameChild11 formatCardIcon" src="/icons/briefcase-01.svg" width={100} height={100} sizes="100px" alt="Real-world application assessments" />
+                      <Image className="frameChild11 formatCardIcon" src="/icons/briefcase-01-orange.svg" width={100} height={100} sizes="100px" alt="Real-world application assessments" />
                       <b className="popularOnlineQuiz">
                         Real-World Application Assessments
                         <br />
@@ -394,7 +394,7 @@ const Assessments: NextPage = () => {
                   </div>
                   <div className="frameWrapper27">
                     <div className="frameParent25">
-                      <Image className="frameChild11 formatCardIcon" src="/icons/user-group-02.svg" width={100} height={100} sizes="100px" alt="Collaborative and continuous learning" />
+                      <Image className="frameChild11 formatCardIcon" src="/icons/user-group-02 copyblue.svg" width={100} height={100} sizes="100px" alt="Collaborative and continuous learning" />
                       <b className="popularOnlineQuiz">
                         Collaborative and Continuous Learning
                         <br />
@@ -431,7 +431,7 @@ const Assessments: NextPage = () => {
                 <div className="image20Parent5 aiHoverCard aiPracticeCard">
                   <div className="image207" />
                   <div className="frameParent40">
-                    <Image className="aiCardIcon aiCardIconPink" src="/icons/clipboard-list.svg" width={60} height={60} sizes="60px" alt="Create practice quizzes" />
+                    <Image className="aiCardIcon aiCardIconPink" src="/icons/clipboard-list copy.svg" width={60} height={60} sizes="60px" alt="Create practice quizzes" />
                     <div className="createPracticeQuizzes">
                       Create Practice Quizzes
                       <br />
@@ -453,7 +453,7 @@ const Assessments: NextPage = () => {
                 <div className="image20Parent5 aiHoverCard aiAdaptiveCard">
                   <div className="image207" />
                   <div className="frameParent40">
-                    <Image className="aiCardIcon aiCardIconPurple" src="/icons/target-02.svg" width={60} height={60} sizes="60px" alt="Enable adaptive testing" />
+                    <Image className="aiCardIcon aiCardIconPurple" src="/icons/target-02-heart.svg" width={60} height={60} sizes="60px" alt="Enable adaptive testing" />
                     <div className="enableAdaptiveTesting">Enable Adaptive Testing</div>
                   </div>
                 </div>
