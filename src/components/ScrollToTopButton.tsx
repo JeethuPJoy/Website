@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import dynamic from "next/dynamic";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
@@ -8,6 +9,14 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
   const [arrowAnimationData, setArrowAnimationData] = useState<object | null>(null);
+  const [mounted, setMounted] = useState(false);
+  const [coords, setCoords] = useState<{ top: number; left: number } | null>(null);
+  const anchorRef = useRef<HTMLSpanElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     fetch("/animations/arrow-down-purple.json")
@@ -23,20 +32,53 @@ export default function ScrollToTopButton() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useLayoutEffect(() => {
+    function updatePosition() {
+      const anchor = anchorRef.current;
+      if (!anchor) return;
+      const rect = anchor.getBoundingClientRect();
+      const buttonHeight = buttonRef.current?.offsetHeight ?? 91.96;
+      setCoords({ top: rect.top - buttonHeight / 2, left: rect.left + rect.width / 2 });
+    }
+
+    updatePosition();
+    window.addEventListener("resize", updatePosition);
+    window.addEventListener("scroll", updatePosition, true);
+    return () => {
+      window.removeEventListener("resize", updatePosition);
+      window.removeEventListener("scroll", updatePosition, true);
+    };
+  }, [mounted]);
+
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <button
-      type="button"
-      className={`scroll-top-button${isVisible ? " scroll-top-button-visible" : ""}`}
-      onClick={handleClick}
-      aria-label="Scroll to top"
-    >
-      <span className="scroll-top-button-inner" aria-hidden="true">
-        {arrowAnimationData && <Lottie animationData={arrowAnimationData} loop autoplay className="scroll-top-button-icon" />}
-      </span>
-    </button>
+    <>
+      <span ref={anchorRef} className="scroll-top-anchor" aria-hidden="true" />
+      {mounted &&
+        createPortal(
+          <button
+            type="button"
+            ref={buttonRef}
+            className={`scroll-top-button${isVisible ? " scroll-top-button-visible" : ""}`}
+            onClick={handleClick}
+            aria-label="Scroll to top"
+            style={{
+              position: "fixed",
+              top: coords?.top ?? 0,
+              left: coords?.left ?? 0,
+              transform: "translateX(-50%)",
+              visibility: coords ? "visible" : "hidden",
+            }}
+          >
+            <span className="scroll-top-button-inner" aria-hidden="true">
+              {arrowAnimationData && <Lottie animationData={arrowAnimationData} loop autoplay className="scroll-top-button-icon" />}
+            </span>
+          </button>,
+          document.body
+        )}
+    </>
   );
 }

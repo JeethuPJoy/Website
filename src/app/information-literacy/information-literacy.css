@@ -4694,10 +4694,6 @@
 		row-gap: 18px;
 	}
 
-	.thinkingCard {
-		width: min(100%, 176px);
-	}
-
 	.thinkingCardInner {
 		padding-top: 17px;
 	}
@@ -10002,7 +9998,7 @@
   }
 
   .thinkingCard {
-    width: min(100%, 280px) !important;
+    width: 250px !important;
     height: 340px !important;
     margin: 0 auto !important;
   }

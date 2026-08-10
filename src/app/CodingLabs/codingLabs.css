@@ -8,6 +8,8 @@
   font-size: 48px;
   color: #31344b;
   font-family: "Segoe UI";
+  max-width: 1440px; 
+	margin: 0 auto;
 }
 
 .arrowDown01Icon {

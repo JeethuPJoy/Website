@@ -415,7 +415,7 @@ export default function PersonalizedLearningPathsPage() {
         <ArrowRightDouble />
         <span className="plp-breadcrumb-item">Learning</span>
         <ArrowRightDouble />
-        <span className="plp-breadcrumb-item plp-breadcrumb-current">Personalized Learning Paths</span>
+        <span className="plp-breadcrumb-current">Personalized Learning Paths</span>
       </nav>
 
       <section className="plp-hero">

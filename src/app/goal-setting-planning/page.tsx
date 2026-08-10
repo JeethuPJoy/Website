@@ -1,0 +1,991 @@
+"use client";
+
+import type { NextPage } from "next";
+import { useEffect } from "react";
+import Image from "next/image";
+import "./goals-progress.css";
+
+const GoalSettingsAndProgressTracking: NextPage = () => {
+  useEffect(() => {
+    const root = document.querySelector<HTMLElement>(".goalSettingsAndProgressTra");
+    if (!root) return;
+
+    const arrow = root.querySelector<HTMLElement>(".flatLayStatisticsPresentatiIcon");
+    const flowLines = Array.from(root.querySelectorAll<HTMLElement>(".image21Parent, .image21Group, .image21Container, .image21Parent2, .image21Parent3"));
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    const setProgress = (element: HTMLElement, progress: number) => {
+      const safeProgress = Math.min(1, Math.max(0, progress));
+      element.style.setProperty("--scroll-reveal", safeProgress.toFixed(4));
+    };
+
+    const update = () => {
+      if (reducedMotion.matches) {
+        if (arrow) setProgress(arrow, 1);
+        flowLines.forEach((line) => setProgress(line, 1));
+        return;
+      }
+
+      const viewportHeight = window.innerHeight;
+
+      if (arrow) {
+        const rect = arrow.getBoundingClientRect();
+        const start = viewportHeight * 0.88;
+        const end = viewportHeight * 0.28;
+        setProgress(arrow, (start - rect.top) / (start - end));
+      }
+
+      flowLines.forEach((line) => {
+        const rect = line.getBoundingClientRect();
+        const start = viewportHeight * 0.9;
+        const end = viewportHeight * 0.48;
+        setProgress(line, (start - rect.top) / (start - end));
+      });
+    };
+
+    let frameId = 0;
+    const requestUpdate = () => {
+      if (frameId) return;
+      frameId = window.requestAnimationFrame(() => {
+        frameId = 0;
+        update();
+      });
+    };
+
+    update();
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
+    reducedMotion.addEventListener("change", requestUpdate);
+
+    return () => {
+      window.removeEventListener("scroll", requestUpdate);
+      window.removeEventListener("resize", requestUpdate);
+      reducedMotion.removeEventListener("change", requestUpdate);
+      if (frameId) window.cancelAnimationFrame(frameId);
+    };
+  }, []);
+
+  return (
+    <>
+      <main id="main-content" className="goalSettingsAndProgressTra">
+        <nav className="frameDiv" aria-label="Breadcrumb">
+          <div className="featuresWrapper">
+            <p className="learning">Features</p>
+          </div>
+          <div className="homeParent">
+            <Image className="arrowDown01Icon" src="/icons/arrow-right-double.svg" width={12} height={12} sizes="12px" alt="" aria-hidden="true" style={{ display: "block", flexShrink: 0 }} />
+            <div className="featuresWrapper">
+              <p className="learning">Learning</p>
+            </div>
+          </div>
+          <div className="arrowRightDoubleGroup">
+            <Image className="arrowDown01Icon" src="/icons/arrow-right-double.svg" width={12} height={12} sizes="12px" alt="" aria-hidden="true" style={{ display: "block", flexShrink: 0 }} />
+            <p className="learning">Goals and Tracking</p>
+          </div>
+        </nav>
+
+        <svg className="goalCombinedPolygons" width="1275" height="816" viewBox="0 0 1275 816" fill="none" aria-hidden="true" focusable="false">
+          <g filter="url(#filter0_ii_4_11)">
+            <path d="M630.033 0L1260.07 178V534L630.033 712L-0.000305176 534V178L630.033 0Z" fill="#DFE6E9" />
+            <path d="M630.033 0L1260.07 178V534L630.033 712L-0.000305176 534V178L630.033 0Z" fill="url(#pattern0_4_11)" fillOpacity="0.05" />
+          </g>
+
+          <g filter="url(#filter1_ii_4_11)">
+            <path d="M638.033 426L1260.07 523.5V718.5L638.033 816L1.93756 718.5V523.5L638.033 426Z" fill="#DFE6E9" />
+          </g>
+
+          <defs>
+            <filter id="filter0_ii_4_11" x="-8" y="-8" width="1276.07" height="728" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+              <feOffset dx="8" dy="8" />
+              <feGaussianBlur stdDeviation="8" />
+              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+              <feBlend mode="normal" in2="shape" result="effect1_innerShadow_4_11" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+              <feOffset dx="-8" dy="-8" />
+              <feGaussianBlur stdDeviation="8" />
+              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+              <feBlend mode="normal" in2="effect1_innerShadow_4_11" result="effect2_innerShadow_4_11" />
+            </filter>
+
+            <pattern id="pattern0_4_11" patternContentUnits="objectBoundingBox" width="0.038488" height="0.13764">
+              <use xlinkHref="#image0_4_11" transform="scale(0.000687285 0.00140449)" />
+            </pattern>
+
+            <filter id="filter1_ii_4_11" x="-6.0625" y="418" width="1288.19" height="406" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+              <feOffset dx="8" dy="8" />
+              <feGaussianBlur stdDeviation="8" />
+              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+              <feBlend mode="normal" in2="shape" result="effect1_innerShadow_4_11" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+              <feOffset dx="-8" dy="-8" />
+              <feGaussianBlur stdDeviation="8" />
+              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+              <feBlend mode="normal" in2="effect1_innerShadow_4_11" result="effect2_innerShadow_4_11" />
+            </filter>
+
+            <image id="image0_4_11" width="56" height="98" preserveAspectRatio="none" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAABiCAYAAAAFkxCPAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABYdJREFUeAHtW81WGzcUvpoZ7+kTFLZtTiA9XWRX5wkKuzRgd2ghpztg152HJzDseoobJsa4OdnEeQKTXTdt4PAA+BHosbNJRqNItnHGY2n+JEOUo2+DsXTH9xvpzr0jfUIwJ2xUtkj0/9ZJA+VpVwULvnAYgrrDENQdhqDuMAR1hyGoO+ZC0HV3FyAnXPe3RZgDlBPcqG55OBxcQU7gEHfXK1u7oBgOKMLGxlYZWeiYELJICtgzO/o6Ua9Ut3cQIK/Z/PM5KID0CLKpRV99uoCgy5yMtxMC59Thcvz7EIebBEhvtj9ZDEnoVyrbxyqmbeF3MBZnQdj3gKAdfg9yDcTyWq2jw6TrrK/TaWkRNmqLwHfwwLadQ9//owcFYEMBjGLl/StKrgwCpwZ9vPby5bM3ade6vPzvn2+/WX6NbLRASa5wujykI726svz99cXFvxeQE7lGkMUZWKhO59EKtwOBszAM9tpt/1xk7zhOTzQajx+7i7T9mHpV5rUjhHokJJutVuMMMiITQRYLAQ6O6ccyr53FkgWWe3Jy9EZkjzGu0X7u6EeRb9v2vojokye/uHREa+Jpm2w/3TcBozgb7NJOO/RhwcltLM7QwWAQHHY6/nVO+2v664etZsMT/T4d8Rrtw1LHgsD7/ST7URcB6FPMBUTqfGLDUfPf9fEej9jIuaeryGL2s0/WKQfotEtKC2za2iWbjaZbxB7NOkbjDEENBNORxRm9qCeajqn2YnQc29lLik9KtCuctpSobdmP4vYTgvE4iWOYs0LwTk//4t6prGkjDPH/MvGVNz6RbJwxsPJMbM8uAV7UXnbaua67EATODmXjAR+T+Ea0NLoSxwnpBB/w3osXfo/XGi3P+OZwFgTBpsh+mBZKTp1+XOW1K4nP+ArzjWNJcSabNuKQTQvV6taPmJADnn2MYHJ5pao8E0G2bOPdKPv+8nfeyDcWJ/gnUXmlsjwTQbZsu7x8ex63RzSOuklxIlueFcW4bHtF7xz3d1l84QDW2u2jc5H9KD4FUB1nRSEbnzMEVaSNeWBctnnCDoKybYqgbHk2bxTJnxOCw7fyguXZbSNL2XbSPFpin6NrMuV4x7Ty7K4wfiAuieIzWniI12Ro2qDT8cHnRi6KdvuZX7LxA+arqE90it7Knvm8IPLfrGzrDkNQdxiCusMQ1B2GoO4wBHWHIag7DEHdYQjqDkNQdxiCusMQ1B1COSUTFjhWcOD7d7PRkhU3u2Eg0HAmLd3XcFh6W60+/Rk+U7Bd56H4lgx1OVxMRpBttPA2MdiWWaW67fFENneFqNiI8EaO7obdfJzaf1ApgpsHRmKloE4EshPebhhnhze7yAZuCTK7zsIdJFk1kiqki/qSxUqIaaOTph1t/yGE0BdNW4ozx3Y2VU9bWVHgjYhiIgQqIrKJQlV8yoqN4vafhEAZRTa2PcwsDznXXpHRVjPH7t2/9zsh7/8WiY2KiJW4WrU0bbTq+JQV9SWJldB65der29JuxqFCC55mP3yKymqj84ro1MRZtrQxSROy0y6rPSbhVxZ9OorERuxm9PvBvkhslFeshASO5tZGR+2TRHRCZDhzUSRtCBO9bHyl2X/yK9+ZC559klgp5dxEctk2fNoCeZ7h7AOnXerMRar9xEfIANXxKX/mIrk8m/INciBJGz1G6tmHUqn0deEzFwVEgYXkWqrLtnlqwQsdr+Npo2PIXLaxpRGZ8iwN0oK7bGcfyG6z2Xgd/V62PMsK6TO8YwfWkrSbtNjtQPxmjo7EzlxvkjZaasS3yg4pM+0m/eOztEAQcdPy3yxGcXbaahQ6cyGC8nVR+gayjz/gR5ATgz5eKnqgJAlzWfgtEjfzErqbpXvdYQjqDkNQdxiCusMQ1B2GoO74CEFnnMSO0ihEAAAAAElFTkSuQmCC" />
+          </defs>
+        </svg>
+
+        <div className="goalSettingsAndProgressTraInner">
+          <div className="frameWrapper">
+            <div className="frameParent2">
+              <div className="frameParent3">
+                <p className="frameItem">Goal Setting &amp; Progress Tracking</p>
+                <h1 className="setClearGoals">Set Clear Goals! Track Progress! Achieve It!</h1>
+              </div>
+              <p className="neurolxpHelpsLearners">NeuroLXP helps learners set goals, create personalized plans, and track progress for continuous improvement and better outcomes.</p>
+            </div>
+          </div>
+        </div>
+        <div className="polygonParent">
+          <div className="frameParent4">
+            <div className="frameParent5">
+              <div className="frameWrapper2">
+                <div className="frameParent6">
+                  <div className="wrapper">
+                    <p className="b">
+                      38%
+                      <br />
+                    </p>
+                  </div>
+                  <div className="progressVisibilityWrapper">
+                    <p className="progressVisibility">
+                      Progress Visibility
+                      <br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="frameWrapper3">
+                <div className="frameParent6">
+                  <div className="wrapper">
+                    <p className="b">
+                      50%
+                      <br />
+                    </p>
+                  </div>
+                  <div className="progressVisibilityWrapper">
+                    <p className="progressVisibility">Career Growth</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="frameParent8">
+              <div className="frameWrapper4">
+                <div className="frameParent9">
+                  <div className="wrapper">
+                    <p className="b">95%</p>
+                  </div>
+                  <div className="progressVisibilityWrapper">
+                    <p className="progressVisibility">
+                      Personalization
+                      <br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="frameWrapper5">
+                <div className="frameParent10">
+                  <div className="wrapper">
+                    <p className="b">
+                      30%
+                      <br />
+                    </p>
+                  </div>
+                  <div className="progressVisibilityWrapper">
+                    <p className="progressVisibility">
+                      Efficiency Gain
+                      <br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="frameParent11">
+          <div className="frameParent12">
+            <p className="frameIcon">The Challenge</p>
+            <h2 className="turningLearningGoalsContainer">
+              <span className="turningLearningGoals">{`Turning Learning Goals into `}</span>
+              <span className="measurableProgress">Measurable Progress</span>
+            </h2>
+            <p className="unclearGoalsCompeting">Unclear goals, competing priorities, and limited progress visibility can hinder learner motivation and outcomes.</p>
+          </div>
+          <div className="frameParent13">
+            <div className="frameWrapper6">
+              <div className="alert01Parent">
+                <div className="challengeIconCircle">
+                  <Image className="alert01Icon" src="/icons/compass.svg" width={42} height={42} sizes="42px" alt="" aria-hidden="true" />
+                </div>
+                <div className="lackOfClarityParent">
+                  <h3 className="lackOfClarityContainer">
+                    <span className="lack">{`Lack `}</span>
+                    <span className="of">of</span>
+                    <span className="lack"> Clarity</span>
+                  </h3>
+                  <p className="unclearGoalsHinder">Unclear goals hinder focused learning plans</p>
+                </div>
+              </div>
+            </div>
+            <div className="frameWrapper7">
+              <div className="alert01Parent">
+                <div className="challengeIconCircle">
+                  <Image className="alert01Icon" src="/icons/target-01-1-pink-big.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
+                </div>
+                <div className="lackOfClarityParent">
+                  <h3 className="prioritization">Prioritization</h3>
+                  <p className="competingGoalsReduce">Competing goals reduce focus and increase overwhelm</p>
+                </div>
+              </div>
+            </div>
+            <div className="frameWrapper8">
+              <div className="alert01Parent">
+                <div className="challengeIconCircle">
+                  <Image className="alert01Icon" src="/icons/chart-02.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
+                </div>
+                <div className="lackOfClarityParent">
+                  <h3 className="prioritization">Progress Visibility</h3>
+                  <p className="limitedInsightsMake">Limited insights make improvement difficult to track</p>
+                </div>
+              </div>
+            </div>
+            <div className="frameWrapper9">
+              <div className="alert01Parent">
+                <div className="challengeIconCircle">
+                  <Image className="alert01Icon" src="/icons/alert-01-1.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
+                </div>
+
+                <div className="lackOfClarityParent">
+                  <h3 className="executionGaps">Execution Gaps</h3>
+                  <p className="unclearGoalsHinder">Distractions and procrastination derail plans</p>
+                </div>
+              </div>
+            </div>
+            <div className="frameWrapper10">
+              <div className="alert01Parent">
+                <div className="challengeIconCircle">
+                  <Image className="alert01Icon" src="/icons/message-multiple-02.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
+                </div>
+                <div className="lackOfClarityParent">
+                  <h3 className="adaptability">Adaptability</h3>
+                  <p className="unclearGoalsHinder">Changing goals require flexible, adjustable plans</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Image className="flatLayStatisticsPresentatiIcon" src="/images/flat-lay-statistics-presentation-with-chart-arrows 1.png" width={707} height={331} sizes="100vw" alt="Learning progress arrows chart" />
+        </div>
+        <div className="frameParent18">
+          <div className="frameParent19">
+            <p className="frameChild7">Adaptive Learning Experience</p>
+            <h2 className="turningLearningGoalsContainer">Learning That Adapts With You</h2>
+            <p className="unclearGoalsCompeting">NeuroLXP continuously connects goals, plans, and progress to create a more personalized learning experience.</p>
+          </div>
+          <div className="frameParent20">
+            <div className="checkmarkSquare04Parent">
+              <span className="adaptiveCheckCircle adaptiveBlue" aria-hidden="true">
+                <span className="adaptiveInnerRing">
+                  <Image className="adaptiveCheckIcon" src="/icons/checkmark-circle-04-1.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                </span>
+              </span>
+              <p className="adaptivePaths">Adaptive Paths</p>
+            </div>
+            <div className="frameParent22">
+              <span className="adaptiveCheckCircle adaptivePink" aria-hidden="true">
+                <span className="adaptiveInnerRing">
+                  <Image className="adaptiveCheckIcon" src="/icons/checkmark-circle-04-2.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                </span>
+              </span>
+              <p className="smartRecommendations">Smart Recommendations</p>
+            </div>
+            <div className="frameParent22">
+              <span className="adaptiveCheckCircle adaptivePurple" aria-hidden="true">
+                <span className="adaptiveInnerRing">
+                  <Image className="adaptiveCheckIcon" src="/icons/checkmark-circle-04-3.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                </span>
+              </span>
+              <p className="personalizedFeedback">Personalized Feedback</p>
+            </div>
+            <div className="frameParent22">
+              <span className="adaptiveCheckCircle adaptiveOrange" aria-hidden="true">
+                <span className="adaptiveInnerRing">
+                  <Image className="adaptiveCheckIcon" src="/icons/checkmark-circle-04.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                </span>
+              </span>
+              <p className="continuousImprovement">Continuous Improvement</p>
+            </div>
+          </div>
+        </div>
+        <div className="frameParent25">
+          <div className="frameParent26">
+            <div className="frameWrapper11">
+              <div className="frameWrapper12">
+                <div className="frameParent2">
+                  <div className="frameParent3">
+                    <p className="frameChild12">Goal Setting &amp; Planning</p>
+                    <h2 className="setClearGoals">From Aspirations to Action</h2>
+                  </div>
+                  <p className="neurolxpHelpsLearners2">NeuroLXP helps learners turn academic and career aspirations into clear, achievable goals with structured planning and personalized guidance.</p>
+                </div>
+              </div>
+            </div>
+            <div className="frameParent29">
+              <div className="frameParent30">
+                <div className="polygonGroup">
+                  <svg className="polygonIcon" width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
+                    <g filter="url(#outerHexShadow-1)">
+                      <path d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z" fill="#DFE6E9" />
+                    </g>
+                    <g filter="url(#innerHexShadow-1)">
+                      <path d="M183 56L274.924 94.0761L313 186L274.924 277.924L183 316L91.0761 277.924L53 186L91.0761 94.0761L183 56Z" fill="#DFE6E9" />
+                    </g>
+                    <defs>
+                      <filter id="outerHexShadow-1" x="0" y="0" width="371" height="371" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="8" dy="8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="-8" dy="-8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
+                      </filter>
+                      <filter id="innerHexShadow-1" x="45" y="48" width="276" height="276" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="8" dy="8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="-8" dy="-8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <div className="frameParent31">
+                    <div className="frameParent32">
+                      <div className="featureIconHex">
+                        <svg className="featureIconHexSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
+                          <g filter="url(#featureIconHexFilter1)">
+                            <path d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z" fill="#DFE6E9" />
+                          </g>
+                          <defs>
+                            <filter id="featureIconHexFilter1" x="-2" y="-2" width="78" height="78" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dx="2" dy="2" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="shape" result="effect1InnerShadow" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dx="-2" dy="-2" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="effect1InnerShadow" result="effect2InnerShadow" />
+                            </filter>
+                          </defs>
+                        </svg>
+                        <Image className="frameChild14" src="/icons/target-01-pink.svg" width={46} height={46} sizes="46px" alt="Personalized goals" />
+                      </div>
+                      <h3 className="personalizedGoals">Personalized Goals</h3>
+                    </div>
+                    <p className="setAcademicAnd">
+                      Set academic and
+                      <br />
+                      career goals
+                    </p>
+                  </div>
+                </div>
+                <div className="polygonContainer">
+                  <svg className="polygonIcon" width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
+                    <g filter="url(#outerHexShadow-2)">
+                      <path d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z" fill="#DFE6E9" />
+                    </g>
+                    <g filter="url(#innerHexShadow-2)">
+                      <path d="M183 56L274.924 94.0761L313 186L274.924 277.924L183 316L91.0761 277.924L53 186L91.0761 94.0761L183 56Z" fill="#DFE6E9" />
+                    </g>
+                    <defs>
+                      <filter id="outerHexShadow-2" x="0" y="0" width="371" height="371" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="8" dy="8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="-8" dy="-8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
+                      </filter>
+                      <filter id="innerHexShadow-2" x="45" y="48" width="276" height="276" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="8" dy="8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="-8" dy="-8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <div className="frameParent31">
+                    <div className="frameParent32">
+                      <div className="featureIconHex">
+                        <svg className="featureIconHexSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
+                          <g filter="url(#featureIconHexFilter2)">
+                            <path d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z" fill="#DFE6E9" />
+                          </g>
+                          <defs>
+                            <filter id="featureIconHexFilter2" x="-2" y="-2" width="78" height="78" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dx="2" dy="2" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="shape" result="effect1InnerShadow" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dx="-2" dy="-2" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="effect1InnerShadow" result="effect2InnerShadow" />
+                            </filter>
+                          </defs>
+                        </svg>
+                        <Image className="frameChild14" src="/icons/ai-sparkles.svg" width={46} height={46} sizes="46px" alt="Smart suggestions" />
+                      </div>
+                      <h3 className="smartSuggestions">Smart Suggestions</h3>
+                    </div>
+                    <p className="setAcademicAnd">Get relevant goal recommendations</p>
+                  </div>
+                </div>
+                <div className="polygonParent2">
+                  <svg className="polygonIcon" width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
+                    <g filter="url(#outerHexShadow-3)">
+                      <path d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z" fill="#DFE6E9" />
+                    </g>
+                    <g filter="url(#innerHexShadow-3)">
+                      <path d="M183 56L274.924 94.0761L313 186L274.924 277.924L183 316L91.0761 277.924L53 186L91.0761 94.0761L183 56Z" fill="#DFE6E9" />
+                    </g>
+                    <defs>
+                      <filter id="outerHexShadow-3" x="0" y="0" width="371" height="371" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="8" dy="8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="-8" dy="-8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
+                      </filter>
+                      <filter id="innerHexShadow-3" x="45" y="48" width="276" height="276" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="8" dy="8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="-8" dy="-8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <div className="frameParent31">
+                    <div className="frameParent36">
+                      <div className="featureIconHex">
+                        <svg className="featureIconHexSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
+                          <g filter="url(#featureIconHexFilter3)">
+                            <path d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z" fill="#DFE6E9" />
+                          </g>
+                          <defs>
+                            <filter id="featureIconHexFilter3" x="-2" y="-2" width="78" height="78" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dx="2" dy="2" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="shape" result="effect1InnerShadow" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dx="-2" dy="-2" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="effect1InnerShadow" result="effect2InnerShadow" />
+                            </filter>
+                          </defs>
+                        </svg>
+                        <Image className="frameChild14" src="/icons/calendar-03.svg" width={46} height={46} sizes="46px" alt="Plan and schedule" />
+                      </div>
+                      <h3 className="planSchedule">{`Plan & Schedule`}</h3>
+                    </div>
+                    <p className="scheduleLearningAnd">Schedule learning and milestones</p>
+                  </div>
+                </div>
+              </div>
+              <div className="frameParent37">
+                <div className="polygonGroup">
+                  <svg className="polygonIcon" width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
+                    <g filter="url(#outerHexShadow-4)">
+                      <path d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z" fill="#DFE6E9" />
+                    </g>
+                    <g filter="url(#innerHexShadow-4)">
+                      <path d="M183 56L274.924 94.0761L313 186L274.924 277.924L183 316L91.0761 277.924L53 186L91.0761 94.0761L183 56Z" fill="#DFE6E9" />
+                    </g>
+                    <defs>
+                      <filter id="outerHexShadow-4" x="0" y="0" width="371" height="371" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="8" dy="8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="-8" dy="-8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
+                      </filter>
+                      <filter id="innerHexShadow-4" x="45" y="48" width="276" height="276" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="8" dy="8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="-8" dy="-8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <div className="frameParent31">
+                    <div className="frameParent32">
+                      <div className="featureIconHex">
+                        <svg className="featureIconHexSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
+                          <g filter="url(#featureIconHexFilter4)">
+                            <path d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z" fill="#DFE6E9" />
+                          </g>
+                          <defs>
+                            <filter id="featureIconHexFilter4" x="-2" y="-2" width="78" height="78" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dx="2" dy="2" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="shape" result="effect1InnerShadow" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dx="-2" dy="-2" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="effect1InnerShadow" result="effect2InnerShadow" />
+                            </filter>
+                          </defs>
+                        </svg>
+                        <Image className="frameChild14" src="/icons/university-usergroup.svg" width={46} height={46} sizes="46px" alt="Team plans" />
+                      </div>
+                      <h3 className="smartSuggestions">Team Plans</h3>
+                    </div>
+                    <p className="setAcademicAnd">
+                      Share plans with mentors
+                      <br />
+                      and peers.
+                    </p>
+                  </div>
+                </div>
+                <div className="polygonParent4">
+                  <svg className="polygonIcon" width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
+                    <g filter="url(#outerHexShadow-5)">
+                      <path d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z" fill="#DFE6E9" />
+                    </g>
+                    <g filter="url(#innerHexShadow-5)">
+                      <path d="M183 56L274.924 94.0761L313 186L274.924 277.924L183 316L91.0761 277.924L53 186L91.0761 94.0761L183 56Z" fill="#DFE6E9" />
+                    </g>
+                    <defs>
+                      <filter id="outerHexShadow-5" x="0" y="0" width="371" height="371" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="8" dy="8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="-8" dy="-8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
+                      </filter>
+                      <filter id="innerHexShadow-5" x="45" y="48" width="276" height="276" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="8" dy="8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="-8" dy="-8" />
+                        <feGaussianBlur stdDeviation="8" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <div className="frameParent31">
+                    <div className="frameParent32">
+                      <div className="featureIconHex">
+                        <svg className="featureIconHexSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
+                          <g filter="url(#featureIconHexFilter5)">
+                            <path d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z" fill="#DFE6E9" />
+                          </g>
+                          <defs>
+                            <filter id="featureIconHexFilter5" x="-2" y="-2" width="78" height="78" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dx="2" dy="2" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="shape" result="effect1InnerShadow" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dx="-2" dy="-2" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="effect1InnerShadow" result="effect2InnerShadow" />
+                            </filter>
+                          </defs>
+                        </svg>
+                        <Image className="frameChild26" src="/icons/message-multiple-02.svg" width={46} height={46} sizes="46px" alt="Review and improve" />
+                      </div>
+                      <h3 className="reviewImprove">{`Review & Improve`}</h3>
+                    </div>
+                    <p className="reviewRefineAnd">
+                      Review, Refine and
+                      <br />
+                      Improve{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="frameWrapper11">
+            <div className="frameWrapper12">
+              <div className="frameParent2">
+                <div className="frameParent3">
+                  <p className="frameChild27">Progress Tracking</p>
+                  <h2 className="setClearGoals">See Your Progress! Know What’s Next</h2>
+                </div>
+                <p className="trackPerformanceEngagement">Track performance, engagement, and achievements with real-time insights for better learning decisions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="frameParent44">
+          <div className="frameParent45">
+            <div className="frameParent46">
+              <div className="image20Parent">
+                <div className="image20" />
+                <div className="frameParent47">
+                  <div className="image21Parent">
+                    <div className="image21" />
+                    <h3 className="increasedMotivation">Increased Motivation</h3>
+                  </div>
+                  <div className="trackMilestonesAndLearningWrapper">
+                    <p className="trackMilestonesAnd">Track milestones and learning activity</p>
+                  </div>
+                </div>
+              </div>
+              <div className="image20Group">
+                <div className="image20" />
+                <div className="frameParent47">
+                  <div className="image21Group">
+                    <div className="image21" />
+                    <h3 className="performanceAnalytics">Performance Analytics</h3>
+                  </div>
+                  <div className="trackMilestonesAndLearningWrapper">
+                    <p className="trackMilestonesAnd">Identify strengths and learning gaps</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="frameParent49">
+              <div className="image20Parent">
+                <div className="image20" />
+                <div className="frameParent47">
+                  <div className="image21Container">
+                    <div className="image21" />
+                    <h3 className="competencyAssessment">Competency Assessment</h3>
+                  </div>
+                  <div className="trackMilestonesAndLearningWrapper">
+                    <p className="trackMilestonesAnd">Measure skills and competencies</p>
+                  </div>
+                </div>
+              </div>
+              <div className="image20Parent2">
+                <div className="image20" />
+                <div className="frameParent47">
+                  <div className="image21Parent2">
+                    <div className="image21" />
+                    <h3 className="behavioralInsights">Behavioral Insights</h3>
+                  </div>
+                  <div className="trackMilestonesAndLearningWrapper">
+                    <p className="trackMilestonesAnd">Understand engagement and learning patterns</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="image20Parent3">
+            <div className="image20" />
+            <div className="frameParent47">
+              <div className="image21Parent3">
+                <div className="image21" />
+                <h3 className="predictiveAnalytics">Predictive Analytics</h3>
+              </div>
+              <div className="trackMilestonesAndLearningWrapper">
+                <p className="trackMilestonesAnd">Spot challenges early and act proactively</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="frameParent53">
+          <div className="frameWrapper15">
+            <div className="frameWrapper16">
+              <div className="frameWrapper17">
+                <div className="frameParent54">
+                  <p className="frameChild28">Key Benefits</p>
+                  <h2 className="whyGoalSetting">{`Why Goal Setting & Progress Tracking Matter`}</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="frameParent55">
+            <div className="peopleTakingPartBusinessEvParent">
+              <div className="peopleTakingPartBusinessEv" />
+              <div className="image216" />
+              <div className="groupYoungBusinesspeopleUsi" />
+              <div className="rectangleIcon" aria-hidden="true" />
+              <div className="collageCustomerExperienceCoParent">
+                <Image className="collageCustomerExperienceCoIcon" src="/images/collage-customer-experience-concept 1.png" width={606} height={473} sizes="100vw" alt="Goal setting and progress growth chart" />
+                <div className="frameWrapper18">
+                  <div className="frameParent56">
+                    <div className="starParent">
+                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className="clearDirection">Clear Direction</p>
+                    </div>
+                    <div className="starParent">
+                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className="clearDirection">Higher Motivation</p>
+                    </div>
+                    <div className="starParent">
+                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className="clearDirection">Better Time Management</p>
+                    </div>
+                    <div className="starParent">
+                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className="clearDirection">Data-Driven Decisions</p>
+                    </div>
+                    <div className="starParent">
+                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className="clearDirection">Continuous Improvement</p>
+                    </div>
+                    <div className="starParent">
+                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className="careerReadiness">Career Readiness</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="image206" />
+          </div>
+        </div>
+        <div className="rectangleParent">
+          <Image className="rectangle" src="/images/Frame 2095586948.png" width={1280} height={505} sizes="100vw" alt="" aria-hidden="true" />
+          <div className="image207" />
+          <div className="frameParent57">
+            <div className="progressWithPurposeParent">
+              <h2 className="progressWithPurpose">{`Progress With Purpose `}</h2>
+              <p className="neurolxpHelpsLearners3">
+                NeuroLXP helps learners track progress adapt, and achieve better outcomes.
+                <br />
+                <br />
+                <br />
+              </p>
+            </div>
+            <div className="frameWrapper19">
+              <div className="frameWrapper20">
+                <div className="bookADemoWrapper">
+                  <p className="bookADemo">Book a Demo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Image className="handHoldingWoodenCubeWithIcon" src="/images/hand-holding-wooden-cube-with-target 1.png" width={601} height={500} sizes="100vw" alt="Business professional selecting an idea" />
+        </div>
+        <div className="frameParent75">
+          <div className="frameParent76">
+            <div className="wrapper">
+              <div className="frameWrapper23">
+                <div className="frameParent54">
+                  <p className="frameChild39">Personalized Learning Journey</p>
+                  <h2 className="setClearGoals">One Connected Learning Journey</h2>
+                </div>
+              </div>
+            </div>
+            <div className="frameParent78">
+              <div className="frameParent79">
+                <div className="checkmarkSquare04Parent">
+                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className="setGoals">Set Goals</h3>
+                </div>
+                <div className="checkmarkSquare04Parent">
+                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className="learn">Learn</h3>
+                </div>
+              </div>
+              <div className="frameParent80">
+                <div className="checkmarkSquare04Parent">
+                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className="trackProgress">Track Progress</h3>
+                </div>
+                <div className="checkmarkSquare04Parent">
+                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className="analyzePerformance">Analyze Performance</h3>
+                </div>
+              </div>
+              <div className="frameParent81">
+                <div className="checkmarkSquare04Parent">
+                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className="createPlans">Create Plans</h3>
+                </div>
+                <div className="checkmarkSquare04Parent">
+                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className="adaptImprove">{`Adapt & Improve`}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="frameParent82">
+            <div className="frameParent83">
+              <p className="frameChild40">Trust &amp; Intelligence</p>
+              <h2 className="turningLearningGoalsContainer">Personalized!Intelligent! Secure!</h2>
+            </div>
+            <div className="frameParent84">
+              <div className="frameParent85">
+                <div className="rectangleGroup">
+                  <div className="rectangleDiv" />
+                  <div className="frameChild41" />
+                  <div className="aiBookParent">
+                    <Image className="aiBookIcon" src="/icons/ai-book-blue.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
+                    <h3 className="aiMl">AI / ML Powered</h3>
+                  </div>
+                </div>
+                <div className="rectangleGroup">
+                  <div className="rectangleDiv" />
+                  <div className="frameChild41" />
+                  <div className="analyticsUpParent">
+                    <Image className="aiBookIcon" src="/icons/analytics-up.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
+                    <h3 className="learningAnalytics">Learning Analytics</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="frameParent85">
+                <div className="rectangleGroup">
+                  <div className="rectangleDiv" />
+                  <div className="frameChild41" />
+                  <div className="analyticsUpParent">
+                    <Image className="aiBookIcon" src="/icons/shield-check.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
+                    <h3 className="aiMl">Privacy First</h3>
+                  </div>
+                </div>
+                <div className="rectangleGroup">
+                  <div className="rectangleDiv" />
+                  <div className="frameChild41" />
+                  <div className="analyticsUpParent">
+                    <Image className="aiBookIcon" src="/icons/activity-01.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
+                    <h3 className="realTimeInsights">Real-Time Insights</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </>
+  );
+};
+export default GoalSettingsAndProgressTracking;
