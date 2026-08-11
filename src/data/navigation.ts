@@ -74,7 +74,7 @@ export const navItems: NavItem[] = [
       {
         label: "Industries We Serve",
         items: [
-          { label: "University and College", href: "/University" },
+          { label: "University and College", href: "/university" },
           { label: "BFSI", href: "/bfsi" },
           { label: "Retail And Healthcare", href: "/retail-healthcare" },
           { label: "Government Institutions", href: "/government" },
