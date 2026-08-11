@@ -180,10 +180,10 @@ export const navItems: NavItem[] = [
 ];
 
 export const footerAboutLinks: SimpleLink[] = [
-  { label: "Our Mission", href: "/about/our-mission" },
-  { label: "Our Vision", href: "/about/our-vision" },
-  { label: "Our Story", href: "/about/our-story" },
-  { label: "Our Team", href: "/about/our-team" },
+  { label: "Our Mission", href: "/#story-mission-vision" },
+  { label: "Our Vision", href: "/#story-mission-vision" },
+  { label: "Our Story", href: "/#story-mission-vision" },
+  { label: "Our Team", href: "/" },
 ];
 
 export const footerQuickLinks: SimpleLink[] = [
@@ -193,9 +193,7 @@ export const footerQuickLinks: SimpleLink[] = [
 ];
 
 export const footerNeuroLxpLinks: SimpleLink[] = [
-  { label: "Our Customers", href: "/our-customers" },
-  { label: "Smart Learning Paths", href: "/features/learning-paths" },
-  { label: "Smart Content Creation", href: "/features/content-curation" },
+  { label: "Our Customers", href: "/#our-customers" },
+  { label: "Smart Learning Paths", href: "/personalized-learning-paths" },
+  { label: "Smart Content Creation", href: "/content-curation" },
 ];
-
-

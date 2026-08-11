@@ -3,6 +3,7 @@ import Link from "next/link";
 import { footerAboutLinks, footerQuickLinks, footerNeuroLxpLinks } from "@/data/navigation";
 import { SparkleIcon, MailIcon, FacebookIcon, InstagramIcon, YoutubeIcon, LinkedinIcon } from "@/components/icons/Icons";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import FooterAboutLink from "@/components/Footer/FooterAboutLink";
 
 export default function Footer() {
   return (
@@ -40,9 +41,7 @@ export default function Footer() {
                 <ul className="nlxp-footer-list">
                   {footerAboutLinks.map((link) => (
                     <li key={link.label}>
-                      <Link href={link.href} className="nlxp-footer-link">
-                        {link.label}
-                      </Link>
+                      <FooterAboutLink link={link} />
                     </li>
                   ))}
                 </ul>
@@ -68,9 +67,7 @@ export default function Footer() {
                 <ul className="nlxp-footer-list">
                   {footerNeuroLxpLinks.map((link) => (
                     <li key={link.label}>
-                      <Link href={link.href} className="nlxp-footer-link">
-                        {link.label}
-                      </Link>
+                      <FooterAboutLink link={link} />
                     </li>
                   ))}
                 </ul>
