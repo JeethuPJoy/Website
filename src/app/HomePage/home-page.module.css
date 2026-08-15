@@ -2424,7 +2424,7 @@ a:focus-visible {
 } */
 
 @media (max-width: 2000px) {
-  why-choose-blob {
+  :global(why-choose-blob) {
     top: -81px;
     left: 374px;
   }

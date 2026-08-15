@@ -8,6 +8,7 @@ import { LightbulbIcon, CursorClickIcon, TargetIcon, UsersIcon, SmartphoneIcon, 
 import BookDemoModal from "@/components/Bookademo/BookDemoModal";
 import BookDemoButton from "@/components/BookDemoButton/BookDemoButton";
 import ContactUs from "@/components/contact/page";
+import styles from "./home-page.module.css";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -79,42 +80,42 @@ function HeroCarousel() {
   };
 
   return (
-    <section className="hero-section" aria-roledescription="carousel" aria-label="NeuroLXP highlights" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onFocus={() => setIsPaused(true)} onBlur={() => setIsPaused(false)}>
-      <div className="hero-frame">
-        <div className="hero-image-stage">
+    <section className={styles["hero-section"]} aria-roledescription="carousel" aria-label="NeuroLXP highlights" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onFocus={() => setIsPaused(true)} onBlur={() => setIsPaused(false)}>
+      <div className={styles["hero-frame"]}>
+        <div className={styles["hero-image-stage"]}>
           {heroSlides.map((slide, index) => (
-            <div key={slide.id} className={`hero-slide${index === activeSlide ? " hero-slide-active" : ""}`} role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${heroSlides.length}`} aria-hidden={index !== activeSlide}>
+            <div key={slide.id} className={`${styles["hero-slide"]}${index === activeSlide ? ` ${styles["hero-slide-active"]}` : ""}`} role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${heroSlides.length}`} aria-hidden={index !== activeSlide}>
               {slide.type === "video" ? (
-                <video className="hero-slide-image hero-slide-video" autoPlay muted loop playsInline aria-hidden="true">
+                <video className={`${styles["hero-slide-image"]} ${styles["hero-slide-video"]}`} autoPlay muted loop playsInline aria-hidden="true">
                   <source src={slide.src} type="video/mp4" />
                 </video>
               ) : (
-                <Image src={slide.image} alt="" fill priority={index === 0} sizes="(min-width: 1312px) 1208px, 100vw" className="hero-slide-image" />
+                <Image src={slide.image} alt="" fill priority={index === 0} sizes="(min-width: 1312px) 1208px, 100vw" className={styles["hero-slide-image"]} />
               )}
             </div>
           ))}
-          <button type="button" className="hero-nav-button hero-nav-button-prev" onClick={goToPrevious} aria-label="Previous slide">
-            <ChevronsLeftIcon className="hero-nav-icon" />
+          <button type="button" className={`${styles["hero-nav-button"]} ${styles["hero-nav-button-prev"]}`} onClick={goToPrevious} aria-label="Previous slide">
+            <ChevronsLeftIcon className={styles["hero-nav-icon"]} />
           </button>
-          <button type="button" className="hero-nav-button hero-nav-button-next" onClick={goToNext} aria-label="Next slide">
-            <ChevronsRightIcon className="hero-nav-icon" />
+          <button type="button" className={`${styles["hero-nav-button"]} ${styles["hero-nav-button-next"]}`} onClick={goToNext} aria-label="Next slide">
+            <ChevronsRightIcon className={styles["hero-nav-icon"]} />
           </button>
         </div>
 
-        <div className="hero-caption-stage">
+        <div className={styles["hero-caption-stage"]}>
           {heroSlides.map((slide, index) => (
-            <div key={slide.id} className={`hero-caption${index === activeSlide ? " hero-caption-active" : ""}`} aria-hidden={index !== activeSlide}>
-              <h1 className="hero-heading">{slide.heading}</h1>
+            <div key={slide.id} className={`${styles["hero-caption"]}${index === activeSlide ? ` ${styles["hero-caption-active"]}` : ""}`} aria-hidden={index !== activeSlide}>
+              <h1 className={styles["hero-heading"]}>{slide.heading}</h1>
             </div>
           ))}
-          <div className="hero-dots">
+          <div className={styles["hero-dots"]}>
             {heroSlides.map((dotSlide, dotIndex) => (
-              <button key={dotSlide.id} type="button" aria-label={`Go to slide ${dotIndex + 1}`} aria-current={dotIndex === activeSlide ? "true" : undefined} className={`hero-dot${dotIndex === activeSlide ? " hero-dot-active" : ""}`} onClick={() => goToSlide(dotIndex)} />
+              <button key={dotSlide.id} type="button" aria-label={`Go to slide ${dotIndex + 1}`} aria-current={dotIndex === activeSlide ? "true" : undefined} className={`${styles["hero-dot"]}${dotIndex === activeSlide ? ` ${styles["hero-dot-active"]}` : ""}`} onClick={() => goToSlide(dotIndex)} />
             ))}
           </div>
         </div>
 
-        <span className="sr-only" aria-live="polite" aria-atomic="true">
+        <span className={styles["sr-only"]} aria-live="polite" aria-atomic="true">
           {`Slide ${activeSlide + 1} of ${heroSlides.length}: ${heroSlides[activeSlide].heading}`}
         </span>
       </div>
@@ -139,17 +140,17 @@ const odysseyCards = [
 
 function OdysseyCard({ title, description, color, Icon }: { title: string; description: string; color: string; Icon: (props: { className?: string }) => JSX.Element }) {
   return (
-    <div className="odyssey-card">
-      <div className="odyssey-card-inner" style={{ borderColor: color }}>
-        <div className="odyssey-card-bar" style={{ background: color }} />
-        <div className="odyssey-card-icon-ring" aria-hidden="true">
-          <div className="odyssey-card-icon-circle">
-            <Icon className="odyssey-card-icon" />
+    <div className={styles["odyssey-card"]}>
+      <div className={styles["odyssey-card-inner"]} style={{ borderColor: color }}>
+        <div className={styles["odyssey-card-bar"]} style={{ background: color }} />
+        <div className={styles["odyssey-card-icon-ring"]} aria-hidden="true">
+          <div className={styles["odyssey-card-icon-circle"]}>
+            <Icon className={styles["odyssey-card-icon"]} />
           </div>
         </div>
-        <div className="odyssey-card-text" style={{ color }}>
-          <h3 className="odyssey-card-title">{title}</h3>
-          <p className="odyssey-card-description">{description}</p>
+        <div className={styles["odyssey-card-text"]} style={{ color }}>
+          <h3 className={styles["odyssey-card-title"]}>{title}</h3>
+          <p className={styles["odyssey-card-description"]}>{description}</p>
         </div>
       </div>
     </div>
@@ -180,26 +181,26 @@ function LearningOdyssey({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoCli
   const extraCards = odysseyCards.slice(4);
 
   return (
-    <section className="odyssey-section" aria-labelledby="odyssey-heading">
-      <div className="odyssey-heading-block">
-        <h2 className="odyssey-heading" id="odyssey-heading">
-          Embark on a Learning<span className="odyssey-heading-accent"> Odyssey</span> with NeuroLXP
+    <section className={styles["odyssey-section"]} aria-labelledby="odyssey-heading">
+      <div className={styles["odyssey-heading-block"]}>
+        <h2 className={styles["odyssey-heading"]} id="odyssey-heading">
+          Embark on a Learning<span className={styles["odyssey-heading-accent"]}> Odyssey</span> with NeuroLXP
         </h2>
-        <p className="odyssey-subtext">NeuroLXP is more than a learning platform it's an intelligent platform that helps learners grow, adapt, and succeed.</p>
-        <button type="button" className="odyssey-demo-button" onClick={onBookDemoClick} ref={bookDemoButtonRef}>
+        <p className={styles["odyssey-subtext"]}>NeuroLXP is more than a learning platform it's an intelligent platform that helps learners grow, adapt, and succeed.</p>
+        <button type="button" className={styles["odyssey-demo-button"]} onClick={onBookDemoClick} ref={bookDemoButtonRef}>
           Book a demo
         </button>
       </div>
 
-      <div className="odyssey-grid">
+      <div className={styles["odyssey-grid"]}>
         {visibleCards.map((card) => (
           <OdysseyCard key={card.id} {...card} />
         ))}
       </div>
 
-      <div className={`odyssey-extra-wrapper${isExpanded ? " odyssey-extra-open" : ""}`} id="odyssey-extra-cards" aria-hidden={!isExpanded}>
-        <div className="odyssey-extra-inner">
-          <div className="odyssey-grid">
+      <div className={`${styles["odyssey-extra-wrapper"]}${isExpanded ? ` ${styles["odyssey-extra-open"]}` : ""}`} id="odyssey-extra-cards" aria-hidden={!isExpanded}>
+        <div className={styles["odyssey-extra-inner"]}>
+          <div className={styles["odyssey-grid"]}>
             {extraCards.map((card) => (
               <OdysseyCard key={card.id} {...card} />
             ))}
@@ -207,12 +208,12 @@ function LearningOdyssey({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoCli
         </div>
       </div>
 
-      <button type="button" className="odyssey-toggle-button" onClick={() => setIsExpanded((current) => !current)} aria-expanded={isExpanded} aria-controls="odyssey-extra-cards">
-        <span className="odyssey-toggle-pill">
-          <span className="odyssey-toggle-label">{isExpanded ? "View Less" : "View More"}</span>
+      <button type="button" className={styles["odyssey-toggle-button"]} onClick={() => setIsExpanded((current) => !current)} aria-expanded={isExpanded} aria-controls="odyssey-extra-cards">
+        <span className={styles["odyssey-toggle-pill"]}>
+          <span className={styles["odyssey-toggle-label"]}>{isExpanded ? "View Less" : "View More"}</span>
         </span>
-        <span className="odyssey-toggle-badge" aria-hidden="true">
-          <span className="odyssey-toggle-badge-inner">{arrowAnimationData && <Lottie animationData={arrowAnimationData} loop autoplay={!prefersReducedMotion} className={`odyssey-toggle-icon${isExpanded ? " odyssey-toggle-icon-flipped" : ""}`} />}</span>
+        <span className={styles["odyssey-toggle-badge"]} aria-hidden="true">
+          <span className={styles["odyssey-toggle-badge-inner"]}>{arrowAnimationData && <Lottie animationData={arrowAnimationData} loop autoplay={!prefersReducedMotion} className={`odyssey-toggle-icon${isExpanded ? " odyssey-toggle-icon-flipped" : ""}`} />}</span>
         </span>
       </button>
     </section>
@@ -323,21 +324,21 @@ const platformStats: PlatformStatData[] = [
 
 function StoryMissionVisionCard({ title, description, image, accentColor, Icon }: StoryMissionVisionCardData) {
   return (
-    <div className="smv-card">
-      <div className="smv-card-icon-ring" aria-hidden="true">
-        <div className="smv-card-icon-circle" style={{ borderColor: accentColor, color: accentColor }}>
-          <Icon className="smv-card-icon" />
+    <div className={styles["smv-card"]}>
+      <div className={styles["smv-card-icon-ring"]} aria-hidden="true">
+        <div className={styles["smv-card-icon-circle"]} style={{ borderColor: accentColor, color: accentColor }}>
+          <Icon className={styles["smv-card-icon"]} />
         </div>
       </div>
-      <div className="smv-card-underline" style={{ background: accentColor }}>
-        <span className="smv-card-underline-dot" style={{ background: accentColor }} />
+      <div className={styles["smv-card-underline"]} style={{ background: accentColor }}>
+        <span className={styles["smv-card-underline-dot"]} style={{ background: accentColor }} />
       </div>
-      <h3 className="smv-card-title" style={{ color: accentColor }}>
+      <h3 className={styles["smv-card-title"]} style={{ color: accentColor }}>
         {title}
       </h3>
-      <p className="smv-card-description">{description}</p>
-      <div className="smv-card-image-frame">
-        <Image src={image} alt={title} fill sizes="(max-width: 480px) 100vw, 348px" className="smv-card-image" />
+      <p className={styles["smv-card-description"]}>{description}</p>
+      <div className={styles["smv-card-image-frame"]}>
+        <Image src={image} alt={title} fill sizes="(max-width: 480px) 100vw, 348px" className={styles["smv-card-image"]} />
       </div>
     </div>
   );
@@ -345,17 +346,17 @@ function StoryMissionVisionCard({ title, description, image, accentColor, Icon }
 
 function PlatformStat({ value, label, accentColor, Icon }: PlatformStatData) {
   return (
-    <div className="smv-stat">
-      <div className="smv-stat-icon-ring" style={{ borderColor: accentColor }} aria-hidden="true">
-        <span className="smv-stat-icon-wrap" style={{ color: accentColor }}>
-          <Icon className="smv-stat-icon" />
+    <div className={styles["smv-stat"]}>
+      <div className={styles["smv-stat-icon-ring"]} style={{ borderColor: accentColor }} aria-hidden="true">
+        <span className={styles["smv-stat-icon-wrap"]} style={{ color: accentColor }}>
+          <Icon className={styles["smv-stat-icon"]} />
         </span>
       </div>
-      <div className="smv-stat-text">
-        <span className="smv-stat-value" style={{ color: accentColor }}>
+      <div className={styles["smv-stat-text"]}>
+        <span className={styles["smv-stat-value"]} style={{ color: accentColor }}>
           {value}
         </span>
-        <span className="smv-stat-label">{label}</span>
+        <span className={styles["smv-stat-label"]}>{label}</span>
       </div>
     </div>
   );
@@ -363,25 +364,25 @@ function PlatformStat({ value, label, accentColor, Icon }: PlatformStatData) {
 
 function StoryMissionVision() {
   return (
-    <section className="smv-section" id="story-mission-vision" aria-labelledby="smv-heading">
-      <div className="smv-heading-block">
-        <span className="smv-badge">
-          About NeuroLXP<sup className="smv-badge-tm">TM</sup>
+    <section className={styles["smv-section"]} id="story-mission-vision" aria-labelledby="smv-heading">
+      <div className={styles["smv-heading-block"]}>
+        <span className={styles["smv-badge"]}>
+          About NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
         </span>
-        <h2 className="smv-heading" id="smv-heading">
+        <h2 className={styles["smv-heading"]} id="smv-heading">
           Our Story! Our Mission! Our Vision
         </h2>
-        <p className="smv-subtext">At NeuroLXP, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.</p>
+        <p className={styles["smv-subtext"]}>At NeuroLXP, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.</p>
       </div>
 
-      <div className="smv-cards">
+      <div className={styles["smv-cards"]}>
         {storyMissionVisionCards.map((card) => (
           <StoryMissionVisionCard key={card.id} {...card} />
         ))}
       </div>
 
-      <div className="smv-stats">
-        <div className="smv-stats-inner">
+      <div className={styles["smv-stats"]}>
+        <div className={styles["smv-stats-inner"]}>
           {platformStats.map((stat) => (
             <PlatformStat key={stat.id} {...stat} />
           ))}
@@ -423,35 +424,35 @@ function PlatformOverview() {
   const maxWidth = 900;
 
   return (
-    <section className="platform-overview-section" id="our-customers" aria-labelledby="platform-overview-heading">
-      <div className="platform-overview-inner">
-        <div className="platform-overview-media">
-          <div className="platform-overview-media-frame">
-            <video className="platform-overview-video" src="/videos/6561564-uhd_3840_2160_25fps.mp4" autoPlay muted loop playsInline />
+    <section className={styles["platform-overview-section"]} id="our-customers" aria-labelledby="platform-overview-heading">
+      <div className={styles["platform-overview-inner"]}>
+        <div className={styles["platform-overview-media"]}>
+          <div className={styles["platform-overview-media-frame"]}>
+            <video className={styles["platform-overview-video"]} src="/videos/6561564-uhd_3840_2160_25fps.mp4" autoPlay muted loop playsInline />
           </div>
         </div>
 
-        <div className="platform-overview-content">
-          <span className="platform-overview-tag">Platform Overview</span>
-          <h2 className="platform-overview-heading" id="platform-overview-heading">
-            NeuroLXP<sup className="smv-badge-tm">TM</sup>
-            <span className="platform-overview-heading-text"> One Platform! Many Missions! One Future</span>
+        <div className={styles["platform-overview-content"]}>
+          <span className={styles["platform-overview-tag"]}>Platform Overview</span>
+          <h2 className={styles["platform-overview-heading"]} id="platform-overview-heading">
+            NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
+            <span className={styles["platform-overview-heading-text"]}> One Platform! Many Missions! One Future</span>
           </h2>
-          <div className="platform-overview-list">
+          <div className={styles["platform-overview-list"]}>
             {platformOverviewItems.map((item, index) => (
-              <div key={item.id} className="platform-overview-list-item" style={{ "--item-color": item.color } as CSSProperties}>
-                <div className="platform-overview-number-badge" style={{ background: item.color }}>
+              <div key={item.id} className={styles["platform-overview-list-item"]} style={{ "--item-color": item.color } as CSSProperties}>
+                <div className={styles["platform-overview-number-badge"]} style={{ background: item.color }}>
                   {index + 1}
                 </div>
-                <div className="platform-overview-capsule">
-                  <div className="platform-overview-icon-circle" style={{ color: item.color }} aria-hidden="true">
-                    <item.Icon className="platform-overview-icon" />
+                <div className={styles["platform-overview-capsule"]}>
+                  <div className={styles["platform-overview-icon-circle"]} style={{ color: item.color }} aria-hidden="true">
+                    <item.Icon className={styles["platform-overview-icon"]} />
                   </div>
-                  <div className="platform-overview-item-text">
-                    <span className="platform-overview-item-label" style={{ color: item.color }}>
+                  <div className={styles["platform-overview-item-text"]}>
+                    <span className={styles["platform-overview-item-label"]} style={{ color: item.color }}>
                       {item.label}
                     </span>
-                    <span className="platform-overview-item-title">{item.title}</span>
+                    <span className={styles["platform-overview-item-title"]}>{item.title}</span>
                   </div>
                 </div>
               </div>
@@ -477,9 +478,9 @@ const purposePillars: PurposePillarData[] = [
 
 function PurposePill({ lines, color }: { lines: [string, string]; color: string }) {
   return (
-    <div className="purpose-pill" style={{ borderColor: color }}>
-      <span className="purpose-pill-line">{lines[0]}</span>
-      <span className="purpose-pill-highlight" style={{ color }}>
+    <div className={styles["purpose-pill"]} style={{ borderColor: color }}>
+      <span className={styles["purpose-pill-line"]}>{lines[0]}</span>
+      <span className={styles["purpose-pill-highlight"]} style={{ color }}>
         {lines[1]}
       </span>
     </div>
@@ -490,15 +491,15 @@ function PlatformPurpose() {
   const [topPillar, leftPillar, rightPillar] = purposePillars;
 
   return (
-    <section className="platform-purpose-section" aria-labelledby="platform-purpose-heading">
-      <h2 className="platform-purpose-heading" id="platform-purpose-heading">
+    <section className={styles["platform-purpose-section"]} aria-labelledby="platform-purpose-heading">
+      <h2 className={styles["platform-purpose-heading"]} id="platform-purpose-heading">
         One Platform! Every Learning and Skilling Purpose
       </h2>
-      <div className="platform-purpose-pillars">
-        <div className="platform-purpose-top">
+      <div className={styles["platform-purpose-pillars"]}>
+        <div className={styles["platform-purpose-top"]}>
           <PurposePill lines={topPillar.lines} color={topPillar.color} />
         </div>
-        <div className="platform-purpose-bottom">
+        <div className={styles["platform-purpose-bottom"]}>
           <PurposePill lines={leftPillar.lines} color={leftPillar.color} />
           <PurposePill lines={rightPillar.lines} color={rightPillar.color} />
         </div>
@@ -509,17 +510,17 @@ function PlatformPurpose() {
 
 function MeetNeuroLXP() {
   return (
-    <section className="meet-neurolxp-section" aria-labelledby="meet-neurolxp-heading">
-      <div className="meet-neurolxp-frame">
-        <div className="meet-neurolxp-overlay">
-          <Image src="/images/friends-learning-with-laptop.webp" alt="Students collaborating on a laptop" fill sizes="(min-width: 1312px) 1216px, 100vw" className="meet-neurolxp-image" />
+    <section className={styles["meet-neurolxp-section"]} aria-labelledby="meet-neurolxp-heading">
+      <div className={styles["meet-neurolxp-frame"]}>
+        <div className={styles["meet-neurolxp-overlay"]}>
+          <Image src="/images/friends-learning-with-laptop.webp" alt="Students collaborating on a laptop" fill sizes="(min-width: 1312px) 1216px, 100vw" className={styles["meet-neurolxp-image"]} />
         </div>
-        <div className="meet-neurolxp-text">
-          <span className="meet-neurolxp-badge">Meet NeuroLXP</span>
-          <h2 className="meet-neurolxp-heading" id="meet-neurolxp-heading">
+        <div className={styles["meet-neurolxp-text"]}>
+          <span className={styles["meet-neurolxp-badge"]}>Meet NeuroLXP</span>
+          <h2 className={styles["meet-neurolxp-heading"]} id="meet-neurolxp-heading">
             Next-Generation Neomorphism learning Platform
           </h2>
-          <p className="meet-neurolxp-subtext">Neomorphic platform for smarter learning.</p>
+          <p className={styles["meet-neurolxp-subtext"]}>Neomorphic platform for smarter learning.</p>
         </div>
       </div>
     </section>
@@ -584,16 +585,16 @@ const whyChooseCards: WhyChooseCardData[] = [
 
 function WhyChooseCard({ title, description, dashColor, iconBg, Icon }: WhyChooseCardData) {
   return (
-    <div className="why-choose-card" style={{ "--dash-color": dashColor } as CSSProperties}>
-      <div className="why-choose-icon-ring" aria-hidden="true">
-        <div className="why-choose-icon-circle" style={{ background: iconBg }}>
-          <Icon className="why-choose-icon" />
+    <div className={styles["why-choose-card"]} style={{ "--dash-color": dashColor } as CSSProperties}>
+      <div className={styles["why-choose-icon-ring"]} aria-hidden="true">
+        <div className={styles["why-choose-icon-circle"]} style={{ background: iconBg }}>
+          <Icon className={styles["why-choose-icon"]} />
         </div>
       </div>
-      <div className="why-choose-diamond-inner-shape" />
-      <div className="why-choose-card-content">
-        <h3 className="why-choose-card-title">{title}</h3>
-        <p className="why-choose-card-description">{description}</p>
+      <div className={styles["why-choose-diamond-inner-shape"]} />
+      <div className={styles["why-choose-card-content"]}>
+        <h3 className={styles["why-choose-card-title"]}>{title}</h3>
+        <p className={styles["why-choose-card-description"]}>{description}</p>
       </div>
     </div>
   );
@@ -601,19 +602,19 @@ function WhyChooseCard({ title, description, dashColor, iconBg, Icon }: WhyChoos
 
 function WhyChooseNeuroLXP() {
   return (
-    <section className="why-choose-section" aria-labelledby="why-choose-heading">
-      <div className="why-choose-content">
-        <div className="why-choose-blob" aria-hidden="true" />
-        <span className="why-choose-badge">Why Choose NeuroLXP</span>
-        <div className="why-choose-body">
-          <div className="why-choose-text">
-            <h2 className="why-choose-heading" id="why-choose-heading">
+    <section className={styles["why-choose-section"]} aria-labelledby="why-choose-heading">
+      <div className={styles["why-choose-content"]}>
+        <div className={styles["why-choose-blob"]} aria-hidden="true" />
+        <span className={styles["why-choose-badge"]}>Why Choose NeuroLXP</span>
+        <div className={styles["why-choose-body"]}>
+          <div className={styles["why-choose-text"]}>
+            <h2 className={styles["why-choose-heading"]} id="why-choose-heading">
               Transforming <br />
-              <span className="why-choose-heading-accent">Digital Learning</span>
+              <span className={styles["why-choose-heading-accent"]}>Digital Learning</span>
             </h2>
-            <p className="why-choose-subtext">NeuroLXP empowers learners with personalized learning, future-ready skills, and meaningful outcomes.</p>
+            <p className={styles["why-choose-subtext"]}>NeuroLXP empowers learners with personalized learning, future-ready skills, and meaningful outcomes.</p>
           </div>
-          <div className="why-choose-grid">
+          <div className={styles["why-choose-grid"]}>
             {whyChooseCards.map((card) => (
               <WhyChooseCard key={card.id} {...card} />
             ))}
@@ -688,14 +689,14 @@ function ArrowRightIcon({ className }: { className?: string }) {
 function LearningModuleCard({ title, description, image, isFeatured, isTextExpanded, isClone }: { title: string; description: string; image: string; isFeatured: boolean; isTextExpanded: boolean; isClone: boolean }) {
   const TitleTag = isClone ? "p" : "h3";
   return (
-    <div className={`learning-module-card${isFeatured ? " learning-module-card-featured" : ""}`}>
-      <div className="learning-module-image-frame">
-        <Image src={image} alt={title} fill sizes="(max-width: 375px) 230px, (max-width: 480px) 290px, (max-width: 768px) 320px, (max-width: 1024px) 400px, 500px" className="learning-module-image" />
+    <div className={`${styles["learning-module-card"]}${isFeatured ? ` ${styles["learning-module-card-featured"]}` : ""}`}>
+      <div className={styles["learning-module-image-frame"]}>
+        <Image src={image} alt={title} fill sizes="(max-width: 375px) 230px, (max-width: 480px) 290px, (max-width: 768px) 320px, (max-width: 1024px) 400px, 500px" className={styles["learning-module-image"]} />
       </div>
-      <div className="learning-module-text">
-        <TitleTag className="learning-module-title">{title}</TitleTag>
-        <div className="learning-module-description-wrapper">
-          <p className={`learning-module-description${isTextExpanded ? " learning-module-description-expanded" : ""}`}>{description}</p>
+      <div className={styles["learning-module-text"]}>
+        <TitleTag className={styles["learning-module-title"]}>{title}</TitleTag>
+        <div className={styles["learning-module-description-wrapper"]}>
+          <p className={`${styles["learning-module-description"]}${isTextExpanded ? ` ${styles["learning-module-description-expanded"]}` : ""}`}>{description}</p>
         </div>
       </div>
     </div>
@@ -813,21 +814,21 @@ function LearningModules() {
   }, [transitionsEnabled]);
 
   return (
-    <section className="learning-modules-section" aria-labelledby="learning-modules-heading" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onFocus={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
-      <div className="learning-modules-heading-block">
-        <span className="learning-modules-badge">Learning Modules</span>
-        <h2 className="learning-modules-heading" id="learning-modules-heading">
-          Future Ready <span className="learning-modules-heading-accent">NeuroLXP</span> Learning Solutions
+    <section className={styles["learning-modules-section"]} aria-labelledby="learning-modules-heading" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onFocus={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
+      <div className={styles["learning-modules-heading-block"]}>
+        <span className={styles["learning-modules-badge"]}>Learning Modules</span>
+        <h2 className={styles["learning-modules-heading"]} id="learning-modules-heading">
+          Future Ready <span className={styles["learning-modules-heading-accent"]}>NeuroLXP</span> Learning Solutions
         </h2>
-        <p className="learning-modules-subtext">Powerful, scalable modules designed to accelerate learning, build future-ready skills, and drive organizational success.</p>
+        <p className={styles["learning-modules-subtext"]}>Powerful, scalable modules designed to accelerate learning, build future-ready skills, and drive organizational success.</p>
       </div>
 
-      <span className="sr-only" aria-live="polite" aria-atomic="true">
+      <span className={styles["sr-only"]} aria-live="polite" aria-atomic="true">
         {`Now showing: ${extendedLearningModuleCards[trackIndex].title}`}
       </span>
 
-      <div className="learning-modules-viewport" ref={viewportRef}>
-        <div className="learning-modules-track" ref={trackRef} style={{ transform: `translateX(${translateX}px)`, transition: transitionsEnabled ? undefined : "none" }}>
+      <div className={styles["learning-modules-viewport"]} ref={viewportRef}>
+        <div className={styles["learning-modules-track"]} ref={trackRef} style={{ transform: `translateX(${translateX}px)`, transition: transitionsEnabled ? undefined : "none" }}>
           {extendedLearningModuleCards.map((card, index) => {
             const isClone = index < CARD_CLONE_COUNT || index >= CARD_CLONE_COUNT + realCount;
             return (
@@ -844,12 +845,12 @@ function LearningModules() {
         </div>
       </div>
 
-      <div className="learning-modules-nav">
-        <button type="button" className="learning-modules-nav-button" onClick={goToPreviousOnly} aria-label="Previous module">
-          <ArrowLeftIcon className="learning-modules-nav-icon" />
+      <div className={styles["learning-modules-nav"]}>
+        <button type="button" className={styles["learning-modules-nav-button"]} onClick={goToPreviousOnly} aria-label="Previous module">
+          <ArrowLeftIcon className={styles["learning-modules-nav-icon"]} />
         </button>
-        <button type="button" className="learning-modules-nav-button" onClick={goToNextOnly} aria-label="Next module">
-          <ArrowRightIcon className="learning-modules-nav-icon" />
+        <button type="button" className={styles["learning-modules-nav-button"]} onClick={goToNextOnly} aria-label="Next module">
+          <ArrowRightIcon className={styles["learning-modules-nav-icon"]} />
         </button>
       </div>
     </section>
@@ -931,26 +932,26 @@ function StarIcon({ className }: { className?: string }) {
 function TestimonialCard({ name, role, quote, image, accentColor, isClone }: TestimonialData & { isClone: boolean }) {
   const NameTag = isClone ? "p" : "h3";
   return (
-    <div className="testimonial-card-wrapper">
-      <div className="testimonial-photo-frame">
-        <div className="testimonial-photo-inner">
-          <Image src={image} alt={name} fill sizes="(max-width: 480px) 90px, (max-width: 768px) 110px, 154px" className="testimonial-photo" />
+    <div className={styles["testimonial-card-wrapper"]}>
+      <div className={styles["testimonial-photo-frame"]}>
+        <div className={styles["testimonial-photo-inner"]}>
+          <Image src={image} alt={name} fill sizes="(max-width: 480px) 90px, (max-width: 768px) 110px, 154px" className={styles["testimonial-photo"]} />
         </div>
       </div>
-      <div className="testimonial-card" style={{ borderRightColor: accentColor }}>
-        <div className="testimonial-rating-badge" role="img" aria-label="Rated 5 out of 5">
-          <span className="testimonial-rating-number" aria-hidden="true">
+      <div className={styles["testimonial-card"]} style={{ borderRightColor: accentColor }}>
+        <div className={styles["testimonial-rating-badge"]} role="img" aria-label="Rated 5 out of 5">
+          <span className={styles["testimonial-rating-number"]} aria-hidden="true">
             5
           </span>
-          <StarIcon className="testimonial-rating-star" />
+          <StarIcon className={styles["testimonial-rating-star"]} />
         </div>
-        <div className="testimonial-content">
-          <div className="testimonial-person">
-            <NameTag className="testimonial-name">{name}</NameTag>
-            <span className="testimonial-role">{role}</span>
+        <div className={styles["testimonial-content"]}>
+          <div className={styles["testimonial-person"]}>
+            <NameTag className={styles["testimonial-name"]}>{name}</NameTag>
+            <span className={styles["testimonial-role"]}>{role}</span>
           </div>
-          <div className="testimonial-underline" style={{ background: accentColor }} />
-          <p className="testimonial-quote">{quote}</p>
+          <div className={styles["testimonial-underline"]} style={{ background: accentColor }} />
+          <p className={styles["testimonial-quote"]}>{quote}</p>
         </div>
       </div>
     </div>
@@ -1045,21 +1046,21 @@ function Testimonials() {
   }, [transitionsEnabled]);
 
   return (
-    <section className="testimonials-section" aria-labelledby="testimonials-heading" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onFocus={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
-      <div className="testimonials-heading-block">
-        <span className="testimonials-badge">Testimonials</span>
-        <h2 className="testimonials-heading" id="testimonials-heading">
-          Success Powered by <span className="testimonials-heading-accent">NeuroLXP</span>
+    <section className={styles["testimonials-section"]} aria-labelledby="testimonials-heading" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onFocus={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
+      <div className={styles["testimonials-heading-block"]}>
+        <span className={styles["testimonials-badge"]}>Testimonials</span>
+        <h2 className={styles["testimonials-heading"]} id="testimonials-heading">
+          Success Powered by <span className={styles["testimonials-heading-accent"]}>NeuroLXP</span>
         </h2>
-        <p className="testimonials-subtext">NeuroLXP made learning engaging, simple, and truly effective for our learners.</p>
+        <p className={styles["testimonials-subtext"]}>NeuroLXP made learning engaging, simple, and truly effective for our learners.</p>
       </div>
 
-      <span className="sr-only" aria-live="polite" aria-atomic="true">
+      <span className={styles["sr-only"]} aria-live="polite" aria-atomic="true">
         {`Now showing testimonial from ${extendedTestimonials[trackIndex].name}`}
       </span>
 
-      <div className="testimonials-viewport" ref={viewportRef}>
-        <div className="testimonials-track" ref={trackRef} style={{ transform: `translateX(${translateX}px)`, transition: transitionsEnabled ? undefined : "none" }}>
+      <div className={styles["testimonials-viewport"]} ref={viewportRef}>
+        <div className={styles["testimonials-track"]} ref={trackRef} style={{ transform: `translateX(${translateX}px)`, transition: transitionsEnabled ? undefined : "none" }}>
           {extendedTestimonials.map((testimonial, index) => {
             const isClone = index < TESTIMONIAL_CLONE_COUNT || index >= TESTIMONIAL_CLONE_COUNT + realCount;
             return (
@@ -1076,12 +1077,12 @@ function Testimonials() {
         </div>
       </div>
 
-      <div className="testimonials-nav">
-        <button type="button" className="testimonials-nav-button" onClick={goToPreviousOnly} aria-label="Previous testimonial">
-          <ArrowLeftIcon className="testimonials-nav-icon" />
+      <div className={styles["testimonials-nav"]}>
+        <button type="button" className={styles["testimonials-nav-button"]} onClick={goToPreviousOnly} aria-label="Previous testimonial">
+          <ArrowLeftIcon className={styles["testimonials-nav-icon"]} />
         </button>
-        <button type="button" className="testimonials-nav-button" onClick={goToNextOnly} aria-label="Next testimonial">
-          <ArrowRightIcon className="testimonials-nav-icon" />
+        <button type="button" className={styles["testimonials-nav-button"]} onClick={goToNextOnly} aria-label="Next testimonial">
+          <ArrowRightIcon className={styles["testimonials-nav-icon"]} />
         </button>
       </div>
     </section>
@@ -1161,25 +1162,25 @@ function FAQItem({ item, isOpen, onToggle }: { item: FAQItemData; isOpen: boolea
   const panelId = `faq-answer-${item.id}`;
 
   return (
-    <div className="faq-item">
-      <h3 className="faq-item-heading">
-        <button type="button" id={buttonId} className="faq-item-header" onClick={onToggle} aria-expanded={isOpen} aria-controls={panelId}>
-          <div className="faq-item-header-left">
-            <span className="faq-item-triangle" style={{ borderLeftColor: item.colorStart }} aria-hidden="true" />
-            <span className="faq-item-number" style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true">
+    <div className={styles["faq-item"]}>
+      <h3 className={styles["faq-item-heading"]}>
+        <button type="button" id={buttonId} className={styles["faq-item-header"]} onClick={onToggle} aria-expanded={isOpen} aria-controls={panelId}>
+          <div className={styles["faq-item-header-left"]}>
+            <span className={styles["faq-item-triangle"]} style={{ borderLeftColor: item.colorStart }} aria-hidden="true" />
+            <span className={styles["faq-item-number"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true">
               {item.number}
             </span>
-            <span className="faq-item-divider" style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true" />
-            <span className="faq-item-title">{item.title}</span>
+            <span className={styles["faq-item-divider"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true" />
+            <span className={styles["faq-item-title"]}>{item.title}</span>
           </div>
-          <span className="faq-item-toggle" style={{ color: item.colorStart }} aria-hidden="true">
-            {isOpen ? <MinusIcon className="faq-item-toggle-icon" /> : <PlusIcon className="faq-item-toggle-icon" />}
+          <span className={styles["faq-item-toggle"]} style={{ color: item.colorStart }} aria-hidden="true">
+            {isOpen ? <MinusIcon className={styles["faq-item-toggle-icon"]} /> : <PlusIcon className={styles["faq-item-toggle-icon"]} />}
           </span>
         </button>
       </h3>
-      <div id={panelId} role="region" aria-labelledby={buttonId} className={`faq-item-answer-wrapper${isOpen ? " faq-item-answer-open" : ""}`} aria-hidden={!isOpen}>
-        <div className="faq-item-answer-inner">
-          <p className="faq-item-answer">{item.answer}</p>
+      <div id={panelId} role="region" aria-labelledby={buttonId} className={`${styles["faq-item-answer-wrapper"]}${isOpen ? ` ${styles["faq-item-answer-open"]}` : ""}`} aria-hidden={!isOpen}>
+        <div className={styles["faq-item-answer-inner"]}>
+          <p className={styles["faq-item-answer"]}>{item.answer}</p>
         </div>
       </div>
     </div>
@@ -1194,21 +1195,21 @@ function FAQSection() {
   };
 
   return (
-    <section className="faq-section" aria-labelledby="faq-heading">
-      <div className="faq-card">
-        <div className="faq-background-image" aria-hidden="true">
-          <Image src="/images/fc52be16-4788-44b6-9212-f93370a7f939 2.webp" alt="" fill sizes="(min-width: 1280px) 1280px, 100vw" className="faq-background-photo" />
+    <section className={styles["faq-section"]} aria-labelledby="faq-heading">
+      <div className={styles["faq-card"]}>
+        <div className={styles["faq-background-image"]} aria-hidden="true">
+          <Image src="/images/fc52be16-4788-44b6-9212-f93370a7f939 2.webp" alt="" fill sizes="(min-width: 1280px) 1280px, 100vw" className={styles["faq-background-photo"]} />
         </div>
-        <div className="faq-content">
-          <div className="faq-left">
-            <h2 className="faq-heading" id="faq-heading">
-              Frequently Asked <span className="faq-heading-accent">Question</span>
+        <div className={styles["faq-content"]}>
+          <div className={styles["faq-left"]}>
+            <h2 className={styles["faq-heading"]} id="faq-heading">
+              Frequently Asked <span className={styles["faq-heading-accent"]}>Question</span>
             </h2>
-            <div className="faq-illustration">
-              <Image src="/images/Adobe Express - file - 2026-07-02T153440.006.webp" alt="Question and answer illustration" fill sizes="(max-width: 1024px) 100vw, 432px" className="faq-illustration-image" />
+            <div className={styles["faq-illustration"]}>
+              <Image src="/images/Adobe Express - file - 2026-07-02T153440.006.webp" alt="Question and answer illustration" fill sizes="(max-width: 1024px) 100vw, 432px" className={styles["faq-illustration-image"]} />
             </div>
           </div>
-          <div className="faq-right">
+          <div className={styles["faq-right"]}>
             {faqItems.map((item, index) => (
               <FAQItem key={item.id} item={item} isOpen={index === activeIndex} onToggle={() => handleToggle(index)} />
             ))}
@@ -1221,27 +1222,27 @@ function FAQSection() {
 
 function GetInTouch({ onContactClick, contactButtonRef }: { onContactClick: () => void; contactButtonRef: RefObject<HTMLButtonElement | null> }) {
   return (
-    <section className="get-in-touch-section" aria-labelledby="get-in-touch-heading">
-      <div className="get-in-touch-blob" aria-hidden="true" />
-      <div className="get-in-touch-content">
-        <div className="get-in-touch-text">
-          <span className="get-in-touch-badge">Get in touch</span>
-          <div className="get-in-touch-copy">
-            <h2 className="get-in-touch-heading" id="get-in-touch-heading">
+    <section className={styles["get-in-touch-section"]} aria-labelledby="get-in-touch-heading">
+      <div className={styles["get-in-touch-blob"]} aria-hidden="true" />
+      <div className={styles["get-in-touch-content"]}>
+        <div className={styles["get-in-touch-text"]}>
+          <span className={styles["get-in-touch-badge"]}>Get in touch</span>
+          <div className={styles["get-in-touch-copy"]}>
+            <h2 className={styles["get-in-touch-heading"]} id="get-in-touch-heading">
               Learn Smarter with <br />
-              <span className="get-in-touch-heading-accent">NeuroLXP</span>
+              <span className={styles["get-in-touch-heading-accent"]}>NeuroLXP</span>
             </h2>
-            <p className="get-in-touch-subtext">Have questions? Our experts are here to help.</p>
+            <p className={styles["get-in-touch-subtext"]}>Have questions? Our experts are here to help.</p>
           </div>
-          <button type="button" className="get-in-touch-button" onClick={onContactClick} ref={contactButtonRef}>
-            <span className="get-in-touch-button-label">Contact Us</span>
-            <HeadphonesIcon className="get-in-touch-button-icon" />
+          <button type="button" className={styles["get-in-touch-button"]} onClick={onContactClick} ref={contactButtonRef}>
+            <span className={styles["get-in-touch-button-label"]}>Contact Us</span>
+            <HeadphonesIcon className={styles["get-in-touch-button-icon"]} />
           </button>
         </div>
-        <div className="get-in-touch-media">
-          <div className="get-in-touch-frame" />
-          <div className="get-in-touch-photo-wrapper">
-            <Image src="/images/smiling-blonde-business-woman-eyeglasses-with-pen-hand-having-idea-looking-away-white-wall.webp" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className="get-in-touch-photo" />
+        <div className={styles["get-in-touch-media"]}>
+          <div className={styles["get-in-touch-frame"]} />
+          <div className={styles["get-in-touch-photo-wrapper"]}>
+            <Image src="/images/smiling-blonde-business-woman-eyeglasses-with-pen-hand-having-idea-looking-away-white-wall.webp" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className={styles["get-in-touch-photo"]} />
           </div>
         </div>
       </div>
@@ -1270,15 +1271,15 @@ function ContactUsModal({ onClose }: { onClose: () => void }) {
 
   return (
     <div
-      className="book-demo-modal-overlay"
+      className={styles["book-demo-modal-overlay"]}
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) onClose();
       }}>
-      <div className="book-demo-modal-dialog" role="dialog" aria-modal="true" aria-label="Contact us" ref={dialogRef} tabIndex={-1}>
-        <button type="button" className="book-demo-modal-close" onClick={onClose} aria-label="Close contact us form">
-          <CloseIcon className="book-demo-modal-close-icon" />
+      <div className={styles["book-demo-modal-dialog"]} role="dialog" aria-modal="true" aria-label="Contact us" ref={dialogRef} tabIndex={-1}>
+        <button type="button" className={styles["book-demo-modal-close"]} onClick={onClose} aria-label="Close contact us form">
+          <CloseIcon className={styles["book-demo-modal-close-icon"]} />
         </button>
-        <div className="book-demo-modal-scroll">
+        <div className={styles["book-demo-modal-scroll"]}>
           <ContactUs />
         </div>
       </div>
