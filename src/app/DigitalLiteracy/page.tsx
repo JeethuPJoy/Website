@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
-import "./DigitalLiteracy.css";
+import styles from "./DigitalLiteracy.module.css";
 
 function TopographicPattern({ className }: { className?: string }) {
   return (
@@ -43,10 +43,10 @@ function StarSolidIcon({ className }: { className?: string }) {
 
 function DigitalLiteracyBreadcrumb() {
   return (
-    <nav className="dl-breadcrumb" aria-label="Breadcrumb">
-      <span className="dl-breadcrumb-label">NeuroLXP 2.1</span>
-      <span className="dl-breadcrumb-current">
-        <Image className="dl-breadcrumb-arrow" src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" aria-hidden="true" unoptimized />
+    <nav className={styles["dl-breadcrumb"]} aria-label="Breadcrumb">
+      <span className={styles["dl-breadcrumb-label"]}>NeuroLXP 2.1</span>
+      <span className={styles["dl-breadcrumb-current"]}>
+        <Image className={styles["dl-breadcrumb-arrow"]} src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" aria-hidden="true" unoptimized />
         Digital literacy
       </span>
     </nav>
@@ -55,50 +55,50 @@ function DigitalLiteracyBreadcrumb() {
 
 function DigitalLiteracyHero() {
   return (
-    <section className="dl-hero-section">
-      <div className="dl-hero-card">
-        <div className="dl-hero-content">
-          <span className="dl-hero-badge">Digital literacy</span>
-          <h1 className="dl-hero-heading">
-            Empower Every Employee with <span className="dl-hero-heading-accent">Digital Skills</span>
+    <section className={styles["dl-hero-section"]}>
+      <div className={styles["dl-hero-card"]}>
+        <div className={styles["dl-hero-content"]}>
+          <span className={styles["dl-hero-badge"]}>Digital literacy</span>
+          <h1 className={styles["dl-hero-heading"]}>
+            Empower Every Employee with <span className={styles["dl-hero-heading-accent"]}>Digital Skills</span>
           </h1>
-          <p className="dl-hero-subtext">NeuroLXP<sup className="nlxp-footer-heading-tm">TM</sup> delivers engaging digital skills training from basics to advanced workplace tools.</p>
+          <p className={styles["dl-hero-subtext"]}>NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup> delivers engaging digital skills training from basics to advanced workplace tools.</p>
 
-          <div className="dl-hero-buttons">
-            <button type="button" className="dl-hero-button dl-hero-button-secondary">
+          <div className={styles["dl-hero-buttons"]}>
+            <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`}>
               Request Demo
             </button>
-            <button type="button" className="dl-hero-button dl-hero-button-primary">
+            <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`}>
               Start Learning
             </button>
           </div>
         </div>
 
-        <div className="dl-hero-media">
-          <TopographicPattern className="dl-hero-pattern" />
-          <div className="dl-hero-image-frame">
-            <Image src="/images/horizontal-shot-joyful-young-woman-with-glasses-posing-against-white-wall 1.webp" alt="Employee learning digital skills" fill priority className="dl-hero-image" />
+        <div className={styles["dl-hero-media"]}>
+          <TopographicPattern className={styles["dl-hero-pattern"]} />
+          <div className={styles["dl-hero-image-frame"]}>
+            <Image src="/images/horizontal-shot-joyful-young-woman-with-glasses-posing-against-white-wall 1.webp" alt="Employee learning digital skills" fill priority className={styles["dl-hero-image"]} />
           </div>
         </div>
       </div>
-      <div className="dl-hero-stats">
-        <div className="dl-hero-stats-bg" aria-hidden="true">
-          <span className="dl-hero-stats-bg-pink" />
-          <span className="dl-hero-stats-bg-green" />
+      <div className={styles["dl-hero-stats"]}>
+        <div className={styles["dl-hero-stats-bg"]} aria-hidden="true">
+          <span className={styles["dl-hero-stats-bg-pink"]} />
+          <span className={styles["dl-hero-stats-bg-green"]} />
         </div>
-        <div className="dl-hero-stat dl-hero-stat-pink">
-          <span className="dl-hero-stat-value">87%</span>
-          <span className="dl-hero-stat-label">Skill Adoption</span>
+        <div className={`${styles["dl-hero-stat"]} ${styles["dl-hero-stat-pink"]}`}>
+          <span className={styles["dl-hero-stat-value"]}>87%</span>
+          <span className={styles["dl-hero-stat-label"]}>Skill Adoption</span>
         </div>
-        <div className="dl-hero-stat dl-hero-stat-neutral">
-          <span className="dl-hero-stat-value">3x</span>
-          <span className="dl-hero-stat-label">Faster Upskilling</span>
+        <div className={`${styles["dl-hero-stat"]} ${styles["dl-hero-stat-neutral"]}`}>
+          <span className={styles["dl-hero-stat-value"]}>3x</span>
+          <span className={styles["dl-hero-stat-label"]}>Faster Upskilling</span>
         </div>
-        <div className="dl-hero-stat dl-hero-stat-green">
-          <span className="dl-hero-stat-value">
-            4.7 <StarSolidIcon className="dl-hero-stat-star" />
+        <div className={`${styles["dl-hero-stat"]} ${styles["dl-hero-stat-green"]}`}>
+          <span className={styles["dl-hero-stat-value"]}>
+            4.7 <StarSolidIcon className={styles["dl-hero-stat-star"]} />
           </span>
-          <span className="dl-hero-stat-label">Learner Score</span>
+          <span className={styles["dl-hero-stat-label"]}>Learner Score</span>
         </div>
       </div>
     </section>
@@ -107,10 +107,10 @@ function DigitalLiteracyHero() {
 
 function DigitalLiteracySkillBanner() {
   return (
-    <section className="dl-skill-banner-section">
-      <div className="dl-skill-banner">
-        <p className="dl-skill-banner-sr-text">Because every skill learned today shapes the world of tomorrow</p>
-        <svg className="dl-skill-banner-svg" viewBox="0 0 1280 360" fill="none" aria-hidden="true">
+    <section className={styles["dl-skill-banner-section"]}>
+      <div className={styles["dl-skill-banner"]}>
+        <p className={styles["dl-skill-banner-sr-text"]}>Because every skill learned today shapes the world of tomorrow</p>
+        <svg className={styles["dl-skill-banner-svg"]} viewBox="0 0 1280 360" fill="none" aria-hidden="true">
           <g filter="url(#filter0_ii_903_9541)">
             <path d="M637.772 0.313325C639.25 0.105465 640.75 0.105464 642.228 0.313323L1266.23 88.0633C1274.13 89.174 1280 95.9317 1280 103.907V256.093C1280 264.068 1274.13 270.826 1266.23 271.937L642.228 359.687C640.75 359.895 639.25 359.895 637.772 359.687L13.7719 271.937C5.8739 270.826 0 264.068 0 256.093V103.907C0 95.9317 5.87393 89.174 13.7719 88.0633L637.772 0.313325Z" fill="#DFE6E9" />
             <path d="M637.772 0.313325C639.25 0.105465 640.75 0.105464 642.228 0.313323L1266.23 88.0633C1274.13 89.174 1280 95.9317 1280 103.907V256.093C1280 264.068 1274.13 270.826 1266.23 271.937L642.228 359.687C640.75 359.895 639.25 359.895 637.772 359.687L13.7719 271.937C5.8739 270.826 0 264.068 0 256.093V103.907C0 95.9317 5.87393 89.174 13.7719 88.0633L637.772 0.313325Z" fill="url(#pattern0_903_9541)" fillOpacity="0.5" />
@@ -161,14 +161,14 @@ function DigitalLiteracySkillBanner() {
 
 function AdvantageCard({ number, color, title, description, mirrored }: { number: string; color: string; title: string; description: string; mirrored?: boolean }) {
   return (
-    <div className={`dl-adv-card${mirrored ? " dl-adv-card-mirrored" : ""}`} style={{ "--adv-color": `${color}33` } as React.CSSProperties}>
-      <span className="dl-adv-card-shadow" style={{ background: color }} />
-      <div className="dl-adv-card-front">
-        <span className="dl-adv-card-badge" style={{ background: `${color}80` }}>
+    <div className={`${styles["dl-adv-card"]}${mirrored ? ` ${styles["dl-adv-card-mirrored"]}` : ""}`} style={{ "--adv-color": `${color}33` } as React.CSSProperties}>
+      <span className={styles["dl-adv-card-shadow"]} style={{ background: color }} />
+      <div className={styles["dl-adv-card-front"]}>
+        <span className={styles["dl-adv-card-badge"]} style={{ background: `${color}80` }}>
           {number}
         </span>
-        <h3 className="dl-adv-card-title">{title}</h3>
-        <p className="dl-adv-card-desc">{description}</p>
+        <h3 className={styles["dl-adv-card-title"]}>{title}</h3>
+        <p className={styles["dl-adv-card-desc"]}>{description}</p>
       </div>
     </div>
   );
@@ -176,8 +176,8 @@ function AdvantageCard({ number, color, title, description, mirrored }: { number
 
 function DigitalLiteracyAdvantage() {
   return (
-    <section className="dl-advantage-section">
-      <svg className="dl-advantage-wedge" viewBox="0 0 897 862" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <section className={styles["dl-advantage-section"]}>
+      <svg className={styles["dl-advantage-wedge"]} viewBox="0 0 897 862" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <g filter="url(#filter0_ii_903_9069)">
           <path d="M896.364 549.026L-165.898 861.837L-65.3121 -0.000246233L896.364 549.026Z" fill="#DFE6E9" />
         </g>
@@ -200,12 +200,12 @@ function DigitalLiteracyAdvantage() {
           </filter>
         </defs>
       </svg>
-      <div className="dl-advantage-text">
-        <span className="dl-hero-badge">The NeuroLXP<sup className="nlxp-footer-heading-tm">TM</sup> Advantage</span>
-        <h2 className="dl-section-heading">Equip Every Workforce For a Digital Future</h2>
-        <p className="dl-hero-subtext">From foundational skills to advanced expertise skills in one platform.</p>
+      <div className={styles["dl-advantage-text"]}>
+        <span className={styles["dl-hero-badge"]}>The NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup> Advantage</span>
+        <h2 className={styles["dl-section-heading"]}>Equip Every Workforce For a Digital Future</h2>
+        <p className={styles["dl-hero-subtext"]}>From foundational skills to advanced expertise skills in one platform.</p>
       </div>
-      <div className="dl-advantage-grid">
+      <div className={styles["dl-advantage-grid"]}>
         <AdvantageCard number="01" color="#BF1869" title="Digital Skill Training" description="From fundamentals to future-ready skills" />
         <AdvantageCard number="02" color="#0B9BA0" title="Personalized Learning" description="Learning journeys tailored to every skill level" mirrored />
         <AdvantageCard number="03" color="#67096E" title="Progress Tracking" description="Real-time competency performance insights" />
@@ -217,17 +217,17 @@ function DigitalLiteracyAdvantage() {
 
 function PillLabel({ text, color }: { text: string; color: string }) {
   return (
-    <span className="dl-pill-label" style={{ "--pill-color": color } as React.CSSProperties}>
-      <span className="dl-pill-label-text">{text}</span>
+    <span className={styles["dl-pill-label"]} style={{ "--pill-color": color } as React.CSSProperties}>
+      <span className={styles["dl-pill-label-text"]}>{text}</span>
     </span>
   );
 }
 
 function DigitalLiteracyTransformIcons() {
   return (
-    <div className="dl-transform-icons">
+    <div className={styles["dl-transform-icons"]}>
       <PillLabel text="Tranform" color="#0B9BA0" />
-      <div className="dl-transform-row">
+      <div className={styles["dl-transform-row"]}>
         <PillLabel text="Upskill" color="#BF1869" />
         <PillLabel text="Adapt" color="#BCCF10" />
       </div>
@@ -238,7 +238,7 @@ function DigitalLiteracyTransformIcons() {
 function CheckPill({ text, color }: { text: string; color: string }) {
   return (
     <div
-      className="dl-check-pill-outer"
+      className={styles["dl-check-pill-outer"]}
       style={
         {
           "--pill-color": color,
@@ -247,14 +247,14 @@ function CheckPill({ text, color }: { text: string; color: string }) {
           "--pill-bg-hover": `${color}8C`,
         } as React.CSSProperties
       }>
-      <div className="dl-check-pill">
-        <span className="dl-check-pill-icon">
+      <div className={styles["dl-check-pill"]}>
+        <span className={styles["dl-check-pill-icon"]}>
           <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
-            <path className="dl-check-icon-check" d="M3 8l3.5 3.5L13 4.5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            <path className="dl-check-icon-arrow" d="M3 8h9M8.5 4.5L13 8l-4.5 3.5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path className={styles["dl-check-icon-check"]} d="M3 8l3.5 3.5L13 4.5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path className={styles["dl-check-icon-arrow"]} d="M3 8h9M8.5 4.5L13 8l-4.5 3.5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </span>
-        <span className="dl-check-pill-text">{text}</span>
+        <span className={styles["dl-check-pill-text"]}>{text}</span>
       </div>
     </div>
   );
@@ -262,18 +262,18 @@ function CheckPill({ text, color }: { text: string; color: string }) {
 
 function DigitalLiteracyAccelerate() {
   return (
-    <section className="dl-accelerate-section">
-      <div className="dl-accelerate">
-        <div className="dl-accelerate-media">
-          <div className="dl-accelerate-image-frame">
-            <video className="dl-accelerate-image" src="/videos/digitalLitracyVideo.mp4" autoPlay muted loop playsInline />
+    <section className={styles["dl-accelerate-section"]}>
+      <div className={styles["dl-accelerate"]}>
+        <div className={styles["dl-accelerate-media"]}>
+          <div className={styles["dl-accelerate-image-frame"]}>
+            <video className={styles["dl-accelerate-image"]} src="/videos/digitalLitracyVideo.mp4" autoPlay muted loop playsInline />
           </div>
         </div>
-        <div className="dl-accelerate-content">
-          <span className="dl-hero-badge">Build Future Ready Skills</span>
-          <h2 className="dl-section-heading dl-accelerate-heading">Accelerate Digital Transformation</h2>
-          <p className="dl-hero-subtext">Smart skill mapping identifies gaps before they slow you down and fills them fast.</p>
-          <div className="dl-check-list">
+        <div className={styles["dl-accelerate-content"]}>
+          <span className={styles["dl-hero-badge"]}>Build Future Ready Skills</span>
+          <h2 className={`${styles["dl-section-heading"]} ${styles["dl-accelerate-heading"]}`}>Accelerate Digital Transformation</h2>
+          <p className={styles["dl-hero-subtext"]}>Smart skill mapping identifies gaps before they slow you down and fills them fast.</p>
+          <div className={styles["dl-check-list"]}>
             <CheckPill text="Role-based Skill Gap Analysis Framework" color="#67096E" />
             <CheckPill text="Automated learning assignments" color="#0B9BA0" />
             <CheckPill text="Compliance, Certification Tracking" color="#09248F" />
@@ -286,17 +286,17 @@ function DigitalLiteracyAccelerate() {
 
 function AnalyticsCard({ value, label, description, color, textColor = color, icon }: { value: string; label: string; description: string; color: string; textColor?: string; icon: React.ReactNode }) {
   return (
-    <div className="dl-analytics-card" style={{ "--analytics-color": color } as React.CSSProperties}>
-      <svg className="dl-analytics-card-border" aria-hidden="true">
+    <div className={styles["dl-analytics-card"]} style={{ "--analytics-color": color } as React.CSSProperties}>
+      <svg className={styles["dl-analytics-card-border"]} aria-hidden="true">
         <rect x="0" y="0" width="100%" height="100%" ry="50%" />
       </svg>
-      <span className="dl-analytics-card-icon" aria-hidden="true">{icon}</span>
-      <div className="dl-analytics-card-text">
-        <span className="dl-analytics-card-value" style={{ color: textColor }}>
+      <span className={styles["dl-analytics-card-icon"]} aria-hidden="true">{icon}</span>
+      <div className={styles["dl-analytics-card-text"]}>
+        <span className={styles["dl-analytics-card-value"]} style={{ color: textColor }}>
           {value}
         </span>
-        <span className="dl-analytics-card-label">{label}</span>
-        <span className="dl-analytics-card-desc">{description}</span>
+        <span className={styles["dl-analytics-card-label"]}>{label}</span>
+        <span className={styles["dl-analytics-card-desc"]}>{description}</span>
       </div>
     </div>
   );
@@ -304,13 +304,13 @@ function AnalyticsCard({ value, label, description, color, textColor = color, ic
 
 function DigitalLiteracyAnalytics() {
   return (
-    <section className="dl-analytics-section">
-      <div className="dl-analytics-header">
-        <span className="dl-hero-badge">Real-Time Analytics</span>
-        <h2 className="dl-section-heading dl-center">Track every learner - Improve every outcome</h2>
-        <p className="dl-hero-subtext dl-center">Turn learning data into actionable insights with live dashboards, competency tracking, and compliance reporting.</p>
+    <section className={styles["dl-analytics-section"]}>
+      <div className={styles["dl-analytics-header"]}>
+        <span className={styles["dl-hero-badge"]}>Real-Time Analytics</span>
+        <h2 className={`${styles["dl-section-heading"]} ${styles["dl-center"]}`}>Track every learner - Improve every outcome</h2>
+        <p className={`${styles["dl-hero-subtext"]} ${styles["dl-center"]}`}>Turn learning data into actionable insights with live dashboards, competency tracking, and compliance reporting.</p>
       </div>
-      <div className="dl-analytics-grid">
+      <div className={styles["dl-analytics-grid"]}>
         <AnalyticsCard
           value="Live"
           label="Dashboard"
@@ -376,31 +376,31 @@ function DigitalLiteracyAnalytics() {
 function StepCard({ number, color, textColor = color, title, description }: { number: string; color: string; textColor?: string; title: string; description: string }) {
   return (
     <div
-      className="dl-step-card"
+      className={styles["dl-step-card"]}
       style={
         {
           "--step-color": color,
           "--step-glow": `${color}55`,
         } as React.CSSProperties
       }>
-      <span className="dl-step-card-badge">
+      <span className={styles["dl-step-card-badge"]}>
         <span style={{ color: textColor }}>{number}</span>
       </span>
-      <h3 className="dl-step-card-title">{title}</h3>
-      <p className="dl-step-card-desc">{description}</p>
+      <h3 className={styles["dl-step-card-title"]}>{title}</h3>
+      <p className={styles["dl-step-card-desc"]}>{description}</p>
     </div>
   );
 }
 
 function DigitalLiteracyHowItWorks() {
   return (
-    <section className="dl-howitworks-section">
-      <div className="dl-analytics-header">
-        <span className="dl-hero-badge">How It Works</span>
-        <h2 className="dl-section-heading dl-center">From assessment to Mastery in four steps</h2>
-        <p className="dl-hero-subtext dl-center">Turn learning data into actionable insights with live dashboards, competency tracking, and compliance reporting.</p>
+    <section className={styles["dl-howitworks-section"]}>
+      <div className={styles["dl-analytics-header"]}>
+        <span className={styles["dl-hero-badge"]}>How It Works</span>
+        <h2 className={`${styles["dl-section-heading"]} ${styles["dl-center"]}`}>From assessment to Mastery in four steps</h2>
+        <p className={`${styles["dl-hero-subtext"]} ${styles["dl-center"]}`}>Turn learning data into actionable insights with live dashboards, competency tracking, and compliance reporting.</p>
       </div>
-      <div className="dl-step-grid">
+      <div className={styles["dl-step-grid"]}>
         <StepCard number="01" color="#BF1869" title="Assess" description="Identify each employee's current digital skill level" />
         <StepCard number="02" color="#67096E" title="Assign" description="Auto-assign role based learning paths" />
         <StepCard number="03" color="#0B9BA0" textColor="#08888E" title="Learn" description="Interactive, bite-sized learning" />
@@ -412,14 +412,14 @@ function DigitalLiteracyHowItWorks() {
 
 function BulletItem({ text, color }: { text: string; color: string }) {
   return (
-    <div className="dl-bullet-item" style={{ "--bullet-color": color } as React.CSSProperties}>
+    <div className={styles["dl-bullet-item"]} style={{ "--bullet-color": color } as React.CSSProperties}>
       <svg width="37" height="31" viewBox="0 0 37 31" fill="none" aria-hidden="true" focusable="false">
         <path d="M19.5 8.41494V9.50294H7.5C5.63624 9.50294 4.70436 9.50294 3.96926 9.80734C2.98916 10.2133 2.21046 10.9921 1.80448 11.9721C1.5 12.7073 1.5 13.6391 1.5 15.5029C1.5 17.3667 1.5 18.2985 1.80448 19.0337C2.21046 20.0138 2.98916 20.7925 3.96926 21.1985C4.70436 21.5029 5.63624 21.5029 7.5 21.5029H19.5V22.591C19.5 26.7565 19.5 28.8392 20.7006 29.3874C21.9012 29.9355 23.3366 28.5081 26.2072 25.6532L33.3344 18.5651C34.7782 17.1293 35.5 16.4113 35.5 15.5029C35.5 14.5945 34.7782 13.8765 33.3344 12.4407L26.2072 5.35274C23.3366 2.49774 21.9012 1.07034 20.7006 1.61854C19.5 2.16674 19.5 4.24934 19.5 8.41494Z" stroke={color} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
 
-      <span className="dl-bullet-text">
+      <span className={styles["dl-bullet-text"]}>
         {text}
-        <svg className="dl-bullet-underline" aria-hidden="true">
+        <svg className={styles["dl-bullet-underline"]} aria-hidden="true">
           <line x1="0" y1="1" x2="100%" y2="1" pathLength="1" />
         </svg>
       </span>
@@ -430,34 +430,34 @@ function BulletItem({ text, color }: { text: string; color: string }) {
 function CalloutCard({ title, description, color }: { title: string; description: string; color: string }) {
   return (
     <div
-      className="dl-callout-card"
+      className={styles["dl-callout-card"]}
       style={
         {
           "--callout-color": color,
           "--callout-glow": `${color}40`,
         } as React.CSSProperties
       }>
-      <h4 className="dl-callout-title">{title}</h4>
-      <p className="dl-callout-desc">{description}</p>
+      <h4 className={styles["dl-callout-title"]}>{title}</h4>
+      <p className={styles["dl-callout-desc"]}>{description}</p>
     </div>
   );
 }
 
 function DigitalLiteracyWhyNeuroLXP() {
   return (
-    <section className="dl-why-section">
-      <div className="dl-why-content">
-        <span className="dl-hero-badge">Why NeuroLXP<sup className="nlxp-footer-heading-tm">TM</sup></span>
-        <h2 className="dl-section-heading">The smarter way to build a Digitally-ready workforce</h2>
-        <p className="dl-hero-subtext">Built around the learner driving engagement, closing gaps, and proving ROI from day one.</p>
-        <div className="dl-bullet-list">
+    <section className={styles["dl-why-section"]}>
+      <div className={styles["dl-why-content"]}>
+        <span className={styles["dl-hero-badge"]}>Why NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup></span>
+        <h2 className={styles["dl-section-heading"]}>The smarter way to build a Digitally-ready workforce</h2>
+        <p className={styles["dl-hero-subtext"]}>Built around the learner driving engagement, closing gaps, and proving ROI from day one.</p>
+        <div className={styles["dl-bullet-list"]}>
           <BulletItem text="Skill Mapping" color="#BF1869" />
           <BulletItem text="Personalized Paths" color="#67096E" />
           <BulletItem text="Competency Tracking" color="#0B9BA0" />
           <BulletItem text="Gap Analysis" color="#907507" />
         </div>
       </div>
-      <div className="dl-why-callouts">
+      <div className={styles["dl-why-callouts"]}>
         <CalloutCard title="Faster Tool Adoption" description="Get teams productive with new tech in record time" color="#861109" />
         <CalloutCard title="Compliance Built-In" description="Automated certification tracking across every regulation" color="#0B9BA0" />
       </div>
@@ -467,19 +467,19 @@ function DigitalLiteracyWhyNeuroLXP() {
 
 function DigitalLiteracyCTA() {
   return (
-    <section className="dl-cta-section">
-      <div className="dl-cta-card">
-        <h2 className="dl-cta-heading">Ready to build a Digitally-Skilled workforce</h2>
-        <p className="dl-cta-subtext">
-          Build a future-ready workforce with NeuroLXP<sup className="nlxp-footer-heading-tm">TM</sup>
+    <section className={styles["dl-cta-section"]}>
+      <div className={styles["dl-cta-card"]}>
+        <h2 className={styles["dl-cta-heading"]}>Ready to build a Digitally-Skilled workforce</h2>
+        <p className={styles["dl-cta-subtext"]}>
+          Build a future-ready workforce with NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup>
           <br />
           Empower every learner with digital skills that drive business success.
         </p>
-        <div className="dl-hero-buttons">
-          <button type="button" className="dl-hero-button dl-hero-button-primary">
+        <div className={styles["dl-hero-buttons"]}>
+          <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`}>
             Book a Demo
           </button>
-          <button type="button" className="dl-hero-button dl-hero-button-secondary">
+          <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`}>
             Get Started
           </button>
         </div>

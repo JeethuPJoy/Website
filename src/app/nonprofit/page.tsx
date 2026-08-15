@@ -3,7 +3,7 @@
 import type { NextPage } from 'next';
 import Image from "next/image";
 import { useRef, useState } from "react";
-import './ngo.css';
+import styles from "./ngo.module.css";
 const NGO: NextPage = () => {
 	const topVideoRef = useRef<HTMLVideoElement>(null);
 	const [isTopVideoPlaying, setIsTopVideoPlaying] = useState(false);
@@ -37,15 +37,15 @@ const NGO: NextPage = () => {
 		}
 	};
 	return (
-		<main className='ngoPage' aria-label="Nonprofit organizations page">
+		<main className={styles.ngoPage} aria-label="Nonprofit organizations page">
 			<title>Nonprofit Organizations (NGOs) | NeuroLXP</title>
-			<div className={`ngo ${openSupportCards.length > 0 ? "supportCardsExpanded" : ""}`}>
-				<div className="ngoInner">
-					<div className="image20Parent">
-						<div className="image20" aria-hidden="true" />
-						<div className="image21" aria-hidden="true" />
+			<div className={`${styles.ngo} ${openSupportCards.length > 0 ? styles.supportCardsExpanded : ""}`}>
+				<div className={styles.ngoInner}>
+					<div className={styles.image20Parent}>
+						<div className={styles.image20} aria-hidden="true" />
+						<div className={styles.image21} aria-hidden="true" />
 						<video
-							className="image61Icon"
+							className={styles.image61Icon}
 							ref={topVideoRef}
 							src="/videos/video2.mp4"
 							preload="metadata"
@@ -62,12 +62,12 @@ const NGO: NextPage = () => {
 						{!isTopVideoPlaying && (
 							<button
 								type="button"
-								className="frameItem videoPlayButton"
+								className={`${styles.frameItem} ${styles.videoPlayButton}`}
 								onClick={toggleTopVideo}
 								aria-label="Play nonprofit organizations video"
 							>
 								<Image
-									className="videoPlayIcon"
+									className={styles.videoPlayIcon}
 									src="/icons/videosymbol.svg"
 									width={106}
 									height={106}
@@ -77,143 +77,143 @@ const NGO: NextPage = () => {
 								/>
 							</button>
 						)}
-						<div className="frameDiv">
-							<div className="frameParent2">
-								<div className="frameParent3">
-									<div className="frameInner">Nonprofit Organizations (NGOs)</div>
-									<h1 className="empoweringNgosThroughContainer" style={{ margin: 0, fontWeight: 700 }}>
-										<span className="empowering">Empowering</span>
-										<span className="ngos"> NGOs<br /></span>
-										<span className="empowering">Through Learning<br /></span>
+						<div className={styles.frameDiv}>
+							<div className={styles.frameParent2}>
+								<div className={styles.frameParent3}>
+									<div className={styles.frameInner}>Nonprofit Organizations (NGOs)</div>
+									<h1 className={styles.empoweringNgosThroughContainer} style={{ margin: 0, fontWeight: 700 }}>
+										<span className={styles.empowering}>Empowering</span>
+										<span className={styles.ngos}> NGOs<br /></span>
+										<span className={styles.empowering}>Through Learning<br /></span>
 									</h1>
 								</div>
-								<div className="empoweringNonprofitsThrough">Empowering nonprofits through scalable digital learning.</div>
+								<div className={styles.empoweringNonprofitsThrough}>Empowering nonprofits through scalable digital learning.</div>
 							</div>
-							<div className="frameWrapper">
-								<div className="bookADemoWrapper">
-									<div className="bookADemo">Book a Demo</div>
+							<div className={styles.frameWrapper}>
+								<div className={styles.bookADemoWrapper}>
+									<div className={styles.bookADemo}>Book a Demo</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="frameParent4">
-					<div className="ourCustomersWrapper">
-						<div className="industriesWeServe">Our Customers</div>
+				<div className={styles.frameParent4}>
+					<div className={styles.ourCustomersWrapper}>
+						<div className={styles.industriesWeServe}>Our Customers</div>
 					</div>
-					<div className="homeParent">
-						<Image className="arrowDown01Icon" src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" />
-						<div className="ourCustomersWrapper">
-							<div className="industriesWeServe">Industries we Serve</div>
+					<div className={styles.homeParent}>
+						<Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" />
+						<div className={styles.ourCustomersWrapper}>
+							<div className={styles.industriesWeServe}>Industries we Serve</div>
 						</div>
 					</div>
-					<div className="arrowRightDoubleGroup">
-						<Image className="arrowDown01Icon" src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" />
-						<b className="industriesWeServe">Nonprofit Organization</b>
+					<div className={styles.arrowRightDoubleGroup}>
+						<Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" />
+						<b className={styles.industriesWeServe}>Nonprofit Organization</b>
 					</div>
 				</div>
-				<div className="frame">
-					<div className="frameInner2">
-						<div className="frameWrapper2">
-							<div className="missionDrivenLearningParent">
-								<h2 className="missionDrivenLearning" style={{ margin: 0, fontWeight: 700 }}>Mission-Driven Learning</h2>
-								<div className="empowerStaffVolunteers">Empower staff, volunteers partners, and beneficiaries with scalable digital learning that builds skills, shares knowledge and drives lasting social impact.</div>
+				<div className={styles.frame}>
+					<div className={styles.frameInner2}>
+						<div className={styles.frameWrapper2}>
+							<div className={styles.missionDrivenLearningParent}>
+								<h2 className={styles.missionDrivenLearning} style={{ margin: 0, fontWeight: 700 }}>Mission-Driven Learning</h2>
+								<div className={styles.empowerStaffVolunteers}>Empower staff, volunteers partners, and beneficiaries with scalable digital learning that builds skills, shares knowledge and drives lasting social impact.</div>
 							</div>
 						</div>
 					</div>
-					<div className="frameInner3">
-						<div className="frameWrapper3">
-							<div className="frameWrapper4">
-								<div className="missionDrivenLearningParent">
-									<h2 className="scaleYourImpact" style={{ margin: 0, fontWeight: 700 }}>Scale your Impact</h2>
-									<div className="deliverStructuredTraining">Deliver structured training capacity building, and measurable learning through one platform that empowers nonprofits to grow and achieve their mission.</div>
+					<div className={styles.frameInner3}>
+						<div className={styles.frameWrapper3}>
+							<div className={styles.frameWrapper4}>
+								<div className={styles.missionDrivenLearningParent}>
+									<h2 className={styles.scaleYourImpact} style={{ margin: 0, fontWeight: 700 }}>Scale your Impact</h2>
+									<div className={styles.deliverStructuredTraining}>Deliver structured training capacity building, and measurable learning through one platform that empowers nonprofits to grow and achieve their mission.</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="frameParent5">
-					<div className="frameParent6">
-						<div className="frameIcon">Key Challenges</div>
-						<div className="howNeurolxpSupportsNgosParent">
-							<h2 className="howNeurolxpSupports" style={{ margin: 0, fontWeight: 700 }}>How NeuroLXP Supports NGOs</h2>
-							<div className="neurolxpHelpsNonprofits">NeuroLXP helps nonprofits deliver scalable training, build skills, and maximize social impact.<br /><br /></div>
+				<div className={styles.frameParent5}>
+					<div className={styles.frameParent6}>
+						<div className={styles.frameIcon}>Key Challenges</div>
+						<div className={styles.howNeurolxpSupportsNgosParent}>
+							<h2 className={styles.howNeurolxpSupports} style={{ margin: 0, fontWeight: 700 }}>How NeuroLXP Supports NGOs</h2>
+							<div className={styles.neurolxpHelpsNonprofits}>NeuroLXP helps nonprofits deliver scalable training, build skills, and maximize social impact.<br /><br /></div>
 						</div>
 					</div>
-					<div className="frameParent7">
-						<div className={`frameWrapper5 supportCard ${openSupportCards.includes(0) ? "supportCardOpen" : ""}`}>
-							<div className="supportCardContent">
-								<div className="supportIconOuter distributedStaffIconSection">
-									<Image className="supportIcon distributedStaffIcon" src="/icons/group-green.svg" width={90.03} height={90.03} sizes="40.03px" alt="" aria-hidden="true" />
+					<div className={styles.frameParent7}>
+						<div className={`${styles.frameWrapper5} ${styles.supportCard} ${openSupportCards.includes(0) ? styles.supportCardOpen : ""}`}>
+							<div className={styles.supportCardContent}>
+								<div className={`${styles.supportIconOuter} ${styles.distributedStaffIconSection}`}>
+									<Image className={`${styles.supportIcon} ${styles.distributedStaffIcon}`} src="/icons/group-green.svg" width={90.03} height={90.03} sizes="40.03px" alt="" aria-hidden="true" />
 								</div>
-								<h3 id="support-card-title-0" className="supportCardTitle" style={{ margin: 0, fontWeight: 700 }}>Distributed Staff Teams</h3>
-								<button type="button" className="supportArrowButton" onClick={() => toggleSupportCard(0)} aria-expanded={openSupportCards.includes(0)} aria-label={`${openSupportCards.includes(0) ? "Hide" : "Show"} Distributed Staff Teams details`} aria-controls="support-card-details-0">
-									<Image className="arrowDownDoubleIcon" src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+								<h3 id="support-card-title-0" className={styles.supportCardTitle} style={{ margin: 0, fontWeight: 700 }}>Distributed Staff Teams</h3>
+								<button type="button" className={styles.supportArrowButton} onClick={() => toggleSupportCard(0)} aria-expanded={openSupportCards.includes(0)} aria-label={`${openSupportCards.includes(0) ? "Hide" : "Show"} Distributed Staff Teams details`} aria-controls="support-card-details-0">
+									<Image className={styles.arrowDownDoubleIcon} src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
 								</button>
-								<div id="support-card-details-0" className="supportCardDetails" role="region" aria-labelledby="support-card-title-0" aria-hidden={!openSupportCards.includes(0)}><div className="supportCardPeak" aria-hidden="true" /><p>Consistent learning across teams.</p></div>
+								<div id="support-card-details-0" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-0" aria-hidden={!openSupportCards.includes(0)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Consistent learning across teams.</p></div>
 							</div>
 						</div>
 
-						<div className={`frameWrapper5 supportCard ${openSupportCards.includes(1) ? "supportCardOpen" : ""}`}>
-							<div className="supportCardContent">
-								<div className="supportIconOuter limitedTrainingIconSection">
-									<Image className="supportIcon limitedTrainingIcon" src="/icons/iconsidea-blue.svg" width={90.03} height={90.03} sizes="40.03px" alt="" aria-hidden="true" />
+						<div className={`${styles.frameWrapper5} ${styles.supportCard} ${openSupportCards.includes(1) ? styles.supportCardOpen : ""}`}>
+							<div className={styles.supportCardContent}>
+								<div className={`${styles.supportIconOuter} ${styles.limitedTrainingIconSection}`}>
+									<Image className={`${styles.supportIcon} ${styles.limitedTrainingIcon}`} src="/icons/iconsidea-blue.svg" width={90.03} height={90.03} sizes="40.03px" alt="" aria-hidden="true" />
 								</div>
-								<h3 id="support-card-title-1" className="supportCardTitle" style={{ margin: 0, fontWeight: 700 }}>Limited Training Resources</h3>
-								<button type="button" className="supportArrowButton" onClick={() => toggleSupportCard(1)} aria-expanded={openSupportCards.includes(1)} aria-label={`${openSupportCards.includes(1) ? "Hide" : "Show"} Limited Training Resources details`} aria-controls="support-card-details-1">
-									<Image className="arrowDownDoubleIcon" src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+								<h3 id="support-card-title-1" className={styles.supportCardTitle} style={{ margin: 0, fontWeight: 700 }}>Limited Training Resources</h3>
+								<button type="button" className={styles.supportArrowButton} onClick={() => toggleSupportCard(1)} aria-expanded={openSupportCards.includes(1)} aria-label={`${openSupportCards.includes(1) ? "Hide" : "Show"} Limited Training Resources details`} aria-controls="support-card-details-1">
+									<Image className={styles.arrowDownDoubleIcon} src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
 								</button>
-								<div id="support-card-details-1" className="supportCardDetails" role="region" aria-labelledby="support-card-title-1" aria-hidden={!openSupportCards.includes(1)}><div className="supportCardPeak" aria-hidden="true" /><p>Create once, train everywhere.</p></div>
+								<div id="support-card-details-1" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-1" aria-hidden={!openSupportCards.includes(1)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Create once, train everywhere.</p></div>
 							</div>
 						</div>
 
-						<div className={`frameWrapper5 supportCard ${openSupportCards.includes(2) ? "supportCardOpen" : ""}`}>
-							<div className="supportCardContent">
-								<div className="supportIconOuter knowledgeTransferIconSection">
-									<Image className="supportIcon knowledgeTransferIcon" src="/icons/bookReading.svg" width={90.03} height={90.03} sizes="40.03px" alt="" aria-hidden="true" />
+						<div className={`${styles.frameWrapper5} ${styles.supportCard} ${openSupportCards.includes(2) ? styles.supportCardOpen : ""}`}>
+							<div className={styles.supportCardContent}>
+								<div className={`${styles.supportIconOuter} ${styles.knowledgeTransferIconSection}`}>
+									<Image className={`${styles.supportIcon} ${styles.knowledgeTransferIcon}`} src="/icons/bookReading.svg" width={90.03} height={90.03} sizes="40.03px" alt="" aria-hidden="true" />
 								</div>
-								<h3 id="support-card-title-2" className="supportCardTitle" style={{ margin: 0, fontWeight: 700 }}>Knowledge Transfer</h3>
-								<button type="button" className="supportArrowButton" onClick={() => toggleSupportCard(2)} aria-expanded={openSupportCards.includes(2)} aria-label={`${openSupportCards.includes(2) ? "Hide" : "Show"} Knowledge Transfer details`} aria-controls="support-card-details-2">
-									<Image className="arrowDownDoubleIcon" src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+								<h3 id="support-card-title-2" className={styles.supportCardTitle} style={{ margin: 0, fontWeight: 700 }}>Knowledge Transfer</h3>
+								<button type="button" className={styles.supportArrowButton} onClick={() => toggleSupportCard(2)} aria-expanded={openSupportCards.includes(2)} aria-label={`${openSupportCards.includes(2) ? "Hide" : "Show"} Knowledge Transfer details`} aria-controls="support-card-details-2">
+									<Image className={styles.arrowDownDoubleIcon} src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
 								</button>
-								<div id="support-card-details-2" className="supportCardDetails" role="region" aria-labelledby="support-card-title-2" aria-hidden={!openSupportCards.includes(2)}><div className="supportCardPeak" aria-hidden="true" /><p>Capture &amp; share knowledge.</p></div>
+								<div id="support-card-details-2" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-2" aria-hidden={!openSupportCards.includes(2)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Capture &amp; share knowledge.</p></div>
 							</div>
 						</div>
 
-						<div className={`frameWrapper5 supportCard ${openSupportCards.includes(3) ? "supportCardOpen" : ""}`}>
-							<div className="supportCardContent">
-								<div className="supportIconOuter trainingImpactIconSection">
-									<Image className="supportIcon trainingImpactIcon" src="/icons/chart-purple.svg" width={90.03} height={90.03} sizes="40.03px" alt="" aria-hidden="true" />
+						<div className={`${styles.frameWrapper5} ${styles.supportCard} ${openSupportCards.includes(3) ? styles.supportCardOpen : ""}`}>
+							<div className={styles.supportCardContent}>
+								<div className={`${styles.supportIconOuter} ${styles.trainingImpactIconSection}`}>
+									<Image className={`${styles.supportIcon} ${styles.trainingImpactIcon}`} src="/icons/chart-purple.svg" width={90.03} height={90.03} sizes="40.03px" alt="" aria-hidden="true" />
 								</div>
-								<h3 id="support-card-title-3" className="supportCardTitle" style={{ margin: 0, fontWeight: 700 }}>Measuring Training Impact</h3>
-								<button type="button" className="supportArrowButton" onClick={() => toggleSupportCard(3)} aria-expanded={openSupportCards.includes(3)} aria-label={`${openSupportCards.includes(3) ? "Hide" : "Show"} Measuring Training Impact details`} aria-controls="support-card-details-3">
-									<Image className="arrowDownDoubleIcon" src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+								<h3 id="support-card-title-3" className={styles.supportCardTitle} style={{ margin: 0, fontWeight: 700 }}>Measuring Training Impact</h3>
+								<button type="button" className={styles.supportArrowButton} onClick={() => toggleSupportCard(3)} aria-expanded={openSupportCards.includes(3)} aria-label={`${openSupportCards.includes(3) ? "Hide" : "Show"} Measuring Training Impact details`} aria-controls="support-card-details-3">
+									<Image className={styles.arrowDownDoubleIcon} src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
 								</button>
-								<div id="support-card-details-3" className="supportCardDetails" role="region" aria-labelledby="support-card-title-3" aria-hidden={!openSupportCards.includes(3)}><div className="supportCardPeak" aria-hidden="true" /><p>Measure Real Learning Impact.</p></div>
+								<div id="support-card-details-3" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-3" aria-hidden={!openSupportCards.includes(3)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Measure Real Learning Impact.</p></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="image20Group">
-					<div className="image202" aria-hidden="true" />
-					<div className="image21Parent">
-						<div className="image212" aria-hidden="true" />
-						<div className="wrapperPexelsMbaClassroom2">
-							<Image className="pexelsMbaClassroom215566522Icon" src="/images/workingimage.webp" width={781} height={552} sizes="100vw" alt="People collaborating with laptops" />
+				<div className={styles.image20Group}>
+					<div className={styles.image202} aria-hidden="true" />
+					<div className={styles.image21Parent}>
+						<div className={styles.image212} aria-hidden="true" />
+						<div className={styles.wrapperPexelsMbaClassroom2}>
+							<Image className={styles.pexelsMbaClassroom215566522Icon} src="/images/workingimage.webp" width={781} height={552} sizes="100vw" alt="People collaborating with laptops" />
 						</div>
-						<div className="ellipseDiv" aria-hidden="true" />
-						<div className="frameWrapper9">
-							<div className="frameWrapper10">
-								<div className="frameWrapper11">
-									<div className="frameParent16">
-										<div className="frameParent17">
-											<div className="frameChild6">How NeuroLXP Helps</div>
-											<h2 className="collaborativeLearning" style={{ margin: 0, fontWeight: 700 }}>Collaborative Learning<br /></h2>
+						<div className={styles.ellipseDiv} aria-hidden="true" />
+						<div className={styles.frameWrapper9}>
+							<div className={styles.frameWrapper10}>
+								<div className={styles.frameWrapper11}>
+									<div className={styles.frameParent16}>
+										<div className={styles.frameParent17}>
+											<div className={styles.frameChild6}>How NeuroLXP Helps</div>
+											<h2 className={styles.collaborativeLearning} style={{ margin: 0, fontWeight: 700 }}>Collaborative Learning<br /></h2>
 										</div>
-										<div className="createOnceTrainContainer">
-											<span className="createOnceTrain">{`Create once, train everywhere Empower teams, share knowledge, and measure impact `}</span>
-											<b className="createOnceTrain">all on one platform</b>
-											<span className="createOnceTrain">.</span>
+										<div className={styles.createOnceTrainContainer}>
+											<span className={styles.createOnceTrain}>{`Create once, train everywhere Empower teams, share knowledge, and measure impact `}</span>
+											<b className={styles.createOnceTrain}>all on one platform</b>
+											<span className={styles.createOnceTrain}>.</span>
 										</div>
 									</div>
 								</div>
@@ -221,160 +221,160 @@ const NGO: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				<div className="frameParent18">
-					<div className="frameParent6">
-						<div className="frameChild7">Learning Use Cases</div>
-						<div className="howNeurolxpSupportsNgosParent">
-							<h2 className="howNeurolxpSupports" style={{ margin: 0, fontWeight: 700 }}>
-								<span className="empowering">{`How `}</span>
-								<span className="ngos">NGOs</span>
-								<span className="empowering"> Can Use NeuroLXP<br /></span>
+				<div className={styles.frameParent18}>
+					<div className={styles.frameParent6}>
+						<div className={styles.frameChild7}>Learning Use Cases</div>
+						<div className={styles.howNeurolxpSupportsNgosParent}>
+							<h2 className={styles.howNeurolxpSupports} style={{ margin: 0, fontWeight: 700 }}>
+								<span className={styles.empowering}>{`How `}</span>
+								<span className={styles.ngos}>NGOs</span>
+								<span className={styles.empowering}> Can Use NeuroLXP<br /></span>
 							</h2>
-							<div className="neurolxpHelpsNonprofits">Explore how NeuroLXP helps nonprofits train, collaborate, and create lasting impact through engaging digital learning.</div>
+							<div className={styles.neurolxpHelpsNonprofits}>Explore how NeuroLXP helps nonprofits train, collaborate, and create lasting impact through engaging digital learning.</div>
 						</div>
 					</div>
-					<div className="frameParent20">
-						<div className="frameParent21">
-							<div className="frameParent22">
-								<div className="frameWrapper12">
-									<div className="frameWrapper13">
-										<div className="frameWrapper13">
-											<div className="volunteerOnboardingWrapper">
-												<div className="volunteerOnboarding">Volunteer Onboarding</div>
+					<div className={styles.frameParent20}>
+						<div className={styles.frameParent21}>
+							<div className={styles.frameParent22}>
+								<div className={styles.frameWrapper12}>
+									<div className={styles.frameWrapper13}>
+										<div className={styles.frameWrapper13}>
+											<div className={styles.volunteerOnboardingWrapper}>
+												<div className={styles.volunteerOnboarding}>Volunteer Onboarding</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className="useCaseCheckWrap" aria-hidden="true">
-									<Image className="frameChild8" src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
+								<div className={styles.useCaseCheckWrap} aria-hidden="true">
+									<Image className={styles.frameChild8} src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
 								</div>
 							</div>
-							<div className="frameParent22">
-								<div className="frameWrapper12">
-									<div className="frameWrapper13">
-										<div className="frameWrapper13">
-											<div className="volunteerOnboardingWrapper" />
+							<div className={styles.frameParent22}>
+								<div className={styles.frameWrapper12}>
+									<div className={styles.frameWrapper13}>
+										<div className={styles.frameWrapper13}>
+											<div className={styles.volunteerOnboardingWrapper} />
 										</div>
 									</div>
-									<div className="volunteerOnboarding">Community Learning</div>
+									<div className={styles.volunteerOnboarding}>Community Learning</div>
 								</div>
-								<div className="useCaseCheckWrap" aria-hidden="true">
-									<Image className="frameChild8" src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
+								<div className={styles.useCaseCheckWrap} aria-hidden="true">
+									<Image className={styles.frameChild8} src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
 								</div>
 							</div>
-							<div className="frameParent22">
-								<div className="frameWrapper12">
-									<div className="frameWrapper13">
-										<div className="frameWrapper13">
-											<div className="volunteerOnboardingWrapper">
-												<div className="leadershipTraining">Leadership Training</div>
+							<div className={styles.frameParent22}>
+								<div className={styles.frameWrapper12}>
+									<div className={styles.frameWrapper13}>
+										<div className={styles.frameWrapper13}>
+											<div className={styles.volunteerOnboardingWrapper}>
+												<div className={styles.leadershipTraining}>Leadership Training</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className="useCaseCheckWrap" aria-hidden="true">
-									<Image className="frameChild8" src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
+								<div className={styles.useCaseCheckWrap} aria-hidden="true">
+									<Image className={styles.frameChild8} src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
 								</div>
 							</div>
 						</div>
-						<div className="frameParent21">
-							<div className="frameParent22">
-								<div className="frameWrapper12">
-									<div className="frameWrapper13">
-										<div className="frameWrapper13">
-											<div className="volunteerOnboardingWrapper">
-												<div className="leadershipTraining">Beneficiary Training</div>
+						<div className={styles.frameParent21}>
+							<div className={styles.frameParent22}>
+								<div className={styles.frameWrapper12}>
+									<div className={styles.frameWrapper13}>
+										<div className={styles.frameWrapper13}>
+											<div className={styles.volunteerOnboardingWrapper}>
+												<div className={styles.leadershipTraining}>Beneficiary Training</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className="useCaseCheckWrap" aria-hidden="true">
-									<Image className="frameChild8" src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
+								<div className={styles.useCaseCheckWrap} aria-hidden="true">
+									<Image className={styles.frameChild8} src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
 								</div>
 							</div>
-							<div className="frameParent22">
-								<div className="frameWrapper12">
-									<div className="frameWrapper13">
-										<div className="frameWrapper13">
-											<div className="volunteerOnboardingWrapper">
-												<div className="leadershipTraining">Advocacy Training</div>
+							<div className={styles.frameParent22}>
+								<div className={styles.frameWrapper12}>
+									<div className={styles.frameWrapper13}>
+										<div className={styles.frameWrapper13}>
+											<div className={styles.volunteerOnboardingWrapper}>
+												<div className={styles.leadershipTraining}>Advocacy Training</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className="useCaseCheckWrap" aria-hidden="true">
-									<Image className="frameChild8" src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
+								<div className={styles.useCaseCheckWrap} aria-hidden="true">
+									<Image className={styles.frameChild8} src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
 								</div>
 							</div>
-							<div className="frameParent22">
-								<div className="frameWrapper12">
-									<div className="frameWrapper13">
-										<div className="frameWrapper13">
-											<div className="volunteerOnboardingWrapper">
-												<div className="leadershipTraining">Compliance Training</div>
+							<div className={styles.frameParent22}>
+								<div className={styles.frameWrapper12}>
+									<div className={styles.frameWrapper13}>
+										<div className={styles.frameWrapper13}>
+											<div className={styles.volunteerOnboardingWrapper}>
+												<div className={styles.leadershipTraining}>Compliance Training</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className="useCaseCheckWrap" aria-hidden="true">
-									<Image className="frameChild8" src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
+								<div className={styles.useCaseCheckWrap} aria-hidden="true">
+									<Image className={styles.frameChild8} src="/icons/designcheckmark.svg" width={40} height={40} sizes="40px" alt="" aria-hidden="true" />
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="ngoChild">
-					<div className="frameWrapper29">
-						<div className="frameParent30">
-							<div className="frameParent31">
-								<div className="frameChild15">NeuroLXP Benefits</div>
-								<h2 className="benefitsForNgosContainer" style={{ margin: 0, fontWeight: 700 }}>
-									<span className="empowering">{`Benefits for `}</span>
-									<span className="ngos">{`NGOs `}</span>
-									<span className="empowering">Organizations<br /></span>
+				<div className={styles.ngoChild}>
+					<div className={styles.frameWrapper29}>
+						<div className={styles.frameParent30}>
+							<div className={styles.frameParent31}>
+								<div className={styles.frameChild15}>NeuroLXP Benefits</div>
+								<h2 className={styles.benefitsForNgosContainer} style={{ margin: 0, fontWeight: 700 }}>
+									<span className={styles.empowering}>{`Benefits for `}</span>
+									<span className={styles.ngos}>{`NGOs `}</span>
+									<span className={styles.empowering}>Organizations<br /></span>
 								</h2>
-								<div className="neurolxpHelpsNonprofits2">NeuroLXP helps nonprofits build stronger teams, empower communities, and amplify social impact through structured learning.<br /><br /><br /><br /></div>
+								<div className={styles.neurolxpHelpsNonprofits2}>NeuroLXP helps nonprofits build stronger teams, empower communities, and amplify social impact through structured learning.<br /><br /><br /><br /></div>
 							</div>
-							<div className="frameParent32">
-								<div className="frameParent33">
-									<div className="frameChild16"><div className="benefitCheckInner" aria-hidden="true"><Image className="benefitCheckIcon" src="/icons/green.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" /></div></div>
-									<div className="empoweredTeams">Empowered Teams</div>
+							<div className={styles.frameParent32}>
+								<div className={styles.frameParent33}>
+									<div className={styles.frameChild16}><div className={styles.benefitCheckInner} aria-hidden="true"><Image className={styles.benefitCheckIcon} src="/icons/green.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" /></div></div>
+									<div className={styles.empoweredTeams}>Empowered Teams</div>
 								</div>
-								<div className="frameParent33">
-									<div className="frameChild16"><div className="benefitCheckInner" aria-hidden="true"><Image className="benefitCheckIcon" src="/icons/green.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" /></div></div>
-									<div className="missionDrivenGrowth">Mission-Driven Growth</div>
+								<div className={styles.frameParent33}>
+									<div className={styles.frameChild16}><div className={styles.benefitCheckInner} aria-hidden="true"><Image className={styles.benefitCheckIcon} src="/icons/green.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" /></div></div>
+									<div className={styles.missionDrivenGrowth}>Mission-Driven Growth</div>
 								</div>
-								<div className="frameParent33">
-									<div className="frameChild16"><div className="benefitCheckInner" aria-hidden="true"><Image className="benefitCheckIcon" src="/icons/green.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" /></div></div>
-									<div className="higherLearnerEngagement">Higher Learner Engagement</div>
+								<div className={styles.frameParent33}>
+									<div className={styles.frameChild16}><div className={styles.benefitCheckInner} aria-hidden="true"><Image className={styles.benefitCheckIcon} src="/icons/green.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" /></div></div>
+									<div className={styles.higherLearnerEngagement}>Higher Learner Engagement</div>
 								</div>
-								<div className="frameParent33">
-									<div className="frameChild19"><div className="benefitCheckInner" aria-hidden="true"><Image className="benefitCheckIcon" src="/icons/green.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" /></div></div>
-									<div className="smarterLearningManagement">Smarter Learning Management</div>
+								<div className={styles.frameParent33}>
+									<div className={styles.frameChild19}><div className={styles.benefitCheckInner} aria-hidden="true"><Image className={styles.benefitCheckIcon} src="/icons/green.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" /></div></div>
+									<div className={styles.smarterLearningManagement}>Smarter Learning Management</div>
 								</div>
-								<div className="frameParent33">
-									<div className="frameChild16"><div className="benefitCheckInner" aria-hidden="true"><Image className="benefitCheckIcon" src="/icons/green.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" /></div></div>
-									<div className="measurableSocialImpact">Measurable Social Impact</div>
+								<div className={styles.frameParent33}>
+									<div className={styles.frameChild16}><div className={styles.benefitCheckInner} aria-hidden="true"><Image className={styles.benefitCheckIcon} src="/icons/green.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" /></div></div>
+									<div className={styles.measurableSocialImpact}>Measurable Social Impact</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="frameParent38">
-					<div className="frameParent39">
-						<div className="frameChild21">NeuroLXP<sup className="neurolxpTrademark">TM</sup></div>
-						<div className="enablingLearningForSocialIParent">
-							<h2 className="enablingLearningFor" style={{ margin: 0, fontWeight: 700 }}>Enabling Learning for Social Impact</h2>
-							<div className="withFlexibleLearning">With flexible learning tools, collaborative knowledge sharing, and scalable training capabilities, NeuroLXP helps nonprofit organizations build stronger teams, empower communities, and amplify their social impact through learning.<br /><br /><br /><br /></div>
+				<div className={styles.frameParent38}>
+					<div className={styles.frameParent39}>
+						<div className={styles.frameChild21}>NeuroLXP<sup className={styles.neurolxpTrademark}>TM</sup></div>
+						<div className={styles.enablingLearningForSocialIParent}>
+							<h2 className={styles.enablingLearningFor} style={{ margin: 0, fontWeight: 700 }}>Enabling Learning for Social Impact</h2>
+							<div className={styles.withFlexibleLearning}>With flexible learning tools, collaborative knowledge sharing, and scalable training capabilities, NeuroLXP helps nonprofit organizations build stronger teams, empower communities, and amplify their social impact through learning.<br /><br /><br /><br /></div>
 						</div>
 					</div>
-					<div className="frameWrapper30">
-						<div className="happyStudentsGraduationCereParent">
-							<div className="happyStudentsGraduationCere" aria-hidden="true" />
-							<video className="groupTeenagersDiscussingUniIcon" ref={bottomVideoRef} src="/videos/video1.mp4" preload="metadata" playsInline muted autoPlay loop onClick={toggleBottomVideo} aria-hidden="true" onPlay={() => setIsBottomVideoPlaying(true)} onPause={() => setIsBottomVideoPlaying(false)} onEnded={() => setIsBottomVideoPlaying(false)} />
+					<div className={styles.frameWrapper30}>
+						<div className={styles.happyStudentsGraduationCereParent}>
+							<div className={styles.happyStudentsGraduationCere} aria-hidden="true" />
+							<video className={styles.groupTeenagersDiscussingUniIcon} ref={bottomVideoRef} src="/videos/video1.mp4" preload="metadata" playsInline muted autoPlay loop onClick={toggleBottomVideo} aria-hidden="true" onPlay={() => setIsBottomVideoPlaying(true)} onPause={() => setIsBottomVideoPlaying(false)} onEnded={() => setIsBottomVideoPlaying(false)} />
 							{!isBottomVideoPlaying && (
-								<button type="button" className="frameChild22 videoPlayButton" onClick={toggleBottomVideo} aria-label="Play NeuroLXP social impact video">
-									<Image className="videoPlayIcon" src="/icons/videosymbol.svg" width={106} height={106} sizes="106px" alt="" aria-hidden="true" />
+								<button type="button" className={`${styles.frameChild22} ${styles.videoPlayButton}`} onClick={toggleBottomVideo} aria-label="Play NeuroLXP social impact video">
+									<Image className={styles.videoPlayIcon} src="/icons/videosymbol.svg" width={106} height={106} sizes="106px" alt="" aria-hidden="true" />
 								</button>
 							)}
 						</div>

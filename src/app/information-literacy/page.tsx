@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import Image from "next/image";
 import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 import BookDemoTrigger from "@/components/Bookademo/BookDemoTrigger";
-import "./information-literacy.css";
+import styles from "./information-literacy.module.css";
 
 type ThinkingCardData = {
   id: string;
@@ -86,12 +86,12 @@ const JOURNEY_STAGES: JourneyStage[] = [
 
 const ThinkingCard = ({ card, index }: { card: ThinkingCardData; index: number }) => {
   return (
-    <div className="thinkingCard">
-      <div className="thinkingCardSvg">
-        <div className="thinkingCardInner">
-          <div className={`thinkingCardTitle ${card.id === "evidence-based-thinking" ? "evidenceBasedTitle" : ""}`}>{card.title}</div>
-          <div className="thinkingCardDesc">{card.description}</div>
-          <span className="thinkingCardTriangle" style={{ ["--triangle-color" as string]: card.accent }} />
+    <div className={styles.thinkingCard}>
+      <div className={styles.thinkingCardSvg}>
+        <div className={styles.thinkingCardInner}>
+          <div className={`${styles.thinkingCardTitle} ${card.id === "evidence-based-thinking" ? styles.evidenceBasedTitle : ""}`}>{card.title}</div>
+          <div className={styles.thinkingCardDesc}>{card.description}</div>
+          <span className={styles.thinkingCardTriangle} style={{ ["--triangle-color" as string]: card.accent }} />
         </div>
       </div>
     </div>
@@ -103,76 +103,76 @@ const SkillCircle = ({ value, label, color }: { value: string; label: string; co
 
   return (
     <div
-      className="skillCircle"
+      className={styles.skillCircle}
       style={{
         ["--circle-color" as string]: color,
         ["--progress" as string]: progress,
       }}>
-      <div className="skillCircleGraphic">
-        <div className="skillCircleProgress"></div>
+      <div className={styles.skillCircleGraphic}>
+        <div className={styles.skillCircleProgress}></div>
 
-        <div className="skillCircleInner">
-          <div className="skillCircleValue">{value}</div>
+        <div className={styles.skillCircleInner}>
+          <div className={styles.skillCircleValue}>{value}</div>
         </div>
       </div>
 
-      <div className="skillCircleLabel">{label}</div>
+      <div className={styles.skillCircleLabel}>{label}</div>
     </div>
   );
 };
 
 const InformationLiteracy: NextPage = () => {
   return (
-    <div className="informationLiteracy">
-      <div className="image20Parent">
-        <div className="image20">
-          <Image src="/images/bg2.webp" fill sizes="100vw" alt="" className="researchBackgroundImage" />
+    <div className={styles.informationLiteracy}>
+      <div className={styles.image20Parent}>
+        <div className={styles.image20}>
+          <Image src="/images/bg2.webp" fill sizes="100vw" alt="" className={styles.researchBackgroundImage} />
         </div>
 
-        <div className="frameParent">
-          <div className="frameGroup">
-            <div className="frameContainer">
-              <div className="researchDiscoveryBadge">Research &amp; Discovery</div>
+        <div className={styles.frameParent}>
+          <div className={styles.frameGroup}>
+            <div className={styles.frameContainer}>
+              <div className={styles.researchDiscoveryBadge}>Research &amp; Discovery</div>
 
-              <b className="researchSmarterLearn">
+              <b className={styles.researchSmarterLearn}>
                 Research Smarter
                 <br />
                 Learn Better
               </b>
             </div>
 
-            <div className="buildResearchSkills">Build research skills that transform information into meaningful, actionable insights.</div>
+            <div className={styles.buildResearchSkills}>Build research skills that transform information into meaningful, actionable insights.</div>
           </div>
 
-          <div className="frameDiv">
-            <div className="frameWrapper">
-              <div className="frameParent2">
-                <div className="academicResearchWrapper">
-                  <b className="academicResearch">Academic Research</b>
+          <div className={styles.frameDiv}>
+            <div className={styles.frameWrapper}>
+              <div className={styles.frameParent2}>
+                <div className={styles.academicResearchWrapper}>
+                  <b className={styles.academicResearch}>Academic Research</b>
                 </div>
 
-                <div className="frameParent3">
-                  <div className="frameItem" />
-                  <div className="discoverTrustedAcademic">Discover trusted academic sources with confidence</div>
+                <div className={styles.frameParent3}>
+                  <div className={styles.frameItem} />
+                  <div className={styles.discoverTrustedAcademic}>Discover trusted academic sources with confidence</div>
                 </div>
               </div>
             </div>
 
-            <div className="frameParent4">
-              <div className="frameWrapper2">
-                <div className="digitalLibrariesParent">
-                  <b className="academicResearch">Digital Libraries</b>
-                  <div className="accessCredibleResearchAcrosWrapper">
-                    <div className="accessCredibleResearch">Access credible research across diverse disciplines</div>
+            <div className={styles.frameParent4}>
+              <div className={styles.frameWrapper2}>
+                <div className={styles.digitalLibrariesParent}>
+                  <b className={styles.academicResearch}>Digital Libraries</b>
+                  <div className={styles.accessCredibleResearchAcrosWrapper}>
+                    <div className={styles.accessCredibleResearch}>Access credible research across diverse disciplines</div>
                   </div>
                 </div>
               </div>
 
-              <div className="frameWrapper2">
-                <div className="digitalLibrariesParent">
-                  <b className="academicResearch">Synthesis Skills</b>
-                  <div className="turnResearchIntoClearActiWrapper">
-                    <div className="turnResearchInto">Turn research into clear, actionable insights</div>
+              <div className={styles.frameWrapper2}>
+                <div className={styles.digitalLibrariesParent}>
+                  <b className={styles.academicResearch}>Synthesis Skills</b>
+                  <div className={styles.turnResearchIntoClearActiWrapper}>
+                    <div className={styles.turnResearchInto}>Turn research into clear, actionable insights</div>
                   </div>
                 </div>
               </div>
@@ -180,7 +180,7 @@ const InformationLiteracy: NextPage = () => {
           </div>
         </div>
       </div>
-      <svg className="informationLiteracyChild" width="1440" height="637" viewBox="0 0 1440 637" fill="none" aria-hidden="true">
+      <svg className={styles.informationLiteracyChild} width="1440" height="637" viewBox="0 0 1440 637" fill="none" aria-hidden="true">
         <defs>
           <filter id="heroExactInnerShadow" x="-173.223" y="-236" width="1787.45" height="880.94" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
@@ -211,45 +211,45 @@ const InformationLiteracy: NextPage = () => {
         </g>
       </svg>
 
-      <div className="frameParent8">
-        <div className="neurolxp21Wrapper">
-          <div className="neurolxp212">NeuroLXP 2.1</div>
+      <div className={styles.frameParent8}>
+        <div className={styles.neurolxp21Wrapper}>
+          <div className={styles.neurolxp212}>NeuroLXP 2.1</div>
         </div>
-        <div className="arrowRightDoubleParent">
-          <svg className="breadcrumbDoubleArrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <div className={styles.arrowRightDoubleParent}>
+          <svg className={styles.breadcrumbDoubleArrow} width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path d="M8.33398 12C8.33398 12 12.334 9.05407 12.334 8C12.334 6.94587 8.33398 4 8.33398 4" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M3.66605 12C3.66605 12 7.66602 9.05407 7.66602 8C7.66602 6.94587 3.66602 4 3.66602 4" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          <b className="neurolxp212">Information Literacy</b>
+          <b className={styles.neurolxp212}>Information Literacy</b>
         </div>
       </div>
 
-      <div className="frameParent9">
-        <div className="frameWrapper4">
-          <div className="frameParent10">
-            <div className="frameParent11">
-              <div className="informationLiteracyBadge">Information Literacy</div>
-              <b className="findEvaluate">{`Find, Evaluate & Use Knowledge Responsibly`}</b>
+      <div className={styles.frameParent9}>
+        <div className={styles.frameWrapper4}>
+          <div className={styles.frameParent10}>
+            <div className={styles.frameParent11}>
+              <div className={styles.informationLiteracyBadge}>Information Literacy</div>
+              <b className={styles.findEvaluate}>{`Find, Evaluate & Use Knowledge Responsibly`}</b>
             </div>
-            <div className="neurolxpEquipsLearners">
+            <div className={styles.neurolxpEquipsLearners}>
               NeuroLXP equips learners to cut through digital noise identifying credible sources, thinking critically, and acting on information with confidence.
               <br />
             </div>
           </div>
         </div>
-        <div className="frameParent12">
-          <BookDemoTrigger className="requestDemoWrapper">
-            <div className="requestDemo">Request Demo</div>
+        <div className={styles.frameParent12}>
+          <BookDemoTrigger className={styles.requestDemoWrapper}>
+            <div className={styles.requestDemo}>Request Demo</div>
           </BookDemoTrigger>
-          <div className="frameWrapper5">
-            <div className="startLearningWrapper">
-              <div className="startLearning">Start Learning</div>
+          <div className={styles.frameWrapper5}>
+            <div className={styles.startLearningWrapper}>
+              <div className={styles.startLearning}>Start Learning</div>
             </div>
           </div>
         </div>
       </div>
-      <div className="frameParent13">
-        <svg className="statsPanelShape" width="1424" height="279" viewBox="0 0 1424 279" fill="none" preserveAspectRatio="none" aria-hidden="true">
+      <div className={styles.frameParent13}>
+        <svg className={styles.statsPanelShape} width="1424" height="279" viewBox="0 0 1424 279" fill="none" preserveAspectRatio="none" aria-hidden="true">
           <defs>
             <filter id="statsOuterInnerShadow" x="68" y="-4" width="1288" height="287" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
@@ -295,127 +295,127 @@ const InformationLiteracy: NextPage = () => {
           </g>
         </svg>
 
-        <div className="statsContent">
-          <div className="croreParent">
-            <b className="crore statsGreen">4 Crore</b>
-            <div className="skillDomains">Skill Domains</div>
+        <div className={styles.statsContent}>
+          <div className={styles.croreParent}>
+            <b className={`${styles.crore} ${styles.statsGreen}`}>4 Crore</b>
+            <div className={styles.skillDomains}>Skill Domains</div>
           </div>
 
-          <div className="statsDivider" />
+          <div className={styles.statsDivider} />
 
-          <div className="parent">
-            <b className="crore statsBlue">100%</b>
-            <div className="skillDomains">Digital Ready</div>
+          <div className={styles.parent}>
+            <b className={`${styles.crore} ${styles.statsBlue}`}>100%</b>
+            <div className={styles.skillDomains}>Digital Ready</div>
           </div>
 
-          <div className="statsDivider" />
+          <div className={styles.statsDivider} />
 
-          <div className="group">
-            <b className="crore statsPink">24/7</b>
-            <div className="skillDomains">Learning Access</div>
+          <div className={styles.group}>
+            <b className={`${styles.crore} ${styles.statsPink}`}>24/7</b>
+            <div className={styles.skillDomains}>Learning Access</div>
           </div>
         </div>
       </div>
-      <div className="frameParent19">
-        <div className="frameParent20">
-          <div className="trackOutcomesBadge">Track Learning Outcomes</div>
-          <div className="buildConfidenceThroughCritiParent">
-            <b className="buildConfidenceThroughContainer">
-              <span className="buildConfidenceThrough">{`Build Confidence Through `}</span>
-              <span className="criticalThinking">Critical Thinking</span>
+      <div className={styles.frameParent19}>
+        <div className={styles.frameParent20}>
+          <div className={styles.trackOutcomesBadge}>Track Learning Outcomes</div>
+          <div className={styles.buildConfidenceThroughCritiParent}>
+            <b className={styles.buildConfidenceThroughContainer}>
+              <span className={styles.buildConfidenceThrough}>{`Build Confidence Through `}</span>
+              <span className={styles.criticalThinking}>Critical Thinking</span>
             </b>
-            <div className="empowerLearnersTo">Empower learners to think critically, verify information, and navigate the digital world with confidence.</div>
+            <div className={styles.empowerLearnersTo}>Empower learners to think critically, verify information, and navigate the digital world with confidence.</div>
           </div>
         </div>
-        <div className="frameParent21">
+        <div className={styles.frameParent21}>
           {THINKING_CARDS.map((card, index) => (
             <ThinkingCard key={card.id} card={card} index={index} />
           ))}
         </div>
       </div>
-      <div className="frameParent22">
-        <div className="frameParent23">
-          <div className="frameParent24">
-            <div className="frameParent25">
-              <div className="frameChild15" />
-              <b className="b5">1</b>
+      <div className={styles.frameParent22}>
+        <div className={styles.frameParent23}>
+          <div className={styles.frameParent24}>
+            <div className={styles.frameParent25}>
+              <div className={styles.frameChild15} />
+              <b className={styles.b5}>1</b>
             </div>
-            <div className="citationExcellenceParent">
-              <b className="citationExcellence">
+            <div className={styles.citationExcellenceParent}>
+              <b className={styles.citationExcellence}>
                 Citation Excellence
                 <br />
               </b>
-              <div className="citeSourcesAccuratelyContainer">
-                <span className="citeSourcesAccurately">
+              <div className={styles.citeSourcesAccuratelyContainer}>
+                <span className={styles.citeSourcesAccurately}>
                   Cite sources accurately and consistently
                   <br />
                 </span>
-                <span className="blankLine">&nbsp;</span>
+                <span className={styles.blankLine}>&nbsp;</span>
               </div>
             </div>
           </div>
-          <div className="frameParent26">
-            <div className="frameParent27">
-              <div className="frameParent28">
-                <div className="frameChild16" />
-                <b className="b5">2</b>
+          <div className={styles.frameParent26}>
+            <div className={styles.frameParent27}>
+              <div className={styles.frameParent28}>
+                <div className={styles.frameChild16} />
+                <b className={styles.b5}>2</b>
               </div>
-              <div className="academicIntegrityParent">
-                <b className="citationExcellence">
+              <div className={styles.academicIntegrityParent}>
+                <b className={styles.citationExcellence}>
                   Academic Integrity
                   <br />
                 </b>
-                <div className="createOriginalPlagiarismContainer">
-                  <span className="citeSourcesAccurately">
+                <div className={styles.createOriginalPlagiarismContainer}>
+                  <span className={styles.citeSourcesAccurately}>
                     Create original, plagiarism free work
                     <br />
                   </span>
-                  <span className="blankLine">&nbsp;</span>
+                  <span className={styles.blankLine}>&nbsp;</span>
                 </div>
               </div>
             </div>
-            <div className="frameParent29">
-              <div className="frameParent25">
-                <div className="frameChild17" />
-                <b className="b5">3</b>
+            <div className={styles.frameParent29}>
+              <div className={styles.frameParent25}>
+                <div className={styles.frameChild17} />
+                <b className={styles.b5}>3</b>
               </div>
-              <div className="intellectualPropertyParent">
-                <b className="citationExcellence">
+              <div className={styles.intellectualPropertyParent}>
+                <b className={styles.citationExcellence}>
                   Intellectual Property
                   <br />
                 </b>
-                <div className="citeSourcesAccuratelyContainer">
-                  <span className="citeSourcesAccurately">
+                <div className={styles.citeSourcesAccuratelyContainer}>
+                  <span className={styles.citeSourcesAccurately}>
                     Respect copyright and intellectual property
                     <br />
                   </span>
-                  <span className="blankLine">&nbsp;</span>
+                  <span className={styles.blankLine}>&nbsp;</span>
                 </div>
               </div>
             </div>
           </div>
-          <div className="frameParent30">
-            <div className="frameParent31">
-              <div className="frameChild18" />
-              <b className="b5">4</b>
+          <div className={styles.frameParent30}>
+            <div className={styles.frameParent31}>
+              <div className={styles.frameChild18} />
+              <b className={styles.b5}>4</b>
             </div>
-            <div className="ethicalKnowledgeParent">
-              <b className="citationExcellence">
+            <div className={styles.ethicalKnowledgeParent}>
+              <b className={styles.citationExcellence}>
                 Ethical Knowledge
                 <br />
               </b>
-              <div className="citeSourcesAccuratelyContainer">
-                <span className="citeSourcesAccurately">
+              <div className={styles.citeSourcesAccuratelyContainer}>
+                <span className={styles.citeSourcesAccurately}>
                   Use and share information responsibly
                   <br />
                 </span>
-                <span className="blankLine">&nbsp;</span>
+                <span className={styles.blankLine}>&nbsp;</span>
               </div>
             </div>
           </div>
         </div>
-        <div className="vectorParent">
-          <svg className="integrityHexagonSvg" width="662" height="541" viewBox="0 0 662 541" fill="none" aria-hidden="true">
+        <div className={styles.vectorParent}>
+          <svg className={styles.integrityHexagonSvg} width="662" height="541" viewBox="0 0 662 541" fill="none" aria-hidden="true">
             <g filter="url(#integrityExactInnerShadow)">
               <path d="M324.929 1.19694C328.819 -0.398519 333.181 -0.398513 337.071 1.19695L652.071 130.385C658.077 132.848 662 138.697 662 145.188V395.226C662 401.717 658.077 407.566 652.071 410.029L337.071 539.217C333.181 540.813 328.819 540.813 324.929 539.217L9.92881 410.029C3.92253 407.566 0 401.717 0 395.226V145.188C0 138.697 3.92254 132.848 9.92882 130.385L324.929 1.19694Z" fill="#DFE6E9" />
             </g>
@@ -439,76 +439,76 @@ const InformationLiteracy: NextPage = () => {
             </defs>
           </svg>
 
-          <div className="integrityContent">
-            <div className="ethicsIntegrityBadge">Ethics &amp; Integrity</div>
+          <div className={styles.integrityContent}>
+            <div className={styles.ethicsIntegrityBadge}>Ethics &amp; Integrity</div>
 
-            <h2 className="integrityTitle">
+            <h2 className={styles.integrityTitle}>
               Research with <span>Integrity</span>
               <br />
               Cite with Confidence
             </h2>
 
-            <p className="integrityDescription">Build ethical research habits by citing accurately, respecting intellectual property and creating original, trustworthy work.</p>
+            <p className={styles.integrityDescription}>Build ethical research habits by citing accurately, respecting intellectual property and creating original, trustworthy work.</p>
           </div>
         </div>
       </div>
-      <div className="frameParent34">
-        <div className="frameParent20">
-          <div className="frameChild21">Learning Journey</div>
-          <div className="buildConfidenceThroughCritiParent">
-            <b className="masterInformationUnlockContainer">
-              <span className="buildConfidenceThrough">{`Master Information! `}</span>
-              <span className="criticalThinking">Unlock Knowledge</span>
+      <div className={styles.frameParent34}>
+        <div className={styles.frameParent20}>
+          <div className={styles.frameChild21}>Learning Journey</div>
+          <div className={styles.buildConfidenceThroughCritiParent}>
+            <b className={styles.masterInformationUnlockContainer}>
+              <span className={styles.buildConfidenceThrough}>{`Master Information! `}</span>
+              <span className={styles.criticalThinking}>Unlock Knowledge</span>
             </b>
-            <div className="empowerLearnersTo">From awareness to mastery in four simple stages.</div>
+            <div className={styles.empowerLearnersTo}>From awareness to mastery in four simple stages.</div>
           </div>
         </div>
-        <div className="frameParent36">
-          <div className="journeyTimeline">
-            <div className="journeyTrack" aria-hidden="true" />
+        <div className={styles.frameParent36}>
+          <div className={styles.journeyTimeline}>
+            <div className={styles.journeyTrack} aria-hidden="true" />
 
             {JOURNEY_STAGES.map((stage) => (
-              <div className="journeyStage" key={stage.id} style={{ "--stage-color": stage.color } as React.CSSProperties}>
-                <div className="journeyCircle">
+              <div className={styles.journeyStage} key={stage.id} style={{ "--stage-color": stage.color } as React.CSSProperties}>
+                <div className={styles.journeyCircle}>
                   <span>{stage.number}</span>
                 </div>
 
-                <div className="journeyCard">
-                  <span className="journeyCorner" aria-hidden="true" />
-                  <h3 className="journeyCardTitle">{stage.title}</h3>
-                  <p className="journeyCardDescription">{stage.description}</p>
+                <div className={styles.journeyCard}>
+                  <span className={styles.journeyCorner} aria-hidden="true" />
+                  <h3 className={styles.journeyCardTitle}>{stage.title}</h3>
+                  <p className={styles.journeyCardDescription}>{stage.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="rectangle2" />
-      <div className="image203" />
-      <div className="informationLiteracyInner" />
-      <div className="informationLiteracyInner2">
-        <div className="frameWrapper8">
-          <div className="frameWrapper9">
-            <div className="frameChild31" />
+      <div className={styles.rectangle2} />
+      <div className={styles.image203} />
+      <div className={styles.informationLiteracyInner} />
+      <div className={styles.informationLiteracyInner2}>
+        <div className={styles.frameWrapper8}>
+          <div className={styles.frameWrapper9}>
+            <div className={styles.frameChild31} />
           </div>
         </div>
       </div>
-      <div className="frameParent40">
-        <div className="builtForTheWayLearnersActParent">
-          <div className="learnersThinkBadge">Why NeuroLXP</div>
-          <b className="builtForTheContainer">Built for the way learners actually think</b>
-          <div className="empowerLearnersTo">NeuroLXP transforms information literacy into practical skills through structured learning and real-world application.</div>
+      <div className={styles.frameParent40}>
+        <div className={styles.builtForTheWayLearnersActParent}>
+          <div className={styles.learnersThinkBadge}>Why NeuroLXP</div>
+          <b className={styles.builtForTheContainer}>Built for the way learners actually think</b>
+          <div className={styles.empowerLearnersTo}>NeuroLXP transforms information literacy into practical skills through structured learning and real-world application.</div>
         </div>
       </div>
-      <div className="frameParent41">
-        <div className="skillCircleRow">
+      <div className={styles.frameParent41}>
+        <div className={styles.skillCircleRow}>
           <SkillCircle value="92%" label="Source Accuracy" color="#2A7308" />
           <SkillCircle value="84%" label="Critical Thinking" color="#2D4CC8" />
           <SkillCircle value="84%" label="Ethical Usage" color="#C05512" />
         </div>
-        <div className="frameParent47">
-          <div className="frameChild35" />
-          <Image className="creativeExcitedBrunetteBusiIcon" src="/images/image6.webp" width={678} height={721} sizes="100vw" alt="" />
+        <div className={styles.frameParent47}>
+          <div className={styles.frameChild35} />
+          <Image className={styles.creativeExcitedBrunetteBusiIcon} src="/images/image6.webp" width={678} height={721} sizes="100vw" alt="" />
         </div>
       </div>
       <TalkToExpertButton />

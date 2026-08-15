@@ -2,11 +2,11 @@
 
 import { useState, type ReactElement, type CSSProperties } from "react";
 import Image from "next/image";
-import "./personalized-learning-paths.css";
+import styles from "./personalized-learning-paths.module.css";
 
 function ArrowRightDouble() {
   return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="plp-breadcrumb-arrow">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={styles["plp-breadcrumb-arrow"]}>
       <path d="M8.33398 12C8.33398 12 12.334 9.05407 12.334 8C12.334 6.94587 8.33398 4 8.33398 4" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M3.66605 12C3.66605 12 7.66602 9.05407 7.66602 8C7.66602 6.94587 3.66602 4 3.66602 4" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
@@ -84,7 +84,7 @@ const stages: StageData[] = [
 
 function CheckCircle({ color, size = 24 }: { color: string; size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className="plp-check-icon">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className={styles["plp-check-icon"]}>
       <circle cx="12" cy="12" r="10" fill={color} />
       <path d="M8 12.5L10.5 15L16 9" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
@@ -93,7 +93,7 @@ function CheckCircle({ color, size = 24 }: { color: string; size?: number }) {
 
 function ArrowRightBig({ color }: { color: string }) {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="plp-stage-arrow">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["plp-stage-arrow"]}>
       <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
@@ -101,7 +101,7 @@ function ArrowRightBig({ color }: { color: string }) {
 
 function CheckCircleOutline({ color }: { color: string }) {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="plp-check-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["plp-check-icon"]}>
       <circle cx="12" cy="12" r="10" stroke={color} strokeWidth="2" />
       <path d="M8 12.5L10.5 15L16 9" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
@@ -181,17 +181,17 @@ function MasteryRing({ percent, color }: { percent: number; color: string }) {
   const offset = circumference - (percent / 100) * circumference;
 
   return (
-    <div className="plp-mastery-ring-base">
-      <div className="plp-mastery-ring">
-        <svg width="176" height="176" viewBox="0 0 176 176" className="plp-mastery-ring-svg">
+    <div className={styles["plp-mastery-ring-base"]}>
+      <div className={styles["plp-mastery-ring"]}>
+        <svg width="176" height="176" viewBox="0 0 176 176" className={styles["plp-mastery-ring-svg"]}>
           <circle cx="88" cy="88" r={radius} stroke={color} strokeOpacity="0.08" strokeWidth="20" fill="none" />
           <circle cx="88" cy="88" r={radius} stroke={color} strokeWidth="20" strokeLinecap="round" fill="none" strokeDasharray={circumference} strokeDashoffset={offset} transform="rotate(-90 88 88)" />
         </svg>
-        <div className="plp-mastery-ring-label">
-          <span className="plp-mastery-ring-percent" style={{ color }}>
+        <div className={styles["plp-mastery-ring-label"]}>
+          <span className={styles["plp-mastery-ring-percent"]} style={{ color }}>
             {percent}%
           </span>
-          <span className="plp-mastery-ring-text">Mastery</span>
+          <span className={styles["plp-mastery-ring-text"]}>Mastery</span>
         </div>
       </div>
     </div>
@@ -200,70 +200,70 @@ function MasteryRing({ percent, color }: { percent: number; color: string }) {
 
 function StageCard({ stage }: { stage: StageData }) {
   return (
-    <div className="plp-stage-row">
-      <div className="plp-stage-marker">
-        <div className="plp-stage-circle-outer">
-          <div className="plp-stage-circle" style={{ borderColor: stage.color }}>
-            <span className="plp-stage-number" style={{ color: stage.color }}>
+    <div className={styles["plp-stage-row"]}>
+      <div className={styles["plp-stage-marker"]}>
+        <div className={styles["plp-stage-circle-outer"]}>
+          <div className={styles["plp-stage-circle"]} style={{ borderColor: stage.color }}>
+            <span className={styles["plp-stage-number"]} style={{ color: stage.color }}>
               {stage.number}
             </span>
           </div>
         </div>
       </div>
 
-      <div className="plp-stage-card">
-        <div className="plp-stage-content">
-          <span className="plp-stage-label" style={{ color: stage.color }}>
+      <div className={styles["plp-stage-card"]}>
+        <div className={styles["plp-stage-content"]}>
+          <span className={styles["plp-stage-label"]} style={{ color: stage.color }}>
             {stage.stageLabel}
           </span>
-          <h3 className="plp-stage-title">{stage.title}</h3>
-          <p className="plp-stage-subtitle">{stage.subtitle}</p>
+          <h3 className={styles["plp-stage-title"]}>{stage.title}</h3>
+          <p className={styles["plp-stage-subtitle"]}>{stage.subtitle}</p>
 
-          <ul className="plp-stage-checklist">
+          <ul className={styles["plp-stage-checklist"]}>
             {stage.checklist.map((item) => (
-              <li key={item} className="plp-stage-checklist-item" style={{ "--stage-accent": stage.color } as CSSProperties}>
+              <li key={item} className={styles["plp-stage-checklist-item"]} style={{ "--stage-accent": stage.color } as CSSProperties}>
                 <CheckCircle color="#2A7308" />
                 <span>{item}</span>
               </li>
             ))}
           </ul>
 
-          <div className="plp-stage-divider" style={{ borderColor: stage.color }} />
+          <div className={styles["plp-stage-divider"]} style={{ borderColor: stage.color }} />
 
-          <div className="plp-stage-note-row">
+          <div className={styles["plp-stage-note-row"]}>
             <ArrowRightBig color={stage.color} />
-            <p className="plp-stage-note">{stage.note}</p>
+            <p className={styles["plp-stage-note"]}>{stage.note}</p>
           </div>
         </div>
 
-        <div className="plp-stage-side">
-          <div className="plp-stage-ring-row">
+        <div className={styles["plp-stage-side"]}>
+          <div className={styles["plp-stage-ring-row"]}>
             <MasteryRing percent={stage.mastery} color={stage.color} />
 
-            <ul className="plp-stage-ring-checklist">
+            <ul className={styles["plp-stage-ring-checklist"]}>
               {stage.ringChecklist.map((item) => (
-                <li key={item} className="plp-stage-ring-checklist-item">
-                  <span className="plp-ring-check-icon-wrap">
+                <li key={item} className={styles["plp-stage-ring-checklist-item"]}>
+                  <span className={styles["plp-ring-check-icon-wrap"]}>
                     <CheckCircleOutline color="#2A7308" />
                   </span>
-                  <span className="plp-ring-check-label">{item}</span>
+                  <span className={styles["plp-ring-check-label"]}>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="plp-stage-stats">
-            <div className="plp-stage-stat">
-              <span className="plp-stage-stat-value" style={{ color: stage.color }}>
+          <div className={styles["plp-stage-stats"]}>
+            <div className={styles["plp-stage-stat"]}>
+              <span className={styles["plp-stage-stat-value"]} style={{ color: stage.color }}>
                 {stage.modules}
               </span>
-              <span className="plp-stage-stat-label">Modules</span>
+              <span className={styles["plp-stage-stat-label"]}>Modules</span>
             </div>
-            <div className="plp-stage-stat">
-              <span className="plp-stage-stat-value" style={{ color: stage.color }}>
+            <div className={styles["plp-stage-stat"]}>
+              <span className={styles["plp-stage-stat-value"]} style={{ color: stage.color }}>
                 {stage.duration}
               </span>
-              <span className="plp-stage-stat-label">Duration</span>
+              <span className={styles["plp-stage-stat-label"]}>Duration</span>
             </div>
           </div>
         </div>
@@ -330,25 +330,25 @@ const benefitTabs: BenefitTab[] = [
 function HowItWorksCard({ step, isOpen, onToggle }: { step: HowItWorksStep; isOpen: boolean; onToggle: () => void }) {
   const { Icon } = step;
   return (
-    <div className={`plp-how-card${isOpen ? " plp-how-card-open" : ""}`}>
-      <button type="button" className="plp-how-card-trigger" onClick={onToggle} aria-expanded={isOpen}>
-        <span className="plp-how-icon-title">
-          <span className="plp-how-icon-circle" style={{ borderColor: step.color }}>
+    <div className={`${styles["plp-how-card"]}${isOpen ? ` ${styles["plp-how-card-open"]}` : ""}`}>
+      <button type="button" className={styles["plp-how-card-trigger"]} onClick={onToggle} aria-expanded={isOpen}>
+        <span className={styles["plp-how-icon-title"]}>
+          <span className={styles["plp-how-icon-circle"]} style={{ borderColor: step.color }}>
             <Icon color={step.color} />
           </span>
-          <span className="plp-how-title" style={{ color: step.color }}>
+          <span className={styles["plp-how-title"]} style={{ color: step.color }}>
             {step.title}
           </span>
         </span>
-        <span className={`plp-how-chevron${isOpen ? " plp-how-chevron-open" : ""}`}>
+        <span className={`${styles["plp-how-chevron"]}${isOpen ? ` ${styles["plp-how-chevron-open"]}` : ""}`}>
           <ChevronDouble />
         </span>
       </button>
 
-      <div className="plp-how-panel-wrap">
-        <div className="plp-how-panel">
-          <div className="plp-how-panel-inner">
-            <p className="plp-how-panel-text">{step.description}</p>
+      <div className={styles["plp-how-panel-wrap"]}>
+        <div className={styles["plp-how-panel"]}>
+          <div className={styles["plp-how-panel-inner"]}>
+            <p className={styles["plp-how-panel-text"]}>{step.description}</p>
           </div>
         </div>
       </div>
@@ -361,42 +361,42 @@ function BenefitsSection() {
   const activeTab = benefitTabs.find((tab) => tab.id === activeTabId) ?? benefitTabs[0];
 
   return (
-    <section className="plp-benefits">
-      <span className="plp-hero-pill">Benefits</span>
+    <section className={styles["plp-benefits"]}>
+      <span className={styles["plp-hero-pill"]}>Benefits</span>
 
-      <h2 className="plp-section-heading">Benefits of Learning Paths</h2>
+      <h2 className={styles["plp-section-heading"]}>Benefits of Learning Paths</h2>
 
-      <p className="plp-section-subtext">Whether you are a learner, an academic institution, or a corporate training organization NeuroLXP Learning Paths deliver measurable, transformational impact.</p>
+      <p className={styles["plp-section-subtext"]}>Whether you are a learner, an academic institution, or a corporate training organization NeuroLXP Learning Paths deliver measurable, transformational impact.</p>
 
-      <div className="plp-benefits-tabs">
+      <div className={styles["plp-benefits-tabs"]}>
         {benefitTabs.map((tab) => (
-          <button key={tab.id} type="button" className={`plp-benefits-tab${activeTabId === tab.id ? " plp-benefits-tab-active" : ""}`} onClick={() => setActiveTabId(tab.id)} aria-pressed={activeTabId === tab.id}>
+          <button key={tab.id} type="button" className={`${styles["plp-benefits-tab"]}${activeTabId === tab.id ? ` ${styles["plp-benefits-tab-active"]}` : ""}`} onClick={() => setActiveTabId(tab.id)} aria-pressed={activeTabId === tab.id}>
             {tab.label}
           </button>
         ))}
       </div>
 
-      <div className="plp-benefits-outer">
-        <div className="plp-benefits-photo-wrap">
+      <div className={styles["plp-benefits-outer"]}>
+        <div className={styles["plp-benefits-photo-wrap"]}>
           {activeTab.imageStyle === "cutout" ? (
             <>
-              <Image src="/images/personalised-learning-background.webp" alt="" fill className="plp-benefits-pattern-bg" />
-              <div className="plp-benefits-cutout-photo-wrap">
-                <Image src={activeTab.photo} alt={activeTab.photoAlt} fill className="plp-benefits-cutout-photo" />
+              <Image src="/images/personalised-learning-background.webp" alt="" fill className={styles["plp-benefits-pattern-bg"]} />
+              <div className={styles["plp-benefits-cutout-photo-wrap"]}>
+                <Image src={activeTab.photo} alt={activeTab.photoAlt} fill className={styles["plp-benefits-cutout-photo"]} />
               </div>
             </>
           ) : (
-            <Image src={activeTab.photo} alt={activeTab.photoAlt} fill className="plp-benefits-cover-photo" />
+            <Image src={activeTab.photo} alt={activeTab.photoAlt} fill className={styles["plp-benefits-cover-photo"]} />
           )}
         </div>
 
-        <ul className="plp-benefits-checklist-grid">
+        <ul className={styles["plp-benefits-checklist-grid"]}>
           {activeTab.checklist.map((item) => (
-            <li key={item} className="plp-benefits-checklist-item">
-              <span className="plp-benefits-badge">
+            <li key={item} className={styles["plp-benefits-checklist-item"]}>
+              <span className={styles["plp-benefits-badge"]}>
                 <CheckCircle color="#2A7308" size={24} />
               </span>
-              <span className="plp-benefits-item-label">{item}</span>
+              <span className={styles["plp-benefits-item-label"]}>{item}</span>
             </li>
           ))}
         </ul>
@@ -409,126 +409,126 @@ export default function PersonalizedLearningPathsPage() {
   const [openStep, setOpenStep] = useState<string | null>(null);
 
   return (
-    <main className="plp-page">
-      <nav className="plp-breadcrumb">
-        <span className="plp-breadcrumb-item">Features</span>
+    <main className={styles["plp-page"]}>
+      <nav className={styles["plp-breadcrumb"]}>
+        <span className={styles["plp-breadcrumb-item"]}>Features</span>
         <ArrowRightDouble />
-        <span className="plp-breadcrumb-item">Learning</span>
+        <span className={styles["plp-breadcrumb-item"]}>Learning</span>
         <ArrowRightDouble />
-        <span className="plp-breadcrumb-current">Personalized Learning Paths</span>
+        <span className={styles["plp-breadcrumb-current"]}>Personalized Learning Paths</span>
       </nav>
 
-      <section className="plp-hero">
-        <span className="plp-hero-pill">Personalized Learning Paths</span>
+      <section className={styles["plp-hero"]}>
+        <span className={styles["plp-hero-pill"]}>Personalized Learning Paths</span>
 
-        <h1 className="plp-hero-heading">
-          Empower <span className="plp-hero-heading-accent">Learning Journey</span> Tailored For Success
+        <h1 className={styles["plp-hero-heading"]}>
+          Empower <span className={styles["plp-hero-heading-accent"]}>Learning Journey</span> Tailored For Success
         </h1>
 
-        <p className="plp-hero-subtext">NeuroLXP personalizes learning journeys to build skills, knowledge, and career readiness.</p>
+        <p className={styles["plp-hero-subtext"]}>NeuroLXP personalizes learning journeys to build skills, knowledge, and career readiness.</p>
 
-        <div className="plp-hero-visual">
-          <div className="plp-hero-image-frame">
-            <div className="plp-hero-image-wrap">
-              <Image src="/images/roommates-using-laptop.webp" alt="Learner using a laptop" fill className="plp-hero-image" />
+        <div className={styles["plp-hero-visual"]}>
+          <div className={styles["plp-hero-image-frame"]}>
+            <div className={styles["plp-hero-image-wrap"]}>
+              <Image src="/images/roommates-using-laptop.webp" alt="Learner using a laptop" fill className={styles["plp-hero-image"]} />
             </div>
           </div>
 
-          <div className="plp-hero-stats">
-            <div className="plp-stat-card plp-stat-card-green">
-              <span className="plp-stat-value plp-stat-green">20–30%</span>
-              <span className="plp-stat-label">Improved Engagement</span>
+          <div className={styles["plp-hero-stats"]}>
+            <div className={`${styles["plp-stat-card"]} ${styles["plp-stat-card-green"]}`}>
+              <span className={`${styles["plp-stat-value"]} ${styles["plp-stat-green"]}`}>20–30%</span>
+              <span className={styles["plp-stat-label"]}>Improved Engagement</span>
             </div>
-            <div className="plp-stat-card plp-stat-card-blue">
-              <span className="plp-stat-value plp-stat-blue">25–35%</span>
-              <span className="plp-stat-label">Enhanced Retention</span>
+            <div className={`${styles["plp-stat-card"]} ${styles["plp-stat-card-blue"]}`}>
+              <span className={`${styles["plp-stat-value"]} ${styles["plp-stat-blue"]}`}>25–35%</span>
+              <span className={styles["plp-stat-label"]}>Enhanced Retention</span>
             </div>
-            <div className="plp-stat-card plp-stat-card-purple">
-              <span className="plp-stat-value plp-stat-purple">15–20%</span>
-              <span className="plp-stat-label">Higher Success Rates</span>
+            <div className={`${styles["plp-stat-card"]} ${styles["plp-stat-card-purple"]}`}>
+              <span className={`${styles["plp-stat-value"]} ${styles["plp-stat-purple"]}`}>15–20%</span>
+              <span className={styles["plp-stat-label"]}>Higher Success Rates</span>
             </div>
-            <div className="plp-stat-card plp-stat-card-pink">
-              <span className="plp-stat-value plp-stat-pink">60–70%</span>
-              <span className="plp-stat-label">Dominant Style Learners</span>
+            <div className={`${styles["plp-stat-card"]} ${styles["plp-stat-card-pink"]}`}>
+              <span className={`${styles["plp-stat-value"]} ${styles["plp-stat-pink"]}`}>60–70%</span>
+              <span className={styles["plp-stat-label"]}>Dominant Style Learners</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="plp-personalization">
-        <span className="plp-hero-pill">Intelligent Personalization</span>
+      <section className={styles["plp-personalization"]}>
+        <span className={styles["plp-hero-pill"]}>Intelligent Personalization</span>
 
-        <h2 className="plp-section-heading">
-          Learning Designed Around <span className="plp-section-heading-accent">Every Learner</span>
+        <h2 className={styles["plp-section-heading"]}>
+          Learning Designed Around <span className={styles["plp-section-heading-accent"]}>Every Learner</span>
         </h2>
 
-        <p className="plp-section-subtext">NeuroLXP adapts learning experiences based on learner needs, preferences, progress, and performance.</p>
+        <p className={styles["plp-section-subtext"]}>NeuroLXP adapts learning experiences based on learner needs, preferences, progress, and performance.</p>
 
-        <div className="plp-personalization-grid">
-          <div className="plp-personalization-card plp-personalization-card-pink">
-            <h3 className="plp-personalization-title plp-title-pink">Learning Insights</h3>
-            <p className="plp-personalization-desc">Understand learner needs.</p>
+        <div className={styles["plp-personalization-grid"]}>
+          <div className={`${styles["plp-personalization-card"]} ${styles["plp-personalization-card-pink"]}`}>
+            <h3 className={`${styles["plp-personalization-title"]} ${styles["plp-title-pink"]}`}>Learning Insights</h3>
+            <p className={styles["plp-personalization-desc"]}>Understand learner needs.</p>
           </div>
-          <div className="plp-personalization-card plp-personalization-card-blue">
-            <h3 className="plp-personalization-title plp-title-blue">Personalized Paths</h3>
-            <p className="plp-personalization-desc">Personalize learning paths.</p>
+          <div className={`${styles["plp-personalization-card"]} ${styles["plp-personalization-card-blue"]}`}>
+            <h3 className={`${styles["plp-personalization-title"]} ${styles["plp-title-blue"]}`}>Personalized Paths</h3>
+            <p className={styles["plp-personalization-desc"]}>Personalize learning paths.</p>
           </div>
-          <div className="plp-personalization-card plp-personalization-card-purple">
-            <h3 className="plp-personalization-title plp-title-purple">Adaptive Learning</h3>
-            <p className="plp-personalization-desc">Deliver relevant content.</p>
+          <div className={`${styles["plp-personalization-card"]} ${styles["plp-personalization-card-purple"]}`}>
+            <h3 className={`${styles["plp-personalization-title"]} ${styles["plp-title-purple"]}`}>Adaptive Learning</h3>
+            <p className={styles["plp-personalization-desc"]}>Deliver relevant content.</p>
           </div>
-          <div className="plp-personalization-card plp-personalization-card-olive">
-            <h3 className="plp-personalization-title plp-title-olive">Learning Analytics</h3>
-            <p className="plp-personalization-desc">Improve outcomes with data.</p>
+          <div className={`${styles["plp-personalization-card"]} ${styles["plp-personalization-card-olive"]}`}>
+            <h3 className={`${styles["plp-personalization-title"]} ${styles["plp-title-olive"]}`}>Learning Analytics</h3>
+            <p className={styles["plp-personalization-desc"]}>Improve outcomes with data.</p>
           </div>
         </div>
       </section>
 
-      <section className="plp-stages">
-        <span className="plp-hero-pill">Stages</span>
+      <section className={styles["plp-stages"]}>
+        <span className={styles["plp-hero-pill"]}>Stages</span>
 
-        <h2 className="plp-section-heading">Four Progressive Stages of Mastery</h2>
+        <h2 className={styles["plp-section-heading"]}>Four Progressive Stages of Mastery</h2>
 
-        <p className="plp-section-subtext">NeuroLXP builds knowledge and skills through structured stages toward career-ready performance.</p>
+        <p className={styles["plp-section-subtext"]}>NeuroLXP builds knowledge and skills through structured stages toward career-ready performance.</p>
 
-        <div className="plp-stages-timeline">
-          <div className="plp-stages-track" />
+        <div className={styles["plp-stages-timeline"]}>
+          <div className={styles["plp-stages-track"]} />
           {stages.map((stage) => (
             <StageCard key={stage.number} stage={stage} />
           ))}
         </div>
       </section>
 
-      <section className="plp-how">
-        <span className="plp-hero-pill">How It Works</span>
+      <section className={styles["plp-how"]}>
+        <span className={styles["plp-hero-pill"]}>How It Works</span>
 
-        <h2 className="plp-section-heading">Learning Style Analysis Module</h2>
+        <h2 className={styles["plp-section-heading"]}>Learning Style Analysis Module</h2>
 
-        <p className="plp-section-subtext">Learning style analysis identifies each learner&apos;s preferred learning style to deliver more effective and personalized learning.</p>
+        <p className={styles["plp-section-subtext"]}>Learning style analysis identifies each learner&apos;s preferred learning style to deliver more effective and personalized learning.</p>
 
-        <div className="plp-how-grid">
+        <div className={styles["plp-how-grid"]}>
           {howItWorksSteps.map((step) => (
             <HowItWorksCard key={step.key} step={step} isOpen={openStep === step.key} onToggle={() => setOpenStep(openStep === step.key ? null : step.key)} />
           ))}
         </div>
       </section>
 
-      <section className="plp-challenge">
-        <div className="plp-challenge-left">
-          <span className="plp-hero-pill">The Challenge</span>
-          <h2 className="plp-challenge-heading">Built for Measurable Progress</h2>
-          <p className="plp-challenge-subtext">NeuroLXP brings clarity, structure, and measurable progress to every learning journey.</p>
+      <section className={styles["plp-challenge"]}>
+        <div className={styles["plp-challenge-left"]}>
+          <span className={styles["plp-hero-pill"]}>The Challenge</span>
+          <h2 className={styles["plp-challenge-heading"]}>Built for Measurable Progress</h2>
+          <p className={styles["plp-challenge-subtext"]}>NeuroLXP brings clarity, structure, and measurable progress to every learning journey.</p>
         </div>
 
-        <ul className="plp-challenge-checklist">
+        <ul className={styles["plp-challenge-checklist"]}>
           {challengeItems.map((item) => (
-            <li key={item} className="plp-challenge-item">
-              <span className="plp-challenge-badge-outer">
-                <span className="plp-challenge-badge-inner">
+            <li key={item} className={styles["plp-challenge-item"]}>
+              <span className={styles["plp-challenge-badge-outer"]}>
+                <span className={styles["plp-challenge-badge-inner"]}>
                   <CheckCircle color="#2A7308" size={36} />
                 </span>
               </span>
-              <span className="plp-challenge-item-label">{item}</span>
+              <span className={styles["plp-challenge-item-label"]}>{item}</span>
             </li>
           ))}
         </ul>
@@ -536,14 +536,14 @@ export default function PersonalizedLearningPathsPage() {
 
       <BenefitsSection />
 
-      <section className="plp-cta">
-        <div className="plp-cta-inner">
-          <div className="plp-cta-text">
-            <h2 className="plp-cta-heading">The Future of Learning Is Personalized</h2>
-            <p className="plp-cta-subtext">Transform fragmented learning into a structured journey that builds knowledge, skills, and career-ready capabilities.</p>
+      <section className={styles["plp-cta"]}>
+        <div className={styles["plp-cta-inner"]}>
+          <div className={styles["plp-cta-text"]}>
+            <h2 className={styles["plp-cta-heading"]}>The Future of Learning Is Personalized</h2>
+            <p className={styles["plp-cta-subtext"]}>Transform fragmented learning into a structured journey that builds knowledge, skills, and career-ready capabilities.</p>
           </div>
 
-          <button type="button" className="plp-cta-button" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <button type="button" className={styles["plp-cta-button"]} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             Explore Learning Paths
           </button>
         </div>

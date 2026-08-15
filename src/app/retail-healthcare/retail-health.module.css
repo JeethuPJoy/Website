@@ -5776,8 +5776,8 @@ benefitsForRetail + .neurolxpEnablesSmarter2 {
     margin:0 auto 20px !important;
   }
 
-  .frameParent23 + footer,
-  footer{
+  .frameParent23 + :global(footer),
+  :global(footer){
     margin-top:48px !important;
   }
 
