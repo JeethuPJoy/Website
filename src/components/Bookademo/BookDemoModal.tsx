@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import BookADemo from "@/components/Bookademo/Bookademo";
 import { CloseIcon } from "@/components/icons/Icons";
+import styles from "./Bookademo.module.css";
 
 export default function BookDemoModal({ onClose }: { onClose: () => void }) {
   const dialogRef = useRef<HTMLDivElement | null>(null);
@@ -25,15 +26,15 @@ export default function BookDemoModal({ onClose }: { onClose: () => void }) {
 
   return (
     <div
-      className="book-demo-modal-overlay"
+      className={styles["book-demo-modal-overlay"]}
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) onClose();
       }}>
-      <div className="book-demo-modal-dialog" role="dialog" aria-modal="true" aria-label="Book a demo" ref={dialogRef} tabIndex={-1}>
-        <button type="button" className="book-demo-modal-close" onClick={onClose} aria-label="Close book a demo form">
-          <CloseIcon className="book-demo-modal-close-icon" />
+      <div className={styles["book-demo-modal-dialog"]} role="dialog" aria-modal="true" aria-label="Book a demo" ref={dialogRef} tabIndex={-1}>
+        <button type="button" className={styles["book-demo-modal-close"]} onClick={onClose} aria-label="Close book a demo form">
+          <CloseIcon className={styles["book-demo-modal-close-icon"]} />
         </button>
-        <div className="book-demo-modal-scroll">
+        <div className={styles["book-demo-modal-scroll"]}>
           <BookADemo />
         </div>
       </div>

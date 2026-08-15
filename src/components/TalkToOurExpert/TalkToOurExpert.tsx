@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useMemo, type FormEvent, type ReactNode } from "react";
 import Image from "next/image";
 import { allCountries } from "country-telephone-data";
-import "./TalkToOurExpert.css";
+import styles from "./TalkToOurExpert.module.css";
 
 interface RawCountry {
   name: string;
@@ -47,7 +47,7 @@ function getFlagEmoji(iso2: string) {
 }
 
 function IconBubble({ children }: { children: ReactNode }) {
-  return <span className="tte-icon-bubble">{children}</span>;
+  return <span className={styles["tte-icon-bubble"]}>{children}</span>;
 }
 
 function UserIcon() {
@@ -119,7 +119,7 @@ function ClipboardIcon() {
 
 function ArrowDownIcon({ open }: { open?: boolean }) {
   return (
-    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" className={`tte-chevron${open ? " tte-chevron-open" : ""}`}>
+    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" className={`${styles["tte-chevron"]}${open ? ` ${styles["tte-chevron-open"]}` : ""}`}>
       <path d="M10.625 0.625041C10.625 0.625041 6.94258 5.625 5.625 5.625C4.30733 5.625 0.625 0.625 0.625 0.625" stroke="#141B34" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
@@ -307,148 +307,148 @@ export default function TalkToOurExpert({ isOpen, onClose, onPlayClick }: TalkTo
 
   return (
     <div
-      className="tte-overlay"
+      className={styles["tte-overlay"]}
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) onClose();
       }}>
-      <div className="tte-dialog" role="dialog" aria-modal="true" aria-labelledby="tte-title" ref={dialogRef} tabIndex={-1}>
-        <button type="button" className="tte-close" onClick={onClose} aria-label="Close talk to our expert form">
+      <div className={styles["tte-dialog"]} role="dialog" aria-modal="true" aria-labelledby="tte-title" ref={dialogRef} tabIndex={-1}>
+        <button type="button" className={styles["tte-close"]} onClick={onClose} aria-label="Close talk to our expert form">
           <CloseIcon />
         </button>
 
-        <div className="tte-card">
-          <div className="tte-photo-panel">
-            <div className="tte-photo-frame">
-              <div className="tte-photo-inner">
-                <video src="/videos/TalkToOurExpert.mp4" autoPlay muted loop playsInline className="tte-photo" aria-label="NeuroLXP learning expert wearing a headset, ready to help" />
+        <div className={styles["tte-card"]}>
+          <div className={styles["tte-photo-panel"]}>
+            <div className={styles["tte-photo-frame"]}>
+              <div className={styles["tte-photo-inner"]}>
+                <video src="/videos/TalkToOurExpert.mp4" autoPlay muted loop playsInline className={styles["tte-photo"]} aria-label="NeuroLXP learning expert wearing a headset, ready to help" />
               </div>
             </div>
           </div>
 
-          <div className="tte-form-panel">
-            <div className="tte-header">
-              <h2 id="tte-title" className="tte-title">
+          <div className={styles["tte-form-panel"]}>
+            <div className={styles["tte-header"]}>
+              <h2 id="tte-title" className={styles["tte-title"]}>
                 Talk to our Expert
               </h2>
-              <p className="tte-subtitle">
+              <p className={styles["tte-subtitle"]}>
                 <BotIcon />
                 <span>Get personalized learning guidance</span>
               </p>
             </div>
 
-            <div className="tte-form-surface">
+            <div className={styles["tte-form-surface"]}>
               {submitted ? (
-                <div className="tte-success" role="status">
-                  <p className="tte-success-title">Thanks, {formData.fullName.split(" ")[0]}!</p>
-                  <p className="tte-success-body">Our expert has received your query and will reach out to you shortly.</p>
+                <div className={styles["tte-success"]} role="status">
+                  <p className={styles["tte-success-title"]}>Thanks, {formData.fullName.split(" ")[0]}!</p>
+                  <p className={styles["tte-success-body"]}>Our expert has received your query and will reach out to you shortly.</p>
                 </div>
               ) : (
-                <form className="tte-form" onSubmit={handleSubmit} noValidate>
-                  <div className="tte-field">
-                    <label className="tte-label" htmlFor="tte-fullName">
+                <form className={styles["tte-form"]} onSubmit={handleSubmit} noValidate>
+                  <div className={styles["tte-field"]}>
+                    <label className={styles["tte-label"]} htmlFor="tte-fullName">
                       Full Name
                     </label>
-                    <div className={`tte-input-shell${touched.fullName && errors.fullName ? " tte-input-shell-error" : ""}`}>
+                    <div className={`${styles["tte-input-shell"]}${touched.fullName && errors.fullName ? ` ${styles["tte-input-shell-error"]}` : ""}`}>
                       <IconBubble>
                         <UserIcon />
                       </IconBubble>
-                      <input id="tte-fullName" type="text" className="tte-input" placeholder="Enter your name" value={formData.fullName} onChange={(event) => handleFieldChange("fullName", event.target.value)} onBlur={() => handleBlur("fullName")} aria-invalid={touched.fullName && Boolean(errors.fullName)} aria-describedby={touched.fullName && errors.fullName ? "tte-fullName-error" : undefined} />
+                      <input id="tte-fullName" type="text" className={styles["tte-input"]} placeholder="Enter your name" value={formData.fullName} onChange={(event) => handleFieldChange("fullName", event.target.value)} onBlur={() => handleBlur("fullName")} aria-invalid={touched.fullName && Boolean(errors.fullName)} aria-describedby={touched.fullName && errors.fullName ? "tte-fullName-error" : undefined} />
                     </div>
                     {touched.fullName && errors.fullName && (
-                      <span id="tte-fullName-error" className="tte-error" role="alert">
+                      <span id="tte-fullName-error" className={styles["tte-error"]} role="alert">
                         {errors.fullName}
                       </span>
                     )}
                   </div>
 
-                  <div className="tte-field">
-                    <label className="tte-label" htmlFor="tte-email">
+                  <div className={styles["tte-field"]}>
+                    <label className={styles["tte-label"]} htmlFor="tte-email">
                       Email Address
                     </label>
-                    <div className={`tte-input-shell${touched.email && errors.email ? " tte-input-shell-error" : ""}`}>
+                    <div className={`${styles["tte-input-shell"]}${touched.email && errors.email ? ` ${styles["tte-input-shell-error"]}` : ""}`}>
                       <IconBubble>
                         <MailIcon />
                       </IconBubble>
-                      <input id="tte-email" type="email" className="tte-input" placeholder="Enter your email address" value={formData.email} onChange={(event) => handleFieldChange("email", event.target.value)} onBlur={() => handleBlur("email")} aria-invalid={touched.email && Boolean(errors.email)} aria-describedby={touched.email && errors.email ? "tte-email-error" : undefined} />
+                      <input id="tte-email" type="email" className={styles["tte-input"]} placeholder="Enter your email address" value={formData.email} onChange={(event) => handleFieldChange("email", event.target.value)} onBlur={() => handleBlur("email")} aria-invalid={touched.email && Boolean(errors.email)} aria-describedby={touched.email && errors.email ? "tte-email-error" : undefined} />
                     </div>
                     {touched.email && errors.email && (
-                      <span id="tte-email-error" className="tte-error" role="alert">
+                      <span id="tte-email-error" className={styles["tte-error"]} role="alert">
                         {errors.email}
                       </span>
                     )}
                   </div>
 
-                  <div className="tte-field">
-                    <label className="tte-label" htmlFor="tte-phone">
+                  <div className={styles["tte-field"]}>
+                    <label className={styles["tte-label"]} htmlFor="tte-phone">
                       Phone Number
                     </label>
-                    <div className="tte-phone-row">
-                      <div className="tte-country-select" ref={countryDropdownRef}>
-                        <button type="button" className="tte-country-trigger" onClick={openCountryDropdown} aria-haspopup="listbox" aria-expanded={isCountryOpen}>
-                          <span className="tte-country-flag" aria-hidden="true">
+                    <div className={styles["tte-phone-row"]}>
+                      <div className={styles["tte-country-select"]} ref={countryDropdownRef}>
+                        <button type="button" className={styles["tte-country-trigger"]} onClick={openCountryDropdown} aria-haspopup="listbox" aria-expanded={isCountryOpen}>
+                          <span className={styles["tte-country-flag"]} aria-hidden="true">
                             {getFlagEmoji(selectedCountry.iso2)}
                           </span>
-                          <span className="tte-country-code">
+                          <span className={styles["tte-country-code"]}>
                             {selectedCountry.iso2.toUpperCase()} (+{selectedCountry.dialCode})
                           </span>
                           <ArrowDownIcon open={isCountryOpen} />
                         </button>
                         {isCountryOpen && (
-                          <div className="tte-country-panel" role="listbox">
-                            <input type="text" className="tte-country-search" placeholder="Search country" value={countrySearch} onChange={(event) => setCountrySearch(event.target.value)} autoFocus />
-                            <ul className="tte-country-list">
+                          <div className={styles["tte-country-panel"]} role="listbox">
+                            <input type="text" className={styles["tte-country-search"]} placeholder="Search country" value={countrySearch} onChange={(event) => setCountrySearch(event.target.value)} autoFocus />
+                            <ul className={styles["tte-country-list"]}>
                               {filteredCountries.map((country) => (
                                 <li key={country.iso2}>
                                   <button
                                     type="button"
                                     role="option"
                                     aria-selected={country.iso2 === formData.countryIso2}
-                                    className={`tte-country-option${country.iso2 === formData.countryIso2 ? " tte-country-option-active" : ""}`}
+                                    className={`${styles["tte-country-option"]}${country.iso2 === formData.countryIso2 ? ` ${styles["tte-country-option-active"]}` : ""}`}
                                     onClick={() => {
                                       handleFieldChange("countryIso2", country.iso2);
                                       setIsCountryOpen(false);
                                       setCountrySearch("");
                                     }}>
-                                    <span className="tte-country-flag" aria-hidden="true">
+                                    <span className={styles["tte-country-flag"]} aria-hidden="true">
                                       {getFlagEmoji(country.iso2)}
                                     </span>
-                                    <span className="tte-country-name">{country.name}</span>
-                                    <span className="tte-country-dial">+{country.dialCode}</span>
+                                    <span className={styles["tte-country-name"]}>{country.name}</span>
+                                    <span className={styles["tte-country-dial"]}>+{country.dialCode}</span>
                                   </button>
                                 </li>
                               ))}
-                              {filteredCountries.length === 0 && <li className="tte-country-empty">No countries match your search.</li>}
+                              {filteredCountries.length === 0 && <li className={styles["tte-country-empty"]}>No countries match your search.</li>}
                             </ul>
                           </div>
                         )}
                       </div>
-                      <div className={`tte-input-shell tte-input-shell-grow${touched.phoneNumber && errors.phoneNumber ? " tte-input-shell-error" : ""}`}>
+                      <div className={`${styles["tte-input-shell"]} ${styles["tte-input-shell-grow"]}${touched.phoneNumber && errors.phoneNumber ? ` ${styles["tte-input-shell-error"]}` : ""}`}>
                         <IconBubble>
                           <PhoneIcon />
                         </IconBubble>
-                        <input id="tte-phone" type="tel" inputMode="numeric" className="tte-input" placeholder="XXXXXXXXX" value={formData.phoneNumber} onChange={(event) => handleFieldChange("phoneNumber", event.target.value.replace(/[^0-9]/g, ""))} onBlur={() => handleBlur("phoneNumber")} aria-invalid={touched.phoneNumber && Boolean(errors.phoneNumber)} aria-describedby={touched.phoneNumber && errors.phoneNumber ? "tte-phone-error" : undefined} />
+                        <input id="tte-phone" type="tel" inputMode="numeric" className={styles["tte-input"]} placeholder="XXXXXXXXX" value={formData.phoneNumber} onChange={(event) => handleFieldChange("phoneNumber", event.target.value.replace(/[^0-9]/g, ""))} onBlur={() => handleBlur("phoneNumber")} aria-invalid={touched.phoneNumber && Boolean(errors.phoneNumber)} aria-describedby={touched.phoneNumber && errors.phoneNumber ? "tte-phone-error" : undefined} />
                       </div>
                     </div>
                     {touched.phoneNumber && errors.phoneNumber && (
-                      <span id="tte-phone-error" className="tte-error" role="alert">
+                      <span id="tte-phone-error" className={styles["tte-error"]} role="alert">
                         {errors.phoneNumber}
                       </span>
                     )}
                   </div>
 
-                  <div className="tte-field" ref={interestDropdownRef}>
-                    <span className="tte-label" id="tte-interest-label">
+                  <div className={styles["tte-field"]} ref={interestDropdownRef}>
+                    <span className={styles["tte-label"]} id="tte-interest-label">
                       Select your Interest
                     </span>
-                    <button type="button" className="tte-input-shell tte-interest-trigger" onClick={openInterestDropdown} aria-haspopup="listbox" aria-expanded={isInterestOpen} aria-labelledby="tte-interest-label">
+                    <button type="button" className={`${styles["tte-input-shell"]} ${styles["tte-interest-trigger"]}`} onClick={openInterestDropdown} aria-haspopup="listbox" aria-expanded={isInterestOpen} aria-labelledby="tte-interest-label">
                       <IconBubble>
                         <ClipboardIcon />
                       </IconBubble>
-                      <span className="tte-interest-value">{formData.interest}</span>
+                      <span className={styles["tte-interest-value"]}>{formData.interest}</span>
                       <ArrowDownIcon open={isInterestOpen} />
                     </button>
                     {isInterestOpen && (
-                      <div className="tte-interest-panel" role="listbox">
+                      <div className={styles["tte-interest-panel"]} role="listbox">
                         {INTEREST_OPTIONS.map((option) => {
                           const checked = option === formData.interest;
                           return (
@@ -457,14 +457,14 @@ export default function TalkToOurExpert({ isOpen, onClose, onPlayClick }: TalkTo
                               key={option}
                               role="option"
                               aria-selected={checked}
-                              className="tte-interest-option"
+                              className={styles["tte-interest-option"]}
                               onClick={() => {
                                 handleFieldChange("interest", option);
                                 setTouched((prev) => ({ ...prev, interest: true }));
                                 setIsInterestOpen(false);
                               }}>
-                              <span className="tte-radio-bubble">{checked ? <RadioCheckedIcon /> : <RadioEmptyIcon />}</span>
-                              <span className={`tte-interest-option-label${checked ? " tte-interest-option-label-active" : ""}`}>{option}</span>
+                              <span className={styles["tte-radio-bubble"]}>{checked ? <RadioCheckedIcon /> : <RadioEmptyIcon />}</span>
+                              <span className={`${styles["tte-interest-option-label"]}${checked ? ` ${styles["tte-interest-option-label-active"]}` : ""}`}>{option}</span>
                             </button>
                           );
                         })}
@@ -472,36 +472,36 @@ export default function TalkToOurExpert({ isOpen, onClose, onPlayClick }: TalkTo
                     )}
                   </div>
 
-                  <div className="tte-field">
-                    <label className="tte-label" htmlFor="tte-query">
+                  <div className={styles["tte-field"]}>
+                    <label className={styles["tte-label"]} htmlFor="tte-query">
                       Describe your query or question in detail
                     </label>
-                    <div className="tte-textarea-shell">
-                      <textarea id="tte-query" className="tte-textarea" placeholder="Write your detailed query here......" value={formData.query} onChange={(event) => handleFieldChange("query", event.target.value)} />
-                      <span className="tte-resize-icon" aria-hidden="true">
+                    <div className={styles["tte-textarea-shell"]}>
+                      <textarea id="tte-query" className={styles["tte-textarea"]} placeholder="Write your detailed query here......" value={formData.query} onChange={(event) => handleFieldChange("query", event.target.value)} />
+                      <span className={styles["tte-resize-icon"]} aria-hidden="true">
                         <ResizeIcon />
                       </span>
                     </div>
                   </div>
 
-                  <label className="tte-consent">
-                    <input type="checkbox" className="tte-consent-checkbox" checked={formData.consent} onChange={(event) => handleFieldChange("consent", event.target.checked)} onBlur={() => handleBlur("consent")} aria-invalid={touched.consent && Boolean(errors.consent)} aria-describedby={touched.consent && errors.consent ? "tte-consent-error" : undefined} />
-                    <span className="tte-consent-box" aria-hidden="true" />
-                    <span className="tte-consent-text">
+                  <label className={styles["tte-consent"]}>
+                    <input type="checkbox" className={styles["tte-consent-checkbox"]} checked={formData.consent} onChange={(event) => handleFieldChange("consent", event.target.checked)} onBlur={() => handleBlur("consent")} aria-invalid={touched.consent && Boolean(errors.consent)} aria-describedby={touched.consent && errors.consent ? "tte-consent-error" : undefined} />
+                    <span className={styles["tte-consent-box"]} aria-hidden="true" />
+                    <span className={styles["tte-consent-text"]}>
                       I agree to be contacted for the platform demo and accept the{" "}
-                      <a href="/privacy-policy" className="tte-consent-link">
+                      <a href="/privacy-policy" className={styles["tte-consent-link"]}>
                         Privacy Policy
                       </a>{" "}
                       of <strong>Prgeeq Global Solutions Private Limited.</strong>
                     </span>
                   </label>
                   {touched.consent && errors.consent && (
-                    <span id="tte-consent-error" className="tte-error" role="alert">
+                    <span id="tte-consent-error" className={styles["tte-error"]} role="alert">
                       {errors.consent}
                     </span>
                   )}
 
-                  <button type="submit" className="tte-submit" disabled={!isFormValid}>
+                  <button type="submit" className={styles["tte-submit"]} disabled={!isFormValid}>
                     Submit Query
                   </button>
                 </form>

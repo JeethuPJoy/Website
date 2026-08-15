@@ -1,6 +1,6 @@
 "use client";
 
-import "./Bookademo.css";
+import styles from "./Bookademo.module.css";
 import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 import { allCountries } from "country-telephone-data";
@@ -164,45 +164,45 @@ function NeumorphicCalendar({ panelId, selectedDate, viewYear, viewMonth, yearOp
   const cells = getCalendarCells(viewYear, viewMonth);
 
   return (
-    <div className="book-demo-calendar-panel" role="dialog" aria-label="Choose a date" id={panelId}>
-      <div className="book-demo-calendar-controls">
-        <span className="book-demo-calendar-select-wrap">
-          <select className="book-demo-calendar-select" value={viewMonth} onChange={(event) => onViewMonthChange(Number(event.target.value))} aria-label="Month">
+    <div className={styles["book-demo-calendar-panel"]} role="dialog" aria-label="Choose a date" id={panelId}>
+      <div className={styles["book-demo-calendar-controls"]}>
+        <span className={styles["book-demo-calendar-select-wrap"]}>
+          <select className={styles["book-demo-calendar-select"]} value={viewMonth} onChange={(event) => onViewMonthChange(Number(event.target.value))} aria-label="Month">
             {MONTH_NAMES.map((name, index) => (
               <option key={name} value={index}>
                 {name}
               </option>
             ))}
           </select>
-          <ChevronDownIcon className="book-demo-calendar-select-chevron" />
+          <ChevronDownIcon className={styles["book-demo-calendar-select-chevron"]} />
         </span>
-        <span className="book-demo-calendar-select-wrap">
-          <select className="book-demo-calendar-select" value={viewYear} onChange={(event) => onViewYearChange(Number(event.target.value))} aria-label="Year">
+        <span className={styles["book-demo-calendar-select-wrap"]}>
+          <select className={styles["book-demo-calendar-select"]} value={viewYear} onChange={(event) => onViewYearChange(Number(event.target.value))} aria-label="Year">
             {yearOptions.map((year) => (
               <option key={year} value={year}>
                 {year}
               </option>
             ))}
           </select>
-          <ChevronDownIcon className="book-demo-calendar-select-chevron" />
+          <ChevronDownIcon className={styles["book-demo-calendar-select-chevron"]} />
         </span>
       </div>
 
-      <div className="book-demo-calendar-weekdays">
+      <div className={styles["book-demo-calendar-weekdays"]}>
         {WEEKDAY_LABELS.map((label) => (
-          <span key={label} className="book-demo-calendar-weekday">
+          <span key={label} className={styles["book-demo-calendar-weekday"]}>
             {label}
           </span>
         ))}
       </div>
 
-      <div className="book-demo-calendar-grid">
+      <div className={styles["book-demo-calendar-grid"]}>
         {cells.map((cell, index) => {
           const isSelectable = cell.currentMonth && !cell.isPast;
-          const classNames = ["book-demo-calendar-day"];
-          if (!cell.currentMonth) classNames.push("book-demo-calendar-day-muted");
-          if (cell.iso === selectedDate) classNames.push("book-demo-calendar-day-selected");
-          if (cell.iso === todayIso) classNames.push("book-demo-calendar-day-today");
+          const classNames = [styles["book-demo-calendar-day"]];
+          if (!cell.currentMonth) classNames.push(styles["book-demo-calendar-day-muted"]);
+          if (cell.iso === selectedDate) classNames.push(styles["book-demo-calendar-day-selected"]);
+          if (cell.iso === todayIso) classNames.push(styles["book-demo-calendar-day-today"]);
           return (
             <button key={index} type="button" className={classNames.join(" ")} disabled={!isSelectable} onClick={() => cell.iso && onSelectDate(cell.iso)}>
               {cell.day}
@@ -312,31 +312,31 @@ export default function BookADemo() {
   };
 
   return (
-    <section className="book-demo-section" aria-labelledby={headingId}>
-      <div className="book-demo-card">
-        <div className="book-demo-header">
-          <h2 className="book-demo-title" id={headingId}>
+    <section className={styles["book-demo-section"]} aria-labelledby={headingId}>
+      <div className={styles["book-demo-card"]}>
+        <div className={styles["book-demo-header"]}>
+          <h2 className={styles["book-demo-title"]} id={headingId}>
             Book a Demo
           </h2>
-          {/* <p className="book-demo-subtitle">
-            <PresentationIcon className="book-demo-subtitle-icon" />
+          {/* <p className={styles["book-demo-subtitle"]}>
+            <PresentationIcon className={styles["book-demo-subtitle-icon"]} />
             Schedule Your Personalized Demo
           </p> */}
         </div>
 
-        <form className="book-demo-form" onSubmit={handleSubmit}>
-          <div className="book-demo-field">
-            <label htmlFor={nameId} className="book-demo-label">
+        <form className={styles["book-demo-form"]} onSubmit={handleSubmit}>
+          <div className={styles["book-demo-field"]}>
+            <label htmlFor={nameId} className={styles["book-demo-label"]}>
               Full Name
             </label>
-            <div className="book-demo-input-wrap">
-              <span className="book-demo-input-icon" aria-hidden="true">
+            <div className={styles["book-demo-input-wrap"]}>
+              <span className={styles["book-demo-input-icon"]} aria-hidden="true">
                 <UserIcon />
               </span>
               <input
                 id={nameId}
                 type="text"
-                className="book-demo-input"
+                className={styles["book-demo-input"]}
                 placeholder="Enter your name"
                 value={fullName}
                 onChange={(event) => setFullName(event.target.value)}
@@ -347,24 +347,24 @@ export default function BookADemo() {
               />
             </div>
             {touched.fullName && !isFullNameValid && (
-              <p id={`${nameId}-error`} className="book-demo-error" role="alert">
+              <p id={`${nameId}-error`} className={styles["book-demo-error"]} role="alert">
                 Please enter your full name.
               </p>
             )}
           </div>
 
-          <div className="book-demo-field">
-            <label htmlFor={emailId} className="book-demo-label">
+          <div className={styles["book-demo-field"]}>
+            <label htmlFor={emailId} className={styles["book-demo-label"]}>
               Email Address
             </label>
-            <div className="book-demo-input-wrap">
-              <span className="book-demo-input-icon" aria-hidden="true">
+            <div className={styles["book-demo-input-wrap"]}>
+              <span className={styles["book-demo-input-icon"]} aria-hidden="true">
                 <MailIcon />
               </span>
               <input
                 id={emailId}
                 type="email"
-                className="book-demo-input"
+                className={styles["book-demo-input"]}
                 placeholder="Enter your email address"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
@@ -375,24 +375,24 @@ export default function BookADemo() {
               />
             </div>
             {touched.email && !isEmailValid && (
-              <p id={`${emailId}-error`} className="book-demo-error" role="alert">
+              <p id={`${emailId}-error`} className={styles["book-demo-error"]} role="alert">
                 Please enter a valid email address.
               </p>
             )}
           </div>
 
-          <div className="book-demo-field">
-            <label htmlFor={phoneId} className="book-demo-label">
+          <div className={styles["book-demo-field"]}>
+            <label htmlFor={phoneId} className={styles["book-demo-label"]}>
               Phone Number
             </label>
-            <div className="book-demo-phone-row">
-              <div className="book-demo-country-wrap">
-                <label htmlFor={countryId} className="sr-only">
+            <div className={styles["book-demo-phone-row"]}>
+              <div className={styles["book-demo-country-wrap"]}>
+                <label htmlFor={countryId} className={styles["sr-only"]}>
                   Country code
                 </label>
                 <select
                   id={countryId}
-                  className="book-demo-select-field book-demo-country-select"
+                  className={`${styles["book-demo-select-field"]} ${styles["book-demo-country-select"]}`}
                   value={countryCode}
                   onChange={(event) => setCountryCode(event.target.value)}
                   onBlur={() => markTouched("countryCode")}
@@ -408,16 +408,16 @@ export default function BookADemo() {
                     </option>
                   ))}
                 </select>
-                <ChevronDownIcon className="book-demo-select-chevron" />
+                <ChevronDownIcon className={styles["book-demo-select-chevron"]} />
               </div>
-              <div className="book-demo-input-wrap book-demo-phone-wrap">
-                <span className="book-demo-input-icon" aria-hidden="true">
+              <div className={`${styles["book-demo-input-wrap"]} ${styles["book-demo-phone-wrap"]}`}>
+                <span className={styles["book-demo-input-icon"]} aria-hidden="true">
                   <PhoneIcon />
                 </span>
                 <input
                   id={phoneId}
                   type="tel"
-                  className="book-demo-input"
+                  className={styles["book-demo-input"]}
                   placeholder="XXXXXXXXX"
                   value={phone}
                   onChange={(event) => setPhone(event.target.value)}
@@ -429,28 +429,28 @@ export default function BookADemo() {
               </div>
             </div>
             {touched.countryCode && !isCountryCodeValid && (
-              <p id={`${countryId}-error`} className="book-demo-error" role="alert">
+              <p id={`${countryId}-error`} className={styles["book-demo-error"]} role="alert">
                 Please select a country code.
               </p>
             )}
             {touched.phone && !isPhoneValid && (
-              <p id={`${phoneId}-error`} className="book-demo-error" role="alert">
+              <p id={`${phoneId}-error`} className={styles["book-demo-error"]} role="alert">
                 Please enter a valid phone number (digits only).
               </p>
             )}
           </div>
 
-          <div className="book-demo-field">
-            <label htmlFor={dateId} className="book-demo-label">
+          <div className={styles["book-demo-field"]}>
+            <label htmlFor={dateId} className={styles["book-demo-label"]}>
               Preferred Demo Date and Time
             </label>
-            <div className="book-demo-datetime-row">
-              <div className="book-demo-date-wrap" ref={dateFieldRef}>
+            <div className={styles["book-demo-datetime-row"]}>
+              <div className={styles["book-demo-date-wrap"]} ref={dateFieldRef}>
                 <button
                   type="button"
                   id={dateId}
                   ref={dateButtonRef}
-                  className="book-demo-input-wrap book-demo-date-trigger"
+                  className={`${styles["book-demo-input-wrap"]} ${styles["book-demo-date-trigger"]}`}
                   onClick={toggleCalendar}
                   onBlur={() => markTouched("date")}
                   aria-haspopup="dialog"
@@ -458,10 +458,10 @@ export default function BookADemo() {
                   aria-controls={calendarPanelId}
                   aria-invalid={touched.date && !isDateValid}
                   aria-describedby={touched.date && !isDateValid ? `${dateId}-error` : undefined}>
-                  <span className="book-demo-input-icon" aria-hidden="true">
+                  <span className={styles["book-demo-input-icon"]} aria-hidden="true">
                     <CalendarIcon />
                   </span>
-                  <span className={`book-demo-input book-demo-date-display${dateValue ? "" : " book-demo-date-placeholder"}`}>{dateValue ? formatDisplayDate(dateValue) : "Select your preferred Date"}</span>
+                  <span className={`${styles["book-demo-input"]} ${styles["book-demo-date-display"]}${dateValue ? "" : ` ${styles["book-demo-date-placeholder"]}`}`}>{dateValue ? formatDisplayDate(dateValue) : "Select your preferred Date"}</span>
                 </button>
                 {isCalendarOpen && (
                   <NeumorphicCalendar
@@ -478,17 +478,17 @@ export default function BookADemo() {
                 )}
               </div>
 
-              <div className="book-demo-input-wrap book-demo-time-wrap">
-                <span className="book-demo-input-icon" aria-hidden="true">
+              <div className={`${styles["book-demo-input-wrap"]} ${styles["book-demo-time-wrap"]}`}>
+                <span className={styles["book-demo-input-icon"]} aria-hidden="true">
                   <ClockIcon />
                 </span>
-                <label htmlFor={timeId} className="sr-only">
+                <label htmlFor={timeId} className={styles["sr-only"]}>
                   Preferred time
                 </label>
                 <input
                   id={timeId}
                   type="time"
-                  className="book-demo-input book-demo-time-input"
+                  className={`${styles["book-demo-input"]} ${styles["book-demo-time-input"]}`}
                   value={timeValue}
                   onChange={(event) => setTimeValue(event.target.value)}
                   onBlur={() => markTouched("time")}
@@ -499,52 +499,52 @@ export default function BookADemo() {
               </div>
             </div>
             {touched.date && !isDateValid && (
-              <p id={`${dateId}-error`} className="book-demo-error" role="alert">
+              <p id={`${dateId}-error`} className={styles["book-demo-error"]} role="alert">
                 Please select a preferred date.
               </p>
             )}
             {touched.time && !isTimeValid && (
-              <p id={`${timeId}-error`} className="book-demo-error" role="alert">
+              <p id={`${timeId}-error`} className={styles["book-demo-error"]} role="alert">
                 Please select a preferred time.
               </p>
             )}
           </div>
 
-          <div className="book-demo-field">
-            <label htmlFor={messageId} className="book-demo-label">
+          <div className={styles["book-demo-field"]}>
+            <label htmlFor={messageId} className={styles["book-demo-label"]}>
               Message
             </label>
-            <div className="book-demo-textarea-wrap">
-              <textarea id={messageId} className="book-demo-textarea" placeholder="Type your message here....." value={message} onChange={(event) => setMessage(event.target.value)} rows={5} />
-              <ResizeIcon className="book-demo-resize-icon" />
+            <div className={styles["book-demo-textarea-wrap"]}>
+              <textarea id={messageId} className={styles["book-demo-textarea"]} placeholder="Type your message here....." value={message} onChange={(event) => setMessage(event.target.value)} rows={5} />
+              <ResizeIcon className={styles["book-demo-resize-icon"]} />
             </div>
           </div>
 
-          <div className="book-demo-consent-row">
-            <span className="book-demo-checkbox-wrap">
+          <div className={styles["book-demo-consent-row"]}>
+            <span className={styles["book-demo-checkbox-wrap"]}>
               <input
                 id={consentId}
                 type="checkbox"
-                className="book-demo-checkbox-input"
+                className={styles["book-demo-checkbox-input"]}
                 checked={consent}
                 onChange={(event) => setConsent(event.target.checked)}
                 aria-label="I agree to be contacted for the platform demo and accept the Privacy Policy of Prgeeq Global Solutions Private Limited."
                 required
               />
-              <span className="book-demo-checkbox-box" aria-hidden="true">
-                <CheckIcon className="book-demo-check-icon" />
+              <span className={styles["book-demo-checkbox-box"]} aria-hidden="true">
+                <CheckIcon className={styles["book-demo-check-icon"]} />
               </span>
             </span>
-            <p className="book-demo-consent-text">
+            <p className={styles["book-demo-consent-text"]}>
               I agree to be contacted for the platform demo and accept the{" "}
-              <Link href="/privacy-policy" className="book-demo-privacy-link">
+              <Link href="/privacy-policy" className={styles["book-demo-privacy-link"]}>
                 Privacy Policy
               </Link>{" "}
               of <strong>Prgeeq Global Solutions Private Limited.</strong>
             </p>
           </div>
 
-          <button type="submit" className="book-demo-submit" disabled={!isFormValid}>
+          <button type="submit" className={styles["book-demo-submit"]} disabled={!isFormValid}>
             Book a Demo
           </button>
         </form>

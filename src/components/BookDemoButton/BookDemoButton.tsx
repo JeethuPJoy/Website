@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import BookDemoModal from "@/components/Bookademo/BookDemoModal";
-import "./BookDemoButton.css";
+import styles from "./BookDemoButton.module.css";
 
 function CalendarIcon({ className }: { className?: string }) {
   return (
@@ -21,13 +21,13 @@ export default function BookDemoButton() {
 
   return (
     <>
-      <button type="button" className="book-demo-fab" onClick={() => setIsOpen(true)}>
-        <span className="book-demo-fab-icon-ring" aria-hidden="true">
-          <span className="book-demo-fab-icon-circle">
-            <CalendarIcon className="book-demo-fab-icon" />
+      <button type="button" className={styles["book-demo-fab"]} onClick={() => setIsOpen(true)}>
+        <span className={styles["book-demo-fab-icon-ring"]} aria-hidden="true">
+          <span className={styles["book-demo-fab-icon-circle"]}>
+            <CalendarIcon className={styles["book-demo-fab-icon"]} />
           </span>
         </span>
-        <span className="book-demo-fab-label">Book a Demo</span>
+        <span className={styles["book-demo-fab-label"]}>Book a Demo</span>
       </button>
       {isOpen && <BookDemoModal onClose={() => setIsOpen(false)} />}
     </>
