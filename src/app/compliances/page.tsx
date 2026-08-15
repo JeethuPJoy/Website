@@ -84,7 +84,7 @@ const ComplianceSecurity: NextPage = () => {
   <div className="frameWrapper4">
     <Image
       className="frameChild8"
-      src="/images/compliance-training.png"
+      src="/images/compliance-training.webp"
       width={711}
       height={555}
       sizes="(max-width: 900px) 92vw, 711px"
@@ -449,7 +449,7 @@ const ComplianceSecurity: NextPage = () => {
       <div className="trainingRecordsImageWrap">
         <Image
           className="rectangleIcon"
-          src="/images/Rectangle 80.png"
+          src="/images/Rectangle 80.webp"
           width={608}
           height={564}
           sizes="(max-width: 900px) 100vw, 608px"

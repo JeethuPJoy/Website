@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import LayoutRecalc from "@/components/LayoutRecalc";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import "@/components/Header/Header.css";
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
+        <LayoutRecalc />
         <Header />
         {children}
         <Footer />

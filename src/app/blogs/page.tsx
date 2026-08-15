@@ -17,7 +17,7 @@ const Blogs: NextPage = () => {
         <Image className="heroFrameSvg" src="/images/blog-hero-frame.svg" width={1312} height={684} sizes="100vw" alt="" />
         <div className="heroImageFrame">
           <div className="heroImageClip">
-            <Image className="frameChild2" src="/images/imgblog.png" width={667} height={616} sizes="100vw" alt="" />
+            <Image className="frameChild2" src="/images/imgblog.webp" width={667} height={616} sizes="100vw" alt="" />
           </div>
         </div>
         <div className="frameParent2">
@@ -61,7 +61,7 @@ const Blogs: NextPage = () => {
                 <div className="aiPoweredLmsParent">
                   <b className="aiPoweredLms">AI-Powered LMS</b>
                   <div className="aiTransformingModern">AI transforming modern learning.</div>
-                  <Image className="youngManUsingHisLaptopInfIcon" src="/images/gamifiedblog.png" width={244} height={201} sizes="100vw" alt="" />
+                  <Image className="youngManUsingHisLaptopInfIcon" src="/images/gamifiedblog.webp" width={244} height={201} sizes="100vw" alt="" />
                 </div>
               </div>
             </div>
@@ -73,14 +73,14 @@ const Blogs: NextPage = () => {
                   <b className="aiPoweredLms">Interactive Learning</b>
                   <div className="aiTransformingModern">Gamified and engaging experiences.</div>
                 </div>
-                <Image className="youngManUsingHisLaptopInfIcon" src="/images/youngmanblog.png" width={244} height={201} sizes="100vw" alt="" />
+                <Image className="youngManUsingHisLaptopInfIcon" src="/images/youngmanblog.webp" width={244} height={201} sizes="100vw" alt="" />
               </div>
             </div>
             <div className="rectangleParent4">
               <div className="rectangleDiv" />
               <div className="rectangleParent3">
                 <div className="frameChild8" />
-                <Image className="concentratedExecutiveManagerIcon" src="/images/img2blog.png" width={310} height={243} sizes="100vw" alt="" />
+                <Image className="concentratedExecutiveManagerIcon" src="/images/img2blog.webp" width={310} height={243} sizes="100vw" alt="" />
                 <div className="corporateTrainingParent">
                   <b className="aiPoweredLms">Corporate Training</b>
                   <div className="upskillingTodaysWorkforce">Upskilling today's workforce.</div>
@@ -97,7 +97,7 @@ const Blogs: NextPage = () => {
                   <b className="aiPoweredLms">Learning Innovation</b>
                   <div className="modernAndFlexible">Modern and flexible learning.</div>
                 </div>
-                <Image className="womanHoldingIdeaIconUsing" src="/images/img4blog.png" width={290} height={222} sizes="100vw" alt="" />
+                <Image className="womanHoldingIdeaIconUsing" src="/images/img4blog.webp" width={290} height={222} sizes="100vw" alt="" />
               </div>
             </div>
             <div className="rectangleParent8">
@@ -108,13 +108,13 @@ const Blogs: NextPage = () => {
                   <b className="aiPoweredLms">Digital Education</b>
                   <div className="aiTransformingModern">Best practices for online learning.</div>
                 </div>
-                <Image className="computingMan1Icon" src="/images/img5blog.png" width={355} height={237} sizes="100vw" alt="" />
+                <Image className="computingMan1Icon" src="/images/img5blog.webp" width={355} height={237} sizes="100vw" alt="" />
               </div>
             </div>
             <div className="rectangleParent10">
               <div className="rectangleDiv" />
               <div className="rectangleContainer">
-                <Image className="frameChild14" src="/images/img6blog.png" width={352} height={229} sizes="100vw" alt="" />
+                <Image className="frameChild14" src="/images/img6blog.webp" width={352} height={229} sizes="100vw" alt="" />
                 <div className="aiPoweredLmsParent">
                   <b className="aiPoweredLms">Learning Analytics</b>
                   <div className="dataDrivenLearningInsights">Data-driven learning insights.</div>

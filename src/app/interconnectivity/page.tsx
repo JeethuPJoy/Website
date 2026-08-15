@@ -216,28 +216,28 @@ const Interconnectivity: NextPage = () => {
           <div className="frameWrapper6">
             <div className="rectangleParent3">
               <div className="frameChild25" />
-              <Image className="frameChild26" src="/images/img1-inter.png" width={300} height={204} sizes="100vw" alt="Universities and Higher Education" />
+              <Image className="frameChild26" src="/images/img1-inter.webp" width={300} height={204} sizes="100vw" alt="Universities and Higher Education" />
               <b className="universitiesAndHigher">Universities and Higher Education</b>
             </div>
           </div>
           <div className="frameWrapper6">
             <div className="rectangleParent3">
               <div className="frameChild25" />
-              <Image className="frameChild28" src="/images/img2-inter.png" width={300} height={204} sizes="100vw" alt="Corporate Training Academies" />
+              <Image className="frameChild28" src="/images/img2-inter.webp" width={300} height={204} sizes="100vw" alt="Corporate Training Academies" />
               <b className="universitiesAndHigher">Corporate Training Academies</b>
             </div>
           </div>
           <div className="frameWrapper6">
             <div className="rectangleParent3">
               <div className="frameChild25" />
-              <Image className="frameChild28" src="/images/img3-inter.png" width={300} height={204} sizes="100vw" alt="Skill Development Centers" />
+              <Image className="frameChild28" src="/images/img3-inter.webp" width={300} height={204} sizes="100vw" alt="Skill Development Centers" />
               <b className="universitiesAndHigher">Skill Development Centers</b>
             </div>
           </div>
           <div className="frameWrapper6">
             <div className="rectangleParent3">
               <div className="frameChild25" />
-              <Image className="frameChild28" src="/images/img4-inter.png" width={300} height={204} sizes="100vw" alt="Hybrid and Remote Learning" />
+              <Image className="frameChild28" src="/images/img4-inter.webp" width={300} height={204} sizes="100vw" alt="Hybrid and Remote Learning" />
               <b className="universitiesAndHigher">{`Hybrid & Remote Learning`}</b>
             </div>
           </div>
@@ -391,7 +391,7 @@ const Interconnectivity: NextPage = () => {
         </div>
       </div>
       <div className="ellipseGroup">
-        <Image className="frameChild43" src="/images/bg-inter.png" width={1286} height={540} sizes="100vw" alt="" />
+        <Image className="frameChild43" src="/images/bg-inter.webp" width={1286} height={540} sizes="100vw" alt="" />
         <div className="ellipseContainer">
           <div className="frameChild44" />
           <div className="frameParent43">

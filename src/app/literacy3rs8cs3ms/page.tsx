@@ -36,7 +36,7 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
               </div>
             </div>
             <div className="smilingStudentsWithBackpackWrapper">
-              <Image src="/images/students.png" className="smilingStudentsWithBackpackIcon" width={640} height={426} sizes="(max-width: 768px) 100vw, 640px" alt="Students with backpacks" priority />
+              <Image src="/images/students.webp" className="smilingStudentsWithBackpackIcon" width={640} height={426} sizes="(max-width: 768px) 100vw, 640px" alt="Students with backpacks" priority />
             </div>
           </div>
         </div>
@@ -206,7 +206,7 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
         <div className="transformingLearningInto">Transforming learning into practical skills that inspire confidence resilience and lifelong success every day.</div>
       </div>
       <div className="rectangleParent">
-        <Image src="/images/background 3rs.png" className="background3rs" width={1280} height={407} alt="" />
+        <Image src="/images/background 3rs.webp" className="background3rs" width={1280} height={407} alt="" />
         <div className="frameParent22">
           <div className="neurolxpWrapper">
             <b className="neurolxp">NeuroLXP</b>
@@ -225,7 +225,7 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
           </div>
         </div>
       </div>
-      <Image src="/images/second%20lady.png" className="smilingWomanWithBooksMortaIcon" width={414} height={571} sizes="(max-width: 768px) 70vw, 414px" alt="Woman holding books" />
+      <Image src="/images/second%20lady.webp" className="smilingWomanWithBooksMortaIcon" width={414} height={571} sizes="(max-width: 768px) 70vw, 414px" alt="Woman holding books" />
     </main>
   );
 };

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import "./white-paper.css";
-// import heroImage from "./images/young-librarian-organising-books.jpg";
 
 export default function WhitePaper() {
   const topics = [
@@ -132,7 +131,7 @@ export default function WhitePaper() {
 
             <div className="hero-image-wrapper">
               <div className="hero-image-circle">
-                <Image src="/images/young-librarian-organising-books.jpg" fill loading="eager" sizes="(max-width: 768px) 285px, (max-width: 1240px) 410px, 605px" alt="Future of Learning" className="hero-image" />
+                <Image src="/images/young-librarian-organising-books.webp" fill loading="eager" sizes="(max-width: 768px) 285px, (max-width: 1240px) 410px, 605px" alt="Future of Learning" className="hero-image" />
               </div>
             </div>
           </div>

@@ -38,7 +38,7 @@ const TrainingManagement: NextPage = () => {
                     </div>
                   </div>
                   <div className="frameWrapper6">
-                    <Image className="trainingHeroBackground" src="/images/trainingbg1.png" width={1266} height={309} sizes="1266px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} priority />
+                    <Image className="trainingHeroBackground" src="/images/trainingbg1.webp" width={1266} height={309} sizes="1266px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} priority />
                     <div className="smarterTrainingManagementWiParent">
                       <h1 className="smarterTrainingManagementContainer">
                         <span className="smarter">{`Smarter `}</span>
@@ -302,7 +302,7 @@ const TrainingManagement: NextPage = () => {
           </div>
         </div>
         <div className="rectangleParent">
-          <Image className="transformTrainingBackground" src="/images/trainingbg2.png" width={1280} height={505} sizes="1280px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+          <Image className="transformTrainingBackground" src="/images/trainingbg2.webp" width={1280} height={505} sizes="1280px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
 
           <div className="frameParent32">
             <div className="transformTrainingWithNeurolParent">
@@ -327,7 +327,7 @@ const TrainingManagement: NextPage = () => {
           </div>
 
           <div className="colleaguesWorkingTogetherPrWrapper">
-            <Image className="colleaguesWorkingTogetherPrIcon" src="/images/trainingimage.png" width={576} height={505} sizes="576px" alt="Colleagues working together on a training project" />
+            <Image className="colleaguesWorkingTogetherPrIcon" src="/images/trainingimage.webp" width={576} height={505} sizes="576px" alt="Colleagues working together on a training project" />
           </div>
         </div>
       </div>

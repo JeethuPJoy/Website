@@ -109,7 +109,7 @@ const LearningCommunitySupport: NextPage = () => {
 
 					<Image
 						className="rectangleIcon"
-						src="/images/limage.png"
+						src="/images/limage.webp"
 						width={667}
 						height={616}
 						sizes="(max-width: 768px) 100vw, 667px"
@@ -404,7 +404,7 @@ const LearningCommunitySupport: NextPage = () => {
 					</div>
 					<Image
 						className="safeSpaceBackground"
-						src="/images/social_lerningbg.png"
+						src="/images/social_lerningbg.webp"
 						width={1259}
 						height={500}
 						sizes="(max-width: 1280px) 100vw, 1259px"

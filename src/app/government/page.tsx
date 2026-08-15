@@ -85,7 +85,7 @@ const GovernmentStateInstitutions: NextPage = () => {
           </div>
           <div className="ellipseParent">
             <div className="ellipseDiv" />
-            <Image className="frameChild2" src="/images/pillar.png" width={480} height={487} sizes="100vw" alt="" aria-hidden="true" />
+            <Image className="frameChild2" src="/images/pillar.webp" width={480} height={487} sizes="100vw" alt="" aria-hidden="true" />
           </div>
         </div>
         <div className="frameParent5">
@@ -464,7 +464,7 @@ const GovernmentStateInstitutions: NextPage = () => {
             <div className="rectangle" />
             <div className="image20" />
             <div className="groupMultiethnicBusinessPeo" />
-            <Image className="pexelsAkhilDasari2160057282Icon" src="/images/gvt.png" width={819} height={525} sizes="100vw" alt="" aria-hidden="true" />
+            <Image className="pexelsAkhilDasari2160057282Icon" src="/images/gvt.webp" width={819} height={525} sizes="100vw" alt="" aria-hidden="true" />
             <div className="frameWrapper19">
               <div className="frameWrapper20">
                 <div className="frameParent3">

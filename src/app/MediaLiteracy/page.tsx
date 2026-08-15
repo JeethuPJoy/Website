@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import "./medialiteracy.css";
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 
 const MediaLiteracy: NextPage = () => {
   return (
@@ -14,7 +15,7 @@ const MediaLiteracy: NextPage = () => {
                   <div className="image21Parent">
                     <div className="image21" />
                     <div className="frameDiv">
-                      <Image className="frameChild" src="/images/person.png" width={547} height={640} sizes="(max-width: 768px) 100vw, 547px" alt="People reviewing information on a laptop" priority />
+                      <Image className="frameChild" src="/images/person.webp" width={547} height={640} sizes="(max-width: 768px) 100vw, 547px" alt="People reviewing information on a laptop" priority />
                     </div>
                     <div className="frameParent">
                       <div className="frameGroup">
@@ -130,7 +131,7 @@ const MediaLiteracy: NextPage = () => {
                 <div
                   className="heroPhotoPolygon"
                   style={{
-                    backgroundImage: "url('/images/polygon1.png')",
+                    backgroundImage: "url('/images/Polygon1.webp')",
                   }}
                   role="img"
                   aria-label="Media literacy learner"
@@ -299,7 +300,7 @@ const MediaLiteracy: NextPage = () => {
             <div className="image202" />
             <div className="image21Group">
               <div className="image212" />
-              <Image className="image24Icon" src="/images/working.png" width={1216} height={824} sizes="(max-width: 768px) 100vw, 1216px" alt="People working together" />
+              <Image className="image24Icon" src="/images/working.webp" width={1216} height={824} sizes="(max-width: 768px) 100vw, 1216px" alt="People working together" />
               <div className="frameParent38">
                 <div className="frameParent15">
                   <div className="frameChild21">Responsible Content Creation</div>
@@ -378,6 +379,7 @@ const MediaLiteracy: NextPage = () => {
           <div className="mediaLiteracyChild">
             <Image src="/icons/arrow-up-01.svg" width={28} height={28} sizes="28px" alt="Back to top" />
           </div>
+          <TalkToExpertButton />
       </main>
     </>
   );

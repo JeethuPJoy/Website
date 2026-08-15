@@ -64,12 +64,12 @@ const RetailAndHealthCare: NextPage = () => {
         <div className="frameParent2">
           <div className="frameItem" />
           <div className="smilingYoungFemaleDoctorWeParent">
-            <Image src="/images/smiling-young-female-doctor-wearing-medical-robe-stethoscope-sitting-desk-with-medical-tools-laptop-touching-head-with-finger-isolated-white-wall 1.png" className="smilingYoungFemaleDoctorWeIcon" width={594} height={537} sizes="100vw" alt="Smiling healthcare professional" priority />
+            <Image src="/images/smiling-young-female-doctor-wearing-medical-robe-stethoscope-sitting-desk-with-medical-tools-laptop-touching-head-with-finger-isolated-white-wall 1.webp" className="smilingYoungFemaleDoctorWeIcon" width={594} height={537} sizes="100vw" alt="Smiling healthcare professional" priority />
             <div className="frameParent3">
               <div className="frameWrapper">
                 <div className="frameParent4">
                   <div className="frameParent5">
-                    <Image src="/assets/retail and helath/transparent.png" className="frameInner" width={386.2} height={50.3} sizes="100vw" alt="" />
+                    <Image src="/assets/retail and helath/transparent.webp" className="frameInner" width={386.2} height={50.3} sizes="100vw" alt="" />
                     <h1 className="scalableLearningForContainer" style={{ margin: 0 }}>
                       <span className="scalableLearningFor">{`Scalable Learning for `}</span>
                       <span className="serviceDriven">Service-Driven</span>
@@ -144,14 +144,14 @@ const RetailAndHealthCare: NextPage = () => {
                   <br />
                   <br />
                 </p>
-                <Image src="/images/transparent.png" className="starIcon" width={21} height={20} sizes="100vw" alt="" />
+                <Image src="/images/transparent.webp" className="starIcon" width={21} height={20} sizes="100vw" alt="" />
               </div>
             </div>
           </div>
         </div>
         <div className="frameParent8">
           <div className="frameParent9">
-            <Image src="/images/transparent.png" className="frameChild3" width={222.2} height={50.2} sizes="100vw" alt="" />
+            <Image src="/images/transparent.webp" className="frameChild3" width={222.2} height={50.2} sizes="100vw" alt="" />
             <div className="empoweringSmarterRetailLearParent">
               <h2 className="empoweringSmarterRetail" style={{ margin: 0 }}>
                 Empowering Smarter Retail Learning
@@ -222,7 +222,7 @@ const RetailAndHealthCare: NextPage = () => {
           <div className="rectangle" />
           <div className="image20" />
           <div className="frameParent14">
-            <Image src="/images/transparent.png" className="frameChild7" width={235} height={50.2} sizes="100vw" alt="" />
+            <Image src="/images/transparent.webp" className="frameChild7" width={235} height={50.2} sizes="100vw" alt="" />
             <h2 className="empoweringSmarterRetail2" style={{ margin: 0 }}>
               Empowering Smarter Retail Learning
               <br />
@@ -233,11 +233,11 @@ const RetailAndHealthCare: NextPage = () => {
               <br />
             </p>
           </div>
-          <Image src="/images/two-female-designers-work 1.png" className="twoFemaleDesignersWork1Icon" width={615} height={507} sizes="100vw" alt="Retail professionals learning together" />
+          <Image src="/images/two-female-designers-work 1.webp" className="twoFemaleDesignersWork1Icon" width={615} height={507} sizes="100vw" alt="Retail professionals learning together" />
         </div>
         <div className="frameParent15">
           <div className="frameParent16">
-            <Image src="/images/transparent.png" className="frameChild8" width={209.8} height={50.2} sizes="100vw" alt="" />
+            <Image src="/images/transparent.webp" className="frameChild8" width={209.8} height={50.2} sizes="100vw" alt="" />
             <h2 className="benefitsForRetail" style={{ margin: 0 }}>
               Benefits for Retail Organizations
               <br />
@@ -303,7 +303,7 @@ const RetailAndHealthCare: NextPage = () => {
           <div className="frameParent24">
             <div className="frameWrapper10">
               <div className="largeHealthcareTeamsParent">
-                <Image src="/images/choosing-lunch-dark-haired-young-businessman-checking-menu-choosing-lunch 1.png" className="frameChild14" width={280} height={162} sizes="100vw" alt="" />
+                <Image src="/images/choosing-lunch-dark-haired-young-businessman-checking-menu-choosing-lunch 1.webp" className="frameChild14" width={280} height={162} sizes="100vw" alt="" />
                 <h3 className="complianceAndCertification" style={{ margin: 0 }}>
                   Compliance and 
                   <br />
@@ -320,7 +320,7 @@ const RetailAndHealthCare: NextPage = () => {
                       Continuous Medical Education
                       <br />
                     </h3>
-                    <Image src="/images/young-businesswoman-her-colleague-wearing-face-masks-while-working-computer-office-virus-epidemic 1.png" className="youngBusinesswomanHerColleaIcon" width={280} height={162} sizes="100vw" alt="" />
+                    <Image src="/images/young-businesswoman-her-colleague-wearing-face-masks-while-working-computer-office-virus-epidemic 1.webp" className="youngBusinesswomanHerColleaIcon" width={280} height={162} sizes="100vw" alt="" />
                   </div>
                 </div>
               </div>
@@ -330,13 +330,13 @@ const RetailAndHealthCare: NextPage = () => {
                     Large Healthcare Teams
                     <br />
                   </h3>
-                  <Image src="/images/medical-team-checking-results-digital-tablet 1.png" className="frameChild15" width={280} height={162} sizes="100vw" alt="" />
+                  <Image src="/images/medical-team-checking-results-digital-tablet 1.webp" className="frameChild15" width={280} height={162} sizes="100vw" alt="" />
                 </div>
               </div>
             </div>
           </div>
           <div className="frameParent27">
-            <Image src="/assets/retail and helath/transparent.png" className="frameChild16" width={281.6} height={50.2} sizes="100vw" alt="" />
+            <Image src="/assets/retail and helath/transparent.webp" className="frameChild16" width={281.6} height={50.2} sizes="100vw" alt="" />
             <h2 className="smarterHealthcareLearning" style={{ margin: 0 }}>
               Smarter Healthcare Learning
             </h2>
@@ -353,7 +353,7 @@ const RetailAndHealthCare: NextPage = () => {
           <div className="rectangle" />
           <div className="image20" />
           <div className="frameParent28">
-            <Image src="/assets/retail and helath/transparent.png" className="frameChild7" width={235} height={50.2} sizes="100vw" alt="" />
+            <Image src="/assets/retail and helath/transparent.webp" className="frameChild7" width={235} height={50.2} sizes="100vw" alt="" />
             <h2 className="empoweringHealthcareOrganiza" style={{ margin: 0 }}>
               Empowering Healthcare Organizations
             </h2>
@@ -361,11 +361,11 @@ const RetailAndHealthCare: NextPage = () => {
               NeuroLXP simplifies healthcare training with compliance, certifications, and continuous learning across healthcare teams.
             </p>
           </div>
-          <Image src="/images/male-doctor-nurses-communicating-while-working-digital-tablet-clinic 2.png" className="maleDoctorNursesCommunicatiIcon" width={583} height={526} sizes="100vw" alt="Healthcare team collaborating" />
+          <Image src="/images/male-doctor-nurses-communicating-while-working-digital-tablet-clinic 2.webp" className="maleDoctorNursesCommunicatiIcon" width={583} height={526} sizes="100vw" alt="Healthcare team collaborating" />
         </div>
         <div className="frameParent29">
           <div className="frameParent30">
-            <Image src="/images/transparent.png" className="frameChild18" width={282} height={50.2} sizes="100vw" alt="" />
+            <Image src="/images/transparent.webp" className="frameChild18" width={282} height={50.2} sizes="100vw" alt="" />
             <div className="benefitsForHealthcareOrganiParent">
               <h2 className="benefitsForHealthcare" style={{ margin: 0 }}>
                 Benefits for Healthcare Organizations
@@ -380,7 +380,7 @@ const RetailAndHealthCare: NextPage = () => {
           </div>
           <div className="frameParent31">
             <div className="frameParent32">
-              <Image src="/images/transparent.png" className="frameChild19" width={240} height={166} sizes="100vw" alt="" />
+              <Image src="/images/transparent.webp" className="frameChild19" width={240} height={166} sizes="100vw" alt="" />
               <span className="healthArrow healthArrowBlue" aria-hidden="true" />
               <h3 className="complianceTraining" style={{ margin: 0 }}>
                 Compliance Training
@@ -388,8 +388,8 @@ const RetailAndHealthCare: NextPage = () => {
               </h3>
             </div>
             <div className="vectorParent">
-              <Image src="/images/transparent.png" className="rectangleIcon" width={240} height={166} sizes="100vw" alt="" />
-              <Image src="/images/transparent.png" className="frameChild19" width={240} height={166} sizes="100vw" alt="" />
+              <Image src="/images/transparent.webp" className="rectangleIcon" width={240} height={166} sizes="100vw" alt="" />
+              <Image src="/images/transparent.webp" className="frameChild19" width={240} height={166} sizes="100vw" alt="" />
               <Image src="/icons/Polygon 32-2.svg" className="polygonIcon" width={25} height={24} sizes="25px" alt="" />
               <h3 className="professionalDevelopment" style={{ margin: 0 }}>
                 Professional Development
@@ -397,8 +397,8 @@ const RetailAndHealthCare: NextPage = () => {
               </h3>
             </div>
             <div className="vectorParent">
-              <Image src="/images/transparent.png" className="rectangleIcon" width={240} height={166} sizes="100vw" alt="" />
-              <Image src="/images/transparent.png" className="frameChild19" width={240} height={166} sizes="100vw" alt="" />
+              <Image src="/images/transparent.webp" className="rectangleIcon" width={240} height={166} sizes="100vw" alt="" />
+              <Image src="/images/transparent.webp" className="frameChild19" width={240} height={166} sizes="100vw" alt="" />
               <Image src="/icons/Polygon 32-1.svg" className="polygonIcon" width={25} height={24} sizes="25px" alt="" />
               <h3 className="betterPatientCare" style={{ margin: 0 }}>
                 Better Patient Care
@@ -406,8 +406,8 @@ const RetailAndHealthCare: NextPage = () => {
               </h3>
             </div>
             <div className="vectorParent">
-              <Image src="/images/transparent.png" className="rectangleIcon" width={240} height={166} sizes="100vw" alt="" />
-              <Image src="/images/transparent.png" className="frameChild19" width={240} height={166} sizes="100vw" alt="" />
+              <Image src="/images/transparent.webp" className="rectangleIcon" width={240} height={166} sizes="100vw" alt="" />
+              <Image src="/images/transparent.webp" className="frameChild19" width={240} height={166} sizes="100vw" alt="" />
               <Image src="/icons/Polygon 32-3.svg" className="polygonIcon" width={25} height={24} sizes="25px" alt="" />
               <h3 className="certificationTracking" style={{ margin: 0 }}>
                 Certification Tracking
@@ -416,8 +416,8 @@ const RetailAndHealthCare: NextPage = () => {
               </h3>
             </div>
             <div className="vectorParent">
-              <Image src="/images/transparent.png" className="rectangleIcon" width={240} height={166} sizes="100vw" alt="" />
-              <Image src="/images/transparent.png" className="frameChild19" width={240} height={166} sizes="100vw" alt="" />
+              <Image src="/images/transparent.webp" className="rectangleIcon" width={240} height={166} sizes="100vw" alt="" />
+              <Image src="/images/transparent.webp" className="frameChild19" width={240} height={166} sizes="100vw" alt="" />
               <h3 className="scalableProgrammes" style={{ margin: 0 }}>
                 Scalable Programmes
                 <br />
@@ -436,7 +436,7 @@ const RetailAndHealthCare: NextPage = () => {
             <div className="frameParent34 retailFinalVideoContent">
               <div className="frameParent4">
                 <div className="frameParent36">
-                  <Image src="/images/transparent.png" className="frameChild32" width={170.7} height={50.1} sizes="100vw" alt="" />
+                  <Image src="/images/transparent.webp" className="frameChild32" width={170.7} height={50.1} sizes="100vw" alt="" />
                   <h2 className="poweringLearningFor" style={{ margin: 0 }}>
                     Powering Learning for Retail and Healthcare
                   </h2>

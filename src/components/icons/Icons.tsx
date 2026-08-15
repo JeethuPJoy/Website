@@ -408,3 +408,21 @@ export function PlayIcon({ className }: IconProps) {
     </svg>
   );
 }
+
+export function CloseIcon({ className }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+      <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function HeadphonesIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true" focusable="false">
+      <path d="M20.0849 16.1582C20.5849 14.6582 21 12.595 21 11.1582C21 6.18764 16.9706 2.1582 12 2.1582C7.02944 2.1582 3 6.18764 3 11.1582C3 12.595 3.41512 14.6582 3.91512 16.1582" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8.97651 18.7605L7.23857 13.7689C7.05341 13.3028 6.4617 13.0693 5.97493 13.1859C4.46441 13.6895 3.6462 15.328 4.14742 16.8457L4.58543 18.172C5.08664 19.6896 6.71747 20.5117 8.22799 20.0081C8.68896 19.8118 9.10449 19.2459 8.97651 18.7605Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M15.7716 20.0081L16.761 13.7689C16.9462 13.3028 17.5379 13.0693 18.0247 13.1859C19.5352 13.6895 20.3534 15.328 19.8522 16.8457L19.4142 18.172C18.913 19.6896 17.2821 20.5117 15.7716 20.0081ZM15.7716 20.0081C15.3106 19.8118 15.6436 20.4935 15.7716 20.0081Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}

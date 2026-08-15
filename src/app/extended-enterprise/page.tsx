@@ -247,7 +247,7 @@ const ExtendedEnterpriseLearning: NextPage = () => {
         </div>
 
         <div className="empowerImageWrapper">
-          <Image className="departmentMeeting1Icon" src="/images/meeting.png" width={633} height={496} sizes="(max-width: 768px) 100vw, 633px" alt="Business team reviewing reports around a table" />
+          <Image className="departmentMeeting1Icon" src="/images/meeting.webp" width={633} height={496} sizes="(max-width: 768px) 100vw, 633px" alt="Business team reviewing reports around a table" />
         </div>
       </div>
     </div>

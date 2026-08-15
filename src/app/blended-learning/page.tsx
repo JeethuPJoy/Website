@@ -57,7 +57,7 @@ const BlendedLearning: NextPage = () => {
 						<div className="blendedHeroImages">
 							<Image
 								className="blendedHeroImage"
-								src="/images/first.png"
+								src="/images/first.webp"
 								width={320}
 								height={320}
 								alt="Teacher presenting in a classroom"
@@ -68,7 +68,7 @@ const BlendedLearning: NextPage = () => {
 
 							<Image
 								className="blendedHeroImage"
-								src="/images/secondblend.png"
+								src="/images/secondblend.webp"
 								width={320}
 								height={320}
 								alt="Learner using virtual reality for digital learning"
@@ -219,7 +219,7 @@ const BlendedLearning: NextPage = () => {
 				<section className="blendedBenefitsSection" aria-labelledby="blended-benefits-title">
 					<Image
 						className="blendedBenefitsBackground"
-						src="/images/blended background.png"
+						src="/images/blended background.webp"
 						alt=""
 						fill
 						sizes="(max-width: 900px) 100vw, 1280px"
@@ -338,7 +338,7 @@ const BlendedLearning: NextPage = () => {
 						<div className="blendedCtaImageShell">
 							<Image
 								className="blendedCtaImage"
-								src="/images/ellipse 412.png"
+								src="/images/ellipse 412.webp"
 								width={1280}
 								height={726}
 								sizes="(max-width: 900px) calc(100vw - 48px), 1280px"

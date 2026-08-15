@@ -24,11 +24,11 @@ export type NavItem =
   | { type: "simple"; label: string; href: string; items: SimpleLink[]; promo?: PromoCard }
   | { type: "nested"; label: string; href: string; categories: NestedCategory[]; promo?: PromoCard };
 
-const promoPlaceholderImage = "/images/header-promo-placeholder.jpg";
+const promoPlaceholderImage = "/images/header-promo-placeholder.webp";
 
 export const navItems: NavItem[] = [
   { type: "link", label: "Home", href: "/", active: true },
-  { type: "link", label: "GenZGalaxy", href: "/genzgalaxy" },
+  { type: "link", label: "GenZGalaxy", href: "/genzgalaxy"},
   {
     type: "simple",
     label: "NeuroLXP 2.1",
@@ -42,7 +42,7 @@ export const navItems: NavItem[] = [
     ],
     promo: {
       variant: "photo",
-      image: "/images/education-application-knowledge-development-concept.jpg",
+      image: "/images/education-application-knowledge-development-concept.webp",
       imageAlt: "Learner exploring NeuroLXP 2.1 courses",
       heading: "Build Skills! Shape Your Future",
       buttonLabel: "Explore Courses",
@@ -92,7 +92,7 @@ export const navItems: NavItem[] = [
     ],
     promo: {
       variant: "photo",
-      image: "/images/smiley-woman-wearing-glasses.jpg",
+      image: "/images/girl.webp",
       imageAlt: "Team collaborating using NeuroLXP gamification",
       heading: "Make Learning More Engaging",
       buttonLabel: "Explore Gamification",
@@ -140,7 +140,7 @@ export const navItems: NavItem[] = [
     ],
     promo: {
       variant: "photo",
-      image: "/images/woman-typing-features.jpg",
+      image: "/images/woman-typing-features.webp",
       imageAlt: "Learner using NeuroLXP personalization features",
       heading: "Learn! Grow! Succeed!",
       description: "Discover how NeuroLXP transforms learning and training",
@@ -170,7 +170,7 @@ export const navItems: NavItem[] = [
     ],
     promo: {
       variant: "photo",
-      image: "/images/education-learning-puzzle-pieces-graphic.jpg",
+      image: "/images/education-learning-puzzle-pieces-graphic.webp",
       imageAlt: "NeuroLXP platform demo",
       heading: "See NeuroLXP in Action",
       buttonLabel: "Book a Demo",

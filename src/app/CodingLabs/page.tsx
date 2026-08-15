@@ -66,7 +66,7 @@ const NeurolabsCodingLabs: NextPage = () => {
         <div className="image20" />
         <div className="image21Parent">
           <div className="image21" />
-          <Image className="groupYoungBusinesspeopleUsiIcon" src="/images/group-young-businesspeople-using-laptop-meeting 1.png" width={1216} height={555} sizes="100vw" alt="" />
+          <Image className="groupYoungBusinesspeopleUsiIcon" src="/images/group-young-businesspeople-using-laptop-meeting 1.webp" width={1216} height={555} sizes="100vw" alt="" />
           <div className="ellipseParent">
             <div className="frameItem" />
             <div className="frameWrapper">
@@ -280,7 +280,7 @@ const NeurolabsCodingLabs: NextPage = () => {
         </div>
       </div>
       <div className="rectangleGroup">
-        <Image src="/icons/background coding labs.png" width={1280} height={505} className="ctaBackground" alt="" />
+        <Image src="/icons/background coding labs.webp" width={1280} height={505} className="ctaBackground" alt="" />
 
         <div className="frameParent22">
           <div className="neurolabsCodingLabsLearnByParent">
@@ -297,146 +297,6 @@ const NeurolabsCodingLabs: NextPage = () => {
 
             <div className="frameWrapper13">
               <div className="bookADemo getStartedButton">Get Started</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="frameParent24">
-        <div className="frameParent25">
-          <div className="frameParent26">
-            <div className="frameParent27">
-              <div className="frameParent28">
-                <div className="logo01SynapseSpark1Group">
-                  <div className="frameParent29">
-                    <div className="onePlatformParent">
-                      <b className="onePlatform">{`One Platform `}</b>
-                    </div>
-                    <div className="onePlatformParent">
-                      <b className="onePlatform">Endless Learning</b>
-                    </div>
-                    <b className="onePlatform">Limitless Growth</b>
-                  </div>
-                </div>
-                <div className="prgeeqGlobalSolutionsPrivatParent">
-                  <b className="prgeeqGlobalSolutions">PRGEEQ Global Solutions Private Limited</b>
-                  <div className="prestigeAtlanta1012Container">
-                    <span>
-                      <b className="blankLine">&nbsp;</b>
-                      <span className="blankLine">
-                        Prestige Atlanta, 10/12, 80 Feet Rd, 1A Block,
-                        <br />
-                        Koramangala, Bengaluru, - 560034
-                        <br />
-                        Karnataka, India.
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="frameParent30">
-                <div className="frameParent31">
-                  <div className="aboutUsParent">
-                    <b className="aboutUs">{`About us `}</b>
-                    <div className="ourMissionParent">
-                      <div className="ourMission">Our Mission</div>
-                      <div className="ourMission">{`Our Vision `}</div>
-                      <div className="ourMission">Our Story</div>
-                      <div className="ourMission">Our Team</div>
-                    </div>
-                  </div>
-                  <div className="quickLinksParent">
-                    <b className="quickLinks">Quick Links</b>
-                    <div className="ourMissionParent">
-                      <div className="ourMission">Privacy Policy</div>
-                      <div className="ourMission">Terms of use</div>
-                      <div className="ourMission">Terms of Declaration</div>
-                    </div>
-                  </div>
-                  <div className="neurolxpParent">
-                    <b className="neurolxp">{`NeuroLXP  `}</b>
-                    <div className="ourCustomersGroup">
-                      <div className="ourMission">Our Customers</div>
-                      <div className="ourMission">Smart Learning Paths</div>
-                      <div className="smartContentCreation">Smart Content Creation</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="frameParent32"></div>
-              </div>
-            </div>
-            <div className="copyright2026">Copyright @2026 | Prgeeq Global Solutions Pvt Ltd | All right reserved</div>
-          </div>
-          <div className="frameWrapper14">
-            <div className="frameParent26">
-              <div className="frameParent27">
-                <div className="frameParent28">
-                  <div className="logo01SynapseSpark1Group">
-                    <div className="frameParent29">
-                      <div className="onePlatformParent">
-                        <b className="onePlatform">{`One Platform `}</b>
-                      </div>
-                      <div className="onePlatformParent">
-                        <b className="onePlatform">Endless Learning</b>
-                      </div>
-                      <b className="onePlatform">Limitless Growth</b>
-                    </div>
-                  </div>
-                  <div className="prgeeqGlobalSolutionsPrivatParent">
-                    <b className="prgeeqGlobalSolutions">Prgeeq Global Solutions Private Limited</b>
-                    <div className="prestigeAtlanta1012Container">
-                      <span>
-                        <b className="blankLine">&nbsp;</b>
-                        <span className="blankLine">
-                          Prestige Atlanta, 10/12, 80 Feet Rd, 1A Block,
-                          <br />
-                          Koramangala, Bengaluru, - 560034
-                          <br />
-                          Karnataka, India.
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="frameParent37">
-                  <div className="frameParent38">
-                    <div className="aboutUsParent">
-                      <b className="aboutUs">{`About us `}</b>
-                      <div className="ourMissionGroup">
-                        <div className="ourMission">Our Mission</div>
-                        <div className="ourMission">{`Our Vision `}</div>
-                        <div className="ourMission">Our Story</div>
-                        <div className="ourMission">Our Team</div>
-                      </div>
-                    </div>
-                    <div className="quickLinksParent">
-                      <b className="quickLinks">Quick Links</b>
-                      <div className="ourMissionGroup">
-                        <div className="ourMission">Privacy Policy</div>
-                        <div className="ourMission">Terms of use</div>
-                        <div className="ourMission">Terms of Declaration</div>
-                      </div>
-                    </div>
-                    <div className="neurolxpParent">
-                      <div className="neurolxpGroup">
-                        <b className="neurolxp2">
-                          <span className="neurolxpTxt">
-                            <span className="neurolxp3">{`NeuroLXP `}</span>
-                            <span className="span">{` `}</span>
-                          </span>
-                        </b>
-                        <b className="tm">TM</b>
-                      </div>
-                      <div className="ourCustomersContainer">
-                        <div className="ourMission">Our Customers</div>
-                        <div className="ourMission">Smart Learning Paths</div>
-                        <div className="smartContentCreation">Smart Content Creation</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="frameParent40"></div>
-                </div>
-              </div>
-              <div className="copyright2026">Copyright @2026 | Prgeeq Global Solutions Pvt Ltd | All right reserved</div>
             </div>
           </div>
         </div>

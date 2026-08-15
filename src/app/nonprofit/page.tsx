@@ -199,7 +199,7 @@ const NGO: NextPage = () => {
 					<div className="image21Parent">
 						<div className="image212" aria-hidden="true" />
 						<div className="wrapperPexelsMbaClassroom2">
-							<Image className="pexelsMbaClassroom215566522Icon" src="/images/workingimage.png" width={781} height={552} sizes="100vw" alt="People collaborating with laptops" />
+							<Image className="pexelsMbaClassroom215566522Icon" src="/images/workingimage.webp" width={781} height={552} sizes="100vw" alt="People collaborating with laptops" />
 						</div>
 						<div className="ellipseDiv" aria-hidden="true" />
 						<div className="frameWrapper9">

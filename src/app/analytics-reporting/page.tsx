@@ -450,7 +450,7 @@ const AnalyticsReporting: NextPage = () => {
                 </div>
                 <div className="aiAnalyticsSpot">AI analytics spot struggling learners early, enabling timely, targeted support.</div>
               </div>
-              <Image className="maleCoworkersDoingPaperworkIcon" src="/images/analytics image.png" width={763} height={421} sizes="(max-width: 768px) 100vw, 763px" alt="Two coworkers reviewing documents" />
+              <Image className="maleCoworkersDoingPaperworkIcon" src="/images/analytics image.webp" width={763} height={421} sizes="(max-width: 768px) 100vw, 763px" alt="Two coworkers reviewing documents" />
             </div>
           </div>
         </div>
@@ -550,7 +550,7 @@ const AnalyticsReporting: NextPage = () => {
           </div>
         </div>
         <div className="ellipseParent">
-          <Image className="ellipseIcon" src="/icons/ana.png" width={1286} height={538} sizes="100vw" alt="" priority />
+          <Image className="ellipseIcon" src="/icons/ana.webp" width={1286} height={538} sizes="100vw" alt="" priority />
           <div className="frameParent56">
             <div className="frameChild50">Get Started</div>
             <div className="frameParent13">

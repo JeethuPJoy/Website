@@ -34,7 +34,7 @@ const EmployeeInduction: NextPage = () => {
             <div className="neurolxpSimplifiesOnboarding">NeuroLXP simplifies onboarding with structured learning from day one.</div>
           </div>
           <div className="businessmenClosingDealWithWrapper">
-            <Image className="businessmenClosingDealWithIcon" src="/images/businessmen.png" width={400} height={441} sizes="100vw" alt="" />
+            <Image className="businessmenClosingDealWithIcon" src="/images/businessmen.webp" width={400} height={441} sizes="100vw" alt="" />
           </div>
         </div>
         <div className="image20" />

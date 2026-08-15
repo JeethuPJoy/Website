@@ -230,6 +230,7 @@ export default function TalkToOurExpert({ isOpen, onClose, onPlayClick }: TalkTo
     dialogRef.current?.focus();
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    document.body.classList.add("modal-open");
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") onClose();
@@ -239,6 +240,7 @@ export default function TalkToOurExpert({ isOpen, onClose, onPlayClick }: TalkTo
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = previousOverflow;
+      document.body.classList.remove("modal-open");
       previousActiveElement.current?.focus();
     };
   }, [isOpen, onClose]);
@@ -318,10 +320,7 @@ export default function TalkToOurExpert({ isOpen, onClose, onPlayClick }: TalkTo
           <div className="tte-photo-panel">
             <div className="tte-photo-frame">
               <div className="tte-photo-inner">
-                <Image src="/images/talk-to-expert/expert-photo.png" alt="NeuroLXP learning expert wearing a headset, ready to help" fill sizes="(max-width: 1024px) 80vw, 434px" className="tte-photo" />
-                <button type="button" className="tte-play-button" onClick={() => onPlayClick?.()} aria-label="Play intro video">
-                  <PlayIcon />
-                </button>
+                <video src="/videos/TalkToOurExpert.mp4" autoPlay muted loop playsInline className="tte-photo" aria-label="NeuroLXP learning expert wearing a headset, ready to help" />
               </div>
             </div>
           </div>

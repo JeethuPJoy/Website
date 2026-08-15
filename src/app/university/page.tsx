@@ -73,7 +73,7 @@ const UniversityAndCollege: NextPage = () => {
 						<div className="frameWrapper3">
 							<div className="happyStudentsGraduationCereParent">
 								<div className="happyStudentsGraduationCere" />
-								<Image className="groupTeenagersDiscussingUniIcon" src="/images/university-university.png" width={1175} height={601} sizes="(max-width: 767px) 100vw, 1175px" alt="University students collaborating in a learning environment"
+								<Image className="groupTeenagersDiscussingUniIcon" src="/images/university-university.webp" width={1175} height={601} sizes="(max-width: 767px) 100vw, 1175px" alt="University students collaborating in a learning environment"
 									priority
 									fetchPriority="high"
 								/>
@@ -634,7 +634,7 @@ const UniversityAndCollege: NextPage = () => {
 					<div className="image209" />
 					<div className="image21Parent">
 						<div className="image21" />
-						<Image className="happyCollegeStudentsWithBoIcon" src="/images/university-students.png" width={603} height={546} sizes="(max-width: 767px) 100vw, 603px" alt="Future Ready Universities"
+						<Image className="happyCollegeStudentsWithBoIcon" src="/images/university-students.webp" width={603} height={546} sizes="(max-width: 767px) 100vw, 603px" alt="Future Ready Universities"
 														loading="lazy"
 														fetchPriority="low"
 													/>

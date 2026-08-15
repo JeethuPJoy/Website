@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 import "./DigitalLiteracy.css";
 
 function TopographicPattern({ className }: { className?: string }) {
@@ -76,7 +77,7 @@ function DigitalLiteracyHero() {
         <div className="dl-hero-media">
           <TopographicPattern className="dl-hero-pattern" />
           <div className="dl-hero-image-frame">
-            <Image src="/images/horizontal-shot-joyful-young-woman-with-glasses-posing-against-white-wall 1.png" alt="Employee learning digital skills" fill priority className="dl-hero-image" />
+            <Image src="/images/horizontal-shot-joyful-young-woman-with-glasses-posing-against-white-wall 1.webp" alt="Employee learning digital skills" fill priority className="dl-hero-image" />
           </div>
         </div>
       </div>
@@ -139,7 +140,7 @@ function DigitalLiteracySkillBanner() {
               <feBlend mode="normal" in2="effect1_innerShadow_903_9541" result="effect2_innerShadow_903_9541" />
             </filter>
             <pattern id="pattern0_903_9541" patternContentUnits="objectBoundingBox" width="0.475" height="1.68889">
-              <use xlinkHref="/images/dl-skill-banner-pattern.png" transform="scale(0.00078125 0.00277778)" />
+              <use xlinkHref="/images/dl-skill-banner-pattern.webp" transform="scale(0.00078125 0.00277778)" />
             </pattern>
             <filter id="filter1_d_903_9541" x="130.842" y="120.586" width="1021.5" height="146.213" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
@@ -500,6 +501,7 @@ export default function DigitalLiteracyPage() {
       <DigitalLiteracyHowItWorks />
       <DigitalLiteracyWhyNeuroLXP />
       <DigitalLiteracyCTA />
+      <TalkToExpertButton />
     </main>
   );
 }

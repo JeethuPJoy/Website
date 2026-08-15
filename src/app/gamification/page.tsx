@@ -52,7 +52,7 @@ const InteractiveGamifiedLearning: NextPage = () => {
               </div>
             </div>
           </div>
-          <Image className="mixRacedGroupStudentsWatchIcon" src="/images/gamified.png" width={674} height={489} sizes="(max-width: 768px) 100vw, 674px" alt="" priority />
+          <Image className="mixRacedGroupStudentsWatchIcon" src="/images/gamified.webp" width={674} height={489} sizes="(max-width: 768px) 100vw, 674px" alt="" priority />
         </div>
       </div>
       <div className="frameParent8">
@@ -455,7 +455,7 @@ const InteractiveGamifiedLearning: NextPage = () => {
               <div className="image21" />
               <div className="groupYoungBusinesspeopleUsi" />
 
-              <Image className="collageCustomerExperienceCoIcon" src="/images/students-gamification.png" width={693} height={583} sizes="(max-width: 768px) 100vw, 693px" alt="" />
+              <Image className="collageCustomerExperienceCoIcon" src="/images/students-gamification.webp" width={693} height={583} sizes="(max-width: 768px) 100vw, 693px" alt="" />
               <div className="frameParent55">
                 <div className="frameParent56">
                   <div className="resultIconCircle">
@@ -626,7 +626,7 @@ const InteractiveGamifiedLearning: NextPage = () => {
           <div className="frameChild38" />
         </div>
         <div className="masteryImageFrame">
-          <Image className="masteryImage" src="/images/ellipse.png" width={624} height={525} sizes="(max-width: 768px) 100vw, 624px" alt="Learner attending an online session" />
+          <Image className="masteryImage" src="/images/ellipse.webp" width={624} height={525} sizes="(max-width: 768px) 100vw, 624px" alt="Learner attending an online session" />
         </div>
       </div>
     </main>

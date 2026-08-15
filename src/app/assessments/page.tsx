@@ -11,31 +11,31 @@ const Assessments: NextPage = () => {
     {
       title: "Corporate Learning",
       subtitle: "and Development.",
-      image: "/images/Rectangle 77.png",
+      image: "/images/Rectangle 77.webp",
       className: "audiencePurple",
     },
     {
       title: "Universities and Higher",
       subtitle: "Education",
-      image: "/images/boy fifth image.png",
+      image: "/images/boy fifth image.webp",
       className: "audiencePink",
     },
     {
       title: "EdTech & Course",
       subtitle: "Providers",
-      image: "/images/Rectangle 78-2.png",
+      image: "/images/Rectangle 78-2.webp",
       className: "audienceOrange",
     },
     {
       title: "Schools and Online",
       subtitle: "Learning",
-      image: "/images/Rectangle 78-3.png",
+      image: "/images/Rectangle 78-3.webp",
       className: "audienceBlue",
     },
     {
       title: "Professional",
       subtitle: "Certification",
-      image: "/images/fourth assessments.png",
+      image: "/images/fourth assessments.webp",
       className: "audienceGreen",
     },
   ];

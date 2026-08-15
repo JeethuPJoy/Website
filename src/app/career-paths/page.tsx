@@ -12,22 +12,22 @@ const CareerPathwaysSkilling: NextPage = () => {
 	const targetAudienceItems = [
 		{
 			title: "Training Institutes",
-			image: "/images/seminar.png",
+			image: "/images/seminar.webp",
 			accentClass: "targetAudienceBlue",
 		},
 		{
 			title: "Universities",
-			image: "/images/building.png",
+			image: "/images/building.webp",
 			accentClass: "targetAudiencePink",
 		},
 		{
 			title: "Corporate Learning",
-			image: "/images/business.png",
+			image: "/images/business.webp",
 			accentClass: "targetAudiencePurple",
 		},
 		{
 			title: "EdTech Providers",
-			image: "/images/careers.jpg",
+			image: "/images/careers.webp",
 			accentClass: "targetAudienceOrange",
 		},
 	];
@@ -67,7 +67,7 @@ const CareerPathwaysSkilling: NextPage = () => {
       			</div>
       			<div className="frameParent2">
         				<div className="frameWrapper">
-          					<Image className="frameIcon" src="/images/group.png" width={934} height={532} sizes="100vw" alt="" />
+          					<Image className="frameIcon" src="/images/group.webp" width={934} height={532} sizes="100vw" alt="" />
         				</div>
         				<div className="frameWrapper2">
           					<div className="frameParent3">

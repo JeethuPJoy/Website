@@ -67,7 +67,7 @@ const MobileLearning: NextPage = () => {
 					<div className="mobileHeroVisual">
 						<Image
 							className="mobileHeroImage"
-							src="/images/imagemobile.png"
+							src="/images/imagemobile.webp"
 							alt="Learner using a smartphone"
 							width={620}
 							height={720}
@@ -474,7 +474,7 @@ const MobileLearning: NextPage = () => {
 				<section className="limitsSection" aria-labelledby="learning-without-limits-title">
 					<Image
 						className="limitsPolygon"
-						src="/images/ellipse 402.png"
+						src="/images/ellipse 402.webp"
 						alt=""
 						fill
 						sizes="(max-width: 900px) 100vw, 1286px"

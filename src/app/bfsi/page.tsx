@@ -196,7 +196,7 @@ export default function BfsiPage() {
             </div>
           </div>
           <div className="bfsi-banner-photo">
-            <Image src="/images/cheerful-young-man-holding-money.png" alt="BFSI professional using NeuroLXP" fill sizes="(max-width: 1024px) 90vw, 690px" className="bfsi-banner-photo-img" />
+            <Image src="/images/cheerful-young-man-holding-money.webp" alt="BFSI professional using NeuroLXP" fill sizes="(max-width: 1024px) 90vw, 690px" className="bfsi-banner-photo-img" />
           </div>
         </div>
       </section>
@@ -363,7 +363,7 @@ export default function BfsiPage() {
 
       <section className="bfsi-stat-banner">
         <div className="bfsi-stat-panel">
-          <Image src="/images/rupee-growth-graphic.png" alt="Rupee symbol with an ascending growth chart representing BFSI training returns" fill sizes="(max-width: 1024px) 100vw, 1280px" className="bfsi-stat-photo" style={{ objectPosition: "75% 40%" }} />
+          <Image src="/images/rupee-growth-graphic.webp" alt="Rupee symbol with an ascending growth chart representing BFSI training returns" fill sizes="(max-width: 1024px) 100vw, 1280px" className="bfsi-stat-photo" style={{ objectPosition: "75% 40%" }} />
           <div className="bfsi-stat-shadow-overlay" />
           <div className="bfsi-stat-content">
             <div className="bfsi-stat-badge">
@@ -402,7 +402,7 @@ export default function BfsiPage() {
 
       <section className="bfsi-finance-banner">
         <div className="bfsi-finance-panel">
-          <Image src="/images/Buillding-bfsi.png" alt="High-rise buildings representing future-ready finance learning" fill sizes="(max-width: 1024px) 100vw, 1280px" className="bfsi-finance-photo" />
+          <Image src="/images/Buillding-bfsi.webp" alt="High-rise buildings representing future-ready finance learning" fill sizes="(max-width: 1024px) 100vw, 1280px" className="bfsi-finance-photo" />
           <div className="bfsi-finance-overlay" />
           <div className="bfsi-finance-content">
             <div className="bfsi-finance-blur" />

@@ -80,7 +80,7 @@ export default function FinancialLiteracyPage() {
         </div>
         <div className={"heroOuterCircle"}>
           <div className={"heroInnerCircle"}>
-            <Image className={"ellipseIcon"} src="/images/Ellipse 357.png" width={560} height={560} sizes="560px" alt="Confident professional" priority />
+            <Image className={"ellipseIcon"} src="/images/Ellipse 357.webp" width={560} height={560} sizes="560px" alt="Confident professional" priority />
           </div>
         </div>
       </div>
@@ -108,24 +108,7 @@ export default function FinancialLiteracyPage() {
         <div className={"frameParent7"}>
           <div className={"frameParent8"}>
             <div className={"frameParent9"}>
-              {/* <div className={'wrapper'}>
-                <b className={'b'}>01</b>
-              </div> */}
-              {/* <Image
-                className={'rectangleIcon'}
-                src="/images/rectangle-panel.svg"
-                width={552}
-                height={146}
-                sizes="552px"
-                alt=""
-              /> */}
-              {/* <div className={'rectangleIcon'} aria-hidden="true" width={552}
-                height={146}
-                sizes="552px" />
-              <div className={'smartBudgetingParent'}>
-                <b className={'smartBudgeting'}>Smart Budgeting</b>
-                <div className={'planIncomeAnd'}>Plan income and expenses</div>
-              </div> */}
+
 
               <div className={"wrapper"}>
                 <b className={"b"}>01</b>
@@ -137,22 +120,6 @@ export default function FinancialLiteracyPage() {
               </div>
             </div>
             <div className={"frameParent9"}>
-              {/* <div className={'container'}>
-                <b className={'b'}>03</b>
-              </div>
-              <Image
-                className={'rectangleIconAlt'}
-                src="/images/rectangle-panel.svg"
-                width={552}
-                height={146}
-                sizes="552px"
-                alt=""
-              />
-              <div className={'creditManagementParent'}>
-                <b className={'smartBudgeting'}>Credit Management</b>
-                <div className={'borrowResponsibly'}>Borrow responsibly</div>
-              </div> */}
-
               <div className={"container"}>
                 <b className={"b"}>03</b>
               </div>
@@ -165,21 +132,6 @@ export default function FinancialLiteracyPage() {
           </div>
           <div className={"frameParent11"}>
             <div className={"frameParent9"}>
-              {/* <div className={'frame'}>
-                <b className={'b'}>02</b>
-              </div>
-              <Image
-                className={'rectangleIcon'}
-                src="/images/rectangle-panel.svg"
-                width={552}
-                height={146}
-                sizes="552px"
-                alt=""
-              />
-              <div className={'savingEssentialsParent'}>
-                <b className={'smartBudgeting'}>Saving Essentials</b>
-                <div className={'growSavingsAnd'}>Grow savings and investments</div>
-              </div> */}
 
               <div className={"frame"}>
                 <b className={"b"}>02</b>
@@ -191,22 +143,7 @@ export default function FinancialLiteracyPage() {
               </div>
             </div>
             <div className={"frameParent9"}>
-              {/* <div className={'wrapper2'}>
-                <b className={'b4'}>04</b>
-              </div>
-              <Image
-                className={'rectangleIcon'}
-                src="/images/rectangle-panel.svg"
-                width={552}
-                height={146}
-                sizes="552px"
-                alt=""
-              />
-              <div className={'smartBudgetingParent'}>
-                <b className={'smartBudgeting'}>Future Planning</b>
-                <div className={'achieveFinancialGoals'}>Achieve financial goals</div>
-              </div> */}
-
+              
               <div className={"wrapper2"}>
                 <b className={"b4"}>04</b>
               </div>

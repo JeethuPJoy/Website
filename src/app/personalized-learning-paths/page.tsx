@@ -305,7 +305,7 @@ const benefitTabs: BenefitTab[] = [
     id: "learners",
     label: "For Learners",
     imageStyle: "cutout",
-    photo: "/images/photot-handsome-male-student.png",
+    photo: "/images/photot-handsome-male-student.webp",
     photoAlt: "Two students holding books",
     checklist: ["Clear learning journey", "Greater confidence", "Practical skill development", "Faster career readiness"],
   },
@@ -313,7 +313,7 @@ const benefitTabs: BenefitTab[] = [
     id: "institutions",
     label: "Educational Institutions",
     imageStyle: "cover",
-    photo: "/images/handsome-male-student.jpg",
+    photo: "/images/handsome-male-student.webp",
     photoAlt: "Three students walking down campus steps",
     checklist: ["Structured curriculum delivery", "Competency-based learning", "Measurable learner outcomes", "Progress visibility"],
   },
@@ -321,7 +321,7 @@ const benefitTabs: BenefitTab[] = [
     id: "organizations",
     label: "Training Organizations",
     imageStyle: "cover",
-    photo: "/images/hadsome-male-student-groupmate.jpg",
+    photo: "/images/hadsome-male-student-groupmate.webp",
     photoAlt: "Corporate trainer presenting to a seated group in an office",
     checklist: ["Standardized learning journeys", "Skill-based development", "Performance tracking", "Scalable training"],
   },
@@ -380,7 +380,7 @@ function BenefitsSection() {
         <div className="plp-benefits-photo-wrap">
           {activeTab.imageStyle === "cutout" ? (
             <>
-              <Image src="/images/personalised-learning-background.png" alt="" fill className="plp-benefits-pattern-bg" />
+              <Image src="/images/personalised-learning-background.webp" alt="" fill className="plp-benefits-pattern-bg" />
               <div className="plp-benefits-cutout-photo-wrap">
                 <Image src={activeTab.photo} alt={activeTab.photoAlt} fill className="plp-benefits-cutout-photo" />
               </div>
@@ -430,7 +430,7 @@ export default function PersonalizedLearningPathsPage() {
         <div className="plp-hero-visual">
           <div className="plp-hero-image-frame">
             <div className="plp-hero-image-wrap">
-              <Image src="/images/roommates-using-laptop.png" alt="Learner using a laptop" fill className="plp-hero-image" />
+              <Image src="/images/roommates-using-laptop.webp" alt="Learner using a laptop" fill className="plp-hero-image" />
             </div>
           </div>
 

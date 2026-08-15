@@ -36,13 +36,13 @@ const MediaPresence: NextPage = () => {
         </nav>
         <div className="frameParent4">
           <div className="frameWrapper2">
-            <Image className="frameIcon" src="/images/img1-media.png" width={268} height={268} sizes="100vw" alt="" />
+            <Image className="frameIcon" src="/images/img1-media.webp" width={268} height={268} sizes="100vw" alt="" />
           </div>
           <div className="frameWrapper3">
-            <Image className="frameChild3" src="/images/img2-media.png" width={368} height={368} sizes="100vw" alt="" />
+            <Image className="frameChild3" src="/images/img2-media.webp" width={368} height={368} sizes="100vw" alt="" />
           </div>
           <div className="frameWrapper4">
-            <Image className="frameIcon" src="/images/img3-media.png" width={268} height={268} sizes="100vw" alt="" />
+            <Image className="frameIcon" src="/images/img3-media.webp" width={268} height={268} sizes="100vw" alt="" />
           </div>
         </div>
 

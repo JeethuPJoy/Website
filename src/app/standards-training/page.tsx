@@ -279,7 +279,7 @@ const StandardsTraining: NextPage = () => {
 				<div className="ellipseImageFrame">
 					<Image
 						className="ellipseBg"
-						src="/images/bg-training.png"
+						src="/images/bg-training.webp"
 						width={1216}
 						height={555}
 						sizes="(max-width: 1286px) 94vw, 1216px"
@@ -288,7 +288,7 @@ const StandardsTraining: NextPage = () => {
 					/>
 					<Image
 						className="frameChild30"
-						src="/images/ellipsecircle.png"
+						src="/images/ellipsecircle.webp"
 						width={1286}
 						height={540}
 						sizes="(max-width: 1286px) 100vw, 1286px"

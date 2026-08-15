@@ -48,7 +48,7 @@ const Bootcamp: NextPage = () => {
               <div className="neurolabsCodingBootcamps">NeuroLabs Coding Bootcamps build job-ready programming skills through intensive, hands-on learning, real-world coding, interactive labs, and expert mentorship.</div>
             </div>
 
-            <Image className="image33Icon" src="/images/student.png" width={366} height={578} sizes="366px" alt="Coding bootcamp student" priority />
+            <Image className="image33Icon" src="/images/student.webp" width={366} height={578} sizes="366px" alt="Coding bootcamp student" priority />
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@ const Bootcamp: NextPage = () => {
               </div>
               <div className="frameChild7 iconBlue">
                 <div className="codeIconCircle">
-                  <Image className="codeBoxImage" src="/icons/brace.png" alt="Code" width={40} height={40} />
+                  <Image className="codeBoxImage" src="/icons/brace.webp" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@ const Bootcamp: NextPage = () => {
               </div>
               <div className="frameChild7 iconPurple">
                 <div className="codeIconCircle">
-                  <Image className="codeBoxImage" src="/icons/globe.png" alt="Code" width={40} height={40} />
+                  <Image className="codeBoxImage" src="/icons/globe.webp" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@ const Bootcamp: NextPage = () => {
               </div>
               <div className="frameChild7 iconPink">
                 <div className="codeIconCircle">
-                  <Image className="codeBoxImage" src="/icons/icon.png" alt="Code" width={40} height={40} />
+                  <Image className="codeBoxImage" src="/icons/icon.webp" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
@@ -156,7 +156,7 @@ const Bootcamp: NextPage = () => {
               </div>
               <div className="frameChild7 iconGreen">
                 <div className="codeIconCircle">
-                  <Image className="codeBoxImage" src="/icons/icon2.png" alt="Code" width={40} height={40} />
+                  <Image className="codeBoxImage" src="/icons/icon2.webp" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
@@ -374,7 +374,7 @@ const Bootcamp: NextPage = () => {
       </div>
       <div className="rectangleParent3">
         <div className="rectangle2" />
-        <Image className="image202" src="/images/bootbg.png" alt="NeuroLabs Coding Bootcamp Background" width={1280} height={800} priority />
+        <Image className="image202" src="/images/bootbg.webp" alt="NeuroLabs Coding Bootcamp Background" width={1280} height={800} priority />
 
         <div className="frameParent45">
           <div className="neurolabsCodingBootcampsFasParent">
@@ -397,7 +397,7 @@ const Bootcamp: NextPage = () => {
           <div className="image21" />
           <div className="futureReadyTechCareersParent">
             <b className="futureReadyTechCareers">Future-Ready Tech Careers</b>
-            <Image className="image24Icon" src="/images/tech.png" width={1216} height={548} sizes="100vw" alt="" />
+            <Image className="image24Icon" src="/images/tech.webp" width={1216} height={548} sizes="100vw" alt="" />
           </div>
           <div className="frameChild35" />
         </div>

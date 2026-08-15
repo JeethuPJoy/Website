@@ -286,7 +286,7 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               </div>
             </div>
           </div>
-          <Image className="flatLayStatisticsPresentatiIcon" src="/images/flat-lay-statistics-presentation-with-chart-arrows 1.png" width={707} height={331} sizes="100vw" alt="Learning progress arrows chart" />
+          <Image className="flatLayStatisticsPresentatiIcon" src="/images/flat-lay-statistics-presentation-with-chart-arrows 1.webp" width={707} height={331} sizes="100vw" alt="Learning progress arrows chart" />
         </div>
         <div className="frameParent18">
           <div className="frameParent19">
@@ -839,7 +839,7 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               <div className="groupYoungBusinesspeopleUsi" />
               <div className="rectangleIcon" aria-hidden="true" />
               <div className="collageCustomerExperienceCoParent">
-                <Image className="collageCustomerExperienceCoIcon" src="/images/collage-customer-experience-concept 1.png" width={606} height={473} sizes="100vw" alt="Goal setting and progress growth chart" />
+                <Image className="collageCustomerExperienceCoIcon" src="/images/collage-customer-experience-concept 1.webp" width={606} height={473} sizes="100vw" alt="Goal setting and progress growth chart" />
                 <div className="frameWrapper18">
                   <div className="frameParent56">
                     <div className="starParent">
@@ -874,7 +874,7 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
           </div>
         </div>
         <div className="rectangleParent">
-          <Image className="rectangle" src="/images/Frame 2095586948.png" width={1280} height={505} sizes="100vw" alt="" aria-hidden="true" />
+          <Image className="rectangle" src="/images/Frame 2095586948.webp" width={1280} height={505} sizes="100vw" alt="" aria-hidden="true" />
           <div className="image207" />
           <div className="frameParent57">
             <div className="progressWithPurposeParent">
@@ -894,7 +894,7 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               </div>
             </div>
           </div>
-          <Image className="handHoldingWoodenCubeWithIcon" src="/images/hand-holding-wooden-cube-with-target 1.png" width={601} height={500} sizes="100vw" alt="Business professional selecting an idea" />
+          <Image className="handHoldingWoodenCubeWithIcon" src="/images/hand-holding-wooden-cube-with-target 1.webp" width={601} height={500} sizes="100vw" alt="Business professional selecting an idea" />
         </div>
         <div className="frameParent75">
           <div className="frameParent76">

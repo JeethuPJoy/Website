@@ -2,7 +2,7 @@
 
 import "./Bookademo.css";
 import Link from "next/link";
-import { useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { allCountries } from "country-telephone-data";
 
 function PresentationIcon({ className }: { className?: string }) {
@@ -44,12 +44,23 @@ function PhoneIcon({ className }: { className?: string }) {
   );
 }
 
-function TargetIcon({ className }: { className?: string }) {
+function CalendarIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" className={className} aria-hidden="true" focusable="false">
+      <rect x="3" y="4.5" width="14" height="12.5" rx="1.5" stroke="#2F3547" strokeWidth="1.25" />
+      <path d="M6.5 3V6" stroke="#2F3547" strokeWidth="1.25" strokeLinecap="round" />
+      <path d="M13.5 3V6" stroke="#2F3547" strokeWidth="1.25" strokeLinecap="round" />
+      <path d="M3 8.5H17" stroke="#2F3547" strokeWidth="1.25" />
+      <path d="M7.5 12.5L9.1 14L13 10.5" stroke="#2F3547" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function ClockIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 20 20" fill="none" className={className} aria-hidden="true" focusable="false">
       <circle cx="10" cy="10" r="7.5" stroke="#2F3547" strokeWidth="1.25" />
-      <circle cx="10" cy="10" r="4.5" stroke="#2F3547" strokeWidth="1.25" />
-      <circle cx="10" cy="10" r="1.5" fill="#2F3547" />
+      <path d="M10 6V10L13 12" stroke="#2F3547" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -78,8 +89,6 @@ function CheckIcon({ className }: { className?: string }) {
   );
 }
 
-const primaryRequirementOptions = ["Dummy Option 1", "Dummy Option 2", "Dummy Option 3", "Dummy Option 4"];
-
 const countryCodeOptions = allCountries
   .map((country) => ({
     id: country.iso2,
@@ -88,48 +97,217 @@ const countryCodeOptions = allCountries
   }))
   .sort((a, b) => a.label.localeCompare(b.label));
 
-const defaultCountryOption = countryCodeOptions.find((option) => option.id === "in") ?? countryCodeOptions[0];
-
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phonePattern = /^\d{7,15}$/;
+
+const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const WEEKDAY_LABELS = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
+
+function formatIso(year: number, month: number, day: number) {
+  const mm = String(month + 1).padStart(2, "0");
+  const dd = String(day).padStart(2, "0");
+  return `${year}-${mm}-${dd}`;
+}
+
+function formatDisplayDate(iso: string) {
+  const [year, month, day] = iso.split("-").map(Number);
+  return `${day} ${MONTH_NAMES[month - 1].slice(0, 3)} ${year}`;
+}
+
+type CalendarCell = {
+  day: number;
+  iso: string | null;
+  currentMonth: boolean;
+  isPast: boolean;
+};
+
+function getCalendarCells(year: number, month: number): CalendarCell[] {
+  const firstWeekday = new Date(year, month, 1).getDay();
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const daysInPrevMonth = new Date(year, month, 0).getDate();
+  const startOfToday = new Date();
+  startOfToday.setHours(0, 0, 0, 0);
+
+  const cells: CalendarCell[] = [];
+
+  for (let i = firstWeekday - 1; i >= 0; i--) {
+    cells.push({ day: daysInPrevMonth - i, iso: null, currentMonth: false, isPast: false });
+  }
+
+  for (let day = 1; day <= daysInMonth; day++) {
+    const cellDate = new Date(year, month, day);
+    cells.push({ day, iso: formatIso(year, month, day), currentMonth: true, isPast: cellDate < startOfToday });
+  }
+
+  let trailingDay = 1;
+  while (cells.length < 42) {
+    cells.push({ day: trailingDay, iso: null, currentMonth: false, isPast: false });
+    trailingDay += 1;
+  }
+
+  return cells;
+}
+
+type NeumorphicCalendarProps = {
+  panelId: string;
+  selectedDate: string;
+  viewYear: number;
+  viewMonth: number;
+  yearOptions: number[];
+  todayIso: string;
+  onSelectDate: (iso: string) => void;
+  onViewMonthChange: (month: number) => void;
+  onViewYearChange: (year: number) => void;
+};
+
+function NeumorphicCalendar({ panelId, selectedDate, viewYear, viewMonth, yearOptions, todayIso, onSelectDate, onViewMonthChange, onViewYearChange }: NeumorphicCalendarProps) {
+  const cells = getCalendarCells(viewYear, viewMonth);
+
+  return (
+    <div className="book-demo-calendar-panel" role="dialog" aria-label="Choose a date" id={panelId}>
+      <div className="book-demo-calendar-controls">
+        <span className="book-demo-calendar-select-wrap">
+          <select className="book-demo-calendar-select" value={viewMonth} onChange={(event) => onViewMonthChange(Number(event.target.value))} aria-label="Month">
+            {MONTH_NAMES.map((name, index) => (
+              <option key={name} value={index}>
+                {name}
+              </option>
+            ))}
+          </select>
+          <ChevronDownIcon className="book-demo-calendar-select-chevron" />
+        </span>
+        <span className="book-demo-calendar-select-wrap">
+          <select className="book-demo-calendar-select" value={viewYear} onChange={(event) => onViewYearChange(Number(event.target.value))} aria-label="Year">
+            {yearOptions.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </select>
+          <ChevronDownIcon className="book-demo-calendar-select-chevron" />
+        </span>
+      </div>
+
+      <div className="book-demo-calendar-weekdays">
+        {WEEKDAY_LABELS.map((label) => (
+          <span key={label} className="book-demo-calendar-weekday">
+            {label}
+          </span>
+        ))}
+      </div>
+
+      <div className="book-demo-calendar-grid">
+        {cells.map((cell, index) => {
+          const isSelectable = cell.currentMonth && !cell.isPast;
+          const classNames = ["book-demo-calendar-day"];
+          if (!cell.currentMonth) classNames.push("book-demo-calendar-day-muted");
+          if (cell.iso === selectedDate) classNames.push("book-demo-calendar-day-selected");
+          if (cell.iso === todayIso) classNames.push("book-demo-calendar-day-today");
+          return (
+            <button key={index} type="button" className={classNames.join(" ")} disabled={!isSelectable} onClick={() => cell.iso && onSelectDate(cell.iso)}>
+              {cell.day}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
 
 export default function BookADemo() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
-  const [countryCode, setCountryCode] = useState(defaultCountryOption.id);
+  const [countryCode, setCountryCode] = useState("");
   const [phone, setPhone] = useState("");
-  const [requirement, setRequirement] = useState("");
+  const [dateValue, setDateValue] = useState("");
+  const [timeValue, setTimeValue] = useState("");
   const [message, setMessage] = useState("");
   const [consent, setConsent] = useState(false);
   const [touched, setTouched] = useState({
     fullName: false,
     email: false,
+    countryCode: false,
     phone: false,
-    requirement: false,
+    date: false,
+    time: false,
   });
+
+  const now = new Date();
+  const todayIso = formatIso(now.getFullYear(), now.getMonth(), now.getDate());
+  const currentYear = now.getFullYear();
+  const yearOptions = [currentYear, currentYear + 1, currentYear + 2];
+
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+  const [viewYear, setViewYear] = useState(currentYear);
+  const [viewMonth, setViewMonth] = useState(now.getMonth());
+  const dateFieldRef = useRef<HTMLDivElement | null>(null);
+  const dateButtonRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    if (!isCalendarOpen) return;
+    const handlePointerDown = (event: MouseEvent) => {
+      if (dateFieldRef.current && !dateFieldRef.current.contains(event.target as Node)) {
+        setIsCalendarOpen(false);
+      }
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsCalendarOpen(false);
+        dateButtonRef.current?.focus();
+      }
+    };
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isCalendarOpen]);
 
   const isFullNameValid = fullName.trim().length > 0;
   const isEmailValid = emailPattern.test(email.trim());
+  const isCountryCodeValid = countryCode.trim().length > 0;
   const isPhoneValid = phonePattern.test(phone.trim());
-  const isRequirementValid = requirement.trim().length > 0;
-  const isFormValid = isFullNameValid && isEmailValid && isPhoneValid && isRequirementValid && consent;
+  const isDateValid = dateValue.trim().length > 0;
+  const isTimeValid = timeValue.trim().length > 0;
+  const isFormValid = isFullNameValid && isEmailValid && isCountryCodeValid && isPhoneValid && isDateValid && isTimeValid && consent;
 
   const markTouched = (field: keyof typeof touched) => {
     setTouched((current) => ({ ...current, [field]: true }));
+  };
+
+  const toggleCalendar = () => {
+    setIsCalendarOpen((open) => {
+      const next = !open;
+      if (next && dateValue) {
+        const [year, month] = dateValue.split("-").map(Number);
+        setViewYear(year);
+        setViewMonth(month - 1);
+      }
+      return next;
+    });
+  };
+
+  const handleSelectDate = (iso: string) => {
+    setDateValue(iso);
+    setIsCalendarOpen(false);
+    dateButtonRef.current?.focus();
   };
 
   const nameId = useId();
   const emailId = useId();
   const countryId = useId();
   const phoneId = useId();
-  const requirementId = useId();
+  const dateId = useId();
+  const timeId = useId();
   const messageId = useId();
   const consentId = useId();
   const headingId = useId();
+  const calendarPanelId = useId();
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    setTouched({ fullName: true, email: true, phone: true, requirement: true });
+    setTouched({ fullName: true, email: true, countryCode: true, phone: true, date: true, time: true });
     if (!isFormValid) return;
   };
 
@@ -140,10 +318,10 @@ export default function BookADemo() {
           <h2 className="book-demo-title" id={headingId}>
             Book a Demo
           </h2>
-          <p className="book-demo-subtitle">
+          {/* <p className="book-demo-subtitle">
             <PresentationIcon className="book-demo-subtitle-icon" />
             Schedule Your Personalized Demo
-          </p>
+          </p> */}
         </div>
 
         <form className="book-demo-form" onSubmit={handleSubmit}>
@@ -212,10 +390,21 @@ export default function BookADemo() {
                 <label htmlFor={countryId} className="sr-only">
                   Country code
                 </label>
-                <select id={countryId} className="book-demo-select-field book-demo-country-select" value={countryCode} onChange={(event) => setCountryCode(event.target.value)}>
+                <select
+                  id={countryId}
+                  className="book-demo-select-field book-demo-country-select"
+                  value={countryCode}
+                  onChange={(event) => setCountryCode(event.target.value)}
+                  onBlur={() => markTouched("countryCode")}
+                  aria-invalid={touched.countryCode && !isCountryCodeValid}
+                  aria-describedby={touched.countryCode && !isCountryCodeValid ? `${countryId}-error` : undefined}
+                  required>
+                  <option value="" disabled>
+                    Select
+                  </option>
                   {countryCodeOptions.map((option) => (
                     <option key={option.id} value={option.id}>
-                      {`${option.dialCode} ${option.label}`}
+                      {option.dialCode}
                     </option>
                   ))}
                 </select>
@@ -239,6 +428,11 @@ export default function BookADemo() {
                 />
               </div>
             </div>
+            {touched.countryCode && !isCountryCodeValid && (
+              <p id={`${countryId}-error`} className="book-demo-error" role="alert">
+                Please select a country code.
+              </p>
+            )}
             {touched.phone && !isPhoneValid && (
               <p id={`${phoneId}-error`} className="book-demo-error" role="alert">
                 Please enter a valid phone number (digits only).
@@ -247,36 +441,71 @@ export default function BookADemo() {
           </div>
 
           <div className="book-demo-field">
-            <label htmlFor={requirementId} className="book-demo-label">
-              Primary Requirement
+            <label htmlFor={dateId} className="book-demo-label">
+              Preferred Demo Date and Time
             </label>
-            <div className="book-demo-input-wrap">
-              <span className="book-demo-input-icon" aria-hidden="true">
-                <TargetIcon />
-              </span>
-              <select
-                id={requirementId}
-                className="book-demo-select-field"
-                value={requirement}
-                onChange={(event) => setRequirement(event.target.value)}
-                onBlur={() => markTouched("requirement")}
-                aria-invalid={touched.requirement && !isRequirementValid}
-                aria-describedby={touched.requirement && !isRequirementValid ? `${requirementId}-error` : undefined}
-                required>
-                <option value="" disabled>
-                  Select Primary Requirement
-                </option>
-                {primaryRequirementOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-              <ChevronDownIcon className="book-demo-select-chevron" />
+            <div className="book-demo-datetime-row">
+              <div className="book-demo-date-wrap" ref={dateFieldRef}>
+                <button
+                  type="button"
+                  id={dateId}
+                  ref={dateButtonRef}
+                  className="book-demo-input-wrap book-demo-date-trigger"
+                  onClick={toggleCalendar}
+                  onBlur={() => markTouched("date")}
+                  aria-haspopup="dialog"
+                  aria-expanded={isCalendarOpen}
+                  aria-controls={calendarPanelId}
+                  aria-invalid={touched.date && !isDateValid}
+                  aria-describedby={touched.date && !isDateValid ? `${dateId}-error` : undefined}>
+                  <span className="book-demo-input-icon" aria-hidden="true">
+                    <CalendarIcon />
+                  </span>
+                  <span className={`book-demo-input book-demo-date-display${dateValue ? "" : " book-demo-date-placeholder"}`}>{dateValue ? formatDisplayDate(dateValue) : "Select your preferred Date"}</span>
+                </button>
+                {isCalendarOpen && (
+                  <NeumorphicCalendar
+                    panelId={calendarPanelId}
+                    selectedDate={dateValue}
+                    viewYear={viewYear}
+                    viewMonth={viewMonth}
+                    yearOptions={yearOptions}
+                    todayIso={todayIso}
+                    onSelectDate={handleSelectDate}
+                    onViewMonthChange={setViewMonth}
+                    onViewYearChange={setViewYear}
+                  />
+                )}
+              </div>
+
+              <div className="book-demo-input-wrap book-demo-time-wrap">
+                <span className="book-demo-input-icon" aria-hidden="true">
+                  <ClockIcon />
+                </span>
+                <label htmlFor={timeId} className="sr-only">
+                  Preferred time
+                </label>
+                <input
+                  id={timeId}
+                  type="time"
+                  className="book-demo-input book-demo-time-input"
+                  value={timeValue}
+                  onChange={(event) => setTimeValue(event.target.value)}
+                  onBlur={() => markTouched("time")}
+                  aria-invalid={touched.time && !isTimeValid}
+                  aria-describedby={touched.time && !isTimeValid ? `${timeId}-error` : undefined}
+                  required
+                />
+              </div>
             </div>
-            {touched.requirement && !isRequirementValid && (
-              <p id={`${requirementId}-error`} className="book-demo-error" role="alert">
-                Please select a primary requirement.
+            {touched.date && !isDateValid && (
+              <p id={`${dateId}-error`} className="book-demo-error" role="alert">
+                Please select a preferred date.
+              </p>
+            )}
+            {touched.time && !isTimeValid && (
+              <p id={`${timeId}-error`} className="book-demo-error" role="alert">
+                Please select a preferred time.
               </p>
             )}
           </div>

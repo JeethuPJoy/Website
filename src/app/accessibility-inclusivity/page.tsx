@@ -30,8 +30,8 @@ const AccessibilityInclusivity: NextPage = () => {
 						<div className="peopleTakingPartBusinessEv" />
 						<div className="image21" />
 						<div className="groupYoungBusinesspeopleUsi" />
-						<Image className="frameInner" src="/images/bg-access.png" width={1216} height={621} sizes="100vw" alt="" />
-						<Image className="youngAdultWatchingTvShowWIcon" src="/images/work.png" width={572} height={652} sizes="100vw" alt="" />
+						<Image className="frameInner" src="/images/bg-access.webp" width={1216} height={621} sizes="100vw" alt="" />
+						<Image className="youngAdultWatchingTvShowWIcon" src="/images/work.webp" width={572} height={652} sizes="100vw" alt="" />
 					</div>
 					<div className="frameParent3">
 						<div className="frameParent4">
@@ -254,7 +254,7 @@ const AccessibilityInclusivity: NextPage = () => {
 					<div className="learningAnalytics">
 						<Image
 								className="teamSupportingInvalidWoman"
-								src="/images/Learning.png"
+								src="/images/Learning.webp"
 								width={530}
 								height={488}
 								sizes="100vw"

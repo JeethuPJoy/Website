@@ -73,19 +73,19 @@ const ContentIntelligenceManagement: NextPage = () => {
     {
       title: "Higher Education",
       description: "Manage academic content and learning programs at scale.",
-      image: "/images/firstlady.png",
+      image: "/images/firstlady.webp",
       alt: "Graduate holding a diploma",
     },
     {
       title: "Schools & Digital Learning",
       description: "Create structured and engaging digital education experiences.",
-      image: "/images/second.png",
+      image: "/images/second.webp",
       alt: "Learners using digital learning resources",
     },
     {
       title: "Corporate",
       description: "Support employee growth and upskilling.",
-      image: "/images/third.png",
+      image: "/images/third.webp",
       alt: "Professionals collaborating in a workplace",
     },
   ];
@@ -291,7 +291,7 @@ const ContentIntelligenceManagement: NextPage = () => {
           </div>
         </div>
         <div className="rectangleParent">
-          <Image className="frameChild13" src="/images/image-shadow.png" width={1196} height={595} sizes="100vw" alt="" aria-hidden="true" />
+          <Image className="frameChild13" src="/images/image-shadow.webp" width={1196} height={595} sizes="100vw" alt="" aria-hidden="true" />
           <div className="frameParent32">
             <div className="frameWrapper35">
               <div className="frameContainer">

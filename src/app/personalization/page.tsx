@@ -167,7 +167,7 @@ const Personalization: NextPage = () => {
         </section>
 
         <div className="vectorParent">
-          <Image className="rectangleIcon" src="/images/Rectangle 66.png" width={1440} height={668} sizes="100vw" alt="" aria-hidden="true" />
+          <Image className="rectangleIcon" src="/images/Rectangle 66.webp" width={1440} height={668} sizes="100vw" alt="" aria-hidden="true" />
           <div className="frameParent4">
             <div className="xParent">
               <p className="x" style={{ margin: 0 }}>
@@ -503,7 +503,7 @@ const Personalization: NextPage = () => {
           <div className="frameParent47 modernLearningFeatures">
             <article className="modernLearningFeature modernLearningFeatureStructured">
               <span className="frameChild24 modernLearningIcon" aria-hidden="true">
-                <Image className="modernLearningOuterCircle" src="/images/image.png" width={78} height={78} alt="" />
+                <Image className="modernLearningOuterCircle" src="/images/image.webp" width={78} height={78} alt="" />
                 <Image className="modernLearningCircleBase" src="/icons/Ellipse 334-2-1.svg" width={71} height={71} alt="" />
                 <Image className="featureIconSingle" src="/icons/folder-library.svg" width={30} height={30} alt="" />
               </span>
@@ -515,7 +515,7 @@ const Personalization: NextPage = () => {
 
             <article className="modernLearningFeature modernLearningFeatureAdaptive">
               <span className="frameChild24 modernLearningIcon" aria-hidden="true">
-                <Image className="modernLearningOuterCircle" src="/images/image.png" width={78} height={78} alt="" />
+                <Image className="modernLearningOuterCircle" src="/images/image.webp" width={78} height={78} alt="" />
                 <Image className="modernLearningCircleBase" src="/icons/Ellipse 334-2-1.svg" width={71} height={71} alt="" />
                 <Image className="featureIconSingle" src="/icons/refresh-04.svg" width={30} height={30} alt="" />
               </span>
@@ -527,7 +527,7 @@ const Personalization: NextPage = () => {
 
             <article className="modernLearningFeature modernLearningFeatureCompetency">
               <span className="frameChild24 modernLearningIcon" aria-hidden="true">
-                <Image className="modernLearningOuterCircle" src="/images/image.png" width={78} height={78} alt="" />
+                <Image className="modernLearningOuterCircle" src="/images/image.webp" width={78} height={78} alt="" />
                 <Image className="modernLearningCircleBase" src="/icons/Ellipse 334-2-1.svg" width={71} height={71} alt="" />
                 <Image className="featureIconSingle" src="/icons/champion.svg" width={30} height={30} alt="" />
               </span>
@@ -539,7 +539,7 @@ const Personalization: NextPage = () => {
 
             <article className="modernLearningFeature modernLearningFeatureInsights">
               <span className="frameChild24 modernLearningIcon" aria-hidden="true">
-                <Image className="modernLearningOuterCircle" src="/images/image.png" width={78} height={78} alt="" />
+                <Image className="modernLearningOuterCircle" src="/images/image.webp" width={78} height={78} alt="" />
                 <Image className="modernLearningCircleBase" src="/icons/Ellipse 334-2-1.svg" width={71} height={71} alt="" />
                 <Image className="featureIconSingle" src="/icons/chart-no-axes-combined.svg" width={30} height={30} alt="" />
               </span>
@@ -552,10 +552,10 @@ const Personalization: NextPage = () => {
         </section>
 
         <div className="rectangleParent7">
-          <Image className="personalizationCtaBackground" src="/images/Frame 2095586948.png" fill sizes="(max-width: 1440px) 100vw, 1280px" alt="" aria-hidden="true" />
+          <Image className="personalizationCtaBackground" src="/images/Frame 2095586948.webp" fill sizes="(max-width: 1440px) 100vw, 1280px" alt="" aria-hidden="true" />
           <div className="rectangle" />
           <div className="image206" />
-          <Image className="handHoldingWoodenCubeWithIcon" src="/images/women.png" width={680} height={536} sizes="(max-width: 768px) 48vw, 680px" alt="Person using personalized learning powered by NeuroLXP" />
+          <Image className="handHoldingWoodenCubeWithIcon" src="/images/women.webp" width={680} height={536} sizes="(max-width: 768px) 48vw, 680px" alt="Person using personalized learning powered by NeuroLXP" />
           <div className="frameParent52">
             <div className="makeLearningPersonalParent">
               <h2 className="makeLearningPersonal" style={{ margin: 0 }}>

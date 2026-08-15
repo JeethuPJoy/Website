@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="nlxp-footer-top">
           <div className="nlxp-footer-brand">
             <div className="nlxp-footer-brand-top">
-              <Image src="/images/logo_01_synapse_spark.png" alt="NeuroLXP" width={299} height={112} className="nlxp-footer-logo" />
+              <Image src="/images/logo_01_synapse_spark.webp" alt="NeuroLXP" width={299} height={112} className="nlxp-footer-logo" />
               <div className="nlxp-footer-tagline">
                 <span className="nlxp-footer-tagline-text">One Platform</span>
                 <SparkleIcon className="nlxp-footer-sparkle" />

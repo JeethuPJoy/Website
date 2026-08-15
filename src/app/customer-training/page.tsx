@@ -234,7 +234,7 @@ const CustomerTraining: NextPage = () => {
             </button>
           </div>
         </div>
-        <Image className="frameChild29" src="/images/rectangle 73(1).png" width={935} height={498} sizes="(max-width: 935px) 100vw, 935px" alt="Customer Success" priority />
+        <Image className="frameChild29" src="/images/rectangle 73(1).webp" width={935} height={498} sizes="(max-width: 935px) 100vw, 935px" alt="Customer Success" priority />
       </div>
     </main>
   );

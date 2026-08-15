@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import type { ReactNode } from "react";
 import Image from "next/image";
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
+import BookDemoTrigger from "@/components/Bookademo/BookDemoTrigger";
 import "./information-literacy.css";
 
 type ThinkingCardData = {
@@ -124,7 +126,7 @@ const InformationLiteracy: NextPage = () => {
     <div className="informationLiteracy">
       <div className="image20Parent">
         <div className="image20">
-          <Image src="/images/bg2.png" fill sizes="100vw" alt="" className="researchBackgroundImage" />
+          <Image src="/images/bg2.webp" fill sizes="100vw" alt="" className="researchBackgroundImage" />
         </div>
 
         <div className="frameParent">
@@ -205,7 +207,7 @@ const InformationLiteracy: NextPage = () => {
         <g filter="url(#heroExactInnerShadow)">
           <path d="M720.5 -228L1430.79 -56.6879L1606.22 328.247L1114.68 636.941H326.317L-165.222 328.247L10.2061 -56.6879L720.5 -228Z" fill="#DFE6E9" />
 
-          <image href="/images/bg1.png" x="-166" y="-228" width="1772" height="865" preserveAspectRatio="xMidYMid slice" opacity="0.1" clipPath="url(#heroShapeClip)" />
+          <image href="/images/bg1.webp" x="-166" y="-228" width="1772" height="865" preserveAspectRatio="xMidYMid slice" opacity="0.1" clipPath="url(#heroShapeClip)" />
         </g>
       </svg>
 
@@ -236,9 +238,9 @@ const InformationLiteracy: NextPage = () => {
           </div>
         </div>
         <div className="frameParent12">
-          <div className="requestDemoWrapper">
+          <BookDemoTrigger className="requestDemoWrapper">
             <div className="requestDemo">Request Demo</div>
-          </div>
+          </BookDemoTrigger>
           <div className="frameWrapper5">
             <div className="startLearningWrapper">
               <div className="startLearning">Start Learning</div>
@@ -494,9 +496,7 @@ const InformationLiteracy: NextPage = () => {
       <div className="frameParent40">
         <div className="builtForTheWayLearnersActParent">
           <div className="learnersThinkBadge">Why NeuroLXP</div>
-          <b className="builtForTheContainer">
-            Built for the way learners actually think
-          </b>
+          <b className="builtForTheContainer">Built for the way learners actually think</b>
           <div className="empowerLearnersTo">NeuroLXP transforms information literacy into practical skills through structured learning and real-world application.</div>
         </div>
       </div>
@@ -508,9 +508,10 @@ const InformationLiteracy: NextPage = () => {
         </div>
         <div className="frameParent47">
           <div className="frameChild35" />
-          <Image className="creativeExcitedBrunetteBusiIcon" src="/images/image6.png" width={678} height={721} sizes="100vw" alt="" />
+          <Image className="creativeExcitedBrunetteBusiIcon" src="/images/image6.webp" width={678} height={721} sizes="100vw" alt="" />
         </div>
       </div>
+      <TalkToExpertButton />
     </div>
   );
 };
