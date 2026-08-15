@@ -1,6 +1,7 @@
 'use client';
 
 import { useLayoutEffect, useRef, type ReactNode } from 'react';
+import styles from './CodingChallenge.module.css';
 
 const ARTBOARD_WIDTH = 1440;
 const ARTBOARD_HEIGHT = 4820;
@@ -64,8 +65,8 @@ export default function PageScaler({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <div className={'pageScale'} ref={shellRef}>
-      <div className={'neurolabsCodingChallenge'} ref={boardRef}>
+    <div className={styles.pageScale} ref={shellRef}>
+      <div className={styles.neurolabsCodingChallenge} ref={boardRef}>
         {children}
       </div>
     </div>

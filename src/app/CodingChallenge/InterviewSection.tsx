@@ -1,12 +1,13 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import styles from './CodingChallenge.module.css';
 
 const VIDEO_SRC = '/videos/interview.mp4';
 const TABLET_MIN = 768;
 
 function CareerBadge() {
-  return <div className={`sectionBadge frameChild19`}>Career Growth</div>;
+  return <div className={`${styles.sectionBadge} ${styles.frameChild19}`}>Career Growth</div>;
 }
 
 export default function InterviewSection() {
@@ -73,18 +74,18 @@ export default function InterviewSection() {
   return (
     <section
       ref={sectionRef}
-      className={`interviewSection ${
-        scrollExpanded ? 'interviewSectionExpanded' : ''
+      className={`${styles.interviewSection}${
+        scrollExpanded ? ` ${styles.interviewSectionExpanded}` : ''
       }`}
       aria-label="Prepare for technical interviews"
     >
-      <div className={'interviewLayout'}>
-        <div className={'interviewMediaWrap'}>
-          <div className={'interviewMediaFrame'}>
-            <div className={'interviewMediaInner'}>
+      <div className={styles.interviewLayout}>
+        <div className={styles.interviewMediaWrap}>
+          <div className={styles.interviewMediaFrame}>
+            <div className={styles.interviewMediaInner}>
               <video
                 ref={videoRef}
-                className={'interviewVideo'}
+                className={styles.interviewVideo}
                 src={VIDEO_SRC}
                 muted
                 playsInline
@@ -96,12 +97,12 @@ export default function InterviewSection() {
           </div>
         </div>
 
-        <div className={'interviewText'}>
-          <div className={'interviewTextTop'}>
+        <div className={styles.interviewText}>
+          <div className={styles.interviewTextTop}>
             <CareerBadge />
-            <b className={'prepareForTechnical'}>Prepare for Technical Interviews</b>
+            <b className={styles.prepareForTechnical}>Prepare for Technical Interviews</b>
           </div>
-          <div className={'practiceCodingChallenges'}>
+          <div className={styles.practiceCodingChallenges}>
             Practice coding challenges to build confidence for technical interviews and coding
             assessments.
           </div>

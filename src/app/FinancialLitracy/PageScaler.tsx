@@ -1,6 +1,7 @@
 'use client';
 
 import { useLayoutEffect, useRef, type ReactNode } from 'react';
+import styles from './FinancialLitracy.module.css';
 
 const ARTBOARD_WIDTH = 1440;
 const ARTBOARD_HEIGHT = 4280;
@@ -47,8 +48,8 @@ export default function PageScaler({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <div className={'pageScale'} ref={shellRef}>
-      <div className={'finatialLiteracy'} ref={boardRef}>
+    <div className={styles.pageScale} ref={shellRef}>
+      <div className={styles.finatialLiteracy} ref={boardRef}>
         {children}
       </div>
     </div>
