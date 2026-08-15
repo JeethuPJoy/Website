@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import type { CSSProperties } from "react";
 import { useState } from "react";
 import Image from "next/image";
-import "./bootcamp.css";
+import styles from "./bootcamp.module.css";
 
 const Bootcamp: NextPage = () => {
   const [openCards, setOpenCards] = useState<number[]>([]);
@@ -30,141 +30,141 @@ const Bootcamp: NextPage = () => {
   } as CSSProperties;
 
   return (
-    <div className="bootcamp" style={accordionStyle}>
-      <b className="text">
+    <div className={styles.bootcamp} style={accordionStyle}>
+      <b className={styles.text}>
         <br />
       </b>
-      <div className="bootcampOuterFrame">
-        <div className="bootcampInner">
-          <div className="rectangleParent">
-            <div className="frameDiv">
-              <div className="frameParent2">
-                <div className="frameItem">Coding Bootcamps</div>
-                <b className="masterSoftwareDevelopmentContainer">
-                  <span className="masterSoftwareDevelopment">{`Master Software Development Through `}</span>
-                  <span className="intensiveLearning">Intensive Learning</span>
+      <div className={styles.bootcampOuterFrame}>
+        <div className={styles.bootcampInner}>
+          <div className={styles.rectangleParent}>
+            <div className={styles.frameDiv}>
+              <div className={styles.frameParent2}>
+                <div className={styles.frameItem}>Coding Bootcamps</div>
+                <b className={styles.masterSoftwareDevelopmentContainer}>
+                  <span className={styles.masterSoftwareDevelopment}>{`Master Software Development Through `}</span>
+                  <span className={styles.intensiveLearning}>Intensive Learning</span>
                 </b>
               </div>
-              <div className="neurolabsCodingBootcamps">NeuroLabs Coding Bootcamps build job-ready programming skills through intensive, hands-on learning, real-world coding, interactive labs, and expert mentorship.</div>
+              <div className={styles.neurolabsCodingBootcamps}>NeuroLabs Coding Bootcamps build job-ready programming skills through intensive, hands-on learning, real-world coding, interactive labs, and expert mentorship.</div>
             </div>
 
-            <Image className="image33Icon" src="/images/student.webp" width={366} height={578} sizes="366px" alt="Coding bootcamp student" priority />
+            <Image className={styles.image33Icon} src="/images/student.webp" width={366} height={578} sizes="366px" alt="Coding bootcamp student" priority />
           </div>
         </div>
       </div>
-      <div className="frameParent3">
-        <div className="neuroLabsWrapper">
-          <div className="codingBootcamps">Neuro Labs</div>
+      <div className={styles.frameParent3}>
+        <div className={styles.neuroLabsWrapper}>
+          <div className={styles.codingBootcamps}>Neuro Labs</div>
         </div>
-        <span className="breadcrumbChevron" aria-hidden="true">
+        <span className={styles.breadcrumbChevron} aria-hidden="true">
           <span />
           <span />
         </span>
-        <div className="arrowRightDoubleParent">
-          <b className="codingBootcamps">Coding Bootcamps</b>
+        <div className={styles.arrowRightDoubleParent}>
+          <b className={styles.codingBootcamps}>Coding Bootcamps</b>
         </div>
       </div>
-      <div className="frameParent4">
-        <div className="rectangleGroup">
-          <div className="frameInner" />
-          <Image className="rectangleIcon" src="/icons/design.png" width={131.9} height={93.5} sizes="100vw" alt="" />
-          <div className="ellipseDiv" />
-          <div className="div">1</div>
-          <div className="practicalCodingParent">
-            <b className="practicalCoding">Practical Coding</b>
-            <div className="problemSolving">Problem solving</div>
+      <div className={styles.frameParent4}>
+        <div className={styles.rectangleGroup}>
+          <div className={styles.frameInner} />
+          <Image className={styles.rectangleIcon} src="/icons/design.png" width={131.9} height={93.5} sizes="100vw" alt="" />
+          <div className={styles.ellipseDiv} />
+          <div className={styles.div}>1</div>
+          <div className={styles.practicalCodingParent}>
+            <b className={styles.practicalCoding}>Practical Coding</b>
+            <div className={styles.problemSolving}>Problem solving</div>
           </div>
         </div>
-        <div className="rectangleGroup">
-          <div className="frameInner" />
-          <Image className="rectangleIcon" src="/icons/design.png" width={131.9} height={93.5} sizes="100vw" alt="" />
-          <div className="ellipseDiv" />
-          <div className="div2">2</div>
-          <div className="projectLearningParent">
-            <b className="projectLearning">Project Learning</b>
-            <div className="handsOnPractice">Hands -on Practice</div>
+        <div className={styles.rectangleGroup}>
+          <div className={styles.frameInner} />
+          <Image className={styles.rectangleIcon} src="/icons/design.png" width={131.9} height={93.5} sizes="100vw" alt="" />
+          <div className={styles.ellipseDiv} />
+          <div className={styles.div2}>2</div>
+          <div className={styles.projectLearningParent}>
+            <b className={styles.projectLearning}>Project Learning</b>
+            <div className={styles.handsOnPractice}>Hands -on Practice</div>
           </div>
         </div>
-        <div className="rectangleGroup">
-          <div className="frameInner" />
-          <Image className="rectangleIcon" src="/icons/design.png" width={131.9} height={93.5} sizes="100vw" alt="" />
-          <div className="ellipseDiv" />
-          <div className="div3">3</div>
-          <div className="careerReadinessParent">
-            <b className="careerReadiness">Career Readiness</b>
-            <div className="technologyCareers">Technology Careers</div>
+        <div className={styles.rectangleGroup}>
+          <div className={styles.frameInner} />
+          <Image className={styles.rectangleIcon} src="/icons/design.png" width={131.9} height={93.5} sizes="100vw" alt="" />
+          <div className={styles.ellipseDiv} />
+          <div className={styles.div3}>3</div>
+          <div className={styles.careerReadinessParent}>
+            <b className={styles.careerReadiness}>Career Readiness</b>
+            <div className={styles.technologyCareers}>Technology Careers</div>
           </div>
         </div>
       </div>
-      <div className="bootcampChild" />
-      <div className="frameParent5">
-        <div className="frameParent6">
-          <div className="frameIcon">Practical Learning</div>
-          <div className="learnByBuildingRealProjectParent">
-            <b className="learnByBuilding">
+      <div className={styles.bootcampChild} />
+      <div className={styles.frameParent5}>
+        <div className={styles.frameParent6}>
+          <div className={styles.frameIcon}>Practical Learning</div>
+          <div className={styles.learnByBuildingRealProjectParent}>
+            <b className={styles.learnByBuilding}>
               Learn by Building Real Projects
               <br />
             </b>
-            <div className="buildRealProjects">Build real projects and solve coding challenges that mirror real-world development.</div>
+            <div className={styles.buildRealProjects}>Build real projects and solve coding challenges that mirror real-world development.</div>
           </div>
         </div>
-        <div className="frameParent7">
-          <div className="frameParent8">
-            <div className="frameParent9">
-              <div className="frameWrapper">
-                <div className="writingAndTestingCodeWrapper">
-                  <b className="writingAndTesting">Writing and Testing code</b>
+        <div className={styles.frameParent7}>
+          <div className={styles.frameParent8}>
+            <div className={styles.frameParent9}>
+              <div className={styles.frameWrapper}>
+                <div className={styles.writingAndTestingCodeWrapper}>
+                  <b className={styles.writingAndTesting}>Writing and Testing code</b>
                 </div>
               </div>
-              <div className="frameChild7 iconBlue">
-                <div className="codeIconCircle">
-                  <Image className="codeBoxImage" src="/icons/brace.webp" alt="Code" width={40} height={40} />
+              <div className={`${styles.frameChild7} ${styles.iconBlue}`}>
+                <div className={styles.codeIconCircle}>
+                  <Image className={styles.codeBoxImage} src="/icons/brace.webp" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
-            <div className="frameParent9">
-              <div className="frameWrapper">
-                <div className="webAppDevelopmentWrapper">
-                  <b className="webApp">{`Web & App Development`}</b>
+            <div className={styles.frameParent9}>
+              <div className={styles.frameWrapper}>
+                <div className={styles.webAppDevelopmentWrapper}>
+                  <b className={styles.webApp}>{`Web & App Development`}</b>
                 </div>
               </div>
-              <div className="frameChild7 iconPurple">
-                <div className="codeIconCircle">
-                  <Image className="codeBoxImage" src="/icons/globe.webp" alt="Code" width={40} height={40} />
+              <div className={`${styles.frameChild7} ${styles.iconPurple}`}>
+                <div className={styles.codeIconCircle}>
+                  <Image className={styles.codeBoxImage} src="/icons/globe.webp" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
           </div>
-          <div className="frameParent8">
-            <div className="frameParent9">
-              <div className="frameWrapper">
-                <div className="debugOptimizeWrapper">
-                  <b className="debugOptimize">{`Debug & Optimize`}</b>
+          <div className={styles.frameParent8}>
+            <div className={styles.frameParent9}>
+              <div className={styles.frameWrapper}>
+                <div className={styles.debugOptimizeWrapper}>
+                  <b className={styles.debugOptimize}>{`Debug & Optimize`}</b>
                 </div>
               </div>
-              <div className="frameChild7 iconPink">
-                <div className="codeIconCircle">
-                  <Image className="codeBoxImage" src="/icons/icon.webp" alt="Code" width={40} height={40} />
+              <div className={`${styles.frameChild7} ${styles.iconPink}`}>
+                <div className={styles.codeIconCircle}>
+                  <Image className={styles.codeBoxImage} src="/icons/icon.webp" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
-            <div className="frameParent9">
-              <div className="frameWrapper">
-                <div className="programmingChallengeWrapper">
-                  <b className="programmingChallenge">Programming Challenge</b>
+            <div className={styles.frameParent9}>
+              <div className={styles.frameWrapper}>
+                <div className={styles.programmingChallengeWrapper}>
+                  <b className={styles.programmingChallenge}>Programming Challenge</b>
                 </div>
               </div>
-              <div className="frameChild7 iconGreen">
-                <div className="codeIconCircle">
-                  <Image className="codeBoxImage" src="/icons/icon2.webp" alt="Code" width={40} height={40} />
+              <div className={`${styles.frameChild7} ${styles.iconGreen}`}>
+                <div className={styles.codeIconCircle}>
+                  <Image className={styles.codeBoxImage} src="/icons/icon2.webp" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bootcampInner2">
-        <svg className="careerFrameInlineSvg" aria-hidden="true" width="1304" height="303" viewBox="0 0 1304 303" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div className={styles.bootcampInner2}>
+        <svg className={styles.careerFrameInlineSvg} aria-hidden="true" width="1304" height="303" viewBox="0 0 1304 303" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_dd_903_12470)">
             <path d="M650.266 12.0932C651.419 11.9676 652.581 11.9676 653.733 12.0932L1277.73 80.0995C1285.85 80.9842 1292 87.8397 1292 96.0053V206.803C1292 214.969 1285.85 221.824 1277.73 222.709L653.733 290.715C652.581 290.841 651.419 290.841 650.266 290.715L26.2665 222.709C18.149 221.824 12 214.969 12 206.803V96.0053C12 87.8397 18.1489 80.9842 26.2665 80.0995L650.266 12.0932Z" fill="#DFE6E9" />
             <g filter="url(#filter1_ii_903_12470)">
@@ -206,252 +206,203 @@ const Bootcamp: NextPage = () => {
             </filter>
           </defs>
         </svg>
-        <div className="prepareForHighDemandCareerWrapper">
-          <b className="prepareForHighDemand">Prepare for high-demand careers in software and data technology</b>
+        <div className={styles.prepareForHighDemandCareerWrapper}>
+          <b className={styles.prepareForHighDemand}>Prepare for high-demand careers in software and data technology</b>
         </div>
       </div>
-      <div className="frameParent14">
-        <div className="frameParent15" style={{ height: firstRowHeight }}>
-          <div className={`frameWrapper5 accordionCardSpace ${openCards.includes(1) ? "isExpanded" : "isCollapsed"}`}>
-            <div className="frameParent16">
-              <div className={`frameWrapper6 expandableCardPanel ${openCards.includes(1) ? "isOpen" : ""}`}>
-                <div className="bootcampLearningTypicallyInParent">
-                  <b className="bootcampLearningTypically">
+      <div className={styles.frameParent14}>
+        <div className={styles.frameParent15} style={{ height: firstRowHeight }}>
+          <div className={`${styles.frameWrapper5} ${styles.accordionCardSpace} ${openCards.includes(1) ? styles.isExpanded : styles.isCollapsed}`}>
+            <div className={styles.frameParent16}>
+              <div className={`${styles.frameWrapper6} ${styles.expandableCardPanel} ${openCards.includes(1) ? styles.isOpen : ""}`}>
+                <div className={styles.bootcampLearningTypicallyInParent}>
+                  <b className={styles.bootcampLearningTypically}>
                     Bootcamp learning typically includes:
                     <br />
                   </b>
-                  <div className="frameParent17">
-                    <div className="frameParent18">
-                      <div className="frameChild12" />
-                      <div className="codingFundamentals">Coding Fundamentals</div>
+                  <div className={styles.frameParent17}>
+                    <div className={styles.frameParent18}>
+                      <div className={styles.frameChild12} />
+                      <div className={styles.codingFundamentals}>Coding Fundamentals</div>
                     </div>
-                    <div className="frameParent18">
-                      <div className="frameChild12" />
-                      <div className="codingFundamentals">Coding Challenges</div>
+                    <div className={styles.frameParent18}>
+                      <div className={styles.frameChild12} />
+                      <div className={styles.codingFundamentals}>Coding Challenges</div>
                     </div>
-                    <div className="frameParent18">
-                      <div className="frameChild12" />
-                      <div className="codingFundamentals">Hands-On Labs</div>
+                    <div className={styles.frameParent18}>
+                      <div className={styles.frameChild12} />
+                      <div className={styles.codingFundamentals}>Hands-On Labs</div>
                     </div>
-                    <div className="frameParent18">
-                      <div className="frameChild12" />
-                      <div className="codingFundamentals">Real Projects</div>
+                    <div className={styles.frameParent18}>
+                      <div className={styles.frameChild12} />
+                      <div className={styles.codingFundamentals}>Real Projects</div>
                     </div>
-                    <div className="frameParent18">
-                      <div className="frameChild16" />
-                      <div className="performanceFeedback">Performance Feedback</div>
+                    <div className={styles.frameParent18}>
+                      <div className={styles.frameChild16} />
+                      <div className={styles.performanceFeedback}>Performance Feedback</div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className={`frameParent23 expandableCardTrigger ${openCards.includes(1) ? "isActive" : ""}`}>
-                <button type="button" className={`frameChild17 cardOpenArrow accordionArrow ${openCards.includes(1) ? "isOpen" : ""}`} onClick={() => toggleCard(1)} aria-expanded={openCards.includes(1)} aria-label={openCards.includes(1) ? "Collapse card 1" : "Expand card 1"}>
-                  <svg className="accordionArrowSvg" width="24" height="20" viewBox="0 0 24 20" fill="none" aria-hidden="true">
+              <div className={`${styles.frameParent23} ${styles.expandableCardTrigger} ${openCards.includes(1) ? styles.isActive : ""}`}>
+                <button type="button" className={`${styles.frameChild17} ${styles.cardOpenArrow} ${styles.accordionArrow} ${openCards.includes(1) ? styles.isOpen : ""}`} onClick={() => toggleCard(1)} aria-expanded={openCards.includes(1)} aria-label={openCards.includes(1) ? "Collapse card 1" : "Expand card 1"}>
+                  <svg className={styles.accordionArrowSvg} width="24" height="20" viewBox="0 0 24 20" fill="none" aria-hidden="true">
                     <path d="M5 3.5L12 10.5L19 3.5" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M5 9.5L12 16.5L19 9.5" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </button>
-                <div className="frameParent24">
-                  <div className="frameParent25">
-                    <div className="parent">
-                      <b className="b">01</b>
-                      <div className="frameChild18" />
+                <div className={styles.frameParent24}>
+                  <div className={styles.frameParent25}>
+                    <div className={styles.parent}>
+                      <b className={styles.b}>01</b>
+                      <div className={styles.frameChild18} />
                     </div>
-                    <div className="frameChild19" aria-hidden="true" />
+                    <div className={styles.frameChild19} aria-hidden="true" />
                   </div>
-                  <div className="structuredAcceleratedLearnParent">
-                    <div className="structuredAccelerated">{`Accelerated Learning`}</div>
-                    <div className="fromCodingBasics">From coding basics to real-world applications.</div>
+                  <div className={styles.structuredAcceleratedLearnParent}>
+                    <div className={styles.structuredAccelerated}>{`Accelerated Learning`}</div>
+                    <div className={styles.fromCodingBasics}>From coding basics to real-world applications.</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className={`frameWrapper7 accordionCardSpace ${openCards.includes(2) ? "isExpanded" : "isCollapsed"}`}>
-            <div className="frameParent26">
-              <div className={`frameWrapper8 expandableCardPanel ${openCards.includes(2) ? "isOpen" : ""}`}>
-                <div className="bootcampLearningTypicallyInParent">
-                  <b className="bootcampLearningTypically">Career-Focused Training Includes:</b>
-                  <div className="frameParent17">
-                    <div className="frameParent18">
-                      <div className="frameChild12" />
-                      <div className="codingFundamentals">Software developer</div>
+          <div className={`${styles.frameWrapper7} ${styles.accordionCardSpace} ${openCards.includes(2) ? styles.isExpanded : styles.isCollapsed}`}>
+            <div className={styles.frameParent26}>
+              <div className={`${styles.frameWrapper8} ${styles.expandableCardPanel} ${openCards.includes(2) ? styles.isOpen : ""}`}>
+                <div className={styles.bootcampLearningTypicallyInParent}>
+                  <b className={styles.bootcampLearningTypically}>Career-Focused Training Includes:</b>
+                  <div className={styles.frameParent17}>
+                    <div className={styles.frameParent18}>
+                      <div className={styles.frameChild12} />
+                      <div className={styles.codingFundamentals}>Software developer</div>
                     </div>
-                    <div className="frameParent18">
-                      <div className="frameChild12" />
-                      <div className="codingFundamentals">Web developer</div>
+                    <div className={styles.frameParent18}>
+                      <div className={styles.frameChild12} />
+                      <div className={styles.codingFundamentals}>Web developer</div>
                     </div>
-                    <div className="frameParent18">
-                      <div className="frameChild16" />
-                      <div className="performanceFeedback">Application developer</div>
+                    <div className={styles.frameParent18}>
+                      <div className={styles.frameChild16} />
+                      <div className={styles.performanceFeedback}>Application developer</div>
                     </div>
-                    <div className="frameParent18">
-                      <div className="frameChild12" />
-                      <div className="codingFundamentals">Technology analyst</div>
+                    <div className={styles.frameParent18}>
+                      <div className={styles.frameChild12} />
+                      <div className={styles.codingFundamentals}>Technology analyst</div>
                     </div>
-                    <div className="frameParent18">
-                      <div className="frameChild16" />
-                      <div className="performanceFeedback">Programming specialist</div>
+                    <div className={styles.frameParent18}>
+                      <div className={styles.frameChild16} />
+                      <div className={styles.performanceFeedback}>Programming specialist</div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className={`frameParent33 expandableCardTrigger ${openCards.includes(2) ? "isActive" : ""}`}>
-                <button type="button" className={`frameChild17 cardOpenArrow accordionArrow ${openCards.includes(2) ? "isOpen" : ""}`} onClick={() => toggleCard(2)} aria-expanded={openCards.includes(2)} aria-label={openCards.includes(2) ? "Collapse card 2" : "Expand card 2"}>
-                  <svg className="accordionArrowSvg" width="24" height="20" viewBox="0 0 24 20" fill="none" aria-hidden="true">
+              <div className={`${styles.frameParent33} ${styles.expandableCardTrigger} ${openCards.includes(2) ? styles.isActive : ""}`}>
+                <button type="button" className={`${styles.frameChild17} ${styles.cardOpenArrow} ${styles.accordionArrow} ${openCards.includes(2) ? styles.isOpen : ""}`} onClick={() => toggleCard(2)} aria-expanded={openCards.includes(2)} aria-label={openCards.includes(2) ? "Collapse card 2" : "Expand card 2"}>
+                  <svg className={styles.accordionArrowSvg} width="24" height="20" viewBox="0 0 24 20" fill="none" aria-hidden="true">
                     <path d="M5 3.5L12 10.5L19 3.5" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M5 9.5L12 16.5L19 9.5" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </button>
-                <div className="frameParent24">
-                  <div className="frameParent25">
-                    <div className="parent">
-                      <b className="b">02</b>
-                      <div className="frameChild18" />
+                <div className={styles.frameParent24}>
+                  <div className={styles.frameParent25}>
+                    <div className={styles.parent}>
+                      <b className={styles.b}>02</b>
+                      <div className={styles.frameChild18} />
                     </div>
-                    <div className="frameChild19" aria-hidden="true" />
+                    <div className={styles.frameChild19} aria-hidden="true" />
                   </div>
-                  <div className="careerFocusedTechnologyTraiParent">
-                    <div className="structuredAccelerated">Career Tech Training</div>
-                    <div className="buildPracticalCareerReady">Build practical, career-ready technology skills.</div>
+                  <div className={styles.careerFocusedTechnologyTraiParent}>
+                    <div className={styles.structuredAccelerated}>Career Tech Training</div>
+                    <div className={styles.buildPracticalCareerReady}>Build practical, career-ready technology skills.</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className={`frameWrapper9 accordionCardSpace ${openCards.includes(3) ? "isExpanded" : "isCollapsed"}`}>
-          <div className="frameParent36">
-            <div className={`frameWrapper10 expandableCardPanel ${openCards.includes(3) ? "isOpen" : ""}`}>
-              <div className="usedLearningEnvironmentsInParent">
-                <b className="usedLearningEnvironments">
+        <div className={`${styles.frameWrapper9} ${styles.accordionCardSpace} ${openCards.includes(3) ? styles.isExpanded : styles.isCollapsed}`}>
+          <div className={styles.frameParent36}>
+            <div className={`${styles.frameWrapper10} ${styles.expandableCardPanel} ${openCards.includes(3) ? styles.isOpen : ""}`}>
+              <div className={styles.usedLearningEnvironmentsInParent}>
+                <b className={styles.usedLearningEnvironments}>
                   Used learning environments, including:
                   <br />
                 </b>
-                <div className="frameParent17">
-                  <div className="frameParent18">
-                    <div className="frameChild16" />
-                    <div className="performanceFeedback">{`Universities & Colleges`}</div>
+                <div className={styles.frameParent17}>
+                  <div className={styles.frameParent18}>
+                    <div className={styles.frameChild16} />
+                    <div className={styles.performanceFeedback}>{`Universities & Colleges`}</div>
                   </div>
-                  <div className="frameParent18">
-                    <div className="frameChild12" />
-                    <div className="codingFundamentals">{`Technical Academies `}</div>
+                  <div className={styles.frameParent18}>
+                    <div className={styles.frameChild12} />
+                    <div className={styles.codingFundamentals}>{`Technical Academies `}</div>
                   </div>
-                  <div className="frameParent18">
-                    <div className="frameChild12" />
-                    <div className="codingFundamentals">{`Corporate Programs `}</div>
+                  <div className={styles.frameParent18}>
+                    <div className={styles.frameChild12} />
+                    <div className={styles.codingFundamentals}>{`Corporate Programs `}</div>
                   </div>
-                  <div className="frameParent18">
-                    <div className="frameChild12" />
-                    <div className="codingFundamentals">Upskilling Programs</div>
+                  <div className={styles.frameParent18}>
+                    <div className={styles.frameChild12} />
+                    <div className={styles.codingFundamentals}>Upskilling Programs</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className={`frameParent23 expandableCardTrigger ${openCards.includes(3) ? "isActive" : ""}`}>
-              <button type="button" className={`frameChild17 cardOpenArrow accordionArrow ${openCards.includes(3) ? "isOpen" : ""}`} onClick={() => toggleCard(3)} aria-expanded={openCards.includes(3)} aria-label={openCards.includes(3) ? "Collapse card 3" : "Expand card 3"}>
-                <svg className="accordionArrowSvg" width="24" height="20" viewBox="0 0 24 20" fill="none" aria-hidden="true">
+            <div className={`${styles.frameParent23} ${styles.expandableCardTrigger} ${openCards.includes(3) ? styles.isActive : ""}`}>
+              <button type="button" className={`${styles.frameChild17} ${styles.cardOpenArrow} ${styles.accordionArrow} ${openCards.includes(3) ? styles.isOpen : ""}`} onClick={() => toggleCard(3)} aria-expanded={openCards.includes(3)} aria-label={openCards.includes(3) ? "Collapse card 3" : "Expand card 3"}>
+                <svg className={styles.accordionArrowSvg} width="24" height="20" viewBox="0 0 24 20" fill="none" aria-hidden="true">
                   <path d="M5 3.5L12 10.5L19 3.5" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M5 9.5L12 16.5L19 9.5" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
-              <div className="frameParent24">
-                <div className="frameParent25">
-                  <div className="parent">
-                    <b className="b">03</b>
-                    <div className="frameChild18" />
+              <div className={styles.frameParent24}>
+                <div className={styles.frameParent25}>
+                  <div className={styles.parent}>
+                    <b className={styles.b}>03</b>
+                    <div className={styles.frameChild18} />
                   </div>
-                  <div className="frameChild19" aria-hidden="true" />
+                  <div className={styles.frameChild19} aria-hidden="true" />
                 </div>
-                <div className="builtForEducationEnterpriseParent">
-                  <div className="builtForEducationTitle">{`Education & Enterprise Ready`}</div>
-                  <div className="builtForEducationDescription">Deploy across diverse learning environments.</div>
+                <div className={styles.builtForEducationEnterpriseParent}>
+                  <div className={styles.builtForEducationTitle}>{`Education & Enterprise Ready`}</div>
+                  <div className={styles.builtForEducationDescription}>Deploy across diverse learning environments.</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="rectangleParent3">
-        <div className="rectangle2" />
-        <Image className="image202" src="/images/bootbg.webp" alt="NeuroLabs Coding Bootcamp Background" width={1280} height={800} priority />
+      <div className={styles.rectangleParent3}>
+        <div className={styles.rectangle2} />
+        <Image className={styles.image202} src="/images/bootbg.webp" alt="NeuroLabs Coding Bootcamp Background" width={1280} height={800} priority />
 
-        <div className="frameParent45">
-          <div className="neurolabsCodingBootcampsFasParent">
-            <b className="neurolabsCodingBootcamps2">NeuroLabs Coding Bootcamps Fast-Track Your Coding Journey</b>
-            <div className="accelerateYourCoding">Accelerate your coding journey with hands-on projects, expert guidance, and industry-ready training.</div>
+        <div className={styles.frameParent45}>
+          <div className={styles.neurolabsCodingBootcampsFasParent}>
+            <b className={styles.neurolabsCodingBootcamps2}>NeuroLabs Coding Bootcamps Fast-Track Your Coding Journey</b>
+            <div className={styles.accelerateYourCoding}>Accelerate your coding journey with hands-on projects, expert guidance, and industry-ready training.</div>
           </div>
-          <div className="frameWrapper11">
-            <div className="frameWrapper12">
-              <div className="bookADemoWrapper">
-                <div className="bookADemo">Book a Demo</div>
+          <div className={styles.frameWrapper11}>
+            <div className={styles.frameWrapper12}>
+              <div className={styles.bookADemoWrapper}>
+                <div className={styles.bookADemo}>Book a Demo</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="rectangleParent4">
-        <div className="rectangle3" />
-        <div className="image20" />
-        <div className="image21Parent">
-          <div className="image21" />
-          <div className="futureReadyTechCareersParent">
-            <b className="futureReadyTechCareers">Future-Ready Tech Careers</b>
-            <Image className="image24Icon" src="/images/tech.webp" width={1216} height={548} sizes="100vw" alt="" />
+      <div className={styles.rectangleParent4}>
+        <div className={styles.rectangle3} />
+        <div className={styles.image20} />
+        <div className={styles.image21Parent}>
+          <div className={styles.image21} />
+          <div className={styles.futureReadyTechCareersParent}>
+            <b className={styles.futureReadyTechCareers}>Future-Ready Tech Careers</b>
+            <Image className={styles.image24Icon} src="/images/tech.webp" width={1216} height={548} sizes="100vw" alt="" />
           </div>
-          <div className="frameChild35" />
+          <div className={styles.frameChild35} />
         </div>
       </div>
 
-      <style jsx global>{`
-        .accordionArrow::before,
-        .accordionArrow::after {
-          display: none !important;
-          content: none !important;
-        }
-
-        .expandableCardTrigger {
-          cursor: default !important;
-        }
-
-        .accordionArrow {
-          position: absolute !important;
-          left: 50% !important;
-          right: auto !important;
-          top: auto !important;
-          bottom: 14px !important;
-          width: 34px !important;
-          height: 30px !important;
-          margin: 0 !important;
-          padding: 5px !important;
-          border: 0 !important;
-          outline: 0;
-          background: transparent !important;
-          box-shadow: none !important;
-          transform: translateX(-50%);
-          cursor: pointer;
-          z-index: 20;
-          appearance: none;
-          -webkit-appearance: none;
-        }
-
-        .accordionArrowSvg {
-          display: block;
-          width: 24px;
-          height: 20px;
-          pointer-events: none;
-        }
-
-        .accordionArrow.isOpen {
-          transform: translateX(-50%) rotate(180deg);
-        }
-
-        .accordionArrow:focus-visible {
-          outline: 2px solid #2d4cc8;
-          outline-offset: 2px;
-          border-radius: 4px;
-        }
-      `}</style>
     </div>
   );
 };

@@ -3372,3 +3372,57 @@
     padding-bottom: 0 !important;
   }
 }
+
+/* Moved from a runtime <style jsx global> block during the CSS Modules
+   migration (see git history) - these were injected as a separate global
+   stylesheet specifically to win the cascade over the rules above via DOM
+   order + !important. Appending them here at the end of the same file
+   preserves that same "later rule wins" behavior now that everything is
+   scoped together as one module. */
+.accordionArrow::before,
+.accordionArrow::after {
+  display: none !important;
+  content: none !important;
+}
+
+.expandableCardTrigger {
+  cursor: default !important;
+}
+
+.accordionArrow {
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: 14px !important;
+  width: 34px !important;
+  height: 30px !important;
+  margin: 0 !important;
+  padding: 5px !important;
+  border: 0 !important;
+  outline: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 20;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.accordionArrowSvg {
+  display: block;
+  width: 24px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.accordionArrow.isOpen {
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.accordionArrow:focus-visible {
+  outline: 2px solid #2d4cc8;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
