@@ -1,127 +1,127 @@
 import type { NextPage } from 'next';
 import Image from "next/image";
-import './access.css';
+import styles from "./access.module.css";
 
 
 const AccessibilityInclusivity: NextPage = () => {
 	return (
-		<main className="accessibilityInclusivity">
-			<nav className="frameDiv" aria-label="Breadcrumb">
-				<div className="featuresWrapper">
-					<div className="addOnModules">Features</div>
+		<main className={styles.accessibilityInclusivity}>
+			<nav className={styles.frameDiv} aria-label="Breadcrumb">
+				<div className={styles.featuresWrapper}>
+					<div className={styles.addOnModules}>Features</div>
 				</div>
-				<div className="homeParent">
-					<Image className="arrowDown01Icon" src="/icons/arrowright.svg"  width={16} height={16} sizes="100vw" alt="" />
-					<div className="featuresWrapper">
-						<div className="addOnModules">Add-On Modules</div>
+				<div className={styles.homeParent}>
+					<Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg"  width={16} height={16} sizes="100vw" alt="" />
+					<div className={styles.featuresWrapper}>
+						<div className={styles.addOnModules}>Add-On Modules</div>
 					</div>
 				</div>
-				<div className="arrowRightDoubleGroup">
-					<Image className="arrowDown01Icon" src="/icons/arrowright.svg"  width={16} height={16} sizes="100vw" alt="" />
-					<b className="addOnModules">{`Accessibility & Inclusivity`}</b>
+				<div className={styles.arrowRightDoubleGroup}>
+					<Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg"  width={16} height={16} sizes="100vw" alt="" />
+					<b className={styles.addOnModules}>{`Accessibility & Inclusivity`}</b>
 				</div>
 			</nav>
-			<div className="image20Parent">
-				<div className="image20" />
-				<div className="frameParent2">
+			<div className={styles.image20Parent}>
+				<div className={styles.image20} />
+				<div className={styles.frameParent2}>
 					
-					<div className="peopleTakingPartBusinessEvParent">
+					<div className={styles.peopleTakingPartBusinessEvParent}>
 						
-						<div className="peopleTakingPartBusinessEv" />
-						<div className="image21" />
-						<div className="groupYoungBusinesspeopleUsi" />
-						<Image className="frameInner" src="/images/bg-access.webp" width={1216} height={621} sizes="100vw" alt="" />
-						<Image className="youngAdultWatchingTvShowWIcon" src="/images/work.webp" width={572} height={652} sizes="100vw" alt="" />
+						<div className={styles.peopleTakingPartBusinessEv} />
+						<div className={styles.image21} />
+						<div className={styles.groupYoungBusinesspeopleUsi} />
+						<Image className={styles.frameInner} src="/images/bg-access.webp" width={1216} height={621} sizes="100vw" alt="" />
+						<Image className={styles.youngAdultWatchingTvShowWIcon} src="/images/work.webp" width={572} height={652} sizes="100vw" alt="" />
 					</div>
-					<div className="frameParent3">
-						<div className="frameParent4">
-							<div className="frameParent5">
-								<div className="frameIcon">Accessibility and Inclusivity</div>
-								<b className="learningDesignedFor">Learning Designed for Everyone<br /><br /><br /></b>
+					<div className={styles.frameParent3}>
+						<div className={styles.frameParent4}>
+							<div className={styles.frameParent5}>
+								<div className={styles.frameIcon}>Accessibility and Inclusivity</div>
+								<b className={styles.learningDesignedFor}>Learning Designed for Everyone<br /><br /><br /></b>
 							</div>
-							<div className="neurolxpEnsuresEvery">NeuroLXP ensures every learner can engage learn, and succeed through inclusive design and accessible learning experiences.
-							</div>
-						</div>
-						<div className="frameWrapper">
-							<div className="bookADemoWrapper">
-								<div className="bookADemo">Book a Demo</div>
+							<div className={styles.neurolxpEnsuresEvery}>NeuroLXP ensures every learner can engage learn, and succeed through inclusive design and accessible learning experiences.
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div className="frameParent6">
-				<div className="frameWrapper2">
-					<div className="frameParent4">
-						<div className="accessibleLearningForDiversWrapper">
-							<b className="learningDesignedFor">Accessible Learning for Diverse Needs<br /></b>
-						</div>
-						<div className="designedToMake">Designed to make learning materials easier to access, navigate, and understand for all learners.<br /><br /></div>
-					</div>
-				</div>
-				<div className="frameParent8">
-					<div className="frameParent9">
-						<div className="frameWrapper3">
-							<div className="compassParent">
-								<Image className="compassIcon" src="/icons/compasspink.svg" width={50} height={50} sizes="100vw" alt="" />
-								<div className="easyNavigationWrapper">
-									<div className="easyNavigation">Easy Navigation</div>
-								</div>
-							</div>
-						</div>
-						<div className="frameWrapper3">
-							<div className="compassParent">
-								<Image className="compassIcon" src="/icons/library.svg" width={50} height={50} sizes="100vw" alt="" />
-								<div className="easyNavigationWrapper">
-									<div className="multiFormatLearning">Multi-Format Learning</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className="frameParent9">
-						<div className="frameWrapper3">
-							<div className="compassParent">
-								<Image className="compassIcon" src="/icons/mousepurple.svg" width={50} height={50} sizes="100vw" alt="" />
-								<div className="easyNavigationWrapper">
-									<div className="easyNavigation">Interactive Content</div>
-								</div>
-							</div>
-						</div>
-						<div className="frameWrapper3">
-							<div className="compassParent">
-								<Image className="compassIcon" src="/icons/clipboardorange.svg" width={50} height={50} sizes="100vw" alt="" />
-								<div className="easyNavigationWrapper">
-									<div className="unlimitedAssessments">Unlimited Assessments</div>
-								</div>
+						<div className={styles.frameWrapper}>
+							<div className={styles.bookADemoWrapper}>
+								<div className={styles.bookADemo}>Book a Demo</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="frameParent11">
-				<div className="frameWrapper7">
-					<div className="frameWrapper8">
-						<div className="frameParent12">
-							<div className="frameChild2">Flexible Learning Formats</div>
-							<div className="multipleContentFormatsForFParent">
-								<b className="multipleContentFormats">Multiple Content Formats for Flexible Learning<br /><br /></b>
-								<div className="deliverEngagingLearning">Deliver engaging learning experiences with diverse content formats that suit every learner.</div>
+			<div className={styles.frameParent6}>
+				<div className={styles.frameWrapper2}>
+					<div className={styles.frameParent4}>
+						<div className={styles.accessibleLearningForDiversWrapper}>
+							<b className={styles.learningDesignedFor}>Accessible Learning for Diverse Needs<br /></b>
+						</div>
+						<div className={styles.designedToMake}>Designed to make learning materials easier to access, navigate, and understand for all learners.<br /><br /></div>
+					</div>
+				</div>
+				<div className={styles.frameParent8}>
+					<div className={styles.frameParent9}>
+						<div className={styles.frameWrapper3}>
+							<div className={styles.compassParent}>
+								<Image className={styles.compassIcon} src="/icons/compasspink.svg" width={50} height={50} sizes="100vw" alt="" />
+								<div className={styles.easyNavigationWrapper}>
+									<div className={styles.easyNavigation}>Easy Navigation</div>
+								</div>
+							</div>
+						</div>
+						<div className={styles.frameWrapper3}>
+							<div className={styles.compassParent}>
+								<Image className={styles.compassIcon} src="/icons/library.svg" width={50} height={50} sizes="100vw" alt="" />
+								<div className={styles.easyNavigationWrapper}>
+									<div className={styles.multiFormatLearning}>Multi-Format Learning</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className={styles.frameParent9}>
+						<div className={styles.frameWrapper3}>
+							<div className={styles.compassParent}>
+								<Image className={styles.compassIcon} src="/icons/mousepurple.svg" width={50} height={50} sizes="100vw" alt="" />
+								<div className={styles.easyNavigationWrapper}>
+									<div className={styles.easyNavigation}>Interactive Content</div>
+								</div>
+							</div>
+						</div>
+						<div className={styles.frameWrapper3}>
+							<div className={styles.compassParent}>
+								<Image className={styles.compassIcon} src="/icons/clipboardorange.svg" width={50} height={50} sizes="100vw" alt="" />
+								<div className={styles.easyNavigationWrapper}>
+									<div className={styles.unlimitedAssessments}>Unlimited Assessments</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="frameParent13">
-					<div className="frameParent14">
-						<div className="frameWrapper9">
-							<div className="frameParent15">
-								<div className="frameWrapper10">
-									<div className="frameChild3" />
+			</div>
+			<div className={styles.frameParent11}>
+				<div className={styles.frameWrapper7}>
+					<div className={styles.frameWrapper8}>
+						<div className={styles.frameParent12}>
+							<div className={styles.frameChild2}>Flexible Learning Formats</div>
+							<div className={styles.multipleContentFormatsForFParent}>
+								<b className={styles.multipleContentFormats}>Multiple Content Formats for Flexible Learning<br /><br /></b>
+								<div className={styles.deliverEngagingLearning}>Deliver engaging learning experiences with diverse content formats that suit every learner.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className={styles.frameParent13}>
+					<div className={styles.frameParent14}>
+						<div className={styles.frameWrapper9}>
+							<div className={styles.frameParent15}>
+								<div className={styles.frameWrapper10}>
+									<div className={styles.frameChild3} />
 								</div>
-								<div className="frameParent16">
-									<div className="formatIconOuter">
-										<div className="formatIconInner formatIconGreen">
+								<div className={styles.frameParent16}>
+									<div className={styles.formatIconOuter}>
+										<div className={`${styles.formatIconInner} ${styles.formatIconGreen}`}>
 											<Image
-												className="formatIconImage"
+												className={styles.formatIconImage}
 												src="/icons/files.svg"
 												width={33.97}
 												height={33.97}
@@ -130,20 +130,20 @@ const AccessibilityInclusivity: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<b className="textStructured">Text &amp; structured notes</b>
+									<b className={styles.textStructured}>Text &amp; structured notes</b>
 								</div>
 							</div>
 						</div>
-						<div className="frameWrapper11">
-							<div className="frameParent15">
-								<div className="frameWrapper10">
-									<div className="frameChild3" />
+						<div className={styles.frameWrapper11}>
+							<div className={styles.frameParent15}>
+								<div className={styles.frameWrapper10}>
+									<div className={styles.frameChild3} />
 								</div>
-								<div className="frameParent16">
-									<div className="formatIconOuter">
-										<div className="formatIconInner formatIconPurple">
+								<div className={styles.frameParent16}>
+									<div className={styles.formatIconOuter}>
+										<div className={`${styles.formatIconInner} ${styles.formatIconPurple}`}>
 											<Image
-												className="formatIconImage"
+												className={styles.formatIconImage}
 												src="/icons/video.svg"
 												width={33.97}
 												height={33.97}
@@ -152,22 +152,22 @@ const AccessibilityInclusivity: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<b className="interactiveVideoLearning">Interactive Video Learning<br /></b>
+									<b className={styles.interactiveVideoLearning}>Interactive Video Learning<br /></b>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="frameParent19">
-						<div className="frameWrapper9">
-							<div className="frameParent15">
-								<div className="frameWrapper10">
-									<div className="frameChild3" />
+					<div className={styles.frameParent19}>
+						<div className={styles.frameWrapper9}>
+							<div className={styles.frameParent15}>
+								<div className={styles.frameWrapper10}>
+									<div className={styles.frameChild3} />
 								</div>
-								<div className="frameParent16">
-									<div className="formatIconOuter">
-										<div className="formatIconInner formatIconOrange">
+								<div className={styles.frameParent16}>
+									<div className={styles.formatIconOuter}>
+										<div className={`${styles.formatIconInner} ${styles.formatIconOrange}`}>
 											<Image
-												className="formatIconImage"
+												className={styles.formatIconImage}
 												src="/icons/image.svg"
 												width={33.97}
 												height={33.97}
@@ -176,20 +176,20 @@ const AccessibilityInclusivity: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<b className="interactiveVideoLearning">Visual learning aids<br /><br /></b>
+									<b className={styles.interactiveVideoLearning}>Visual learning aids<br /><br /></b>
 								</div>
 							</div>
 						</div>
-						<div className="frameWrapper15">
-							<div className="frameParent15">
-								<div className="frameWrapper10">
-									<div className="frameChild3" />
+						<div className={styles.frameWrapper15}>
+							<div className={styles.frameParent15}>
+								<div className={styles.frameWrapper10}>
+									<div className={styles.frameChild3} />
 								</div>
-								<div className="frameParent16">
-									<div className="formatIconOuter">
-										<div className="formatIconInner formatIconPink">
+								<div className={styles.frameParent16}>
+									<div className={styles.formatIconOuter}>
+										<div className={`${styles.formatIconInner} ${styles.formatIconPink}`}>
 											<Image
-												className="formatIconImage"
+												className={styles.formatIconImage}
 												src="/icons/headphone.svg"
 												width={33.97}
 												height={33.97}
@@ -198,7 +198,7 @@ const AccessibilityInclusivity: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<b className="interactiveVideoLearning">Audio-supported content
+									<b className={styles.interactiveVideoLearning}>Audio-supported content
 									</b>
 								</div>
 							</div>
@@ -206,19 +206,19 @@ const AccessibilityInclusivity: NextPage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="accessibilityInclusivityInner">
-				<div className="frameParent24">
-					<div className="frameParent25">
-						<div className="frameParent26">
-							<div className="accessibleLearningForDiversWrapper">
-								<b className="learningDesignedFor">Inclusive Learning Experiences<br /><br /></b>
+			<div className={styles.accessibilityInclusivityInner}>
+				<div className={styles.frameParent24}>
+					<div className={styles.frameParent25}>
+						<div className={styles.frameParent26}>
+							<div className={styles.accessibleLearningForDiversWrapper}>
+								<b className={styles.learningDesignedFor}>Inclusive Learning Experiences<br /><br /></b>
 							</div>
-							<div className="designedToMake">Collaborative tools allow learners to share ideas and contribute meaningfully to learning environments.<br /><br /><br /><br /></div>
+							<div className={styles.designedToMake}>Collaborative tools allow learners to share ideas and contribute meaningfully to learning environments.<br /><br /><br /><br /></div>
 						</div>
-						<div className="frameParent27">
-							<div className="inclusiveItem inclusiveItemPink">
+						<div className={styles.frameParent27}>
+							<div className={`${styles.inclusiveItem} ${styles.inclusiveItemPink}`}>
 								<Image
-									className="inclusiveArrow"
+									className={styles.inclusiveArrow}
 									src="/icons/arrowpink.svg"
 									width={32}
 									height={32}
@@ -227,9 +227,9 @@ const AccessibilityInclusivity: NextPage = () => {
 								/>
 								<span>Equal participation in discussions</span>
 							</div>
-							<div className="inclusiveItem inclusiveItemBlue">
+							<div className={`${styles.inclusiveItem} ${styles.inclusiveItemBlue}`}>
 								<Image
-									className="inclusiveArrow"
+									className={styles.inclusiveArrow}
 									src="/icons/arrowblue.svg"
 									width={32}
 									height={32}
@@ -238,9 +238,9 @@ const AccessibilityInclusivity: NextPage = () => {
 								/>
 								<span>Diverse perspectives and collaboration</span>
 							</div>
-							<div className="inclusiveItem inclusiveItemPurple">
+							<div className={`${styles.inclusiveItem} ${styles.inclusiveItemPurple}`}>
 								<Image
-									className="inclusiveArrow"
+									className={styles.inclusiveArrow}
 									src="/icons/arrowpurple.svg"
 									width={32}
 									height={32}
@@ -251,9 +251,9 @@ const AccessibilityInclusivity: NextPage = () => {
 							</div>
 						</div>
 					</div>
-					<div className="learningAnalytics">
+					<div className={styles.learningAnalytics}>
 						<Image
-								className="teamSupportingInvalidWoman"
+								className={styles.teamSupportingInvalidWoman}
 								src="/images/Learning.webp"
 								width={530}
 								height={488}
@@ -263,28 +263,28 @@ const AccessibilityInclusivity: NextPage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="frameParent28">
-				<div className="frameWrapper17">
-					<div className="frameWrapper18">
-						<div className="frameParent29">
-							<div className="supportingInstitutionsInIncWrapper">
-								<b className="supportingInstitutionsInContainer">
-									<span className="supportingInstitutionsIn">Supporting Institutions in</span>
-									<span className="inclusiveEducation"> Inclusive Education</span>
-									<span className="supportingInstitutionsIn">&nbsp;</span>
+			<div className={styles.frameParent28}>
+				<div className={styles.frameWrapper17}>
+					<div className={styles.frameWrapper18}>
+						<div className={styles.frameParent29}>
+							<div className={styles.supportingInstitutionsInIncWrapper}>
+								<b className={styles.supportingInstitutionsInContainer}>
+									<span className={styles.supportingInstitutionsIn}>Supporting Institutions in</span>
+									<span className={styles.inclusiveEducation}> Inclusive Education</span>
+									<span className={styles.supportingInstitutionsIn}>&nbsp;</span>
 								</b>
 							</div>
-							<div className="enableAccessibleFlexible">Enable accessible, flexible learning experiences that support diverse learner needs and promote inclusive education for everyone.<br /></div>
+							<div className={styles.enableAccessibleFlexible}>Enable accessible, flexible learning experiences that support diverse learner needs and promote inclusive education for everyone.<br /></div>
 						</div>
 					</div>
 				</div>
-				<div className="frameParent30">
-					<div className="institutionCard institutionCard1">
-						<div className="institutionCardContent">
-							<div className="institutionIconOuter">
-								<div className="institutionIconInner institutionIconPink">
+				<div className={styles.frameParent30}>
+					<div className={`${styles.institutionCard} ${styles.institutionCard1}`}>
+						<div className={styles.institutionCardContent}>
+							<div className={styles.institutionIconOuter}>
+								<div className={`${styles.institutionIconInner} ${styles.institutionIconPink}`}>
 									<Image
-										className="institutionIconImage"
+										className={styles.institutionIconImage}
 										src="/icons/globe-round.svg"
 										width={33.97}
 										height={33.97}
@@ -293,18 +293,18 @@ const AccessibilityInclusivity: NextPage = () => {
 									/>
 								</div>
 							</div>
-							<div className="institutionCardText institutionTextPink">
+							<div className={`${styles.institutionCardText} ${styles.institutionTextPink}`}>
 								Deliver accessible online courses
 							</div>
 						</div>
 					</div>
 
-					<div className="institutionCard institutionCard2">
-						<div className="institutionCardContent">
-							<div className="institutionIconOuter">
-								<div className="institutionIconInner institutionIconPurple">
+					<div className={`${styles.institutionCard} ${styles.institutionCard2}`}>
+						<div className={styles.institutionCardContent}>
+							<div className={styles.institutionIconOuter}>
+								<div className={`${styles.institutionIconInner} ${styles.institutionIconPurple}`}>
 									<Image
-										className="institutionIconImage"
+										className={styles.institutionIconImage}
 										src="/icons/accessibility.svg"
 										width={33.97}
 										height={33.97}
@@ -313,18 +313,18 @@ const AccessibilityInclusivity: NextPage = () => {
 									/>
 								</div>
 							</div>
-							<div className="institutionCardText institutionTextPurple">
+							<div className={`${styles.institutionCardText} ${styles.institutionTextPurple}`}>
 								Create inclusive learning environments
 							</div>
 						</div>
 					</div>
 
-					<div className="institutionCard institutionCard3">
-						<div className="institutionCardContent">
-							<div className="institutionIconOuter">
-								<div className="institutionIconInner institutionIconTeal">
+					<div className={`${styles.institutionCard} ${styles.institutionCard3}`}>
+						<div className={styles.institutionCardContent}>
+							<div className={styles.institutionIconOuter}>
+								<div className={`${styles.institutionIconInner} ${styles.institutionIconTeal}`}>
 									<Image
-										className="institutionIconImage"
+										className={styles.institutionIconImage}
 										src="/icons/user-group-02-1.svg"
 										width={33.97}
 										height={33.97}
@@ -333,18 +333,18 @@ const AccessibilityInclusivity: NextPage = () => {
 									/>
 								</div>
 							</div>
-							<div className="institutionCardText institutionTextTeal">
+							<div className={`${styles.institutionCardText} ${styles.institutionTextTeal}`}>
 								Support learners with diverse abilities
 							</div>
 						</div>
 					</div>
 
-					<div className="institutionCard institutionCard4">
-						<div className="institutionCardContent">
-							<div className="institutionIconOuter">
-								<div className="institutionIconInner institutionIconBlue">
+					<div className={`${styles.institutionCard} ${styles.institutionCard4}`}>
+						<div className={styles.institutionCardContent}>
+							<div className={styles.institutionIconOuter}>
+								<div className={`${styles.institutionIconInner} ${styles.institutionIconBlue}`}>
 									<Image
-										className="institutionIconImage"
+										className={styles.institutionIconImage}
 										src="/icons/student.svg"
 										width={33.97}
 										height={33.97}
@@ -353,18 +353,18 @@ const AccessibilityInclusivity: NextPage = () => {
 									/>
 								</div>
 							</div>
-							<div className="institutionCardText institutionTextBlue">
+							<div className={`${styles.institutionCardText} ${styles.institutionTextBlue}`}>
 								Expand learning opportunities globally
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="frameParent31">
-				<div className="neurolxpBadge"><span className="neurolxpBadgeText">NeuroLXP<span className="neurolxpTm">™</span></span></div>
-				<div className="empoweringInclusiveLearningParent">
-					<b className="empoweringInclusiveLearning">Empowering Inclusive Learning</b>
-					<div className="neurolxpHelpsInstitutions">NeuroLXP helps institutions create learning ecosystems where every learner has the opportunity to succeed without barriers.<br /><br /></div>
+			<div className={styles.frameParent31}>
+				<div className={styles.neurolxpBadge}><span className={styles.neurolxpBadgeText}>NeuroLXP<span className={styles.neurolxpTm}>™</span></span></div>
+				<div className={styles.empoweringInclusiveLearningParent}>
+					<b className={styles.empoweringInclusiveLearning}>Empowering Inclusive Learning</b>
+					<div className={styles.neurolxpHelpsInstitutions}>NeuroLXP helps institutions create learning ecosystems where every learner has the opportunity to succeed without barriers.<br /><br /></div>
 				</div>
 			</div>
 		</main>);

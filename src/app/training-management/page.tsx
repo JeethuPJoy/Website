@@ -1,71 +1,71 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import "./training.css";
+import styles from "./training.module.css";
 const TrainingManagement: NextPage = () => {
   return (
-    <div className="trainingManagement">
+    <div className={styles.trainingManagement}>
       <title>Training Management | NeuroLXP</title>
-      <div className="frameDiv">
-        <div className="ourCustomersWrapper">
-          <div className="solutionsFor">Our Customers</div>
+      <div className={styles.frameDiv}>
+        <div className={styles.ourCustomersWrapper}>
+          <div className={styles.solutionsFor}>Our Customers</div>
         </div>
-        <div className="homeParent">
-          <Image className="arrowDown01Icon" src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-          <div className="ourCustomersWrapper">
-            <div className="solutionsFor">Solutions for</div>
+        <div className={styles.homeParent}>
+          <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+          <div className={styles.ourCustomersWrapper}>
+            <div className={styles.solutionsFor}>Solutions for</div>
           </div>
         </div>
-        <div className="arrowRightDoubleGroup">
-          <Image className="arrowDown01Icon" src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-          <div className="solutionsForNav">Training Management</div>
+        <div className={styles.arrowRightDoubleGroup}>
+          <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+          <div className={styles.solutionsForNav}>Training Management</div>
         </div>
       </div>
 
-      <div className="trainingManagementChild" />
-      <div className="frameParent2">
-        <div className="frameWrapper">
-          <div className="frameParent3">
-            <div className="frameParent4">
-              <div className="frameParent5">
-                <div className="frameParent6">
-                  <div className="frameWrapper2">
-                    <div className="frameWrapper3">
-                      <div className="frameWrapper4">
-                        <div className="frameWrapper5">
-                          <div className="trainingManagementPill">Training Management</div>
+      <div className={styles.trainingManagementChild} />
+      <div className={styles.frameParent2}>
+        <div className={styles.frameWrapper}>
+          <div className={styles.frameParent3}>
+            <div className={styles.frameParent4}>
+              <div className={styles.frameParent5}>
+                <div className={styles.frameParent6}>
+                  <div className={styles.frameWrapper2}>
+                    <div className={styles.frameWrapper3}>
+                      <div className={styles.frameWrapper4}>
+                        <div className={styles.frameWrapper5}>
+                          <div className={styles.trainingManagementPill}>Training Management</div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="frameWrapper6">
-                    <Image className="trainingHeroBackground" src="/images/trainingbg1.webp" width={1266} height={309} sizes="1266px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} priority />
-                    <div className="smarterTrainingManagementWiParent">
-                      <h1 className="smarterTrainingManagementContainer">
-                        <span className="smarter">{`Smarter `}</span>
-                        <span className="trainingManagement3">{`Training Management `}</span>
-                        <span className="smarter">
+                  <div className={styles.frameWrapper6}>
+                    <Image className={styles.trainingHeroBackground} src="/images/trainingbg1.webp" width={1266} height={309} sizes="1266px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} priority />
+                    <div className={styles.smarterTrainingManagementWiParent}>
+                      <h1 className={styles.smarterTrainingManagementContainer}>
+                        <span className={styles.smarter}>{`Smarter `}</span>
+                        <span className={styles.trainingManagement3}>{`Training Management `}</span>
+                        <span className={styles.smarter}>
                           with NeuroLXP
                           <br />
                         </span>
                       </h1>
-                      <div className="transformLearningWith">Transform learning with NeuroLXP, a scalable platform for personalized and data-driven training.</div>
+                      <div className={styles.transformLearningWith}>Transform learning with NeuroLXP, a scalable platform for personalized and data-driven training.</div>
                     </div>
                   </div>
                 </div>
-                <div className="coreFeaturesParent">
-                  <h2 className="coreFeatures">Core Features</h2>
+                <div className={styles.coreFeaturesParent}>
+                  <h2 className={styles.coreFeatures}>Core Features</h2>
 
-                  <div className="frameParent7">
-                    <div className="frameParent8 coreFeatureCard">
-                      <div className="personalizedCard">
-                        <Image className="coreFeatureCardSvg" src="/icons/core-feature-card.svg" width={326} height={370} sizes="283px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-                        <div className="personalizedCardTop" aria-hidden="true" />
+                  <div className={styles.frameParent7}>
+                    <div className={`${styles.frameParent8} ${styles.coreFeatureCard}`}>
+                      <div className={styles.personalizedCard}>
+                        <Image className={styles.coreFeatureCardSvg} src="/icons/core-feature-card.svg" width={326} height={370} sizes="283px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                        <div className={styles.personalizedCardTop} aria-hidden="true" />
 
-                        <div className="personalizedIconHexagon">
-                          <Image className="personalizedIcon" src="/icons/flower.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                        <div className={styles.personalizedIconHexagon}>
+                          <Image className={styles.personalizedIcon} src="/icons/flower.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                         </div>
 
-                        <div className="personalizedCardContent">
+                        <div className={styles.personalizedCardContent}>
                           <h3>
                             Personalized
                             <br />
@@ -76,16 +76,16 @@ const TrainingManagement: NextPage = () => {
                       </div>
                     </div>
 
-                    <div className="frameParent8 coreFeatureCard">
-                      <div className="personalizedCard">
-                        <Image className="coreFeatureCardSvg" src="/icons/core-feature-card.svg" width={326} height={370} sizes="283px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-                        <div className="personalizedCardTop" aria-hidden="true" />
+                    <div className={`${styles.frameParent8} ${styles.coreFeatureCard}`}>
+                      <div className={styles.personalizedCard}>
+                        <Image className={styles.coreFeatureCardSvg} src="/icons/core-feature-card.svg" width={326} height={370} sizes="283px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                        <div className={styles.personalizedCardTop} aria-hidden="true" />
 
-                        <div className="personalizedIconHexagon">
-                          <Image className="personalizedIcon" src="/icons/folder.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                        <div className={styles.personalizedIconHexagon}>
+                          <Image className={styles.personalizedIcon} src="/icons/folder.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                         </div>
 
-                        <div className="personalizedCardContent">
+                        <div className={styles.personalizedCardContent}>
                           <h3>
                             Centralized
                             <br />
@@ -96,16 +96,16 @@ const TrainingManagement: NextPage = () => {
                       </div>
                     </div>
 
-                    <div className="frameParent8 coreFeatureCard">
-                      <div className="personalizedCard">
-                        <Image className="coreFeatureCardSvg" src="/icons/core-feature-card.svg" width={326} height={370} sizes="283px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-                        <div className="personalizedCardTop" aria-hidden="true" />
+                    <div className={`${styles.frameParent8} ${styles.coreFeatureCard}`}>
+                      <div className={styles.personalizedCard}>
+                        <Image className={styles.coreFeatureCardSvg} src="/icons/core-feature-card.svg" width={326} height={370} sizes="283px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                        <div className={styles.personalizedCardTop} aria-hidden="true" />
 
-                        <div className="personalizedIconHexagon">
-                          <Image className="personalizedIcon" src="/icons/chartup-purple.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                        <div className={styles.personalizedIconHexagon}>
+                          <Image className={styles.personalizedIcon} src="/icons/chartup-purple.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                         </div>
 
-                        <div className="personalizedCardContent">
+                        <div className={styles.personalizedCardContent}>
                           <h3>
                             Real-Time
                             <br />
@@ -116,16 +116,16 @@ const TrainingManagement: NextPage = () => {
                       </div>
                     </div>
 
-                    <div className="frameParent8 coreFeatureCard">
-                      <div className="personalizedCard">
-                        <Image className="coreFeatureCardSvg" src="/icons/core-feature-card.svg" width={326} height={370} sizes="283px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-                        <div className="personalizedCardTop" aria-hidden="true" />
+                    <div className={`${styles.frameParent8} ${styles.coreFeatureCard}`}>
+                      <div className={styles.personalizedCard}>
+                        <Image className={styles.coreFeatureCardSvg} src="/icons/core-feature-card.svg" width={326} height={370} sizes="283px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                        <div className={styles.personalizedCardTop} aria-hidden="true" />
 
-                        <div className="personalizedIconHexagon">
-                          <Image className="personalizedIcon" src="/icons/traininglayers.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                        <div className={styles.personalizedIconHexagon}>
+                          <Image className={styles.personalizedIcon} src="/icons/traininglayers.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                         </div>
 
-                        <div className="personalizedCardContent">
+                        <div className={styles.personalizedCardContent}>
                           <h3>
                             Skill
                             <br />
@@ -139,97 +139,97 @@ const TrainingManagement: NextPage = () => {
                 </div>
               </div>
 
-              <div className="frameParent19">
-                <div className="peopleTakingPartBusinessEvParent">
-                  <div className="peopleTakingPartBusinessEv" />
-                  <div className="image21" />
-                  <div className="groupYoungBusinesspeopleUsi" />
-                  <div className="frameParent20">
-                    <div className="frameWrapper8">
-                      <div className="frameParent21">
-                        <div className="frameParent22">
-                          <div className="whyNeurolxpPill">Why NeuroLXP</div>
-                          <h2 className="upgradeFromLms">
+              <div className={styles.frameParent19}>
+                <div className={styles.peopleTakingPartBusinessEvParent}>
+                  <div className={styles.peopleTakingPartBusinessEv} />
+                  <div className={styles.image21} />
+                  <div className={styles.groupYoungBusinesspeopleUsi} />
+                  <div className={styles.frameParent20}>
+                    <div className={styles.frameWrapper8}>
+                      <div className={styles.frameParent21}>
+                        <div className={styles.frameParent22}>
+                          <div className={styles.whyNeurolxpPill}>Why NeuroLXP</div>
+                          <h2 className={styles.upgradeFromLms}>
                             Upgrade from LMS to NeuroLXP
                             <br />
                           </h2>
                         </div>
-                        <div className="neurolxpDeliversEngaging">NeuroLXP delivers engaging learning faster onboarding, and continuous workforce development.</div>
+                        <div className={styles.neurolxpDeliversEngaging}>NeuroLXP delivers engaging learning faster onboarding, and continuous workforce development.</div>
                       </div>
                     </div>
-                    <div className="frameParent23">
-                      <div className="frameWrapper9">
-                        <div className="bookmarkCheck01Parent">
-                          <Image className="bookmarkCheck01Icon" src="/icons/bookmark.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-                          <div className="fasterOnboarding">Faster onboarding</div>
+                    <div className={styles.frameParent23}>
+                      <div className={styles.frameWrapper9}>
+                        <div className={styles.bookmarkCheck01Parent}>
+                          <Image className={styles.bookmarkCheck01Icon} src="/icons/bookmark.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                          <div className={styles.fasterOnboarding}>Faster onboarding</div>
                         </div>
                       </div>
-                      <div className="frameWrapper9">
-                        <div className="bookmarkCheck01Group">
-                          <Image className="bookmarkCheck01Icon" src="/icons/bookmark.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-                          <div className="fasterOnboarding">Scalable teams</div>
+                      <div className={styles.frameWrapper9}>
+                        <div className={styles.bookmarkCheck01Group}>
+                          <Image className={styles.bookmarkCheck01Icon} src="/icons/bookmark.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                          <div className={styles.fasterOnboarding}>Scalable teams</div>
                         </div>
                       </div>
-                      <div className="frameWrapper9">
-                        <div className="bookmarkCheck01Parent">
-                          <Image className="bookmarkCheck01Icon" src="/icons/bookmark.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-                          <div className="fasterOnboarding">Compliance tracking</div>
+                      <div className={styles.frameWrapper9}>
+                        <div className={styles.bookmarkCheck01Parent}>
+                          <Image className={styles.bookmarkCheck01Icon} src="/icons/bookmark.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                          <div className={styles.fasterOnboarding}>Compliance tracking</div>
                         </div>
                       </div>
-                      <div className="frameWrapper9">
-                        <div className="bookmarkCheck01Parent">
-                          <Image className="bookmarkCheck01Icon" src="/icons/bookmark.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-                          <div className="continuousLearning">Continuous learning</div>
+                      <div className={styles.frameWrapper9}>
+                        <div className={styles.bookmarkCheck01Parent}>
+                          <Image className={styles.bookmarkCheck01Icon} src="/icons/bookmark.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                          <div className={styles.continuousLearning}>Continuous learning</div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="image20" />
+                <div className={styles.image20} />
               </div>
             </div>
-            <div className="frameParent24">
-              <div className="howItWorksWrapper">
-                <h2 className="coreFeatures">How it works</h2>
+            <div className={styles.frameParent24}>
+              <div className={styles.howItWorksWrapper}>
+                <h2 className={styles.coreFeatures}>How it works</h2>
               </div>
-              <div className="frameParent25">
-                <div className="frameParent26">
-                  <div className="frameWrapper13">
-                    <div className="frameParent27">
-                      <div className="image20Parent">
-                        <div className="image202" />
-                        <div className="improveStudentParticipation">
+              <div className={styles.frameParent25}>
+                <div className={styles.frameParent26}>
+                  <div className={styles.frameWrapper13}>
+                    <div className={styles.frameParent27}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image202} />
+                        <div className={styles.improveStudentParticipation}>
                           Improve student participation and academic performance.
                           <br />
                           <br />
                         </div>
-                        <div className="image20Group">
-                          <div className="image203" />
-                          <div className="createOrIntegrate">
+                        <div className={styles.image20Group}>
+                          <div className={styles.image203} />
+                          <div className={styles.createOrIntegrate}>
                             Create or integrate training content
                             <br />
                           </div>
                         </div>
                       </div>
-                      <div className="howItWorksIconOuter">
-                        <div className="howItWorksIconInner">
-                          <Image className="howItWorksStepIcon" src="/icons/settings.svg" width={50} height={50} sizes="50px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                      <div className={styles.howItWorksIconOuter}>
+                        <div className={styles.howItWorksIconInner}>
+                          <Image className={styles.howItWorksStepIcon} src="/icons/settings.svg" width={50} height={50} sizes="50px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="frameWrapper13">
-                    <div className="frameParent27">
-                      <div className="image20Parent">
-                        <div className="image202" />
-                        <div className="improveStudentParticipation">
+                  <div className={styles.frameWrapper13}>
+                    <div className={styles.frameParent27}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image202} />
+                        <div className={styles.improveStudentParticipation}>
                           Improve student participation and academic performance.
                           <br />
                           <br />
                         </div>
-                        <div className="image20Group">
-                          <div className="image203" />
-                          <div className="engageLearnersWith">
+                        <div className={styles.image20Group}>
+                          <div className={styles.image203} />
+                          <div className={styles.engageLearnersWith}>
                             Engage learners with AI-driven experiences
                             <br />
                             <br />
@@ -237,61 +237,61 @@ const TrainingManagement: NextPage = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="howItWorksIconOuter">
-                        <div className="howItWorksIconInner">
-                          <Image className="howItWorksStepIcon" src="/icons/group.svg" width={50} height={50} sizes="50px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                      <div className={styles.howItWorksIconOuter}>
+                        <div className={styles.howItWorksIconInner}>
+                          <Image className={styles.howItWorksStepIcon} src="/icons/group.svg" width={50} height={50} sizes="50px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="frameParent29">
-                  <div className="frameWrapper13">
-                    <div className="frameParent27">
-                      <div className="image20Parent">
-                        <div className="image202" />
-                        <div className="improveStudentParticipation">
+                <div className={styles.frameParent29}>
+                  <div className={styles.frameWrapper13}>
+                    <div className={styles.frameParent27}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image202} />
+                        <div className={styles.improveStudentParticipation}>
                           Improve student participation and academic performance.
                           <br />
                           <br />
                         </div>
-                        <div className="image20Group">
-                          <div className="image203" />
-                          <div className="createOrIntegrate">
+                        <div className={styles.image20Group}>
+                          <div className={styles.image203} />
+                          <div className={styles.createOrIntegrate}>
                             Assign personalized learning paths
                             <br />
                             <br />
                           </div>
                         </div>
                       </div>
-                      <div className="howItWorksIconOuter">
-                        <div className="howItWorksIconInner">
-                          <Image className="howItWorksStepIcon" src="/icons/graduationcappurple.svg" width={50} height={50} sizes="50px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                      <div className={styles.howItWorksIconOuter}>
+                        <div className={styles.howItWorksIconInner}>
+                          <Image className={styles.howItWorksStepIcon} src="/icons/graduationcappurple.svg" width={50} height={50} sizes="50px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="frameWrapper13">
-                    <div className="frameParent27">
-                      <div className="image20Parent">
-                        <div className="image202" />
-                        <div className="improveStudentParticipation">
+                  <div className={styles.frameWrapper13}>
+                    <div className={styles.frameParent27}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image202} />
+                        <div className={styles.improveStudentParticipation}>
                           Improve student participation and academic performance.
                           <br />
                           <br />
                         </div>
-                        <div className="image20Group">
-                          <div className="image203" />
-                          <div className="createOrIntegrate">
+                        <div className={styles.image20Group}>
+                          <div className={styles.image203} />
+                          <div className={styles.createOrIntegrate}>
                             Track and optimize with analytics
                             <br />
                             <br />
                           </div>
                         </div>
                       </div>
-                      <div className="howItWorksIconOuter">
-                        <div className="howItWorksIconInner">
-                          <Image className="howItWorksStepIcon" src="/icons/chart.svg" width={50} height={50} sizes="50px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                      <div className={styles.howItWorksIconOuter}>
+                        <div className={styles.howItWorksIconInner}>
+                          <Image className={styles.howItWorksStepIcon} src="/icons/chart.svg" width={50} height={50} sizes="50px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                         </div>
                       </div>
                     </div>
@@ -301,33 +301,33 @@ const TrainingManagement: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="rectangleParent">
-          <Image className="transformTrainingBackground" src="/images/trainingbg2.webp" width={1280} height={505} sizes="1280px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+        <div className={styles.rectangleParent}>
+          <Image className={styles.transformTrainingBackground} src="/images/trainingbg2.webp" width={1280} height={505} sizes="1280px" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
 
-          <div className="frameParent32">
-            <div className="transformTrainingWithNeurolParent">
-              <h2 className="transformTrainingWith">
+          <div className={styles.frameParent32}>
+            <div className={styles.transformTrainingWithNeurolParent}>
+              <h2 className={styles.transformTrainingWith}>
                 Transform training with NeuroLXP?
                 <br />
               </h2>
-              <div className="empowerYourWorkforce">Empower your workforce with a modern training system designed for the future.</div>
+              <div className={styles.empowerYourWorkforce}>Empower your workforce with a modern training system designed for the future.</div>
             </div>
 
-            <div className="frameParent33">
-              <div className="frameWrapper17">
-                <div className="bookADemoWrapper">
-                  <div className="bookADemo">Book a Demo</div>
+            <div className={styles.frameParent33}>
+              <div className={styles.frameWrapper17}>
+                <div className={styles.bookADemoWrapper}>
+                  <div className={styles.bookADemo}>Book a Demo</div>
                 </div>
               </div>
 
-              <div className="startFreeTrialButton">
-                <div className="startFreeTrialText">Start Free Trial</div>
+              <div className={styles.startFreeTrialButton}>
+                <div className={styles.startFreeTrialText}>Start Free Trial</div>
               </div>
             </div>
           </div>
 
-          <div className="colleaguesWorkingTogetherPrWrapper">
-            <Image className="colleaguesWorkingTogetherPrIcon" src="/images/trainingimage.webp" width={576} height={505} sizes="576px" alt="Colleagues working together on a training project" />
+          <div className={styles.colleaguesWorkingTogetherPrWrapper}>
+            <Image className={styles.colleaguesWorkingTogetherPrIcon} src="/images/trainingimage.webp" width={576} height={505} sizes="576px" alt="Colleagues working together on a training project" />
           </div>
         </div>
       </div>

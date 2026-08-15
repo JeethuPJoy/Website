@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRef, useState } from "react";
-import "./e-learning.css";
+import styles from "./e-learning.module.css";
 
 export default function ELearningPage() {
   const futureReadyVideoRef = useRef<HTMLVideoElement>(null);
@@ -26,146 +26,146 @@ export default function ELearningPage() {
   };
 
   return (
-    <main className="eLearning">
+    <main className={styles.eLearning}>
       <title>E-Learning Solutions | NeuroLXP</title>
-      <Image className="eLearningChild" src="/icons/elearning-hero-frame.svg" width={1487} height={1413} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} priority />
-      <div className="frameParent">
-        <div className="frameWrapper">
-          <div className="frameGroup">
-            <div className="frameContainer">
-              <div className="frameChild">E-Learning Solutions</div>
-              <h1 className="deliverEngagingDigitalContainer" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                <span className="deliverEngaging">Deliver Engaging</span>
-                <span className="digitalLearning">{` Digital Learning `}</span>
-                <span className="deliverEngaging">
+      <Image className={styles.eLearningChild} src="/icons/elearning-hero-frame.svg" width={1487} height={1413} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} priority />
+      <div className={styles.frameParent}>
+        <div className={styles.frameWrapper}>
+          <div className={styles.frameGroup}>
+            <div className={styles.frameContainer}>
+              <div className={styles.frameChild}>E-Learning Solutions</div>
+              <h1 className={styles.deliverEngagingDigitalContainer} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+                <span className={styles.deliverEngaging}>Deliver Engaging</span>
+                <span className={styles.digitalLearning}>{` Digital Learning `}</span>
+                <span className={styles.deliverEngaging}>
                   Experiences
                   <br />
                 </span>
               </h1>
             </div>
-            <div className="neurolxpEmpowersOrganization">{`NeuroLXP empowers organizations with interactive, scalable, and engaging digital learning experiences. `}</div>
+            <div className={styles.neurolxpEmpowersOrganization}>{`NeuroLXP empowers organizations with interactive, scalable, and engaging digital learning experiences. `}</div>
           </div>
         </div>
-        <div className="frameDiv">
-          <a href="/book-demo" className="bookDemoButton">
+        <div className={styles.frameDiv}>
+          <a href="/book-demo" className={styles.bookDemoButton}>
             Book a Demo
           </a>
-          <div className="frameWrapper2">
-            <div className="startLearningWrapper">
-              <div className="startLearning">Start Learning</div>
+          <div className={styles.frameWrapper2}>
+            <div className={styles.startLearningWrapper}>
+              <div className={styles.startLearning}>Start Learning</div>
             </div>
           </div>
         </div>
       </div>
-      <div className="frameParent5">
-        <div className="ourCustomersWrapper">
-          <div className="solutionsFor">Our Customers</div>
+      <div className={styles.frameParent5}>
+        <div className={styles.ourCustomersWrapper}>
+          <div className={styles.solutionsFor}>Our Customers</div>
         </div>
-        <div className="homeParent">
-          <Image className="arrowDown01Icon" src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-          <div className="ourCustomersWrapper">
-            <div className="solutionsFor">Solutions for</div>
+        <div className={styles.homeParent}>
+          <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+          <div className={styles.ourCustomersWrapper}>
+            <div className={styles.solutionsFor}>Solutions for</div>
           </div>
         </div>
-        <div className="arrowRightDoubleGroup">
-          <Image className="arrowDown01Icon" src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
-          <span className="solutionsFor">{`E-Learning `}</span>
+        <div className={styles.arrowRightDoubleGroup}>
+          <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+          <span className={styles.solutionsFor}>{`E-Learning `}</span>
         </div>
       </div>
-      <div className="eLearningInner">
-        <div className="learningStats">
-          <div className="learningStat learningStatBlue">
+      <div className={styles.eLearningInner}>
+        <div className={styles.learningStats}>
+          <div className={`${styles.learningStat} ${styles.learningStatBlue}`}>
             <strong>50k+</strong>
             <span>Active learners</span>
           </div>
 
-          <div className="learningStat learningStatPink">
+          <div className={`${styles.learningStat} ${styles.learningStatPink}`}>
             <strong>92%</strong>
             <span>Completion</span>
           </div>
 
-          <div className="learningStat learningStatGreen">
+          <div className={`${styles.learningStat} ${styles.learningStatGreen}`}>
             <strong>24/7</strong>
             <span>Learning Access</span>
           </div>
         </div>
       </div>
-      <div className="frameParent6">
-        <div className="frameParent7">
-          <div className="keyChallengesBadge">Key Challenges</div>
-          <div className="addressingKeyChallengesInEParent">
-            <h2 className="addressingKeyChallenges" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+      <div className={styles.frameParent6}>
+        <div className={styles.frameParent7}>
+          <div className={styles.keyChallengesBadge}>Key Challenges</div>
+          <div className={styles.addressingKeyChallengesInEParent}>
+            <h2 className={styles.addressingKeyChallenges} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
               Addressing Key Challenges in E-Learning
               <br />
             </h2>
-            <div className="neurolxpHelpsOrganizations">NeuroLXP helps organizations deliver engaging, accessible, and measurable learning experiences.</div>
+            <div className={styles.neurolxpHelpsOrganizations}>NeuroLXP helps organizations deliver engaging, accessible, and measurable learning experiences.</div>
           </div>
         </div>
-        <div className="frameParent8 challengeSection">
-          <div className="challengeTimeline">
-            <div className="challengeLine" />
+        <div className={`${styles.frameParent8} ${styles.challengeSection}`}>
+          <div className={styles.challengeTimeline}>
+            <div className={styles.challengeLine} />
 
-            <div className="challengeIconNode challengeIconPink">
-              <Image className="challengeIconImage" src="/icons/ideapink.svg" width={40} height={40} alt="Passive online learning challenge" />
+            <div className={`${styles.challengeIconNode} ${styles.challengeIconPink}`}>
+              <Image className={styles.challengeIconImage} src="/icons/ideapink.svg" width={40} height={40} alt="Passive online learning challenge" />
             </div>
 
-            <div className="challengeIconNode challengeIconBlue">
-              <Image className="challengeIconImage" src="/icons/layers.svg" width={40} height={40} alt="Learning content management challenge" />
+            <div className={`${styles.challengeIconNode} ${styles.challengeIconBlue}`}>
+              <Image className={styles.challengeIconImage} src="/icons/layers.svg" width={40} height={40} alt="Learning content management challenge" />
             </div>
 
-            <div className="challengeIconNode challengeIconPurple">
-              <Image className="challengeIconImage" src="/icons/champion-1.svg" width={40} height={40} alt="Learner engagement challenge" />
+            <div className={`${styles.challengeIconNode} ${styles.challengeIconPurple}`}>
+              <Image className={styles.challengeIconImage} src="/icons/champion-1.svg" width={40} height={40} alt="Learner engagement challenge" />
             </div>
 
-            <div className="challengeIconNode challengeIconGreen">
-              <Image className="challengeIconImage" src="/icons/chart.svg" width={40} height={40} alt="Learning effectiveness challenge" />
+            <div className={`${styles.challengeIconNode} ${styles.challengeIconGreen}`}>
+              <Image className={styles.challengeIconImage} src="/icons/chart.svg" width={40} height={40} alt="Learning effectiveness challenge" />
             </div>
           </div>
 
-          <div className="challengeCards">
-            <article className="challengeCard">
-              <div className="challengeMainContent">
-                <span className="challengeNumber challengeNumberPink">CHALLENGE 1</span>
+          <div className={styles.challengeCards}>
+            <article className={styles.challengeCard}>
+              <div className={styles.challengeMainContent}>
+                <span className={`${styles.challengeNumber} ${styles.challengeNumberPink}`}>CHALLENGE 1</span>
                 <h3>Passive Online Learning</h3>
                 <p>Static content reduces engagement and knowledge retention.</p>
               </div>
-              <div className="challengeSolution challengeSolutionPink">
+              <div className={`${styles.challengeSolution} ${styles.challengeSolutionPink}`}>
                 <strong>HOW NEUROLXP HELPS</strong>
                 <span>Interactive learning boosts engagement and retention.</span>
               </div>
             </article>
 
-            <article className="challengeCard">
-              <div className="challengeMainContent">
-                <span className="challengeNumber challengeNumberBlue">CHALLENGE 2</span>
+            <article className={styles.challengeCard}>
+              <div className={styles.challengeMainContent}>
+                <span className={`${styles.challengeNumber} ${styles.challengeNumberBlue}`}>CHALLENGE 2</span>
                 <h3>Managing Large Learning Content</h3>
                 <p>Managing videos, PDFs, presentations, and assessments is complex.</p>
               </div>
-              <div className="challengeSolution challengeSolutionBlue">
+              <div className={`${styles.challengeSolution} ${styles.challengeSolutionBlue}`}>
                 <strong>HOW NEUROLXP HELPS</strong>
                 <span>Centralized content management, organization, and delivery.</span>
               </div>
             </article>
 
-            <article className="challengeCard">
-              <div className="challengeMainContent">
-                <span className="challengeNumber challengeNumberPurple">CHALLENGE 3</span>
+            <article className={styles.challengeCard}>
+              <div className={styles.challengeMainContent}>
+                <span className={`${styles.challengeNumber} ${styles.challengeNumberPurple}`}>CHALLENGE 3</span>
                 <h3>Low Learner Engagement</h3>
                 <p>Maintaining learner motivation is challenging.</p>
               </div>
-              <div className="challengeSolution challengeSolutionPurple">
+              <div className={`${styles.challengeSolution} ${styles.challengeSolutionPurple}`}>
                 <strong>HOW NEUROLXP HELPS</strong>
                 <span>Gamification, social learning, and interactive assessments boost engagement and motivation.</span>
               </div>
             </article>
 
-            <article className="challengeCard">
-              <div className="challengeMainContent">
-                <span className="challengeNumber challengeNumberGreen">CHALLENGE 4</span>
+            <article className={styles.challengeCard}>
+              <div className={styles.challengeMainContent}>
+                <span className={`${styles.challengeNumber} ${styles.challengeNumberGreen}`}>CHALLENGE 4</span>
                 <h3>Measuring Learning Effectiveness</h3>
                 <p>Tracking learning outcomes is challenging.</p>
               </div>
-              <div className="challengeSolution challengeSolutionGreen">
+              <div className={`${styles.challengeSolution} ${styles.challengeSolutionGreen}`}>
                 <strong>HOW NEUROLXP HELPS</strong>
                 <span>Advanced analytics deliver actionable learning insights.</span>
               </div>
@@ -173,103 +173,103 @@ export default function ELearningPage() {
           </div>
         </div>
       </div>
-      <div className="eLearningItem" />
-      <div className="eLearningInner2">
-        <div className="frameChild14" />
+      <div className={styles.eLearningItem} />
+      <div className={styles.eLearningInner2}>
+        <div className={styles.frameChild14} />
       </div>
-      <div className="frameParent15">
-        <div className="frameParent16">
-          <div className="frameParent17">
-            <div className="frameParent18">
-              <div className="platformFeaturesBadge">Platform Features</div>
-              <div className="keyFeaturesOfNeurolxpELeaWrapper">
-                <h2 className="keyFeaturesOf" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+      <div className={styles.frameParent15}>
+        <div className={styles.frameParent16}>
+          <div className={styles.frameParent17}>
+            <div className={styles.frameParent18}>
+              <div className={styles.platformFeaturesBadge}>Platform Features</div>
+              <div className={styles.keyFeaturesOfNeurolxpELeaWrapper}>
+                <h2 className={styles.keyFeaturesOf} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                   Key Features of NeuroLXP E-Learning Platform
                   <br />
                   <br />
                 </h2>
               </div>
             </div>
-            <div className="frameParent19">
-              <div className="frameParent20">
-                <div className="ellipseParent">
-                  <div className="ellipseDiv" />
-                  <div className="frameChild18" />
-                  <div className="frameParent21">
-                    <div className="ellipseGroup">
-                      <div className="frameChild16" />
-                      <h3 className="aiPoweredContent" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+            <div className={styles.frameParent19}>
+              <div className={styles.frameParent20}>
+                <div className={styles.ellipseParent}>
+                  <div className={styles.ellipseDiv} />
+                  <div className={styles.frameChild18} />
+                  <div className={styles.frameParent21}>
+                    <div className={styles.ellipseGroup}>
+                      <div className={styles.frameChild16} />
+                      <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                         AI-Powered Content
                         <br />
                       </h3>
-                      <Image className="aiBookIcon" src="/icons/ai-book.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                      <Image className={styles.aiBookIcon} src="/icons/ai-book.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                     </div>
-                    <div className="smartContentCuration">Smart content curation.</div>
+                    <div className={styles.smartContentCuration}>Smart content curation.</div>
                   </div>
                 </div>
-                <div className="ellipseParent">
-                  <div className="ellipseDiv" />
-                  <div className="frameChild18" />
-                  <div className="frameParent21">
-                    <div className="ellipseGroup">
-                      <div className="frameChild19" />
-                      <h3 className="aiPoweredContent" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+                <div className={styles.ellipseParent}>
+                  <div className={styles.ellipseDiv} />
+                  <div className={styles.frameChild18} />
+                  <div className={styles.frameParent21}>
+                    <div className={styles.ellipseGroup}>
+                      <div className={styles.frameChild19} />
+                      <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                         Mobile Learning
                         <br />
                         <br />
                       </h3>
-                      <Image className="aiBookIcon" src="/icons/smart-phone.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                      <Image className={styles.aiBookIcon} src="/icons/smart-phone.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                     </div>
-                    <div className="smartContentCuration">Learn anytime, anywhere.</div>
+                    <div className={styles.smartContentCuration}>Learn anytime, anywhere.</div>
                   </div>
                 </div>
               </div>
-              <div className="frameParent20">
-                <div className="ellipseParent">
-                  <div className="ellipseDiv" />
-                  <div className="frameChild18" />
-                  <div className="frameParent21">
-                    <div className="ellipseGroup">
-                      <div className="frameChild22" />
-                      <h3 className="aiPoweredContent" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+              <div className={styles.frameParent20}>
+                <div className={styles.ellipseParent}>
+                  <div className={styles.ellipseDiv} />
+                  <div className={styles.frameChild18} />
+                  <div className={styles.frameParent21}>
+                    <div className={styles.ellipseGroup}>
+                      <div className={styles.frameChild22} />
+                      <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                         Skill Pathways
                         <br />
                         <br />
                         <br />
                       </h3>
-                      <Image className="aiBookIcon" src="/icons/graduation-cap.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                      <Image className={styles.aiBookIcon} src="/icons/graduation-cap.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                     </div>
-                    <div className="smartContentCuration">Career-ready skills</div>
+                    <div className={styles.smartContentCuration}>Career-ready skills</div>
                   </div>
                 </div>
-                <div className="ellipseParent">
-                  <div className="ellipseDiv" />
-                  <div className="frameChild18" />
-                  <div className="frameParent21">
-                    <div className="ellipseGroup">
-                      <div className="frameChild25" />
-                      <h3 className="aiPoweredContent" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+                <div className={styles.ellipseParent}>
+                  <div className={styles.ellipseDiv} />
+                  <div className={styles.frameChild18} />
+                  <div className={styles.frameParent21}>
+                    <div className={styles.ellipseGroup}>
+                      <div className={styles.frameChild25} />
+                      <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                         Scalable Platform
                         <br />
                       </h3>
-                      <Image className="aiBookIcon" src="/icons/justice.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+                      <Image className={styles.aiBookIcon} src="/icons/justice.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                     </div>
-                    <div className="smartContentCuration">Scalable digital learning.</div>
+                    <div className={styles.smartContentCuration}>Scalable digital learning.</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="frameParent7">
-            <div className="idealForBadge">Ideal For</div>
-            <div className="addressingKeyChallengesInEParent">
-              <h2 className="addressingKeyChallenges" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+          <div className={styles.frameParent7}>
+            <div className={styles.idealForBadge}>Ideal For</div>
+            <div className={styles.addressingKeyChallengesInEParent}>
+              <h2 className={styles.addressingKeyChallenges} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                 Ideal for Diverse Learning Environments
                 <br />
                 <br />
                 <br />
               </h2>
-              <div className="neurolxpSupportsA">
+              <div className={styles.neurolxpSupportsA}>
                 NeuroLXP supports a wide range of digital learning initiatives.
                 <br />
                 <br />
@@ -277,18 +277,18 @@ export default function ELearningPage() {
             </div>
           </div>
         </div>
-        <div className="frameParent27">
-          <div className="frameParent28">
-            <div className="frameWrapper12">
-              <div className="rectangleParent">
-                <div className="rectangleDiv" />
-                <div className="frameChild27" />
-                <div className="frameParent29">
-                  <div className="ourCustomersWrapper">
-                    <Image className="mortarboard01Icon" src="/icons/cap.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+        <div className={styles.frameParent27}>
+          <div className={styles.frameParent28}>
+            <div className={styles.frameWrapper12}>
+              <div className={styles.rectangleParent}>
+                <div className={styles.rectangleDiv} />
+                <div className={styles.frameChild27} />
+                <div className={styles.frameParent29}>
+                  <div className={styles.ourCustomersWrapper}>
+                    <Image className={styles.mortarboard01Icon} src="/icons/cap.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                   </div>
-                  <div className="onlineEducationParent">
-                    <h3 className="onlineEducation" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+                  <div className={styles.onlineEducationParent}>
+                    <h3 className={styles.onlineEducation} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                       Online Education
                       <br />
                       <br />
@@ -296,21 +296,21 @@ export default function ELearningPage() {
                       <br />
                       <br />
                     </h3>
-                    <div className="universitiesSchools">{`Universities & schools.`}</div>
+                    <div className={styles.universitiesSchools}>{`Universities & schools.`}</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="frameWrapper13">
-              <div className="rectangleParent">
-                <div className="rectangleDiv" />
-                <div className="frameChild29" />
-                <div className="frameParent30">
-                  <div className="ourCustomersWrapper">
-                    <Image className="mortarboard01Icon" src="/icons/university-usergroup.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+            <div className={styles.frameWrapper13}>
+              <div className={styles.rectangleParent}>
+                <div className={styles.rectangleDiv} />
+                <div className={styles.frameChild29} />
+                <div className={styles.frameParent30}>
+                  <div className={styles.ourCustomersWrapper}>
+                    <Image className={styles.mortarboard01Icon} src="/icons/university-usergroup.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                   </div>
-                  <div className="corporateTrainingParent">
-                    <h3 className="corporateTraining" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+                  <div className={styles.corporateTrainingParent}>
+                    <h3 className={styles.corporateTraining} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                       Corporate Training
                       <br />
                       <br />
@@ -320,61 +320,61 @@ export default function ELearningPage() {
                       <br />
                       <br />
                     </h3>
-                    <div className="employeeDevelopment">Employee development.</div>
+                    <div className={styles.employeeDevelopment}>Employee development.</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="frameWrapper14">
-              <div className="rectangleParent">
-                <div className="rectangleDiv" />
-                <div className="frameChild29" />
-                <div className="frameParent30">
-                  <div className="ourCustomersWrapper">
-                    <div className="ourCustomersWrapper">
-                      <Image className="mortarboard01Icon" src="/icons/certificate.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+            <div className={styles.frameWrapper14}>
+              <div className={styles.rectangleParent}>
+                <div className={styles.rectangleDiv} />
+                <div className={styles.frameChild29} />
+                <div className={styles.frameParent30}>
+                  <div className={styles.ourCustomersWrapper}>
+                    <div className={styles.ourCustomersWrapper}>
+                      <Image className={styles.mortarboard01Icon} src="/icons/certificate.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                     </div>
                   </div>
-                  <div className="corporateTrainingParent">
-                    <h3 className="corporateTraining" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+                  <div className={styles.corporateTrainingParent}>
+                    <h3 className={styles.corporateTraining} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                       Certification Programs
                       <br />
                     </h3>
-                    <div className="professionalCertifications">Professional certifications.</div>
+                    <div className={styles.professionalCertifications}>Professional certifications.</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="frameParent32">
-            <div className="frameWrapper16">
-              <div className="rectangleParent">
-                <div className="rectangleDiv" />
-                <div className="frameChild29" />
-                <div className="frameParent29">
-                  <div className="ourCustomersWrapper">
-                    <Image className="mortarboard01Icon" src="/icons/idea.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+          <div className={styles.frameParent32}>
+            <div className={styles.frameWrapper16}>
+              <div className={styles.rectangleParent}>
+                <div className={styles.rectangleDiv} />
+                <div className={styles.frameChild29} />
+                <div className={styles.frameParent29}>
+                  <div className={styles.ourCustomersWrapper}>
+                    <Image className={styles.mortarboard01Icon} src="/icons/idea.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                   </div>
-                  <div className="onlineEducationParent">
-                    <h3 className="skillDevelopment" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+                  <div className={styles.onlineEducationParent}>
+                    <h3 className={styles.skillDevelopment} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                       Skill Development
                       <br />
                     </h3>
-                    <div className="universitiesSchools">Workforce upskilling.</div>
+                    <div className={styles.universitiesSchools}>Workforce upskilling.</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="frameWrapper16">
-              <div className="rectangleParent">
-                <div className="rectangleDiv" />
-                <div className="frameChild29" />
-                <div className="frameParent29">
-                  <div className="ourCustomersWrapper">
-                    <Image className="mortarboard01Icon" src="/icons/chat.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
+            <div className={styles.frameWrapper16}>
+              <div className={styles.rectangleParent}>
+                <div className={styles.rectangleDiv} />
+                <div className={styles.frameChild29} />
+                <div className={styles.frameParent29}>
+                  <div className={styles.ourCustomersWrapper}>
+                    <Image className={styles.mortarboard01Icon} src="/icons/chat.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                   </div>
-                  <div className="onlineEducationParent">
-                    <h3 className="customerEducation" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+                  <div className={styles.onlineEducationParent}>
+                    <h3 className={styles.customerEducation} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
                       Customer Education
                       <br />
                       <br />
@@ -383,7 +383,7 @@ export default function ELearningPage() {
                       <br />
                       <br />
                     </h3>
-                    <div className="customerPartner">{`Customer & partner training.`}</div>
+                    <div className={styles.customerPartner}>{`Customer & partner training.`}</div>
                   </div>
                 </div>
               </div>
@@ -391,42 +391,42 @@ export default function ELearningPage() {
           </div>
         </div>
       </div>
-      <div className="frameParent35">
-        <div className="peopleTakingPartBusinessEvParent">
-          <div className="peopleTakingPartBusinessEv" />
-          <div className="image21" />
-          <div className="groupYoungBusinesspeopleUsi" />
-          <div className="frameParent36">
-            <div className="frameParent37">
-              <div className="frameParent38">
-                <div className="neuroLxpBadge">
+      <div className={styles.frameParent35}>
+        <div className={styles.peopleTakingPartBusinessEvParent}>
+          <div className={styles.peopleTakingPartBusinessEv} />
+          <div className={styles.image21} />
+          <div className={styles.groupYoungBusinesspeopleUsi} />
+          <div className={styles.frameParent36}>
+            <div className={styles.frameParent37}>
+              <div className={styles.frameParent38}>
+                <div className={styles.neuroLxpBadge}>
                   <span>NeuroLXP</span>
                   <sup>TM</sup>
                 </div>
-                <h2 className="futureReadyELearning" style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                  <span className="deliverEngaging">{`Future-Ready `}</span>
-                  <span className="digitalLearning">
+                <h2 className={styles.futureReadyELearning} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
+                  <span className={styles.deliverEngaging}>{`Future-Ready `}</span>
+                  <span className={styles.digitalLearning}>
                     E-Learning
                     <br />
                   </span>
-                  <span className="deliverEngaging">&nbsp;</span>
+                  <span className={styles.deliverEngaging}>&nbsp;</span>
                 </h2>
               </div>
-              <div className="interactiveScalableLearning">Interactive, scalable learning that drives better outcomes.</div>
+              <div className={styles.interactiveScalableLearning}>Interactive, scalable learning that drives better outcomes.</div>
             </div>
-            <div className="frameWrapper18">
-              <div className="getStartedWrapper">
-                <div className="getStarted">{`Get Started `}</div>
+            <div className={styles.frameWrapper18}>
+              <div className={styles.getStartedWrapper}>
+                <div className={styles.getStarted}>{`Get Started `}</div>
               </div>
             </div>
           </div>
-          <div className="futureReadyVideoWrapper">
-            <video ref={futureReadyVideoRef} className="futureReadyVideo" src="/videos/video-1.mp4" autoPlay muted loop playsInline preload="auto" onPlay={() => setIsFutureReadyVideoPaused(false)} onPause={() => setIsFutureReadyVideoPaused(true)} onEnded={() => setIsFutureReadyVideoPaused(true)} onClick={toggleFutureReadyVideo}>
+          <div className={styles.futureReadyVideoWrapper}>
+            <video ref={futureReadyVideoRef} className={styles.futureReadyVideo} src="/videos/video-1.mp4" autoPlay muted loop playsInline preload="auto" onPlay={() => setIsFutureReadyVideoPaused(false)} onPause={() => setIsFutureReadyVideoPaused(true)} onEnded={() => setIsFutureReadyVideoPaused(true)} onClick={toggleFutureReadyVideo}>
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
-        <div className="image20" />
+        <div className={styles.image20} />
       </div>
     </main>
   );

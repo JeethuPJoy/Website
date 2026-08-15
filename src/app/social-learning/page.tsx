@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 import { useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
-import './learning.css';
+import styles from "./learning.module.css";
 
 
 const LearningCommunitySupport: NextPage = () => {
@@ -26,29 +26,29 @@ const LearningCommunitySupport: NextPage = () => {
 	};
 
 	return (
-		<div className="learningCommunitySupport">
-			<div className="frameDiv">
-				<div className="featuresWrapper">
-					<div className="augmentation">Features</div>
+		<div className={styles.learningCommunitySupport}>
+			<div className={styles.frameDiv}>
+				<div className={styles.featuresWrapper}>
+					<div className={styles.augmentation}>Features</div>
 				</div>
-				<div className="homeParent">
-					<Image className="arrowDown01Icon" src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" />
-					<div className="featuresWrapper">
-						<div className="augmentation">Augmentation</div>
+				<div className={styles.homeParent}>
+					<Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" />
+					<div className={styles.featuresWrapper}>
+						<div className={styles.augmentation}>Augmentation</div>
 					</div>
 				</div>
-				<div className="arrowRightDoubleGroup">
-					<Image className="arrowDown01Icon" src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" />
-					<h3 className="augmentation" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>{`Learning Community & Support`}</h3>
+				<div className={styles.arrowRightDoubleGroup}>
+					<Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" />
+					<h3 className={styles.augmentation} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>{`Learning Community & Support`}</h3>
 				</div>
 			</div>
-			<div className="rectangleParent">
-				<div className="rectangle" />
-				<div className="image20" />
-				<div className="groupMultiethnicBusinessPeo" />
-				<div className="frameInner">
+			<div className={styles.rectangleParent}>
+				<div className={styles.rectangle} />
+				<div className={styles.image20} />
+				<div className={styles.groupMultiethnicBusinessPeo} />
+				<div className={styles.frameInner}>
 					<svg
-						className="frameInnerShape"
+						className={styles.frameInnerShape}
 						width="720"
 						height="652"
 						viewBox="0 0 720 652"
@@ -108,7 +108,7 @@ const LearningCommunitySupport: NextPage = () => {
 					</svg>
 
 					<Image
-						className="rectangleIcon"
+						className={styles.rectangleIcon}
 						src="/images/limage.webp"
 						width={667}
 						height={616}
@@ -116,21 +116,21 @@ const LearningCommunitySupport: NextPage = () => {
 						alt="Learners collaborating around a laptop"
 					/>
 				</div>
-				<div className="frameParent2">
-					<div className="frameWrapper">
-						<div className="frameParent3">
-							<div className="frameParent4">
-								<div className="userSupportSocialLearning">User Support &amp; Social Learning</div>
-								<h1 className="learnTogetherStay" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Learn Together! Stay Connected</h1>
+				<div className={styles.frameParent2}>
+					<div className={styles.frameWrapper}>
+						<div className={styles.frameParent3}>
+							<div className={styles.frameParent4}>
+								<div className={styles.userSupportSocialLearning}>User Support &amp; Social Learning</div>
+								<h1 className={styles.learnTogetherStay} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Learn Together! Stay Connected</h1>
 							</div>
-							<div className="neurolxpCombinesSupport">NeuroLXP combines support, collaboration, and social learning in one connected experience.</div>
+							<div className={styles.neurolxpCombinesSupport}>NeuroLXP combines support, collaboration, and social learning in one connected experience.</div>
 						</div>
 					</div>
-					<div className="frameWrapper2">
-						<div className="frameWrapper3">
-							<div className="frameWrapper4">
+					<div className={styles.frameWrapper2}>
+						<div className={styles.frameWrapper3}>
+							<div className={styles.frameWrapper4}>
 								<div
-									className="bookADemoWrapper"
+									className={styles.bookADemoWrapper}
 									role="button"
 									tabIndex={0}
 									onClick={() => router.push("/contact")}
@@ -141,65 +141,65 @@ const LearningCommunitySupport: NextPage = () => {
 										}
 									}}
 								>
-									<div className="bookADemo">Book a Demo</div>
+									<div className={styles.bookADemo}>Book a Demo</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="frameParent5">
-				<div className="frameWrapper5">
-					<div className="frameWrapper6">
-						<div className="frameParent6">
-							<div className="frameChild2">
+			<div className={styles.frameParent5}>
+				<div className={styles.frameWrapper5}>
+					<div className={styles.frameWrapper6}>
+						<div className={styles.frameParent6}>
+							<div className={styles.frameChild2}>
 								Always-On Learning Support
 							</div>
-							<div className="getTheHelpYouNeedWhenYoParent">
-								<h2 className="getTheHelp" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Get the help you need! When you need it</h2>
-								<div className="neurolxpKeepsLearners">NeuroLXP keeps learners and educators supported with</div>
+							<div className={styles.getTheHelpYouNeedWhenYoParent}>
+								<h2 className={styles.getTheHelp} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Get the help you need! When you need it</h2>
+								<div className={styles.neurolxpKeepsLearners}>NeuroLXP keeps learners and educators supported with</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="frameParent7">
-					<div className="frameParent8">
-						<div className="ellipseParent">
-							<div className="ellipseDiv" />
-							<div className="ellipseGroup">
-								<div className="frameChild3" />
-								<h3 className="helpdeskTechnical" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>{`Helpdesk & technical support`}</h3>
+				<div className={styles.frameParent7}>
+					<div className={styles.frameParent8}>
+						<div className={styles.ellipseParent}>
+							<div className={styles.ellipseDiv} />
+							<div className={styles.ellipseGroup}>
+								<div className={styles.frameChild3} />
+								<h3 className={styles.helpdeskTechnical} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>{`Helpdesk & technical support`}</h3>
 							</div>
 						</div>
-						<div className="ellipseContainer">
-							<div className="ellipseDiv" />
-							<div className="ellipseGroup">
-								<div className="frameChild3" />
-								<h3 className="guidedOnboarding" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Guided onboarding</h3>
+						<div className={styles.ellipseContainer}>
+							<div className={styles.ellipseDiv} />
+							<div className={styles.ellipseGroup}>
+								<div className={styles.frameChild3} />
+								<h3 className={styles.guidedOnboarding} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Guided onboarding</h3>
 							</div>
 						</div>
 					</div>
-					<div className="frameParent9">
-						<div className="ellipseParent">
-							<div className="ellipseDiv" />
-							<div className="ellipseGroup">
-								<div className="frameChild3" />
-								<h3 className="faqsKnowledge" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>{`FAQs & knowledge base`}</h3>
+					<div className={styles.frameParent9}>
+						<div className={styles.ellipseParent}>
+							<div className={styles.ellipseDiv} />
+							<div className={styles.ellipseGroup}>
+								<div className={styles.frameChild3} />
+								<h3 className={styles.faqsKnowledge} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>{`FAQs & knowledge base`}</h3>
 							</div>
 						</div>
-						<div className="ellipseParent5">
-							<div className="ellipseDiv" />
-							<div className="ellipseGroup">
-								<div className="frameChild3" />
-								<h3 className="inPlatformGuidance" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>In-platform guidance</h3>
+						<div className={styles.ellipseParent5}>
+							<div className={styles.ellipseDiv} />
+							<div className={styles.ellipseGroup}>
+								<div className={styles.frameChild3} />
+								<h3 className={styles.inPlatformGuidance} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>In-platform guidance</h3>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="vectorParent">
+			<div className={styles.vectorParent}>
 				<svg
-					className="frameChild10"
+					className={styles.frameChild10}
 					width="1440"
 					height="574"
 					viewBox="0 0 1440 574"
@@ -271,57 +271,57 @@ const LearningCommunitySupport: NextPage = () => {
 						</filter>
 					</defs>
 				</svg>
-				<div className="frameParent10">
-					<div className="frameWrapper7">
-						<div className="frameParent11">
-							<div className="frameChild11">Learning Is Better Together</div>
-							<div className="getTheHelpYouNeedWhenYoParent">
-								<h2 className="connectBeyondThe" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Connect Beyond the Classroom</h2>
-								<div className="connectWithPeers">Connect with peers, educators, and experts to share  collaborate, and learn from each other.</div>
+				<div className={styles.frameParent10}>
+					<div className={styles.frameWrapper7}>
+						<div className={styles.frameParent11}>
+							<div className={styles.frameChild11}>Learning Is Better Together</div>
+							<div className={styles.getTheHelpYouNeedWhenYoParent}>
+								<h2 className={styles.connectBeyondThe} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Connect Beyond the Classroom</h2>
+								<div className={styles.connectWithPeers}>Connect with peers, educators, and experts to share  collaborate, and learn from each other.</div>
 							</div>
 						</div>
 					</div>
-					<div className="frameParent12">
-						<div className="frameWrapper8 communityCard" tabIndex={0}>
-							<div className="discussionForumsParent">
-								<h3 className="discussionForums" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Discussion Forums</h3>
-								<div className="askQuestionsExchange">Ask questions, exchange ideas, and explore topics together</div>
+					<div className={styles.frameParent12}>
+						<div className={`${styles.frameWrapper8} ${styles.communityCard}`} tabIndex={0}>
+							<div className={styles.discussionForumsParent}>
+								<h3 className={styles.discussionForums} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Discussion Forums</h3>
+								<div className={styles.askQuestionsExchange}>Ask questions, exchange ideas, and explore topics together</div>
 							</div>
 						</div>
-						<div className="frameWrapper9 communityCard" tabIndex={0}>
-							<div className="learningCommunitiesParent">
-								<h3 className="learningCommunities" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Learning Communities</h3>
-								<div className="createDedicatedSpaces">Create dedicated spaces for courses, groups, projects and shared interests</div>
+						<div className={`${styles.frameWrapper9} ${styles.communityCard}`} tabIndex={0}>
+							<div className={styles.learningCommunitiesParent}>
+								<h3 className={styles.learningCommunities} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Learning Communities</h3>
+								<div className={styles.createDedicatedSpaces}>Create dedicated spaces for courses, groups, projects and shared interests</div>
 							</div>
 						</div>
-						<div className="frameWrapper10 communityCard" tabIndex={0}>
-							<div className="discussionForumsParent">
-								<h3 className="discussionForums" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Peer Collaboration</h3>
-								<div className="askQuestionsExchange">Learn from different perspectives and solve problems together</div>
+						<div className={`${styles.frameWrapper10} ${styles.communityCard}`} tabIndex={0}>
+							<div className={styles.discussionForumsParent}>
+								<h3 className={styles.discussionForums} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Peer Collaboration</h3>
+								<div className={styles.askQuestionsExchange}>Learn from different perspectives and solve problems together</div>
 							</div>
 						</div>
-						<div className="frameWrapper11 communityCard" tabIndex={0}>
-							<div className="discussionForumsParent">
-								<h3 className="discussionForums" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Expert Connect</h3>
-								<div className="askQuestionsExchange">Get guidance and insights from educators and experts</div>
+						<div className={`${styles.frameWrapper11} ${styles.communityCard}`} tabIndex={0}>
+							<div className={styles.discussionForumsParent}>
+								<h3 className={styles.discussionForums} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Expert Connect</h3>
+								<div className={styles.askQuestionsExchange}>Get guidance and insights from educators and experts</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="frameParent13">
-				<div className="frameWrapper12">
-					<div className="peopleTakingPartBusinessEvParent">
-						<div className="peopleTakingPartBusinessEv" />
-						<div className="image21" />
-						<div className="groupYoungBusinesspeopleUsi" />
+			<div className={styles.frameParent13}>
+				<div className={styles.frameWrapper12}>
+					<div className={styles.peopleTakingPartBusinessEvParent}>
+						<div className={styles.peopleTakingPartBusinessEv} />
+						<div className={styles.image21} />
+						<div className={styles.groupYoungBusinesspeopleUsi} />
 
-						<div className="frameParent14">
-							<div className="frameWrapper13">
-								<div className="officeDesktopWithLaptopBusParent">
+						<div className={styles.frameParent14}>
+							<div className={styles.frameWrapper13}>
+								<div className={styles.officeDesktopWithLaptopBusParent}>
 									<video
 										ref={videoRef}
-										className="officeDesktopWithLaptopBusIcon"
+										className={styles.officeDesktopWithLaptopBusIcon}
 										src="/videos/LerningCommunity-video.mp4"
 										autoPlay
 										muted
@@ -336,12 +336,12 @@ const LearningCommunitySupport: NextPage = () => {
 									{!isVideoPlaying && (
 										<button
 											type="button"
-											className="videoControlButton"
+											className={styles.videoControlButton}
 											onClick={toggleVideoPlayback}
 											aria-label="Play video"
 										>
 											<Image
-												className="videoControlIcon"
+												className={styles.videoControlIcon}
 												src="/icons/videosymbol.svg"
 												width={64}
 												height={64}
@@ -353,36 +353,36 @@ const LearningCommunitySupport: NextPage = () => {
 									)}
 								</div>
 							</div>
-							<div className="frameParent15">
-								<div className="frameWrapper14">
-									<div className="frameWrapper15">
-										<div className="frameWrapper16">
-											<div className="shareKnowledgeBuildConfideParent">
-												<h2 className="shareKnowledgeBuild" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Share Knowledge! Build Confidence</h2>
-												<div className="learnersCanActively">Learners can actively contribute to the learning community by sharing what they know and learning from others.</div>
+							<div className={styles.frameParent15}>
+								<div className={styles.frameWrapper14}>
+									<div className={styles.frameWrapper15}>
+										<div className={styles.frameWrapper16}>
+											<div className={styles.shareKnowledgeBuildConfideParent}>
+												<h2 className={styles.shareKnowledgeBuild} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Share Knowledge! Build Confidence</h2>
+												<div className={styles.learnersCanActively}>Learners can actively contribute to the learning community by sharing what they know and learning from others.</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className="frameParent16">
-									<div className="frameParent17">
-										<div className="arrowDownBigParent">
-											<Image className="arrowDownBigIcon" src="/icons/arrowpink.svg" width={36} height={36} sizes="100vw" alt="" />
-											<div className="shareIdeasAnd">Share ideas and resources</div>
+								<div className={styles.frameParent16}>
+									<div className={styles.frameParent17}>
+										<div className={styles.arrowDownBigParent}>
+											<Image className={styles.arrowDownBigIcon} src="/icons/arrowpink.svg" width={36} height={36} sizes="100vw" alt="" />
+											<div className={styles.shareIdeasAnd}>Share ideas and resources</div>
 										</div>
-										<div className="arrowDownBigParent">
-											<Image className="arrowDownBigIcon2" src="/icons/arrowpurple.svg" width={36} height={36} sizes="100vw" alt="" />
-											<div className="askQuestionsAnd">Ask questions and seek guidance</div>
+										<div className={styles.arrowDownBigParent}>
+											<Image className={styles.arrowDownBigIcon2} src="/icons/arrowpurple.svg" width={36} height={36} sizes="100vw" alt="" />
+											<div className={styles.askQuestionsAnd}>Ask questions and seek guidance</div>
 										</div>
 									</div>
-									<div className="frameParent18">
-										<div className="arrowDownBigParent">
-											<Image className="arrowDownBigIcon" src="/icons/arrowbrown.svg" width={36} height={36} sizes="100vw" alt="" />
-											<div className="collaborateOnProjects">Collaborate on projects and problems</div>
+									<div className={styles.frameParent18}>
+										<div className={styles.arrowDownBigParent}>
+											<Image className={styles.arrowDownBigIcon} src="/icons/arrowbrown.svg" width={36} height={36} sizes="100vw" alt="" />
+											<div className={styles.collaborateOnProjects}>Collaborate on projects and problems</div>
 										</div>
-										<div className="arrowDownBigParent">
-											<Image className="arrowDownBigIcon" src="/icons/arrowblue.svg" width={36} height={36} sizes="100vw" alt="" />
-											<div className="exchangeKnowledgeAnd">Exchange knowledge and give feedback</div>
+										<div className={styles.arrowDownBigParent}>
+											<Image className={styles.arrowDownBigIcon} src="/icons/arrowblue.svg" width={36} height={36} sizes="100vw" alt="" />
+											<div className={styles.exchangeKnowledgeAnd}>Exchange knowledge and give feedback</div>
 										</div>
 									</div>
 								</div>
@@ -390,20 +390,20 @@ const LearningCommunitySupport: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				<div className="frameParent19">
-					<div className="rectangleGroup">
-						<div className="rectangle2" />
-						<div className="image202" />
-						<div className="frameParent20">
-							{/* <Image className="frameChild14" width={295.8} height={50.2} sizes="100vw" alt="" /> */}
-							<div className="getTheHelpYouNeedWhenYoParent">
-								<h2 className="connectBeyondThe" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Connect Beyond the Classroom</h2>
-								<div className="connectWithPeers">Connect with peers, educators, and experts to share  collaborate, and learn from each other.</div>
+				<div className={styles.frameParent19}>
+					<div className={styles.rectangleGroup}>
+						<div className={styles.rectangle2} />
+						<div className={styles.image202} />
+						<div className={styles.frameParent20}>
+							{/* <Image className={styles.frameChild14} width={295.8} height={50.2} sizes="100vw" alt="" /> */}
+							<div className={styles.getTheHelpYouNeedWhenYoParent}>
+								<h2 className={styles.connectBeyondThe} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Connect Beyond the Classroom</h2>
+								<div className={styles.connectWithPeers}>Connect with peers, educators, and experts to share  collaborate, and learn from each other.</div>
 							</div>
 						</div>
 					</div>
 					<Image
-						className="safeSpaceBackground"
+						className={styles.safeSpaceBackground}
 						src="/images/social_lerningbg.webp"
 						width={1259}
 						height={500}
@@ -411,39 +411,39 @@ const LearningCommunitySupport: NextPage = () => {
 						alt=""
 						aria-hidden="true"
 					/>
-					<div className="rectangleContainer">
-						<div className="rectangle3" />
-						<div className="image203" />
-						<div className="frameParent21">
-							<div className="frameParent22">
-								<div className="learnWithConfidence">Learn with Confidence</div>
-								<div className="safeSpaceContent">
-									<h2 className="safeSpaceTitle">A Safe Space to Learn and Participate</h2>
-									<p className="neurolxpCreatesSafe">NeuroLXP creates safe, structured communities where learners can confidently ask, share, and collaborate.</p>
+					<div className={styles.rectangleContainer}>
+						<div className={styles.rectangle3} />
+						<div className={styles.image203} />
+						<div className={styles.frameParent21}>
+							<div className={styles.frameParent22}>
+								<div className={styles.learnWithConfidence}>Learn with Confidence</div>
+								<div className={styles.safeSpaceContent}>
+									<h2 className={styles.safeSpaceTitle}>A Safe Space to Learn and Participate</h2>
+									<p className={styles.neurolxpCreatesSafe}>NeuroLXP creates safe, structured communities where learners can confidently ask, share, and collaborate.</p>
 								</div>
 							</div>
-							<p className="everyQuestionMatters">Every Question Matters! Every Voice Counts</p>
+							<p className={styles.everyQuestionMatters}>Every Question Matters! Every Voice Counts</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="frameParent40">
-				<div className="frameParent41">
-					<div className="frameParent42">
-						<div className="frameParent22">
-							<div className="frameChild26">From Support to Social Learning</div>
-							<div className="getTheHelpYouNeedWhenYoParent">
-								<h2 className="connectBeyondThe" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Everything Learners Need to Stay Connected</h2>
-								<div className="neurolxpCreatesSafe">NeuroLXP connects support and collaboration across the learning journey.</div>
+			<div className={styles.frameParent40}>
+				<div className={styles.frameParent41}>
+					<div className={styles.frameParent42}>
+						<div className={styles.frameParent22}>
+							<div className={styles.frameChild26}>From Support to Social Learning</div>
+							<div className={styles.getTheHelpYouNeedWhenYoParent}>
+								<h2 className={styles.connectBeyondThe} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Everything Learners Need to Stay Connected</h2>
+								<div className={styles.neurolxpCreatesSafe}>NeuroLXP connects support and collaboration across the learning journey.</div>
 							</div>
 						</div>
-						<div className="frameParent44">
-							<div className="frameParent45">
-								<div className="frameParent46">
-									<div className="frameChild27">
-										<div className="supportIconInner">
+						<div className={styles.frameParent44}>
+							<div className={styles.frameParent45}>
+								<div className={styles.frameParent46}>
+									<div className={styles.frameChild27}>
+										<div className={styles.supportIconInner}>
 											<Image
-												className="supportIcon"
+												className={styles.supportIcon}
 												src="/icons/headset.svg"
 												width={34}
 												height={34}
@@ -452,16 +452,16 @@ const LearningCommunitySupport: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<div className="getSupportParent">
-										<h3 className="getSupport" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Get Support</h3>
-										<div className="findAnswersAnd">Find answers and guidance when you need them</div>
+									<div className={styles.getSupportParent}>
+										<h3 className={styles.getSupport} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Get Support</h3>
+										<div className={styles.findAnswersAnd}>Find answers and guidance when you need them</div>
 									</div>
 								</div>
-								<div className="frameParent47">
-									<div className="frameChild27">
-										<div className="supportIconInner">
+								<div className={styles.frameParent47}>
+									<div className={styles.frameChild27}>
+										<div className={styles.supportIconInner}>
 											<Image
-												className="supportIcon"
+												className={styles.supportIcon}
 												src="/icons/collabrate.svg"
 												width={34}
 												height={34}
@@ -470,16 +470,16 @@ const LearningCommunitySupport: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<div className="getSupportParent">
-										<h3 className="collaborate" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Collaborate</h3>
-										<div className="workTogetherDiscuss">Work together, discuss ideas, and solve problems</div>
+									<div className={styles.getSupportParent}>
+										<h3 className={styles.collaborate} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Collaborate</h3>
+										<div className={styles.workTogetherDiscuss}>Work together, discuss ideas, and solve problems</div>
 									</div>
 								</div>
-								<div className="frameParent48">
-									<div className="frameChild27">
-										<div className="supportIconInner">
+								<div className={styles.frameParent48}>
+									<div className={styles.frameChild27}>
+										<div className={styles.supportIconInner}>
 											<Image
-												className="supportIcon"
+												className={styles.supportIcon}
 												src="/icons/plant.svg"
 												width={34}
 												height={34}
@@ -488,18 +488,18 @@ const LearningCommunitySupport: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<div className="getSupportParent">
-										<h3 className="grow" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Grow</h3>
-										<div className="buildConfidenceStrengthen">Build confidence, strengthen skills, and learn together</div>
+									<div className={styles.getSupportParent}>
+										<h3 className={styles.grow} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Grow</h3>
+										<div className={styles.buildConfidenceStrengthen}>Build confidence, strengthen skills, and learn together</div>
 									</div>
 								</div>
 							</div>
-							<div className="frameParent49">
-								<div className="frameParent46">
-									<div className="frameChild27">
-										<div className="supportIconInner">
+							<div className={styles.frameParent49}>
+								<div className={styles.frameParent46}>
+									<div className={styles.frameChild27}>
+										<div className={styles.supportIconInner}>
 											<Image
-												className="supportIcon"
+												className={styles.supportIcon}
 												src="/icons/link.svg"
 												width={34}
 												height={34}
@@ -508,16 +508,16 @@ const LearningCommunitySupport: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<div className="getSupportParent">
-										<h3 className="connect" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Connect</h3>
-										<div className="engageWithPeers">Engage with peers, educators, and mentors</div>
+									<div className={styles.getSupportParent}>
+										<h3 className={styles.connect} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Connect</h3>
+										<div className={styles.engageWithPeers}>Engage with peers, educators, and mentors</div>
 									</div>
 								</div>
-								<div className="frameParent51">
-									<div className="frameChild27">
-										<div className="supportIconInner">
+								<div className={styles.frameParent51}>
+									<div className={styles.frameChild27}>
+										<div className={styles.supportIconInner}>
 											<Image
-												className="supportIcon"
+												className={styles.supportIcon}
 												src="/icons/share.svg"
 												width={34}
 												height={34}
@@ -526,62 +526,62 @@ const LearningCommunitySupport: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<div className="getSupportParent">
-										<h3 className="share" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Share</h3>
-										<div className="findAnswersAnd">Exchange knowledge, resources, and experiences</div>
+									<div className={styles.getSupportParent}>
+										<h3 className={styles.share} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Share</h3>
+										<div className={styles.findAnswersAnd}>Exchange knowledge, resources, and experiences</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="frameParent52">
-						<div className="builtForEveryoneInTheLearWrapper">
-							<h2 className="builtForEveryone" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Built for Everyone in the Learning Ecosystem</h2>
+					<div className={styles.frameParent52}>
+						<div className={styles.builtForEveryoneInTheLearWrapper}>
+							<h2 className={styles.builtForEveryone} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Built for Everyone in the Learning Ecosystem</h2>
 						</div>
-						<div className="frameParent53">
-							<article className="ecosystemCard">
-								<div className="ecosystemCardTop">
-									<div className="ecosystemNumber">01</div>
-									<h3 className="ecosystemTitle">For Learners</h3>
+						<div className={styles.frameParent53}>
+							<article className={styles.ecosystemCard}>
+								<div className={styles.ecosystemCardTop}>
+									<div className={styles.ecosystemNumber}>01</div>
+									<h3 className={styles.ecosystemTitle}>For Learners</h3>
 								</div>
-								<p className="ecosystemDescription">
+								<p className={styles.ecosystemDescription}>
 									Get support, connect with peers, and learn through collaboration
 								</p>
 							</article>
 
-							<article className="ecosystemCard">
-								<div className="ecosystemCardTop">
-									<div className="ecosystemNumber">02</div>
-									<h3 className="ecosystemTitle">For Educators</h3>
+							<article className={styles.ecosystemCard}>
+								<div className={styles.ecosystemCardTop}>
+									<div className={styles.ecosystemNumber}>02</div>
+									<h3 className={styles.ecosystemTitle}>For Educators</h3>
 								</div>
-								<p className="ecosystemDescription">
+								<p className={styles.ecosystemDescription}>
 									Guide learners, facilitate discussions, and build active learning communities
 								</p>
 							</article>
 
-							<article className="ecosystemCard">
-								<div className="ecosystemCardTop">
-									<div className="ecosystemNumber">03</div>
-									<h3 className="ecosystemTitle">For Institutions</h3>
+							<article className={styles.ecosystemCard}>
+								<div className={styles.ecosystemCardTop}>
+									<div className={styles.ecosystemNumber}>03</div>
+									<h3 className={styles.ecosystemTitle}>For Institutions</h3>
 								</div>
-								<p className="ecosystemDescription">
+								<p className={styles.ecosystemDescription}>
 									Strengthen engagement, communication, and a connected learning culture
 								</p>
 							</article>
 						</div>
 					</div>
 				</div>
-				<div className="frameParent61">
-					<div className="frameWrapper20">
-						<div className="frameWrapper16">
-							<div className="shareKnowledgeBuildConfideParent">
-								<h2 className="moreThanAn" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>More Than an LMS! A Learning Community</h2>
-								<div className="traditionalLmsPlatforms">Traditional LMS platforms deliver content. NeuroLXP connects learners to learn, collaborate, and grow together.<br /><br /><br /><br /></div>
+				<div className={styles.frameParent61}>
+					<div className={styles.frameWrapper20}>
+						<div className={styles.frameWrapper16}>
+							<div className={styles.shareKnowledgeBuildConfideParent}>
+								<h2 className={styles.moreThanAn} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>More Than an LMS! A Learning Community</h2>
+								<div className={styles.traditionalLmsPlatforms}>Traditional LMS platforms deliver content. NeuroLXP connects learners to learn, collaborate, and grow together.<br /><br /><br /><br /></div>
 							</div>
 						</div>
 					</div>
 					<div
-						className="requestADemoWrapper"
+						className={styles.requestADemoWrapper}
 						role="button"
 						tabIndex={0}
 						onClick={() => router.push("/contact")}
@@ -592,7 +592,7 @@ const LearningCommunitySupport: NextPage = () => {
 							}
 						}}
 					>
-						<h3 className="requestADemo" style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Request a Demo</h3>
+						<h3 className={styles.requestADemo} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Request a Demo</h3>
 					</div>
 				</div>
 			</div>

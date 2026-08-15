@@ -3,7 +3,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import { useEffect } from "react";
-import "./analytics-reporting.css";
+import styles from "./analytics-reporting.module.css";
 
 const AnalyticsReporting: NextPage = () => {
   useEffect(() => {
@@ -108,105 +108,105 @@ const AnalyticsReporting: NextPage = () => {
 
   return (
     <>
-      <main id="main-content" className="analyticsReporting" tabIndex={-1}>
-        <nav className="frameDiv" aria-label="Breadcrumb">
-          <div className="featuresWrapper">
-            <div className="learningEcoSystem">Features</div>
+      <main id="main-content" className={styles.analyticsReporting} tabIndex={-1}>
+        <nav className={styles.frameDiv} aria-label="Breadcrumb">
+          <div className={styles.featuresWrapper}>
+            <div className={styles.learningEcoSystem}>Features</div>
           </div>
-          <div className="homeParent">
-            <Image className="breadcrumbDoubleArrow" src="/icons/arrow-right-double.svg" width={16} height={16} alt="" aria-hidden="true" />
-            <div className="featuresWrapper">
-              <div className="learningEcoSystem">{`Learning Eco-system `}</div>
+          <div className={styles.homeParent}>
+            <Image className={styles.breadcrumbDoubleArrow} src="/icons/arrow-right-double.svg" width={16} height={16} alt="" aria-hidden="true" />
+            <div className={styles.featuresWrapper}>
+              <div className={styles.learningEcoSystem}>{`Learning Eco-system `}</div>
             </div>
           </div>
-          <div className="arrowRightDoubleGroup">
-            <Image className="breadcrumbDoubleArrow" src="/icons/arrow-right-double.svg" width={16} height={16} alt="" aria-hidden="true" />
-            <b className="learningEcoSystem">{`Analytics & Reporting`}</b>
+          <div className={styles.arrowRightDoubleGroup}>
+            <Image className={styles.breadcrumbDoubleArrow} src="/icons/arrow-right-double.svg" width={16} height={16} alt="" aria-hidden="true" />
+            <b className={styles.learningEcoSystem}>{`Analytics & Reporting`}</b>
           </div>
         </nav>
-        <div className="frameParent2">
-          <div className="frameParent3">
-            <div className="frameInner">Why Analytics Matters</div>
-            <div className="transformLearningDataIntoMParent">
-              <h1 className="transformLearningData">
+        <div className={styles.frameParent2}>
+          <div className={styles.frameParent3}>
+            <div className={styles.frameInner}>Why Analytics Matters</div>
+            <div className={styles.transformLearningDataIntoMParent}>
+              <h1 className={styles.transformLearningData}>
                 Transform Learning Data into Meaningful Analytics
                 <br />
               </h1>
-              <div className="neurolxpTurnsLearning">NeuroLXP turns learning activity into meaningful insights that improve learner engagement, course quality, and learning outcomes.</div>
+              <div className={styles.neurolxpTurnsLearning}>NeuroLXP turns learning activity into meaningful insights that improve learner engagement, course quality, and learning outcomes.</div>
             </div>
           </div>
-          <div className="frameParent4">
-            <div className="frameParent5">
-              <div className="rectangleParent">
-                <div className="rectangleDiv" />
-                <div className="ellipseDiv" />
-                <div className="frameParent6">
-                  <div className="analyticsIconCircle">
-                    <Image className="analyticsCardIcon" src="/icons/chart-up-purple.svg" width={32} height={32} alt="" aria-hidden="true" />
+          <div className={styles.frameParent4}>
+            <div className={styles.frameParent5}>
+              <div className={styles.rectangleParent}>
+                <div className={styles.rectangleDiv} />
+                <div className={styles.ellipseDiv} />
+                <div className={styles.frameParent6}>
+                  <div className={styles.analyticsIconCircle}>
+                    <Image className={styles.analyticsCardIcon} src="/icons/chart-up-purple.svg" width={32} height={32} alt="" aria-hidden="true" />
                   </div>
-                  <div className="monitorLearnerProgress">Monitor learner progress</div>
+                  <div className={styles.monitorLearnerProgress}>Monitor learner progress</div>
                 </div>
               </div>
-              <div className="rectangleParent">
-                <div className="frameChild2" />
-                <div className="ellipseDiv" />
-                <div className="frameParent7">
-                  <div className="analyticsIconCircle">
-                    <Image className="analyticsCardIcon" src="/icons/search-02.svg" width={32} height={32} alt="" aria-hidden="true" />
+              <div className={styles.rectangleParent}>
+                <div className={styles.frameChild2} />
+                <div className={styles.ellipseDiv} />
+                <div className={styles.frameParent7}>
+                  <div className={styles.analyticsIconCircle}>
+                    <Image className={styles.analyticsCardIcon} src="/icons/search-02.svg" width={32} height={32} alt="" aria-hidden="true" />
                   </div>
-                  <div className="spotKnowledgeGaps">Spot knowledge gaps</div>
+                  <div className={styles.spotKnowledgeGaps}>Spot knowledge gaps</div>
                 </div>
               </div>
-              <div className="rectangleParent">
-                <div className="frameChild5" />
-                <div className="ellipseDiv" />
-                <div className="frameParent8">
-                  <div className="analyticsIconCircle">
-                    <Image className="analyticsCardIcon" src="/icons/user-group-02green.svg" width={32} height={32} alt="" aria-hidden="true" />
+              <div className={styles.rectangleParent}>
+                <div className={styles.frameChild5} />
+                <div className={styles.ellipseDiv} />
+                <div className={styles.frameParent8}>
+                  <div className={styles.analyticsIconCircle}>
+                    <Image className={styles.analyticsCardIcon} src="/icons/user-group-02green.svg" width={32} height={32} alt="" aria-hidden="true" />
                   </div>
-                  <div className="trackEngagement">Track Engagement</div>
+                  <div className={styles.trackEngagement}>Track Engagement</div>
                 </div>
               </div>
             </div>
-            <div className="frameParent9">
-              <div className="rectangleParent">
-                <div className="frameChild8" />
-                <div className="ellipseDiv" />
-                <div className="frameParent10">
-                  <div className="analyticsIconCircle">
-                    <Image className="analyticsCardIcon" src="/icons/chart-bar-lineblue.svg" width={32} height={32} alt="" aria-hidden="true" />
+            <div className={styles.frameParent9}>
+              <div className={styles.rectangleParent}>
+                <div className={styles.frameChild8} />
+                <div className={styles.ellipseDiv} />
+                <div className={styles.frameParent10}>
+                  <div className={styles.analyticsIconCircle}>
+                    <Image className={styles.analyticsCardIcon} src="/icons/chart-bar-lineblue.svg" width={32} height={32} alt="" aria-hidden="true" />
                   </div>
-                  <div className="trackEngagement">Analyse Performance</div>
+                  <div className={styles.trackEngagement}>Analyse Performance</div>
                 </div>
               </div>
-              <div className="rectangleParent">
-                <div className="frameChild11" />
-                <div className="ellipseDiv" />
-                <div className="frameParent11">
-                  <div className="analyticsIconCircle">
-                    <Image className="analyticsCardIcon" src="/icons/graduation-cappink.svg" width={32} height={32} alt="" aria-hidden="true" />
+              <div className={styles.rectangleParent}>
+                <div className={styles.frameChild11} />
+                <div className={styles.ellipseDiv} />
+                <div className={styles.frameParent11}>
+                  <div className={styles.analyticsIconCircle}>
+                    <Image className={styles.analyticsCardIcon} src="/icons/graduation-cappink.svg" width={32} height={32} alt="" aria-hidden="true" />
                   </div>
-                  <div className="improveCurriculum">Improve Curriculum</div>
+                  <div className={styles.improveCurriculum}>Improve Curriculum</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="frameParent12">
-          <div className="frameParent13">
-            <div className="frameWrapper">
-              <div className="frameParent14">
-                <div className="frameChild14">Learning Analytics &amp; Reporting</div>
-                <div className="turnLearningDataIntoActionParent">
-                  <h2 className="turnLearningDataContainer">
-                    <span className="turnLearningData">{`Turn Learning Data into `}</span>
-                    <span className="actionableInsights">
+        <div className={styles.frameParent12}>
+          <div className={styles.frameParent13}>
+            <div className={styles.frameWrapper}>
+              <div className={styles.frameParent14}>
+                <div className={styles.frameChild14}>Learning Analytics &amp; Reporting</div>
+                <div className={styles.turnLearningDataIntoActionParent}>
+                  <h2 className={styles.turnLearningDataContainer}>
+                    <span className={styles.turnLearningData}>{`Turn Learning Data into `}</span>
+                    <span className={styles.actionableInsights}>
                       Actionable Insights
                       <br />
                       <br />
                     </span>
                   </h2>
-                  <div className="neurolxpsLearningAnalytics">
+                  <div className={styles.neurolxpsLearningAnalytics}>
                     NeuroLXP’s Learning Analytics delivers real-time insights into learner engagement, progress, and performance enabling smarter, data-driven decisions.
                     <br />
                     <br />
@@ -214,366 +214,366 @@ const AnalyticsReporting: NextPage = () => {
                 </div>
               </div>
             </div>
-            <a className="frameChild15" href="#book-a-demo">
+            <a className={styles.frameChild15} href="#book-a-demo">
               Book a Demo
             </a>
           </div>
-          <div className="frameParent15">
-            <div className="frameParent16">
-              <div className="rectangleParent4">
-                <div className="frameChild16" />
-                <div className="frameParent17">
-                  <div className="frameWrapper">
-                    <b className="k">12K+</b>
+          <div className={styles.frameParent15}>
+            <div className={styles.frameParent16}>
+              <div className={styles.rectangleParent4}>
+                <div className={styles.frameChild16} />
+                <div className={styles.frameParent17}>
+                  <div className={styles.frameWrapper}>
+                    <b className={styles.k}>12K+</b>
                   </div>
-                  <div className="learnersTrackedWrapper">
-                    <div className="learnersTracked">Learners Tracked</div>
+                  <div className={styles.learnersTrackedWrapper}>
+                    <div className={styles.learnersTracked}>Learners Tracked</div>
                   </div>
                 </div>
               </div>
-              <div className="rectangleParent5">
-                <div className="frameChild16" />
-                <div className="frameParent18">
-                  <div className="frameWrapper">
-                    <b className="b">98%</b>
+              <div className={styles.rectangleParent5}>
+                <div className={styles.frameChild16} />
+                <div className={styles.frameParent18}>
+                  <div className={styles.frameWrapper}>
+                    <b className={styles.b}>98%</b>
                   </div>
-                  <div className="learnersTrackedWrapper">
-                    <div className="reportsAccuracy">{`Reports Accuracy `}</div>
+                  <div className={styles.learnersTrackedWrapper}>
+                    <div className={styles.reportsAccuracy}>{`Reports Accuracy `}</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="frameWrapper2">
-              <div className="learningProgramsParent">
-                <b className="learningPrograms">Learning Programs</b>
-                <div className="frameParent19">
-                  <div className="engagementParent">
-                    <div className="engagement">Engagement</div>
-                    <div className="rectangleParent6">
-                      <div className="rectangle" />
-                      <div className="image20" />
-                      <div className="frameChild18" />
+            <div className={styles.frameWrapper2}>
+              <div className={styles.learningProgramsParent}>
+                <b className={styles.learningPrograms}>Learning Programs</b>
+                <div className={styles.frameParent19}>
+                  <div className={styles.engagementParent}>
+                    <div className={styles.engagement}>Engagement</div>
+                    <div className={styles.rectangleParent6}>
+                      <div className={styles.rectangle} />
+                      <div className={styles.image20} />
+                      <div className={styles.frameChild18} />
                     </div>
-                    <b className="b2">86%</b>
+                    <b className={styles.b2}>86%</b>
                   </div>
-                  <div className="engagementParent">
-                    <div className="engagement">Completion</div>
-                    <div className="rectangleParent6">
-                      <div className="rectangle" />
-                      <div className="image20" />
-                      <div className="frameChild19" />
+                  <div className={styles.engagementParent}>
+                    <div className={styles.engagement}>Completion</div>
+                    <div className={styles.rectangleParent6}>
+                      <div className={styles.rectangle} />
+                      <div className={styles.image20} />
+                      <div className={styles.frameChild19} />
                     </div>
-                    <b className="b2">74%</b>
+                    <b className={styles.b2}>74%</b>
                   </div>
-                  <div className="engagementParent">
-                    <div className="engagement">Assessment</div>
-                    <div className="rectangleParent6">
-                      <div className="rectangle" />
-                      <div className="image20" />
-                      <div className="frameChild20" />
+                  <div className={styles.engagementParent}>
+                    <div className={styles.engagement}>Assessment</div>
+                    <div className={styles.rectangleParent6}>
+                      <div className={styles.rectangle} />
+                      <div className={styles.image20} />
+                      <div className={styles.frameChild20} />
                     </div>
-                    <b className="b2">91%</b>
+                    <b className={styles.b2}>91%</b>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="analyticsReportingInner">
-          <div className="frameParent20">
-            <div className="frameParent21">
-              <div className="frameParent22">
-                <div className="frameChild21">Total Learning Visibility</div>
-                <h2 className="oneDashboardFull">
+        <div className={styles.analyticsReportingInner}>
+          <div className={styles.frameParent20}>
+            <div className={styles.frameParent21}>
+              <div className={styles.frameParent22}>
+                <div className={styles.frameChild21}>Total Learning Visibility</div>
+                <h2 className={styles.oneDashboardFull}>
                   One Dashboard! Full Visibility!
                   <br />
                 </h2>
               </div>
-              <div className="getRealTimeInsights">Get real-time insights across learners, courses, assessments, and engagement.</div>
+              <div className={styles.getRealTimeInsights}>Get real-time insights across learners, courses, assessments, and engagement.</div>
             </div>
-            <div className="frameParent23">
-              <div className="frameParent24">
-                <div className="dashboardIconCircle">
-                  <Image className="dashboardListIcon" src="/icons/user-group-02 copyblue.svg" width={32} height={32} alt="" aria-hidden="true" />
+            <div className={styles.frameParent23}>
+              <div className={styles.frameParent24}>
+                <div className={styles.dashboardIconCircle}>
+                  <Image className={styles.dashboardListIcon} src="/icons/user-group-02 copyblue.svg" width={32} height={32} alt="" aria-hidden="true" />
                 </div>
-                <div className="learnerActivity">{`Learner activity & engagement`}</div>
+                <div className={styles.learnerActivity}>{`Learner activity & engagement`}</div>
               </div>
-              <div className="frameParent25">
-                <div className="dashboardIconCircle">
-                  <Image className="dashboardListIcon" src="/icons/star.svg" width={32} height={32} alt="" aria-hidden="true" />
+              <div className={styles.frameParent25}>
+                <div className={styles.dashboardIconCircle}>
+                  <Image className={styles.dashboardListIcon} src="/icons/star.svg" width={32} height={32} alt="" aria-hidden="true" />
                 </div>
-                <div className="courseCompletion">Course completion</div>
+                <div className={styles.courseCompletion}>Course completion</div>
               </div>
-              <div className="frameParent25">
-                <div className="dashboardIconCircle">
-                  <Image className="dashboardListIcon" src="/icons/zap.svg" width={32} height={32} alt="" aria-hidden="true" />
+              <div className={styles.frameParent25}>
+                <div className={styles.dashboardIconCircle}>
+                  <Image className={styles.dashboardListIcon} src="/icons/zap.svg" width={32} height={32} alt="" aria-hidden="true" />
                 </div>
-                <div className="timeSpentLearning">Time spent learning</div>
+                <div className={styles.timeSpentLearning}>Time spent learning</div>
               </div>
-              <div className="frameParent25">
-                <div className="dashboardIconCircle">
-                  <Image className="dashboardListIcon" src="/icons/chart-02.svg" width={32} height={32} alt="" aria-hidden="true" />
+              <div className={styles.frameParent25}>
+                <div className={styles.dashboardIconCircle}>
+                  <Image className={styles.dashboardListIcon} src="/icons/chart-02.svg" width={32} height={32} alt="" aria-hidden="true" />
                 </div>
-                <div className="assessmentPerformance">Assessment performance</div>
+                <div className={styles.assessmentPerformance}>Assessment performance</div>
               </div>
-              <div className="frameParent25">
-                <div className="dashboardIconCircle">
-                  <Image className="dashboardListIcon" src="/icons/message-02.svg" width={32} height={32} alt="" aria-hidden="true" />
+              <div className={styles.frameParent25}>
+                <div className={styles.dashboardIconCircle}>
+                  <Image className={styles.dashboardListIcon} src="/icons/message-02.svg" width={32} height={32} alt="" aria-hidden="true" />
                 </div>
-                <div className="discussionParticipation">Discussion participation</div>
+                <div className={styles.discussionParticipation}>Discussion participation</div>
               </div>
-              <div className="frameParent25">
-                <div className="dashboardIconCircle">
-                  <Image className="dashboardListIcon" src="/icons/award-01-red.svg" width={32} height={32} alt="" aria-hidden="true" />
+              <div className={styles.frameParent25}>
+                <div className={styles.dashboardIconCircle}>
+                  <Image className={styles.dashboardListIcon} src="/icons/award-01-red.svg" width={32} height={32} alt="" aria-hidden="true" />
                 </div>
-                <div className="gamificationProgress">Gamification progress</div>
+                <div className={styles.gamificationProgress}>Gamification progress</div>
               </div>
             </div>
           </div>
         </div>
-        <div className="frameParent30">
-          <div className="frameParent31">
-            <div className="frameChild28">Smarter Learning Reports</div>
-            <div className="reportsThatDriveBetterDeciParent">
-              <h2 className="reportsThatDrive">
+        <div className={styles.frameParent30}>
+          <div className={styles.frameParent31}>
+            <div className={styles.frameChild28}>Smarter Learning Reports</div>
+            <div className={styles.reportsThatDriveBetterDeciParent}>
+              <h2 className={styles.reportsThatDrive}>
                 Reports That Drive Better Decisions
                 <br />
                 <br />
               </h2>
-              <div className="createDetailedCustomizable">
+              <div className={styles.createDetailedCustomizable}>
                 Create detailed, customizable reports across your learning ecosystem.
                 <br />
                 <br />
               </div>
             </div>
           </div>
-          <div className="frameParent32">
-            <div className="frameParent33">
-              <div className="frameParent34">
-                <div className="frameParent35">
-                  <div className="frameWrapper3">
-                    <div className="frameWrapper4">
-                      <div className="image20Parent">
-                        <div className="image204" />
-                        <div className="learnerPerformance">Learner Performance</div>
+          <div className={styles.frameParent32}>
+            <div className={styles.frameParent33}>
+              <div className={styles.frameParent34}>
+                <div className={styles.frameParent35}>
+                  <div className={styles.frameWrapper3}>
+                    <div className={styles.frameWrapper4}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image204} />
+                        <div className={styles.learnerPerformance}>Learner Performance</div>
                       </div>
                     </div>
                   </div>
-                  <div className="reportIconCircle">
-                    <Image className="reportCardIcon" src="/icons/user-02-blue.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <div className={styles.reportIconCircle}>
+                    <Image className={styles.reportCardIcon} src="/icons/user-02-blue.svg" width={48} height={48} alt="" aria-hidden="true" />
                   </div>
                 </div>
-                <div className="frameParent35">
-                  <div className="frameWrapper3">
-                    <div className="frameWrapper4">
-                      <div className="image20Parent">
-                        <div className="image204" />
-                        <div className="learnerPerformance">Course Effectiveness</div>
+                <div className={styles.frameParent35}>
+                  <div className={styles.frameWrapper3}>
+                    <div className={styles.frameWrapper4}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image204} />
+                        <div className={styles.learnerPerformance}>Course Effectiveness</div>
                       </div>
                     </div>
                   </div>
-                  <div className="reportIconCircle">
-                    <Image className="reportCardIcon" src="/icons/book-open-text-purple.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <div className={styles.reportIconCircle}>
+                    <Image className={styles.reportCardIcon} src="/icons/book-open-text-purple.svg" width={48} height={48} alt="" aria-hidden="true" />
                   </div>
                 </div>
               </div>
-              <div className="frameParent34">
-                <div className="frameParent35">
-                  <div className="frameWrapper3">
-                    <div className="frameWrapper4">
-                      <div className="image20Parent">
-                        <div className="image204" />
-                        <div className="learnerPerformance">Assessment Analytics</div>
+              <div className={styles.frameParent34}>
+                <div className={styles.frameParent35}>
+                  <div className={styles.frameWrapper3}>
+                    <div className={styles.frameWrapper4}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image204} />
+                        <div className={styles.learnerPerformance}>Assessment Analytics</div>
                       </div>
                     </div>
                   </div>
-                  <div className="reportIconCircle">
-                    <Image className="reportCardIcon" src="/icons/chart-up-purple.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <div className={styles.reportIconCircle}>
+                    <Image className={styles.reportCardIcon} src="/icons/chart-up-purple.svg" width={48} height={48} alt="" aria-hidden="true" />
                   </div>
                 </div>
-                <div className="frameParent35">
-                  <div className="frameWrapper3">
-                    <div className="frameWrapper4">
-                      <div className="image20Parent">
-                        <div className="image204" />
-                        <div className="learnerPerformance">Instructor Activity</div>
+                <div className={styles.frameParent35}>
+                  <div className={styles.frameWrapper3}>
+                    <div className={styles.frameWrapper4}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image204} />
+                        <div className={styles.learnerPerformance}>Instructor Activity</div>
                       </div>
                     </div>
                   </div>
-                  <div className="reportIconCircle">
-                    <Image className="reportCardIcon" src="/icons/co-present.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <div className={styles.reportIconCircle}>
+                    <Image className={styles.reportCardIcon} src="/icons/co-present.svg" width={48} height={48} alt="" aria-hidden="true" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="frameParent34">
-              <div className="frameParent35">
-                <div className="frameWrapper3">
-                  <div className="frameWrapper4">
-                    <div className="image20Parent">
-                      <div className="image204" />
-                      <div className="learnerPerformance">Department Insight</div>
+            <div className={styles.frameParent34}>
+              <div className={styles.frameParent35}>
+                <div className={styles.frameWrapper3}>
+                  <div className={styles.frameWrapper4}>
+                    <div className={styles.image20Parent}>
+                      <div className={styles.image204} />
+                      <div className={styles.learnerPerformance}>Department Insight</div>
                     </div>
                   </div>
                 </div>
-                <div className="reportIconCircle">
-                  <Image className="reportCardIcon" src="/icons/building-green.svg" width={48} height={48} alt="" aria-hidden="true" />
+                <div className={styles.reportIconCircle}>
+                  <Image className={styles.reportCardIcon} src="/icons/building-green.svg" width={48} height={48} alt="" aria-hidden="true" />
                 </div>
               </div>
-              <div className="frameParent35">
-                <div className="frameWrapper3">
-                  <div className="frameWrapper4">
-                    <div className="image20Parent">
-                      <div className="image204" />
-                      <div className="learnerPerformance">Programme Performance</div>
+              <div className={styles.frameParent35}>
+                <div className={styles.frameWrapper3}>
+                  <div className={styles.frameWrapper4}>
+                    <div className={styles.image20Parent}>
+                      <div className={styles.image204} />
+                      <div className={styles.learnerPerformance}>Programme Performance</div>
                     </div>
                   </div>
                 </div>
-                <div className="reportIconCircle">
-                  <Image className="reportCardIcon" src="/icons/student-green.svg" width={48} height={48} alt="" aria-hidden="true" />
+                <div className={styles.reportIconCircle}>
+                  <Image className={styles.reportCardIcon} src="/icons/student-green.svg" width={48} height={48} alt="" aria-hidden="true" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="analyticsReportingChild">
-          <div className="frameWrapper15">
-            <div className="frameParent43">
-              <div className="frameParent44">
-                <div className="frameParent45">
-                  <div className="frameChild35">Identify Gaps Early</div>
-                  <h2 className="identifyLearningGaps">
+        <div className={styles.analyticsReportingChild}>
+          <div className={styles.frameWrapper15}>
+            <div className={styles.frameParent43}>
+              <div className={styles.frameParent44}>
+                <div className={styles.frameParent45}>
+                  <div className={styles.frameChild35}>Identify Gaps Early</div>
+                  <h2 className={styles.identifyLearningGaps}>
                     Identify Learning Gaps!
                     <br />
                     Act Early!
                   </h2>
                 </div>
-                <div className="aiAnalyticsSpot">AI analytics spot struggling learners early, enabling timely, targeted support.</div>
+                <div className={styles.aiAnalyticsSpot}>AI analytics spot struggling learners early, enabling timely, targeted support.</div>
               </div>
-              <Image className="maleCoworkersDoingPaperworkIcon" src="/images/analytics image.webp" width={763} height={421} sizes="(max-width: 768px) 100vw, 763px" alt="Two coworkers reviewing documents" />
+              <Image className={styles.maleCoworkersDoingPaperworkIcon} src="/images/analytics image.webp" width={763} height={421} sizes="(max-width: 768px) 100vw, 763px" alt="Two coworkers reviewing documents" />
             </div>
           </div>
         </div>
-        <div className="frameParent46">
-          <div className="frameWrapper16">
-            <div className="turnDataIntoBetterOutcomesParent">
-              <h2 className="turnDataIntoContainer">
-                <span className="turnLearningData">{`Turn Data into `}</span>
-                <span className="actionableInsights">
+        <div className={styles.frameParent46}>
+          <div className={styles.frameWrapper16}>
+            <div className={styles.turnDataIntoBetterOutcomesParent}>
+              <h2 className={styles.turnDataIntoContainer}>
+                <span className={styles.turnLearningData}>{`Turn Data into `}</span>
+                <span className={styles.actionableInsights}>
                   Better Outcomes
                   <br />
                 </span>
               </h2>
-              <div className="builtForEvery">Turn learning data into insights that improve courses engagement, completion, and outcomes.</div>
+              <div className={styles.builtForEvery}>Turn learning data into insights that improve courses engagement, completion, and outcomes.</div>
             </div>
           </div>
-          <div className="frameParent47">
-            <div className="frameParent48">
-              <div className="rectangleParent9">
-                <div className="frameChild36" />
-                <div className="frameChild37" />
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={48} height={48} alt="" aria-hidden="true" />
-                  <div className="improveCourseAnd">Improve Course and Curriculum Quality</div>
+          <div className={styles.frameParent47}>
+            <div className={styles.frameParent48}>
+              <div className={styles.rectangleParent9}>
+                <div className={styles.frameChild36} />
+                <div className={styles.frameChild37} />
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <div className={styles.improveCourseAnd}>Improve Course and Curriculum Quality</div>
                 </div>
               </div>
-              <div className="rectangleParent9">
-                <div className="frameChild36" />
-                <div className="frameChild39" />
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04-1.svg" width={48} height={48} alt="" aria-hidden="true" />
-                  <div className="strengthenTeachingStrategies">Strengthen Teaching Strategies and Practices</div>
+              <div className={styles.rectangleParent9}>
+                <div className={styles.frameChild36} />
+                <div className={styles.frameChild39} />
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04-1.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <div className={styles.strengthenTeachingStrategies}>Strengthen Teaching Strategies and Practices</div>
                 </div>
               </div>
-              <div className="rectangleParent9">
-                <div className="frameChild36" />
-                <div className="frameChild39" />
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04-2.svg" width={48} height={48} alt="" aria-hidden="true" />
-                  <div className="increaseOverallLearner">Increase Overall Learner Engagement</div>
+              <div className={styles.rectangleParent9}>
+                <div className={styles.frameChild36} />
+                <div className={styles.frameChild39} />
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04-2.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <div className={styles.increaseOverallLearner}>Increase Overall Learner Engagement</div>
                 </div>
               </div>
             </div>
-            <div className="frameParent48">
-              <div className="rectangleParent9">
-                <div className="frameChild36" />
-                <div className="frameChild39" />
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04-3.svg" width={48} height={48} alt="" aria-hidden="true" />
-                  <div className="boostCourseCompletion">Boost Course Completion Rates</div>
+            <div className={styles.frameParent48}>
+              <div className={styles.rectangleParent9}>
+                <div className={styles.frameChild36} />
+                <div className={styles.frameChild39} />
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04-3.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <div className={styles.boostCourseCompletion}>Boost Course Completion Rates</div>
                 </div>
               </div>
-              <div className="rectangleParent9">
-                <div className="frameChild36" />
-                <div className="frameChild39" />
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04-4.svg" width={48} height={48} alt="" aria-hidden="true" />
-                  <div className="strengthenTeachingStrategies">Improve Academic and Training Outcomes</div>
+              <div className={styles.rectangleParent9}>
+                <div className={styles.frameChild36} />
+                <div className={styles.frameChild39} />
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04-4.svg" width={48} height={48} alt="" aria-hidden="true" />
+                  <div className={styles.strengthenTeachingStrategies}>Improve Academic and Training Outcomes</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="frameParent50">
-          <div className="transformLearningDataIntoMParent">
-            <h2 className="turnDataIntoContainer">
+        <div className={styles.frameParent50}>
+          <div className={styles.transformLearningDataIntoMParent}>
+            <h2 className={styles.turnDataIntoContainer}>
               Analytics That Scales With You
               <br />
             </h2>
-            <div className="builtForEvery">Built for every learning environment—from universities and schools to corporate training and EdTech platforms.</div>
+            <div className={styles.builtForEvery}>Built for every learning environment—from universities and schools to corporate training and EdTech platforms.</div>
           </div>
-          <div className="frameParent51">
-            <div className="frameParent52">
-              <div className="frameChild46" />
-              <div className="universitiesWrapper">
-                <b className="universities">Universities</b>
+          <div className={styles.frameParent51}>
+            <div className={styles.frameParent52}>
+              <div className={styles.frameChild46} />
+              <div className={styles.universitiesWrapper}>
+                <b className={styles.universities}>Universities</b>
               </div>
             </div>
-            <div className="frameParent53">
-              <div className="frameChild47" />
-              <div className="schoolsWrapper">
-                <b className="universities">Schools</b>
+            <div className={styles.frameParent53}>
+              <div className={styles.frameChild47} />
+              <div className={styles.schoolsWrapper}>
+                <b className={styles.universities}>Schools</b>
               </div>
             </div>
-            <div className="frameParent53">
-              <div className="frameChild47" />
-              <div className="corporateTrainingWrapper">
-                <b className="corporateTraining">Corporate Training</b>
+            <div className={styles.frameParent53}>
+              <div className={styles.frameChild47} />
+              <div className={styles.corporateTrainingWrapper}>
+                <b className={styles.corporateTraining}>Corporate Training</b>
               </div>
             </div>
-            <div className="frameParent53">
-              <div className="frameChild47" />
-              <div className="edtechProvidersWrapper">
-                <b className="edtechProviders">EdTech Providers</b>
+            <div className={styles.frameParent53}>
+              <div className={styles.frameChild47} />
+              <div className={styles.edtechProvidersWrapper}>
+                <b className={styles.edtechProviders}>EdTech Providers</b>
               </div>
             </div>
           </div>
         </div>
-        <div className="ellipseParent">
-          <Image className="ellipseIcon" src="/icons/ana.webp" width={1286} height={538} sizes="100vw" alt="" priority />
-          <div className="frameParent56">
-            <div className="frameChild50">Get Started</div>
-            <div className="frameParent13">
-              <div className="frameParent58">
-                <div className="frameWrapper17">
-                  <div className="makeEveryLearningDecisionSParent">
-                    <h2 className="makeEveryLearning">Make Every Learning Decision Smarter</h2>
-                    <div className="goBeyondBasic">Go beyond basic LMS reports with intelligent analytics, real-time dashboards, and actionable insights.</div>
+        <div className={styles.ellipseParent}>
+          <Image className={styles.ellipseIcon} src="/icons/ana.webp" width={1286} height={538} sizes="100vw" alt="" priority />
+          <div className={styles.frameParent56}>
+            <div className={styles.frameChild50}>Get Started</div>
+            <div className={styles.frameParent13}>
+              <div className={styles.frameParent58}>
+                <div className={styles.frameWrapper17}>
+                  <div className={styles.makeEveryLearningDecisionSParent}>
+                    <h2 className={styles.makeEveryLearning}>Make Every Learning Decision Smarter</h2>
+                    <div className={styles.goBeyondBasic}>Go beyond basic LMS reports with intelligent analytics, real-time dashboards, and actionable insights.</div>
                   </div>
                 </div>
-                <div className="frameWrapper18">
-                  <div className="frameWrapper19">
-                    <div className="smarterAnalyticsBetterLearWrapper">
-                      <b className="smarterAnalyticsBetterContainer">
-                        <span className="span">{` `}</span>
-                        <span className="smarterAnalyticsBetter">Smarter Analytics! Better Learning Outcomes!</span>
+                <div className={styles.frameWrapper18}>
+                  <div className={styles.frameWrapper19}>
+                    <div className={styles.smarterAnalyticsBetterLearWrapper}>
+                      <b className={styles.smarterAnalyticsBetterContainer}>
+                        <span className={styles.span}>{` `}</span>
+                        <span className={styles.smarterAnalyticsBetter}>Smarter Analytics! Better Learning Outcomes!</span>
                       </b>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="frameWrapper20">
-                <a className="frameChild51" href="#book-a-demo">
+              <div className={styles.frameWrapper20}>
+                <a className={styles.frameChild51} href="#book-a-demo">
                   Book a Demo
                 </a>
               </div>

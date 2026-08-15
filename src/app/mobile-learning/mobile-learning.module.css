@@ -4032,8 +4032,8 @@ body {
     box-sizing: border-box;
   }
 
-  img,
-  svg {
+  :global(img),
+  :global(svg) {
     max-width: 100%;
   }
 

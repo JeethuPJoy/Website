@@ -3,7 +3,7 @@
 import type { NextPage } from "next";
 import { useEffect } from "react";
 import Image from "next/image";
-import "./goals-progress.css";
+import styles from "./goals-progress.module.css";
 
 const GoalSettingsAndProgressTracking: NextPage = () => {
   useEffect(() => {
@@ -68,24 +68,24 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
 
   return (
     <>
-      <main id="main-content" className="goalSettingsAndProgressTra">
-        <nav className="frameDiv" aria-label="Breadcrumb">
-          <div className="featuresWrapper">
-            <p className="learning">Features</p>
+      <main id="main-content" className={styles.goalSettingsAndProgressTra}>
+        <nav className={styles.frameDiv} aria-label="Breadcrumb">
+          <div className={styles.featuresWrapper}>
+            <p className={styles.learning}>Features</p>
           </div>
-          <div className="homeParent">
-            <Image className="arrowDown01Icon" src="/icons/arrow-right-double.svg" width={12} height={12} sizes="12px" alt="" aria-hidden="true" style={{ display: "block", flexShrink: 0 }} />
-            <div className="featuresWrapper">
-              <p className="learning">Learning</p>
+          <div className={styles.homeParent}>
+            <Image className={styles.arrowDown01Icon} src="/icons/arrow-right-double.svg" width={12} height={12} sizes="12px" alt="" aria-hidden="true" style={{ display: "block", flexShrink: 0 }} />
+            <div className={styles.featuresWrapper}>
+              <p className={styles.learning}>Learning</p>
             </div>
           </div>
-          <div className="arrowRightDoubleGroup">
-            <Image className="arrowDown01Icon" src="/icons/arrow-right-double.svg" width={12} height={12} sizes="12px" alt="" aria-hidden="true" style={{ display: "block", flexShrink: 0 }} />
-            <p className="learning">Goals and Tracking</p>
+          <div className={styles.arrowRightDoubleGroup}>
+            <Image className={styles.arrowDown01Icon} src="/icons/arrow-right-double.svg" width={12} height={12} sizes="12px" alt="" aria-hidden="true" style={{ display: "block", flexShrink: 0 }} />
+            <p className={styles.learning}>Goals and Tracking</p>
           </div>
         </nav>
 
-        <svg className="goalCombinedPolygons" width="1275" height="816" viewBox="0 0 1275 816" fill="none" aria-hidden="true" focusable="false">
+        <svg className={styles.goalCombinedPolygons} width="1275" height="816" viewBox="0 0 1275 816" fill="none" aria-hidden="true" focusable="false">
           <g filter="url(#filter0_ii_4_11)">
             <path d="M630.033 0L1260.07 178V534L630.033 712L-0.000305176 534V178L630.033 0Z" fill="#DFE6E9" />
             <path d="M630.033 0L1260.07 178V534L630.033 712L-0.000305176 534V178L630.033 0Z" fill="url(#pattern0_4_11)" fillOpacity="0.05" />
@@ -138,74 +138,74 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
           </defs>
         </svg>
 
-        <div className="goalSettingsAndProgressTraInner">
-          <div className="frameWrapper">
-            <div className="frameParent2">
-              <div className="frameParent3">
-                <p className="frameItem">Goal Setting &amp; Progress Tracking</p>
-                <h1 className="setClearGoals">Set Clear Goals! Track Progress! Achieve It!</h1>
+        <div className={styles.goalSettingsAndProgressTraInner}>
+          <div className={styles.frameWrapper}>
+            <div className={styles.frameParent2}>
+              <div className={styles.frameParent3}>
+                <p className={styles.frameItem}>Goal Setting &amp; Progress Tracking</p>
+                <h1 className={styles.setClearGoals}>Set Clear Goals! Track Progress! Achieve It!</h1>
               </div>
-              <p className="neurolxpHelpsLearners">NeuroLXP helps learners set goals, create personalized plans, and track progress for continuous improvement and better outcomes.</p>
+              <p className={styles.neurolxpHelpsLearners}>NeuroLXP helps learners set goals, create personalized plans, and track progress for continuous improvement and better outcomes.</p>
             </div>
           </div>
         </div>
-        <div className="polygonParent">
-          <div className="frameParent4">
-            <div className="frameParent5">
-              <div className="frameWrapper2">
-                <div className="frameParent6">
-                  <div className="wrapper">
-                    <p className="b">
+        <div className={styles.polygonParent}>
+          <div className={styles.frameParent4}>
+            <div className={styles.frameParent5}>
+              <div className={styles.frameWrapper2}>
+                <div className={styles.frameParent6}>
+                  <div className={styles.wrapper}>
+                    <p className={styles.b}>
                       38%
                       <br />
                     </p>
                   </div>
-                  <div className="progressVisibilityWrapper">
-                    <p className="progressVisibility">
+                  <div className={styles.progressVisibilityWrapper}>
+                    <p className={styles.progressVisibility}>
                       Progress Visibility
                       <br />
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="frameWrapper3">
-                <div className="frameParent6">
-                  <div className="wrapper">
-                    <p className="b">
+              <div className={styles.frameWrapper3}>
+                <div className={styles.frameParent6}>
+                  <div className={styles.wrapper}>
+                    <p className={styles.b}>
                       50%
                       <br />
                     </p>
                   </div>
-                  <div className="progressVisibilityWrapper">
-                    <p className="progressVisibility">Career Growth</p>
+                  <div className={styles.progressVisibilityWrapper}>
+                    <p className={styles.progressVisibility}>Career Growth</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="frameParent8">
-              <div className="frameWrapper4">
-                <div className="frameParent9">
-                  <div className="wrapper">
-                    <p className="b">95%</p>
+            <div className={styles.frameParent8}>
+              <div className={styles.frameWrapper4}>
+                <div className={styles.frameParent9}>
+                  <div className={styles.wrapper}>
+                    <p className={styles.b}>95%</p>
                   </div>
-                  <div className="progressVisibilityWrapper">
-                    <p className="progressVisibility">
+                  <div className={styles.progressVisibilityWrapper}>
+                    <p className={styles.progressVisibility}>
                       Personalization
                       <br />
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="frameWrapper5">
-                <div className="frameParent10">
-                  <div className="wrapper">
-                    <p className="b">
+              <div className={styles.frameWrapper5}>
+                <div className={styles.frameParent10}>
+                  <div className={styles.wrapper}>
+                    <p className={styles.b}>
                       30%
                       <br />
                     </p>
                   </div>
-                  <div className="progressVisibilityWrapper">
-                    <p className="progressVisibility">
+                  <div className={styles.progressVisibilityWrapper}>
+                    <p className={styles.progressVisibility}>
                       Efficiency Gain
                       <br />
                     </p>
@@ -215,137 +215,137 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="frameParent11">
-          <div className="frameParent12">
-            <p className="frameIcon">The Challenge</p>
-            <h2 className="turningLearningGoalsContainer">
-              <span className="turningLearningGoals">{`Turning Learning Goals into `}</span>
-              <span className="measurableProgress">Measurable Progress</span>
+        <div className={styles.frameParent11}>
+          <div className={styles.frameParent12}>
+            <p className={styles.frameIcon}>The Challenge</p>
+            <h2 className={styles.turningLearningGoalsContainer}>
+              <span className={styles.turningLearningGoals}>{`Turning Learning Goals into `}</span>
+              <span className={styles.measurableProgress}>Measurable Progress</span>
             </h2>
-            <p className="unclearGoalsCompeting">Unclear goals, competing priorities, and limited progress visibility can hinder learner motivation and outcomes.</p>
+            <p className={styles.unclearGoalsCompeting}>Unclear goals, competing priorities, and limited progress visibility can hinder learner motivation and outcomes.</p>
           </div>
-          <div className="frameParent13">
-            <div className="frameWrapper6">
-              <div className="alert01Parent">
-                <div className="challengeIconCircle">
-                  <Image className="alert01Icon" src="/icons/compass.svg" width={42} height={42} sizes="42px" alt="" aria-hidden="true" />
+          <div className={styles.frameParent13}>
+            <div className={styles.frameWrapper6}>
+              <div className={styles.alert01Parent}>
+                <div className={styles.challengeIconCircle}>
+                  <Image className={styles.alert01Icon} src="/icons/compass.svg" width={42} height={42} sizes="42px" alt="" aria-hidden="true" />
                 </div>
-                <div className="lackOfClarityParent">
-                  <h3 className="lackOfClarityContainer">
-                    <span className="lack">{`Lack `}</span>
-                    <span className="of">of</span>
-                    <span className="lack"> Clarity</span>
+                <div className={styles.lackOfClarityParent}>
+                  <h3 className={styles.lackOfClarityContainer}>
+                    <span className={styles.lack}>{`Lack `}</span>
+                    <span className={styles.of}>of</span>
+                    <span className={styles.lack}> Clarity</span>
                   </h3>
-                  <p className="unclearGoalsHinder">Unclear goals hinder focused learning plans</p>
+                  <p className={styles.unclearGoalsHinder}>Unclear goals hinder focused learning plans</p>
                 </div>
               </div>
             </div>
-            <div className="frameWrapper7">
-              <div className="alert01Parent">
-                <div className="challengeIconCircle">
-                  <Image className="alert01Icon" src="/icons/target-01-1-pink-big.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
+            <div className={styles.frameWrapper7}>
+              <div className={styles.alert01Parent}>
+                <div className={styles.challengeIconCircle}>
+                  <Image className={styles.alert01Icon} src="/icons/target-01-1-pink-big.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
                 </div>
-                <div className="lackOfClarityParent">
-                  <h3 className="prioritization">Prioritization</h3>
-                  <p className="competingGoalsReduce">Competing goals reduce focus and increase overwhelm</p>
-                </div>
-              </div>
-            </div>
-            <div className="frameWrapper8">
-              <div className="alert01Parent">
-                <div className="challengeIconCircle">
-                  <Image className="alert01Icon" src="/icons/chart-02.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
-                </div>
-                <div className="lackOfClarityParent">
-                  <h3 className="prioritization">Progress Visibility</h3>
-                  <p className="limitedInsightsMake">Limited insights make improvement difficult to track</p>
+                <div className={styles.lackOfClarityParent}>
+                  <h3 className={styles.prioritization}>Prioritization</h3>
+                  <p className={styles.competingGoalsReduce}>Competing goals reduce focus and increase overwhelm</p>
                 </div>
               </div>
             </div>
-            <div className="frameWrapper9">
-              <div className="alert01Parent">
-                <div className="challengeIconCircle">
-                  <Image className="alert01Icon" src="/icons/alert-01-1.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
+            <div className={styles.frameWrapper8}>
+              <div className={styles.alert01Parent}>
+                <div className={styles.challengeIconCircle}>
+                  <Image className={styles.alert01Icon} src="/icons/chart-02.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
+                </div>
+                <div className={styles.lackOfClarityParent}>
+                  <h3 className={styles.prioritization}>Progress Visibility</h3>
+                  <p className={styles.limitedInsightsMake}>Limited insights make improvement difficult to track</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.frameWrapper9}>
+              <div className={styles.alert01Parent}>
+                <div className={styles.challengeIconCircle}>
+                  <Image className={styles.alert01Icon} src="/icons/alert-01-1.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
                 </div>
 
-                <div className="lackOfClarityParent">
-                  <h3 className="executionGaps">Execution Gaps</h3>
-                  <p className="unclearGoalsHinder">Distractions and procrastination derail plans</p>
+                <div className={styles.lackOfClarityParent}>
+                  <h3 className={styles.executionGaps}>Execution Gaps</h3>
+                  <p className={styles.unclearGoalsHinder}>Distractions and procrastination derail plans</p>
                 </div>
               </div>
             </div>
-            <div className="frameWrapper10">
-              <div className="alert01Parent">
-                <div className="challengeIconCircle">
-                  <Image className="alert01Icon" src="/icons/message-multiple-02.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
+            <div className={styles.frameWrapper10}>
+              <div className={styles.alert01Parent}>
+                <div className={styles.challengeIconCircle}>
+                  <Image className={styles.alert01Icon} src="/icons/message-multiple-02.svg" width={36} height={36} sizes="36px" alt="" aria-hidden="true" />
                 </div>
-                <div className="lackOfClarityParent">
-                  <h3 className="adaptability">Adaptability</h3>
-                  <p className="unclearGoalsHinder">Changing goals require flexible, adjustable plans</p>
+                <div className={styles.lackOfClarityParent}>
+                  <h3 className={styles.adaptability}>Adaptability</h3>
+                  <p className={styles.unclearGoalsHinder}>Changing goals require flexible, adjustable plans</p>
                 </div>
               </div>
             </div>
           </div>
-          <Image className="flatLayStatisticsPresentatiIcon" src="/images/flat-lay-statistics-presentation-with-chart-arrows 1.webp" width={707} height={331} sizes="100vw" alt="Learning progress arrows chart" />
+          <Image className={styles.flatLayStatisticsPresentatiIcon} src="/images/flat-lay-statistics-presentation-with-chart-arrows 1.webp" width={707} height={331} sizes="100vw" alt="Learning progress arrows chart" />
         </div>
-        <div className="frameParent18">
-          <div className="frameParent19">
-            <p className="frameChild7">Adaptive Learning Experience</p>
-            <h2 className="turningLearningGoalsContainer">Learning That Adapts With You</h2>
-            <p className="unclearGoalsCompeting">NeuroLXP continuously connects goals, plans, and progress to create a more personalized learning experience.</p>
+        <div className={styles.frameParent18}>
+          <div className={styles.frameParent19}>
+            <p className={styles.frameChild7}>Adaptive Learning Experience</p>
+            <h2 className={styles.turningLearningGoalsContainer}>Learning That Adapts With You</h2>
+            <p className={styles.unclearGoalsCompeting}>NeuroLXP continuously connects goals, plans, and progress to create a more personalized learning experience.</p>
           </div>
-          <div className="frameParent20">
-            <div className="checkmarkSquare04Parent">
-              <span className="adaptiveCheckCircle adaptiveBlue" aria-hidden="true">
-                <span className="adaptiveInnerRing">
-                  <Image className="adaptiveCheckIcon" src="/icons/checkmark-circle-04-1.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+          <div className={styles.frameParent20}>
+            <div className={styles.checkmarkSquare04Parent}>
+              <span className={`${styles.adaptiveCheckCircle} ${styles.adaptiveBlue}`} aria-hidden="true">
+                <span className={styles.adaptiveInnerRing}>
+                  <Image className={styles.adaptiveCheckIcon} src="/icons/checkmark-circle-04-1.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
                 </span>
               </span>
-              <p className="adaptivePaths">Adaptive Paths</p>
+              <p className={styles.adaptivePaths}>Adaptive Paths</p>
             </div>
-            <div className="frameParent22">
-              <span className="adaptiveCheckCircle adaptivePink" aria-hidden="true">
-                <span className="adaptiveInnerRing">
-                  <Image className="adaptiveCheckIcon" src="/icons/checkmark-circle-04-2.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+            <div className={styles.frameParent22}>
+              <span className={`${styles.adaptiveCheckCircle} ${styles.adaptivePink}`} aria-hidden="true">
+                <span className={styles.adaptiveInnerRing}>
+                  <Image className={styles.adaptiveCheckIcon} src="/icons/checkmark-circle-04-2.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
                 </span>
               </span>
-              <p className="smartRecommendations">Smart Recommendations</p>
+              <p className={styles.smartRecommendations}>Smart Recommendations</p>
             </div>
-            <div className="frameParent22">
-              <span className="adaptiveCheckCircle adaptivePurple" aria-hidden="true">
-                <span className="adaptiveInnerRing">
-                  <Image className="adaptiveCheckIcon" src="/icons/checkmark-circle-04-3.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+            <div className={styles.frameParent22}>
+              <span className={`${styles.adaptiveCheckCircle} ${styles.adaptivePurple}`} aria-hidden="true">
+                <span className={styles.adaptiveInnerRing}>
+                  <Image className={styles.adaptiveCheckIcon} src="/icons/checkmark-circle-04-3.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
                 </span>
               </span>
-              <p className="personalizedFeedback">Personalized Feedback</p>
+              <p className={styles.personalizedFeedback}>Personalized Feedback</p>
             </div>
-            <div className="frameParent22">
-              <span className="adaptiveCheckCircle adaptiveOrange" aria-hidden="true">
-                <span className="adaptiveInnerRing">
-                  <Image className="adaptiveCheckIcon" src="/icons/checkmark-circle-04.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+            <div className={styles.frameParent22}>
+              <span className={`${styles.adaptiveCheckCircle} ${styles.adaptiveOrange}`} aria-hidden="true">
+                <span className={styles.adaptiveInnerRing}>
+                  <Image className={styles.adaptiveCheckIcon} src="/icons/checkmark-circle-04.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
                 </span>
               </span>
-              <p className="continuousImprovement">Continuous Improvement</p>
+              <p className={styles.continuousImprovement}>Continuous Improvement</p>
             </div>
           </div>
         </div>
-        <div className="frameParent25">
-          <div className="frameParent26">
-            <div className="frameWrapper11">
-              <div className="frameWrapper12">
-                <div className="frameParent2">
-                  <div className="frameParent3">
-                    <p className="frameChild12">Goal Setting &amp; Planning</p>
-                    <h2 className="setClearGoals">From Aspirations to Action</h2>
+        <div className={styles.frameParent25}>
+          <div className={styles.frameParent26}>
+            <div className={styles.frameWrapper11}>
+              <div className={styles.frameWrapper12}>
+                <div className={styles.frameParent2}>
+                  <div className={styles.frameParent3}>
+                    <p className={styles.frameChild12}>Goal Setting &amp; Planning</p>
+                    <h2 className={styles.setClearGoals}>From Aspirations to Action</h2>
                   </div>
-                  <p className="neurolxpHelpsLearners2">NeuroLXP helps learners turn academic and career aspirations into clear, achievable goals with structured planning and personalized guidance.</p>
+                  <p className={styles.neurolxpHelpsLearners2}>NeuroLXP helps learners turn academic and career aspirations into clear, achievable goals with structured planning and personalized guidance.</p>
                 </div>
               </div>
             </div>
-            <div className="frameParent29">
-              <div className="frameParent30">
-                <div className="polygonGroup">
-                  <svg className="polygonIcon" width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
+            <div className={styles.frameParent29}>
+              <div className={styles.frameParent30}>
+                <div className={styles.polygonGroup}>
+                  <svg className={styles.polygonIcon} width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
                     <g filter="url(#outerHexShadow-1)">
                       <path d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z" fill="#DFE6E9" />
                     </g>
@@ -387,10 +387,10 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                       </filter>
                     </defs>
                   </svg>
-                  <div className="frameParent31">
-                    <div className="frameParent32">
-                      <div className="featureIconHex">
-                        <svg className="featureIconHexSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
+                  <div className={styles.frameParent31}>
+                    <div className={styles.frameParent32}>
+                      <div className={styles.featureIconHex}>
+                        <svg className={styles.featureIconHexSvg} width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
                           <g filter="url(#featureIconHexFilter1)">
                             <path d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z" fill="#DFE6E9" />
                           </g>
@@ -413,19 +413,19 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                             </filter>
                           </defs>
                         </svg>
-                        <Image className="frameChild14" src="/icons/target-01-pink.svg" width={46} height={46} sizes="46px" alt="Personalized goals" />
+                        <Image className={styles.frameChild14} src="/icons/target-01-pink.svg" width={46} height={46} sizes="46px" alt="Personalized goals" />
                       </div>
-                      <h3 className="personalizedGoals">Personalized Goals</h3>
+                      <h3 className={styles.personalizedGoals}>Personalized Goals</h3>
                     </div>
-                    <p className="setAcademicAnd">
+                    <p className={styles.setAcademicAnd}>
                       Set academic and
                       <br />
                       career goals
                     </p>
                   </div>
                 </div>
-                <div className="polygonContainer">
-                  <svg className="polygonIcon" width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
+                <div className={styles.polygonContainer}>
+                  <svg className={styles.polygonIcon} width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
                     <g filter="url(#outerHexShadow-2)">
                       <path d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z" fill="#DFE6E9" />
                     </g>
@@ -467,10 +467,10 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                       </filter>
                     </defs>
                   </svg>
-                  <div className="frameParent31">
-                    <div className="frameParent32">
-                      <div className="featureIconHex">
-                        <svg className="featureIconHexSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
+                  <div className={styles.frameParent31}>
+                    <div className={styles.frameParent32}>
+                      <div className={styles.featureIconHex}>
+                        <svg className={styles.featureIconHexSvg} width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
                           <g filter="url(#featureIconHexFilter2)">
                             <path d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z" fill="#DFE6E9" />
                           </g>
@@ -493,15 +493,15 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                             </filter>
                           </defs>
                         </svg>
-                        <Image className="frameChild14" src="/icons/ai-sparkles.svg" width={46} height={46} sizes="46px" alt="Smart suggestions" />
+                        <Image className={styles.frameChild14} src="/icons/ai-sparkles.svg" width={46} height={46} sizes="46px" alt="Smart suggestions" />
                       </div>
-                      <h3 className="smartSuggestions">Smart Suggestions</h3>
+                      <h3 className={styles.smartSuggestions}>Smart Suggestions</h3>
                     </div>
-                    <p className="setAcademicAnd">Get relevant goal recommendations</p>
+                    <p className={styles.setAcademicAnd}>Get relevant goal recommendations</p>
                   </div>
                 </div>
-                <div className="polygonParent2">
-                  <svg className="polygonIcon" width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
+                <div className={styles.polygonParent2}>
+                  <svg className={styles.polygonIcon} width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
                     <g filter="url(#outerHexShadow-3)">
                       <path d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z" fill="#DFE6E9" />
                     </g>
@@ -543,10 +543,10 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                       </filter>
                     </defs>
                   </svg>
-                  <div className="frameParent31">
-                    <div className="frameParent36">
-                      <div className="featureIconHex">
-                        <svg className="featureIconHexSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
+                  <div className={styles.frameParent31}>
+                    <div className={styles.frameParent36}>
+                      <div className={styles.featureIconHex}>
+                        <svg className={styles.featureIconHexSvg} width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
                           <g filter="url(#featureIconHexFilter3)">
                             <path d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z" fill="#DFE6E9" />
                           </g>
@@ -569,17 +569,17 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                             </filter>
                           </defs>
                         </svg>
-                        <Image className="frameChild14" src="/icons/calendar-03.svg" width={46} height={46} sizes="46px" alt="Plan and schedule" />
+                        <Image className={styles.frameChild14} src="/icons/calendar-03.svg" width={46} height={46} sizes="46px" alt="Plan and schedule" />
                       </div>
-                      <h3 className="planSchedule">{`Plan & Schedule`}</h3>
+                      <h3 className={styles.planSchedule}>{`Plan & Schedule`}</h3>
                     </div>
-                    <p className="scheduleLearningAnd">Schedule learning and milestones</p>
+                    <p className={styles.scheduleLearningAnd}>Schedule learning and milestones</p>
                   </div>
                 </div>
               </div>
-              <div className="frameParent37">
-                <div className="polygonGroup">
-                  <svg className="polygonIcon" width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
+              <div className={styles.frameParent37}>
+                <div className={styles.polygonGroup}>
+                  <svg className={styles.polygonIcon} width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
                     <g filter="url(#outerHexShadow-4)">
                       <path d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z" fill="#DFE6E9" />
                     </g>
@@ -621,10 +621,10 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                       </filter>
                     </defs>
                   </svg>
-                  <div className="frameParent31">
-                    <div className="frameParent32">
-                      <div className="featureIconHex">
-                        <svg className="featureIconHexSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
+                  <div className={styles.frameParent31}>
+                    <div className={styles.frameParent32}>
+                      <div className={styles.featureIconHex}>
+                        <svg className={styles.featureIconHexSvg} width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
                           <g filter="url(#featureIconHexFilter4)">
                             <path d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z" fill="#DFE6E9" />
                           </g>
@@ -647,19 +647,19 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                             </filter>
                           </defs>
                         </svg>
-                        <Image className="frameChild14" src="/icons/university-usergroup.svg" width={46} height={46} sizes="46px" alt="Team plans" />
+                        <Image className={styles.frameChild14} src="/icons/university-usergroup.svg" width={46} height={46} sizes="46px" alt="Team plans" />
                       </div>
-                      <h3 className="smartSuggestions">Team Plans</h3>
+                      <h3 className={styles.smartSuggestions}>Team Plans</h3>
                     </div>
-                    <p className="setAcademicAnd">
+                    <p className={styles.setAcademicAnd}>
                       Share plans with mentors
                       <br />
                       and peers.
                     </p>
                   </div>
                 </div>
-                <div className="polygonParent4">
-                  <svg className="polygonIcon" width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
+                <div className={styles.polygonParent4}>
+                  <svg className={styles.polygonIcon} width="371" height="371" viewBox="0 0 371 371" fill="none" aria-hidden="true" focusable="false">
                     <g filter="url(#outerHexShadow-5)">
                       <path d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z" fill="#DFE6E9" />
                     </g>
@@ -701,10 +701,10 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                       </filter>
                     </defs>
                   </svg>
-                  <div className="frameParent31">
-                    <div className="frameParent32">
-                      <div className="featureIconHex">
-                        <svg className="featureIconHexSvg" width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
+                  <div className={styles.frameParent31}>
+                    <div className={styles.frameParent32}>
+                      <div className={styles.featureIconHex}>
+                        <svg className={styles.featureIconHexSvg} width="74" height="74" viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
                           <g filter="url(#featureIconHexFilter5)">
                             <path d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z" fill="#DFE6E9" />
                           </g>
@@ -727,11 +727,11 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                             </filter>
                           </defs>
                         </svg>
-                        <Image className="frameChild26" src="/icons/message-multiple-02.svg" width={46} height={46} sizes="46px" alt="Review and improve" />
+                        <Image className={styles.frameChild26} src="/icons/message-multiple-02.svg" width={46} height={46} sizes="46px" alt="Review and improve" />
                       </div>
-                      <h3 className="reviewImprove">{`Review & Improve`}</h3>
+                      <h3 className={styles.reviewImprove}>{`Review & Improve`}</h3>
                     </div>
-                    <p className="reviewRefineAnd">
+                    <p className={styles.reviewRefineAnd}>
                       Review, Refine and
                       <br />
                       Improve{" "}
@@ -741,243 +741,243 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="frameWrapper11">
-            <div className="frameWrapper12">
-              <div className="frameParent2">
-                <div className="frameParent3">
-                  <p className="frameChild27">Progress Tracking</p>
-                  <h2 className="setClearGoals">See Your Progress! Know What’s Next</h2>
+          <div className={styles.frameWrapper11}>
+            <div className={styles.frameWrapper12}>
+              <div className={styles.frameParent2}>
+                <div className={styles.frameParent3}>
+                  <p className={styles.frameChild27}>Progress Tracking</p>
+                  <h2 className={styles.setClearGoals}>See Your Progress! Know What’s Next</h2>
                 </div>
-                <p className="trackPerformanceEngagement">Track performance, engagement, and achievements with real-time insights for better learning decisions.</p>
+                <p className={styles.trackPerformanceEngagement}>Track performance, engagement, and achievements with real-time insights for better learning decisions.</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="frameParent44">
-          <div className="frameParent45">
-            <div className="frameParent46">
-              <div className="image20Parent">
-                <div className="image20" />
-                <div className="frameParent47">
-                  <div className="image21Parent">
-                    <div className="image21" />
-                    <h3 className="increasedMotivation">Increased Motivation</h3>
+        <div className={styles.frameParent44}>
+          <div className={styles.frameParent45}>
+            <div className={styles.frameParent46}>
+              <div className={styles.image20Parent}>
+                <div className={styles.image20} />
+                <div className={styles.frameParent47}>
+                  <div className={styles.image21Parent}>
+                    <div className={styles.image21} />
+                    <h3 className={styles.increasedMotivation}>Increased Motivation</h3>
                   </div>
-                  <div className="trackMilestonesAndLearningWrapper">
-                    <p className="trackMilestonesAnd">Track milestones and learning activity</p>
-                  </div>
-                </div>
-              </div>
-              <div className="image20Group">
-                <div className="image20" />
-                <div className="frameParent47">
-                  <div className="image21Group">
-                    <div className="image21" />
-                    <h3 className="performanceAnalytics">Performance Analytics</h3>
-                  </div>
-                  <div className="trackMilestonesAndLearningWrapper">
-                    <p className="trackMilestonesAnd">Identify strengths and learning gaps</p>
+                  <div className={styles.trackMilestonesAndLearningWrapper}>
+                    <p className={styles.trackMilestonesAnd}>Track milestones and learning activity</p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="frameParent49">
-              <div className="image20Parent">
-                <div className="image20" />
-                <div className="frameParent47">
-                  <div className="image21Container">
-                    <div className="image21" />
-                    <h3 className="competencyAssessment">Competency Assessment</h3>
+              <div className={styles.image20Group}>
+                <div className={styles.image20} />
+                <div className={styles.frameParent47}>
+                  <div className={styles.image21Group}>
+                    <div className={styles.image21} />
+                    <h3 className={styles.performanceAnalytics}>Performance Analytics</h3>
                   </div>
-                  <div className="trackMilestonesAndLearningWrapper">
-                    <p className="trackMilestonesAnd">Measure skills and competencies</p>
-                  </div>
-                </div>
-              </div>
-              <div className="image20Parent2">
-                <div className="image20" />
-                <div className="frameParent47">
-                  <div className="image21Parent2">
-                    <div className="image21" />
-                    <h3 className="behavioralInsights">Behavioral Insights</h3>
-                  </div>
-                  <div className="trackMilestonesAndLearningWrapper">
-                    <p className="trackMilestonesAnd">Understand engagement and learning patterns</p>
+                  <div className={styles.trackMilestonesAndLearningWrapper}>
+                    <p className={styles.trackMilestonesAnd}>Identify strengths and learning gaps</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="image20Parent3">
-            <div className="image20" />
-            <div className="frameParent47">
-              <div className="image21Parent3">
-                <div className="image21" />
-                <h3 className="predictiveAnalytics">Predictive Analytics</h3>
+            <div className={styles.frameParent49}>
+              <div className={styles.image20Parent}>
+                <div className={styles.image20} />
+                <div className={styles.frameParent47}>
+                  <div className={styles.image21Container}>
+                    <div className={styles.image21} />
+                    <h3 className={styles.competencyAssessment}>Competency Assessment</h3>
+                  </div>
+                  <div className={styles.trackMilestonesAndLearningWrapper}>
+                    <p className={styles.trackMilestonesAnd}>Measure skills and competencies</p>
+                  </div>
+                </div>
               </div>
-              <div className="trackMilestonesAndLearningWrapper">
-                <p className="trackMilestonesAnd">Spot challenges early and act proactively</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="frameParent53">
-          <div className="frameWrapper15">
-            <div className="frameWrapper16">
-              <div className="frameWrapper17">
-                <div className="frameParent54">
-                  <p className="frameChild28">Key Benefits</p>
-                  <h2 className="whyGoalSetting">{`Why Goal Setting & Progress Tracking Matter`}</h2>
+              <div className={styles.image20Parent2}>
+                <div className={styles.image20} />
+                <div className={styles.frameParent47}>
+                  <div className={styles.image21Parent2}>
+                    <div className={styles.image21} />
+                    <h3 className={styles.behavioralInsights}>Behavioral Insights</h3>
+                  </div>
+                  <div className={styles.trackMilestonesAndLearningWrapper}>
+                    <p className={styles.trackMilestonesAnd}>Understand engagement and learning patterns</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="frameParent55">
-            <div className="peopleTakingPartBusinessEvParent">
-              <div className="peopleTakingPartBusinessEv" />
-              <div className="image216" />
-              <div className="groupYoungBusinesspeopleUsi" />
-              <div className="rectangleIcon" aria-hidden="true" />
-              <div className="collageCustomerExperienceCoParent">
-                <Image className="collageCustomerExperienceCoIcon" src="/images/collage-customer-experience-concept 1.webp" width={606} height={473} sizes="100vw" alt="Goal setting and progress growth chart" />
-                <div className="frameWrapper18">
-                  <div className="frameParent56">
-                    <div className="starParent">
-                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
-                      <p className="clearDirection">Clear Direction</p>
-                    </div>
-                    <div className="starParent">
-                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
-                      <p className="clearDirection">Higher Motivation</p>
-                    </div>
-                    <div className="starParent">
-                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
-                      <p className="clearDirection">Better Time Management</p>
-                    </div>
-                    <div className="starParent">
-                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
-                      <p className="clearDirection">Data-Driven Decisions</p>
-                    </div>
-                    <div className="starParent">
-                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
-                      <p className="clearDirection">Continuous Improvement</p>
-                    </div>
-                    <div className="starParent">
-                      <Image className="starIcon" src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
-                      <p className="careerReadiness">Career Readiness</p>
-                    </div>
-                  </div>
-                </div>
+          <div className={styles.image20Parent3}>
+            <div className={styles.image20} />
+            <div className={styles.frameParent47}>
+              <div className={styles.image21Parent3}>
+                <div className={styles.image21} />
+                <h3 className={styles.predictiveAnalytics}>Predictive Analytics</h3>
+              </div>
+              <div className={styles.trackMilestonesAndLearningWrapper}>
+                <p className={styles.trackMilestonesAnd}>Spot challenges early and act proactively</p>
               </div>
             </div>
-            <div className="image206" />
           </div>
         </div>
-        <div className="rectangleParent">
-          <Image className="rectangle" src="/images/Frame 2095586948.webp" width={1280} height={505} sizes="100vw" alt="" aria-hidden="true" />
-          <div className="image207" />
-          <div className="frameParent57">
-            <div className="progressWithPurposeParent">
-              <h2 className="progressWithPurpose">{`Progress With Purpose `}</h2>
-              <p className="neurolxpHelpsLearners3">
+        <div className={styles.frameParent53}>
+          <div className={styles.frameWrapper15}>
+            <div className={styles.frameWrapper16}>
+              <div className={styles.frameWrapper17}>
+                <div className={styles.frameParent54}>
+                  <p className={styles.frameChild28}>Key Benefits</p>
+                  <h2 className={styles.whyGoalSetting}>{`Why Goal Setting & Progress Tracking Matter`}</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.frameParent55}>
+            <div className={styles.peopleTakingPartBusinessEvParent}>
+              <div className={styles.peopleTakingPartBusinessEv} />
+              <div className={styles.image216} />
+              <div className={styles.groupYoungBusinesspeopleUsi} />
+              <div className={styles.rectangleIcon} aria-hidden="true" />
+              <div className={styles.collageCustomerExperienceCoParent}>
+                <Image className={styles.collageCustomerExperienceCoIcon} src="/images/collage-customer-experience-concept 1.webp" width={606} height={473} sizes="100vw" alt="Goal setting and progress growth chart" />
+                <div className={styles.frameWrapper18}>
+                  <div className={styles.frameParent56}>
+                    <div className={styles.starParent}>
+                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className={styles.clearDirection}>Clear Direction</p>
+                    </div>
+                    <div className={styles.starParent}>
+                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className={styles.clearDirection}>Higher Motivation</p>
+                    </div>
+                    <div className={styles.starParent}>
+                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className={styles.clearDirection}>Better Time Management</p>
+                    </div>
+                    <div className={styles.starParent}>
+                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className={styles.clearDirection}>Data-Driven Decisions</p>
+                    </div>
+                    <div className={styles.starParent}>
+                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className={styles.clearDirection}>Continuous Improvement</p>
+                    </div>
+                    <div className={styles.starParent}>
+                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <p className={styles.careerReadiness}>Career Readiness</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.image206} />
+          </div>
+        </div>
+        <div className={styles.rectangleParent}>
+          <Image className={styles.rectangle} src="/images/Frame 2095586948.webp" width={1280} height={505} sizes="100vw" alt="" aria-hidden="true" />
+          <div className={styles.image207} />
+          <div className={styles.frameParent57}>
+            <div className={styles.progressWithPurposeParent}>
+              <h2 className={styles.progressWithPurpose}>{`Progress With Purpose `}</h2>
+              <p className={styles.neurolxpHelpsLearners3}>
                 NeuroLXP helps learners track progress adapt, and achieve better outcomes.
                 <br />
                 <br />
                 <br />
               </p>
             </div>
-            <div className="frameWrapper19">
-              <div className="frameWrapper20">
-                <div className="bookADemoWrapper">
-                  <p className="bookADemo">Book a Demo</p>
+            <div className={styles.frameWrapper19}>
+              <div className={styles.frameWrapper20}>
+                <div className={styles.bookADemoWrapper}>
+                  <p className={styles.bookADemo}>Book a Demo</p>
                 </div>
               </div>
             </div>
           </div>
-          <Image className="handHoldingWoodenCubeWithIcon" src="/images/hand-holding-wooden-cube-with-target 1.webp" width={601} height={500} sizes="100vw" alt="Business professional selecting an idea" />
+          <Image className={styles.handHoldingWoodenCubeWithIcon} src="/images/hand-holding-wooden-cube-with-target 1.webp" width={601} height={500} sizes="100vw" alt="Business professional selecting an idea" />
         </div>
-        <div className="frameParent75">
-          <div className="frameParent76">
-            <div className="wrapper">
-              <div className="frameWrapper23">
-                <div className="frameParent54">
-                  <p className="frameChild39">Personalized Learning Journey</p>
-                  <h2 className="setClearGoals">One Connected Learning Journey</h2>
+        <div className={styles.frameParent75}>
+          <div className={styles.frameParent76}>
+            <div className={styles.wrapper}>
+              <div className={styles.frameWrapper23}>
+                <div className={styles.frameParent54}>
+                  <p className={styles.frameChild39}>Personalized Learning Journey</p>
+                  <h2 className={styles.setClearGoals}>One Connected Learning Journey</h2>
                 </div>
               </div>
             </div>
-            <div className="frameParent78">
-              <div className="frameParent79">
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className="setGoals">Set Goals</h3>
+            <div className={styles.frameParent78}>
+              <div className={styles.frameParent79}>
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className={styles.setGoals}>Set Goals</h3>
                 </div>
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className="learn">Learn</h3>
-                </div>
-              </div>
-              <div className="frameParent80">
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className="trackProgress">Track Progress</h3>
-                </div>
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className="analyzePerformance">Analyze Performance</h3>
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className={styles.learn}>Learn</h3>
                 </div>
               </div>
-              <div className="frameParent81">
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className="createPlans">Create Plans</h3>
+              <div className={styles.frameParent80}>
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className={styles.trackProgress}>Track Progress</h3>
                 </div>
-                <div className="checkmarkSquare04Parent">
-                  <Image className="checkmarkSquare04Icon" src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className="adaptImprove">{`Adapt & Improve`}</h3>
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className={styles.analyzePerformance}>Analyze Performance</h3>
+                </div>
+              </div>
+              <div className={styles.frameParent81}>
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className={styles.createPlans}>Create Plans</h3>
+                </div>
+                <div className={styles.checkmarkSquare04Parent}>
+                  <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                  <h3 className={styles.adaptImprove}>{`Adapt & Improve`}</h3>
                 </div>
               </div>
             </div>
           </div>
-          <div className="frameParent82">
-            <div className="frameParent83">
-              <p className="frameChild40">Trust &amp; Intelligence</p>
-              <h2 className="turningLearningGoalsContainer">Personalized!Intelligent! Secure!</h2>
+          <div className={styles.frameParent82}>
+            <div className={styles.frameParent83}>
+              <p className={styles.frameChild40}>Trust &amp; Intelligence</p>
+              <h2 className={styles.turningLearningGoalsContainer}>Personalized!Intelligent! Secure!</h2>
             </div>
-            <div className="frameParent84">
-              <div className="frameParent85">
-                <div className="rectangleGroup">
-                  <div className="rectangleDiv" />
-                  <div className="frameChild41" />
-                  <div className="aiBookParent">
-                    <Image className="aiBookIcon" src="/icons/ai-book-blue.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
-                    <h3 className="aiMl">AI / ML Powered</h3>
+            <div className={styles.frameParent84}>
+              <div className={styles.frameParent85}>
+                <div className={styles.rectangleGroup}>
+                  <div className={styles.rectangleDiv} />
+                  <div className={styles.frameChild41} />
+                  <div className={styles.aiBookParent}>
+                    <Image className={styles.aiBookIcon} src="/icons/ai-book-blue.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
+                    <h3 className={styles.aiMl}>AI / ML Powered</h3>
                   </div>
                 </div>
-                <div className="rectangleGroup">
-                  <div className="rectangleDiv" />
-                  <div className="frameChild41" />
-                  <div className="analyticsUpParent">
-                    <Image className="aiBookIcon" src="/icons/analytics-up.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
-                    <h3 className="learningAnalytics">Learning Analytics</h3>
+                <div className={styles.rectangleGroup}>
+                  <div className={styles.rectangleDiv} />
+                  <div className={styles.frameChild41} />
+                  <div className={styles.analyticsUpParent}>
+                    <Image className={styles.aiBookIcon} src="/icons/analytics-up.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
+                    <h3 className={styles.learningAnalytics}>Learning Analytics</h3>
                   </div>
                 </div>
               </div>
-              <div className="frameParent85">
-                <div className="rectangleGroup">
-                  <div className="rectangleDiv" />
-                  <div className="frameChild41" />
-                  <div className="analyticsUpParent">
-                    <Image className="aiBookIcon" src="/icons/shield-check.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
-                    <h3 className="aiMl">Privacy First</h3>
+              <div className={styles.frameParent85}>
+                <div className={styles.rectangleGroup}>
+                  <div className={styles.rectangleDiv} />
+                  <div className={styles.frameChild41} />
+                  <div className={styles.analyticsUpParent}>
+                    <Image className={styles.aiBookIcon} src="/icons/shield-check.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
+                    <h3 className={styles.aiMl}>Privacy First</h3>
                   </div>
                 </div>
-                <div className="rectangleGroup">
-                  <div className="rectangleDiv" />
-                  <div className="frameChild41" />
-                  <div className="analyticsUpParent">
-                    <Image className="aiBookIcon" src="/icons/activity-01.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
-                    <h3 className="realTimeInsights">Real-Time Insights</h3>
+                <div className={styles.rectangleGroup}>
+                  <div className={styles.rectangleDiv} />
+                  <div className={styles.frameChild41} />
+                  <div className={styles.analyticsUpParent}>
+                    <Image className={styles.aiBookIcon} src="/icons/activity-01.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" style={{ width: 24, height: 24, objectFit: "contain", display: "block", flexShrink: 0 }} />
+                    <h3 className={styles.realTimeInsights}>Real-Time Insights</h3>
                   </div>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import "./white-paper.css";
+import styles from "./white-paper.module.css";
 
 export default function WhitePaper() {
   const topics = [
@@ -83,75 +83,75 @@ export default function WhitePaper() {
   ];
 
   return (
-    <div className="whitepaper-page">
-      <section className="hero-section">
-        <div className="container">
-          <div className="breadcrumb">
-            <span className="breadcrumb-link">Resources</span>
+    <div className={styles["whitepaper-page"]}>
+      <section className={styles["hero-section"]}>
+        <div className={styles.container}>
+          <div className={styles.breadcrumb}>
+            <span className={styles["breadcrumb-link"]}>Resources</span>
 
-            <div className="breadcrumb-right">
-              <div className="breadcrumb-separator">
+            <div className={styles["breadcrumb-right"]}>
+              <div className={styles["breadcrumb-separator"]}>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" role="img" aria-label="White Papers">
                   <path d="M8.33398 12C8.33398 12 12.334 9.05407 12.334 8C12.334 6.94587 8.33398 4 8.33398 4" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M3.66605 12C3.66605 12 7.66602 9.05407 7.66602 8C7.66602 6.94587 3.66602 4 3.66602 4" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <span className="breadcrumb-current">White Papers</span>
+              <span className={styles["breadcrumb-current"]}>White Papers</span>
             </div>
           </div>
 
-          <div className="hero-container">
-            <div className="hero-card">
-              <div className="hero-content-wrapper">
-                <div className="hero-text-wrapper">
-                  <div className="hero-heading-wrapper">
-                    <div className="hero-badge">
+          <div className={styles["hero-container"]}>
+            <div className={styles["hero-card"]}>
+              <div className={styles["hero-content-wrapper"]}>
+                <div className={styles["hero-text-wrapper"]}>
+                  <div className={styles["hero-heading-wrapper"]}>
+                    <div className={styles["hero-badge"]}>
                       <span>White Papers</span>
                     </div>
 
-                    <h1 className="hero-title">
+                    <h1 className={styles["hero-title"]}>
                       Insights Shaping the
                       <br />
                       <span>Future of Learning</span>
                     </h1>
                   </div>
 
-                  <p className="hero-description">
+                  <p className={styles["hero-description"]}>
                     Explore Trends Shaping Digital
                     <br />
                     Learning.
                   </p>
                 </div>
 
-                <button className="hero-btn">
-                  <span className="hero-btn-text">Book a Demo</span>
+                <button className={styles["hero-btn"]}>
+                  <span className={styles["hero-btn-text"]}>Book a Demo</span>
                 </button>
               </div>
             </div>
 
-            <div className="hero-image-wrapper">
-              <div className="hero-image-circle">
-                <Image src="/images/young-librarian-organising-books.webp" fill loading="eager" sizes="(max-width: 768px) 285px, (max-width: 1240px) 410px, 605px" alt="Future of Learning" className="hero-image" />
+            <div className={styles["hero-image-wrapper"]}>
+              <div className={styles["hero-image-circle"]}>
+                <Image src="/images/young-librarian-organising-books.webp" fill loading="eager" sizes="(max-width: 768px) 285px, (max-width: 1240px) 410px, 605px" alt="Future of Learning" className={styles["hero-image"]} />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="insights-section">
-        <div className="container">
-          <div className="insights-wrapper">
-            <div className="insights-badge">
-              <span className="insights-badge-text">Research-driven learning</span>
+      <section className={styles["insights-section"]}>
+        <div className={styles.container}>
+          <div className={styles["insights-wrapper"]}>
+            <div className={styles["insights-badge"]}>
+              <span className={styles["insights-badge-text"]}>Research-driven learning</span>
             </div>
 
-            <h2 className="insights-title">
+            <h2 className={styles["insights-title"]}>
               Built for Educators! Leaders! and
               <br />
               Decision Makers
             </h2>
 
-            <p className="insights-description">
+            <p className={styles["insights-description"]}>
               Valuable insights helping leaders improve learning and
               <br />
               organizational performance.
@@ -160,9 +160,9 @@ export default function WhitePaper() {
         </div>
       </section>
 
-      <section className="topics-section">
-        <div className="topics-bg">
-          <svg width="1440" height="831" viewBox="0 0 1440 831" fill="none" role="img" aria-label="Background" preserveAspectRatio="none" className="topics-bg-svg">
+      <section className={styles["topics-section"]}>
+        <div className={styles["topics-bg"]}>
+          <svg width="1440" height="831" viewBox="0 0 1440 831" fill="none" role="img" aria-label="Background" preserveAspectRatio="none" className={styles["topics-bg-svg"]}>
             <g filter="url(#filter0_dd_2_23096)">
               <path d="M0 30H1440V653.724C1440 653.724 1003.32 801.93 717 806.866C434.343 811.739 0 682.121 0 682.121V30Z" fill="#DFE6E9" />
             </g>
@@ -206,15 +206,15 @@ export default function WhitePaper() {
           </svg>
         </div>
 
-        <div className="topics-panel">
-          <div className="topics-content">
-            <div className="container">
-              <div className="topics-wrapper">
-                <div className="topics-header">
-                  <div className="topics-header-content">
-                    <h2 className="topics-title">Exploring Key Topics In Modern Learning</h2>
+        <div className={styles["topics-panel"]}>
+          <div className={styles["topics-content"]}>
+            <div className={styles.container}>
+              <div className={styles["topics-wrapper"]}>
+                <div className={styles["topics-header"]}>
+                  <div className={styles["topics-header-content"]}>
+                    <h2 className={styles["topics-title"]}>Exploring Key Topics In Modern Learning</h2>
 
-                    <p className="topics-description">
+                    <p className={styles["topics-description"]}>
                       NeuroLXP white papers focus on critical areas influencing the
                       <br />
                       evolution of digital learning.
@@ -222,13 +222,13 @@ export default function WhitePaper() {
                   </div>
                 </div>
 
-                <div className="topics-grid">
+                <div className={styles["topics-grid"]}>
                   {topics.map((topic, index) => (
-                    <div className="topic-card" key={index}>
-                      <div className="topic-icon">{topic.icon}</div>
+                    <div className={styles["topic-card"]} key={index}>
+                      <div className={styles["topic-icon"]}>{topic.icon}</div>
 
-                      <div className="topic-content">
-                        <h3 className="topic-title">
+                      <div className={styles["topic-content"]}>
+                        <h3 className={styles["topic-title"]}>
                           {topic.title.split("\n").map((line, i) => (
                             <span key={i}>
                               {line}
@@ -246,15 +246,15 @@ export default function WhitePaper() {
         </div>
       </section>
 
-      <section className="frame-four-section">
-        <div className="container frame-four-container">
-          <div className="frame-four-left">
-            <div className="frame-four-content">
-              <div className="frame-four-heading">
-                <h2 className="frame-four-title">Turn Insights into Action</h2>
+      <section className={styles["frame-four-section"]}>
+        <div className={`${styles.container} ${styles["frame-four-container"]}`}>
+          <div className={styles["frame-four-left"]}>
+            <div className={styles["frame-four-content"]}>
+              <div className={styles["frame-four-heading"]}>
+                <h2 className={styles["frame-four-title"]}>Turn Insights into Action</h2>
               </div>
 
-              <p className="frame-four-description">
+              <p className={styles["frame-four-description"]}>
                 Proven strategies for better learning
                 <br />
                 and engagement.
@@ -262,14 +262,14 @@ export default function WhitePaper() {
             </div>
           </div>
 
-          <div className="frame-four-right">
-            <div className="frame-four-card">
-              <div className="frame-four-inner">
-                <div className="frame-four-list">
-                  <div className="frame-four-item">
-                    <div className="frame-four-icon-wrapper">
-                      <div className="frame-four-icon">
-                        <div className="frame-four-icon-inner">
+          <div className={styles["frame-four-right"]}>
+            <div className={styles["frame-four-card"]}>
+              <div className={styles["frame-four-inner"]}>
+                <div className={styles["frame-four-list"]}>
+                  <div className={styles["frame-four-item"]}>
+                    <div className={styles["frame-four-icon-wrapper"]}>
+                      <div className={styles["frame-four-icon"]}>
+                        <div className={styles["frame-four-icon-inner"]}>
                           {" "}
                           <svg width="37" height="37" viewBox="0 0 37 37" fill="none" role="img" aria-label="Modernize Learning">
                             <path d="M31.4303 19.5211C31.4851 19.0287 31.5134 18.5282 31.5138 18.0212C31.5197 10.5654 25.4803 4.51647 18.0244 4.51061C13.7835 4.50728 9.99782 6.45981 7.52047 9.51636M4.59738 16.5001C4.54254 16.9925 4.5142 17.493 4.51381 18C4.50795 25.4559 10.5474 31.5047 18.0032 31.5106C22.2441 31.5139 26.0297 29.5614 28.5071 26.5048" stroke="#2A7308" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -280,13 +280,13 @@ export default function WhitePaper() {
                       </div>
                     </div>
 
-                    <div className="frame-four-item-text">Modernize Learning</div>
+                    <div className={styles["frame-four-item-text"]}>Modernize Learning</div>
                   </div>
 
-                  <div className="frame-four-item">
-                    <div className="frame-four-icon-wrapper">
-                      <div className="frame-four-icon">
-                        <div className="frame-four-icon-inner">
+                  <div className={styles["frame-four-item"]}>
+                    <div className={styles["frame-four-icon-wrapper"]}>
+                      <div className={styles["frame-four-icon"]}>
+                        <div className={styles["frame-four-icon-inner"]}>
                           {" "}
                           <svg width="37" height="37" viewBox="0 0 37 37" fill="none" role="img" aria-label="Boost Engagement">
                             <path d="M15.8118 10.7317C16.9832 8.5929 17.569 7.52353 18.0162 7.52388C18.4635 7.52423 19.0475 8.59452 20.2156 10.7351C21.418 12.9384 23.0257 14.5676 25.2893 15.8096C27.4317 16.9852 28.5029 17.5728 28.5025 18.0206C28.5022 18.4683 27.4293 19.055 25.2837 20.2283C23.0827 21.4318 21.4552 23.0414 20.2144 25.3074C19.0401 27.4519 18.453 28.5242 18.0057 28.5239C17.5585 28.5235 16.9724 27.4497 15.8003 25.3016C14.598 23.0984 12.9902 21.4692 10.7265 20.2272C8.57694 19.0477 7.50214 18.458 7.5025 18.0102C7.50285 17.5623 8.57857 16.9743 10.73 15.7982C12.9956 14.5597 14.606 12.933 15.8118 10.7317Z" stroke="#BF1869" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -295,13 +295,13 @@ export default function WhitePaper() {
                       </div>
                     </div>
 
-                    <div className="frame-four-item-text">Boost Engagement</div>
+                    <div className={styles["frame-four-item-text"]}>Boost Engagement</div>
                   </div>
 
-                  <div className="frame-four-item">
-                    <div className="frame-four-icon-wrapper">
-                      <div className="frame-four-icon">
-                        <div className="frame-four-icon-inner">
+                  <div className={styles["frame-four-item"]}>
+                    <div className={styles["frame-four-icon-wrapper"]}>
+                      <div className={styles["frame-four-icon"]}>
+                        <div className={styles["frame-four-icon-inner"]}>
                           <svg width="37" height="37" viewBox="0 0 37 37" fill="none" role="img" aria-label="Leverage AI Analytics">
                             <path d="M10.5215 6.75589C8.03619 6.75394 6.01988 8.76708 6.01793 11.2524C6.01726 12.1053 6.25396 12.9031 6.66566 13.5831C4.58669 13.9791 3.01435 15.8055 3.01263 18C3.0109 20.1945 4.58037 22.0233 6.65871 22.4226M9.01066 20.5108C8.02349 20.8587 7.19407 21.5415 6.65871 22.4226C6.24595 23.1019 6.00799 23.8993 6.00732 24.7524C6.00537 27.2377 8.01851 29.2539 10.5038 29.2559C10.5022 31.3269 12.1798 33.0072 14.2508 33.0088C16.3219 33.0105 18.0022 31.3328 18.0038 29.2618L18.0215 6.76179C18.0231 4.69072 16.3455 3.01047 14.2744 3.00884C12.2033 3.00721 10.5231 4.68483 10.5215 6.75589M10.5215 6.75589C10.5205 7.98276 11.1088 9.07247 12.0191 9.75734" stroke="#67096E" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
                             <path d="M28.8966 7.13782L25.5189 10.5102L22.5189 10.5078M27.7716 7.13694C27.7711 7.75825 28.2744 8.26233 28.8957 8.26282C29.517 8.26331 30.0211 7.76002 30.0216 7.13871C30.0221 6.51738 29.5188 6.01331 28.8975 6.01282C28.2762 6.01233 27.7721 6.51561 27.7716 7.13694Z" stroke="#67096E" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -312,13 +312,13 @@ export default function WhitePaper() {
                       </div>
                     </div>
 
-                    <div className="frame-four-item-text">Leverage AI &amp; Analytics</div>
+                    <div className={styles["frame-four-item-text"]}>Leverage AI &amp; Analytics</div>
                   </div>
 
-                  <div className="frame-four-item">
-                    <div className="frame-four-icon-wrapper">
-                      <div className="frame-four-icon">
-                        <div className="frame-four-icon-inner">
+                  <div className={styles["frame-four-item"]}>
+                    <div className={styles["frame-four-icon-wrapper"]}>
+                      <div className={styles["frame-four-icon"]}>
+                        <div className={styles["frame-four-icon-inner"]}>
                           <svg width="37" height="37" viewBox="0 0 37 37" fill="none" role="img" aria-label=" Scale Training">
                             <path d="M6.0166 13.5L6.00364 30" stroke="#046F73" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
                             <path d="M12.0225 6.00781L12.0036 30.0078" stroke="#046F73" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -330,13 +330,13 @@ export default function WhitePaper() {
                       </div>
                     </div>
 
-                    <div className="frame-four-item-text">Scale Training</div>
+                    <div className={styles["frame-four-item-text"]}>Scale Training</div>
                   </div>
 
-                  <div className="frame-four-item">
-                    <div className="frame-four-icon-wrapper">
-                      <div className="frame-four-icon">
-                        <div className="frame-four-icon-inner">
+                  <div className={styles["frame-four-item"]}>
+                    <div className={styles["frame-four-icon-wrapper"]}>
+                      <div className={styles["frame-four-icon"]}>
+                        <div className={styles["frame-four-icon-inner"]}>
                           <svg width="37" height="37" viewBox="0 0 37 37" fill="none" role="img" aria-label=" Measure Outcomes">
                             <path d="M22.7206 3.76548C21.2435 3.27764 19.6648 3.01308 18.0244 3.01179C9.74014 3.00528 3.01914 9.71572 3.01263 18C3.00612 26.2842 9.71656 33.0053 18.0008 33.0118C26.285 33.0183 33.0061 26.3078 33.0126 18.0236C33.0138 16.4558 32.7744 14.9439 32.3295 13.523" stroke="#2A7308" strokeWidth="2.25" strokeLinecap="round" />
                             <path d="M25.5127 18.0274C25.5094 22.1695 22.1489 25.5248 18.0068 25.5215C13.8646 25.5183 10.5094 22.1577 10.5127 18.0156C10.5159 13.8735 13.8764 10.5183 18.0186 10.5215" stroke="#2A7308" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
@@ -346,7 +346,7 @@ export default function WhitePaper() {
                       </div>
                     </div>
 
-                    <div className="frame-four-item-text">Measure Outcomes</div>
+                    <div className={styles["frame-four-item-text"]}>Measure Outcomes</div>
                   </div>
                 </div>
               </div>
@@ -355,13 +355,13 @@ export default function WhitePaper() {
         </div>
       </section>
 
-      <section className="frame-five-section">
-        <div className="container">
-          <div className="frame-five-header">
-            <div className="frame-five-header-content">
-              <h2 className="frame-five-title">Learn! Innovate! Transform!</h2>
+      <section className={styles["frame-five-section"]}>
+        <div className={styles.container}>
+          <div className={styles["frame-five-header"]}>
+            <div className={styles["frame-five-header-content"]}>
+              <h2 className={styles["frame-five-title"]}>Learn! Innovate! Transform!</h2>
 
-              <p className="frame-five-description">Explore NeuroLXP White Papers and discover research-driven insights to build smarter, more impactful learning experiences.</p>
+              <p className={styles["frame-five-description"]}>Explore NeuroLXP White Papers and discover research-driven insights to build smarter, more impactful learning experiences.</p>
             </div>
           </div>
         </div>

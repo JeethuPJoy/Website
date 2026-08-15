@@ -1,45 +1,45 @@
 import type { NextPage } from 'next';
 import Image from "next/image";
-import "./help.css";
+import styles from "./help.module.css";
 const HelpAndSupport: NextPage = () => {
   	return (
-    		<div className="helpAndSupport"><div className="frameDiv">
-        				<div className="resourcesWrapper">
-          					<div className="resources2">Resources</div>
+    		<div className={styles.helpAndSupport}><div className={styles.frameDiv}>
+        				<div className={styles.resourcesWrapper}>
+          					<div className={styles.resources2}>Resources</div>
         				</div>
-        				<div className="arrowRightDoubleParent">
-          					<Image className="arrowDown01Icon" src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" />
-          					<b className="resources2">Help and Support</b>
+        				<div className={styles.arrowRightDoubleParent}>
+          					<Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" />
+          					<b className={styles.resources2}>Help and Support</b>
         				</div>
       			</div>
-      			<div className="frameParent2">
-        				<div className="frameParent3">
-          					<div className="frameParent4">
-            						<div className="frameParent5">
-              							<div className="frameIcon">Help &amp; Support</div>
-              							<b className="empoweringYouAtContainer">
-                								<span className="empoweringYouAt">{`Empowering You at `}</span>
-                								<span className="everyStep">Every Step</span>
+      			<div className={styles.frameParent2}>
+        				<div className={styles.frameParent3}>
+          					<div className={styles.frameParent4}>
+            						<div className={styles.frameParent5}>
+              							<div className={styles.frameIcon}>Help &amp; Support</div>
+              							<b className={styles.empoweringYouAtContainer}>
+                								<span className={styles.empoweringYouAt}>{`Empowering You at `}</span>
+                								<span className={styles.everyStep}>Every Step</span>
               							</b>
             						</div>
-            						<div className="reliableSupportFor">Reliable support for administrators educators, and learners.</div>
+            						<div className={styles.reliableSupportFor}>Reliable support for administrators educators, and learners.</div>
           					</div>
-          					<a className="frameChild2" href="/book-a-demo">
+          					<a className={styles.frameChild2} href="/book-a-demo">
 							Book a Demo
 						</a>
         				</div>
-        				<div className="frameParent6">
+        				<div className={styles.frameParent6}>
           					<Image
-						className="frameChild3"
+						className={styles.frameChild3}
 						src="/images/bghelp.png"
 						width={736}
 						height={486}
 						sizes="(max-width: 768px) 100vw, 736px"
 						alt=""
 					/>
-          					<div className="welcomeSign1Wrapper">
+          					<div className={styles.welcomeSign1Wrapper}>
             						<Image
-							className="welcomeSign1Icon"
+							className={styles.welcomeSign1Icon}
 							src="/images/imagehelp.png"
 							width={642}
 							height={440}
@@ -49,122 +49,122 @@ const HelpAndSupport: NextPage = () => {
           					</div>
         				</div>
       			</div>
-      			<div className="comprehensiveSupportParent">
-        				<b className="comprehensiveSupport">Comprehensive Support</b>
-        				<div className="frameParent7">
-							<div className="supportCard supportCardPurple">
-								<div className="supportCardInner">
-									<div className="supportCardContent">
-										<b className="supportCardTitle">Technical<br />Support</b>
-										<div className="supportCardText">Resolve platform and<br />technical issues</div>
+      			<div className={styles.comprehensiveSupportParent}>
+        				<b className={styles.comprehensiveSupport}>Comprehensive Support</b>
+        				<div className={styles.frameParent7}>
+							<div className={`${styles.supportCard} ${styles.supportCardPurple}`}>
+								<div className={styles.supportCardInner}>
+									<div className={styles.supportCardContent}>
+										<b className={styles.supportCardTitle}>Technical<br />Support</b>
+										<div className={styles.supportCardText}>Resolve platform and<br />technical issues</div>
 									</div>
-									<div className="supportCardAccent" />
+									<div className={styles.supportCardAccent} />
 								</div>
 							</div>
 
-							<div className="supportCard supportCardPink">
-								<div className="supportCardInner">
-									<div className="supportCardContent">
-										<b className="supportCardTitle">User<br />Onboarding</b>
-										<div className="supportCardText">Get started with<br />guided assistance</div>
+							<div className={`${styles.supportCard} ${styles.supportCardPink}`}>
+								<div className={styles.supportCardInner}>
+									<div className={styles.supportCardContent}>
+										<b className={styles.supportCardTitle}>User<br />Onboarding</b>
+										<div className={styles.supportCardText}>Get started with<br />guided assistance</div>
 									</div>
-									<div className="supportCardAccent" />
+									<div className={styles.supportCardAccent} />
 								</div>
 							</div>
 
-							<div className="supportCard supportCardGreen">
-								<div className="supportCardInner">
-									<div className="supportCardContent">
-										<b className="supportCardTitle">Feature<br />Guidance</b>
-										<div className="supportCardText">Explore Platform<br />Features</div>
+							<div className={`${styles.supportCard} ${styles.supportCardGreen}`}>
+								<div className={styles.supportCardInner}>
+									<div className={styles.supportCardContent}>
+										<b className={styles.supportCardTitle}>Feature<br />Guidance</b>
+										<div className={styles.supportCardText}>Explore Platform<br />Features</div>
 									</div>
-									<div className="supportCardAccent" />
+									<div className={styles.supportCardAccent} />
 								</div>
 							</div>
 
-							<div className="supportCard supportCardBlue">
-								<div className="supportCardInner">
-									<div className="supportCardContent">
-										<b className="supportCardTitle">Technical<br />Help</b>
-										<div className="supportCardText">Quickly resolve<br />common issues</div>
+							<div className={`${styles.supportCard} ${styles.supportCardBlue}`}>
+								<div className={styles.supportCardInner}>
+									<div className={styles.supportCardContent}>
+										<b className={styles.supportCardTitle}>Technical<br />Help</b>
+										<div className={styles.supportCardText}>Quickly resolve<br />common issues</div>
 									</div>
-									<div className="supportCardAccent" />
+									<div className={styles.supportCardAccent} />
 								</div>
 							</div>
         				</div>
       			</div>
-      			<div className="helpAndSupportInner">
-					<div className="frameParent8">
-						<div className="frameWrapper">
-							<div className="frameParent9">
-								<div className="knowledgeResourcesWrapper">
-									<b className="knowledgeResources">Knowledge &amp; Resources</b>
+      			<div className={styles.helpAndSupportInner}>
+					<div className={styles.frameParent8}>
+						<div className={styles.frameWrapper}>
+							<div className={styles.frameParent9}>
+								<div className={styles.knowledgeResourcesWrapper}>
+									<b className={styles.knowledgeResources}>Knowledge &amp; Resources</b>
 								</div>
-								<div className="accessPracticalResources">
+								<div className={styles.accessPracticalResources}>
 									Access practical resources to manage and use NeuroLXP effectively:
 								</div>
 							</div>
 						</div>
 
-						<div className="frameWrapper2">
-							<div className="frameParent10">
-								<div className="frameParent11">
-									<div className="resourceIcon resourceIconPink">
-										<div className="resourceIconInner">
+						<div className={styles.frameWrapper2}>
+							<div className={styles.frameParent10}>
+								<div className={styles.frameParent11}>
+									<div className={`${styles.resourceIcon} ${styles.resourceIconPink}`}>
+										<div className={styles.resourceIconInner}>
 											<Image src="/icons/compasswhite.svg" width={34} height={34} alt="" />
 										</div>
 									</div>
-									<b className="gettingStartedGuides">Getting Started Guides</b>
+									<b className={styles.gettingStartedGuides}>Getting Started Guides</b>
 								</div>
 
-								<div className="frameParent11">
-									<div className="resourceIcon resourceIconPurple">
-										<div className="resourceIconInner">
+								<div className={styles.frameParent11}>
+									<div className={`${styles.resourceIcon} ${styles.resourceIconPurple}`}>
+										<div className={styles.resourceIconInner}>
 											<Image src="/icons/book-plus.svg" width={34} height={34} alt="" />
 										</div>
 									</div>
-									<b className="courseCreationTutorials">Course Creation Tutorials</b>
+									<b className={styles.courseCreationTutorials}>Course Creation Tutorials</b>
 								</div>
 
-								<div className="frameParent11">
-									<div className="resourceIcon resourceIconBlue">
-										<div className="resourceIconInner">
+								<div className={styles.frameParent11}>
+									<div className={`${styles.resourceIcon} ${styles.resourceIconBlue}`}>
+										<div className={styles.resourceIconInner}>
 											<Image src="/icons/chart-up.svg" width={34} height={34} alt="" />
 										</div>
 									</div>
-									<b className="assessmentReporting">Assessment &amp; Reporting Guides</b>
+									<b className={styles.assessmentReporting}>Assessment &amp; Reporting Guides</b>
 								</div>
 
-								<div className="frameParent11">
-									<div className="resourceIcon resourceIconTeal">
-										<div className="resourceIconInner">
+								<div className={styles.frameParent11}>
+									<div className={`${styles.resourceIcon} ${styles.resourceIconTeal}`}>
+										<div className={styles.resourceIconInner}>
 											<Image src="/icons/foldernew.svg" width={34} height={34} alt="" />
 										</div>
 									</div>
-									<b className="contentManagementResources">Content Management Resources</b>
+									<b className={styles.contentManagementResources}>Content Management Resources</b>
 								</div>
 
-								<div className="frameParent11">
-									<div className="resourceIcon resourceIconGold">
-										<div className="resourceIconInner">
+								<div className={styles.frameParent11}>
+									<div className={`${styles.resourceIcon} ${styles.resourceIconGold}`}>
+										<div className={styles.resourceIconInner}>
 											<Image src="/icons/settingswhite.svg" width={34} height={34} alt="" />
 										</div>
 									</div>
-									<b className="contentManagementResources">Platform Configuration Guides</b>
+									<b className={styles.contentManagementResources}>Platform Configuration Guides</b>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="helpAndSupportChild">
-        				<div className="frameParent16">
-          					<div className="frameChild13">
-							<span className="neurolxpBadgeText">NeuroLXP</span>
-							<sup className="neurolxpBadgeTm">TM</sup>
+				<div className={styles.helpAndSupportChild}>
+        				<div className={styles.frameParent16}>
+          					<div className={styles.frameChild13}>
+							<span className={styles.neurolxpBadgeText}>NeuroLXP</span>
+							<sup className={styles.neurolxpBadgeTm}>TM</sup>
 						</div>
-          					<div className="supportForYourLearningEcosParent">
-            						<b className="supportForYour">Support for Your Learning Ecosystem</b>
-            						<div className="fromOnboardingTo">{`From onboarding to daily management, NeuroLXP supports every learning journey. `}</div>
+          					<div className={styles.supportForYourLearningEcosParent}>
+            						<b className={styles.supportForYour}>Support for Your Learning Ecosystem</b>
+            						<div className={styles.fromOnboardingTo}>{`From onboarding to daily management, NeuroLXP supports every learning journey. `}</div>
           					</div>
         				</div>
       			</div>

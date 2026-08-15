@@ -1975,9 +1975,9 @@
     display: none !important;
   }
 
-  h1,
-  h2,
-  b {
+  :global(h1),
+  :global(h2),
+  :global(b) {
     max-width: 100% !important;
 
     word-break: normal !important;
