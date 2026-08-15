@@ -3,7 +3,7 @@
 import type { NextPage } from 'next';
 import Image from "next/image";
 import { useRef, useState } from "react";
-import './University.css';
+import styles from "./University.module.css";
 
 
 const UniversityAndCollege: NextPage = () => {
@@ -29,73 +29,73 @@ const UniversityAndCollege: NextPage = () => {
 	return (
 		<>
 			<title>Universities and Colleges | NeuroLXP</title>
-			<main id="main-content" className="universityAndCollege" tabIndex={-1}>
+			<main id="main-content" className={styles.universityAndCollege} tabIndex={-1}>
 
-				<nav className="frameDiv" aria-label="Breadcrumb">
-					<div className="ourCustomersWrapper">
-						<div className="industriesWeServe">Our Customers</div>
+				<nav className={styles.frameDiv} aria-label="Breadcrumb">
+					<div className={styles.ourCustomersWrapper}>
+						<div className={styles.industriesWeServe}>Our Customers</div>
 					</div>
-					<div className="homeParent">
-						<Image className="arrowDown01Icon" src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" />
-						<div className="ourCustomersWrapper">
-							<div className="industriesWeServe">Industries we Serve</div>
+					<div className={styles.homeParent}>
+						<Image className={styles.arrowDown01Icon} src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" />
+						<div className={styles.ourCustomersWrapper}>
+							<div className={styles.industriesWeServe}>Industries we Serve</div>
 						</div>
 					</div>
-					<div className="arrowRightDoubleGroup">
-						<Image className="arrowDown01Icon" src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" />
-						<strong className="industriesWeServe">{`Universities & College`}</strong>
+					<div className={styles.arrowRightDoubleGroup}>
+						<Image className={styles.arrowDown01Icon} src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" />
+						<strong className={styles.industriesWeServe}>{`Universities & College`}</strong>
 					</div>
 				</nav>
-				<div className="universityAndCollegeInner">
-					<div className="frameItem" />
+				<div className={styles.universityAndCollegeInner}>
+					<div className={styles.frameItem} />
 				</div>
-				<div className="frameParent2">
-					<div className="frameParent3">
-						<div className="frameParent4">
-							<div className="frameWrapper">
-								<div className="frameParent5">
-									<div className="frameParent6">
-										<div className="frameInner">Universities and Colleges</div>
-										<h1 className="empoweringHigherEducation" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Empowering Higher Education with Intelligent Learning<br /></h1>
+				<div className={styles.frameParent2}>
+					<div className={styles.frameParent3}>
+						<div className={styles.frameParent4}>
+							<div className={styles.frameWrapper}>
+								<div className={styles.frameParent5}>
+									<div className={styles.frameParent6}>
+										<div className={styles.frameInner}>Universities and Colleges</div>
+										<h1 className={styles.empoweringHigherEducation} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Empowering Higher Education with Intelligent Learning<br /></h1>
 									</div>
-									<div className="neurolxpEnablesUniversities">NeuroLXP enables universities to deliver flexible, engaging learning that enhances academic excellence and career readiness.</div>
+									<div className={styles.neurolxpEnablesUniversities}>NeuroLXP enables universities to deliver flexible, engaging learning that enhances academic excellence and career readiness.</div>
 								</div>
 							</div>
-							<div className="frameParent7">
-								<button type="button" className="frameIcon">Book a Demo</button>
-								<button type="button" className="frameWrapper2">
-									<span className="startLearningWrapper">
-										<span className="startLearning">Start Learning</span>
+							<div className={styles.frameParent7}>
+								<button type="button" className={styles.frameIcon}>Book a Demo</button>
+								<button type="button" className={styles.frameWrapper2}>
+									<span className={styles.startLearningWrapper}>
+										<span className={styles.startLearning}>Start Learning</span>
 									</span>
 								</button>
 							</div>
 						</div>
-						<div className="frameWrapper3">
-							<div className="happyStudentsGraduationCereParent">
-								<div className="happyStudentsGraduationCere" />
-								<Image className="groupTeenagersDiscussingUniIcon" src="/images/university-university.webp" width={1175} height={601} sizes="(max-width: 767px) 100vw, 1175px" alt="University students collaborating in a learning environment"
+						<div className={styles.frameWrapper3}>
+							<div className={styles.happyStudentsGraduationCereParent}>
+								<div className={styles.happyStudentsGraduationCere} />
+								<Image className={styles.groupTeenagersDiscussingUniIcon} src="/images/university-university.webp" width={1175} height={601} sizes="(max-width: 767px) 100vw, 1175px" alt="University students collaborating in a learning environment"
 									priority
 									fetchPriority="high"
 								/>
 							</div>
 						</div>
 					</div>
-					<div className="frameParent8">
-						<div className="frameParent9">
-							<div className="frameChild2">Digital Learning</div>
-							<div className="modernLearningForUniversitiParent">
-								<h2 className="modernLearningFor" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Modern Learning for Universities and Colleges<br /></h2>
-								<div className="neurolxpUnifiesContent">NeuroLXP unifies content, engagement, assessment, personalization, and analytics in one intelligent learning platform.<br /><br /></div>
+					<div className={styles.frameParent8}>
+						<div className={styles.frameParent9}>
+							<div className={styles.frameChild2}>Digital Learning</div>
+							<div className={styles.modernLearningForUniversitiParent}>
+								<h2 className={styles.modernLearningFor} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Modern Learning for Universities and Colleges<br /></h2>
+								<div className={styles.neurolxpUnifiesContent}>NeuroLXP unifies content, engagement, assessment, personalization, and analytics in one intelligent learning platform.<br /><br /></div>
 							</div>
 						</div>
-						<div className="frameParent10">
-							<div className="frameWrapper4">
-								<div className="frameParent11">
-									<div className="frameParent12">
-										<div className="frameChild3">
-											<div className="featureIconInner featureIconGreen">
+						<div className={styles.frameParent10}>
+							<div className={styles.frameWrapper4}>
+								<div className={styles.frameParent11}>
+									<div className={styles.frameParent12}>
+										<div className={styles.frameChild3}>
+											<div className={`${styles.featureIconInner} ${styles.featureIconGreen}`}>
 												<Image
-													className="cardFeatureIcon"
+													className={styles.cardFeatureIcon}
 													src="/icons/university-bulb.svg"
 													width={24}
 													height={24}
@@ -104,18 +104,18 @@ const UniversityAndCollege: NextPage = () => {
 												/>
 											</div>
 										</div>
-										<h3 className="smartLearning" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Smart Learning</h3>
+										<h3 className={styles.smartLearning} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Smart Learning</h3>
 									</div>
-									<div className="flexibleLearningFor">Flexible learning for every student</div>
+									<div className={styles.flexibleLearningFor}>Flexible learning for every student</div>
 								</div>
 							</div>
-							<div className="frameWrapper4">
-								<div className="frameParent11">
-									<div className="frameParent12">
-										<div className="frameChild3">
-											<div className="featureIconInner featureIconBlue">
+							<div className={styles.frameWrapper4}>
+								<div className={styles.frameParent11}>
+									<div className={styles.frameParent12}>
+										<div className={styles.frameChild3}>
+											<div className={`${styles.featureIconInner} ${styles.featureIconBlue}`}>
 												<Image
-													className="cardFeatureIcon"
+													className={styles.cardFeatureIcon}
 													src="/icons/university-usergroup.svg"
 													width={24}
 													height={24}
@@ -124,18 +124,18 @@ const UniversityAndCollege: NextPage = () => {
 												/>
 											</div>
 										</div>
-										<h3 className="smartLearning" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Engagement<br /></h3>
+										<h3 className={styles.smartLearning} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Engagement<br /></h3>
 									</div>
-									<div className="flexibleLearningFor">Interactive learning experiences</div>
+									<div className={styles.flexibleLearningFor}>Interactive learning experiences</div>
 								</div>
 							</div>
-							<div className="frameWrapper4">
-								<div className="frameParent11">
-									<div className="frameParent12">
-										<div className="frameChild3">
-											<div className="featureIconInner featureIconOrange">
+							<div className={styles.frameWrapper4}>
+								<div className={styles.frameParent11}>
+									<div className={styles.frameParent12}>
+										<div className={styles.frameChild3}>
+											<div className={`${styles.featureIconInner} ${styles.featureIconOrange}`}>
 												<Image
-													className="cardFeatureIcon"
+													className={styles.cardFeatureIcon}
 													src="/icons/university-analytics.svg"
 													width={24}
 													height={24}
@@ -144,18 +144,18 @@ const UniversityAndCollege: NextPage = () => {
 												/>
 											</div>
 										</div>
-										<h3 className="smartLearning" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Analytics</h3>
+										<h3 className={styles.smartLearning} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Analytics</h3>
 									</div>
-									<div className="flexibleLearningFor">Real-time performance insights</div>
+									<div className={styles.flexibleLearningFor}>Real-time performance insights</div>
 								</div>
 							</div>
-							<div className="frameWrapper4">
-								<div className="frameParent11">
-									<div className="frameParent12">
-										<div className="frameChild3">
-											<div className="featureIconInner featureIconPurple">
+							<div className={styles.frameWrapper4}>
+								<div className={styles.frameParent11}>
+									<div className={styles.frameParent12}>
+										<div className={styles.frameChild3}>
+											<div className={`${styles.featureIconInner} ${styles.featureIconPurple}`}>
 												<Image
-													className="cardFeatureIcon"
+													className={styles.cardFeatureIcon}
 													src="/icons/university-graduationcap.svg"
 													width={24}
 													height={24}
@@ -164,36 +164,36 @@ const UniversityAndCollege: NextPage = () => {
 												/>
 											</div>
 										</div>
-										<h3 className="smartLearning" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Outcomes</h3>
+										<h3 className={styles.smartLearning} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Outcomes</h3>
 									</div>
-									<div className="flexibleLearningFor">Student success and career readiness</div>
+									<div className={styles.flexibleLearningFor}>Student success and career readiness</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div className="frameParent44">
-					<div className="frameParent45">
-						<div className="frameChild21">Key Challenges</div>
-						<div className="keyChallengesInHigherEducaWrapper">
-							<h2 className="keyChallengesIn" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Key Challenges in Higher Education<br /><br /></h2>
+				<div className={styles.frameParent44}>
+					<div className={styles.frameParent45}>
+						<div className={styles.frameChild21}>Key Challenges</div>
+						<div className={styles.keyChallengesInHigherEducaWrapper}>
+							<h2 className={styles.keyChallengesIn} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Key Challenges in Higher Education<br /><br /></h2>
 						</div>
 					</div>
-					<div className="frameParent46">
-						<div className="rapidSkillChangesParent">
-							<div className="rapidSkillChanges">
-								<div className="frameParent47">
-									<div className="frameWrapper9">
-										<div className="frameParent48">
-											<div className="frameParent49">
-												<div className="challengeIcon challengeIconBlue">
+					<div className={styles.frameParent46}>
+						<div className={styles.rapidSkillChangesParent}>
+							<div className={styles.rapidSkillChanges}>
+								<div className={styles.frameParent47}>
+									<div className={styles.frameWrapper9}>
+										<div className={styles.frameParent48}>
+											<div className={styles.frameParent49}>
+												<div className={`${styles.challengeIcon} ${styles.challengeIconBlue}`}>
 													<svg
 														width="24"
 														height="24"
 														viewBox="0 0 25 25"
 														fill="none"
-														className="challengeIconImage"
+														className={styles.challengeIconImage}
 														aria-hidden="true"
 
 														focusable="false"
@@ -205,32 +205,32 @@ const UniversityAndCollege: NextPage = () => {
 														<path d="M3.00186 22.0019L3.01387 6.71919C3.01584 4.20845 3.01683 2.95307 3.8085 2.33082C4.60018 1.70857 5.76496 2.04766 8.09453 2.72585L13.0934 4.18109C14.4991 4.59035 15.2021 4.79497 15.6082 5.3515C16.0145 5.90804 16.0139 6.66561 16.0127 8.18074L16.0019 22.0122" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 													</svg>
 												</div>
-												<h3 className="passiveLearning" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Passive Learning</h3>
+												<h3 className={styles.passiveLearning} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Passive Learning</h3>
 											</div>
-											<div className="frameChild23" />
+											<div className={styles.frameChild23} />
 										</div>
 									</div>
-									<div className="frameParent50">
-										<div className="frameChild24" />
-										<div className="interactiveLearningWith">Interactive learning with quizzes, discussions, and multimedia improves classroom engagement</div>
+									<div className={styles.frameParent50}>
+										<div className={styles.frameChild24} />
+										<div className={styles.interactiveLearningWith}>Interactive learning with quizzes, discussions, and multimedia improves classroom engagement</div>
 									</div>
 								</div>
 							</div>
-							<div className="rapidSkillChanges">
-								<div className="distributedTeamsInner">
-									<div className="frameWrapper10">
-										<div className="frameChild25" />
+							<div className={styles.rapidSkillChanges}>
+								<div className={styles.distributedTeamsInner}>
+									<div className={styles.frameWrapper10}>
+										<div className={styles.frameChild25} />
 									</div>
 								</div>
-								<div className="frameParent51">
-									<div className="frameParent52">
-										<div className="challengeIcon challengeIconPink">
+								<div className={styles.frameParent51}>
+									<div className={styles.frameParent52}>
+										<div className={`${styles.challengeIcon} ${styles.challengeIconPink}`}>
 											<svg
 												width="24"
 												height="24"
 												viewBox="0 0 25 25"
 												fill="none"
-												className="challengeIconImage"
+												className={styles.challengeIconImage}
 												aria-hidden="true"
 
 												focusable="false"
@@ -243,28 +243,28 @@ const UniversityAndCollege: NextPage = () => {
 												<path d="M12.0078 14.5086C8.25781 14.5057 6.00613 16.6468 6.00444 18.7896C6.0037 19.7364 6.67467 20.5044 7.5031 20.5051L16.5031 20.5122C17.3315 20.5128 18.0037 19.7458 18.0044 18.799C18.0061 16.6562 15.7578 14.5116 12.0078 14.5086Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 											</svg>
 										</div>
-										<h3 className="largeContentManagement" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Large Content Management</h3>
+										<h3 className={styles.largeContentManagement} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Large Content Management</h3>
 									</div>
-									<div className="frameParent53">
-										<div className="frameChild24" />
-										<div className="centralizeCourseMaterials">Centralize course materials, assignments, and assessments for easy access and management</div>
+									<div className={styles.frameParent53}>
+										<div className={styles.frameChild24} />
+										<div className={styles.centralizeCourseMaterials}>Centralize course materials, assignments, and assessments for easy access and management</div>
 									</div>
 								</div>
 							</div>
-							<div className="lowEngagementParent">
-								<div className="lowEngagement">
-									<div className="lowEngagementInner">
-										<div className="frameParent54">
-											<div className="frameWrapper11">
-												<div className="frameWrapper12">
-													<div className="frameParent55">
-														<div className="challengeIcon challengeIconPurple">
+							<div className={styles.lowEngagementParent}>
+								<div className={styles.lowEngagement}>
+									<div className={styles.lowEngagementInner}>
+										<div className={styles.frameParent54}>
+											<div className={styles.frameWrapper11}>
+												<div className={styles.frameWrapper12}>
+													<div className={styles.frameParent55}>
+														<div className={`${styles.challengeIcon} ${styles.challengeIconPurple}`}>
 															<svg
 																width="24"
 																height="24"
 																viewBox="0 0 25 25"
 																fill="none"
-																className="challengeIconImage"
+																className={styles.challengeIconImage}
 																aria-hidden="true"
 
 																focusable="false"
@@ -274,32 +274,32 @@ const UniversityAndCollege: NextPage = () => {
 																<path d="M10.0078 14.0082C5.00781 14.0043 2.00585 16.502 2.00388 19.002C2.00302 20.1066 2.89774 21.0027 4.00231 21.0035L16.0023 21.013C17.1069 21.0138 18.003 20.1191 18.0039 19.0145C18.0058 16.5145 15.0078 14.0122 10.0078 14.0082Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 															</svg>
 														</div>
-														<h3 className="diverseLearningNeeds" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Diverse Learning Needs</h3>
+														<h3 className={styles.diverseLearningNeeds} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Diverse Learning Needs</h3>
 													</div>
 												</div>
 											</div>
-											<div className="frameParent50">
-												<div className="frameChild24" />
-												<div className="personalizedLearningPathways">Personalized learning pathways help students learn at their own pace</div>
+											<div className={styles.frameParent50}>
+												<div className={styles.frameChild24} />
+												<div className={styles.personalizedLearningPathways}>Personalized learning pathways help students learn at their own pace</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className="progressTrackingParent">
-							<div className="rapidSkillChanges">
-								<div className="frameParent47">
-									<div className="frameWrapper11">
-										<div className="frameWrapper12">
-											<div className="frameParent55">
-												<div className="challengeIcon challengeIconOrange">
+						<div className={styles.progressTrackingParent}>
+							<div className={styles.rapidSkillChanges}>
+								<div className={styles.frameParent47}>
+									<div className={styles.frameWrapper11}>
+										<div className={styles.frameWrapper12}>
+											<div className={styles.frameParent55}>
+												<div className={`${styles.challengeIcon} ${styles.challengeIconOrange}`}>
 													<svg
 														width="24"
 														height="24"
 														viewBox="0 0 25 25"
 														fill="none"
-														className="challengeIconImage"
+														className={styles.challengeIconImage}
 														aria-hidden="true"
 
 														focusable="false"
@@ -311,29 +311,29 @@ const UniversityAndCollege: NextPage = () => {
 														<path d="M6.50663 16.5043L6.50428 19.5043C6.50391 19.9702 6.50373 20.2032 6.42746 20.3869C6.32578 20.6319 6.13095 20.8264 5.88584 20.9277C5.70201 21.0037 5.46904 21.0035 5.0031 21.0031C4.53716 21.0028 4.30419 21.0026 4.12048 20.9263C3.87553 20.8246 3.681 20.6298 3.5797 20.3847C3.50373 20.2009 3.50391 19.9679 3.50428 19.502L3.50663 16.502C3.507 16.0361 3.50718 15.8031 3.58345 15.6193C3.68513 15.3744 3.87996 15.1798 4.12507 15.0785C4.3089 15.0026 4.54187 15.0028 5.00781 15.0031C5.47375 15.0035 5.70672 15.0037 5.89043 15.0799C6.13538 15.1816 6.32991 15.3765 6.43121 15.6216C6.50718 15.8054 6.507 16.0384 6.50663 16.5043Z" stroke="white" strokeWidth="1.5" strokeLinejoin="round" />
 													</svg>
 												</div>
-												<h3 className="studentProgressTracking" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Student Progress Tracking</h3>
+												<h3 className={styles.studentProgressTracking} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Student Progress Tracking</h3>
 											</div>
 										</div>
 									</div>
-									<div className="frameParent50">
-										<div className="frameChild24" />
-										<div className="trackAttendanceCourse">Track attendance, course progress, assessments, and academic performance with real-time insights</div>
+									<div className={styles.frameParent50}>
+										<div className={styles.frameChild24} />
+										<div className={styles.trackAttendanceCourse}>Track attendance, course progress, assessments, and academic performance with real-time insights</div>
 									</div>
 								</div>
 							</div>
-							<div className="rapidSkillChanges">
-								<div className="frameParent47">
-									<div className="frameWrapper11">
-										<div className="frameWrapper12">
-											<div className="frameParent55">
-												<div className="challengeIcon challengeIconTeal">
+							<div className={styles.rapidSkillChanges}>
+								<div className={styles.frameParent47}>
+									<div className={styles.frameWrapper11}>
+										<div className={styles.frameWrapper12}>
+											<div className={styles.frameParent55}>
+												<div className={`${styles.challengeIcon} ${styles.challengeIconTeal}`}>
 													<svg
 														width="24"
 														height="24"
 														viewBox="0 0 25 25"
 														fill="none"
 														
-														className="challengeIconImage"
+														className={styles.challengeIconImage}
 														aria-hidden="true"
 
 														focusable="false"
@@ -344,33 +344,33 @@ const UniversityAndCollege: NextPage = () => {
 														<path d="M5.01562 7.32957C5.12629 7.32611 5.23742 7.3244 5.34896 7.32449C5.91081 7.32415 6.46814 7.37042 7.01552 7.46124M5.01273 11.0106C5.1234 11.0072 5.23452 11.0055 5.34606 11.0056C6.61173 11.0048 7.85453 11.2405 9.0122 11.6895M5.00998 14.5049C5.12065 14.5015 5.23178 14.4998 5.34332 14.4999C6.60899 14.4991 7.85178 14.7348 9.00945 15.1837" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 													</svg>
 												</div>
-												<h3 className="careerReadiness" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Career Readiness</h3>
+												<h3 className={styles.careerReadiness} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Career Readiness</h3>
 											</div>
 										</div>
 									</div>
-									<div className="frameParent50">
-										<div className="frameChild24" />
-										<div className="supportSkillDevelopment">Support skill development, certifications, and career-focused learning to prepare students for employment</div>
+									<div className={styles.frameParent50}>
+										<div className={styles.frameChild24} />
+										<div className={styles.supportSkillDevelopment}>Support skill development, certifications, and career-focused learning to prepare students for employment</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="universityAndCollegeChild">
-					<div className="frameParent63">
-						<div className="frameParent64">
-							<div className="frameParent65">
-								<div className="frameParent66">
-									<div className="frameChild34">NeuroLXP</div>
-									<h2 className="howNeurolxpSupports" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>How NeuroLXP Supports Higher Education</h2>
+				<div className={styles.universityAndCollegeChild}>
+					<div className={styles.frameParent63}>
+						<div className={styles.frameParent64}>
+							<div className={styles.frameParent65}>
+								<div className={styles.frameParent66}>
+									<div className={styles.frameChild34}>NeuroLXP</div>
+									<h2 className={styles.howNeurolxpSupports} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>How NeuroLXP Supports Higher Education</h2>
 								</div>
-								<div className="neurolxpHelpsInstitutions">NeuroLXP helps institutions streamline learning, engage students, and improve outcomes through an integrated digital learning ecosystem.</div>
+								<div className={styles.neurolxpHelpsInstitutions}>NeuroLXP helps institutions streamline learning, engage students, and improve outcomes through an integrated digital learning ecosystem.</div>
 							</div>
-							<div className="youngStudentSittingTableUsParent">
+							<div className={styles.youngStudentSittingTableUsParent}>
 								<video
 									ref={supportVideoRef}
-									className="youngStudentSittingTableUsVideo"
+									className={styles.youngStudentSittingTableUsVideo}
 									src="/videos/university-video.mp4"
 									autoPlay
 									muted
@@ -385,7 +385,7 @@ const UniversityAndCollege: NextPage = () => {
 
 								<button
 									type="button"
-									className={`supportVideoToggle ${isSupportVideoPlaying ? "supportVideoTogglePlaying" : ""
+									className={`${styles.supportVideoToggle} ${isSupportVideoPlaying ? styles.supportVideoTogglePlaying : ""
 										}`}
 									onClick={toggleSupportVideo}
 									aria-label={
@@ -397,75 +397,75 @@ const UniversityAndCollege: NextPage = () => {
 								</button>
 							</div>
 						</div>
-						<div className="frameParent67">
-							<div className="frameParent68">
-								<div className="frameWrapper17">
-									<div className="wrapperLine2Parent">
-										<div className="wrapperLine2">
-											<Image className="wrapperLine2Child" src="/icons/university-blueline.svg" width={10} height={65} sizes="12px" alt="" />
+						<div className={styles.frameParent67}>
+							<div className={styles.frameParent68}>
+								<div className={styles.frameWrapper17}>
+									<div className={styles.wrapperLine2Parent}>
+										<div className={styles.wrapperLine2}>
+											<Image className={styles.wrapperLine2Child} src="/icons/university-blueline.svg" width={10} height={65} sizes="12px" alt="" />
 										</div>
-										<div className="courseAndContentParent">
-											<h3 className="courseAndContent" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Course and Content<br /></h3>
-											<div className="flexibleLearningFor">Create and manage content</div>
-										</div>
-									</div>
-								</div>
-								<div className="frameWrapper17">
-									<div className="wrapperLine2Parent">
-										<div className="wrapperLine2">
-											<Image className="wrapperLine2Child" src="/icons/university-pinkline.svg" width={10} height={65} sizes="12px" alt="" />
-										</div>
-										<div className="courseAndContentParent">
-											<h3 className="courseAndContent" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Interactive Learning</h3>
-											<div className="flexibleLearningFor">Make learning engaging</div>
+										<div className={styles.courseAndContentParent}>
+											<h3 className={styles.courseAndContent} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Course and Content<br /></h3>
+											<div className={styles.flexibleLearningFor}>Create and manage content</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div className="frameParent69">
-								<div className="frameWrapper17">
-									<div className="wrapperLine2Parent">
-										<div className="wrapperLine2">
-											<Image className="wrapperLine2Child" src="/icons/university-lightbrownline.svg" width={10} height={65} sizes="12px" alt="" />
+								<div className={styles.frameWrapper17}>
+									<div className={styles.wrapperLine2Parent}>
+										<div className={styles.wrapperLine2}>
+											<Image className={styles.wrapperLine2Child} src="/icons/university-pinkline.svg" width={10} height={65} sizes="12px" alt="" />
 										</div>
-										<div className="courseAndContentParent">
-											<h3 className="courseAndContent" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Assessments<br /></h3>
-											<div className="flexibleLearningFor">Measure skills and performance</div>
-										</div>
-									</div>
-								</div>
-								<div className="frameWrapper17">
-									<div className="wrapperLine2Parent">
-										<div className="wrapperLine2">
-											<Image className="wrapperLine2Child" src="/icons/university-greenline.svg" width={10} height={65} sizes="12px" alt="" />
-										</div>
-										<div className="courseAndContentParent">
-											<h3 className="courseAndContent" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Personalized Learning<br /></h3>
-											<div className="flexibleLearningFor">Adapt to learner needs</div>
+										<div className={styles.courseAndContentParent}>
+											<h3 className={styles.courseAndContent} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Interactive Learning</h3>
+											<div className={styles.flexibleLearningFor}>Make learning engaging</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div className="frameParent69">
-								<div className="frameWrapper17">
-									<div className="wrapperLine2Parent">
-										<div className="wrapperLine2">
-											<Image className="wrapperLine2Child" src="/icons/university-purpleline.svg" width={10} height={65} sizes="12px" alt="" />
+							<div className={styles.frameParent69}>
+								<div className={styles.frameWrapper17}>
+									<div className={styles.wrapperLine2Parent}>
+										<div className={styles.wrapperLine2}>
+											<Image className={styles.wrapperLine2Child} src="/icons/university-lightbrownline.svg" width={10} height={65} sizes="12px" alt="" />
 										</div>
-										<div className="courseAndContentParent">
-											<h3 className="courseAndContent" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Performance Analytics<br /></h3>
-											<div className="flexibleLearningFor">Track progress and insights</div>
+										<div className={styles.courseAndContentParent}>
+											<h3 className={styles.courseAndContent} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Assessments<br /></h3>
+											<div className={styles.flexibleLearningFor}>Measure skills and performance</div>
 										</div>
 									</div>
 								</div>
-								<div className="frameWrapper17">
-									<div className="wrapperLine2Parent">
-										<div className="wrapperLine2">
-											<Image className="wrapperLine2Child" src="/icons/university-brownline.svg" width={10} height={65} sizes="12px" alt="" />
+								<div className={styles.frameWrapper17}>
+									<div className={styles.wrapperLine2Parent}>
+										<div className={styles.wrapperLine2}>
+											<Image className={styles.wrapperLine2Child} src="/icons/university-greenline.svg" width={10} height={65} sizes="12px" alt="" />
 										</div>
-										<div className="courseAndContentParent">
-											<h3 className="courseAndContent" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Career Development<br /></h3>
-											<div className="flexibleLearningFor">Build career-ready skills</div>
+										<div className={styles.courseAndContentParent}>
+											<h3 className={styles.courseAndContent} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Personalized Learning<br /></h3>
+											<div className={styles.flexibleLearningFor}>Adapt to learner needs</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className={styles.frameParent69}>
+								<div className={styles.frameWrapper17}>
+									<div className={styles.wrapperLine2Parent}>
+										<div className={styles.wrapperLine2}>
+											<Image className={styles.wrapperLine2Child} src="/icons/university-purpleline.svg" width={10} height={65} sizes="12px" alt="" />
+										</div>
+										<div className={styles.courseAndContentParent}>
+											<h3 className={styles.courseAndContent} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Performance Analytics<br /></h3>
+											<div className={styles.flexibleLearningFor}>Track progress and insights</div>
+										</div>
+									</div>
+								</div>
+								<div className={styles.frameWrapper17}>
+									<div className={styles.wrapperLine2Parent}>
+										<div className={styles.wrapperLine2}>
+											<Image className={styles.wrapperLine2Child} src="/icons/university-brownline.svg" width={10} height={65} sizes="12px" alt="" />
+										</div>
+										<div className={styles.courseAndContentParent}>
+											<h3 className={styles.courseAndContent} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Career Development<br /></h3>
+											<div className={styles.flexibleLearningFor}>Build career-ready skills</div>
 										</div>
 									</div>
 								</div>
@@ -473,23 +473,23 @@ const UniversityAndCollege: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				<div className="frameParent71">
-					<div className="frameParent72">
-						<div className="keyBenefitsBadge">Key Benifits</div>
-						<div className="benefitsForEducationalInstiParent">
-							<h2 className="keyChallengesIn" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Benefits for Educational Institutions<br /><br /></h2>
-							<div className="institutionsUsingNeurolxp">Institutions using NeuroLXP can:<br /><br /></div>
+				<div className={styles.frameParent71}>
+					<div className={styles.frameParent72}>
+						<div className={styles.keyBenefitsBadge}>Key Benifits</div>
+						<div className={styles.benefitsForEducationalInstiParent}>
+							<h2 className={styles.keyChallengesIn} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Benefits for Educational Institutions<br /><br /></h2>
+							<div className={styles.institutionsUsingNeurolxp}>Institutions using NeuroLXP can:<br /><br /></div>
 						</div>
 					</div>
-					<div className="frameParent73">
-						<div className="frameParent74">
-							<div className="frameParent75">
-								<div className="image20Parent">
-									<div className="image20" />
-									<div className="frameParent76">
-										<div className="frameChild37">
+					<div className={styles.frameParent73}>
+						<div className={styles.frameParent74}>
+							<div className={styles.frameParent75}>
+								<div className={styles.image20Parent}>
+									<div className={styles.image20} />
+									<div className={styles.frameParent76}>
+										<div className={styles.frameChild37}>
 											<Image
-												className="benefitIcon"
+												className={styles.benefitIcon}
 												src="/icons/university-monitor.svg"
 												width={50}
 												height={50}
@@ -498,15 +498,15 @@ const UniversityAndCollege: NextPage = () => {
 												aria-hidden="true"
 											/>
 										</div>
-										<div className="digitalBlended">{`Digital & Blended Learning`}</div>
+										<div className={styles.digitalBlended}>{`Digital & Blended Learning`}</div>
 									</div>
 								</div>
-								<div className="image20Parent">
-									<div className="image20" />
-									<div className="frameParent76">
-										<div className="frameChild37">
+								<div className={styles.image20Parent}>
+									<div className={styles.image20} />
+									<div className={styles.frameParent76}>
+										<div className={styles.frameChild37}>
 											<Image
-												className="benefitIcon"
+												className={styles.benefitIcon}
 												src="/icons/university-group.svg"
 												width={50}
 												height={50}
@@ -515,17 +515,17 @@ const UniversityAndCollege: NextPage = () => {
 												aria-hidden="true"
 											/>
 										</div>
-										<div className="digitalBlended">Higher Student Engagement<br /><br /></div>
+										<div className={styles.digitalBlended}>Higher Student Engagement<br /><br /></div>
 									</div>
 								</div>
 							</div>
-							<div className="frameParent75">
-								<div className="image20Parent">
-									<div className="image20" />
-									<div className="frameParent76">
-										<div className="frameChild37">
+							<div className={styles.frameParent75}>
+								<div className={styles.image20Parent}>
+									<div className={styles.image20} />
+									<div className={styles.frameParent76}>
+										<div className={styles.frameChild37}>
 											<Image
-												className="benefitIcon"
+												className={styles.benefitIcon}
 												src="/icons/university-target.svg"
 												width={50}
 												height={50}
@@ -534,15 +534,15 @@ const UniversityAndCollege: NextPage = () => {
 												aria-hidden="true"
 											/>
 										</div>
-										<div className="interactiveLearningExperienc2">Interactive Learning Experiences</div>
+										<div className={styles.interactiveLearningExperienc2}>Interactive Learning Experiences</div>
 									</div>
 								</div>
-								<div className="image20Parent">
-									<div className="image20" />
-									<div className="frameParent76">
-										<div className="frameChild37">
+								<div className={styles.image20Parent}>
+									<div className={styles.image20} />
+									<div className={styles.frameParent76}>
+										<div className={styles.frameChild37}>
 											<Image
-												className="benefitIcon"
+												className={styles.benefitIcon}
 												src="/icons/university-signpost.svg"
 												width={50}
 												height={50}
@@ -551,18 +551,18 @@ const UniversityAndCollege: NextPage = () => {
 												aria-hidden="true"
 											/>
 										</div>
-										<div className="personalizedLearningPathways2">Personalized Learning Pathways</div>
+										<div className={styles.personalizedLearningPathways2}>Personalized Learning Pathways</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className="frameParent75">
-							<div className="image20Parent">
-								<div className="image20" />
-								<div className="frameParent76">
-									<div className="frameChild37">
+						<div className={styles.frameParent75}>
+							<div className={styles.image20Parent}>
+								<div className={styles.image20} />
+								<div className={styles.frameParent76}>
+									<div className={styles.frameChild37}>
 										<Image
-											className="benefitIcon"
+											className={styles.benefitIcon}
 											src="/icons/university-library.svg"
 											width={50}
 											height={50}
@@ -571,15 +571,15 @@ const UniversityAndCollege: NextPage = () => {
 											aria-hidden="true"
 										/>
 									</div>
-									<div className="efficientContentManagement">Efficient Content Management</div>
+									<div className={styles.efficientContentManagement}>Efficient Content Management</div>
 								</div>
 							</div>
-							<div className="image20Parent">
-								<div className="image20" />
-								<div className="frameParent76">
-									<div className="frameChild37">
+							<div className={styles.image20Parent}>
+								<div className={styles.image20} />
+								<div className={styles.frameParent76}>
+									<div className={styles.frameChild37}>
 										<Image
-											className="benefitIcon"
+											className={styles.benefitIcon}
 											src="/icons/university-chart.svg"
 											width={50}
 											height={50}
@@ -588,17 +588,17 @@ const UniversityAndCollege: NextPage = () => {
 											aria-hidden="true"
 										/>
 									</div>
-									<div className="realTimePerformanceAnalytic">Real-Time Performance Analytics</div>
+									<div className={styles.realTimePerformanceAnalytic}>Real-Time Performance Analytics</div>
 								</div>
 							</div>
 						</div>
-						<div className="frameParent75">
-							<div className="image20Parent">
-								<div className="image20" />
-								<div className="frameParent76">
-									<div className="frameChild37">
+						<div className={styles.frameParent75}>
+							<div className={styles.image20Parent}>
+								<div className={styles.image20} />
+								<div className={styles.frameParent76}>
+									<div className={styles.frameChild37}>
 										<Image
-											className="benefitIcon"
+											className={styles.benefitIcon}
 											src="/icons/university-award.svg"
 											width={50}
 											height={50}
@@ -607,15 +607,15 @@ const UniversityAndCollege: NextPage = () => {
 											aria-hidden="true"
 										/>
 									</div>
-									<div className="digitalBlended">Improved Student Outcomes</div>
+									<div className={styles.digitalBlended}>Improved Student Outcomes</div>
 								</div>
 							</div>
-							<div className="image20Parent">
-								<div className="image20" />
-								<div className="frameParent76">
-									<div className="frameChild37">
+							<div className={styles.image20Parent}>
+								<div className={styles.image20} />
+								<div className={styles.frameParent76}>
+									<div className={styles.frameChild37}>
 										<Image
-											className="benefitIcon"
+											className={styles.benefitIcon}
 											src="/icons/university-student.svg"
 											width={50}
 											height={50}
@@ -624,30 +624,30 @@ const UniversityAndCollege: NextPage = () => {
 											aria-hidden="true"
 										/>
 									</div>
-									<div className="digitalBlended">{`Skill & Career Development`}</div>
+									<div className={styles.digitalBlended}>{`Skill & Career Development`}</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="image20Parent7">
-					<div className="image209" />
-					<div className="image21Parent">
-						<div className="image21" />
-						<Image className="happyCollegeStudentsWithBoIcon" src="/images/university-students.webp" width={603} height={546} sizes="(max-width: 767px) 100vw, 603px" alt="Future Ready Universities"
+				<div className={styles.image20Parent7}>
+					<div className={styles.image209} />
+					<div className={styles.image21Parent}>
+						<div className={styles.image21} />
+						<Image className={styles.happyCollegeStudentsWithBoIcon} src="/images/university-students.webp" width={603} height={546} sizes="(max-width: 767px) 100vw, 603px" alt="Future Ready Universities"
 														loading="lazy"
 														fetchPriority="low"
 													/>
 					</div>
-					<div className="frameWrapper23">
-						<div className="frameWrapper24">
-							<div className="frameWrapper25">
-								<div className="frameParent87">
-									<div className="frameParent88">
-										<div className="futureReadyBadge">NeuroLXP</div>
-										<h2 className="futureReadyUniversitiesStar" style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Future-Ready Universities Start Here</h2>
+					<div className={styles.frameWrapper23}>
+						<div className={styles.frameWrapper24}>
+							<div className={styles.frameWrapper25}>
+								<div className={styles.frameParent87}>
+									<div className={styles.frameParent88}>
+										<div className={styles.futureReadyBadge}>NeuroLXP</div>
+										<h2 className={styles.futureReadyUniversitiesStar} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Future-Ready Universities Start Here</h2>
 									</div>
-									<div className="neurolxpHelpsUniversities">NeuroLXP helps universities build scalable learning environments that improve student outcomes and graduate success.</div>
+									<div className={styles.neurolxpHelpsUniversities}>NeuroLXP helps universities build scalable learning environments that improve student outcomes and graduate success.</div>
 								</div>
 							</div>
 						</div>

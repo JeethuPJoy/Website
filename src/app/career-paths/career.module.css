@@ -3786,7 +3786,7 @@ flex-shrink:0;
     gap:48px;
   }
 
-  img,
+  :global(img),
   .frameIcon{
     max-width:100%;
     height:auto;
@@ -3840,7 +3840,7 @@ flex-shrink:0;
     gap:32px;
   }
 
-  img,
+  :global(img),
   .frameIcon{
     max-width:100%;
     height:auto;
@@ -4445,17 +4445,17 @@ flex-shrink:0;
 	}
 
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
+	:global(h1),
+	:global(h2),
+	:global(h3),
+	:global(h4),
+	:global(h5),
+	:global(h6) {
 		max-width: 100%;
 		overflow-wrap: anywhere;
 	}
 
-	img {
+	:global(img) {
 		max-width: 100%;
 		height: auto;
 	}
@@ -4511,7 +4511,7 @@ flex-shrink:0;
 	}
 
 	@media (prefers-reduced-motion: reduce) {
-		* {
+		:global(*) {
 			scroll-behavior: auto !important;
 		}
 	}

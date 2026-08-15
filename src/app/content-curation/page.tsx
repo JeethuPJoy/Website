@@ -3,7 +3,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import "./contentintelligence.css";
+import styles from "./contentintelligence.module.css";
 
 const compatibilityCards = [
   {
@@ -13,7 +13,7 @@ const compatibilityCards = [
     icon: "/icons/document-validation.svg",
     openIcon: "/icons/remove-02-5.svg",
     checkIcon: "/icons/blue.svg",
-    colorClass: "compatibilityBlue",
+    colorClass: styles.compatibilityBlue,
     items: ["DOC / DOCX", "PPT / PPTX", "Google Slides", "Digital manuals", "Collaborative documents"],
   },
   {
@@ -23,7 +23,7 @@ const compatibilityCards = [
     icon: "/icons/video-01.svg",
     openIcon: "/icons/remove-02-1.svg",
     checkIcon: "/icons/pink.svg",
-    colorClass: "compatibilityPink",
+    colorClass: styles.compatibilityPink,
     items: ["MP4 video", "Interactive video", "Short-form video", "Live streaming", "Digital media content"],
   },
   {
@@ -33,7 +33,7 @@ const compatibilityCards = [
     icon: "/icons/online-learning-03.svg",
     openIcon: "/icons/remove-02.svg",
     checkIcon: "/icons/darkyellow.svg",
-    colorClass: "compatibilityOrange",
+    colorClass: styles.compatibilityOrange,
     items: ["SCORM 1.2", "SCORM 2004", "xAPI", "cmi5", "LTI"],
   },
   {
@@ -43,7 +43,7 @@ const compatibilityCards = [
     icon: "/icons/monitor.svg",
     openIcon: "/icons/remove-02-4.svg",
     checkIcon: "/icons/purple.svg",
-    colorClass: "compatibilityPurple",
+    colorClass: styles.compatibilityPurple,
     items: ["Web-based presentations", "Progressive Web Apps", "API-driven content", "Mobile learning"],
   },
   {
@@ -53,7 +53,7 @@ const compatibilityCards = [
     icon: "/icons/user-group-02.svg",
     openIcon: "/icons/remove-02-3.svg",
     checkIcon: "/icons/green.svg",
-    colorClass: "compatibilityGreen",
+    colorClass: styles.compatibilityGreen,
     items: ["Microlearning", "Gamified content", "Scenario-based learning", "Interactive presentations"],
   },
   {
@@ -63,7 +63,7 @@ const compatibilityCards = [
     icon: "/icons/brain-cog-1.svg",
     openIcon: "/icons/remove-02-2.svg",
     checkIcon: "/icons/yellow.svg",
-    colorClass: "compatibilityGold",
+    colorClass: styles.compatibilityGold,
     items: ["Visual storytelling", "Wikis", "Dynamic knowledge bases", "Digital documentation"],
   },
 ];
@@ -124,164 +124,164 @@ const ContentIntelligenceManagement: NextPage = () => {
   }, [activeLearningCard, learningOrganizationCards.length]);
   return (
     <>
-      <main className={`contentIntelligenceManagem${openCompatibilityCard ? " compatibilityCardIsOpen" : ""}`}>
-        <div className="frameParent">
-          <Image className="frameChild" src="/images/content-experience-header.svg" width={1488} height={671} sizes="100vw" alt="" aria-hidden="true" />
-          <div className="frameGroup">
-            <div className="frameContainer">
-              <p className="headerContentExperienceBadge">Content Experience</p>
-              <div className="onePlatformManyFormatSmaParent">
-                <h1 className="onePlatformMany semanticBoldHeading">One Platform! Many Format! Smarter Learning</h1>
-                <div className="bringContentTogether">{`Bring content together and transform it into engaging learning experiences. `}</div>
+      <main className={`${styles.contentIntelligenceManagem}${openCompatibilityCard ? ` ${styles.compatibilityCardIsOpen}` : ""}`}>
+        <div className={styles.frameParent}>
+          <Image className={styles.frameChild} src="/images/content-experience-header.svg" width={1488} height={671} sizes="100vw" alt="" aria-hidden="true" />
+          <div className={styles.frameGroup}>
+            <div className={styles.frameContainer}>
+              <p className={styles.headerContentExperienceBadge}>Content Experience</p>
+              <div className={styles.onePlatformManyFormatSmaParent}>
+                <h1 className={`${styles.onePlatformMany} ${styles.semanticBoldHeading}`}>One Platform! Many Format! Smarter Learning</h1>
+                <div className={styles.bringContentTogether}>{`Bring content together and transform it into engaging learning experiences. `}</div>
               </div>
             </div>
-            <div className="frameWrapper">
-              <button className="headerBookDemoButton" type="button">
+            <div className={styles.frameWrapper}>
+              <button className={styles.headerBookDemoButton} type="button">
                 <span>Book a Demo</span>
               </button>
             </div>
           </div>
         </div>
 
-        <div className="frameParent4">
-          <div className="featuresWrapper">
-            <div className="augmentation">Features</div>
+        <div className={styles.frameParent4}>
+          <div className={styles.featuresWrapper}>
+            <div className={styles.augmentation}>Features</div>
           </div>
 
-          <div className="homeParent">
-            <Image className="arrowDown01Icon" src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" aria-hidden="true" />
-            <div className="featuresWrapper">
-              <div className="augmentation">Augmentation</div>
+          <div className={styles.homeParent}>
+            <Image className={styles.arrowDown01Icon} src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" aria-hidden="true" />
+            <div className={styles.featuresWrapper}>
+              <div className={styles.augmentation}>Augmentation</div>
             </div>
           </div>
 
-          <div className="arrowRightDoubleGroup">
-            <Image className="arrowDown01Icon" src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" aria-hidden="true" />
-            <span className="augmentation">Content Intelligence &amp; Management</span>
+          <div className={styles.arrowRightDoubleGroup}>
+            <Image className={styles.arrowDown01Icon} src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" aria-hidden="true" />
+            <span className={styles.augmentation}>Content Intelligence &amp; Management</span>
           </div>
         </div>
 
-        <div className="frameParent22">
-          <div className="frameWrapper3">
-            <div className="frameWrapper4">
-              <div className="frameParent23">
-                <div className="frameChild12" aria-hidden="true" />
-                <div className="onePlatformManyFormatSmaParent">
-                  <h2 className="turnExistingKnowledge semanticBoldHeading">Turn Existing Knowledge into Better Learning</h2>
-                  <div className="neurolxpTransformsContent">NeuroLXP transforms content across formats into structured, learner-focused experiences.</div>
+        <div className={styles.frameParent22}>
+          <div className={styles.frameWrapper3}>
+            <div className={styles.frameWrapper4}>
+              <div className={styles.frameParent23}>
+                <div className={styles.frameChild12} aria-hidden="true" />
+                <div className={styles.onePlatformManyFormatSmaParent}>
+                  <h2 className={`${styles.turnExistingKnowledge} ${styles.semanticBoldHeading}`}>Turn Existing Knowledge into Better Learning</h2>
+                  <div className={styles.neurolxpTransformsContent}>NeuroLXP transforms content across formats into structured, learner-focused experiences.</div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="frameParent24">
-            <div className="frameParent25">
-              <div className="frameParent26">
-                <div className="frameWrapper5">
-                  <div className="frameWrapper6">
-                    <div className="frameWrapper7">
-                      <div className="image20Parent">
-                        <div className="image20" />
-                        <div className="makeComplexContent">Make complex content easy</div>
+          <div className={styles.frameParent24}>
+            <div className={styles.frameParent25}>
+              <div className={styles.frameParent26}>
+                <div className={styles.frameWrapper5}>
+                  <div className={styles.frameWrapper6}>
+                    <div className={styles.frameWrapper7}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image20} />
+                        <div className={styles.makeComplexContent}>Make complex content easy</div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="frameWrapper8">
-                  <div className="frameWrapper9">
-                    <div className="frameWrapper10">
-                      <div className="image21Parent">
-                        <div className="image21" />
-                        <h3 className="smartSummaries semanticBoldHeading">Smart Summaries</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="frameParent26">
-                <div className="frameWrapper5">
-                  <div className="frameWrapper6">
-                    <div className="frameWrapper7">
-                      <div className="image20Parent">
-                        <div className="image20" />
-                        <div className="highlightEssentialConcepts">Highlight essential concepts</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="frameWrapper14">
-                  <div className="frameWrapper9">
-                    <div className="frameWrapper10">
-                      <div className="image21Parent">
-                        <div className="image21" />
-                        <h3 className="keyInsights semanticBoldHeading">Key Insights</h3>
+                <div className={styles.frameWrapper8}>
+                  <div className={styles.frameWrapper9}>
+                    <div className={styles.frameWrapper10}>
+                      <div className={styles.image21Parent}>
+                        <div className={styles.image21} />
+                        <h3 className={`${styles.smartSummaries} ${styles.semanticBoldHeading}`}>Smart Summaries</h3>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="frameParent26">
-                <div className="frameWrapper5">
-                  <div className="frameWrapper6">
-                    <div className="frameWrapper7">
-                      <div className="image20Parent">
-                        <div className="image20" />
-                        <div className="highlightEssentialConcepts">Organize clear learning journeys</div>
+              <div className={styles.frameParent26}>
+                <div className={styles.frameWrapper5}>
+                  <div className={styles.frameWrapper6}>
+                    <div className={styles.frameWrapper7}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image20} />
+                        <div className={styles.highlightEssentialConcepts}>Highlight essential concepts</div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="frameWrapper20">
-                  <div className="frameWrapper9">
-                    <div className="frameWrapper10">
-                      <div className="image21Parent">
-                        <div className="image21" />
-                        <h3 className="smartStructure semanticBoldHeading">Smart Structure</h3>
+                <div className={styles.frameWrapper14}>
+                  <div className={styles.frameWrapper9}>
+                    <div className={styles.frameWrapper10}>
+                      <div className={styles.image21Parent}>
+                        <div className={styles.image21} />
+                        <h3 className={`${styles.keyInsights} ${styles.semanticBoldHeading}`}>Key Insights</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.frameParent26}>
+                <div className={styles.frameWrapper5}>
+                  <div className={styles.frameWrapper6}>
+                    <div className={styles.frameWrapper7}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image20} />
+                        <div className={styles.highlightEssentialConcepts}>Organize clear learning journeys</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.frameWrapper20}>
+                  <div className={styles.frameWrapper9}>
+                    <div className={styles.frameWrapper10}>
+                      <div className={styles.image21Parent}>
+                        <div className={styles.image21} />
+                        <h3 className={`${styles.smartStructure} ${styles.semanticBoldHeading}`}>Smart Structure</h3>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="frameParent29">
-              <div className="frameParent26">
-                <div className="frameWrapper5">
-                  <div className="frameWrapper6">
-                    <div className="frameWrapper7">
-                      <div className="image20Parent">
-                        <div className="image20" />
-                        <div className="createFocusedPractice">Create focused practice resources</div>
+            <div className={styles.frameParent29}>
+              <div className={styles.frameParent26}>
+                <div className={styles.frameWrapper5}>
+                  <div className={styles.frameWrapper6}>
+                    <div className={styles.frameWrapper7}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image20} />
+                        <div className={styles.createFocusedPractice}>Create focused practice resources</div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="frameWrapper26">
-                  <div className="frameWrapper9">
-                    <div className="frameWrapper10">
-                      <div className="image21Parent">
-                        <div className="image21" />
-                        <h3 className="examReady semanticBoldHeading">Exam Ready</h3>
+                <div className={styles.frameWrapper26}>
+                  <div className={styles.frameWrapper9}>
+                    <div className={styles.frameWrapper10}>
+                      <div className={styles.image21Parent}>
+                        <div className={styles.image21} />
+                        <h3 className={`${styles.examReady} ${styles.semanticBoldHeading}`}>Exam Ready</h3>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="frameParent26">
-                <div className="frameWrapper5">
-                  <div className="frameWrapper6">
-                    <div className="frameWrapper7">
-                      <div className="image20Parent">
-                        <div className="image20" />
-                        <div className="inspireDeeperThinking">Inspire deeper thinking and exploration</div>
+              <div className={styles.frameParent26}>
+                <div className={styles.frameWrapper5}>
+                  <div className={styles.frameWrapper6}>
+                    <div className={styles.frameWrapper7}>
+                      <div className={styles.image20Parent}>
+                        <div className={styles.image20} />
+                        <div className={styles.inspireDeeperThinking}>Inspire deeper thinking and exploration</div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="frameWrapper26">
-                  <div className="frameWrapper9">
-                    <div className="frameWrapper10">
-                      <div className="image21Parent">
-                        <div className="image21" />
-                        <h3 className="explore semanticBoldHeading">Explore</h3>
+                <div className={styles.frameWrapper26}>
+                  <div className={styles.frameWrapper9}>
+                    <div className={styles.frameWrapper10}>
+                      <div className={styles.image21Parent}>
+                        <div className={styles.image21} />
+                        <h3 className={`${styles.explore} ${styles.semanticBoldHeading}`}>Explore</h3>
                       </div>
                     </div>
                   </div>
@@ -290,63 +290,63 @@ const ContentIntelligenceManagement: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="rectangleParent">
-          <Image className="frameChild13" src="/images/image-shadow.webp" width={1196} height={595} sizes="100vw" alt="" aria-hidden="true" />
-          <div className="frameParent32">
-            <div className="frameWrapper35">
-              <div className="frameContainer">
-                <p className="contentCreationBadge">Content Creation</p>
-                <div className="onePlatformManyFormatSmaParent">
-                  <h1 className="onePlatformMany semanticBoldHeading">
-                    <span className="buildEngaging">Build Engaging</span>
-                    <span className="learningExperiences"> Learning Experiences</span>
+        <div className={styles.rectangleParent}>
+          <Image className={styles.frameChild13} src="/images/image-shadow.webp" width={1196} height={595} sizes="100vw" alt="" aria-hidden="true" />
+          <div className={styles.frameParent32}>
+            <div className={styles.frameWrapper35}>
+              <div className={styles.frameContainer}>
+                <p className={styles.contentCreationBadge}>Content Creation</p>
+                <div className={styles.onePlatformManyFormatSmaParent}>
+                  <h1 className={`${styles.onePlatformMany} ${styles.semanticBoldHeading}`}>
+                    <span className={styles.buildEngaging}>Build Engaging</span>
+                    <span className={styles.learningExperiences}> Learning Experiences</span>
                   </h1>
-                  <div className="bringContentTogether">Give educators and instructional designers the tools to create learning experiences that go beyond static content.</div>
+                  <div className={styles.bringContentTogether}>Give educators and instructional designers the tools to create learning experiences that go beyond static content.</div>
                 </div>
               </div>
             </div>
-            <div className="rectangleGroup">
-              <div className="frameChild15" aria-hidden="true" />
-              <div className="createEngageLearnParent">
-                <h2 className="createEngageLearn semanticBoldHeading">Create! Engage! Learn</h2>
-                <div className="frameParent34">
-                  <div className="frameParent35">
-                    <div className="frameWrapper36">
-                      <div className="checkmarkCircle04Parent">
-                        <Image className="checkmarkCircle04Icon" src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className="interactiveLearning">Interactive learning</div>
+            <div className={styles.rectangleGroup}>
+              <div className={styles.frameChild15} aria-hidden="true" />
+              <div className={styles.createEngageLearnParent}>
+                <h2 className={`${styles.createEngageLearn} ${styles.semanticBoldHeading}`}>Create! Engage! Learn</h2>
+                <div className={styles.frameParent34}>
+                  <div className={styles.frameParent35}>
+                    <div className={styles.frameWrapper36}>
+                      <div className={styles.checkmarkCircle04Parent}>
+                        <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                        <div className={styles.interactiveLearning}>Interactive learning</div>
                       </div>
                     </div>
-                    <div className="frameWrapper37">
-                      <div className="checkmarkCircle04Group">
-                        <Image className="checkmarkCircle04Icon" src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className="interactiveLearning">Multimedia lessons</div>
+                    <div className={styles.frameWrapper37}>
+                      <div className={styles.checkmarkCircle04Group}>
+                        <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                        <div className={styles.interactiveLearning}>Multimedia lessons</div>
                       </div>
                     </div>
-                    <div className="frameWrapper37">
-                      <div className="checkmarkCircle04Container">
-                        <Image className="checkmarkCircle04Icon" src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className="interactiveLearning">Clickable content</div>
+                    <div className={styles.frameWrapper37}>
+                      <div className={styles.checkmarkCircle04Container}>
+                        <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                        <div className={styles.interactiveLearning}>Clickable content</div>
                       </div>
                     </div>
                   </div>
-                  <div className="frameParent35">
-                    <div className="frameWrapper36">
-                      <div className="checkmarkCircle04Parent">
-                        <Image className="checkmarkCircle04Icon" src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className="interactiveLearning">Smart Assessments</div>
+                  <div className={styles.frameParent35}>
+                    <div className={styles.frameWrapper36}>
+                      <div className={styles.checkmarkCircle04Parent}>
+                        <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                        <div className={styles.interactiveLearning}>Smart Assessments</div>
                       </div>
                     </div>
-                    <div className="frameWrapper36">
-                      <div className="checkmarkCircle04Parent3">
-                        <Image className="checkmarkCircle04Icon" src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className="interactiveLearning">Gamified activities</div>
+                    <div className={styles.frameWrapper36}>
+                      <div className={styles.checkmarkCircle04Parent3}>
+                        <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                        <div className={styles.interactiveLearning}>Gamified activities</div>
                       </div>
                     </div>
-                    <div className="frameWrapper36">
-                      <div className="checkmarkCircle04Parent4">
-                        <Image className="checkmarkCircle04Icon" src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className="interactiveLearning">Real Scenarios</div>
+                    <div className={styles.frameWrapper36}>
+                      <div className={styles.checkmarkCircle04Parent4}>
+                        <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                        <div className={styles.interactiveLearning}>Real Scenarios</div>
                       </div>
                     </div>
                   </div>
@@ -355,44 +355,44 @@ const ContentIntelligenceManagement: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="frameParent37">
-          <div className="frameWrapper42">
-            <div className="frameWrapper43">
-              <div className="frameParent38">
-                <div className="frameParent39">
-                  <p className="contentCompatibilityBadge">Content Compatibility</p>
-                  <h2 className="contentThatWorks semanticBoldHeading">Content That Works for Every Learner</h2>
+        <div className={styles.frameParent37}>
+          <div className={styles.frameWrapper42}>
+            <div className={styles.frameWrapper43}>
+              <div className={styles.frameParent38}>
+                <div className={styles.frameParent39}>
+                  <p className={styles.contentCompatibilityBadge}>Content Compatibility</p>
+                  <h2 className={`${styles.contentThatWorks} ${styles.semanticBoldHeading}`}>Content That Works for Every Learner</h2>
                 </div>
-                <div className="neurolxpSupportsDiverse">NeuroLXP supports diverse content formats for seamless learning delivery.</div>
+                <div className={styles.neurolxpSupportsDiverse}>NeuroLXP supports diverse content formats for seamless learning delivery.</div>
               </div>
             </div>
           </div>
-          <div className="frameParent40 compatibilitySwitchGrid">
+          <div className={`${styles.frameParent40} ${styles.compatibilitySwitchGrid}`}>
             {compatibilityCards.map((card) => {
               const isOpen = openCompatibilityCard === card.id;
 
               return (
-                <article className={`compatibilitySwitchCard ${card.colorClass}${isOpen ? " compatibilitySwitchCardOpen" : ""}`} key={card.id}>
-                  <div className="compatibilitySwitchHeader">
-                    <div className="compatibilitySwitchTitle">
-                      <span className="contentFormatIcon" aria-hidden="true">
-                        {isOpen ? <Image className="contentFormatOpenIcon" src={card.openIcon} width={24} height={24} sizes="24px" alt="" /> : <Image className="contentFormatGlyph" src={card.icon} width={28} height={28} sizes="28px" alt="" />}
+                <article className={`${styles.compatibilitySwitchCard} ${card.colorClass}${isOpen ? ` ${styles.compatibilitySwitchCardOpen}` : ""}`} key={card.id}>
+                  <div className={styles.compatibilitySwitchHeader}>
+                    <div className={styles.compatibilitySwitchTitle}>
+                      <span className={styles.contentFormatIcon} aria-hidden="true">
+                        {isOpen ? <Image className={styles.contentFormatOpenIcon} src={card.openIcon} width={24} height={24} sizes="24px" alt="" /> : <Image className={styles.contentFormatGlyph} src={card.icon} width={28} height={28} sizes="28px" alt="" />}
                       </span>
 
-                      <h3 className="documentsPresentations semanticBoldHeading">{card.title}</h3>
+                      <h3 className={`${styles.documentsPresentations} ${styles.semanticBoldHeading}`}>{card.title}</h3>
                     </div>
 
-                    <button className="compatibilitySwitchButton" type="button" onClick={() => setOpenCompatibilityCard((currentCard) => (currentCard === card.id ? null : card.id))} aria-expanded={isOpen} aria-label={`${isOpen ? "Close" : "Open"} ${card.title}`}>
-                      <Image className="arrowDownDoubleIcon" src="/icons/arrow-down-double.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
+                    <button className={styles.compatibilitySwitchButton} type="button" onClick={() => setOpenCompatibilityCard((currentCard) => (currentCard === card.id ? null : card.id))} aria-expanded={isOpen} aria-label={`${isOpen ? "Close" : "Open"} ${card.title}`}>
+                      <Image className={styles.arrowDownDoubleIcon} src="/icons/arrow-down-double.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
                     </button>
                   </div>
 
                   {isOpen && (
-                    <div className="compatibilitySwitchDetails" id={`${card.id}-details`}>
-                      <ul className="compatibilitySwitchList">
+                    <div className={styles.compatibilitySwitchDetails} id={`${card.id}-details`}>
+                      <ul className={styles.compatibilitySwitchList}>
                         {card.items.map((item) => (
-                          <li className="compatibilitySwitchItem" key={item}>
-                            <span className="compatibilitySwitchCheck" aria-hidden="true">
+                          <li className={styles.compatibilitySwitchItem} key={item}>
+                            <span className={styles.compatibilitySwitchCheck} aria-hidden="true">
                               <Image src={card.checkIcon} width={24} height={24} sizes="24px" alt="" />
                             </span>
                             <span>{item}</span>
@@ -407,261 +407,261 @@ const ContentIntelligenceManagement: NextPage = () => {
           </div>
         </div>
 
-        <div className="frameParent55">
-          <div className="frameParent56">
-            <div className="frameParent57">
-              <p className="centralizedContentBadge">Centralized Content Management</p>
-              <h2 className="organizeLearningContent semanticBoldHeading">Organize Learning Content in One Place</h2>
+        <div className={styles.frameParent55}>
+          <div className={styles.frameParent56}>
+            <div className={styles.frameParent57}>
+              <p className={styles.centralizedContentBadge}>Centralized Content Management</p>
+              <h2 className={`${styles.organizeLearningContent} ${styles.semanticBoldHeading}`}>Organize Learning Content in One Place</h2>
             </div>
-            <div className="manageLearningResources">Manage learning resources efficiently through a centralized content environment.</div>
+            <div className={styles.manageLearningResources}>Manage learning resources efficiently through a centralized content environment.</div>
           </div>
-          <div className="frameWrapper62">
-            <div className="frameWrapper63">
-              <div className="frameWrapper64">
-                <div className="frameParent58">
-                  <div className="frameParent59">
-                    <span className="managementCheckIcon" aria-hidden="true">
-                      <Image className="managementCheckMark" src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
+          <div className={styles.frameWrapper62}>
+            <div className={styles.frameWrapper63}>
+              <div className={styles.frameWrapper64}>
+                <div className={styles.frameParent58}>
+                  <div className={styles.frameParent59}>
+                    <span className={styles.managementCheckIcon} aria-hidden="true">
+                      <Image className={styles.managementCheckMark} src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
                     </span>
-                    <div className="organizeByCourse">Organize by course or subject</div>
+                    <div className={styles.organizeByCourse}>Organize by course or subject</div>
                   </div>
-                  <div className="frameParent59">
-                    <span className="managementCheckIcon" aria-hidden="true">
-                      <Image className="managementCheckMark" src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
+                  <div className={styles.frameParent59}>
+                    <span className={styles.managementCheckIcon} aria-hidden="true">
+                      <Image className={styles.managementCheckMark} src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
                     </span>
-                    <div className="manageFromOne">Manage from one workspace</div>
+                    <div className={styles.manageFromOne}>Manage from one workspace</div>
                   </div>
-                  <div className="frameParent59">
-                    <span className="managementCheckIcon" aria-hidden="true">
-                      <Image className="managementCheckMark" src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
+                  <div className={styles.frameParent59}>
+                    <span className={styles.managementCheckIcon} aria-hidden="true">
+                      <Image className={styles.managementCheckMark} src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
                     </span>
-                    <div className="maintainContentVersions">Maintain content versions</div>
+                    <div className={styles.maintainContentVersions}>Maintain content versions</div>
                   </div>
-                  <div className="frameParent59">
-                    <span className="managementCheckIcon" aria-hidden="true">
-                      <Image className="managementCheckMark" src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
+                  <div className={styles.frameParent59}>
+                    <span className={styles.managementCheckIcon} aria-hidden="true">
+                      <Image className={styles.managementCheckMark} src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
                     </span>
-                    <div className="updateWithoutDisruption">Update without disruption</div>
+                    <div className={styles.updateWithoutDisruption}>Update without disruption</div>
                   </div>
-                  <div className="frameParent59">
-                    <span className="managementCheckIcon" aria-hidden="true">
-                      <Image className="managementCheckMark" src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
+                  <div className={styles.frameParent59}>
+                    <span className={styles.managementCheckIcon} aria-hidden="true">
+                      <Image className={styles.managementCheckMark} src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
                     </span>
-                    <div className="keepContentStructured">Keep content structured</div>
+                    <div className={styles.keepContentStructured}>Keep content structured</div>
                   </div>
-                  <div className="frameParent59">
-                    <span className="managementCheckIcon" aria-hidden="true">
-                      <Image className="managementCheckMark" src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
+                  <div className={styles.frameParent59}>
+                    <span className={styles.managementCheckIcon} aria-hidden="true">
+                      <Image className={styles.managementCheckMark} src="/icons/green.svg" width={36} height={36} sizes="36px" alt="" />
                     </span>
-                    <div className="ensureConsistencyAcross">Ensure consistency across teams</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="image20Parent4">
-          <div className="image206" />
-          <div className="arrowDownBig" />
-          <div className="frameParent65">
-            <div className="frameWrapper3">
-              <div className="frameWrapper66">
-                <div className="frameParent23">
-                  <p className="contentValueBadge">Content Value</p>
-                  <div className="onePlatformManyFormatSmaParent">
-                    <h2 className="turnExistingContent semanticBoldHeading">Turn Existing Content into Better Learning</h2>
-                    <div className="neurolxpHelpsInstitutions">NeuroLXP helps institutions and educators get more value from their existing learning resources.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="frameParent67">
-              <div className="frameParent68">
-                <div className="frameParent69">
-                  <div className="frameChild31" />
-                  <div className="rectangleContainer">
-                    <div className="rectangleDiv" aria-hidden="true" />
-                    <div className="buildEngagingExperiences">Build engaging experiences</div>
-                  </div>
-                  <div className="createWrapper">
-                    <h3 className="create semanticBoldHeading">Create</h3>
-                  </div>
-                </div>
-                <div className="frameWrapper67">
-                  <div className="frameParent70">
-                    <div className="rectangleParent2">
-                      <div className="frameChild32" aria-hidden="true" />
-                      <div className="curateWrapper">
-                        <h3 className="curate semanticBoldHeading">Curate</h3>
-                      </div>
-                    </div>
-                    <div className="transformExistingResources">Transform existing resources</div>
-                  </div>
-                </div>
-              </div>
-              <div className="frameParent71">
-                <div className="frameWrapper68">
-                  <div className="frameParent72">
-                    <div className="rectangleParent2">
-                      <div className="frameChild33" aria-hidden="true" />
-                      <div className="organizeWrapper">
-                        <div className="organize">Organize</div>
-                      </div>
-                    </div>
-                    <div className="structureLearningJourneys">Structure learning journeys</div>
-                  </div>
-                </div>
-                <div className="frameParent73">
-                  <div className="frameChild34" aria-hidden="true" />
-                  <div className="frameParent74">
-                    <div className="deliverWrapper">
-                      <h3 className="deliver semanticBoldHeading">Deliver</h3>
-                    </div>
-                    <div className="enableFlexibleLearning">Enable flexible learning</div>
-                  </div>
-                </div>
-              </div>
-              <div className="frameParent75">
-                <div className="frameWrapper68">
-                  <div className="frameParent72">
-                    <div className="rectangleParent2">
-                      <div className="frameChild35" aria-hidden="true" />
-                      <div className="organizeWrapper">
-                        <h3 className="measure semanticBoldHeading">Measure</h3>
-                      </div>
-                    </div>
-                    <div className="structureLearningJourneys">Track content performance</div>
-                  </div>
-                </div>
-                <div className="frameParent73">
-                  <div className="frameChild34" aria-hidden="true" />
-                  <div className="frameParent74">
-                    <div className="improveWrapper">
-                      <h3 className="improve semanticBoldHeading">Improve</h3>
-                    </div>
-                    <div className="enableFlexibleLearning">Enhance learning content</div>
+                    <div className={styles.ensureConsistencyAcross}>Ensure consistency across teams</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="frameParent79">
-          <div className="frameParent80">
-            <div className="frameParent81">
-              <div className="frameParent57">
-                <p className="learningScaleBadge">Built for Learning at Scale</p>
-                <h2 className="onePlatformFor semanticBoldHeading">One Platform for Every Learning Organization</h2>
+        <div className={styles.image20Parent4}>
+          <div className={styles.image206} />
+          <div className={styles.arrowDownBig} />
+          <div className={styles.frameParent65}>
+            <div className={styles.frameWrapper3}>
+              <div className={styles.frameWrapper66}>
+                <div className={styles.frameParent23}>
+                  <p className={styles.contentValueBadge}>Content Value</p>
+                  <div className={styles.onePlatformManyFormatSmaParent}>
+                    <h2 className={`${styles.turnExistingContent} ${styles.semanticBoldHeading}`}>Turn Existing Content into Better Learning</h2>
+                    <div className={styles.neurolxpHelpsInstitutions}>NeuroLXP helps institutions and educators get more value from their existing learning resources.</div>
+                  </div>
+                </div>
               </div>
-              <div className="neurolxpSupportsOrganization">NeuroLXP supports organizations managing diverse learning content and large digital learning ecosystems.</div>
+            </div>
+            <div className={styles.frameParent67}>
+              <div className={styles.frameParent68}>
+                <div className={styles.frameParent69}>
+                  <div className={styles.frameChild31} />
+                  <div className={styles.rectangleContainer}>
+                    <div className={styles.rectangleDiv} aria-hidden="true" />
+                    <div className={styles.buildEngagingExperiences}>Build engaging experiences</div>
+                  </div>
+                  <div className={styles.createWrapper}>
+                    <h3 className={`${styles.create} ${styles.semanticBoldHeading}`}>Create</h3>
+                  </div>
+                </div>
+                <div className={styles.frameWrapper67}>
+                  <div className={styles.frameParent70}>
+                    <div className={styles.rectangleParent2}>
+                      <div className={styles.frameChild32} aria-hidden="true" />
+                      <div className={styles.curateWrapper}>
+                        <h3 className={`${styles.curate} ${styles.semanticBoldHeading}`}>Curate</h3>
+                      </div>
+                    </div>
+                    <div className={styles.transformExistingResources}>Transform existing resources</div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.frameParent71}>
+                <div className={styles.frameWrapper68}>
+                  <div className={styles.frameParent72}>
+                    <div className={styles.rectangleParent2}>
+                      <div className={styles.frameChild33} aria-hidden="true" />
+                      <div className={styles.organizeWrapper}>
+                        <div className={styles.organize}>Organize</div>
+                      </div>
+                    </div>
+                    <div className={styles.structureLearningJourneys}>Structure learning journeys</div>
+                  </div>
+                </div>
+                <div className={styles.frameParent73}>
+                  <div className={styles.frameChild34} aria-hidden="true" />
+                  <div className={styles.frameParent74}>
+                    <div className={styles.deliverWrapper}>
+                      <h3 className={`${styles.deliver} ${styles.semanticBoldHeading}`}>Deliver</h3>
+                    </div>
+                    <div className={styles.enableFlexibleLearning}>Enable flexible learning</div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.frameParent75}>
+                <div className={styles.frameWrapper68}>
+                  <div className={styles.frameParent72}>
+                    <div className={styles.rectangleParent2}>
+                      <div className={styles.frameChild35} aria-hidden="true" />
+                      <div className={styles.organizeWrapper}>
+                        <h3 className={`${styles.measure} ${styles.semanticBoldHeading}`}>Measure</h3>
+                      </div>
+                    </div>
+                    <div className={styles.structureLearningJourneys}>Track content performance</div>
+                  </div>
+                </div>
+                <div className={styles.frameParent73}>
+                  <div className={styles.frameChild34} aria-hidden="true" />
+                  <div className={styles.frameParent74}>
+                    <div className={styles.improveWrapper}>
+                      <h3 className={`${styles.improve} ${styles.semanticBoldHeading}`}>Improve</h3>
+                    </div>
+                    <div className={styles.enableFlexibleLearning}>Enhance learning content</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.frameParent79}>
+          <div className={styles.frameParent80}>
+            <div className={styles.frameParent81}>
+              <div className={styles.frameParent57}>
+                <p className={styles.learningScaleBadge}>Built for Learning at Scale</p>
+                <h2 className={`${styles.onePlatformFor} ${styles.semanticBoldHeading}`}>One Platform for Every Learning Organization</h2>
+              </div>
+              <div className={styles.neurolxpSupportsOrganization}>NeuroLXP supports organizations managing diverse learning content and large digital learning ecosystems.</div>
             </div>
 
-            <div className="frameParent83">
-              <div className="frameParent84">
-                <button className="learningArrowButton learningArrowButtonLeft" type="button" onClick={showPreviousLearningCard} aria-label="Show previous learning organization">
-                  <span className="learningArrowInner" aria-hidden="true">
-                    <Image className="learningArrowIcon" src="/icons/arrow-left-02.svg" width={32} height={32} sizes="32px" alt="" />
+            <div className={styles.frameParent83}>
+              <div className={styles.frameParent84}>
+                <button className={`${styles.learningArrowButton} ${styles.learningArrowButtonLeft}`} type="button" onClick={showPreviousLearningCard} aria-label="Show previous learning organization">
+                  <span className={styles.learningArrowInner} aria-hidden="true">
+                    <Image className={styles.learningArrowIcon} src="/icons/arrow-left-02.svg" width={32} height={32} sizes="32px" alt="" />
                   </span>
                 </button>
 
-                <button className="learningArrowButton learningArrowButtonRight" type="button" onClick={showNextLearningCard} aria-label="Show next learning organization">
-                  <span className="learningArrowInner" aria-hidden="true">
-                    <Image className="learningArrowIcon" src="/icons/arrow-right-02.svg" width={32} height={32} sizes="32px" alt="" />
+                <button className={`${styles.learningArrowButton} ${styles.learningArrowButtonRight}`} type="button" onClick={showNextLearningCard} aria-label="Show next learning organization">
+                  <span className={styles.learningArrowInner} aria-hidden="true">
+                    <Image className={styles.learningArrowIcon} src="/icons/arrow-right-02.svg" width={32} height={32} sizes="32px" alt="" />
                   </span>
                 </button>
               </div>
 
-              <div className="frameParent85">
-                <div className={`frameParent86 learningCarouselMotion learningCarouselMotion-${learningSlideDirection}`} key={`${activeLearningCard}-${learningSlideDirection}`}>
-                  <div className="frameParent87">
-                    <Image className="frameChild40" src={learningOrganizationCards[nextLearningCard].image} width={322} height={229} sizes="322px" alt={learningOrganizationCards[nextLearningCard].alt} />
-                    <div className="corporateParent">
-                      <h3 className="corporate semanticBoldHeading">{learningOrganizationCards[nextLearningCard].title}</h3>
-                      <div className="supportEmployeeGrowth">{learningOrganizationCards[nextLearningCard].description}</div>
+              <div className={styles.frameParent85}>
+                <div className={`${styles.frameParent86} ${styles.learningCarouselMotion} ${styles[`learningCarouselMotion-${learningSlideDirection}`]}`} key={`${activeLearningCard}-${learningSlideDirection}`}>
+                  <div className={styles.frameParent87}>
+                    <Image className={styles.frameChild40} src={learningOrganizationCards[nextLearningCard].image} width={322} height={229} sizes="322px" alt={learningOrganizationCards[nextLearningCard].alt} />
+                    <div className={styles.corporateParent}>
+                      <h3 className={`${styles.corporate} ${styles.semanticBoldHeading}`}>{learningOrganizationCards[nextLearningCard].title}</h3>
+                      <div className={styles.supportEmployeeGrowth}>{learningOrganizationCards[nextLearningCard].description}</div>
                     </div>
                   </div>
 
-                  <div className="frameParent88">
-                    <Image className="frameChild41" src={learningOrganizationCards[previousLearningCard].image} width={405} height={283} sizes="405px" alt={learningOrganizationCards[previousLearningCard].alt} />
-                    <div className="schoolsDigitalLearningParent">
-                      <h3 className="corporate semanticBoldHeading">{learningOrganizationCards[previousLearningCard].title}</h3>
-                      <div className="createStructuredAnd">{learningOrganizationCards[previousLearningCard].description}</div>
+                  <div className={styles.frameParent88}>
+                    <Image className={styles.frameChild41} src={learningOrganizationCards[previousLearningCard].image} width={405} height={283} sizes="405px" alt={learningOrganizationCards[previousLearningCard].alt} />
+                    <div className={styles.schoolsDigitalLearningParent}>
+                      <h3 className={`${styles.corporate} ${styles.semanticBoldHeading}`}>{learningOrganizationCards[previousLearningCard].title}</h3>
+                      <div className={styles.createStructuredAnd}>{learningOrganizationCards[previousLearningCard].description}</div>
                     </div>
                   </div>
 
-                  <div className="frameWrapper70">
-                    <div className="frameParent89">
-                      <Image className="frameChild42" src={learningOrganizationCards[activeLearningCard].image} width={469} height={377} sizes="469px" alt={learningOrganizationCards[activeLearningCard].alt} />
-                      <div className="higherEducationParent">
-                        <h3 className="corporate semanticBoldHeading">{learningOrganizationCards[activeLearningCard].title}</h3>
-                        <div className="createStructuredAnd">{learningOrganizationCards[activeLearningCard].description}</div>
+                  <div className={styles.frameWrapper70}>
+                    <div className={styles.frameParent89}>
+                      <Image className={styles.frameChild42} src={learningOrganizationCards[activeLearningCard].image} width={469} height={377} sizes="469px" alt={learningOrganizationCards[activeLearningCard].alt} />
+                      <div className={styles.higherEducationParent}>
+                        <h3 className={`${styles.corporate} ${styles.semanticBoldHeading}`}>{learningOrganizationCards[activeLearningCard].title}</h3>
+                        <div className={styles.createStructuredAnd}>{learningOrganizationCards[activeLearningCard].description}</div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <nav className="frameParent90" aria-label="Learning organization slides">
+                <nav className={styles.frameParent90} aria-label="Learning organization slides">
                   {learningOrganizationCards.map((card, index) => (
-                    <button className={index === activeLearningCard ? "frameChild43" : "ellipseDiv"} type="button" key={card.title} onClick={() => showLearningCard(index)} aria-label={`Show ${card.title}`} aria-current={index === activeLearningCard ? "true" : undefined} />
+                    <button className={index === activeLearningCard ? styles.frameChild43 : styles.ellipseDiv} type="button" key={card.title} onClick={() => showLearningCard(index)} aria-label={`Show ${card.title}`} aria-current={index === activeLearningCard ? "true" : undefined} />
                   ))}
                 </nav>
               </div>
             </div>
           </div>
-          <div className="frameParent91">
-            <div className="frameWrapper4">
-              <div className="frameParent23">
-                <p className="whyNeurolxpBadge">Why NeuroLXP?</p>
-                <div className="onePlatformManyFormatSmaParent">
-                  <h2 className="turnExistingContent semanticBoldHeading">
-                    <span className="buildEngaging">{`From Content to `}</span>
-                    <span className="learningExperiences">Intelligence</span>
+          <div className={styles.frameParent91}>
+            <div className={styles.frameWrapper4}>
+              <div className={styles.frameParent23}>
+                <p className={styles.whyNeurolxpBadge}>Why NeuroLXP?</p>
+                <div className={styles.onePlatformManyFormatSmaParent}>
+                  <h2 className={`${styles.turnExistingContent} ${styles.semanticBoldHeading}`}>
+                    <span className={styles.buildEngaging}>{`From Content to `}</span>
+                    <span className={styles.learningExperiences}>Intelligence</span>
                   </h2>
-                  <div className="neurolxpHelpsInstitutions">Traditional LMS platforms store content. NeuroLXP transforms, creates, manages, and improves learning experiences.</div>
+                  <div className={styles.neurolxpHelpsInstitutions}>Traditional LMS platforms store content. NeuroLXP transforms, creates, manages, and improves learning experiences.</div>
                 </div>
               </div>
             </div>
-            <div className="rectangleParent5">
-              <div className="frameChild48" />
-              <div className="frameChild49" />
-              <div className="frameParent93">
-                <span className="intelligenceFeatureIcon intelligenceFeatureGreen" aria-hidden="true">
-                  <Image className="combinedIntelligenceIcon" src="/icons/educator-green-complete.svg" width={70} height={70} sizes="70px" alt="" />
-                  <Image className="embeddedFeatureGlyph" src="/icons/teacher.svg" width={32} height={32} sizes="32px" alt="" />
+            <div className={styles.rectangleParent5}>
+              <div className={styles.frameChild48} />
+              <div className={styles.frameChild49} />
+              <div className={styles.frameParent93}>
+                <span className={`${styles.intelligenceFeatureIcon} ${styles.intelligenceFeatureGreen}`} aria-hidden="true">
+                  <Image className={styles.combinedIntelligenceIcon} src="/icons/educator-green-complete.svg" width={70} height={70} sizes="70px" alt="" />
+                  <Image className={styles.embeddedFeatureGlyph} src="/icons/teacher.svg" width={32} height={32} sizes="32px" alt="" />
                 </span>
-                <div className="forEducatorsParent">
-                  <h3 className="forEducators semanticBoldHeading">
+                <div className={styles.forEducatorsParent}>
+                  <h3 className={`${styles.forEducators} ${styles.semanticBoldHeading}`}>
                     For Educators
                     <br />
                   </h3>
-                  <div className="lessContentWork">Less content work. More teaching</div>
+                  <div className={styles.lessContentWork}>Less content work. More teaching</div>
                 </div>
               </div>
-              <div className="frameChild51" />
-              <div className="frameParent94">
-                <span className="intelligenceFeatureIcon intelligenceFeatureOrange" aria-hidden="true">
-                  <Image className="learnerCombinedIcon" src="/icons/student-saffron-circle.svg" width={70} height={70} sizes="70px" alt="" />
+              <div className={styles.frameChild51} />
+              <div className={styles.frameParent94}>
+                <span className={`${styles.intelligenceFeatureIcon} ${styles.intelligenceFeatureOrange}`} aria-hidden="true">
+                  <Image className={styles.learnerCombinedIcon} src="/icons/student-saffron-circle.svg" width={70} height={70} sizes="70px" alt="" />
                 </span>
-                <div className="forEducatorsParent">
-                  <h3 className="forEducators semanticBoldHeading">
+                <div className={styles.forEducatorsParent}>
+                  <h3 className={`${styles.forEducators} ${styles.semanticBoldHeading}`}>
                     For Learners
                     <br />
                   </h3>
-                  <div className="accessFocusedResources">Access focused resources, practice, and learn deeper</div>
+                  <div className={styles.accessFocusedResources}>Access focused resources, practice, and learn deeper</div>
                 </div>
               </div>
-              <div className="frameParent95">
-                <span className="intelligenceFeatureIcon intelligenceFeatureBlue" aria-hidden="true">
-                  <Image className="combinedIntelligenceIcon" src="/icons/social-blue-bg.svg" width={70} height={70} sizes="70px" alt="" />
-                  <Image className="embeddedFeatureGlyph" src="/icons/building-03.svg" width={32} height={32} sizes="32px" alt="" />
+              <div className={styles.frameParent95}>
+                <span className={`${styles.intelligenceFeatureIcon} ${styles.intelligenceFeatureBlue}`} aria-hidden="true">
+                  <Image className={styles.combinedIntelligenceIcon} src="/icons/social-blue-bg.svg" width={70} height={70} sizes="70px" alt="" />
+                  <Image className={styles.embeddedFeatureGlyph} src="/icons/building-03.svg" width={32} height={32} sizes="32px" alt="" />
                 </span>
-                <div className="forEducatorsParent">
-                  <h3 className="forEducators semanticBoldHeading">
+                <div className={styles.forEducatorsParent}>
+                  <h3 className={`${styles.forEducators} ${styles.semanticBoldHeading}`}>
                     For Institutions
                     <br />
                     <br />
                   </h3>
-                  <div className="manageContentAt">
+                  <div className={styles.manageContentAt}>
                     Manage content
                     <br />
                     at scale
@@ -671,12 +671,12 @@ const ContentIntelligenceManagement: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="frameParent96">
-          <div className="frameWrapper72">
-            <div className="frameWrapper73">
-              <div className="onePlatformSmarterLearningParent">
-                <h2 className="contentThatWorks semanticBoldHeading">One Platform! Smarter Learning</h2>
-                <div className="neurolxpBringsContent">
+        <div className={styles.frameParent96}>
+          <div className={styles.frameWrapper72}>
+            <div className={styles.frameWrapper73}>
+              <div className={styles.onePlatformSmarterLearningParent}>
+                <h2 className={`${styles.contentThatWorks} ${styles.semanticBoldHeading}`}>One Platform! Smarter Learning</h2>
+                <div className={styles.neurolxpBringsContent}>
                   NeuroLXP brings content intelligence, creation, management, assessments, and analytics together in one platform.
                   <br />
                   <br />
@@ -686,8 +686,8 @@ const ContentIntelligenceManagement: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="requestADemoWrapper">
-            <div className="requestADemo">Request a Demo</div>
+          <div className={styles.requestADemoWrapper}>
+            <div className={styles.requestADemo}>Request a Demo</div>
           </div>
         </div>
       </main>

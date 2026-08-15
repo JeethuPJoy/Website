@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import "./bfsi.css";
+import styles from "./bfsi.module.css";
 import Image from "next/image";
 
 function BfsiHeroBackground() {
   return (
-    <svg className="bfsi-hero-bg" width="100%" height="100%" preserveAspectRatio="xMidYMax slice" viewBox="0 0 1440 624" fill="none" aria-hidden="true">
+    <svg className={styles["bfsi-hero-bg"]} width="100%" height="100%" preserveAspectRatio="xMidYMax slice" viewBox="0 0 1440 624" fill="none" aria-hidden="true">
       <g filter="url(#filter0_ii_903_12871)">
         <ellipse cx="720" cy="-136.5" rx="780" ry="760.5" fill="#DFE6E9" />
         <ellipse cx="720" cy="-136.5" rx="780" ry="760.5" fill="url(#pattern0_903_12871)" fillOpacity="0.1" />
@@ -128,62 +128,62 @@ export default function BfsiPage() {
   const benefitCards = ["Structured compliance and regulatory training", "Industry-relevant employee upskilling", "Efficient branch network training", "Improved product and advisory knowledge", "Advanced training performance analytics", "Audit-ready compliance records"];
 
   return (
-    <main id="main-content" className="bfsi-page">
-      <section className="bfsi-hero">
+    <main id="main-content" className={styles["bfsi-page"]}>
+      <section className={styles["bfsi-hero"]}>
         <BfsiHeroBackground />
 
-         <nav className="bfsi-breadcrumb" aria-label="breadcrumb">
-          <Link href="/our-customers" className="bfsi-breadcrumb-link">
+         <nav className={styles["bfsi-breadcrumb"]} aria-label="breadcrumb">
+          <Link href="/our-customers" className={styles["bfsi-breadcrumb-link"]}>
             Our Customers
           </Link>
-          <span className="bfsi-breadcrumb-arrow">
+          <span className={styles["bfsi-breadcrumb-arrow"]}>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M4 3L8 8L4 13" stroke="#31344B" strokeWidth="1.5" />
               <path d="M8 3L12 8L8 13" stroke="#31344B" strokeWidth="1.5" />
             </svg>
           </span>
-          <Link href="/industries" className="bfsi-breadcrumb-link">
+          <Link href="/industries" className={styles["bfsi-breadcrumb-link"]}>
             Industries we Serve
           </Link>
-          <span className="bfsi-breadcrumb-arrow">
+          <span className={styles["bfsi-breadcrumb-arrow"]}>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M4 3L8 8L4 13" stroke="#31344B" strokeWidth="1.5" />
               <path d="M8 3L12 8L8 13" stroke="#31344B" strokeWidth="1.5" />
             </svg>
           </span>
-          <span className="bfsi-breadcrumb-current" aria-current="page">
+          <span className={styles["bfsi-breadcrumb-current"]} aria-current="page">
             BFSI
           </span>
         </nav>
 
-        <div className="bfsi-hero-content">
-          <div className="bfsi-hero-badge">
+        <div className={styles["bfsi-hero-content"]}>
+          <div className={styles["bfsi-hero-badge"]}>
             <span>BFSI</span>
           </div>
-          <h1 className="bfsi-hero-heading">Secure! Scalable Learning for the BFSI Industry</h1>
-          <p className="bfsi-hero-subtext">NeuroLXP enables secure, scalable, and compliant learning for banking, financial services, and insurance.</p>
-          <div className="bfsi-hero-buttons">
-            <button className="bfsi-btn-secondary">Request Demo</button>
-            <button className="bfsi-btn-primary">
+          <h1 className={styles["bfsi-hero-heading"]}>Secure! Scalable Learning for the BFSI Industry</h1>
+          <p className={styles["bfsi-hero-subtext"]}>NeuroLXP enables secure, scalable, and compliant learning for banking, financial services, and insurance.</p>
+          <div className={styles["bfsi-hero-buttons"]}>
+            <button className={styles["bfsi-btn-secondary"]}>Request Demo</button>
+            <button className={styles["bfsi-btn-primary"]}>
               <span>Start Learning</span>
             </button>
           </div>
         </div>
       </section>
 
-      <section className="bfsi-banner">
-        <div className="bfsi-banner-inner">
-          <div className="bfsi-banner-left">
-            <div className="bfsi-banner-text">
-              <div className="bfsi-banner-badge">
+      <section className={styles["bfsi-banner"]}>
+        <div className={styles["bfsi-banner-inner"]}>
+          <div className={styles["bfsi-banner-left"]}>
+            <div className={styles["bfsi-banner-text"]}>
+              <div className={styles["bfsi-banner-badge"]}>
                 <span>Regulated Learning Ecosystem</span>
               </div>
-              <h2 className="bfsi-banner-heading">Built for Banking! Financial Services &amp; Insurance</h2>
-              <p className="bfsi-banner-subtext">Deliver secure, compliant learning for workforce readiness and continuous upskilling across the BFSI sector.</p>
+              <h2 className={styles["bfsi-banner-heading"]}>Built for Banking! Financial Services &amp; Insurance</h2>
+              <p className={styles["bfsi-banner-subtext"]}>Deliver secure, compliant learning for workforce readiness and continuous upskilling across the BFSI sector.</p>
             </div>
-            <div className="bfsi-secure-card">
-              <div className="bfsi-secure-icon-bubble">
-                <div className="bfsi-secure-icon-circle">
+            <div className={styles["bfsi-secure-card"]}>
+              <div className={styles["bfsi-secure-icon-bubble"]}>
+                <div className={styles["bfsi-secure-icon-circle"]}>
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                     <path d="M10 14.5V10.5C10 7.46 12.46 5 15.5 5H16.5C19.54 5 22 7.46 22 10.5V14.5" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" />
                     <rect x="6.5" y="14.5" width="19" height="14" rx="3" stroke="#FFFFFF" strokeWidth="2" />
@@ -191,20 +191,20 @@ export default function BfsiPage() {
                   </svg>
                 </div>
               </div>
-              <h3 className="bfsi-secure-title">Secure Learning Delivery</h3>
-              <p className="bfsi-secure-desc">Deliver compliant, audit-ready learning from one secure platform.</p>
+              <h3 className={styles["bfsi-secure-title"]}>Secure Learning Delivery</h3>
+              <p className={styles["bfsi-secure-desc"]}>Deliver compliant, audit-ready learning from one secure platform.</p>
             </div>
           </div>
-          <div className="bfsi-banner-photo">
-            <Image src="/images/cheerful-young-man-holding-money.webp" alt="BFSI professional using NeuroLXP" fill sizes="(max-width: 1024px) 90vw, 690px" className="bfsi-banner-photo-img" />
+          <div className={styles["bfsi-banner-photo"]}>
+            <Image src="/images/cheerful-young-man-holding-money.webp" alt="BFSI professional using NeuroLXP" fill sizes="(max-width: 1024px) 90vw, 690px" className={styles["bfsi-banner-photo-img"]} />
           </div>
         </div>
       </section>
 
-      <section className="bfsi-cards">
-        <div className="bfsi-cards-wrapper">
-          <div className="bfsi-card bfsi-card-blue">
-            <div className="bfsi-card-icon">
+      <section className={styles["bfsi-cards"]}>
+        <div className={styles["bfsi-cards-wrapper"]}>
+          <div className={`${styles["bfsi-card"]} ${styles["bfsi-card-blue"]}`}>
+            <div className={styles["bfsi-card-icon"]}>
               <svg width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true">
                 <g filter="url(#filter0_dd_903_12986)">
                   <path d="M59.9995 34.5C59.9995 48.5833 48.5828 60 34.4995 60C20.4163 60 8.99953 48.5833 8.99953 34.5C8.99953 20.4167 20.4163 9 34.4995 9C48.5828 9 59.9995 20.4167 59.9995 34.5Z" fill="#2D4CC8" />
@@ -231,12 +231,12 @@ export default function BfsiPage() {
                 </defs>
               </svg>
             </div>
-            <h3 className="bfsi-card-title">Compliance Ready</h3>
-            <p className="bfsi-card-desc">Stay compliant with evolving regulations.</p>
+            <h3 className={styles["bfsi-card-title"]}>Compliance Ready</h3>
+            <p className={styles["bfsi-card-desc"]}>Stay compliant with evolving regulations.</p>
           </div>
 
-          <div className="bfsi-card bfsi-card-green">
-            <div className="bfsi-card-icon">
+          <div className={`${styles["bfsi-card"]} ${styles["bfsi-card-green"]}`}>
+            <div className={styles["bfsi-card-icon"]}>
               <svg width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true">
                 <g filter="url(#filter0_dd_903_12964)">
                   <path d="M59.9995 34.5C59.9995 48.5833 48.5828 60 34.4995 60C20.4163 60 8.99953 48.5833 8.99953 34.5C8.99953 20.4167 20.4163 9 34.4995 9C48.5828 9 59.9995 20.4167 59.9995 34.5Z" fill="#2A7308" />
@@ -263,12 +263,12 @@ export default function BfsiPage() {
                 </defs>
               </svg>
             </div>
-            <h3 className="bfsi-card-title">Skill Focused</h3>
-            <p className="bfsi-card-desc">Build role-based financial skills.</p>
+            <h3 className={styles["bfsi-card-title"]}>Skill Focused</h3>
+            <p className={styles["bfsi-card-desc"]}>Build role-based financial skills.</p>
           </div>
 
-          <div className="bfsi-card  bfsi-card-orange">
-            <div className="bfsi-card-icon">
+          <div className={`${styles["bfsi-card"]} ${styles["bfsi-card-orange"]}`}>
+            <div className={styles["bfsi-card-icon"]}>
               <svg width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true">
                 <g filter="url(#filter0_dd_903_12975)">
                   <path d="M59.9995 34.5C59.9995 48.5833 48.5828 60 34.4995 60C20.4163 60 8.99953 48.5833 8.99953 34.5C8.99953 20.4167 20.4163 9 34.4995 9C48.5828 9 59.9995 20.4167 59.9995 34.5Z" fill="#C05512" />
@@ -296,64 +296,64 @@ export default function BfsiPage() {
                 </defs>
               </svg>
             </div>
-            <h3 className="bfsi-card-title">Audit Friendly</h3>
-            <p className="bfsi-card-desc">Track training, certifications and progress.</p>
+            <h3 className={styles["bfsi-card-title"]}>Audit Friendly</h3>
+            <p className={styles["bfsi-card-desc"]}>Track training, certifications and progress.</p>
           </div>
         </div>
       </section>
 
-      <section className="bfsi-challenges">
-        <div className="bfsi-challenges-header">
-          <div className="bfsi-challenges-badge">
+      <section className={styles["bfsi-challenges"]}>
+        <div className={styles["bfsi-challenges-header"]}>
+          <div className={styles["bfsi-challenges-badge"]}>
             <span>Challenges &amp; Solutions</span>
           </div>
-          <h2 className="bfsi-challenges-heading">Addressing Key Challenges in BFSI Training</h2>
-          <p className="bfsi-challenges-subtext">NeuroLXP supports BFSI organisations by simplifying compliance training, skill development, branch-level training, and learning measurement.</p>
+          <h2 className={styles["bfsi-challenges-heading"]}>Addressing Key Challenges in BFSI Training</h2>
+          <p className={styles["bfsi-challenges-subtext"]}>NeuroLXP supports BFSI organisations by simplifying compliance training, skill development, branch-level training, and learning measurement.</p>
         </div>
 
-        <div className="bfsi-challenges-row bfsi-challenges-row-3">
+        <div className={`${styles["bfsi-challenges-row"]} ${styles["bfsi-challenges-row-3"]}`}>
           {challengeCards.slice(0, 3).map((card, i) => (
-            <div className="bfsi-challenge-card" key={card.title}>
-              <div className={`bfsi-challenge-top ${openCards.has(i) ? "open" : ""}`} onClick={() => toggleCard(i)} onKeyDown={(e) => handleCardKeyDown(e, i)} role="button" tabIndex={0} aria-expanded={openCards.has(i)} aria-controls={`bfsi-challenge-panel-${i}`}>
-                <div className="bfsi-challenge-icon-circle" style={{ borderColor: card.color }}>
+            <div className={styles["bfsi-challenge-card"]} key={card.title}>
+              <div className={`${styles["bfsi-challenge-top"]} ${openCards.has(i) ? styles.open : ""}`} onClick={() => toggleCard(i)} onKeyDown={(e) => handleCardKeyDown(e, i)} role="button" tabIndex={0} aria-expanded={openCards.has(i)} aria-controls={`bfsi-challenge-panel-${i}`}>
+                <div className={styles["bfsi-challenge-icon-circle"]} style={{ borderColor: card.color }}>
                   {card.icon}
                 </div>
-                <h3 className="bfsi-challenge-title">{card.title}</h3>
+                <h3 className={styles["bfsi-challenge-title"]}>{card.title}</h3>
                 {!openCards.has(i) && (
-                  <span className="bfsi-challenge-chevron">
+                  <span className={styles["bfsi-challenge-chevron"]}>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                       <path d="M8 13L16 21L24 13" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                 )}
               </div>
-              <div id={`bfsi-challenge-panel-${i}`} className={`bfsi-challenge-panel ${openCards.has(i) ? "open" : ""}`}>
-                <p className="bfsi-challenge-desc">{card.desc}</p>
+              <div id={`bfsi-challenge-panel-${i}`} className={`${styles["bfsi-challenge-panel"]} ${openCards.has(i) ? styles.open : ""}`}>
+                <p className={styles["bfsi-challenge-desc"]}>{card.desc}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="bfsi-challenges-row bfsi-challenges-row-2">
+        <div className={`${styles["bfsi-challenges-row"]} ${styles["bfsi-challenges-row-2"]}`}>
           {challengeCards.slice(3, 5).map((card, i) => {
             const index = i + 3;
             return (
-              <div className="bfsi-challenge-card" key={card.title}>
-                <div className={`bfsi-challenge-top ${openCards.has(index) ? "open" : ""}`} onClick={() => toggleCard(index)} onKeyDown={(e) => handleCardKeyDown(e, index)} role="button" tabIndex={0} aria-expanded={openCards.has(index)} aria-controls={`bfsi-challenge-panel-${index}`}>
-                  <div className="bfsi-challenge-icon-circle" style={{ borderColor: card.color }}>
+              <div className={styles["bfsi-challenge-card"]} key={card.title}>
+                <div className={`${styles["bfsi-challenge-top"]} ${openCards.has(index) ? styles.open : ""}`} onClick={() => toggleCard(index)} onKeyDown={(e) => handleCardKeyDown(e, index)} role="button" tabIndex={0} aria-expanded={openCards.has(index)} aria-controls={`bfsi-challenge-panel-${index}`}>
+                  <div className={styles["bfsi-challenge-icon-circle"]} style={{ borderColor: card.color }}>
                     {card.icon}
                   </div>
-                  <h3 className="bfsi-challenge-title">{card.title}</h3>
+                  <h3 className={styles["bfsi-challenge-title"]}>{card.title}</h3>
                   {!openCards.has(index) && (
-                    <span className="bfsi-challenge-chevron">
+                    <span className={styles["bfsi-challenge-chevron"]}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                         <path d="M8 13L16 21L24 13" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </span>
                   )}
                 </div>
-                <div id={`bfsi-challenge-panel-${index}`} className={`bfsi-challenge-panel ${openCards.has(index) ? "open" : ""}`}>
-                  <p className="bfsi-challenge-desc">{card.desc}</p>
+                <div id={`bfsi-challenge-panel-${index}`} className={`${styles["bfsi-challenge-panel"]} ${openCards.has(index) ? styles.open : ""}`}>
+                  <p className={styles["bfsi-challenge-desc"]}>{card.desc}</p>
                 </div>
               </div>
             );
@@ -361,66 +361,66 @@ export default function BfsiPage() {
         </div>
       </section>
 
-      <section className="bfsi-stat-banner">
-        <div className="bfsi-stat-panel">
-          <Image src="/images/rupee-growth-graphic.webp" alt="Rupee symbol with an ascending growth chart representing BFSI training returns" fill sizes="(max-width: 1024px) 100vw, 1280px" className="bfsi-stat-photo" style={{ objectPosition: "75% 40%" }} />
-          <div className="bfsi-stat-shadow-overlay" />
-          <div className="bfsi-stat-content">
-            <div className="bfsi-stat-badge">
-              <span className="bfsi-stat-badge-text">NeuroLXP</span>
-              <span className="bfsi-stat-badge-tm">TM</span>
+      <section className={styles["bfsi-stat-banner"]}>
+        <div className={styles["bfsi-stat-panel"]}>
+          <Image src="/images/rupee-growth-graphic.webp" alt="Rupee symbol with an ascending growth chart representing BFSI training returns" fill sizes="(max-width: 1024px) 100vw, 1280px" className={styles["bfsi-stat-photo"]} style={{ objectPosition: "75% 40%" }} />
+          <div className={styles["bfsi-stat-shadow-overlay"]} />
+          <div className={styles["bfsi-stat-content"]}>
+            <div className={styles["bfsi-stat-badge"]}>
+              <span className={styles["bfsi-stat-badge-text"]}>NeuroLXP</span>
+              <span className={styles["bfsi-stat-badge-tm"]}>TM</span>
             </div>
-            <h2 className="bfsi-stat-heading">Future-Ready BFSI Training</h2>
-            <p className="bfsi-stat-subtext">Secure compliance. Smarter learning. Stronger BFSI teams.</p>
+            <h2 className={styles["bfsi-stat-heading"]}>Future-Ready BFSI Training</h2>
+            <p className={styles["bfsi-stat-subtext"]}>Secure compliance. Smarter learning. Stronger BFSI teams.</p>
           </div>
         </div>
       </section>
 
-      <section className="bfsi-benefits">
-        <div className="bfsi-benefits-header">
-          <div className="bfsi-benefits-badge">
+      <section className={styles["bfsi-benefits"]}>
+        <div className={styles["bfsi-benefits-header"]}>
+          <div className={styles["bfsi-benefits-badge"]}>
             <span>Organization Benefit</span>
           </div>
-          <h2 className="bfsi-benefits-heading">Benefits of NeuroLXP for BFSI Organisations</h2>
-          <p className="bfsi-benefits-subtext">NeuroLXP helps BFSI organizations strengthen compliance, build skills, and improve workforce performance through intelligent learning.</p>
+          <h2 className={styles["bfsi-benefits-heading"]}>Benefits of NeuroLXP for BFSI Organisations</h2>
+          <p className={styles["bfsi-benefits-subtext"]}>NeuroLXP helps BFSI organizations strengthen compliance, build skills, and improve workforce performance through intelligent learning.</p>
         </div>
 
-        <div className="bfsi-benefits-grid">
+        <div className={styles["bfsi-benefits-grid"]}>
           {benefitCards.map((text) => (
-            <div className="bfsi-benefit-card" key={text}>
-              <span className="bfsi-benefit-icon">
+            <div className={styles["bfsi-benefit-card"]} key={text}>
+              <span className={styles["bfsi-benefit-icon"]}>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                   <rect x="3" y="3" width="26" height="26" rx="6" fill="#D9D9D9" stroke="#2A7308" strokeWidth="3" />
                   <path d="M10 16.5L14 20.5L22 11.5" stroke="#2A7308" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
-              <p className="bfsi-benefit-text">{text}</p>
+              <p className={styles["bfsi-benefit-text"]}>{text}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="bfsi-finance-banner">
-        <div className="bfsi-finance-panel">
-          <Image src="/images/Buillding-bfsi.webp" alt="High-rise buildings representing future-ready finance learning" fill sizes="(max-width: 1024px) 100vw, 1280px" className="bfsi-finance-photo" />
-          <div className="bfsi-finance-overlay" />
-          <div className="bfsi-finance-content">
-            <div className="bfsi-finance-blur" />
-            <div className="bfsi-finance-badge">
+      <section className={styles["bfsi-finance-banner"]}>
+        <div className={styles["bfsi-finance-panel"]}>
+          <Image src="/images/Buillding-bfsi.webp" alt="High-rise buildings representing future-ready finance learning" fill sizes="(max-width: 1024px) 100vw, 1280px" className={styles["bfsi-finance-photo"]} />
+          <div className={styles["bfsi-finance-overlay"]} />
+          <div className={styles["bfsi-finance-content"]}>
+            <div className={styles["bfsi-finance-blur"]} />
+            <div className={styles["bfsi-finance-badge"]}>
               <span>Future Ready</span>
             </div>
-            <h2 className="bfsi-finance-heading">Future-Ready Finance Learning</h2>
-            <p className="bfsi-finance-subtext">Empowering BFSI with secure, intelligent learning.</p>
+            <h2 className={styles["bfsi-finance-heading"]}>Future-Ready Finance Learning</h2>
+            <p className={styles["bfsi-finance-subtext"]}>Empowering BFSI with secure, intelligent learning.</p>
           </div>
         </div>
       </section>
 
-      <section className="bfsi-cta">
-        <div className="bfsi-cta-badge">
+      <section className={styles["bfsi-cta"]}>
+        <div className={styles["bfsi-cta-badge"]}>
           <span>NeuroLXP</span>
         </div>
-        <h2 className="bfsi-cta-heading">Enabling Smarter Learning for the BFSI Industry</h2>
-        <p className="bfsi-cta-subtext">With AI-powered learning tools, compliance-ready training modules, and advanced analytics, NeuroLXP empowers BFSI organisations to build knowledgeable, compliant, and future-ready workforces.</p>
+        <h2 className={styles["bfsi-cta-heading"]}>Enabling Smarter Learning for the BFSI Industry</h2>
+        <p className={styles["bfsi-cta-subtext"]}>With AI-powered learning tools, compliance-ready training modules, and advanced analytics, NeuroLXP empowers BFSI organisations to build knowledgeable, compliant, and future-ready workforces.</p>
       </section>
     </main>
   );

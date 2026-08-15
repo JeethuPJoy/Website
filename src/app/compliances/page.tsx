@@ -1,89 +1,89 @@
 import type { NextPage } from 'next';
 import Image from "next/image";
-import './compliance&security.css';
+import styles from "./compliance&security.module.css";
 
 
 const ComplianceSecurity: NextPage = () => {
   	return (
-    		<div className="complianceSecurity">
-      			<Image className="complianceSecurityChild" src="/images/compliance-security-hero.svg" width={1488} height={611} sizes="100vw" alt="" priority />
-      			<nav className="frameDiv" aria-label="Breadcrumb">
-  <span className="learningEcoSystem">Features</span>
+    		<div className={styles.complianceSecurity}>
+      			<Image className={styles.complianceSecurityChild} src="/images/compliance-security-hero.svg" width={1488} height={611} sizes="100vw" alt="" priority />
+      			<nav className={styles.frameDiv} aria-label="Breadcrumb">
+  <span className={styles.learningEcoSystem}>Features</span>
 
   <Image
-    className="breadcrumbArrow"
+    className={styles.breadcrumbArrow}
     src="/icons/arrow-right-double.svg"
     width={16}
     height={16}
     alt=""
   />
 
-  <span className="learningEcoSystem">Learning Eco-system</span>
+  <span className={styles.learningEcoSystem}>Learning Eco-system</span>
 
   <Image
-    className="breadcrumbArrow"
+    className={styles.breadcrumbArrow}
     src="/icons/arrow-right-double.svg"
     width={16}
     height={16}
     alt=""
   />
 
-  <span className="learningEcoSystem breadcrumbCurrent">
+  <span className={`${styles.learningEcoSystem} ${styles.breadcrumbCurrent}`}>
     Compliance &amp; Security
   </span>
 </nav>
 
-<div className="complianceSecurityInner">
-        				<div className="frameParent2">
-          					<div className="frameWrapper">
-            						<div className="frameWrapper2">
-              							<div className="frameParent3">
-                								<div className="frameParent4">
-                  									<div className="heroBadge">Compliance &amp; Security</div>
-                  									<b className="secureLearningSmarterContainer">
-                    										<span className="secureLearningSmarter">{`Secure Learning! Smarter Compliance! `}</span>
-                    										<span className="greaterConfidence">Greater Confidence!</span>
+<div className={styles.complianceSecurityInner}>
+        				<div className={styles.frameParent2}>
+          					<div className={styles.frameWrapper}>
+            						<div className={styles.frameWrapper2}>
+              							<div className={styles.frameParent3}>
+                								<div className={styles.frameParent4}>
+                  									<div className={styles.heroBadge}>Compliance &amp; Security</div>
+                  									<b className={styles.secureLearningSmarterContainer}>
+                    										<span className={styles.secureLearningSmarter}>{`Secure Learning! Smarter Compliance! `}</span>
+                    										<span className={styles.greaterConfidence}>Greater Confidence!</span>
                   									</b>
                 								</div>
-                								<div className="neurolxpCombinesCompliance">NeuroLXP combines compliance, certification, audit readiness, and security in one scalable learning platform</div>
+                								<div className={styles.neurolxpCombinesCompliance}>NeuroLXP combines compliance, certification, audit readiness, and security in one scalable learning platform</div>
               							</div>
             						</div>
           					</div>
-          					<div className="frameParent5">
-            						<button className="heroButton heroButtonSecondary" type="button">Book a Demo</button>
-            						<button className="heroButton heroButtonPrimary" type="button">Start Learning</button>
+          					<div className={styles.frameParent5}>
+            						<button className={`${styles.heroButton} ${styles.heroButtonSecondary}`} type="button">Book a Demo</button>
+            						<button className={`${styles.heroButton} ${styles.heroButtonPrimary}`} type="button">Start Learning</button>
           					</div>
         				</div>
       			</div>
-      			<section className="frameParent6" aria-labelledby="compliance-training-heading">
-  <div className="frameParent7">
-    <div className="frameParent8">
-      <div className="frameParent9">
-        <div className="complianceTrainingBadge">Compliance Training</div>
-        <h2 id="compliance-training-heading" className="structuredTrainingFor">
+      			<section className={styles.frameParent6} aria-labelledby="compliance-training-heading">
+  <div className={styles.frameParent7}>
+    <div className={styles.frameParent8}>
+      <div className={styles.frameParent9}>
+        <div className={styles.complianceTrainingBadge}>Compliance Training</div>
+        <h2 id="compliance-training-heading" className={styles.structuredTrainingFor}>
           Structured Training for<br />Compliance Readiness
         </h2>
       </div>
-      <p className="neurolxpDeliversStructured">
+      <p className={styles.neurolxpDeliversStructured}>
         NeuroLXP delivers structured compliance training for regulatory readiness.
       </p>
     </div>
 
-    <div className="frameParent10" aria-label="Compliance training benefits">
-      <div className="frameParent11">
-        <div className="complianceStatus complianceStatusBlue">Compliant</div>
-        <div className="complianceStatus complianceStatusPurple">Certified</div>
+    <div className={styles.frameParent10} aria-label="Compliance training benefits">
+      <div className={styles.frameParent11}>
+        <div className={`${styles.complianceStatus} ${styles.complianceStatusBlue}`}>Compliant</div>
+        <div className={`${styles.complianceStatus} ${styles.complianceStatusPurple}`}>Certified</div>
       </div>
-      <div className="frameParent11">
-        <div className="complianceStatus complianceStatusPink">Tracked</div>
-        <div className="complianceStatus complianceStatusGold">Audit-Ready</div>
+      <div className={styles.frameParent11}>
+        <div className={`${styles.complianceStatus} ${styles.complianceStatusPink}`}>Tracked</div>
+        <div className={`${styles.complianceStatus} ${styles.complianceStatusGold}`}>Audit-Ready</div>
       </div>
     </div>
   </div>
 
-  <div className="frameWrapper4">
+  <div className={styles.frameWrapper4}>
     <Image
-      className="frameChild8"
+      className={styles.frameChild8}
       src="/images/compliance-training.webp"
       width={711}
       height={555}
@@ -92,28 +92,28 @@ const ComplianceSecurity: NextPage = () => {
     />
   </div>
 </section>
-      			<section className="frameParent13" aria-labelledby="smart-compliance-heading">
-  <div className="smartComplianceHeader">
-    <div className="smartComplianceBadge">Smart Compliance Management</div>
+      			<section className={styles.frameParent13} aria-labelledby="smart-compliance-heading">
+  <div className={styles.smartComplianceHeader}>
+    <div className={styles.smartComplianceBadge}>Smart Compliance Management</div>
 
-    <h2 id="smart-compliance-heading" className="centralizeMonitorStayContainer">
-      <span className="centralizeMonitor">Centralize! Monitor! </span>
-      <span className="stayReady">Stay Ready!</span>
+    <h2 id="smart-compliance-heading" className={styles.centralizeMonitorStayContainer}>
+      <span className={styles.centralizeMonitor}>Centralize! Monitor! </span>
+      <span className={styles.stayReady}>Stay Ready!</span>
     </h2>
 
-    <p className="simplifyComplianceTraining">
+    <p className={styles.simplifyComplianceTraining}>
       Simplify compliance training across teams and departments with centralized
       management and real-time visibility.
     </p>
   </div>
 
-  <div className="smartComplianceCards">
-    <article className="smartComplianceCard">
-      <div className="smartComplianceCardInner">
-        <div className="smartComplianceIconShadow">
-          <div className="smartComplianceIconCircle smartCompliancePink">
+  <div className={styles.smartComplianceCards}>
+    <article className={styles.smartComplianceCard}>
+      <div className={styles.smartComplianceCardInner}>
+        <div className={styles.smartComplianceIconShadow}>
+          <div className={`${styles.smartComplianceIconCircle} ${styles.smartCompliancePink}`}>
             <Image
-              className="smartComplianceIcon"
+              className={styles.smartComplianceIcon}
               src="/icons/folder-02white.svg"
               width={28}
               height={28}
@@ -121,16 +121,16 @@ const ComplianceSecurity: NextPage = () => {
             />
           </div>
         </div>
-        <h3 className="smartComplianceCardTitle">Centralize Training</h3>
+        <h3 className={styles.smartComplianceCardTitle}>Centralize Training</h3>
       </div>
     </article>
 
-    <article className="smartComplianceCard">
-      <div className="smartComplianceCardInner">
-        <div className="smartComplianceIconShadow">
-          <div className="smartComplianceIconCircle smartCompliancePurple">
+    <article className={styles.smartComplianceCard}>
+      <div className={styles.smartComplianceCardInner}>
+        <div className={styles.smartComplianceIconShadow}>
+          <div className={`${styles.smartComplianceIconCircle} ${styles.smartCompliancePurple}`}>
             <Image
-              className="smartComplianceIcon"
+              className={styles.smartComplianceIcon}
               src="/icons/clipboard-list copy.svg"
               width={28}
               height={28}
@@ -138,16 +138,16 @@ const ComplianceSecurity: NextPage = () => {
             />
           </div>
         </div>
-        <h3 className="smartComplianceCardTitle">Assign Mandatory Courses</h3>
+        <h3 className={styles.smartComplianceCardTitle}>Assign Mandatory Courses</h3>
       </div>
     </article>
 
-    <article className="smartComplianceCard">
-      <div className="smartComplianceCardInner">
-        <div className="smartComplianceIconShadow">
-          <div className="smartComplianceIconCircle smartComplianceGold">
+    <article className={styles.smartComplianceCard}>
+      <div className={styles.smartComplianceCardInner}>
+        <div className={styles.smartComplianceIconShadow}>
+          <div className={`${styles.smartComplianceIconCircle} ${styles.smartComplianceGold}`}>
             <Image
-              className="smartComplianceIcon"
+              className={styles.smartComplianceIcon}
               src="/icons/mortarboard-02.svg"
               width={28}
               height={28}
@@ -155,16 +155,16 @@ const ComplianceSecurity: NextPage = () => {
             />
           </div>
         </div>
-        <h3 className="smartComplianceCardTitle">Track Certifications</h3>
+        <h3 className={styles.smartComplianceCardTitle}>Track Certifications</h3>
       </div>
     </article>
 
-    <article className="smartComplianceCard">
-      <div className="smartComplianceCardInner">
-        <div className="smartComplianceIconShadow">
-          <div className="smartComplianceIconCircle smartComplianceTeal">
+    <article className={styles.smartComplianceCard}>
+      <div className={styles.smartComplianceCardInner}>
+        <div className={styles.smartComplianceIconShadow}>
+          <div className={`${styles.smartComplianceIconCircle} ${styles.smartComplianceTeal}`}>
             <Image
-              className="smartComplianceIcon"
+              className={styles.smartComplianceIcon}
               src="/icons/archive.svg"
               width={28}
               height={28}
@@ -172,16 +172,16 @@ const ComplianceSecurity: NextPage = () => {
             />
           </div>
         </div>
-        <h3 className="smartComplianceCardTitle">Maintain Training Records</h3>
+        <h3 className={styles.smartComplianceCardTitle}>Maintain Training Records</h3>
       </div>
     </article>
 
-    <article className="smartComplianceCard">
-      <div className="smartComplianceCardInner">
-        <div className="smartComplianceIconShadow">
-          <div className="smartComplianceIconCircle smartComplianceOrange">
+    <article className={styles.smartComplianceCard}>
+      <div className={styles.smartComplianceCardInner}>
+        <div className={styles.smartComplianceIconShadow}>
+          <div className={`${styles.smartComplianceIconCircle} ${styles.smartComplianceOrange}`}>
             <Image
-              className="smartComplianceIcon"
+              className={styles.smartComplianceIcon}
               src="/icons/search-02white.svg"
               width={28}
               height={28}
@@ -189,174 +189,174 @@ const ComplianceSecurity: NextPage = () => {
             />
           </div>
         </div>
-        <h3 className="smartComplianceCardTitle">Simplify Audits And Reviews</h3>
+        <h3 className={styles.smartComplianceCardTitle}>Simplify Audits And Reviews</h3>
       </div>
     </article>
   </div>
 </section>
-      			<div className="frameParent24">
-        				<div className="frameWrapper19">
-          					<div className="frameWrapper20">
-            						<div className="frameWrapper21">
-              							<div className="frameWrapper22">
-                								<div className="frameParent25">
-                  									<div className="industrySpecificComplianceWrapper">
-                    										<b className="industrySpecificCompliance">Industry-Specific Compliance</b>
+      			<div className={styles.frameParent24}>
+        				<div className={styles.frameWrapper19}>
+          					<div className={styles.frameWrapper20}>
+            						<div className={styles.frameWrapper21}>
+              							<div className={styles.frameWrapper22}>
+                								<div className={styles.frameParent25}>
+                  									<div className={styles.industrySpecificComplianceWrapper}>
+                    										<b className={styles.industrySpecificCompliance}>Industry-Specific Compliance</b>
                   									</div>
-                  									<div className="simplifyComplianceTraining">Deliver compliance learning aligned with regulatory requirements, industry standards, and organizational policies.</div>
+                  									<div className={styles.simplifyComplianceTraining}>Deliver compliance learning aligned with regulatory requirements, industry standards, and organizational policies.</div>
                 								</div>
               							</div>
             						</div>
           					</div>
         				</div>
-        				<div className="frameParent26">
-          					<div className="frameParent27">
-            						<div className="frameParent28">
-              							<div className="frameChild15" />
-              							<div className="frameWrapper23">
-                								<div className="frameParent29">
-                  									<div className="workplaceSafetyWrapper">
-                    										<b className="workplaceSafety">Workplace Safety</b>
+        				<div className={styles.frameParent26}>
+          					<div className={styles.frameParent27}>
+            						<div className={styles.frameParent28}>
+              							<div className={styles.frameChild15} />
+              							<div className={styles.frameWrapper23}>
+                								<div className={styles.frameParent29}>
+                  									<div className={styles.workplaceSafetyWrapper}>
+                    										<b className={styles.workplaceSafety}>Workplace Safety</b>
                   									</div>
-                  									<div className="healthSafetyAnd">Health, safety and  workplace regulations</div>
+                  									<div className={styles.healthSafetyAnd}>Health, safety and  workplace regulations</div>
                 								</div>
               							</div>
             						</div>
-            						<div className="frameParent28">
-              							<div className="frameChild15" />
-              							<div className="frameWrapper24">
-                								<div className="frameParent29">
-                  									<div className="dataPrivacyWrapper">
-                    										<b className="workplaceSafety">Data Privacy</b>
+            						<div className={styles.frameParent28}>
+              							<div className={styles.frameChild15} />
+              							<div className={styles.frameWrapper24}>
+                								<div className={styles.frameParent29}>
+                  									<div className={styles.dataPrivacyWrapper}>
+                    										<b className={styles.workplaceSafety}>Data Privacy</b>
                   									</div>
-                  									<div className="dataProtectionAnd">Data protection and  privacy awareness</div>
+                  									<div className={styles.dataProtectionAnd}>Data protection and  privacy awareness</div>
                 								</div>
               							</div>
             						</div>
-            						<div className="frameParent28">
-              							<div className="frameChild15" />
-              							<div className="frameWrapper24">
-                								<div className="frameParent29">
-                  									<div className="corporateEthicsWrapper">
-                    										<b className="corporateEthics">Corporate Ethics<br/></b>
+            						<div className={styles.frameParent28}>
+              							<div className={styles.frameChild15} />
+              							<div className={styles.frameWrapper24}>
+                								<div className={styles.frameParent29}>
+                  									<div className={styles.corporateEthicsWrapper}>
+                    										<b className={styles.corporateEthics}>Corporate Ethics<br/></b>
                       											</div>
-                      											<div className="codeOfConduct">Code of conduct and ethical workplace practices</div>
-                      											</div>
-                      											</div>
+                      											<div className={styles.codeOfConduct}>Code of conduct and ethical workplace practices</div>
                       											</div>
                       											</div>
-                      											<div className="frameParent27">
-                        												<div className="frameParent28">
-                          													<div className="frameChild15" />
-                          													<div className="frameWrapper24">
-                            														<div className="frameParent29">
-                              															<div className="workplaceConductWrapper">
-                                																<b className="workplaceConduct">Workplace Conduct</b>
+                      											</div>
+                      											</div>
+                      											<div className={styles.frameParent27}>
+                        												<div className={styles.frameParent28}>
+                          													<div className={styles.frameChild15} />
+                          													<div className={styles.frameWrapper24}>
+                            														<div className={styles.frameParent29}>
+                              															<div className={styles.workplaceConductWrapper}>
+                                																<b className={styles.workplaceConduct}>Workplace Conduct</b>
                               															</div>
-                              															<div className="antiHarassmentAndWorkplace">Anti-harassment and workplace policy training</div>
+                              															<div className={styles.antiHarassmentAndWorkplace}>Anti-harassment and workplace policy training</div>
                             														</div>
                           													</div>
                         												</div>
-                        												<div className="frameParent28">
-                          													<div className="frameChild15" />
-                          													<div className="frameWrapper24">
-                            														<div className="frameParent29">
-                              															<div className="financialComplianceWrapper">
-                                																<b className="financialCompliance">Financial Compliance</b>
+                        												<div className={styles.frameParent28}>
+                          													<div className={styles.frameChild15} />
+                          													<div className={styles.frameWrapper24}>
+                            														<div className={styles.frameParent29}>
+                              															<div className={styles.financialComplianceWrapper}>
+                                																<b className={styles.financialCompliance}>Financial Compliance</b>
                               															</div>
-                              															<div className="antiHarassmentAndWorkplace">Financial regulations and industry standards</div>
+                              															<div className={styles.antiHarassmentAndWorkplace}>Financial regulations and industry standards</div>
                             														</div>
                           													</div>
                         												</div>
-                        												<div className="frameParent28">
-                          													<div className="frameChild15" />
-                          													<div className="frameWrapper24">
-                            														<div className="frameParent29">
-                              															<div className="sustainabilityWrapper">
-                                																<b className="financialCompliance">Sustainability</b>
+                        												<div className={styles.frameParent28}>
+                          													<div className={styles.frameChild15} />
+                          													<div className={styles.frameWrapper24}>
+                            														<div className={styles.frameParent29}>
+                              															<div className={styles.sustainabilityWrapper}>
+                                																<b className={styles.financialCompliance}>Sustainability</b>
                               															</div>
-                              															<div className="antiHarassmentAndWorkplace">Environmental and sustainability practices</div>
+                              															<div className={styles.antiHarassmentAndWorkplace}>Environmental and sustainability practices</div>
                             														</div>
                           													</div>
                         												</div>
                       											</div>
                       											</div>
                       											</div>
-                      											<div className="frameParent41">
-                        												<div className="frameParent42">
-                          													<div className="frameWrapper29">
-                            														<div className="frameParent8">
-                              															<div className="frameParent9">
-                                																<div className="engagingComplianceBadge">Engaging Compliance Learning</div>
-                                																<b className="makeMandatoryTrainingContainer">
-                                  																	<span className="makeMandatoryTrainingContainer2">
-                                    																		<span className="centralizeMonitor">{`Make Mandatory `}</span>
-                                    																		<span className="stayReady">Training More Effective</span>
+                      											<div className={styles.frameParent41}>
+                        												<div className={styles.frameParent42}>
+                          													<div className={styles.frameWrapper29}>
+                            														<div className={styles.frameParent8}>
+                              															<div className={styles.frameParent9}>
+                                																<div className={styles.engagingComplianceBadge}>Engaging Compliance Learning</div>
+                                																<b className={styles.makeMandatoryTrainingContainer}>
+                                  																	<span className={styles.makeMandatoryTrainingContainer2}>
+                                    																		<span className={styles.centralizeMonitor}>{`Make Mandatory `}</span>
+                                    																		<span className={styles.stayReady}>Training More Effective</span>
                                   																	</span>
                                 																</b>
                               															</div>
-                              															<div className="makeComplianceLearning">Make compliance learning engaging and interactive.</div>
+                              															<div className={styles.makeComplianceLearning}>Make compliance learning engaging and interactive.</div>
                             														</div>
                           													</div>
-                          													<div className="frameParent45">
-                            														<div className="frameParent46">
-                              															<div className="frameParent47">
-                                																<div className="frameWrapper30">
-                                  																	<div className="frameParent48">
-                                    																		<div className="mandatoryIconBox"><Image className="mandatoryIcon" src="/icons/drama.svg" width={40} height={40} alt="Scenario-based learning" /></div>
-                                    																		<div className="scenarioBasedLearning">Scenario-based learning</div>
+                          													<div className={styles.frameParent45}>
+                            														<div className={styles.frameParent46}>
+                              															<div className={styles.frameParent47}>
+                                																<div className={styles.frameWrapper30}>
+                                  																	<div className={styles.frameParent48}>
+                                    																		<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/drama.svg" width={40} height={40} alt="Scenario-based learning" /></div>
+                                    																		<div className={styles.scenarioBasedLearning}>Scenario-based learning</div>
                                   																	</div>
                                 																</div>
-                                																<div className="frameWrapper31">
-                                  																	<div className="frameParent49">
-                                    																		<div className="mandatoryIconBox"><Image className="mandatoryIcon" src="/icons/clipboard-list-1blue.svg" width={40} height={40} alt="Interactive quizzes" /></div>
-                                    																		<div className="scenarioBasedLearning">Interactive quizzes</div>
+                                																<div className={styles.frameWrapper31}>
+                                  																	<div className={styles.frameParent49}>
+                                    																		<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/clipboard-list-1blue.svg" width={40} height={40} alt="Interactive quizzes" /></div>
+                                    																		<div className={styles.scenarioBasedLearning}>Interactive quizzes</div>
                                   																	</div>
                                 																</div>
                               															</div>
-                              															<div className="frameWrapper32">
-                                																<div className="frameParent49">
-                                  																	<div className="mandatoryIconBox"><Image className="mandatoryIcon" src="/icons/book-open-text.svg" width={40} height={40} alt="Real-world case studies" /></div>
-                                  																	<div className="scenarioBasedLearning">Real-world case studies</div>
+                              															<div className={styles.frameWrapper32}>
+                                																<div className={styles.frameParent49}>
+                                  																	<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/book-open-text.svg" width={40} height={40} alt="Real-world case studies" /></div>
+                                  																	<div className={styles.scenarioBasedLearning}>Real-world case studies</div>
                                 																</div>
                               															</div>
                             														</div>
-                            														<div className="frameParent47">
-                              															<div className="frameWrapper33">
-                                																<div className="frameParent49">
-                                  																	<div className="mandatoryIconBox"><Image className="mandatoryIcon" src="/icons/gamepad-01.svg" width={40} height={40} alt="Interactive Gamification" /></div>
-                                  																	<div className="scenarioBasedLearning">Interactive Gamification</div>
+                            														<div className={styles.frameParent47}>
+                              															<div className={styles.frameWrapper33}>
+                                																<div className={styles.frameParent49}>
+                                  																	<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/gamepad-01.svg" width={40} height={40} alt="Interactive Gamification" /></div>
+                                  																	<div className={styles.scenarioBasedLearning}>Interactive Gamification</div>
                                 																</div>
                               															</div>
-                              															<div className="frameWrapper34">
-                                																<div className="frameParent49">
-                                  																	<div className="mandatoryIconBox"><Image className="mandatoryIcon" src="/icons/idea-01yellow.svg" width={40} height={40} alt="Knowledge Checks" /></div>
-                                  																	<div className="scenarioBasedLearning">Knowledge Checks</div>
+                              															<div className={styles.frameWrapper34}>
+                                																<div className={styles.frameParent49}>
+                                  																	<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/idea-01yellow.svg" width={40} height={40} alt="Knowledge Checks" /></div>
+                                  																	<div className={styles.scenarioBasedLearning}>Knowledge Checks</div>
                                 																</div>
                               															</div>
                             														</div>
                           													</div>
                         												</div>
-                        												<div className="frameParent54">
-  <div className="realTimeHeader">
-    <div className="automatedTrackingBadge">Automated Tracking and Reporting</div>
+                        												<div className={styles.frameParent54}>
+  <div className={styles.realTimeHeader}>
+    <div className={styles.automatedTrackingBadge}>Automated Tracking and Reporting</div>
 
-    <h2 className="realTimeVisibilityTitle">
+    <h2 className={styles.realTimeVisibilityTitle}>
       Real-Time Visibility into Compliance
     </h2>
 
-    <p className="realTimeVisibilityText">
+    <p className={styles.realTimeVisibilityText}>
       Gain actionable insights into compliance performance with analytics and reporting
       tools that help organizations monitor progress and maintain readiness.
     </p>
   </div>
 
-  <div className="realTimeMetrics">
-    <div className="realTimeMetric">
-      <div className="realTimeIconShadow">
-        <div className="realTimeIconCircle realTimePink">
+  <div className={styles.realTimeMetrics}>
+    <div className={styles.realTimeMetric}>
+      <div className={styles.realTimeIconShadow}>
+        <div className={`${styles.realTimeIconCircle} ${styles.realTimePink}`}>
           <Image
-            className="realTimeIcon"
+            className={styles.realTimeIcon}
             src="/icons/chart-02white.svg"
             width={36}
             height={36}
@@ -364,14 +364,14 @@ const ComplianceSecurity: NextPage = () => {
           />
         </div>
       </div>
-      <h3 className="realTimeMetricTitle">Course Completion Rates</h3>
+      <h3 className={styles.realTimeMetricTitle}>Course Completion Rates</h3>
     </div>
 
-    <div className="realTimeMetric">
-      <div className="realTimeIconShadow">
-        <div className="realTimeIconCircle realTimeBlue">
+    <div className={styles.realTimeMetric}>
+      <div className={styles.realTimeIconShadow}>
+        <div className={`${styles.realTimeIconCircle} ${styles.realTimeBlue}`}>
           <Image
-            className="realTimeIcon"
+            className={styles.realTimeIcon}
             src="/icons/certificate-01white.svg"
             width={36}
             height={36}
@@ -379,14 +379,14 @@ const ComplianceSecurity: NextPage = () => {
           />
         </div>
       </div>
-      <h3 className="realTimeMetricTitle">Certification Status</h3>
+      <h3 className={styles.realTimeMetricTitle}>Certification Status</h3>
     </div>
 
-    <div className="realTimeMetric">
-      <div className="realTimeIconShadow">
-        <div className="realTimeIconCircle realTimePurple">
+    <div className={styles.realTimeMetric}>
+      <div className={styles.realTimeIconShadow}>
+        <div className={`${styles.realTimeIconCircle} ${styles.realTimePurple}`}>
           <Image
-            className="realTimeIcon"
+            className={styles.realTimeIcon}
             src="/icons/chart-03simple.svg"
             width={36}
             height={36}
@@ -394,14 +394,14 @@ const ComplianceSecurity: NextPage = () => {
           />
         </div>
       </div>
-      <h3 className="realTimeMetricTitle">Assessment Performance</h3>
+      <h3 className={styles.realTimeMetricTitle}>Assessment Performance</h3>
     </div>
 
-    <div className="realTimeMetric">
-      <div className="realTimeIconShadow">
-        <div className="realTimeIconCircle realTimeGreen">
+    <div className={styles.realTimeMetric}>
+      <div className={styles.realTimeIconShadow}>
+        <div className={`${styles.realTimeIconCircle} ${styles.realTimeGreen}`}>
           <Image
-            className="realTimeIcon"
+            className={styles.realTimeIcon}
             src="/icons/user-group-02.svg"
             width={36}
             height={36}
@@ -409,14 +409,14 @@ const ComplianceSecurity: NextPage = () => {
           />
         </div>
       </div>
-      <h3 className="realTimeMetricTitle">Training Participation</h3>
+      <h3 className={styles.realTimeMetricTitle}>Training Participation</h3>
     </div>
 
-    <div className="realTimeMetric">
-      <div className="realTimeIconShadow">
-        <div className="realTimeIconCircle realTimeOrange">
+    <div className={styles.realTimeMetric}>
+      <div className={styles.realTimeIconShadow}>
+        <div className={`${styles.realTimeIconCircle} ${styles.realTimeOrange}`}>
           <Image
-            className="realTimeIcon"
+            className={styles.realTimeIcon}
             src="/icons/building-white.svg"
             width={36}
             height={36}
@@ -424,31 +424,31 @@ const ComplianceSecurity: NextPage = () => {
           />
         </div>
       </div>
-      <h3 className="realTimeMetricTitle">Department Compliance Metrics</h3>
+      <h3 className={styles.realTimeMetricTitle}>Department Compliance Metrics</h3>
     </div>
   </div>
 </div>
 </div>
 
 
-<section className="complianceSecurityInner2" aria-labelledby="training-records-heading">
-  <div className="trainingRecordsOuter">
-    <div className="trainingRecordsInner">
-      <div className="trainingRecordsContent">
-        <div className="trainingRecordsBadge">Certification and Audit Readiness</div>
+<section className={styles.complianceSecurityInner2} aria-labelledby="training-records-heading">
+  <div className={styles.trainingRecordsOuter}>
+    <div className={styles.trainingRecordsInner}>
+      <div className={styles.trainingRecordsContent}>
+        <div className={styles.trainingRecordsBadge}>Certification and Audit Readiness</div>
 
-        <h2 id="training-records-heading" className="maintainVerifiableTraining">
+        <h2 id="training-records-heading" className={styles.maintainVerifiableTraining}>
           Maintain Verifiable<br />Training Records
         </h2>
 
-        <p className="issueDigitalCertificates">
+        <p className={styles.issueDigitalCertificates}>
           Issue digital certificates and maintain audit-ready training records.
         </p>
       </div>
 
-      <div className="trainingRecordsImageWrap">
+      <div className={styles.trainingRecordsImageWrap}>
         <Image
-          className="rectangleIcon"
+          className={styles.rectangleIcon}
           src="/images/Rectangle 80.webp"
           width={608}
           height={564}
@@ -461,43 +461,43 @@ const ComplianceSecurity: NextPage = () => {
 </section>
 
 
-                                        																				<div className="finalSectionsFlow">
-<section className="frameParent68 learningSecuritySection" aria-labelledby="learning-security-heading">
-  <header className="learningSecurityHeader">
-    <div className="learningSecurityBadge">Learning Security</div>
+                                        																				<div className={styles.finalSectionsFlow}>
+<section className={`${styles.frameParent68} ${styles.learningSecuritySection}`} aria-labelledby="learning-security-heading">
+  <header className={styles.learningSecurityHeader}>
+    <div className={styles.learningSecurityBadge}>Learning Security</div>
 
-    <h2 id="learning-security-heading" className="learningSecurityTitle">
+    <h2 id="learning-security-heading" className={styles.learningSecurityTitle}>
       <span>Protect Data! Control Access! </span>
-      <span className="stayReady">Build Trust!</span>
+      <span className={styles.stayReady}>Build Trust!</span>
     </h2>
 
-    <p className="learningSecurityIntro">
+    <p className={styles.learningSecurityIntro}>
       NeuroLXP protects learner data, digital content, and platform access.
     </p>
   </header>
 
-  <div className="securityTimeline">
-    <div className="securityTimelineRail" aria-hidden="true" />
+  <div className={styles.securityTimeline}>
+    <div className={styles.securityTimelineRail} aria-hidden="true" />
 
-    <article className="securityFeature securityPink">
-      <div className="securityTimelineIcon">
+    <article className={`${styles.securityFeature} ${styles.securityPink}`}>
+      <div className={styles.securityTimelineIcon}>
         <Image src="/icons/shield-01pink.svg" width={34} height={34} alt="" />
       </div>
 
-      <div className="securityFeatureCard">
-        <h3 className="securityFeatureTitle">Advanced Data Protection</h3>
-        <p className="securityFeatureText">
+      <div className={styles.securityFeatureCard}>
+        <h3 className={styles.securityFeatureTitle}>Advanced Data Protection</h3>
+        <p className={styles.securityFeatureText}>
           Protect sensitive learning data through secure storage and communication.
         </p>
 
-        <div className="securityFeatureList">
+        <div className={styles.securityFeatureList}>
           {[
             "Encrypted data storage and secure communication",
             "Protection of learner profiles and course data",
             "Secure management of assessment and training records",
           ].map((item) => (
-            <div className="securityFeatureItem" key={item}>
-              <span className="securityCheck">
+            <div className={styles.securityFeatureItem} key={item}>
+              <span className={styles.securityCheck}>
                 <Image src="/icons/checkmark-badge-01-3.svg" width={22} height={22} alt="" />
               </span>
               <span>{item}</span>
@@ -507,26 +507,26 @@ const ComplianceSecurity: NextPage = () => {
       </div>
     </article>
 
-    <article className="securityFeature securityBlue">
-      <div className="securityTimelineIcon">
+    <article className={`${styles.securityFeature} ${styles.securityBlue}`}>
+      <div className={styles.securityTimelineIcon}>
         <Image src="/icons/user-group-02 copyblue.svg" width={34} height={34} alt="" />
       </div>
 
-      <div className="securityFeatureCard">
-        <h3 className="securityFeatureTitle">Role-Based Access Control</h3>
-        <p className="securityFeatureText">
+      <div className={styles.securityFeatureCard}>
+        <h3 className={styles.securityFeatureTitle}>Role-Based Access Control</h3>
+        <p className={styles.securityFeatureText}>
           Manage access based on user roles and responsibilities.
         </p>
-        <p className="securityRoles">Admin · Instructor · Learner · Manager</p>
+        <p className={styles.securityRoles}>Admin · Instructor · Learner · Manager</p>
 
-        <div className="securityFeatureList">
+        <div className={styles.securityFeatureList}>
           {[
             "Manage access by user roles",
             "Control viewing, editing & management permissions",
             "Maintain structured access hierarchies",
           ].map((item) => (
-            <div className="securityFeatureItem" key={item}>
-              <span className="securityCheck">
+            <div className={styles.securityFeatureItem} key={item}>
+              <span className={styles.securityCheck}>
                 <Image src="/icons/checkmark-badge-01-1blue.svg" width={22} height={22} alt="" />
               </span>
               <span>{item}</span>
@@ -536,25 +536,25 @@ const ComplianceSecurity: NextPage = () => {
       </div>
     </article>
 
-    <article className="securityFeature securityPurple">
-      <div className="securityTimelineIcon">
+    <article className={`${styles.securityFeature} ${styles.securityPurple}`}>
+      <div className={styles.securityTimelineIcon}>
         <Image src="/icons/lock-keyhole.svg" width={34} height={34} alt="" />
       </div>
 
-      <div className="securityFeatureCard">
-        <h3 className="securityFeatureTitle">Secure Authentication</h3>
-        <p className="securityFeatureText">
+      <div className={styles.securityFeatureCard}>
+        <h3 className={styles.securityFeatureTitle}>Secure Authentication</h3>
+        <p className={styles.securityFeatureText}>
           Protect user accounts and learning environments with secure authentication and controlled access.
         </p>
 
-        <div className="securityFeatureList">
+        <div className={styles.securityFeatureList}>
           {[
             "Secure user login",
             "Controlled platform access",
             "Protection against unauthorized access",
           ].map((item) => (
-            <div className="securityFeatureItem" key={item}>
-              <span className="securityCheck">
+            <div className={styles.securityFeatureItem} key={item}>
+              <span className={styles.securityCheck}>
                 <Image src="/icons/checkmark-badge-01.svg" width={22} height={22} alt="" />
               </span>
               <span>{item}</span>
@@ -564,25 +564,25 @@ const ComplianceSecurity: NextPage = () => {
       </div>
     </article>
 
-    <article className="securityFeature securityOrange">
-      <div className="securityTimelineIcon">
+    <article className={`${styles.securityFeature} ${styles.securityOrange}`}>
+      <div className={styles.securityTimelineIcon}>
         <Image src="/icons/book-lock.svg" width={34} height={34} alt="" />
       </div>
 
-      <div className="securityFeatureCard">
-        <h3 className="securityFeatureTitle">Content Protection</h3>
-        <p className="securityFeatureText">
+      <div className={styles.securityFeatureCard}>
+        <h3 className={styles.securityFeatureTitle}>Content Protection</h3>
+        <p className={styles.securityFeatureText}>
           Safeguard digital learning resources from unauthorized access and misuse.
         </p>
 
-        <div className="securityFeatureList">
+        <div className={styles.securityFeatureList}>
           {[
             "Protect courses and learning materials",
             "Secure videos and documents",
             "Control content access and distribution",
           ].map((item) => (
-            <div className="securityFeatureItem" key={item}>
-              <span className="securityCheck">
+            <div className={styles.securityFeatureItem} key={item}>
+              <span className={styles.securityCheck}>
                 <Image src="/icons/checkmark-badge-01-2.svg" width={22} height={22} alt="" />
               </span>
               <span>{item}</span>
@@ -592,25 +592,25 @@ const ComplianceSecurity: NextPage = () => {
       </div>
     </article>
 
-    <article className="securityFeature securityGreen">
-      <div className="securityTimelineIcon">
+    <article className={`${styles.securityFeature} ${styles.securityGreen}`}>
+      <div className={styles.securityTimelineIcon}>
         <Image src="/icons/shield-checkgreen.svg" width={34} height={34} alt="" />
       </div>
 
-      <div className="securityFeatureCard">
-        <h3 className="securityFeatureTitle">Privacy and Compliance</h3>
-        <p className="securityFeatureText">
+      <div className={styles.securityFeatureCard}>
+        <h3 className={styles.securityFeatureTitle}>Privacy and Compliance</h3>
+        <p className={styles.securityFeatureText}>
           Support responsible data handling and privacy practices aligned with applicable requirements.
         </p>
 
-        <div className="securityFeatureList">
+        <div className={styles.securityFeatureList}>
           {[
             "Protect learner data",
             "Support privacy requirements",
             "Promote responsible data handling",
           ].map((item) => (
-            <div className="securityFeatureItem" key={item}>
-              <span className="securityCheck">
+            <div className={styles.securityFeatureItem} key={item}>
+              <span className={styles.securityCheck}>
                 <Image src="/icons/greenmarkicon.svg" width={22} height={22} alt="" />
               </span>
               <span>{item}</span>
@@ -622,17 +622,17 @@ const ComplianceSecurity: NextPage = () => {
   </div>
 </section>
 
-<section className="frameParent99 diverseOrganizationsSection" aria-labelledby="diverse-organizations-heading">
-  <header className="diverseOrganizationsHeader">
-    <h2 id="diverse-organizations-heading" className="diverseOrganizationsTitle">
+<section className={`${styles.frameParent99} ${styles.diverseOrganizationsSection}`} aria-labelledby="diverse-organizations-heading">
+  <header className={styles.diverseOrganizationsHeader}>
+    <h2 id="diverse-organizations-heading" className={styles.diverseOrganizationsTitle}>
       Built for Diverse Organizations
     </h2>
-    <p className="diverseOrganizationsText">
+    <p className={styles.diverseOrganizationsText}>
       NeuroLXP enables secure and compliant learning across a wide range of sectors and institutions.
     </p>
   </header>
 
-  <div className="diverseOrganizationsGrid">
+  <div className={styles.diverseOrganizationsGrid}>
     {[
       { title: "Universities", icon: "student.svg", tone: "pink" },
       { title: "Corporate Training", icon: "building-white.svg", tone: "orange" },
@@ -643,11 +643,11 @@ const ComplianceSecurity: NextPage = () => {
       { title: "Manufacturing", icon: "factory.svg", tone: "navy" },
       { title: "Schools", icon: "school.svg", tone: "purple" },
     ].map((item) => (
-      <article className="diverseOrganizationCard" key={item.title}>
-        <div className="diverseOrganizationIconOuter">
-          <div className={`diverseOrganizationIconInner diverseOrganizationIconInner--${item.tone}`}>
+      <article className={styles.diverseOrganizationCard} key={item.title}>
+        <div className={styles.diverseOrganizationIconOuter}>
+          <div className={`${styles.diverseOrganizationIconInner} ${styles[`diverseOrganizationIconInner--${item.tone}`]}`}>
             <Image
-              className="diverseOrganizationIcon"
+              className={styles.diverseOrganizationIcon}
               src={`/icons/${item.icon}`}
               width={36}
               height={36}
@@ -655,21 +655,21 @@ const ComplianceSecurity: NextPage = () => {
             />
           </div>
         </div>
-        <h3 className="diverseOrganizationCardTitle">{item.title}</h3>
+        <h3 className={styles.diverseOrganizationCardTitle}>{item.title}</h3>
       </article>
     ))}
   </div>
 </section>
 
-<section className="complianceSecurityInner3 neurolxpClosingSection" aria-labelledby="neurolxp-closing-heading">
-  <div className="neurolxpClosingBadge">NeuroLXP</div>
+<section className={`${styles.complianceSecurityInner3} ${styles.neurolxpClosingSection}`} aria-labelledby="neurolxp-closing-heading">
+  <div className={styles.neurolxpClosingBadge}>NeuroLXP</div>
 
-  <h2 id="neurolxp-closing-heading" className="neurolxpClosingTitle">
+  <h2 id="neurolxp-closing-heading" className={styles.neurolxpClosingTitle}>
     <span>Secure Learning! </span>
-    <span className="stayReady">Smarter Compliance!</span>
+    <span className={styles.stayReady}>Smarter Compliance!</span>
   </h2>
 
-  <p className="neurolxpClosingText">
+  <p className={styles.neurolxpClosingText}>
     NeuroLXP helps organizations protect learning data, simplify compliance
     and deliver trusted digital learning at scale.
   </p>

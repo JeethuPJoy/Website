@@ -3,7 +3,7 @@
 import type { NextPage } from 'next';
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import './corporate.css';
+import styles from "./corporate.module.css";
 
 
 const challengeCards = [
@@ -136,48 +136,48 @@ const CorporateTraining: NextPage = () => {
 	const salesValue = Math.round(85 * trainingLoadProgress);
 
 	return (
-		<div className="corporateTraining">
-			<div className="rectangleParent">
-				<div className="rectangle" />
-				<div className="image20" />
-				<div className="groupMultiethnicBusinessPeo" />
+		<div className={styles.corporateTraining}>
+			<div className={styles.rectangleParent}>
+				<div className={styles.rectangle} />
+				<div className={styles.image20} />
+				<div className={styles.groupMultiethnicBusinessPeo} />
 			</div>
-			<nav className="frameDiv corporateBreadcrumb" aria-label="Breadcrumb">
-				<div className="ourCustomersWrapper">
-					<span className="solutionsFor">Our Customers</span>
+			<nav className={`${styles.frameDiv} ${styles.corporateBreadcrumb}`} aria-label="Breadcrumb">
+				<div className={styles.ourCustomersWrapper}>
+					<span className={styles.solutionsFor}>Our Customers</span>
 				</div>
 
 				<Image
 					src="/icons/arrow-right-double.svg"
-					className="corporateBreadcrumbArrow"
+					className={styles.corporateBreadcrumbArrow}
 					width={16}
 					height={16}
 					alt=""
 					aria-hidden="true"
 				/>
 
-				<div className="ourCustomersWrapper">
-					<span className="solutionsFor">Solutions For</span>
+				<div className={styles.ourCustomersWrapper}>
+					<span className={styles.solutionsFor}>Solutions For</span>
 				</div>
 
 				<Image
 					src="/icons/arrow-right-double.svg"
-					className="corporateBreadcrumbArrow"
+					className={styles.corporateBreadcrumbArrow}
 					width={16}
 					height={16}
 					alt=""
 					aria-hidden="true"
 				/>
 
-				<div className="arrowRightDoubleGroup">
-					<span className="solutionsFor corporateBreadcrumbCurrent">
+				<div className={styles.arrowRightDoubleGroup}>
+					<span className={`${styles.solutionsFor} ${styles.corporateBreadcrumbCurrent}`}>
 						Corporate Training
 					</span>
 				</div>
 			</nav>
-			<div className="businesspeopleDiscussingDigiParent">
+			<div className={styles.businesspeopleDiscussingDigiParent}>
 				<Image
-					className="businesspeopleDiscussingDigiIcon"
+					className={styles.businesspeopleDiscussingDigiIcon}
 					src="/images/businesspeople-discussing-digital-tablet 1.webp"
 					width={1184}
 					height={615}
@@ -185,140 +185,140 @@ const CorporateTraining: NextPage = () => {
 					alt="Corporate training team"
 					priority
 				/>
-				<div className="frameParent2">
-					<div className="frameWrapper">
-						<div className="frameParent3">
-							<div className="frameParent4">
-								<div className="frameItem">Corporate Training Solutions</div>
-								<h2 className="empoweringWorkforce">Empowering Workforce</h2>
+				<div className={styles.frameParent2}>
+					<div className={styles.frameWrapper}>
+						<div className={styles.frameParent3}>
+							<div className={styles.frameParent4}>
+								<div className={styles.frameItem}>Corporate Training Solutions</div>
+								<h2 className={styles.empoweringWorkforce}>Empowering Workforce</h2>
 							</div>
-							<div className="buildFutureReadyWorkforces">Build future-ready workforces with scalable digital learning.</div>
+							<div className={styles.buildFutureReadyWorkforces}>Build future-ready workforces with scalable digital learning.</div>
 						</div>
 					</div>
-					<div className="frameParent5">
-						<button type="button" className="frameInner requestDemoButton">
+					<div className={styles.frameParent5}>
+						<button type="button" className={`${styles.frameInner} ${styles.requestDemoButton}`}>
 							Request Demo
 						</button>
-						<div className="frameWrapper2">
-							<div className="startLearningWrapper">
-								<div className="startLearning">Start Learning</div>
+						<div className={styles.frameWrapper2}>
+							<div className={styles.startLearningWrapper}>
+								<div className={styles.startLearning}>Start Learning</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="rectangle2" />
-			<div className="image202" />
-			<div className="frameParent6">
-				<div className="frameParent7">
-					<div className="ellipseParent">
-						<div className="ellipseDiv" />
-						<div className="ellipseGroup">
-							<div className="frameChild2" />
-							<div className="frameParent8">
-								<div className="frameParent9">
-									<div className="frameIcon iconBadge iconBadgeBlue"><Image src="/icons/building-03.svg" width={25} height={25} alt="Enterprise Clients" /></div>
-									<h2 className="b">500+</h2>
+			<div className={styles.rectangle2} />
+			<div className={styles.image202} />
+			<div className={styles.frameParent6}>
+				<div className={styles.frameParent7}>
+					<div className={styles.ellipseParent}>
+						<div className={styles.ellipseDiv} />
+						<div className={styles.ellipseGroup}>
+							<div className={styles.frameChild2} />
+							<div className={styles.frameParent8}>
+								<div className={styles.frameParent9}>
+									<div className={`${styles.frameIcon} ${styles.iconBadge} ${styles.iconBadgeBlue}`}><Image src="/icons/building-03.svg" width={25} height={25} alt="Enterprise Clients" /></div>
+									<h2 className={styles.b}>500+</h2>
 								</div>
-								<div className="enterpriseClients">Enterprise Clients</div>
+								<div className={styles.enterpriseClients}>Enterprise Clients</div>
 							</div>
-							<Image className="ellipseIcon" src="/icons/Ellipse 377-3.svg" width={82} height={15} sizes="100vw" alt="" />
+							<Image className={styles.ellipseIcon} src="/icons/Ellipse 377-3.svg" width={82} height={15} sizes="100vw" alt="" />
 						</div>
 					</div>
-					<div className="ellipseContainer">
-						<div className="ellipseDiv" />
-						<div className="ellipseGroup">
-							<div className="frameChild2" />
-							<Image className="ellipseIcon" src="/icons/Ellipse 377-2.svg" width={82} height={15} sizes="100vw" alt="" />
-							<div className="frameParent8">
-								<div className="frameParent9">
-									<div className="frameIcon iconBadge iconBadgePink"><Image src="/icons/user-group-02.svg" width={25} height={25} alt="Learners Trained" /></div>
-									<h2 className="b">2M+</h2>
+					<div className={styles.ellipseContainer}>
+						<div className={styles.ellipseDiv} />
+						<div className={styles.ellipseGroup}>
+							<div className={styles.frameChild2} />
+							<Image className={styles.ellipseIcon} src="/icons/Ellipse 377-2.svg" width={82} height={15} sizes="100vw" alt="" />
+							<div className={styles.frameParent8}>
+								<div className={styles.frameParent9}>
+									<div className={`${styles.frameIcon} ${styles.iconBadge} ${styles.iconBadgePink}`}><Image src="/icons/user-group-02.svg" width={25} height={25} alt="Learners Trained" /></div>
+									<h2 className={styles.b}>2M+</h2>
 								</div>
-								<div className="learnersTrained">Learners Trained<br /></div>
-							</div>
-						</div>
-					</div>
-					<div className="ellipseParent3">
-						<div className="ellipseDiv" />
-						<div className="ellipseGroup">
-							<div className="frameChild2" />
-							<Image className="ellipseIcon" src="/icons/Ellipse 377.svg" width={82} height={15} sizes="100vw" alt="" />
-							<div className="frameParent8">
-								<div className="frameParent9">
-									<div className="frameIcon iconBadge iconBadgePurple"><Image src="/icons/star-white.svg" width={25} height={25} alt="Satisfaction Rate" /></div>
-									<h2 className="b">98%</h2>
-								</div>
-								<div className="learnersTrained">Satisfaction Rate<br /></div>
+								<div className={styles.learnersTrained}>Learners Trained<br /></div>
 							</div>
 						</div>
 					</div>
-					<div className="ellipseParent5">
-						<div className="ellipseDiv" />
-						<div className="ellipseGroup">
-							<div className="frameChild2" />
-							<Image className="ellipseIcon" src="/icons/Ellipse 377-1.svg" width={82} height={15} sizes="100vw" alt="" />
-							<div className="frameParent8">
-								<div className="frameParent9">
-									<div className="frameIcon iconBadge iconBadgeOrange"><Image src="/icons/arrow-up-narrow-wide.svg" width={25} height={25} alt="Productivity Boost" /></div>
-									<h2 className="b">40%</h2>
+					<div className={styles.ellipseParent3}>
+						<div className={styles.ellipseDiv} />
+						<div className={styles.ellipseGroup}>
+							<div className={styles.frameChild2} />
+							<Image className={styles.ellipseIcon} src="/icons/Ellipse 377.svg" width={82} height={15} sizes="100vw" alt="" />
+							<div className={styles.frameParent8}>
+								<div className={styles.frameParent9}>
+									<div className={`${styles.frameIcon} ${styles.iconBadge} ${styles.iconBadgePurple}`}><Image src="/icons/star-white.svg" width={25} height={25} alt="Satisfaction Rate" /></div>
+									<h2 className={styles.b}>98%</h2>
 								</div>
-								<div className="productivityBoost">Productivity Boost<br /></div>
+								<div className={styles.learnersTrained}>Satisfaction Rate<br /></div>
+							</div>
+						</div>
+					</div>
+					<div className={styles.ellipseParent5}>
+						<div className={styles.ellipseDiv} />
+						<div className={styles.ellipseGroup}>
+							<div className={styles.frameChild2} />
+							<Image className={styles.ellipseIcon} src="/icons/Ellipse 377-1.svg" width={82} height={15} sizes="100vw" alt="" />
+							<div className={styles.frameParent8}>
+								<div className={styles.frameParent9}>
+									<div className={`${styles.frameIcon} ${styles.iconBadge} ${styles.iconBadgeOrange}`}><Image src="/icons/arrow-up-narrow-wide.svg" width={25} height={25} alt="Productivity Boost" /></div>
+									<h2 className={styles.b}>40%</h2>
+								</div>
+								<div className={styles.productivityBoost}>Productivity Boost<br /></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="frameParent16">
-					<div className="frameParent17">
-						<div className="frameChild15">Key Challenges</div>
-						<div className="keyChallengesInCorporateTrParent">
-							<h2 className="keyChallengesInContainer">
-								<span className="keyChallengesIn">{`Key Challenges in `}</span>
-								<span className="everyNeed">Corporate Training</span>
+				<div className={styles.frameParent16}>
+					<div className={styles.frameParent17}>
+						<div className={styles.frameChild15}>Key Challenges</div>
+						<div className={styles.keyChallengesInCorporateTrParent}>
+							<h2 className={styles.keyChallengesInContainer}>
+								<span className={styles.keyChallengesIn}>{`Key Challenges in `}</span>
+								<span className={styles.everyNeed}>Corporate Training</span>
 							</h2>
-							<div className="neurolxpHelpsOrganizations">NeuroLXP helps organizations overcome the most pressing corporate training barriers with intelligent, scalable learning solutions.<br /><br /></div>
+							<div className={styles.neurolxpHelpsOrganizations}>NeuroLXP helps organizations overcome the most pressing corporate training barriers with intelligent, scalable learning solutions.<br /><br /></div>
 						</div>
 					</div>
-					<div className="frameParent18 corporateChallengeCards">
-						<div className="frameParent19 corporateChallengeRow corporateChallengeRowTop">
+					<div className={`${styles.frameParent18} ${styles.corporateChallengeCards}`}>
+						<div className={`${styles.frameParent19} ${styles.corporateChallengeRow} ${styles.corporateChallengeRowTop}`}>
 							{challengeCards.slice(0, 3).map((card) => {
 								const isOpen = openChallengeCard === card.id;
 
 								return (
 									<article
 										key={card.id}
-										className={`frameWrapper3 corporateChallengeCard corporateChallengeCard--${card.color} ${isOpen ? "isOpen" : ""
+										className={`${styles.frameWrapper3} ${styles.corporateChallengeCard} ${styles[`corporateChallengeCard--${card.color}`]} ${isOpen ? styles.isOpen : ""
 											}`}
 									>
-										<div className="frameWrapper4 corporateChallengeCardSurface">
-											<div className="corporateChallengeHeader">
-												<div className={`challengeIcon challengeIcon--${card.color}`}>
+										<div className={`${styles.frameWrapper4} ${styles.corporateChallengeCardSurface}`}>
+											<div className={styles.corporateChallengeHeader}>
+												<div className={`${styles.challengeIcon} ${styles[`challengeIcon--${card.color}`]}`}>
 													<Image src={card.icon} width={30} height={30} alt="" aria-hidden="true" />
 												</div>
-												<h3 className="rapidSkillChanges">{card.title}</h3>
+												<h3 className={styles.rapidSkillChanges}>{card.title}</h3>
 											</div>
 
-											<p className="continuousWorkforceUpskillin">{card.description}</p>
+											<p className={styles.continuousWorkforceUpskillin}>{card.description}</p>
 
 											<button
 												type="button"
-												className="howNeurolxpHelpsParent corporateChallengeToggle"
+												className={`${styles.howNeurolxpHelpsParent} ${styles.corporateChallengeToggle}`}
 												onClick={() => toggleChallengeCard(card.id)}
 												aria-expanded={isOpen}
 												aria-controls={`challenge-dropdown-${card.id}`}
 											>
-												<span className="howNeurolxpHelps">How NeuroLXP Helps</span>
-												<span className="corporateChallengeChevron" aria-hidden="true">
-													<span className="corporateChevronLine corporateChevronLine1" />
-													<span className="corporateChevronLine corporateChevronLine2" />
-													<span className="corporateChevronLine corporateChevronLine3" />
-													<span className="corporateChevronLine corporateChevronLine4" />
+												<span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span>
+												<span className={styles.corporateChallengeChevron} aria-hidden="true">
+													<span className={`${styles.corporateChevronLine} ${styles.corporateChevronLine1}`} />
+													<span className={`${styles.corporateChevronLine} ${styles.corporateChevronLine2}`} />
+													<span className={`${styles.corporateChevronLine} ${styles.corporateChevronLine3}`} />
+													<span className={`${styles.corporateChevronLine} ${styles.corporateChevronLine4}`} />
 												</span>
 											</button>
 
 											<div
 												id={`challenge-dropdown-${card.id}`}
-												className="corporateChallengeDropdown"
+												className={styles.corporateChallengeDropdown}
 												aria-hidden={!isOpen}
 											>
 												<p>{card.dropdown}</p>
@@ -329,45 +329,45 @@ const CorporateTraining: NextPage = () => {
 							})}
 						</div>
 
-						<div className="frameParent29 corporateChallengeRow corporateChallengeRowBottom">
+						<div className={`${styles.frameParent29} ${styles.corporateChallengeRow} ${styles.corporateChallengeRowBottom}`}>
 							{challengeCards.slice(3).map((card) => {
 								const isOpen = openChallengeCard === card.id;
 
 								return (
 									<article
 										key={card.id}
-										className={`frameWrapper3 corporateChallengeCard corporateChallengeCard--${card.color} ${isOpen ? "isOpen" : ""
+										className={`${styles.frameWrapper3} ${styles.corporateChallengeCard} ${styles[`corporateChallengeCard--${card.color}`]} ${isOpen ? styles.isOpen : ""
 											}`}
 									>
-										<div className="frameWrapper4 corporateChallengeCardSurface">
-											<div className="corporateChallengeHeader">
-												<div className={`challengeIcon challengeIcon--${card.color}`}>
+										<div className={`${styles.frameWrapper4} ${styles.corporateChallengeCardSurface}`}>
+											<div className={styles.corporateChallengeHeader}>
+												<div className={`${styles.challengeIcon} ${styles[`challengeIcon--${card.color}`]}`}>
 													<Image src={card.icon} width={30} height={30} alt="" aria-hidden="true" />
 												</div>
-												<h3 className="rapidSkillChanges">{card.title}</h3>
+												<h3 className={styles.rapidSkillChanges}>{card.title}</h3>
 											</div>
 
-											<p className="continuousWorkforceUpskillin">{card.description}</p>
+											<p className={styles.continuousWorkforceUpskillin}>{card.description}</p>
 
 											<button
 												type="button"
-												className="howNeurolxpHelpsParent corporateChallengeToggle"
+												className={`${styles.howNeurolxpHelpsParent} ${styles.corporateChallengeToggle}`}
 												onClick={() => toggleChallengeCard(card.id)}
 												aria-expanded={isOpen}
 												aria-controls={`challenge-dropdown-${card.id}`}
 											>
-												<span className="howNeurolxpHelps">How NeuroLXP Helps</span>
-												<span className="corporateChallengeChevron" aria-hidden="true">
-													<span className="corporateChevronLine corporateChevronLine1" />
-													<span className="corporateChevronLine corporateChevronLine2" />
-													<span className="corporateChevronLine corporateChevronLine3" />
-													<span className="corporateChevronLine corporateChevronLine4" />
+												<span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span>
+												<span className={styles.corporateChallengeChevron} aria-hidden="true">
+													<span className={`${styles.corporateChevronLine} ${styles.corporateChevronLine1}`} />
+													<span className={`${styles.corporateChevronLine} ${styles.corporateChevronLine2}`} />
+													<span className={`${styles.corporateChevronLine} ${styles.corporateChevronLine3}`} />
+													<span className={`${styles.corporateChevronLine} ${styles.corporateChevronLine4}`} />
 												</span>
 											</button>
 
 											<div
 												id={`challenge-dropdown-${card.id}`}
-												className="corporateChallengeDropdown"
+												className={styles.corporateChallengeDropdown}
 												aria-hidden={!isOpen}
 											>
 												<p>{card.dropdown}</p>
@@ -378,24 +378,24 @@ const CorporateTraining: NextPage = () => {
 							})}
 						</div>
 					</div>
-					<div className="frameParent36">
-						<div className="frameParent37">
-							<div className="frameChild21">Corporate Training Use Cases</div>
-							<div className="keyChallengesInCorporateTrParent">
-								<h2 className="keyChallengesInContainer">
-									<span className="keyChallengesIn">Learning Programs</span>
-									<span className="for">{` for `}</span>
-									<span className="everyNeed">Every Need<br /></span>
+					<div className={styles.frameParent36}>
+						<div className={styles.frameParent37}>
+							<div className={styles.frameChild21}>Corporate Training Use Cases</div>
+							<div className={styles.keyChallengesInCorporateTrParent}>
+								<h2 className={styles.keyChallengesInContainer}>
+									<span className={styles.keyChallengesIn}>Learning Programs</span>
+									<span className={styles.for}>{` for `}</span>
+									<span className={styles.everyNeed}>Every Need<br /></span>
 								</h2>
-								<div className="organizationsCanUse">Organizations can use NeuroLXP to deliver a wide range of corporate learning programs, including:<br /><br /></div>
+								<div className={styles.organizationsCanUse}>Organizations can use NeuroLXP to deliver a wide range of corporate learning programs, including:<br /><br /></div>
 							</div>
 						</div>
-						<div className="frameParent38">
-							<div className="frameParent39">
-								<div className="frameParent40">
-									<div className="frameChild22 useCaseIcon useCaseIconPink">
+						<div className={styles.frameParent38}>
+							<div className={styles.frameParent39}>
+								<div className={styles.frameParent40}>
+									<div className={`${styles.frameChild22} ${styles.useCaseIcon} ${styles.useCaseIconPink}`}>
 										<svg
-											className="employeeOnboardingIcon"
+											className={styles.employeeOnboardingIcon}
 											width="53"
 											height="53"
 											viewBox="0 0 53 53"
@@ -412,43 +412,43 @@ const CorporateTraining: NextPage = () => {
 											/>
 										</svg>
 									</div>
-									<div className="employeeOnboardingParent">
-										<h2 className="employeeOnboarding">Employee Onboarding</h2>
-										<div className="accelerateNewHire">Accelerate new hire readiness with onboarding.</div>
+									<div className={styles.employeeOnboardingParent}>
+										<h2 className={styles.employeeOnboarding}>Employee Onboarding</h2>
+										<div className={styles.accelerateNewHire}>Accelerate new hire readiness with onboarding.</div>
 									</div>
 								</div>
-								<div className="frameParent40">
-									<div className="frameChild22 useCaseIcon useCaseIconBlue"><Image src="/icons/shield-check.svg" width={53} height={53} alt="Compliance Training" /></div>
-									<div className="complianceTrainingParent">
-										<h2 className="employeeOnboarding">Compliance Training</h2>
-										<div className="accelerateNewHire">Ensure compliance with mandatory learning.</div>
+								<div className={styles.frameParent40}>
+									<div className={`${styles.frameChild22} ${styles.useCaseIcon} ${styles.useCaseIconBlue}`}><Image src="/icons/shield-check.svg" width={53} height={53} alt="Compliance Training" /></div>
+									<div className={styles.complianceTrainingParent}>
+										<h2 className={styles.employeeOnboarding}>Compliance Training</h2>
+										<div className={styles.accelerateNewHire}>Ensure compliance with mandatory learning.</div>
 									</div>
 								</div>
-								<div className="frameParent40">
-									<div className="frameChild22 useCaseIcon useCaseIconTeal"><Image src="/icons/brain-11.svg" width={53} height={53} alt="Product and Sales Training" /></div>
-									<div className="complianceTrainingParent">
-										<h2 className="employeeOnboarding">Product & Sales Training</h2>
-										<div className="accelerateNewHire">Equip teams with product and sales skills.</div>
+								<div className={styles.frameParent40}>
+									<div className={`${styles.frameChild22} ${styles.useCaseIcon} ${styles.useCaseIconTeal}`}><Image src="/icons/brain-11.svg" width={53} height={53} alt="Product and Sales Training" /></div>
+									<div className={styles.complianceTrainingParent}>
+										<h2 className={styles.employeeOnboarding}>Product & Sales Training</h2>
+										<div className={styles.accelerateNewHire}>Equip teams with product and sales skills.</div>
 									</div>
 								</div>
 							</div>
-							<div className="frameParent43">
-								<div className="frameParent44">
-									<div className="frameChild22 useCaseIcon useCaseIconGreen"><Image src="/icons/user-ai.svg" width={53} height={53} alt="Leadership Development" /></div>
-									<div className="leadershipDevelopmentParent">
-										<h2 className="employeeOnboarding">Leadership Development</h2>
-										<div className="accelerateNewHire">Develop confident leaders through training.</div>
+							<div className={styles.frameParent43}>
+								<div className={styles.frameParent44}>
+									<div className={`${styles.frameChild22} ${styles.useCaseIcon} ${styles.useCaseIconGreen}`}><Image src="/icons/user-ai.svg" width={53} height={53} alt="Leadership Development" /></div>
+									<div className={styles.leadershipDevelopmentParent}>
+										<h2 className={styles.employeeOnboarding}>Leadership Development</h2>
+										<div className={styles.accelerateNewHire}>Develop confident leaders through training.</div>
 									</div>
 								</div>
-								<div className="frameParent45">
-									<div className="frameChild22 useCaseIcon useCaseIconPurple"><Image src="/icons/code.svg" width={53} height={53} alt="Technical Skill Development" /></div>
-									<div className="technicalSkillDevelopmentParent">
-										<h2 className="employeeOnboarding">Technical Skill Development</h2>
-										<div className="accelerateNewHire">Upskill teams with role-specific technical training.</div>
+								<div className={styles.frameParent45}>
+									<div className={`${styles.frameChild22} ${styles.useCaseIcon} ${styles.useCaseIconPurple}`}><Image src="/icons/code.svg" width={53} height={53} alt="Technical Skill Development" /></div>
+									<div className={styles.technicalSkillDevelopmentParent}>
+										<h2 className={styles.employeeOnboarding}>Technical Skill Development</h2>
+										<div className={styles.accelerateNewHire}>Upskill teams with role-specific technical training.</div>
 									</div>
 								</div>
-								<div className="frameParent40">
-									<div className="frameChild22 useCaseIcon useCaseIconOrange">
+								<div className={styles.frameParent40}>
+									<div className={`${styles.frameChild22} ${styles.useCaseIcon} ${styles.useCaseIconOrange}`}>
 										<Image
 											src="/icons/chatting-01 copy.svg"
 											width={53}
@@ -456,9 +456,9 @@ const CorporateTraining: NextPage = () => {
 											alt="Customer Service Excellence"
 										/>
 									</div>
-									<div className="customerServiceExcellenceParent">
-										<h2 className="employeeOnboarding">Customer Service Excellence</h2>
-										<div className="accelerateNewHire">Improve customer service through training.</div>
+									<div className={styles.customerServiceExcellenceParent}>
+										<h2 className={styles.employeeOnboarding}>Customer Service Excellence</h2>
+										<div className={styles.accelerateNewHire}>Improve customer service through training.</div>
 									</div>
 								</div>
 							</div>
@@ -466,109 +466,109 @@ const CorporateTraining: NextPage = () => {
 					</div>
 					<div
 						ref={trainingSectionRef}
-						className={`frameParent46 trainingLoadSection ${trainingLoadProgress > 0 ? "isLoadingActive" : ""
+						className={`${styles.frameParent46} ${styles.trainingLoadSection} ${trainingLoadProgress > 0 ? styles.isLoadingActive : ""
 							}`}
 					>
-						<div className="wrapper">
-							<div className="frameParent47">
-								<div className="frameChild28">Benefits of Corporate Training With NeuroLXP</div>
-								<div className="whyOrganizationsChooseNeuroParent">
-									<h2 className="keyChallengesInContainer">
-										<span className="keyChallengesIn">Why Organizations Choose</span>
-										<span className="everyNeed"> NeuroLXP<br /></span>
+						<div className={styles.wrapper}>
+							<div className={styles.frameParent47}>
+								<div className={styles.frameChild28}>Benefits of Corporate Training With NeuroLXP</div>
+								<div className={styles.whyOrganizationsChooseNeuroParent}>
+									<h2 className={styles.keyChallengesInContainer}>
+										<span className={styles.keyChallengesIn}>Why Organizations Choose</span>
+										<span className={styles.everyNeed}> NeuroLXP<br /></span>
 									</h2>
-									<div className="neurolxpHelpsOrganizations">Organizations can use NeuroLXP to deliver a wide range of corporate learning programs.<br /><br /></div>
+									<div className={styles.neurolxpHelpsOrganizations}>Organizations can use NeuroLXP to deliver a wide range of corporate learning programs.<br /><br /></div>
 								</div>
 							</div>
 						</div>
-						<div className="frameParent48">
-							<div className="frameParent49">
-								<div className="rectangleGroup">
-									<div className="rectangleDiv" />
-									<div className="frameParent50">
-										<div className="wrapper">
-											<h2 className="b4">{completionValue}%</h2>
+						<div className={styles.frameParent48}>
+							<div className={styles.frameParent49}>
+								<div className={styles.rectangleGroup}>
+									<div className={styles.rectangleDiv} />
+									<div className={styles.frameParent50}>
+										<div className={styles.wrapper}>
+											<h2 className={styles.b4}>{completionValue}%</h2>
 										</div>
-										<div className="completionWrapper">
-											<div className="completion">{`Completion `}</div>
-										</div>
-									</div>
-								</div>
-								<div className="rectangleContainer">
-									<div className="rectangleDiv" />
-									<div className="frameParent51">
-										<div className="wrapper">
-											<h2 className="b5">{scoreValue}/5</h2>
-										</div>
-										<div className="completionWrapper">
-											<div className="averageScore">Average Score</div>
+										<div className={styles.completionWrapper}>
+											<div className={styles.completion}>{`Completion `}</div>
 										</div>
 									</div>
 								</div>
-								<div className="rectangleParent2">
-									<div className="rectangleDiv" />
-									<div className="frameParent52">
-										<div className="hWrapper">
-											<h2 className="h">{timeValue}h</h2>
+								<div className={styles.rectangleContainer}>
+									<div className={styles.rectangleDiv} />
+									<div className={styles.frameParent51}>
+										<div className={styles.wrapper}>
+											<h2 className={styles.b5}>{scoreValue}/5</h2>
 										</div>
-										<div className="completionWrapper">
-											<div className="averageTime">Average Time</div>
+										<div className={styles.completionWrapper}>
+											<div className={styles.averageScore}>Average Score</div>
+										</div>
+									</div>
+								</div>
+								<div className={styles.rectangleParent2}>
+									<div className={styles.rectangleDiv} />
+									<div className={styles.frameParent52}>
+										<div className={styles.hWrapper}>
+											<h2 className={styles.h}>{timeValue}h</h2>
+										</div>
+										<div className={styles.completionWrapper}>
+											<div className={styles.averageTime}>Average Time</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div className="frameWrapper19">
-								<div className="topTrainingProgramsParent">
-									<h2 className="topTrainingPrograms">Top Training Programs</h2>
-									<div className="frameParent53">
-										<div className="leadershipDevParent">
-											<div className="leadershipDev">Leadership Dev</div>
-											<div className="rectangleParent3">
-												<div className="rectangle3" />
-												<div className="image203" />
-												<div className="frameChild31 trainingProgressFill trainingProgress94" />
+							<div className={styles.frameWrapper19}>
+								<div className={styles.topTrainingProgramsParent}>
+									<h2 className={styles.topTrainingPrograms}>Top Training Programs</h2>
+									<div className={styles.frameParent53}>
+										<div className={styles.leadershipDevParent}>
+											<div className={styles.leadershipDev}>Leadership Dev</div>
+											<div className={styles.rectangleParent3}>
+												<div className={styles.rectangle3} />
+												<div className={styles.image203} />
+												<div className={`${styles.frameChild31} ${styles.trainingProgressFill} ${styles.trainingProgress94}`} />
 											</div>
-											<h2 className="b6">{leadershipValue}%</h2>
+											<h2 className={styles.b6}>{leadershipValue}%</h2>
 										</div>
-										<div className="leadershipDevParent">
-											<div className="leadershipDev">Compliance</div>
-											<div className="rectangleParent3">
-												<div className="rectangle3" />
-												<div className="image203" />
-												<div className="frameChild32 trainingProgressFill trainingProgress98" />
+										<div className={styles.leadershipDevParent}>
+											<div className={styles.leadershipDev}>Compliance</div>
+											<div className={styles.rectangleParent3}>
+												<div className={styles.rectangle3} />
+												<div className={styles.image203} />
+												<div className={`${styles.frameChild32} ${styles.trainingProgressFill} ${styles.trainingProgress98}`} />
 											</div>
-											<h2 className="b6">{complianceValue}%</h2>
+											<h2 className={styles.b6}>{complianceValue}%</h2>
 										</div>
-										<div className="leadershipDevParent">
-											<div className="leadershipDev">Tech Upskilling</div>
-											<div className="rectangleParent3">
-												<div className="rectangle3" />
-												<div className="image203" />
-												<div className="frameChild33 trainingProgressFill trainingProgress78" />
+										<div className={styles.leadershipDevParent}>
+											<div className={styles.leadershipDev}>Tech Upskilling</div>
+											<div className={styles.rectangleParent3}>
+												<div className={styles.rectangle3} />
+												<div className={styles.image203} />
+												<div className={`${styles.frameChild33} ${styles.trainingProgressFill} ${styles.trainingProgress78}`} />
 											</div>
-											<h2 className="b6">{techValue}%</h2>
+											<h2 className={styles.b6}>{techValue}%</h2>
 										</div>
-										<div className="leadershipDevParent">
-											<div className="leadershipDev">{`Sales Enablement `}</div>
-											<div className="rectangleParent3">
-												<div className="rectangle3" />
-												<div className="image203" />
-												<div className="frameChild34 trainingProgressFill trainingProgress85" />
+										<div className={styles.leadershipDevParent}>
+											<div className={styles.leadershipDev}>{`Sales Enablement `}</div>
+											<div className={styles.rectangleParent3}>
+												<div className={styles.rectangle3} />
+												<div className={styles.image203} />
+												<div className={`${styles.frameChild34} ${styles.trainingProgressFill} ${styles.trainingProgress85}`} />
 											</div>
-											<h2 className="b6">{salesValue}%</h2>
+											<h2 className={styles.b6}>{salesValue}%</h2>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="frameParent54">
-						<div className="peopleTakingPartBusinessEvParent">
-							<div className="peopleTakingPartBusinessEv" />
-							<div className="image21" />
+					<div className={styles.frameParent54}>
+						<div className={styles.peopleTakingPartBusinessEvParent}>
+							<div className={styles.peopleTakingPartBusinessEv} />
+							<div className={styles.image21} />
 							<video
 								ref={corporateVideoRef}
-								className="groupYoungBusinesspeopleUsi"
+								className={styles.groupYoungBusinesspeopleUsi}
 								src="/videos/video-4.mp4"
 								autoPlay
 								muted
@@ -580,24 +580,24 @@ const CorporateTraining: NextPage = () => {
 								onPause={() => setIsCorporateVideoPlaying(false)}
 								aria-label="Corporate learning session"
 							/>
-							<div className="frameParent55">
-								<div className="frameParent56">
-									<div className="frameParent57">
-										<div className="frameChild36">NeuroLXP<sup>TM</sup></div>
-										<h2 className="neurolxpTransformingCorporat">NeuroLXP-Transforming Corporate Learning<br /></h2>
+							<div className={styles.frameParent55}>
+								<div className={styles.frameParent56}>
+									<div className={styles.frameParent57}>
+										<div className={styles.frameChild36}>NeuroLXP<sup>TM</sup></div>
+										<h2 className={styles.neurolxpTransformingCorporat}>NeuroLXP-Transforming Corporate Learning<br /></h2>
 									</div>
-									<div className="buildSkilledEngaged">Build skilled, engaged, and future ready workforces with NeuroLXP.</div>
+									<div className={styles.buildSkilledEngaged}>Build skilled, engaged, and future ready workforces with NeuroLXP.</div>
 								</div>
-								<div className="frameWrapper20">
-									<div className="getStartedWrapper">
-										<div className="getStarted">{`Get Started `}</div>
+								<div className={styles.frameWrapper20}>
+									<div className={styles.getStartedWrapper}>
+										<div className={styles.getStarted}>{`Get Started `}</div>
 									</div>
 								</div>
 							</div>
 							{!isCorporateVideoPlaying && (
 								<button
 									type="button"
-									className="frameChild37 corporateVideoControl"
+									className={`${styles.frameChild37} ${styles.corporateVideoControl}`}
 									onClick={toggleCorporateVideo}
 									aria-label="Play corporate learning video"
 								>
@@ -611,7 +611,7 @@ const CorporateTraining: NextPage = () => {
 								</button>
 							)}
 						</div>
-						<div className="image207" />
+						<div className={styles.image207} />
 					</div>
 				</div>
 			</div>
