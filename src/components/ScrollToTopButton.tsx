@@ -3,6 +3,7 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import dynamic from "next/dynamic";
+import styles from "@/components/Footer/Footer.module.css";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -56,13 +57,13 @@ export default function ScrollToTopButton() {
 
   return (
     <>
-      <span ref={anchorRef} className="scroll-top-anchor" aria-hidden="true" />
+      <span ref={anchorRef} className={styles["scroll-top-anchor"]} aria-hidden="true" />
       {mounted &&
         createPortal(
           <button
             type="button"
             ref={buttonRef}
-            className={`scroll-top-button${isVisible ? " scroll-top-button-visible" : ""}`}
+            className={`${styles["scroll-top-button"]}${isVisible ? ` ${styles["scroll-top-button-visible"]}` : ""}`}
             onClick={handleClick}
             aria-label="Scroll to top"
             style={{
@@ -73,8 +74,8 @@ export default function ScrollToTopButton() {
               visibility: coords ? "visible" : "hidden",
             }}
           >
-            <span className="scroll-top-button-inner" aria-hidden="true">
-              {arrowAnimationData && <Lottie animationData={arrowAnimationData} loop autoplay className="scroll-top-button-icon" />}
+            <span className={styles["scroll-top-button-inner"]} aria-hidden="true">
+              {arrowAnimationData && <Lottie animationData={arrowAnimationData} loop autoplay className={styles["scroll-top-button-icon"]} />}
             </span>
           </button>,
           document.body

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { MouseEvent } from "react";
 import type { SimpleLink } from "@/data/navigation";
+import styles from "./Footer.module.css";
 
 export default function FooterAboutLink({ link }: { link: SimpleLink }) {
   const pathname = usePathname();
@@ -25,7 +26,7 @@ export default function FooterAboutLink({ link }: { link: SimpleLink }) {
   };
 
   return (
-    <Link href={link.href} className="nlxp-footer-link" onClick={handleClick}>
+    <Link href={link.href} className={styles["nlxp-footer-link"]} onClick={handleClick}>
       {link.label}
     </Link>
   );

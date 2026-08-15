@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { navItems, type NestedCategory, type PromoCard, type SimpleLink } from "@/data/navigation";
 import { ChevronDownIcon, ChevronUpIcon, ChevronRightIcon } from "@/components/icons/Icons";
 import AssistantPopup from "@/components/Assistant/AssistantPopup";
+import styles from "./Header.module.css";
 
 type PanelColumn = {
   title?: string;
@@ -40,16 +41,16 @@ function getPanelColumns(categories: NestedCategory[]): PanelColumn[] {
 
 function HeaderPromo({ promo }: { promo: PromoCard }) {
   return (
-    <div className={`nlxp-header-promo nlxp-header-promo--${promo.variant}`}>
+    <div className={`${styles["nlxp-header-promo"]} ${styles[`nlxp-header-promo--${promo.variant}`]}`}>
       {promo.variant === "photo" && promo.image && (
-        <div className="nlxp-header-promo-image">
+        <div className={styles["nlxp-header-promo-image"]}>
           <Image src={promo.image} alt={promo.imageAlt ?? ""} fill sizes="288px" />
         </div>
       )}
-      <div className="nlxp-header-promo-content">
-        <p className="nlxp-header-promo-heading">{promo.heading}</p>
-        {promo.description && <p className="nlxp-header-promo-description">{promo.description}</p>}
-        <Link href={promo.buttonHref} className="nlxp-header-promo-button">
+      <div className={styles["nlxp-header-promo-content"]}>
+        <p className={styles["nlxp-header-promo-heading"]}>{promo.heading}</p>
+        {promo.description && <p className={styles["nlxp-header-promo-description"]}>{promo.description}</p>}
+        <Link href={promo.buttonHref} className={styles["nlxp-header-promo-button"]}>
           {promo.buttonLabel}
         </Link>
       </div>
@@ -104,7 +105,7 @@ function HeaderDropdownPanel({
   return createPortal(
     <div
       ref={panelRef}
-      className={`nlxp-header-panel nlxp-header-panel--${variant}`}
+      className={`${styles["nlxp-header-panel"]} ${styles[`nlxp-header-panel--${variant}`]}`}
       style={{
         position: "fixed",
         top: coords?.top ?? 0,
@@ -137,7 +138,7 @@ export default function Header() {
     function handleClickOutside(event: MouseEvent) {
       const target = event.target as HTMLElement;
       const clickedInsideHeader = headerRef.current?.contains(target);
-      const clickedInsidePanel = target.closest?.(".nlxp-header-panel");
+      const clickedInsidePanel = target.closest?.(`.${styles["nlxp-header-panel"]}`);
       if (!clickedInsideHeader && !clickedInsidePanel) {
         setOpenMenu(null);
       }
@@ -165,32 +166,32 @@ export default function Header() {
   }
 
   return (
-    <header className="nlxp-header" ref={headerRef}>
-      <div className="nlxp-header-inner">
-        <div className="nlxp-header-left">
-          <Link href="/" className="nlxp-header-logo-link">
+    <header className={styles["nlxp-header"]} ref={headerRef}>
+      <div className={styles["nlxp-header-inner"]}>
+        <div className={styles["nlxp-header-left"]}>
+          <Link href="/" className={styles["nlxp-header-logo-link"]}>
             <Image
               src="/images/logo_01_synapse_spark.webp"
               alt="NeuroLXP"
               width={120}
               height={45}
-              className="nlxp-header-logo"
+              className={styles["nlxp-header-logo"]}
               priority
             />
           </Link>
 
-          <nav className="nlxp-header-nav">
+          <nav className={styles["nlxp-header-nav"]}>
             {navItems.map((item) => {
               if (item.type === "link") {
                 return (
                   <Link
                     key={item.label}
                     href={item.href}
-                    className={`nlxp-header-link${item.active ? " nlxp-header-link--active" : ""}`}
+                    className={`${styles["nlxp-header-link"]}${item.active ? ` ${styles["nlxp-header-link--active"]}` : ""}`}
                   >
                     {item.label}
-                    {/* {item.arrow === "up" && <ChevronUpIcon className="nlxp-header-chevron" />} */}
-                    {item.arrow === "down" && <ChevronDownIcon className="nlxp-header-chevron" />}
+                    {/* {item.arrow === "up" && <ChevronUpIcon className={styles["nlxp-header-chevron"]} />} */}
+                    {item.arrow === "down" && <ChevronDownIcon className={styles["nlxp-header-chevron"]} />}
                   </Link>
                 );
               }
@@ -198,30 +199,30 @@ export default function Header() {
               const isOpen = openMenu === item.label;
 
               return (
-                <div key={item.label} className="nlxp-header-dropdown">
+                <div key={item.label} className={styles["nlxp-header-dropdown"]}>
                   <button
                     type="button"
                     ref={(el) => {
                       triggerRefs.current[item.label] = el;
                     }}
-                    className={`nlxp-header-link nlxp-header-dropdown-trigger${isOpen ? " nlxp-header-link--active" : ""}`}
+                    className={`${styles["nlxp-header-link"]} ${styles["nlxp-header-dropdown-trigger"]}${isOpen ? ` ${styles["nlxp-header-link--active"]}` : ""}`}
                     onClick={() => toggleMenu(item.label)}
                     aria-expanded={isOpen}
                   >
                     {item.label}
                     {isOpen ? (
-                      <ChevronUpIcon className="nlxp-header-chevron" />
+                      <ChevronUpIcon className={styles["nlxp-header-chevron"]} />
                     ) : (
-                      <ChevronDownIcon className="nlxp-header-chevron" />
+                      <ChevronDownIcon className={styles["nlxp-header-chevron"]} />
                     )}
                   </button>
 
                   {isOpen && item.type === "simple" && (
                     <HeaderDropdownPanel triggerEl={triggerRefs.current[item.label]} variant="simple">
-                      <div className="nlxp-header-column">
-                        <div className="nlxp-header-column-links">
+                      <div className={styles["nlxp-header-column"]}>
+                        <div className={styles["nlxp-header-column-links"]}>
                           {item.items.map((link) => (
-                            <Link key={link.label} href={link.href} className="nlxp-header-panel-link">
+                            <Link key={link.label} href={link.href} className={styles["nlxp-header-panel-link"]}>
                               {link.label}
                             </Link>
                           ))}
@@ -233,13 +234,13 @@ export default function Header() {
 
                   {isOpen && item.type === "nested" && (
                     <HeaderDropdownPanel triggerEl={triggerRefs.current[item.label]} variant="nested">
-                      <div className="nlxp-header-columns">
+                      <div className={styles["nlxp-header-columns"]}>
                         {getPanelColumns(item.categories).map((column, index) => (
-                          <div key={column.title ?? `column-${index}`} className="nlxp-header-column">
-                            {column.title && <p className="nlxp-header-column-title">{column.title}</p>}
-                            <div className="nlxp-header-column-links">
+                          <div key={column.title ?? `column-${index}`} className={styles["nlxp-header-column"]}>
+                            {column.title && <p className={styles["nlxp-header-column-title"]}>{column.title}</p>}
+                            <div className={styles["nlxp-header-column-links"]}>
                               {column.links.map((link) => (
-                                <Link key={link.label} href={link.href} className="nlxp-header-panel-link">
+                                <Link key={link.label} href={link.href} className={styles["nlxp-header-panel-link"]}>
                                   {link.label}
                                 </Link>
                               ))}
@@ -256,13 +257,13 @@ export default function Header() {
           </nav>
         </div>
 
-        <button type="button" className="nlxp-header-signin" onClick={() => setIsAssistantOpen(true)}>
+        <button type="button" className={styles["nlxp-header-signin"]} onClick={() => setIsAssistantOpen(true)}>
           Sign in Help
         </button>
 
         <button
           type="button"
-          className={`nlxp-header-burger${mobileOpen ? " nlxp-header-burger--open" : ""}`}
+          className={`${styles["nlxp-header-burger"]}${mobileOpen ? ` ${styles["nlxp-header-burger--open"]}` : ""}`}
           onClick={() => setMobileOpen((current) => !current)}
           aria-label="Toggle menu"
           aria-expanded={mobileOpen}
@@ -274,18 +275,18 @@ export default function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="nlxp-header-mobile-panel">
+        <div className={styles["nlxp-header-mobile-panel"]}>
           {navItems.map((item) => {
             if (item.type === "link") {
               return (
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="nlxp-header-mobile-link"
+                  className={styles["nlxp-header-mobile-link"]}
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
-                  <ChevronRightIcon className="nlxp-header-chevron-right" />
+                  <ChevronRightIcon className={styles["nlxp-header-chevron-right"]} />
                 </Link>
               );
             }
@@ -293,26 +294,26 @@ export default function Header() {
             const isExpanded = mobileExpanded === item.label;
 
             return (
-              <div key={item.label} className="nlxp-header-mobile-group">
+              <div key={item.label} className={styles["nlxp-header-mobile-group"]}>
                 <button
                   type="button"
-                  className="nlxp-header-mobile-link nlxp-header-mobile-trigger"
+                  className={`${styles["nlxp-header-mobile-link"]} ${styles["nlxp-header-mobile-trigger"]}`}
                   onClick={() => toggleMobileTop(item.label)}
                   aria-expanded={isExpanded}
                 >
                   {item.label}
                   <ChevronRightIcon
-                    className={`nlxp-header-chevron-right${isExpanded ? " nlxp-header-chevron-right--open" : ""}`}
+                    className={`${styles["nlxp-header-chevron-right"]}${isExpanded ? ` ${styles["nlxp-header-chevron-right--open"]}` : ""}`}
                   />
                 </button>
 
                 {isExpanded && item.type === "simple" && (
-                  <div className="nlxp-header-mobile-sublist">
+                  <div className={styles["nlxp-header-mobile-sublist"]}>
                     {item.items.map((link) => (
                       <Link
                         key={link.label}
                         href={link.href}
-                        className="nlxp-header-mobile-sublink"
+                        className={styles["nlxp-header-mobile-sublink"]}
                         onClick={() => setMobileOpen(false)}
                       >
                         {link.label}
@@ -322,15 +323,15 @@ export default function Header() {
                 )}
 
                 {isExpanded && item.type === "nested" && (
-                  <div className="nlxp-header-mobile-sublist">
+                  <div className={styles["nlxp-header-mobile-sublist"]}>
                     {getPanelColumns(item.categories).map((column, index) => (
-                      <div key={column.title ?? `column-${index}`} className="nlxp-header-mobile-column">
-                        {column.title && <p className="nlxp-header-mobile-column-title">{column.title}</p>}
+                      <div key={column.title ?? `column-${index}`} className={styles["nlxp-header-mobile-column"]}>
+                        {column.title && <p className={styles["nlxp-header-mobile-column-title"]}>{column.title}</p>}
                         {column.links.map((link) => (
                           <Link
                             key={link.label}
                             href={link.href}
-                            className="nlxp-header-mobile-sublink"
+                            className={styles["nlxp-header-mobile-sublink"]}
                             onClick={() => setMobileOpen(false)}
                           >
                             {link.label}
@@ -343,10 +344,10 @@ export default function Header() {
               </div>
             );
           })}
-          <div className="nlxp-header-mobile-signin-row">
+          <div className={styles["nlxp-header-mobile-signin-row"]}>
             <button
               type="button"
-              className="nlxp-header-mobile-signin"
+              className={styles["nlxp-header-mobile-signin"]}
               onClick={() => {
                 setMobileOpen(false);
                 setIsAssistantOpen(true);
