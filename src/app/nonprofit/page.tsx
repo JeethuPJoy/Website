@@ -59,7 +59,7 @@ const NGO: NextPage = () => {
 							onPause={() => setIsTopVideoPlaying(false)}
 							onEnded={() => setIsTopVideoPlaying(false)}
 						/>
-						{!isTopVideoPlaying && (
+						{/* {!isTopVideoPlaying && (
 							<button
 								type="button"
 								className={`${styles.frameItem} ${styles.videoPlayButton}`}
@@ -76,7 +76,7 @@ const NGO: NextPage = () => {
 									aria-hidden="true"
 								/>
 							</button>
-						)}
+						)} */}
 						<div className={styles.frameDiv}>
 							<div className={styles.frameParent2}>
 								<div className={styles.frameParent3}>

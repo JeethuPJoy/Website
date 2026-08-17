@@ -2235,7 +2235,7 @@
 		min-width: 0;
 	}
 	.frameDiv {
-		top: 50px;
+		top: 36px;
 		left: max(80px, calc((100vw - 1440px) / 2 + 80px));
 		right: auto;
 		width: 356px;

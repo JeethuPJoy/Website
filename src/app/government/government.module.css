@@ -1,6 +1,6 @@
 .governmentStateInstitution {
   	width: 100%;
-  	height: 4800px;
+  	height: 4646px;
   	position: relative;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -10,7 +10,7 @@
   	font-family: "Segoe UI";
     zoom: 0.89;
     max-width: 1440px; 
-	margin: 0 auto;
+	  margin: 0 auto;
 }
 .frameParent {
   	position: absolute;
@@ -147,6 +147,7 @@
   	line-height: 24px;
   	display: inline-block;
   	flex-shrink: 0;
+    font-weight: 800;
 }
 .colleaguesMaleFemaleSmiling {
   	position: absolute;
@@ -266,6 +267,7 @@
   	display: inline-block;
   	flex-shrink: 0;
   	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-size: 36px;
 }
 .empowering {
   	line-height: 60px;
@@ -277,7 +279,7 @@
 .neurolxpEnablesGovernments {
   	width: 473px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 22px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -467,14 +469,14 @@
   	align-items: center;
   	gap: 96px;
   	text-align: center;
-  	font-size: 48px;
+  	font-size: 36px;
 }
 .frameParent9 {
   	width: 1280px;
   	display: flex;
   	flex-direction: column;
   	align-items: center;
-  	gap: 64px;
+  	gap: 4px;
 }
 .frameWrapper7 {
   	width: 893px;
@@ -495,18 +497,18 @@
 }
 .keyChallengesIn {
   	width: 1002px;
-  	height: 127px;
   	position: relative;
   	letter-spacing: 0.03em;
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
+    font-size: 36px;
 }
 .neurolxpCentralizesGovernmen {
   	align-self: stretch;
   	height: 80px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 24px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -739,12 +741,12 @@
 }
 .governmentLearningUse {
   	width: 1126px;
-  	height: 63px;
   	position: relative;
   	letter-spacing: 0.03em;
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
+    font-size: 36px;
 }
 .frameParent25 {
   	align-self: stretch;
@@ -888,6 +890,7 @@
   	align-items: center;
   	gap: 151px;
   	text-align: left;
+    justify-content: center;
 }
 .frameParent35 {
   	width: 638px;
@@ -905,18 +908,19 @@
 }
 .poweringStatewideLearning {
   	align-self: stretch;
-  	height: 127px;
   	position: relative;
   	letter-spacing: 0.03em;
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
+    font-size: 36px;
 }
+
 .theseCapabilitiesHelp {
   	align-self: stretch;
-  	height: 120px;
+  	font-size: 24px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 24px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -1086,7 +1090,7 @@
 }
 .empoweringPublicLearning {
   	width: 497px;
-  	height: 118px;
+  	font-size: 36px;
   	position: relative;
   	letter-spacing: 0.03em;
   	line-height: 60px;
@@ -1095,9 +1099,8 @@
 }
 .neurolxpEnablesScalable {
   	width: 454px;
-  	height: 147px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 24px;
   	letter-spacing: 0.03em;
   	line-height: 36px;
   	display: inline-block;
@@ -1139,8 +1142,6 @@
 }
 .poweringGovernmentWorkforce {
   	width: 1044px;
-  	height: 123px;
-  	position: relative;
   	letter-spacing: 0.03em;
   	line-height: 60px;
   	display: inline-block;
@@ -1149,7 +1150,7 @@
 .neurolxpHelpsGovernments {
   	width: 1187px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 24px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -2637,11 +2638,7 @@
   }
 
   .governmentStateInstitution{
-    width:100% !important;
-    
-    
-    
-    
+    width:100% !important;   
   }
 }
 
@@ -3706,10 +3703,6 @@
 
   .governmentStateInstitution{
     width:100% !important;
-    
-    
-    
-    
   }
 }
 

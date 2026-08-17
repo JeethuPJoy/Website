@@ -864,12 +864,7 @@ body.modal-open .talk-to-expert-fab {
     flex-wrap: wrap;
   }
 
-  .tte-country-select {
-    width: 100%;
-  }
-
   .tte-country-trigger {
-    width: 100%;
     justify-content: space-between;
   }
 

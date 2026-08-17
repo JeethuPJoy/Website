@@ -2522,10 +2522,11 @@ a:focus-visible {
     justify-content: center;
   }
   .why-choose-blob {
-    width: 380px;
+    /* width: 380px;
     height: 900px;
     top: -139px;
-    left: -224px;
+    left: -224px; */
+    display: none;
   }
 
   .learning-module-card {
