@@ -2915,6 +2915,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .eLearning {
+    zoom: 1;
+  }
+}
+
 @media (max-width: 1023px) {
   .eLearning {
     padding: 0 28px;
