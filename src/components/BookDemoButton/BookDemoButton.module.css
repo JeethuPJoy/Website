@@ -6,7 +6,7 @@
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  padding: 12px 28px 12px 12px;
+  padding: 12px;
   background: #dfe6e9;
   border: none;
   border-radius: 100px;
@@ -36,8 +36,8 @@ body.modal-open .book-demo-fab {
 
 .book-demo-fab-icon-ring {
   flex-shrink: 0;
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
@@ -63,8 +63,8 @@ body.modal-open .book-demo-fab {
 }
 
 .book-demo-fab-icon {
-  width: 22px;
-  height: 22px;
+  width: 32px;
+  height: 32px;
 }
 
 .book-demo-fab-label {

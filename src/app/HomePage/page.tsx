@@ -16,13 +16,13 @@ type HeroSlide = { id: number; type: "image"; image: string; heading: string } |
 
 const heroSlides: HeroSlide[] = [
   { id: 1, type: "image", image: "/images/brainstorm-meeting.webp", heading: "Empowering Lifelong learning" },
-  { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.webp", heading: "Learn. Grow. Succeed" },
+  { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.webp", heading: "Built for Education That Goes Beyond Classroom" },
   { id: 3, type: "video", src: "/videos/asking-doubts-to-teacher.mp4", heading: "Every Question Leads to Growth" },
-  { id: 4, type: "image", image: "/images/businesswoman-with-tablet-pc-meeting.webp", heading: "Learn Beyond Limits" },
-  { id: 5, type: "image", image: "/images/college-graduates-smiling-camera.webp", heading: "Unlock Your Full Potential" },
+  { id: 4, type: "image", image: "/images/Organisation.jpeg", heading: "Learn Beyond Limits" },
+  { id: 5, type: "image", image: "/images/Gratuation.jpeg", heading: "Designed for Minds That Refuse to Average" },
   { id: 6, type: "video", src: "/videos/discussing-in-class.mp4", heading: "Where Great Ideas Take Shape Together" },
-  { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank.webp", heading: "Learn. Connect. Thrive" },
-  { id: 8, type: "image", image: "/images/8595828.webp", heading: "Transform the Way the World Learns" },
+  { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank.webp", heading: "Reimagine How the World Learns" },
+  { id: 8, type: "image", image: "/images/portrait-school-girls-with-books-park.webp", heading: "Transform the Way the World Learns" },
 ];
 
 function ChevronsLeftIcon({ className }: { className?: string }) {
@@ -80,7 +80,7 @@ function HeroCarousel() {
   };
 
   return (
-    <section className={styles["hero-section"]} aria-roledescription="carousel" aria-label="NeuroLXP highlights" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onFocus={() => setIsPaused(true)} onBlur={() => setIsPaused(false)}>
+    <section className={styles["hero-section"]} aria-roledescription="carousel" aria-label="NeuroLXP™ highlights" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onFocus={() => setIsPaused(true)} onBlur={() => setIsPaused(false)}>
       <div className={styles["hero-frame"]}>
         <div className={styles["hero-image-stage"]}>
           {heroSlides.map((slide, index) => (
@@ -285,7 +285,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
   {
     id: 1,
     title: "Our Story",
-    description: "NeuroLXP transforms learning through an intelligent Learning Experience Platform empowering universities, enterprises, government, and training organizations with future-ready skills.",
+    description: "NeuroLXP™ transforms learning through an intelligent Learning Experience Platform empowering universities, enterprises, government, and training organizations with future-ready skills.",
     image: "/images/interested-coworkers-with-new-project.webp",
     accentColor: "#2D4CC8",
     Icon: BookOpenIcon,
@@ -372,7 +372,7 @@ function StoryMissionVision() {
         <h2 className={styles["smv-heading"]} id="smv-heading">
           Our Story! Our Mission! Our Vision
         </h2>
-        <p className={styles["smv-subtext"]}>At NeuroLXP, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.</p>
+        <p className={styles["smv-subtext"]}>At NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.</p>
       </div>
 
       <div className={styles["smv-cards"]}>
@@ -428,7 +428,7 @@ function PlatformOverview() {
       <div className={styles["platform-overview-inner"]}>
         <div className={styles["platform-overview-media"]}>
           <div className={styles["platform-overview-media-frame"]}>
-            <video className={styles["platform-overview-video"]} src="/videos/6561564-uhd_3840_2160_25fps.mp4" autoPlay muted loop playsInline />
+            <video className={styles["platform-overview-video"]} src="/videos/learners.mp4" autoPlay muted loop playsInline />
           </div>
         </div>
 
@@ -516,7 +516,7 @@ function MeetNeuroLXP() {
           <Image src="/images/friends-learning-with-laptop.webp" alt="Students collaborating on a laptop" fill sizes="(min-width: 1312px) 1216px, 100vw" className={styles["meet-neurolxp-image"]} />
         </div>
         <div className={styles["meet-neurolxp-text"]}>
-          <span className={styles["meet-neurolxp-badge"]}>Meet NeuroLXP</span>
+          <span className={styles["meet-neurolxp-badge"]}>Meet NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup></span>
           <h2 className={styles["meet-neurolxp-heading"]} id="meet-neurolxp-heading">
             Next-Generation Neomorphism learning Platform
           </h2>
@@ -577,10 +577,10 @@ function WhyChooseAnalyticsIcon({ className }: { className?: string }) {
 }
 
 const whyChooseCards: WhyChooseCardData[] = [
-  { id: 1, title: "Get Discovered", description: "Launch your White Label LMS", dashColor: "#BCCF10", iconBg: "#BCCF10", Icon: WhyChooseDiscoverIcon },
-  { id: 2, title: "Deliver Excellence", description: "Innovative Learning for Growth", dashColor: "#BA06AE", iconBg: "#E50AD7", Icon: WhyChooseExcellenceIcon },
-  { id: 3, title: "Engage Learners", description: "Smart Learning Notifications", dashColor: "#2DC8BB", iconBg: "#2DC8BB", Icon: WhyChooseEngageIcon },
-  { id: 4, title: "Smart Analytics", description: "Smarter Analytics. Greater Success", dashColor: "#BF1869", iconBg: "#F270AF", Icon: WhyChooseAnalyticsIcon },
+  { id: 1, title: "Get Discovered", description: "Launch your White Label LMS", dashColor: "#E1E4C3", iconBg: "#E1E4C3", Icon: WhyChooseDiscoverIcon },
+  { id: 2, title: "Deliver Excellence", description: "Innovative Learning for Growth", dashColor: "#BCC6EB", iconBg: "#BCC6EB", Icon: WhyChooseExcellenceIcon },
+  { id: 3, title: "Engage Learners", description: "Smart Learning Notifications", dashColor: "#BEDEDC", iconBg: "#BEDEDC", Icon: WhyChooseEngageIcon },
+  { id: 4, title: "Smart Analytics", description: "Smarter Analytics. Greater Success", dashColor: "#C6B7C7", iconBg: "#C6B7C7", Icon: WhyChooseAnalyticsIcon },
 ];
 
 function WhyChooseCard({ title, description, dashColor, iconBg, Icon }: WhyChooseCardData) {
@@ -605,14 +605,14 @@ function WhyChooseNeuroLXP() {
     <section className={styles["why-choose-section"]} aria-labelledby="why-choose-heading">
       <div className={styles["why-choose-content"]}>
         <div className={styles["why-choose-blob"]} aria-hidden="true" />
-        <span className={styles["why-choose-badge"]}>Why Choose NeuroLXP</span>
+        <span className={styles["why-choose-badge"]}>Why Choose NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup></span>
         <div className={styles["why-choose-body"]}>
           <div className={styles["why-choose-text"]}>
             <h2 className={styles["why-choose-heading"]} id="why-choose-heading">
               Transforming <br />
               <span className={styles["why-choose-heading-accent"]}>Digital Learning</span>
             </h2>
-            <p className={styles["why-choose-subtext"]}>NeuroLXP empowers learners with personalized learning, future-ready skills, and meaningful outcomes.</p>
+            <p className={styles["why-choose-subtext"]}>NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup> empowers learners with personalized learning, future-ready skills, and meaningful outcomes.</p>
           </div>
           <div className={styles["why-choose-grid"]}>
             {whyChooseCards.map((card) => (
@@ -818,7 +818,7 @@ function LearningModules() {
       <div className={styles["learning-modules-heading-block"]}>
         <span className={styles["learning-modules-badge"]}>Learning Modules</span>
         <h2 className={styles["learning-modules-heading"]} id="learning-modules-heading">
-          Future Ready <span className={styles["learning-modules-heading-accent"]}>NeuroLXP</span> Learning Solutions
+          Future Ready <span className={styles["learning-modules-heading-accent"]}>NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup></span> Learning Solutions
         </h2>
         <p className={styles["learning-modules-subtext"]}>Powerful, scalable modules designed to accelerate learning, build future-ready skills, and drive organizational success.</p>
       </div>
@@ -871,7 +871,7 @@ const testimonials: TestimonialData[] = [
     id: 1,
     name: "Sara Thomas",
     role: "Software Engineer",
-    quote: "NeuroLXP made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
+    quote: "NeuroLXP™ made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
     image: "/images/business-concept-portrait-confident-young-businesswoman-keeping-arms-crossed-looking-camera-w.webp",
     accentColor: "#2DC8BB",
   },
@@ -887,7 +887,7 @@ const testimonials: TestimonialData[] = [
     id: 3,
     name: "Ramesh",
     role: "Lecturer",
-    quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
+    quote: "NeuroLXP™ makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
     image: "/images/confident-businessman.webp",
     accentColor: "#907507",
   },
@@ -895,8 +895,8 @@ const testimonials: TestimonialData[] = [
     id: 4,
     name: "Joanna",
     role: "Software Engineer",
-    quote: "NeuroLXP made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
-    image: "/images/confident-young-businesswoman.webp",
+    quote: "NeuroLXP™ made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
+    image: "/images/Joanna.jpg",
     accentColor: "#BF1869",
   },
   {
@@ -911,8 +911,8 @@ const testimonials: TestimonialData[] = [
     id: 6,
     name: "Aben Sabu",
     role: "Lecturer",
-    quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
-    image: "/images/happy-businessman.webp",
+    quote: "NeuroLXP™ makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
+    image: "/images/handsome.jpg",
     accentColor: "#861109",
   },
 ];
@@ -929,10 +929,10 @@ function StarIcon({ className }: { className?: string }) {
   );
 }
 
-function TestimonialCard({ name, role, quote, image, accentColor, isClone }: TestimonialData & { isClone: boolean }) {
+function TestimonialCard({ id, name, role, quote, image, accentColor, isClone }: TestimonialData & { isClone: boolean }) {
   const NameTag = isClone ? "p" : "h3";
   return (
-    <div className={styles["testimonial-card-wrapper"]}>
+    <div className={styles["testimonial-card-wrapper"]} data-testimonial-id={id}>
       <div className={styles["testimonial-photo-frame"]}>
         <div className={styles["testimonial-photo-inner"]}>
           <Image src={image} alt={name} fill sizes="(max-width: 480px) 90px, (max-width: 768px) 110px, 154px" className={styles["testimonial-photo"]} />
@@ -1052,7 +1052,7 @@ function Testimonials() {
         <h2 className={styles["testimonials-heading"]} id="testimonials-heading">
           Success Powered by <span className={styles["testimonials-heading-accent"]}>NeuroLXP</span>
         </h2>
-        <p className={styles["testimonials-subtext"]}>NeuroLXP made learning engaging, simple, and truly effective for our learners.</p>
+        <p className={styles["testimonials-subtext"]}>NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup> made learning engaging, simple, and truly effective for our learners.</p>
       </div>
 
       <span className={styles["sr-only"]} aria-live="polite" aria-atomic="true">
@@ -1110,7 +1110,7 @@ const faqItems: FAQItemData[] = [
   {
     id: 2,
     number: "02",
-    title: "Who is NeuroLXP designed for?",
+    title: "Who is NeuroLXP™ designed for?",
     answer: "NeuroLXP™ is purpose-built for academic institutions, corporates, skilling academies, NGOs, trusts, and government skill development programs.",
     colorStart: "#BF1869",
     colorEnd: "#590B31",
@@ -1118,7 +1118,7 @@ const faqItems: FAQItemData[] = [
   {
     id: 3,
     number: "03",
-    title: "How Is NeuroLXP Different?",
+    title: "How Is NeuroLXP™ Different?",
     answer: "Unlike a conventional LMS that focuses on course administration, NeuroLXP™ delivers learner-centric experiences through personalization, skill-based learning, collaboration, and continuous development.",
     colorStart: "#861109",
     colorEnd: "#200402",
@@ -1126,7 +1126,7 @@ const faqItems: FAQItemData[] = [
   {
     id: 4,
     number: "04",
-    title: "Why is NeuroLXP groundbreaking?",
+    title: "Why is NeuroLXP™ groundbreaking?",
     answer: "NeuroLXP™ reimagines digital learning by combining intelligent personalization, modern learning experiences, scalable architecture, and data-driven insights into a unified platform built for the future of education and workforce development.",
     colorStart: "#162562",
     colorEnd: "#2D4CC8",
@@ -1134,7 +1134,7 @@ const faqItems: FAQItemData[] = [
   {
     id: 5,
     number: "05",
-    title: "Who Can Use NeuroLXP?",
+    title: "Who Can Use NeuroLXP™?",
     answer: "Yes. NeuroLXP™ is designed to scale effortlessly - from schools and universities to enterprises, skilling academies, NGOs, and nationwide government learning initiatives.",
     colorStart: "#67096E",
     colorEnd: "#C712D4",
