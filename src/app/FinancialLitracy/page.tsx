@@ -196,7 +196,7 @@ export default function FinancialLiteracyPage() {
           <SectionBadge label="Smart finance" className={styles.frameChild11} />
           <div className={styles.buildResponsibleFinancialHaParent}>
             <b className={styles.buildResponsibleFinancial}>Build Responsible Financial Habits</b>
-            <div className={styles.buildTheSkills}>Financial literacy helps learners build responsible money habits for long-term financial well-being Learn to:</div>
+            <div className={styles.buildTheSkills}>Financial literacy helps learners build responsible money habits for long-term financial well-being Learn to</div>
           </div>
         </div>
         <div className={styles.frameParent25}>

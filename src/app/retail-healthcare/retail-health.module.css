@@ -491,14 +491,14 @@
   	height: 63px;
   	position: relative;
   	letter-spacing: 0.03em;
-  	line-height: 60px;
+  	font-size: 36px;
   	display: inline-block;
   	flex-shrink: 0;
 }
 .retailTeamsNeed {
   	width: 877px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 24px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -655,15 +655,16 @@
   	height: 123px;
   	position: relative;
   	letter-spacing: 0.03em;
-  	line-height: 60px;
+  	line-height: 40px;
   	display: inline-block;
   	flex-shrink: 0;
+    font-size: 36px;
 }
 .neurolxpEnablesFaster {
   	align-self: stretch;
   	height: 128px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 24px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -704,18 +705,18 @@
 }
 .benefitsForRetail {
   	align-self: stretch;
-  	height: 127px;
   	position: relative;
   	letter-spacing: 0.03em;
-  	line-height: 60px;
+  	line-height: 50px;
   	display: inline-block;
   	flex-shrink: 0;
+    font-size: 36px;
 }
 .neurolxpEnablesSmarter2 {
   	align-self: stretch;
   	height: 120px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 24px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -936,12 +937,14 @@
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
+    font-size: 36px;
+    line-height: 50px;
 }
 .healthcareOrganizationsNeed {
   	width: 492px;
   	height: 175px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 24px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -978,6 +981,7 @@
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
+    font-size: 36px;
 }
 .maleDoctorNursesCommunicatiIcon {
   	position: absolute;
@@ -1032,12 +1036,13 @@
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
+    font-size: 36px;
 }
 .healthcareOrganizationsNeed2 {
   	width: 1014px;
   	height: 72px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 24px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -1230,12 +1235,13 @@
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
+    font-size: 36px;
 }
 .neurolxpHelpsRetail {
   	width: 512px;
   	height: 120px;
   	position: relative;
-  	font-size: 28px;
+  	font-size: 24px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -1954,11 +1960,6 @@
   overflow: visible !important;
 }
 
-.benefitsForRetail {
-  height: auto !important;
-  min-height: 127px;
-}
-
 .neurolxpEnablesSmarter2 {
   height: auto !important;
   min-height: 120px;
@@ -2175,12 +2176,10 @@
 
 .neurolxpEnablesSmarter {
   width: 621px !important;
-  height: auto !important;
-  min-height: 120px !important;
   margin: 0 !important;
   padding: 0 !important;
   font-family: 'Segoe UI';
-  font-size: 28px !important;
+  font-size: 22px !important;
   font-weight: 400 !important;
   line-height: 40px !important;
   letter-spacing: 0.03em !important;
@@ -2775,8 +2774,8 @@
 }
 .benefitsForRetail {
   width: 638px !important;
-  height: auto !important;
-  min-height: 127px !important;
+  /* height: auto !important; */
+  /* min-height: 127px !important; */
   margin-top: 82px !important;
   overflow: visible !important;
   visibility: visible !important;
@@ -2900,8 +2899,8 @@ benefitsForRetail + .neurolxpEnablesSmarter2 {
 }
 
 .benefitsForRetail {
-  height: auto !important;
-  min-height: 127px !important;
+  /* height: auto !important;
+  min-height: 127px !important; */
   overflow: visible !important;
 }
 
@@ -2989,7 +2988,7 @@ benefitsForRetail + .neurolxpEnablesSmarter2 {
 .frameParent27 {
   position: relative !important;
   overflow: visible !important;
-  gap: 32px !important;
+  gap: 28px !important;
 }
 
 .frameParent27 > .frameChild16 {
@@ -3952,12 +3951,12 @@ benefitsForRetail + .neurolxpEnablesSmarter2 {
 }
 
 .frameParent8 {
-  gap: 64px !important;
+  gap: 4px !important;
 }
 
 .frameParent9,
 .empoweringSmarterRetailLearParent {
-  gap: 32px !important;
+  gap: 6px !important;
 }
 
 .frameParent10 {
@@ -4019,7 +4018,7 @@ benefitsForRetail + .neurolxpEnablesSmarter2 {
 }
 
 .frameParent27 {
-  gap: 32px !important;
+  gap: 28px !important;
 }
 
 .frameWrapper10 {
@@ -4095,17 +4094,17 @@ benefitsForRetail + .neurolxpEnablesSmarter2 {
 
 .frameParent16 > .benefitsForRetail {
   width: 638px !important;
-  height: auto !important;
-  min-height: 120px !important;
+  /* height: auto !important;
+  min-height: 120px !important; */
   margin: 0 !important;
   padding: 0 !important;
   flex: 0 0 auto !important;
   overflow: visible !important;
 }
 
-.frameParent16 > .benefitsForRetail br {
+/* .frameParent16 > .benefitsForRetail br {
   display: none !important;
-}
+} */
 
 .frameParent16 > .neurolxpEnablesSmarter2 {
   width: 638px !important;
@@ -4125,7 +4124,7 @@ benefitsForRetail + .neurolxpEnablesSmarter2 {
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
-  gap: 32px !important;
+  gap: 28px !important;
 }
 
 .frameParent27 > .frameChild16 {

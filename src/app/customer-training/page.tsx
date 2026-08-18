@@ -18,7 +18,7 @@ const CustomerTraining: NextPage = () => {
       </nav>
       <div className={styles.frameParent2}>
         <section className={styles.vectorParent} aria-labelledby="customer-training-title">
-          <Image className={styles.polygonIcon} src="/images/customer-training-hero.svg" width={1280} height={450} sizes="(max-width: 1280px) 100vw, 1280px" alt="" aria-hidden="true" priority />
+          <Image className={styles.polygonIcon} src="/images/customer-training-hero.webp" width={1280} height={450} sizes="(max-width: 1280px) 100vw, 1280px" alt="" aria-hidden="true" priority />
           <div className={styles.frameWrapper}>
             <div className={styles.frameParent3}>
               <div className={styles.frameParent4}>
@@ -51,7 +51,7 @@ const CustomerTraining: NextPage = () => {
           <div className={styles.neurolxpDeliversSelfService}>NeuroLXP delivers self-service customer learning with courses, tutorials, and analytics.</div>
         </div>
       </div>
-      <Image className={styles.customerTrainingChild} src="/images/customer-training-divider.svg" width={1440} height={5} sizes="100vw" alt="" aria-hidden="true" />
+      <Image className={styles.customerTrainingChild} src="/images/customer-training-divider.webp" width={1440} height={5} sizes="100vw" alt="" aria-hidden="true" />
       <div className={styles.image20Parent}>
         <div className={styles.image20} />
         <div className={styles.frameParent6}>

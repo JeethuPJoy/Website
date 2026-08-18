@@ -1203,7 +1203,7 @@ function FAQSection() {
         <div className={styles["faq-content"]}>
           <div className={styles["faq-left"]}>
             <h2 className={styles["faq-heading"]} id="faq-heading">
-              Frequently Asked <span className={styles["faq-heading-accent"]}>Question</span>
+              Frequently Asked <span className={styles["faq-heading-accent"]}>Questions</span>
             </h2>
             <div className={styles["faq-illustration"]}>
               <Image src="/images/Adobe Express - file - 2026-07-02T153440.006.webp" alt="Question and answer illustration" fill sizes="(max-width: 1024px) 100vw, 432px" className={styles["faq-illustration-image"]} />

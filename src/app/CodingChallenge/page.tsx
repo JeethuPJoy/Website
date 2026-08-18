@@ -159,7 +159,7 @@ export default function CodingChallengePage() {
                   <div className={styles.frameWrapper9}>
                     <div className={styles.ellipseGroup}>
                       <div className={styles.frameChild4} />
-                      <Image className={styles.search02Icon} src="/icons/search-02.svg" width={36} height={36} alt="" />
+                      <Image className={styles.search02Icon} src="/icons/search-02white.svg" width={36} height={36} alt="" />
                       <div className={styles.buildOptimizedSolutions}>
                         Build Optimized Solutions
                         <br />

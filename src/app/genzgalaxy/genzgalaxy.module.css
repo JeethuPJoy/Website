@@ -1417,7 +1417,7 @@
   left: -127px;
   display: flex;
   align-items: center;
-  gap: 78px;
+  gap: 124px;
   flex-shrink: 0;
   color: #2d4cc8;
 }
@@ -1431,7 +1431,7 @@
 .wrapperPolygon16 {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 48px;
   width: 870px;
   height: 841px;
   overflow: hidden;
@@ -7647,6 +7647,18 @@ body {
   }
 }
 
+@media screen and (min-width: 1360px) and (max-width: 1439px) {
+  .genzgalaxy {
+    zoom: calc(1439 / 1440);
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1359px) {
+  .genzgalaxy {
+    zoom: calc(1280 / 1440);
+  }
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
   .genzgalaxy {
     zoom: 0.7111111111;
@@ -7662,23 +7674,6 @@ body {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .genzgalaxy {
     zoom: 0.2222222222;
-  }
-}
-
-@media screen and (min-width: 1441px) {
-  html,
-  body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #dfe6e9;
-    overflow-x: hidden;
-  }
-
-  .genzgalaxy {
-    width: 1440px;
-    margin: 0 auto;
-    zoom: calc(100vw / 1440px);
   }
 }
 

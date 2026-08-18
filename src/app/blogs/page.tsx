@@ -14,7 +14,7 @@ const Blogs: NextPage = () => {
         </div>
       </div>
       <div className={styles.rectangleParent}>
-        <Image className={styles.heroFrameSvg} src="/images/blog-hero-frame.svg" width={1312} height={684} sizes="100vw" alt="" />
+        <Image className={styles.heroFrameSvg} src="/images/blog-hero-frame.webp" width={1312} height={684} sizes="100vw" alt="" />
         <div className={styles.heroImageFrame}>
           <div className={styles.heroImageClip}>
             <Image className={styles.frameChild2} src="/images/imgblog.webp" width={667} height={616} sizes="100vw" alt="" />

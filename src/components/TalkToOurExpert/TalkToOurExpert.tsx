@@ -478,9 +478,6 @@ export default function TalkToOurExpert({ isOpen, onClose, onPlayClick }: TalkTo
                     </label>
                     <div className={styles["tte-textarea-shell"]}>
                       <textarea id="tte-query" className={styles["tte-textarea"]} placeholder="Write your detailed query here......" value={formData.query} onChange={(event) => handleFieldChange("query", event.target.value)} />
-                      <span className={styles["tte-resize-icon"]} aria-hidden="true">
-                        <ResizeIcon />
-                      </span>
                     </div>
                   </div>
 

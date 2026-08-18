@@ -99,18 +99,20 @@
 
 .deliverEngaging {
   line-height: 60px;
+  font-size: 36px;
 }
 
 .digitalLearning {
   color: #2d4cc8;
   line-height: 60px;
+  font-size: 36px;
 }
 
 .neurolxpEmpowersOrganization {
   width: 840px;
   height: 80px;
   position: relative;
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   line-height: 40px;
   color: #2f3547;
@@ -690,12 +692,12 @@
 
 .keyFeaturesOf {
   align-self: stretch;
-  height: 63px;
   position: relative;
   letter-spacing: 0.03em;
   line-height: 60px;
   display: inline-block;
   flex-shrink: 0;
+  font-size: 36px !important;
 }
 
 .frameParent19 {
@@ -2913,6 +2915,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .eLearning {
+    zoom: 1;
+  }
+}
+
 @media (max-width: 1023px) {
   .eLearning {
     padding: 0 28px;
@@ -2937,7 +2945,7 @@
   }
 
   .deliverEngagingDigitalContainer {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 50px;
   }
 

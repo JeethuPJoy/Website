@@ -158,8 +158,6 @@ const RetailAndHealthCare: NextPage = () => {
               </h2>
               <p className={styles.retailTeamsNeed} style={{ margin: 0 }}>
                 Retail teams need fast onboarding, updated product knowledge and consistent training across multiple locations.
-                <br />
-                <br />
               </p>
             </div>
           </div>
@@ -240,13 +238,9 @@ const RetailAndHealthCare: NextPage = () => {
             <Image src="/images/transparent.webp" className={styles.frameChild8} width={209.8} height={50.2} sizes="100vw" alt="" />
             <h2 className={styles.benefitsForRetail} style={{ margin: 0 }}>
               Benefits for Retail Organizations
-              <br />
-              <br />
             </h2>
             <p className={styles.neurolxpEnablesSmarter2} style={{ margin: 0 }}>
               NeuroLXP enables smarter retail learning with faster onboarding, stronger product knowledge and better customer service.
-              <br />
-              <br />
             </p>
           </div>
           <div className={styles.frameParent17}>

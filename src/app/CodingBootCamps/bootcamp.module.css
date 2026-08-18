@@ -2338,6 +2338,61 @@
   }
 }
 
+@media screen and (min-width: 1360px) and (max-width: 1439px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+  }
+
+  .bootcamp {
+    width: 1440px !important;
+    min-width: 1440px !important;
+    max-width: 1440px !important;
+    zoom: 99.930556% !important;
+    margin-top: -80px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform-origin: top left;
+    overflow-x: hidden !important;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1359px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+  }
+
+  .bootcamp {
+    width: 1440px !important;
+    min-width: 1440px !important;
+    max-width: 1440px !important;
+    zoom: 88.888889% !important;
+    margin-top: -80px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform-origin: top left;
+    overflow-x: hidden !important;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .bootcamp {
+    zoom: 100%;
+    margin-top: -80px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   html,
   body {

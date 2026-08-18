@@ -1347,7 +1347,7 @@
 .frameParent55 {
   position: absolute;
   top: calc(50% - 204.48px);
-  left: 50px;
+  left: 28px;
   width: 575px;
   display: flex;
   flex-direction: column;
@@ -3061,15 +3061,6 @@ body {
 }
 
 
-@media screen and (max-width: 1439px) {
-  .corporateTraining {
-    min-width: 1440px;
-    margin-left: 50% !important;
-    transform: translateX(-50%);
-  }
-}
-
-
 .frameParent58 {
   top: 3787.48px !important;
 }
@@ -4670,7 +4661,57 @@ body {
     margin-left: 0 !important;
     transform: none !important;
     transform-origin: top left !important;
-    zoom: calc(100vw / 1440px) !important;
+    zoom: calc(1024 / 1440) !important;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1359px) {
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #dfe6e9;
+  }
+
+  .corporateTraining {
+    width: 1440px !important;
+    min-width: 1440px !important;
+    max-width: 1440px !important;
+    margin: 0 !important;
+    margin-left: 0 !important;
+    transform: none !important;
+    transform-origin: top left !important;
+    zoom: calc(1280 / 1440) !important;
+  }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1439px) {
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #dfe6e9;
+  }
+
+  .corporateTraining {
+    width: 1440px !important;
+    min-width: 1440px !important;
+    max-width: 1440px !important;
+    margin: 0 !important;
+    margin-left: 0 !important;
+    transform: none !important;
+    transform-origin: top left !important;
+    zoom: calc(1439 / 1440) !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .corporateTraining {
+    zoom: 1 !important;
   }
 }
 
