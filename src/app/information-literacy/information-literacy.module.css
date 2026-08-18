@@ -9104,6 +9104,30 @@
 .creativeExcitedBrunetteBusiIcon{right:-200px;}
 }
 
+@media screen and (min-width: 1360px) and (max-width: 1439px) {
+  .informationLiteracy {
+    width: 1440px;
+    min-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
+    transform: none;
+    zoom: calc(1439 / 1440);
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1359px) {
+  .informationLiteracy {
+    width: 1440px;
+    min-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
+    transform: none;
+    zoom: calc(1280 / 1440);
+    overflow: hidden;
+  }
+}
+
 @media screen and (min-width: 1440px) and (max-width: 1440px) {
     .informationLiteracy {
         width: 100%;
