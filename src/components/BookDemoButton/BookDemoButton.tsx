@@ -27,7 +27,7 @@ export default function BookDemoButton() {
             <CalendarIcon className={styles["book-demo-fab-icon"]} />
           </span>
         </span>
-        <span className={styles["book-demo-fab-label"]}>Book a Demo</span>
+        {/* <span className={styles["book-demo-fab-label"]}>Book a Demo</span> */}
       </button>
       {isOpen && <BookDemoModal onClose={() => setIsOpen(false)} />}
     </>
