@@ -3662,6 +3662,28 @@ flex-shrink:0;
 }
 
 
+@media screen and (min-width: 1360px) and (max-width: 1439px) {
+  .careerPathwaysSkilling {
+    width: 1440px;
+    min-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
+    zoom: calc(1439 / 1440);
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1359px) {
+  .careerPathwaysSkilling {
+    width: 1440px;
+    min-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
+    zoom: calc(1280 / 1440);
+    overflow: hidden;
+  }
+}
+
 @media screen and (min-width: 1440px) and (max-width: 1599px) {
 	.careerPathwaysSkilling {
 		width: 100%;
