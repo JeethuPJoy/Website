@@ -265,6 +265,7 @@
 .nlxp-header-signin {
   flex: none;
   display: flex;
+  border: none;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -1008,11 +1009,7 @@
 }
  */
 
-/* Initial-render stability only.
-   Existing header design, dimensions, colors, spacing and content are unchanged. */
-.nlxp-header:not(.layoutReady) {
-  visibility: hidden;
-}
+
 
 .nlxp-header.layoutReady {
   visibility: visible;
