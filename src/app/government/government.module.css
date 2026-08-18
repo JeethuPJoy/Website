@@ -1894,7 +1894,11 @@
   position: static;
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .governmentStateInstitution {
+    zoom: 1;
+  }
+
   .frameDiv,
   .vectorParent {
     left: calc(50% - 640px);
@@ -1905,6 +1909,60 @@
   .frameDiv,
   .vectorParent {
     left: calc(50% - 640px);
+  }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1439px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .governmentStateInstitution {
+    width: 100%;
+    zoom: calc(1439 / 1440) !important;
+    overflow-x: hidden;
+  }
+
+  .frameParent,
+  .frameParent47,
+  .frameParent55,
+  .frameWrapper21 {
+    width: 100%;
+    left: 0;
+  }
+
+  .vectorParent {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1359px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .governmentStateInstitution {
+    width: 100%;
+    zoom: calc(1280 / 1440) !important;
+    overflow-x: hidden;
+  }
+
+  .frameParent,
+  .frameParent47,
+  .frameParent55,
+  .frameWrapper21 {
+    width: 100%;
+    left: 0;
+  }
+
+  .vectorParent {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
