@@ -118,7 +118,7 @@ const Bootcamp: NextPage = () => {
               </div>
               <div className={`${styles.frameChild7} ${styles.iconBlue}`}>
                 <div className={styles.codeIconCircle}>
-                  <Image className={styles.codeBoxImage} src="/icons/brace.webp" alt="Code" width={40} height={40} />
+                  <Image className={styles.codeBoxImage} src="/icons/brace.png" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@ const Bootcamp: NextPage = () => {
               </div>
               <div className={`${styles.frameChild7} ${styles.iconPurple}`}>
                 <div className={styles.codeIconCircle}>
-                  <Image className={styles.codeBoxImage} src="/icons/globe.webp" alt="Code" width={40} height={40} />
+                  <Image className={styles.codeBoxImage} src="/icons/globe.png" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@ const Bootcamp: NextPage = () => {
               </div>
               <div className={`${styles.frameChild7} ${styles.iconPink}`}>
                 <div className={styles.codeIconCircle}>
-                  <Image className={styles.codeBoxImage} src="/icons/icon.webp" alt="Code" width={40} height={40} />
+                  <Image className={styles.codeBoxImage} src="/icons/icon.png" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>
@@ -156,7 +156,7 @@ const Bootcamp: NextPage = () => {
               </div>
               <div className={`${styles.frameChild7} ${styles.iconGreen}`}>
                 <div className={styles.codeIconCircle}>
-                  <Image className={styles.codeBoxImage} src="/icons/icon2.webp" alt="Code" width={40} height={40} />
+                  <Image className={styles.codeBoxImage} src="/icons/icon2.png" alt="Code" width={40} height={40} />
                 </div>
               </div>
             </div>

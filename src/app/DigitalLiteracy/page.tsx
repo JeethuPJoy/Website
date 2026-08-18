@@ -226,7 +226,7 @@ function PillLabel({ text, color }: { text: string; color: string }) {
 function DigitalLiteracyTransformIcons() {
   return (
     <div className={styles["dl-transform-icons"]}>
-      <PillLabel text="Tranform" color="#0B9BA0" />
+      <PillLabel text="Transform" color="#0B9BA0" />
       <div className={styles["dl-transform-row"]}>
         <PillLabel text="Upskill" color="#BF1869" />
         <PillLabel text="Adapt" color="#BCCF10" />
