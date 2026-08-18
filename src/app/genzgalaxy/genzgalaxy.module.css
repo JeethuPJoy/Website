@@ -1417,7 +1417,7 @@
   left: -127px;
   display: flex;
   align-items: center;
-  gap: 78px;
+  gap: 124px;
   flex-shrink: 0;
   color: #2d4cc8;
 }
@@ -1431,7 +1431,7 @@
 .wrapperPolygon16 {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 48px;
   width: 870px;
   height: 841px;
   overflow: hidden;
