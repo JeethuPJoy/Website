@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import "./codingLabs.css";
+import "./codingLabs.module.css";
 
 const practiceItems = [
   { label: "Write & test code", color: "#BF1869" },
