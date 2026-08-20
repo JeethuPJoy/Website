@@ -4,7 +4,7 @@ import Image from "next/image";
 import { flushSync } from "react-dom";
 import { useEffect, useRef, useState, type JSX, type CSSProperties, type RefObject } from "react";
 import dynamic from "next/dynamic";
-import { LightbulbIcon, CursorClickIcon, TargetIcon, UsersIcon, SmartphoneIcon, GraduationCapIcon, SettingsGearIcon, LibraryIcon, BuildingIcon, ContentWritingIcon, BrainIcon, AnalyticsUpIcon, UniversityIcon, HandshakeIcon, LandmarkIcon, UserIcon, PlayIcon, CloseIcon, HeadphonesIcon } from "@/components/icons/Icons";
+import { GraduationCapOutlineIcon, LightbulbIcon, CursorClickIcon, TargetIcon, UsersIcon, SmartphoneIcon, GraduationCapIcon, SettingsGearIcon, LibraryIcon, BuildingIcon, ContentWritingIcon, BrainIcon, AnalyticsUpIcon, UniversityIcon, HandshakeIcon, LandmarkIcon, UserIcon, PlayIcon, CloseIcon, HeadphonesIcon } from "@/components/icons/Icons";
 import BookDemoModal from "@/components/Bookademo/BookDemoModal";
 import BookDemoButton from "@/components/BookDemoButton/BookDemoButton";
 import ContactUs from "@/components/contact/page";
@@ -372,7 +372,9 @@ function StoryMissionVision() {
         <h2 className={styles["smv-heading"]} id="smv-heading">
           Our Story! Our Mission! Our Vision
         </h2>
-        <p className={styles["smv-subtext"]}>At NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.</p>
+        <p className={styles["smv-subtext"]}>
+          At NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.
+        </p>
       </div>
 
       <div className={styles["smv-cards"]}>
@@ -393,12 +395,12 @@ function StoryMissionVision() {
 }
 
 const platformOverviewItems = [
-  { id: 1, label: "Universities", title: "Shaping future graduates", color: "#2D4CC8", Icon: GraduationCapIcon },
+     { id: 1, label: "Universities", title: "Shaping future graduates", color: "#2D4CC8", Icon: GraduationCapOutlineIcon },
   { id: 2, label: "Colleges", title: "Building career pathways", color: "#861109", Icon: UniversityIcon },
   { id: 3, label: "Corporates", title: "Empowering future-ready teams", color: "#67096E", Icon: BuildingIcon },
   { id: 4, label: "NGOs", title: "Driving meaningful social impact", color: "#BF1869", Icon: HandshakeIcon },
   { id: 5, label: "Governments", title: "Future-ready workforce skilling", color: "#2A7308", Icon: LandmarkIcon },
-  { id: 6, label: "Individuals", title: "Unlocking career opportunities", color: "#086F73", Icon: UserIcon },
+  { id: 6, label: "Individuals", title: "Unlocking career opportunities", color: "#0B9BA0", Icon: UserIcon },
 ];
 
 function PlatformOverview() {
@@ -438,29 +440,76 @@ function PlatformOverview() {
             NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
             <span className={styles["platform-overview-heading-text"]}> One Platform! Many Missions! One Future</span>
           </h2>
-          <div className={styles["platform-overview-list"]}>
-            {platformOverviewItems.map((item, index) => (
-              <div key={item.id} className={styles["platform-overview-list-item"]} style={{ "--item-color": item.color } as CSSProperties}>
-                <div className={styles["platform-overview-number-badge"]} style={{ background: item.color }}>
-                  {index + 1}
-                </div>
-                <div className={styles["platform-overview-capsule"]}>
-                  <div className={styles["platform-overview-icon-circle"]} style={{ color: item.color }} aria-hidden="true">
-                    <item.Icon className={styles["platform-overview-icon"]} />
-                  </div>
-                  <div className={styles["platform-overview-item-text"]}>
-                    <span className={styles["platform-overview-item-label"]} style={{ color: item.color }}>
-                      {item.label}
-                    </span>
-                    <span className={styles["platform-overview-item-title"]}>{item.title}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <div className={styles["platform-hex-grid"]}>
+  <svg className={styles["platform-hex-defs"]} aria-hidden="true">
+    <defs>
+      <filter id="hexInsetShadow" x="-4" y="-4" width="265" height="124" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feOffset dx="4" dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feOffset dx="-4" dy="-4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+        <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow" />
+      </filter>
+      <filter id="hexOuterShadow" x="-8" y="-8" width="270" height="116" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feOffset dx="4" dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feOffset dx="-4" dy="-4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+        <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow" />
+        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
+      </filter>
+    </defs>
+  </svg>
+  {platformOverviewItems.map((item) => (
+    <PlatformHexCard key={item.id} label={item.label} title={item.title} color={item.color} Icon={item.Icon} />
+  ))}
+</div>
         </div>
       </div>
     </section>
+  );
+}
+
+function PlatformHexCard({ label, title, color, Icon }: { label: string; title: string; color: string; Icon: (props: { className?: string }) => JSX.Element }) {
+  return (
+    <div className={styles["platform-hex-card"]}>
+      <div className={styles["platform-hex-icon-ring"]} aria-hidden="true">
+        <div className={styles["platform-hex-icon-circle"]} style={{ color }}>
+          <Icon className={styles["platform-hex-icon"]} />
+        </div>
+      </div>
+      <svg className={styles["platform-hex-back"]} viewBox="0 0 257 116" aria-hidden="true">
+        <polygon points="128.5,0 257,29 257,87 128.5,116 0,87 0,29" fill="#dfe6e9" filter="url(#hexInsetShadow)" />
+      </svg>
+      <svg className={styles["platform-hex-front-shape"]} viewBox="0 0 254 100" aria-hidden="true">
+        <polygon points="127,0 254,25 254,75 127,100 0,75 0,25" fill="#dfe6e9" filter="url(#hexOuterShadow)" />
+      </svg>
+      <div className={styles["platform-hex-front-text"]}>
+        <div className={styles["platform-hex-text"]}>
+          <span className={styles["platform-hex-label"]} style={{ color }}>
+            {label}
+          </span>
+          <span className={styles["platform-hex-description"]}>{title}</span>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -516,7 +565,9 @@ function MeetNeuroLXP() {
           <Image src="/images/friends-learning-with-laptop.webp" alt="Students collaborating on a laptop" fill sizes="(min-width: 1312px) 1216px, 100vw" className={styles["meet-neurolxp-image"]} />
         </div>
         <div className={styles["meet-neurolxp-text"]}>
-          <span className={styles["meet-neurolxp-badge"]}>Meet NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup></span>
+          <span className={styles["meet-neurolxp-badge"]}>
+            Meet NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
+          </span>
           <h2 className={styles["meet-neurolxp-heading"]} id="meet-neurolxp-heading">
             Next-Generation Neomorphism learning Platform
           </h2>
@@ -591,8 +642,7 @@ function WhyChooseCard({ title, description, dashColor, iconBg, Icon }: WhyChoos
           <Icon className={styles["why-choose-icon"]} />
         </div>
       </div>
-      <div className={styles["why-choose-diamond-inner-shape"]} />
-      <div className={styles["why-choose-card-content"]}>
+      <div className={styles["why-choose-oval"]}>
         <h3 className={styles["why-choose-card-title"]}>{title}</h3>
         <p className={styles["why-choose-card-description"]}>{description}</p>
       </div>
@@ -605,14 +655,18 @@ function WhyChooseNeuroLXP() {
     <section className={styles["why-choose-section"]} aria-labelledby="why-choose-heading">
       <div className={styles["why-choose-content"]}>
         <div className={styles["why-choose-blob"]} aria-hidden="true" />
-        <span className={styles["why-choose-badge"]}>Why Choose NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup></span>
+        <span className={styles["why-choose-badge"]}>
+          Why Choose NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
+        </span>
         <div className={styles["why-choose-body"]}>
           <div className={styles["why-choose-text"]}>
             <h2 className={styles["why-choose-heading"]} id="why-choose-heading">
               Transforming <br />
               <span className={styles["why-choose-heading-accent"]}>Digital Learning</span>
             </h2>
-            <p className={styles["why-choose-subtext"]}>NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup> empowers learners with personalized learning, future-ready skills, and meaningful outcomes.</p>
+            <p className={styles["why-choose-subtext"]}>
+              NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup> empowers learners with personalized learning, future-ready skills, and meaningful outcomes.
+            </p>
           </div>
           <div className={styles["why-choose-grid"]}>
             {whyChooseCards.map((card) => (
@@ -628,37 +682,37 @@ function WhyChooseNeuroLXP() {
 const learningModuleCards = [
   {
     id: 1,
-    image: "/images/education-academy-certification-curriculum-icon.webp",
+    image: "/images/perfect-day-happy-young-business-woman-sitting-office.webp",
     title: "Blended Learning",
     description: "Seamlessly combine online and in-person learning for a flexible, engaging, and effective learning experience.",
   },
   {
     id: 2,
-    image: "/images/elevated-view-businessman-businesswoman-stacking-each-other-s-hand-project.webp",
+    image: "/images/challange.jpeg",
     title: "Career Growth",
     description: "Develop in-demand skills, monitor your achievements, and build a successful career through continuous learning.",
   },
   {
     id: 3,
-    image: "/images/young-smiling-woman-using-digital-tablet-isolated-white.webp",
+    image: "/images/young-businessman-wearing-glasses-working-using-laptop-standing-white-background-with-confident-expression-smart-face-thinking-serious.webp",
     title: "Smart Learning Paths",
     description: "Navigate personalized learning experiences designed to accelerate growth, build future-ready skills, and achieve lasting success.",
   },
   {
     id: 4,
-    image: "/images/group-businesswomen-working-office.webp",
+    image: "/images/smiley-friends-having-videocall.webp",
     title: "Immersive Learning",
     description: "Experience interactive content and collaborative learning that inspire engagement, build skills, and drive meaningful outcomes.",
   },
   {
     id: 5,
-    image: "/images/exchanging-business-card-posing.webp",
+    image: "/images/coworkers-smiling-introduction-partnership-copy-space.webp",
     title: "Smart Onboarding",
     description: "Accelerate employee onboarding with guided learning experiences that drive faster adaptation, engagement, and productivity.",
   },
   {
     id: 6,
-    image: "/images/business-team-holding-meeting.webp",
+    image: "/images/people-learning-language-work-full-shot.webp",
     title: "Standards Training",
     description: "Stay compliant with confidence. Empower every team with standards-based learning.",
   },
@@ -818,7 +872,11 @@ function LearningModules() {
       <div className={styles["learning-modules-heading-block"]}>
         <span className={styles["learning-modules-badge"]}>Learning Modules</span>
         <h2 className={styles["learning-modules-heading"]} id="learning-modules-heading">
-          Future Ready <span className={styles["learning-modules-heading-accent"]}>NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup></span> Learning Solutions
+          Future Ready{" "}
+          <span className={styles["learning-modules-heading-accent"]}>
+            NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
+          </span>{" "}
+          Learning Solutions
         </h2>
         <p className={styles["learning-modules-subtext"]}>Powerful, scalable modules designed to accelerate learning, build future-ready skills, and drive organizational success.</p>
       </div>
@@ -872,7 +930,7 @@ const testimonials: TestimonialData[] = [
     name: "Sara Thomas",
     role: "Software Engineer",
     quote: "NeuroLXP™ made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
-    image: "/images/business-concept-portrait-confident-young-businesswoman-keeping-arms-crossed-looking-camera-w.webp",
+    image: "/images/SaraThomas.jpg",
     accentColor: "#2DC8BB",
   },
   {
@@ -1052,7 +1110,9 @@ function Testimonials() {
         <h2 className={styles["testimonials-heading"]} id="testimonials-heading">
           Success Powered by <span className={styles["testimonials-heading-accent"]}>NeuroLXP</span>
         </h2>
-        <p className={styles["testimonials-subtext"]}>NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup> made learning engaging, simple, and truly effective for our learners.</p>
+        <p className={styles["testimonials-subtext"]}>
+          NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup> made learning engaging, simple, and truly effective for our learners.
+        </p>
       </div>
 
       <span className={styles["sr-only"]} aria-live="polite" aria-atomic="true">
@@ -1167,10 +1227,10 @@ function FAQItem({ item, isOpen, onToggle }: { item: FAQItemData; isOpen: boolea
         <button type="button" id={buttonId} className={styles["faq-item-header"]} onClick={onToggle} aria-expanded={isOpen} aria-controls={panelId}>
           <div className={styles["faq-item-header-left"]}>
             <span className={styles["faq-item-triangle"]} style={{ borderLeftColor: item.colorStart }} aria-hidden="true" />
-            <span className={styles["faq-item-number"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true">
+            <span className={styles["faq-item-number"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%` }} aria-hidden="true">
               {item.number}
             </span>
-            <span className={styles["faq-item-divider"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true" />
+            <span className={styles["faq-item-divider"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%` }} aria-hidden="true" />
             <span className={styles["faq-item-title"]}>{item.title}</span>
           </div>
           <span className={styles["faq-item-toggle"]} style={{ color: item.colorStart }} aria-hidden="true">

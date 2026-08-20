@@ -60,6 +60,7 @@
   gap: 48px;
   flex-wrap: wrap;
   overflow: hidden;
+  height: 82vh;
 }
 
 .dl-hero-content {
@@ -80,20 +81,27 @@
   border-radius: 28px;
   font-family: "Segoe UI", sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 0.03em;
   color: #2d4cc8;
+}
+
+.nlxp-footer-heading-tm {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 2px;
 }
 
 .dl-hero-heading {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: 36px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: #31344b;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 550px;
 }
 
 .dl-hero-heading-accent {
@@ -132,8 +140,8 @@
 .dl-hero-button-secondary {
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
   color: #31344b;
 }
 
@@ -148,8 +156,8 @@
 .dl-hero-button-primary:hover,
 .dl-hero-button-secondary:hover {
   box-shadow:
-    -4px -4px 10px #ffffff,
-    4px 4px 10px #c6c6c9;
+    inset -4px -4px 10px #ffffff,
+    inset 4px 4px 10px #c6c6c9;
 }
 
 .dl-hero-stats {
@@ -324,7 +332,7 @@
 .dl-advantage-section {
   max-width: 1280px;
   justify-self: center;
-  padding: 64px 16px;
+  padding: 32px 16px;
   display: grid;
   grid-template-columns: 545fr 648fr;
   align-items: center;
@@ -354,7 +362,7 @@
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: clamp(28px, 3.5vw, 48px);
+  font-size: 36px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: #31344b;
@@ -607,6 +615,7 @@
     inset -8px -8px 16px #ffffff,
     inset 8px 8px 16px rgba(196, 196, 196, 0.8);
   border-radius: 32px;
+  height: 95vh;
 }
 
 .dl-accelerate {
@@ -666,7 +675,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 16px;
 }
 
 .dl-check-list {
@@ -769,7 +778,7 @@
 .dl-analytics-section {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 64px 16px;
+  padding: 62px 16px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -887,7 +896,7 @@
 .dl-howitworks-section {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 64px 16px;
+  padding: 34px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -910,7 +919,7 @@
     10px 10px 20px #c4c4c4,
     -10px -10px 20px #ffffff;
   padding: 46px 24px 32px;
-  min-height: 340px;
+  min-height: 300px;
   box-sizing: border-box;
   transition:
     transform 0.3s ease,
@@ -1024,7 +1033,7 @@
   gap: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   color: #2f3547;
 }
 
@@ -1175,7 +1184,7 @@
   max-width: 900px;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: clamp(28px, 4vw, 54px);
+  font-size: 36px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: #31344b;
@@ -1185,7 +1194,7 @@
   margin: 0;
   max-width: 960px;
   font-family: "Segoe UI", sans-serif;
-  font-size: clamp(16px, 1.8vw, 28px);
+  font-size: 24px;
   line-height: 1.43;
   letter-spacing: 0.03em;
   color: #000;

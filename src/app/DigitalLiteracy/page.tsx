@@ -109,7 +109,7 @@ function DigitalLiteracySkillBanner() {
   return (
     <section className={styles["dl-skill-banner-section"]}>
       <div className={styles["dl-skill-banner"]}>
-        <p className={styles["dl-skill-banner-sr-text"]}>Because every skill learned today shapes the world of tomorrow</p>
+        <p className={styles["dl-skill-banner-sr-text"]}>Because Every Skill Learned Today Shapes the World of Tomorrow</p>
         <svg className={styles["dl-skill-banner-svg"]} viewBox="0 0 1280 360" fill="none" aria-hidden="true">
           <g filter="url(#filter0_ii_903_9541)">
             <path d="M637.772 0.313325C639.25 0.105465 640.75 0.105464 642.228 0.313323L1266.23 88.0633C1274.13 89.174 1280 95.9317 1280 103.907V256.093C1280 264.068 1274.13 270.826 1266.23 271.937L642.228 359.687C640.75 359.895 639.25 359.895 637.772 359.687L13.7719 271.937C5.8739 270.826 0 264.068 0 256.093V103.907C0 95.9317 5.87393 89.174 13.7719 88.0633L637.772 0.313325Z" fill="#DFE6E9" />
@@ -177,7 +177,7 @@ function AdvantageCard({ number, color, title, description, mirrored }: { number
 function DigitalLiteracyAdvantage() {
   return (
     <section className={styles["dl-advantage-section"]}>
-      <svg className={styles["dl-advantage-wedge"]} viewBox="0 0 897 862" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg className={styles["dl-advantage-wedge"]} viewBox="0 0 897 862" fill="none" aria-hidden="true">
         <g filter="url(#filter0_ii_903_9069)">
           <path d="M896.364 549.026L-165.898 861.837L-65.3121 -0.000246233L896.364 549.026Z" fill="#DFE6E9" />
         </g>
@@ -202,7 +202,7 @@ function DigitalLiteracyAdvantage() {
       </svg>
       <div className={styles["dl-advantage-text"]}>
         <span className={styles["dl-hero-badge"]}>The NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup> Advantage</span>
-        <h2 className={styles["dl-section-heading"]}>Equip Every Workforce For a Digital Future</h2>
+        <h2 className={styles["dl-section-heading"]}>Equip Every Workforce for a Digital Future</h2>
         <p className={styles["dl-hero-subtext"]}>From foundational skills to advanced expertise skills in one platform.</p>
       </div>
       <div className={styles["dl-advantage-grid"]}>
@@ -307,7 +307,7 @@ function DigitalLiteracyAnalytics() {
     <section className={styles["dl-analytics-section"]}>
       <div className={styles["dl-analytics-header"]}>
         <span className={styles["dl-hero-badge"]}>Real-Time Analytics</span>
-        <h2 className={`${styles["dl-section-heading"]} ${styles["dl-center"]}`}>Track every learner - Improve every outcome</h2>
+        <h2 className={`${styles["dl-section-heading"]} ${styles["dl-center"]}`}>Track Every Learner - Improve Every Outcome</h2>
         <p className={`${styles["dl-hero-subtext"]} ${styles["dl-center"]}`}>Turn learning data into actionable insights with live dashboards, competency tracking, and compliance reporting.</p>
       </div>
       <div className={styles["dl-analytics-grid"]}>
@@ -396,8 +396,8 @@ function DigitalLiteracyHowItWorks() {
   return (
     <section className={styles["dl-howitworks-section"]}>
       <div className={styles["dl-analytics-header"]}>
-        <span className={styles["dl-hero-badge"]}>How It Works</span>
-        <h2 className={`${styles["dl-section-heading"]} ${styles["dl-center"]}`}>From assessment to Mastery in four steps</h2>
+        <span className={styles["dl-hero-badge"]}>How it Works</span>
+        <h2 className={`${styles["dl-section-heading"]} ${styles["dl-center"]}`}>From Assessment to Mastery in Four Steps</h2>
         <p className={`${styles["dl-hero-subtext"]} ${styles["dl-center"]}`}>Turn learning data into actionable insights with live dashboards, competency tracking, and compliance reporting.</p>
       </div>
       <div className={styles["dl-step-grid"]}>
@@ -448,7 +448,7 @@ function DigitalLiteracyWhyNeuroLXP() {
     <section className={styles["dl-why-section"]}>
       <div className={styles["dl-why-content"]}>
         <span className={styles["dl-hero-badge"]}>Why NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup></span>
-        <h2 className={styles["dl-section-heading"]}>The smarter way to build a Digitally-ready workforce</h2>
+        <h2 className={styles["dl-section-heading"]}>The Smarter Way to Build a Digitally-Ready Workforce</h2>
         <p className={styles["dl-hero-subtext"]}>Built around the learner driving engagement, closing gaps, and proving ROI from day one.</p>
         <div className={styles["dl-bullet-list"]}>
           <BulletItem text="Skill Mapping" color="#BF1869" />
@@ -469,11 +469,11 @@ function DigitalLiteracyCTA() {
   return (
     <section className={styles["dl-cta-section"]}>
       <div className={styles["dl-cta-card"]}>
-        <h2 className={styles["dl-cta-heading"]}>Ready to build a Digitally-Skilled workforce</h2>
+        <h2 className={styles["dl-cta-heading"]}>Ready to Build a Digitally-Skilled Workforce</h2>
         <p className={styles["dl-cta-subtext"]}>
           Build a future-ready workforce with NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup>
           <br />
-          Empower every learner with digital skills that drive business success.
+          Empower every learner with digital skills that drive business success
         </p>
         <div className={styles["dl-hero-buttons"]}>
           <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`}>

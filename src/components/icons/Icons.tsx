@@ -207,6 +207,16 @@ export function GraduationCapIcon({ className }: IconProps) {
   );
 }
 
+export function GraduationCapOutlineIcon({ className }: IconProps) {
+  return (
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className={className} aria-hidden="true" focusable="false">
+      <path d="M29.334 12V20" stroke="#2D4CC8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M24 16V20.0892C24 21.5111 24 22.222 23.6493 22.8095L23.6421 22.8212C23.2881 23.4068 22.6457 23.7651 21.3608 24.4815C18.7527 25.9357 17.4485 26.6629 16.0145 26.6667H15.9855C14.5515 26.6629 13.2473 25.9357 10.6392 24.4815C9.35432 23.7651 8.71188 23.4068 8.35787 22.8212L8.35073 22.8095C8 22.222 8 21.5111 8 20.0892V16" stroke="#2D4CC8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M11.3613 6.96596L5.87462 9.61247C3.73555 10.6443 2.66602 11.1602 2.66602 11.9909C2.66602 12.8217 3.73555 13.3377 5.87462 14.3694L11.4633 17.0651C13.6804 18.1346 14.7889 18.6693 15.9748 18.6693C17.1608 18.6693 18.2693 18.1346 20.4864 17.0651L26.1841 14.3167C28.2848 13.3036 29.3351 12.7969 29.3327 11.9635C29.3303 11.13 28.2855 10.6336 26.1958 9.6407C24.2899 8.73514 22.4907 7.90282 20.5767 6.99172C18.2536 5.88584 17.092 5.3329 15.9131 5.33595C14.7343 5.33899 13.6099 5.88132 11.3613 6.96596Z" stroke="#2D4CC8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export function SettingsGearIcon({ className }: IconProps) {
   return (
     <svg className={className} viewBox="0 0 32 32" fill="none"  >

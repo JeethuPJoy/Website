@@ -67,7 +67,9 @@ a:focus-visible {
   width: 100%;
   max-width: 1200px;
   background: #dfe6e9;
-  box-shadow: -8px -8px 16px #5b58581a, 8px 8px 16px #c6c6c9;
+  box-shadow:
+    -8px -8px 16px #5b58581a,
+    8px 8px 16px #c6c6c9;
   border-radius: 24px;
   padding: 26px;
   box-sizing: border-box;
@@ -111,6 +113,10 @@ a:focus-visible {
 
 .hero-slide:nth-child(4) .hero-slide-image {
   object-position: 50% 12%;
+}
+
+.hero-slide:nth-child(5) .hero-slide-image {
+  object-position: 50% 46%;
 }
 
 .hero-slide-video {
@@ -269,7 +275,7 @@ a:focus-visible {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: #31344b;
@@ -418,14 +424,6 @@ a:focus-visible {
       -10px -10px 20px #ffffff;
   }
 
-  .platform-overview-list-item:hover .platform-overview-capsule {
-    transform: translateY(-4px);
-  }
-
-  .platform-overview-list-item:hover .platform-overview-icon-circle {
-    transform: scale(1.08);
-  }
-
   .purpose-pill:hover {
     transform: translateY(-6px);
     border-width: 0 10px;
@@ -444,11 +442,6 @@ a:focus-visible {
       8px 8px 16px #c6c6c9,
       -8px -8px 16px #ffffff,
       0 0 0 3px var(--dash-color);
-  }
-
-  .why-choose-card:hover .why-choose-diamond-shape {
-    border-style: solid;
-    transform: translateX(-50%) rotate(49deg);
   }
 
   .get-in-touch-button:hover {
@@ -476,15 +469,12 @@ a:focus-visible {
   .smv-card,
   .smv-card-icon-circle,
   .smv-card-image,
-  .platform-overview-capsule,
-  .platform-overview-icon-circle,
   .purpose-pill {
     transition: none;
   }
 
   .why-choose-card,
-  .why-choose-icon-circle,
-  .why-choose-diamond-shape {
+  .why-choose-icon-circle {
     transition: none;
   }
 }
@@ -635,7 +625,7 @@ a:focus-visible {
 
 .platform-overview-media {
   flex-shrink: 0;
-  width: 742px;
+  width: 680px;
   max-width: 100%;
   margin-top: 100px;
 }
@@ -649,7 +639,7 @@ a:focus-visible {
   box-shadow:
     inset 0px 4px 4px rgba(0, 0, 0, 0.25),
     inset 0px -4px 4px rgba(97, 95, 95, 0.5);
-    height: 670px;
+  height: 670px;
 }
 
 .platform-overview-image {
@@ -723,97 +713,159 @@ a:focus-visible {
   color: #31344b !important;
 }
 
-.platform-overview-list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.platform-hex-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 257px);
+  column-gap: 36px;
+  row-gap: 16px;
 }
 
-.platform-overview-list-item {
+.platform-hex-card {
   position: relative;
-  display: flex;
-  align-items: center;
-  min-height: 100px;
+  width: 257px;
+  height: 170px;
 }
 
-.platform-overview-number-badge {
+.platform-hex-icon-ring {
   position: absolute;
-  left: 0;
-  top: 3px;
-  height: 60px;
-  width: 92px;
-  border-radius: 28px;
-  display: flex;
-  align-items: center;
-  padding-left: 21px;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  color: #ffffff;
-  z-index: 0;
-}
-
-.platform-overview-capsule {
-  position: relative;
-  z-index: 1;
-  margin-left: 50px;
-  width: 100%;
-  min-height: 90px;
-  background: #dfe6e9;
-  box-shadow:
-    -8px -8px 16px rgba(91, 88, 88, 0.1),
-    8px 8px 16px #c6c6c9;
-  border-radius: 24px;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 16px 32px 16px 24px;
-  box-sizing: border-box;
-  transition: transform 0.3s ease;
-}
-
-.platform-overview-icon-circle {
-  flex-shrink: 0;
-  width: 64px;
-  height: 64px;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    8px 8px 16px #c6c6c9,
-    -8px -8px 16px #ffffff;
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  z-index: 3;
 }
 
-.platform-overview-icon {
-  width: 38px;
-  height: 38px;
+.platform-hex-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.platform-overview-item-text {
+.platform-hex-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.platform-hex-back {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 257px;
+  height: 116px;
+  overflow: visible;
+  z-index: 1;
+}
+
+.platform-hex-front {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 254px;
+  height: 100px;
+  background: #dfe6e9;
+  filter: drop-shadow(-4px -4px 4px #ffffff) drop-shadow(4px 4px 4px #c4c4c4);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platform-hex-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.platform-hex-front-shape {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 254px;
+  height: 100px;
+  overflow: visible;
+  z-index: 2;
+}
+
+.platform-hex-front-text {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 254px;
+  height: 100px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platform-hex-back-outline {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 257px;
+  height: 116px;
+  z-index: 1;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.platform-hex-front-outline {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 254px;
+  height: 100px;
+  z-index: 2;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.platform-hex-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 6px;
+  text-align: center;
+  max-width: 205px;
+  padding: 0 12px;
+  box-sizing: border-box;
 }
 
-.platform-overview-item-label {
+.platform-hex-label {
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-transform: capitalize;
 }
 
-.platform-overview-item-title {
+.platform-hex-description {
   font-family: "Segoe UI", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
   letter-spacing: -0.03em;
   color: #31344b;
 }
@@ -926,6 +978,7 @@ a:focus-visible {
   border-radius: 32px;
   padding: 32px;
   box-sizing: border-box;
+  height: 95vh;
 }
 
 .meet-neurolxp-frame::before {
@@ -943,7 +996,7 @@ a:focus-visible {
 .meet-neurolxp-image {
   border-radius: 16px;
   object-fit: cover;
-  object-position: 50% 20%;
+  object-position: 50% 12%;
 }
 
 .meet-neurolxp-overlay {
@@ -1011,7 +1064,7 @@ a:focus-visible {
 .why-choose-section {
   position: relative;
   width: 100%;
-  padding: 32px 16px;
+  padding: 16px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -1019,11 +1072,11 @@ a:focus-visible {
 
 .why-choose-blob {
   position: absolute;
-  width: 55vw;
+  width: 29vw;
   max-width: 502px;
   height: 160vw;
   max-height: 1300px;
-  top: -48%;
+  top: -74%;
   left: -25%;
   background: #dfe6e9;
   box-shadow:
@@ -1074,7 +1127,7 @@ a:focus-visible {
 
 .why-choose-text {
   flex: 0 1 543px;
-  max-width: 543px;
+  max-width: 503px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1086,7 +1139,7 @@ a:focus-visible {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: clamp(28px, 3.2vw, 48px);
+  font-size: 36px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: #31344b;
@@ -1108,27 +1161,23 @@ a:focus-visible {
 
 .why-choose-grid {
   flex: 0 1 626px;
-  max-width: 626px;
+  max-width: 660px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0px;
+  gap: 48px;
   justify-items: center;
 }
 
 .why-choose-card {
-  position: relative;
   width: 100%;
   max-width: 301px;
-  aspect-ratio: 301 / 343;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: transform 0.3s ease;
 }
 
 .why-choose-icon-ring {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 80px;
   height: 80px;
   border-radius: 100px;
@@ -1139,7 +1188,9 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 3;
+  z-index: 2;
+  margin-bottom: -32px;
+  flex-shrink: 0;
 }
 
 .why-choose-icon-circle {
@@ -1152,7 +1203,6 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -1164,79 +1214,24 @@ a:focus-visible {
   color: #31344b;
 }
 
-.why-choose-diamond {
-  position: absolute;
-  top: 38px;
-  width: 62%;
-  aspect-ratio: 1 / 1;
-  background: #dfe6e9;
-  border: 1px dashed;
-  border-radius: 24px;
-  transform: rotate(45deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+.why-choose-oval {
+  position: relative;
   z-index: 1;
-}
-
-.why-choose-diamond-shape {
-  position: absolute;
-  top: 11%;
-  left: 50%;
-  width: 74%;
-  aspect-ratio: 1 / 1;
-  transform: translateX(-50%) rotate(45deg);
+  width: 107%;
+  padding: 44px 40px 32px;
+  border-radius: 50%;
   background: #dfe6e9;
-  border: 1px dashed;
-  border-radius: 24px;
-  z-index: 0;
-
-  transition: transform 0.3s ease;
-}
-
-.why-choose-diamond-inner-shape {
-  position: absolute;
-  top: 18%;
-  left: 50%;
-  width: 70%;
-  aspect-ratio: 1 / 1;
-  transform: translateX(-50%) rotate(45deg);
-  background: #dfe6e9;
+  border: 1px solid var(--dash-color);
   box-shadow:
     -8px -8px 16px rgba(255, 255, 255, 0.8),
     8px 8px 16px #c4c4c4;
-  border-radius: 8px;
-  z-index: 1;
-}
-
-.why-choose-diamond-inner {
-  width: 82%;
-  height: 82%;
-  background: #dfe6e9;
-  box-shadow:
-    -8px -8px 16px rgba(255, 255, 255, 0.8),
-    8px 8px 16px #c4c4c4;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.why-choose-card-content {
-  position: absolute;
-  top: 13%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 46%;
-  height: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 8px;
   text-align: center;
-  z-index: 2;
+  box-sizing: border-box;
 }
 
 .why-choose-card-title {
@@ -1257,6 +1252,23 @@ a:focus-visible {
   line-height: 1.57;
   letter-spacing: 0.01em;
   color: #000000;
+  text-align: center;
+}
+
+.why-choose-card-content {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  z-index: 2;
 }
 
 .learning-modules-section {
@@ -1380,6 +1392,7 @@ a:focus-visible {
 
 .learning-module-image {
   object-fit: cover;
+  object-position: 50% 12%;
 }
 
 .learning-module-text {
@@ -1579,6 +1592,10 @@ a:focus-visible {
   object-fit: cover;
 }
 
+.testimonial-card-wrapper[data-testimonial-id="4"] .testimonial-photo {
+  transform: scale(1.4);
+}
+
 .testimonial-card {
   position: absolute;
   right: 0;
@@ -1655,7 +1672,7 @@ a:focus-visible {
 .testimonial-role {
   font-family: "Segoe UI", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.57;
   letter-spacing: 0.03em;
   color: #31344b;
@@ -1994,7 +2011,7 @@ a:focus-visible {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: clamp(28px, 3.4vw, 48px);
+  font-size: 36px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: #31344b;
@@ -2009,7 +2026,7 @@ a:focus-visible {
   max-width: 463px;
   font-family: "Segoe UI", sans-serif;
   font-weight: 400;
-  font-size: clamp(16px, 1.5vw, 24px);
+  font-size: 24px;
   line-height: 1.29;
   letter-spacing: 0.03em;
   color: #2f3547;
@@ -2132,7 +2149,7 @@ a:focus-visible {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: #31344b;
@@ -2371,56 +2388,10 @@ a:focus-visible {
   color: #000000;
 }
 
-/* .book-demo-modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(49, 52, 75, 0.55);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 48px 16px;
-  overflow-y: auto;
-  z-index: 1000;
-} */
-
-/* .book-demo-modal-dialog {
-  position: relative;
-  width: 100%;
-  max-width: 762px;
-  outline: none;
-} */
-/* 
-.book-demo-modal-close {
-  position: absolute;
-  top: -16px;
-  right: -16px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  background: #dfe6e9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-} */
-
 .book-demo-modal-dialog--contact .book-demo-modal-close {
-     top: 24px;
-     right: 24px;
-   }
-
-/* .book-demo-modal-close-icon {
-  width: 30px;
-  height: 30px;
-  color: #31344b;
-} */
-
-/* .book-demo-modal-close:focus-visible {
-  outline: 3px solid #2d4cc8;
-  outline-offset: 3px;
-} */
+  top: 24px;
+  right: 24px;
+}
 
 @media (max-width: 2000px) {
   :global(why-choose-blob) {
@@ -2454,11 +2425,15 @@ a:focus-visible {
 
   .platform-overview-content {
     min-width: 0;
-    align-items: flex-start;
+    align-items: center;
   }
   .platform-overview-heading {
     text-align: left;
-    font-size: 20px;
+    font-size: 36px;
+  }
+
+  .why-choose-oval {
+    padding: 44px 30px 32px;
   }
 
   .platform-purpose-bottom {
@@ -2521,10 +2496,6 @@ a:focus-visible {
     justify-content: center;
   }
   .why-choose-blob {
-    /* width: 380px;
-    height: 900px;
-    top: -139px;
-    left: -224px; */
     display: none;
   }
 
@@ -2631,21 +2602,24 @@ a:focus-visible {
   .smv-card {
     padding: 56px 24px 24px;
   }
+
+  .platform-hex-card {
+    zoom: 0.85;
+  }
+
+  .platform-overview-media-frame {
+    height: 580px;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-frame {
-    padding: 10px;
+    padding: 10px 10px 12px 10px;
     border-radius: 18px;
   }
 
   .odyssey-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero-frame {
-    padding: 10px;
-    border-radius: 18px;
   }
 
   .hero-caption-stage {
@@ -2658,7 +2632,7 @@ a:focus-visible {
     justify-content: center;
     height: 20%;
     min-height: 56px;
-    padding-top: 10px;
+    padding-top: 2px;
   }
 
   .hero-dot-active {
@@ -2673,8 +2647,8 @@ a:focus-visible {
   }
 
   .hero-dot::after {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
   }
 
   .hero-heading {
@@ -2687,11 +2661,6 @@ a:focus-visible {
   .platform-overview-media {
     width: 100% !important;
     margin-top: 0;
-  }
-  .platform-overview-capsule {
-    padding: 16px;
-    gap: 16px;
-    top: -5px;
   }
 
   .purpose-pill {
@@ -2731,6 +2700,14 @@ a:focus-visible {
     gap: 20px;
   }
 
+  .platform-overview-content {
+    align-items: center;
+  }
+
+  .platform-overview-heading {
+    text-align: center;
+  }
+
   .smv-stat-label {
     font-size: 17px;
   }
@@ -2760,28 +2737,19 @@ a:focus-visible {
   .why-choose-grid {
     grid-template-columns: repeat(2, minmax(0, 220px));
     justify-content: center;
-    gap: 24px;
+    gap: 100px;
     flex: none;
     width: 100%;
     max-width: 480px;
   }
 
+  .why-choose-oval {
+    width: 140%;
+  }
+
   .why-choose-icon-ring {
     width: 60px;
     height: 40px;
-  }
-
-  .why-choose-diamond-shape {
-    width: 82%;
-    top: 13%;
-  }
-
-  .why-choose-diamond-inner-shape {
-    width: 70%;
-  }
-
-  .why-choose-card-content {
-    gap: 2px;
   }
 
   .why-choose-card-title {
@@ -2995,9 +2963,19 @@ a:focus-visible {
   }
 
   .book-demo-modal-dialog--contact .book-demo-modal-close {
-     top: -18px;
-     right: -10px;
-   }
+    top: -18px;
+    right: -10px;
+  }
+
+  .platform-hex-grid {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-self: center;
+  }
+
+  .platform-hex-card {
+    zoom: 1;
+  }
 }
 
 @media (max-width: 480px) {
@@ -3007,16 +2985,25 @@ a:focus-visible {
   .why-choose-heading,
   .learning-modules-heading,
   .testimonials-heading {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .odyssey-heading-block {
+    gap: 20px;
+    padding-bottom: 16px;
   }
 
   .hero-image-stage {
     height: 200px;
   }
 
-  .platform-overview-item-text {
-    width: 100%;
+  .meet-neurolxp-section {
+    padding: 16px;
+  }
+
+  .why-choose-text {
+    gap: 18px;
   }
 
   .smv-subtext,
@@ -3057,30 +3044,31 @@ a:focus-visible {
     line-height: 40px;
   }
 
-  .platform-overview-item-label {
-    font-size: 20px;
+  .hero-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .platform-hex-grid {
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-items: center;
   }
 
   .why-choose-grid {
     gap: 36px;
   }
 
-  .why-choose-diamond-inner-shape {
-    width: 80%;
+  .faq-content {
+    gap: 4px;
   }
 
-  .platform-overview-icon-circle {
-    width: 50px;
-    height: 50px;
+  .why-choose-oval {
+    width: 130%;
   }
 
-  .platform-overview-icon {
-    width: 32px;
-    height: 32px;
-  }
-
-  .platform-overview-item-title {
-    font-size: 16px;
+  .faq-card {
+    padding: 16px;
   }
 
   .platform-overview-section {
@@ -3100,11 +3088,17 @@ a:focus-visible {
   }
   .meet-neurolxp-overlay {
     height: 220px;
-    box-shadow: 4px 4px 8px #c4c4c4, -4px -4px 8px #fff9;
+    box-shadow:
+      4px 4px 8px #c4c4c4,
+      -4px -4px 8px #fff9;
   }
   .meet-neurolxp-badge {
     padding: 7px 18px;
     font-size: 16px;
+  }
+
+  .platform-overview-media-frame {
+    height: 590px;
   }
 
   .why-choose-section {
@@ -3150,7 +3144,7 @@ a:focus-visible {
   }
 
   .learning-modules-section {
-    padding:16px;
+    padding: 16px;
     gap: 2px;
   }
   .learning-module-card {
@@ -3161,7 +3155,7 @@ a:focus-visible {
   }
 
   .testimonials-heading-block {
-    padding:16px;
+    padding: 16px 16px 0 16px;
     gap: 2px;
   }
 
@@ -3236,8 +3230,12 @@ a:focus-visible {
     height: 450px;
   }
 
+  .platform-overview-inner {
+    gap: 32px;
+  }
+
   .faq-section {
-    padding: 40px 16px;
+    padding: 16px;
   }
   .faq-item-header-left {
     gap: 10px;
@@ -3272,10 +3270,10 @@ a:focus-visible {
     gap: 24px;
   }
   .get-in-touch-heading {
-    font-size: clamp(28px, 3.4vw, 48px);
+    font-size: 24px;
   }
   .get-in-touch-subtext {
-    font-size: clamp(16px, 1.9vw, 28px);
+    font-size: 16px;
     max-width: 463px;
   }
   .get-in-touch-badge {
@@ -3309,12 +3307,13 @@ a:focus-visible {
   }
 
   .testimonial-card-wrapper .testimonial-photo {
-  object-position: 50% 20%;
-}
+    object-position: 50% 20%;
+  }
 
-.testimonial-card-wrapper[data-testimonial-id="4"] .testimonial-photo {
-  object-position: 50% !important;
-}
+  .testimonial-card-wrapper[data-testimonial-id="4"] .testimonial-photo {
+    object-position: 50% !important;
+    transform: none;
+  }
 
   .smv-cards {
     flex-direction: column;
@@ -3329,13 +3328,8 @@ a:focus-visible {
     flex: 1 1 100%;
   }
 
-  .platform-overview-number-badge {
-    width: 72px;
-    height: 40px;
-    padding-left: 17px;
-    font-size: 28px;
-    top: 3px;
-    left: 8px;
+  .platform-hex-card {
+    zoom: 1.1;
   }
 
   .purpose-pill {
@@ -3343,14 +3337,6 @@ a:focus-visible {
     width: 300px;
     min-height: 88px;
     justify-self: center;
-  }
-
-  .why-choose-card-content {
-    gap: 16px;
-    width: 78%;
-    height: 70%;
-    top: 18%;
-    left: 50%;
   }
 
   .why-choose-card-title {
