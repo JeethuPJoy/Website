@@ -1,39 +1,130 @@
+/* =========================================================
+   GLOBAL BOX SIZING
+   ========================================================= */
+
+.tte-overlay,
+.tte-dialog,
+.tte-card,
+.tte-photo-panel,
+.tte-photo-frame,
+.tte-photo-inner,
+.tte-form-panel,
+.tte-form-surface,
+.tte-form,
+.tte-field,
+.tte-input-shell,
+.tte-phone-row,
+.tte-textarea-shell,
+.tte-consent,
+.tte-submit {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
 .tte-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(49, 52, 75, 0.55);
+  position: fixed !important;
+  inset: 0 !important;
+
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 48px 16px;
-  overflow-y: auto;
+
+  padding: 16px !important;
+
+  background: rgba(49, 52, 75, 0.55);
+
+  overflow: visible !important;
+
   z-index: 10000;
 }
 
+
+/* =========================================================
+   MAIN DIALOG
+   ========================================================= */
+
 .tte-dialog {
-  position: relative;
-  width: 100%;
-  max-width: 1220px;
+  position: relative !important;
+
+  width: min(1100px, calc(100vw - 32px));
+
+  max-width: 1100px;
+
+  height: min(620px, calc(100dvh - 32px));
+
+  max-height: calc(100dvh - 32px);
+
+  margin: 0 auto !important;
+
+  overflow: visible !important;
+
   outline: none;
+
+  box-sizing: border-box;
 }
 
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.tte-card {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
+  display: flex;
+  align-items: center;
+
+  overflow: visible !important;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+   ========================================================= */
+
 .tte-close {
-  position: absolute;
-  top: -16px;
-  right: -16px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  position: absolute !important;
+
+  top: 10px !important;
+  right: 10px !important;
+
+  width: 40px !important;
+  height: 40px !important;
+
+  padding: 0 !important;
+
   border: none;
-  cursor: pointer;
+  border-radius: 50%;
+
   background: #dfe6e9;
-  box-shadow:
-    8px 8px 16px #c6c6c9,
-    -8px -8px 16px #ffffff;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+
+  cursor: pointer;
+
+  z-index: 99999;
+
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
+
+  box-sizing: border-box;
 }
 
 .tte-close:hover {
@@ -42,181 +133,347 @@
     -6px -6px 12px #ffffff;
 }
 
+.tte-close:active {
+  box-shadow:
+    inset 4px 4px 8px #c6c6c9,
+    inset -4px -4px 8px #ffffff;
+}
+
 .tte-close:focus-visible {
   outline: 3px solid #2d4cc8;
   outline-offset: 3px;
 }
 
-.tte-card {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
+
+/* =========================================================
+   LEFT VIDEO / IMAGE FRAME
+   DO NOT CHANGE
+   ========================================================= */
 
 .tte-photo-panel {
   position: relative;
-  z-index: 1;
-  flex-shrink: 0;
-  width: 498px;
-  margin-right: -80px;
+
+  z-index: 3;
+
+  flex: 0 0 460px;
+
+  width: 460px;
+  height: 540px;
+
+  margin-right: -65px;
+
+  box-sizing: border-box;
 }
 
 .tte-photo-frame {
-  width: 498px;
-  height: 552px;
-  box-shadow:
-    inset -8px -8px 8px #ffffff,
-    inset 8px 8px 8px #c4c4c4;
-  border-radius: 32px;
+  width: 460px;
+  height: 540px;
+
+  border-radius: 30px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  box-shadow:
+    inset -8px -8px 8px #ffffff,
+    inset 8px 8px 8px #c4c4c4;
+
+  box-sizing: border-box;
 }
 
 .tte-photo-inner {
   position: relative;
-  width: 434px;
-  height: 488px;
-  border-radius: 32px;
+
+  width: 400px;
+  height: 478px;
+
+  border-radius: 28px;
+
   overflow: hidden;
+
   background: #dfe6e9;
+
   box-shadow:
     -8px -8px 8px #ffffff,
     8px 8px 16px #c4c4c4;
+
+  box-sizing: border-box;
 }
 
 .tte-photo {
   position: absolute;
+
   inset: 0;
+
   width: 100%;
   height: 100%;
+
+  display: block;
+
   object-fit: cover;
+
+  border: 0;
 }
 
-.tte-play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 106px;
-  height: 106px;
-  border-radius: 999px;
-  background: rgba(49, 52, 75, 0.3);
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
 
-.tte-play-button:hover {
-  background: rgba(49, 52, 75, 0.42);
-}
-
-.tte-play-button:focus-visible {
-  outline: 3px solid #ffffff;
-  outline-offset: 3px;
-}
+/* =========================================================
+   RIGHT FORM PANEL
+   ========================================================= */
 
 .tte-form-panel {
   position: relative;
-  flex: 1;
+
+  z-index: 2;
+
+  flex: 1 1 auto;
+
+  min-width: 0;
+  min-height: 0;
+
+  width: auto;
+  height: 620px;
+
   background: #dfe6e9;
+
   border-radius: 12px;
-  padding: 30px 80px 56px 160px;
+
+  /*
+   * Left padding creates the overlap/alignment
+   * with the video frame.
+   */
+  padding: 20px 38px 20px 110px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
-  overflow-y: scroll;
-  height: 85vh;
+
+  gap: 8px;
+
+  overflow: visible !important;
+
+  box-sizing: border-box;
 }
 
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
 .tte-header {
+  flex: 0 0 auto;
+
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+
+  gap: 4px;
+
+  margin: 0 0 8px;
+
   text-align: center;
 }
 
 .tte-title {
   margin: 0;
+
   font-family: "Segoe UI", sans-serif;
+
   font-weight: 700;
-  font-size: 28px;
-  line-height: 28px;
+
+  font-size: 25px;
+
+  line-height: 29px;
+
   color: #2d4cc8;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  text-shadow:
+    0 3px 4px rgba(0, 0, 0, 0.22);
 }
 
 .tte-subtitle {
   margin: 0;
+
   display: flex;
   align-items: center;
-  gap: 11px;
+  justify-content: center;
+
+  gap: 8px;
+
   font-family: "Segoe UI", sans-serif;
+
   font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
+
+  font-size: 14px;
+
+  line-height: 18px;
+
   color: #31344b;
 }
 
+
+/* =========================================================
+   INNER FORM SURFACE
+   ========================================================= */
+
+/* =========================================================
+   INNER FORM SURFACE
+   ========================================================= */
+
 .tte-form-surface {
   width: 100%;
+
+  max-width: 560px;
+
+  flex: 0 0 520px;
+
+  height: 520px;
+
+  min-height: 520px;
+
   background: #dfe6e9;
+
+  border-radius: 10px;
+
+  padding: 15px 14px 14px;
+
   box-shadow:
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
-  border-radius: 8px;
-  padding: 24px;
-}
 
-.tte-form {
+  box-sizing: border-box;
+
+  overflow: visible !important;
+
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  gap: 28px;
 }
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.tte-form {
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+
+  gap: 14px;
+
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  /* IMPORTANT */
+  overflow: visible !important;
+}
+
+/* =========================================================
+   FIELD
+   ========================================================= */
 
 .tte-field {
   position: relative;
+
   width: 100%;
+
   display: flex;
   flex-direction: column;
-  gap: 16px;
+
+  /*
+   * Professional label-to-input spacing.
+   */
+  gap: 6px;
+
+  min-width: 0;
+
+  flex: 0 0 auto;
 }
 
-.tte-label {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: rgba(49, 52, 75, 0.9);
+/*
+ * Reserve the validation-message space inside the field itself.
+ * This prevents the fields below and the Submit button from moving
+ * when an error message appears.
+ */
+.tte-field:has(.tte-error) {
+  padding-bottom: 16px;
 }
+
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+.tte-label {
+  display: block;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0 2px;
+
+  font-family: "Inter", sans-serif;
+
+  font-weight: 600;
+
+  font-size: 16px;
+
+  line-height: 24px;
+
+  letter-spacing: 0.02em;
+
+  text-transform: uppercase;
+
+  color: rgba(49, 52, 75, 0.9);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   INPUT SHELL
+   ========================================================= */
 
 .tte-input-shell {
   display: flex;
   align-items: center;
+
   gap: 16px;
+
   width: 100%;
-  height: 54px;
-  padding: 0 16px;
+
+  height: 40px;
+  min-height: 40px;
+
+  padding: 0 10px;
+
   background: #dfe6e9;
+
+  border: none;
+
+  border-radius: 8px;
+
   box-shadow:
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
-  border-radius: 8px;
-  border: none;
+
+  box-sizing: border-box;
+
+  min-width: 0;
 }
 
 .tte-input-shell:focus-within {
   box-shadow:
     inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8),
-    0 0 0 2px #2d4cc8;
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
 }
 
 .tte-input-shell-error {
@@ -227,161 +484,292 @@
 }
 
 .tte-input-shell-grow {
-  flex: 1;
+  flex: 1 1 auto;
+
+  min-width: 0;
 }
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
 
 .tte-icon-bubble {
   position: relative;
+
   flex-shrink: 0;
-  width: 33px;
-  height: 33px;
+
+  width: 25px;
+  height: 25px;
+
   border-radius: 50%;
+
   background: #dfe6e9;
+
   box-shadow:
-    8px 8px 16px #c6c6c9,
-    -8px -8px 16px #ffffff;
+    6px 6px 12px #c6c6c9,
+    -6px -6px 12px #ffffff;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
 .tte-input {
   flex: 1;
+
   width: 100%;
+
+  min-width: 0;
+
   border: none;
-  background: transparent;
+
   outline: none;
+
+  background: transparent;
+
   font-family: "Inter", sans-serif;
+
   font-weight: 400;
+
   font-size: 16px;
+
   line-height: 24px;
+
   letter-spacing: 0.02em;
+
   color: #2f3547;
 }
 
 .tte-input::placeholder {
   color: #2f3547;
+
   opacity: 0.7;
 }
 
+
+/* =========================================================
+   VALIDATION ERROR
+   ========================================================= */
+
 .tte-error {
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+  display: block;
+
+  width: 100%;
+
+  height: 16px;
+
+  min-height: 16px;
+
+  margin: 0;
+
+  padding: 0 2px;
+
   font-family: "Inter", sans-serif;
-  font-size: 13px;
+
+  font-size: 11px;
+
+  line-height: 18px;
+
   color: #d64545;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
 }
+
+
+/* =========================================================
+   PHONE ROW
+   ========================================================= */
 
 .tte-phone-row {
   display: flex;
-  align-items: stretch;
-  gap: 12px;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  width: 100%;
+
+  min-width: 0;
 }
 
 .tte-country-select {
   position: relative;
-  flex-shrink: 0;
+
+  flex: 0 0 auto;
+
+  z-index: 100000;
 }
 
 .tte-country-trigger {
   display: flex;
   align-items: center;
+
   gap: 8px;
-  height: 54px;
-  padding: 0 14px;
+
+  height: 40px;
+  min-height: 40px;
+
+  padding: 0 9px;
+
   background: #dfe6e9;
+
+  border: none;
+
+  border-radius: 8px;
+
   box-shadow:
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
-  border-radius: 8px;
-  border: none;
+
   cursor: pointer;
+
   font-family: "Segoe UI", sans-serif;
+
   font-weight: 600;
+
   font-size: 16px;
+
   color: #2d4cc8;
+
+  white-space: nowrap;
 }
 
 .tte-country-trigger:focus-visible {
   outline: 3px solid #2d4cc8;
+
   outline-offset: 2px;
 }
 
-.tte-country-flag {
-  font-size: 18px;
-  line-height: 1;
-}
 
-.tte-country-code {
-  white-space: nowrap;
-}
-
-.tte-chevron {
-  flex-shrink: 0;
-  transition: transform 0.2s ease;
-}
-
-.tte-chevron-open {
-  transform: rotate(180deg);
-}
+/* =========================================================
+   COUNTRY DROPDOWN
+   ========================================================= */
 
 .tte-country-panel {
   position: absolute;
+
   top: calc(100% + 8px);
+
   left: 0;
+
   width: 280px;
-  max-height: 320px;
-  overflow: hidden;
+
+  max-height: 300px;
+
+  padding: 10px;
+
   display: flex;
   flex-direction: column;
+
   background: #dfe6e9;
+
   border-radius: 12px;
+
   box-shadow:
     8px 8px 16px #c4c4c4,
     -8px -8px 16px #ffffff;
-  padding: 12px;
-  z-index: 5;
+
+  /* Keep it above the entire form */
+  z-index: 999999;
+
+  box-sizing: border-box;
+
+  overflow: visible !important;
 }
 
 .tte-country-search {
   width: 100%;
-  height: 40px;
+
+  height: 36px;
+  min-height: 36px;
+
   padding: 0 12px;
-  margin-bottom: 8px;
+
+  margin: 0 0 8px;
+
   border: none;
-  border-radius: 8px;
+
+  border-radius: 10px;
+
   background: #dfe6e9;
+
   box-shadow:
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  color: #2f3547;
+
   outline: none;
-  flex-shrink: 0;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 14px;
+
+  line-height: 36px;
+
+  color: #2f3547;
+
+  box-sizing: border-box;
 }
 
+.tte-country-search::placeholder {
+  color: #2f3547;
+
+  opacity: 0.7;
+}
 .tte-country-list {
   list-style: none;
+
   margin: 0;
+
   padding: 0;
+
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+.tte-country-list::-webkit-scrollbar {
+  display: none;
 }
 
 .tte-country-option {
   width: 100%;
+
   display: flex;
   align-items: center;
+
   gap: 10px;
-  padding: 8px 10px;
+
+  padding: 7px 9px;
+
   border: none;
-  background: transparent;
+
   border-radius: 8px;
+
+  background: transparent;
+
   cursor: pointer;
+
   text-align: left;
+
   font-family: "Inter", sans-serif;
+
   font-size: 14px;
+
   color: #31344b;
 }
 
@@ -390,234 +778,348 @@
   background: rgba(45, 76, 200, 0.1);
 }
 
-.tte-country-name {
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 
-.tte-country-dial {
-  color: #2d4cc8;
-  font-weight: 600;
-}
-
-.tte-country-empty {
-  padding: 12px;
-  text-align: center;
-  font-size: 13px;
-  color: #31344b;
-  opacity: 0.7;
-}
+/* =========================================================
+   INTEREST DROPDOWN
+   ========================================================= */
 
 .tte-interest-trigger {
+  position: relative;
+
   cursor: pointer;
 }
 
 .tte-interest-trigger:focus-visible {
   outline: 3px solid #2d4cc8;
+
   outline-offset: 2px;
 }
 
 .tte-interest-value {
   flex: 1;
+
+  min-width: 0;
+
   text-align: left;
+
   font-family: "Inter", sans-serif;
+
   font-size: 16px;
+
   color: #2f3547;
 }
 
 .tte-interest-panel {
-  position: relative;
-  margin-top: 4px;
+  position: absolute;
+
+  top: calc(100% + 6px);
+
+  left: 0;
+
   width: 100%;
-  padding: 32px;
+
+  max-height: 220px;
+
+  padding: 9px;
+
   background: #dfe6e9;
-  border-top: 8px solid #2d4cc8;
-  box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
-  border-radius: 8px;
+
+  border-top: 4px solid #2d4cc8;
+
+  border-radius: 10px;
+
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  max-height: 360px;
+
+  gap: 3px;
+
   overflow-y: auto;
-  z-index: 5;
+
+  box-shadow:
+    8px 8px 16px #c4c4c4,
+    -8px -8px 16px #ffffff;
+
+  z-index: 5000;
+
+  box-sizing: border-box;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+.tte-interest-panel::-webkit-scrollbar {
+  display: none;
 }
 
 .tte-interest-option {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  text-align: left;
+  min-height: 31px;
+
   width: 100%;
-}
 
-.tte-interest-option:focus-visible {
-  outline: 3px solid #2d4cc8;
-  outline-offset: 2px;
-  border-radius: 8px;
-}
-
-.tte-radio-bubble {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: #dfe6e9;
-  box-shadow:
-    inset -4px -4px 8px rgba(255, 255, 255, 0.6),
-    inset 4px 4px 8px #c4c4c4;
+
+  gap: 24px;
+
+  padding: 5px 8px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  text-align: left;
 }
 
-.tte-interest-option[aria-selected="true"] .tte-radio-bubble {
-  box-shadow:
-    8px 8px 16px #c6c6c9,
-    -8px -8px 16px #ffffff;
+.tte-interest-option:hover {
+  background: rgba(45, 76, 200, 0.08);
 }
 
 .tte-interest-option-label {
   font-family: "Segoe UI", sans-serif;
-  font-weight: 400;
+
   font-size: 14px;
+
   line-height: 22px;
+
   letter-spacing: 0.02em;
+
   color: #31344b;
 }
 
 .tte-interest-option-label-active {
   color: #2d4cc8;
+
   font-weight: 600;
 }
 
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
 .tte-textarea-shell {
   position: relative;
+
   width: 100%;
-  min-height: 154px;
-  padding: 24px 40px 24px 16px;
+
+  height: 72px;
+
+  min-height: 72px;
+
+  max-height: 72px;
+
+  padding: 9px 28px 7px 10px;
+
   background: #dfe6e9;
+
+  border-radius: 11px;
+
   box-shadow:
     inset -8px -8px 16px rgba(255, 255, 255, 0.8),
     inset 8px 8px 16px #c6c6c9;
-  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.tte-textarea-error {
+  box-shadow:
+    inset -8px -8px 16px rgba(255, 255, 255, 0.8),
+    inset 8px 8px 16px #c6c6c9,
+    0 0 0 2px #d64545;
 }
 
 .tte-textarea {
   width: 100%;
-  min-height: 96px;
+
+  height: 52px;
+
+  min-height: 52px;
+
+  max-height: 52px;
+
+  padding: 0;
+
   border: none;
-  background: transparent;
+
   outline: none;
-  resize: vertical;
+
+  resize: none;
+
+  overflow: hidden;
+
+  background: transparent;
+
   font-family: "Segoe UI", sans-serif;
-  font-weight: 400;
+
   font-size: 16px;
+
   line-height: 24px;
+
   color: #31344b;
+
+  box-sizing: border-box;
 }
 
 .tte-textarea::placeholder {
   color: #31344b;
+
   opacity: 0.8;
 }
 
-.tte-resize-icon {
-  position: absolute;
-  right: 12px;
-  bottom: 10px;
-  pointer-events: none;
+.tte-query-meta {
+  height: 11px;
+
+  min-height: 11px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
 }
+
+.tte-query-count {
+  font-family: "Inter", sans-serif;
+
+  font-size: 9px;
+
+  color: rgba(49, 52, 75, 0.65);
+}
+
+
+/* =========================================================
+   CONSENT
+   ========================================================= */
 
 .tte-consent {
   display: flex;
+
   align-items: flex-start;
+
   gap: 14px;
-  cursor: pointer;
+
   width: 100%;
+
+  cursor: pointer;
+
+  flex: 0 0 auto;
+
+  margin-top: 1px;
 }
 
 .tte-consent-checkbox {
   position: absolute;
+
   opacity: 0;
-  width: 24px;
-  height: 24px;
+
+  width: 18px;
+
+  height: 18px;
+
   margin: 0;
 }
 
 .tte-consent-box {
   position: relative;
+
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+
+  width: 17px;
+
+  height: 17px;
+
   border-radius: 4px;
+
   background: #dfe6e9;
+
   box-shadow:
     inset -4px -4px 6px #ffffff,
     inset 4px 4px 2px #c4c4c4;
 }
 
-.tte-consent-checkbox:checked ~ .tte-consent-box {
-  box-shadow:
-    4px 4px 8px #c6c6c9,
-    -4px -4px 8px #ffffff;
-}
-
-.tte-consent-checkbox:checked ~ .tte-consent-box::after {
+.tte-consent-checkbox:checked
+  ~ .tte-consent-box::after {
   content: "";
-  position: absolute;
-  left: 7px;
-  top: 3px;
-  width: 6px;
-  height: 11px;
-  border: solid #2d4cc8;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
 
-.tte-consent-checkbox:focus-visible ~ .tte-consent-box {
-  outline: 3px solid #2d4cc8;
-  outline-offset: 2px;
+  position: absolute;
+
+  width: 5px;
+
+  height: 9px;
+
+  left: 5px;
+
+  top: 2px;
+
+  border: solid #2d4cc8;
+
+  border-width: 0 2px 2px 0;
+
+  transform: rotate(45deg);
 }
 
 .tte-consent-text {
   font-family: "Segoe UI", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
+
+  font-size: 11px;
+
+  line-height: 20px;
+
   letter-spacing: 0.02em;
+
   color: #31344b;
 }
 
 .tte-consent-link {
   color: #2d4cc8;
+
   font-weight: 600;
+
   text-decoration: underline;
 }
 
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
 .tte-submit {
   width: 100%;
-  max-width: 632px;
-  height: 60px;
+
+  height: 40px;
+
+  min-height: 40px;
+
+  margin-top: 2px;
+
   border: none;
+
   border-radius: 32px;
+
   background: #dfe6e9;
+
   box-shadow:
     -8px -8px 16px #ffffff,
     8px 8px 16px #c6c6c9;
+
   font-family: "Segoe UI", sans-serif;
+
   font-weight: 700;
-  font-size: 20px;
+
+  font-size: 13px;
+
   color: #2d4cc8;
+
   cursor: pointer;
-  align-self: center;
+
+  flex: 0 0 auto;
 }
 
 .tte-submit:hover:not(:disabled) {
@@ -632,84 +1134,112 @@
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
 }
 
-.tte-submit:focus-visible {
-  outline: 3px solid #2d4cc8;
-  outline-offset: 3px;
-}
-
 .tte-submit:disabled {
   opacity: 0.5;
+
   cursor: not-allowed;
 }
 
+.tte-submit:focus-visible {
+  outline: 3px solid #2d4cc8;
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   SUCCESS
+   ========================================================= */
+
 .tte-success {
+  width: 100%;
+
   text-align: center;
-  padding: 64px 24px;
+
+  padding: 40px 20px;
+
   display: flex;
+
   flex-direction: column;
+
   gap: 12px;
 }
 
 .tte-success-title {
   margin: 0;
+
   font-family: "Segoe UI", sans-serif;
+
   font-weight: 700;
+
   font-size: 24px;
+
   color: #2d4cc8;
 }
 
 .tte-success-body {
   margin: 0;
+
   font-family: "Inter", sans-serif;
+
   font-size: 16px;
+
   color: #31344b;
 }
 
+
+/* =========================================================
+   FLOATING BUTTON
+   ========================================================= */
+
 .talk-to-expert-fab {
   position: fixed;
+
   right: 32px;
+
   bottom: 32px;
+
   z-index: 500;
+
   display: inline-flex;
+
   align-items: center;
+
   gap: 16px;
+
   padding: 12px 28px 12px 12px;
-  background: #dfe6e9;
+
   border: none;
+
   border-radius: 100px;
+
+  background: #dfe6e9;
+
   box-shadow:
     -8px -8px 16px #ffffff,
     8px 8px 16px #c6c6c9;
+
   cursor: pointer;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    opacity 0.3s ease;
 }
 
 .talk-to-expert-fab:hover {
   transform: translateY(-4px);
 }
 
-.talk-to-expert-fab:focus-visible {
-  outline: 3px solid #2d4cc8;
-  outline-offset: 3px;
-}
-
-body.modal-open .talk-to-expert-fab {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .talk-to-expert-fab-icon-ring {
   flex-shrink: 0;
+
   width: 56px;
   height: 56px;
+
   border-radius: 50%;
+
   background: #dfe6e9;
+
   box-shadow:
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -718,14 +1248,19 @@ body.modal-open .talk-to-expert-fab {
 .talk-to-expert-fab-icon-circle {
   width: 40px;
   height: 40px;
+
   border-radius: 50%;
+
   background: #dfe6e9;
+
   box-shadow:
     6px 6px 12px #c6c6c9,
     -6px -6px 12px #ffffff;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   color: #2d4cc8;
 }
 
@@ -736,248 +1271,1036 @@ body.modal-open .talk-to-expert-fab {
 
 .talk-to-expert-fab-label {
   font-family: "Segoe UI", sans-serif;
+
   font-weight: 700;
+
   font-size: 18px;
-  letter-spacing: 0.02em;
+
   color: #31344b;
+
   white-space: nowrap;
 }
 
-@media (max-width: 1439px) {
-  .tte-dialog {
-    max-width: 1120px;
-  }
 
-  .tte-form-panel {
-    padding: 48px 64px 48px 140px;
-  }
-}
+/* =========================================================
+   SHORT DESKTOP
+   ========================================================= */
 
-@media (max-width: 1280px) {
-  .tte-dialog {
-    max-width: 1000px;
-  }
-
-  .tte-photo-panel {
-    width: 420px;
-    margin-right: -60px;
-  }
-
-  .tte-photo-frame {
-    width: 420px;
-    height: 466px;
-  }
-
-  .tte-photo-inner {
-    width: 366px;
-    height: 412px;
-  }
-
-  .tte-play-button {
-    width: 90px;
-    height: 90px;
-  }
-
-  .tte-form-panel {
-    padding: 48px 48px 48px 120px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .tte-card {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .tte-photo-panel {
-    width: 100%;
-    max-width: 420px;
-    margin-right: 0;
-    align-self: center;
-  }
-
-  .tte-photo-frame {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 498 / 552;
-  }
-
-  .tte-photo-inner {
-    width: 88%;
-    height: 88%;
-  }
-
-  .tte-form-panel {
-    width: 100%;
-    padding: 40px 32px;
-    border-radius: 24px;
-  }
-
-  .tte-play-button {
-    width: 80px;
-    height: 80px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (min-width: 1025px) and (max-height: 760px) {
   .tte-overlay {
-    padding: 24px 12px;
+    padding: 10px !important;
   }
 
-  .tte-close {
-    top: -12px;
-    right: -4px;
-    width: 40px;
-    height: 40px;
+  .tte-dialog {
+    height: calc(100dvh - 20px);
+
+    max-height: calc(100dvh - 20px);
   }
 
   .tte-form-panel {
-    padding: 32px 20px;
-    gap: 24px;
+    height: calc(100dvh - 20px);
+
+    max-height: calc(100dvh - 20px);
+
+    padding: 18px 34px 18px 105px;
   }
 
-  .tte-title {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .tte-subtitle {
-    font-size: 18px;
-    line-height: 26px;
-    gap: 8px;
+  .tte-form-surface {
+    padding: 13px 12px 12px;
   }
 
   .tte-form {
-    gap: 24px;
+    gap: 12px;
   }
 
   .tte-field {
-    gap: 12px;
+    gap: 5px;
+  }
+
+  .tte-label {
+    font-size: 12px;
+
+    line-height: 16px;
   }
 
   .tte-input-shell,
   .tte-country-trigger {
-    height: 48px;
+    height: 38px;
+
+    min-height: 38px;
   }
 
-  .tte-phone-row {
-    flex-wrap: wrap;
+  .tte-error {
+    height: 10px;
+
+    min-height: 10px;
+
+    font-size: 11px;
+
+    line-height: 10px;
   }
 
-  .tte-country-trigger {
-    justify-content: space-between;
+  .tte-textarea-shell {
+    height: 66px;
+
+    min-height: 66px;
+
+    max-height: 66px;
   }
 
-  .tte-country-panel {
-    width: 100%;
+  .tte-textarea {
+    height: 47px;
+
+    min-height: 47px;
+
+    max-height: 47px;
   }
 
   .tte-submit {
-    height: 52px;
-    font-size: 16px;
+    height: 38px;
+
+    min-height: 38px;
   }
 
-   .talk-to-expert-fab {
-    right: 20px;
-    bottom: 20px;
-    gap: 12px;
-    padding: 8px 20px 8px 8px;
-  }
-  .talk-to-expert-fab-icon-ring {
-    width: 48px;
-    height: 48px;
-  }
-  .talk-to-expert-fab-icon-circle {
-    width: 34px;
-    height: 34px;
-  }
-  .talk-to-expert-fab-icon {
-    width: 18px;
-    height: 18px;
-  }
-  .talk-to-expert-fab-label {
-    font-size: 15px;
-  }
+  .tte-close {
+    top: 10px !important;
 
+    right: 10px !important;
+
+    width: 38px !important;
+
+    height: 38px !important;
+  }
 }
 
-@media (max-width: 375px) {
+
+/* =========================================================
+   VERY SHORT DESKTOP
+   ========================================================= */
+
+@media (min-width: 1025px) and (max-height: 650px) {
   .tte-form-panel {
-    padding: 24px 16px;
-    border-radius: 16px;
+    padding: 14px 30px 14px 100px;
   }
 
-  .tte-title {
-    font-size: 24px;
-    line-height: 32px;
+  .tte-form-surface {
+    padding: 10px;
   }
 
-  .tte-subtitle {
-    font-size: 16px;
-    line-height: 24px;
+  .tte-form {
+    gap: 10px;
+  }
+
+  .tte-field {
+    gap: 5px;
   }
 
   .tte-label {
-    font-size: 14px;
+    font-size: 12px;
+
+    line-height: 16px;
   }
 
-  .tte-input {
-    font-size: 14px;
+  .tte-input-shell,
+  .tte-country-trigger {
+    height: 38px;
+
+    min-height: 38px;
   }
 
-  .tte-icon-bubble {
-    width: 28px;
-    height: 28px;
+  .tte-error {
+    height: 9px;
+
+    min-height: 9px;
+
+    font-size: 11px;
+
+    line-height: 9px;
   }
 
-  .tte-interest-panel {
-    padding: 20px;
+  .tte-textarea-shell {
+    height: 58px;
+
+    min-height: 58px;
+
+    max-height: 58px;
+  }
+
+  .tte-textarea {
+    height: 41px;
+
+    min-height: 41px;
+
+    max-height: 41px;
   }
 
   .tte-consent-text {
-    font-size: 13px;
+    font-size: 16px;
+
+    line-height: 20px;
+  }
+
+  .tte-submit {
+    height: 35px;
+
+    min-height: 35px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .tte-overlay {
+    padding: 12px !important;
+  }
+
+  .tte-dialog {
+    width: min(700px, calc(100vw - 24px));
+
+    max-width: calc(100vw - 24px);
+
+    height: auto;
+
+    max-height: calc(100dvh - 24px);
+  }
+
+  .tte-card {
+    height: auto;
+
+    max-height: calc(100dvh - 24px);
+
+    display: block;
+  }
+
+  .tte-photo-panel {
+    display: none !important;
+  }
+
+  .tte-form-panel {
+    width: 100%;
+
+    height: auto;
+
+    max-height: calc(100dvh - 24px);
+
+    padding: 18px;
+
+    border-radius: 18px;
+  }
+
+  .tte-form-surface {
+    max-width: 620px;
+
+    min-height: 0;
+
+    flex: 0 1 auto;
+  }
+
+  .tte-close {
+    top: 10px !important;
+
+    right: 10px !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .tte-overlay {
+    padding: 8px !important;
+  }
+
+  .tte-dialog {
+    width: calc(100vw - 16px);
+
+    max-width: calc(100vw - 16px);
+
+    height: auto;
+
+    max-height: calc(100dvh - 16px);
+  }
+
+  .tte-card {
+    width: 100%;
+
+    height: auto;
+
+    max-height: calc(100dvh - 16px);
+  }
+
+  .tte-form-panel {
+    width: 100%;
+
+    height: auto;
+
+    max-height: calc(100dvh - 16px);
+
+    padding: 14px 10px;
+
+    border-radius: 16px;
+
+    gap: 7px;
+  }
+
+  .tte-title {
+    font-size: 21px;
+
+    line-height: 25px;
+  }
+
+  .tte-subtitle {
+    font-size: 12px;
+
+    line-height: 16px;
+  }
+
+  .tte-form-surface {
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 10px 9px;
+
+    flex: 0 1 auto;
+  }
+
+  .tte-form {
+    height: auto;
+
+    gap: 10px;
+  }
+
+  .tte-field {
+    gap: 5px;
+  }
+
+  .tte-label {
+    font-size: 12px;
+
+    line-height: 16px;
+  }
+
+  .tte-input-shell,
+  .tte-country-trigger {
+    height: 36px;
+
+    min-height: 36px;
+  }
+
+  .tte-error {
+    height: 10px;
+
+    min-height: 10px;
+
+    font-size: 11px;
+
+    line-height: 10px;
+  }
+
+  .tte-textarea-shell {
+    height: 58px;
+
+    min-height: 58px;
+
+    max-height: 58px;
+  }
+
+  .tte-textarea {
+    height: 42px;
+
+    min-height: 42px;
+
+    max-height: 42px;
+  }
+
+  .tte-consent-text {
+    font-size: 14px;
+
+    line-height: 18px;
+  }
+
+  .tte-submit {
+    height: 36px;
+
+    min-height: 36px;
+
+    font-size: 12px;
+  }
+
+  .tte-close {
+    top: 8px !important;
+
+    right: 8px !important;
+
+    width: 36px !important;
+
+    height: 36px !important;
+  }
+
+  .talk-to-expert-fab {
+    right: 20px;
+
+    bottom: 20px;
+
+    gap: 12px;
+
+    padding: 8px 20px 8px 8px;
+  }
+
+  .talk-to-expert-fab-icon-ring {
+    width: 48px;
+
+    height: 48px;
+  }
+
+  .talk-to-expert-fab-icon-circle {
+    width: 34px;
+
+    height: 34px;
+  }
+
+  .talk-to-expert-fab-icon {
+    width: 18px;
+
+    height: 18px;
+  }
+
+  .talk-to-expert-fab-label {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 375px) {
+  .tte-overlay {
+    padding: 6px !important;
+  }
+
+  .tte-dialog {
+    width: calc(100vw - 12px);
+
+    max-width: calc(100vw - 12px);
+
+    max-height: calc(100dvh - 12px);
+  }
+
+  .tte-form-panel {
+    max-height: calc(100dvh - 12px);
+
+    padding: 11px 7px;
+
+    gap: 5px;
+  }
+
+  .tte-title {
+    font-size: 19px;
+
+    line-height: 23px;
+  }
+
+  .tte-subtitle {
+    font-size: 11px;
+
+    line-height: 14px;
+  }
+
+  .tte-form-surface {
+    padding: 8px 7px;
+  }
+
+  .tte-form {
+    gap: 9px;
+  }
+
+  .tte-field {
+    gap: 5px;
+  }
+
+  .tte-label {
+    font-size: 12px;
+
+    line-height: 16px;
+  }
+
+  .tte-input-shell,
+  .tte-country-trigger {
+    height: 36px;
+
+    min-height: 36px;
+  }
+
+  .tte-error {
+    height: 9px;
+
+    min-height: 9px;
+
+    font-size: 11px;
+
+    line-height: 9px;
+  }
+
+  .tte-textarea-shell {
+    height: 54px;
+
+    min-height: 54px;
+
+    max-height: 54px;
+  }
+
+  .tte-textarea {
+    height: 39px;
+
+    min-height: 39px;
+
+    max-height: 39px;
+  }
+
+  .tte-consent-text {
+    font-size: 14px;
+
+    line-height: 18px;
+  }
+
+  .tte-submit {
+    height: 34px;
+
+    min-height: 34px;
+  }
+
+  .tte-close {
+    top: 6px !important;
+
+    right: 6px !important;
+
+    width: 34px !important;
+
+    height: 34px !important;
   }
 
   .talk-to-expert-fab {
     padding: 6px;
+
     gap: 0;
   }
+
   .talk-to-expert-fab-label {
     display: none;
   }
 }
 
-@media (min-width: 2560px) {
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .talk-to-expert-fab {
+    transition: none;
+
+    transform: none;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE HEIGHT FIX
+   Keeps the complete form, including Submit, inside the
+   available viewport on short-height devices.
+   ========================================================= */
+
+/* Short desktop/tablet heights */
+@media (max-height: 760px) {
+  .tte-overlay {
+    align-items: center;
+    padding: 8px !important;
+  }
+
   .tte-dialog {
-    max-width: 1600px;
-  }
-
-  .tte-photo-panel {
-    width: 620px;
-    margin-right: -100px;
-  }
-
-  .tte-photo-frame {
-    width: 620px;
-    height: 688px;
-  }
-
-  .tte-photo-inner {
-    width: 540px;
-    height: 608px;
+    height: auto;
+    max-height: calc(100dvh - 16px);
   }
 
   .tte-form-panel {
-    padding: 72px 100px 72px 200px;
+    height: auto;
+    max-height: calc(100dvh - 16px);
+    overflow-y: auto !important;
+    overflow-x: visible !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
-  .tte-title {
-    font-size: 34px;
+  .tte-form-surface {
+    flex: 0 0 auto;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible !important;
+  }
+
+  .tte-form {
+    height: auto;
+    min-height: 0;
+    overflow: visible !important;
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .tte-chevron {
-    transition: none;
+/* Tablet and mobile: let the form use the available height
+   and scroll only the form panel if the viewport is too short. */
+@media (max-width: 1024px) {
+  .tte-form-panel {
+    height: auto;
+    max-height: calc(100dvh - 16px);
+    overflow-y: auto !important;
+    overflow-x: visible !important;
+  }
+
+  .tte-form-surface {
+    flex: 0 0 auto;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible !important;
+  }
+
+  .tte-form {
+    height: auto;
+    min-height: 0;
+    overflow: visible !important;
   }
 }
+
+/* Very short mobile screens: compact the form further so the
+   Submit button remains in the normal flow. */
+@media (max-width: 375px) and (max-height: 700px) {
+  .tte-form-panel {
+    max-height: calc(100dvh - 12px);
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .tte-form-surface {
+    height: auto;
+    min-height: 0;
+  }
+
+  .tte-form {
+    height: auto;
+    gap: 5px;
+  }
+
+  .tte-submit {
+    flex: 0 0 auto;
+  }
+}
+
+
+/* =========================================================
+   FINAL RESPONSIVE FORM / SUBMIT VISIBILITY FIX
+   Keeps the complete form in normal flow and leaves a small
+   bottom gap after the Submit button.
+   ========================================================= */
+
+/* Desktop and large screens */
+@media (min-width: 1025px) {
+  .tte-form-panel {
+    min-height: 0;
+    overflow-y: auto !important;
+    overflow-x: visible !important;
+  }
+
+  .tte-form-surface {
+    flex: 0 0 auto;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible !important;
+  }
+
+  .tte-form {
+    height: auto;
+    min-height: 0;
+    flex: 0 0 auto;
+    overflow: visible !important;
+    padding-bottom: 8px;
+  }
+
+  .tte-submit {
+    flex: 0 0 auto;
+    margin-bottom: 8px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .tte-form-panel {
+    height: auto;
+    min-height: 0;
+    max-height: calc(100dvh - 16px);
+    overflow-y: auto !important;
+    overflow-x: visible !important;
+  }
+
+  .tte-form-surface {
+    flex: 0 0 auto;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible !important;
+  }
+
+  .tte-form {
+    height: auto;
+    min-height: 0;
+    flex: 0 0 auto;
+    overflow: visible !important;
+    padding-bottom: 8px;
+  }
+
+  .tte-submit {
+    flex: 0 0 auto;
+    margin-bottom: 8px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .tte-form-panel {
+    max-height: calc(100dvh - 16px);
+    overflow-y: auto !important;
+    overflow-x: visible !important;
+  }
+
+  .tte-form-surface {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible !important;
+  }
+
+  .tte-form {
+    height: auto;
+    min-height: 0;
+    padding-bottom: 6px;
+  }
+
+  .tte-submit {
+    flex: 0 0 auto;
+    margin-bottom: 6px;
+  }
+}
+
+/* Very small mobile */
+@media (max-width: 375px) {
+  .tte-form-panel {
+    max-height: calc(100dvh - 12px);
+  }
+
+  .tte-form {
+    padding-bottom: 5px;
+  }
+
+  .tte-submit {
+    margin-bottom: 5px;
+  }
+}
+
+/* =========================================================
+   PRIVACY POLICY POPUP - NEOMORPHIC UI
+   Balanced shadows: same visual language as the main form,
+   without excessive white glow around the popup border.
+   ========================================================= */
+
+.tte-privacy-overlay,
+.tte-privacy-card,
+.tte-privacy-header,
+.tte-privacy-content,
+.tte-privacy-footer,
+.tte-privacy-accept {
+  box-sizing: border-box;
+}
+
+.tte-privacy-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1000000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 22px;
+
+  background: rgba(49, 52, 75, 0.35);
+  border-radius: inherit;
+}
+
+.tte-privacy-card {
+  width: min(720px, calc(100% - 16px));
+  max-height: min(82vh, 560px);
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #dfe6e9;
+  border: none;
+  border-radius: 22px;
+
+  /* Controlled raised neomorphic effect.
+     Smaller blur/spread prevents the white edge from blooming. */
+  box-shadow:
+    -6px -6px 10px rgba(255, 255, 255, 0.72),
+    6px 6px 12px rgba(166, 174, 178, 0.72);
+
+  font-family: "Segoe UI", sans-serif;
+  color: #31344b;
+}
+
+.tte-privacy-header {
+  flex: 0 0 auto;
+
+  padding: 22px 26px 18px;
+
+  background: #dfe6e9;
+
+  /* Very light separation only; no large white border glow. */
+  box-shadow:
+    inset 0 -2px 4px rgba(196, 196, 196, 0.42),
+    inset 0 1px 2px rgba(255, 255, 255, 0.55);
+}
+
+.tte-privacy-title {
+  margin: 0;
+
+  font-family: "Segoe UI", sans-serif;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 700;
+
+  color: #31344b;
+}
+
+.tte-privacy-content {
+  flex: 1 1 auto;
+  min-height: 0;
+
+  margin: 14px 18px;
+  padding: 16px 18px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background: #dfe6e9;
+  border-radius: 14px;
+
+  /* Inset effect kept consistent with existing form controls. */
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.72),
+    inset 4px 4px 8px rgba(196, 196, 196, 0.78);
+
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #31344b;
+
+  scrollbar-width: thin;
+  scrollbar-color: #9aa1ad transparent;
+}
+
+.tte-privacy-content::-webkit-scrollbar {
+  width: 7px;
+}
+
+.tte-privacy-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tte-privacy-content::-webkit-scrollbar-thumb {
+  background: #9aa1ad;
+  border-radius: 10px;
+}
+
+.tte-privacy-content::-webkit-scrollbar-thumb:hover {
+  background: #858d99;
+}
+
+.tte-privacy-content p {
+  margin: 0 0 8px;
+}
+
+.tte-privacy-content h3 {
+  margin: 10px 0 4px;
+
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+
+  color: #31344b;
+}
+
+.tte-privacy-content ul {
+  margin: 4px 0 10px;
+  padding-left: 22px;
+}
+
+.tte-privacy-content li {
+  margin: 2px 0;
+}
+
+.tte-privacy-footer {
+  flex: 0 0 auto;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px 20px;
+
+  background: #dfe6e9;
+
+  /* Subtle footer separation. */
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.5),
+    inset 0 -2px 4px rgba(196, 196, 196, 0.32);
+}
+
+.tte-privacy-accept {
+  min-width: 150px;
+  min-height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
+
+  border: none;
+  border-radius: 28px;
+
+  background: #dfe6e9;
+
+  /* Same raised effect, but controlled to avoid white spreading. */
+  box-shadow:
+    -5px -5px 9px rgba(255, 255, 255, 0.72),
+    5px 5px 9px rgba(198, 198, 201, 0.82);
+
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+
+  color: #2d4cc8;
+
+  cursor: pointer;
+
+  transition:
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.tte-privacy-accept:hover {
+  box-shadow:
+    -4px -4px 7px rgba(255, 255, 255, 0.68),
+    4px 4px 7px rgba(198, 198, 201, 0.78);
+
+  transform: translateY(-1px);
+}
+
+.tte-privacy-accept:active {
+  transform: translateY(0);
+
+  box-shadow:
+    inset 3px 3px 6px rgba(196, 196, 196, 0.78),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.7);
+}
+
+.tte-privacy-accept:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .tte-privacy-overlay {
+    padding: 14px;
+  }
+
+  .tte-privacy-card {
+    width: 100%;
+    max-height: 86vh;
+    border-radius: 18px;
+
+    box-shadow:
+      -4px -4px 8px rgba(255, 255, 255, 0.68),
+      4px 4px 9px rgba(166, 174, 178, 0.7);
+  }
+
+  .tte-privacy-header {
+    padding: 18px 18px 14px;
+  }
+
+  .tte-privacy-title {
+    font-size: 19px;
+  }
+
+  .tte-privacy-content {
+    margin: 10px 12px;
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .tte-privacy-footer {
+    padding: 14px 18px 18px;
+  }
+
+  .tte-privacy-accept {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 375px) {
+  .tte-privacy-overlay {
+    padding: 9px;
+  }
+
+  .tte-privacy-card {
+    max-height: 90vh;
+    border-radius: 16px;
+  }
+
+  .tte-privacy-header {
+    padding: 15px 15px 12px;
+  }
+
+  .tte-privacy-title {
+    font-size: 17px;
+  }
+
+  .tte-privacy-content {
+    margin: 8px 9px;
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .tte-privacy-footer {
+    padding: 12px 14px 15px;
+  }
+
+  .tte-privacy-accept {
+    min-height: 40px;
+  }
+}
+

@@ -135,11 +135,11 @@
   width: 1280px;
   height: 601px;
   left: calc(50% - 640px);
-  top: 80px;
+  top: 160px;
   background: #dfe6e9;
   box-shadow:
-    10px 10px 20px rgba(196, 196, 196, 0.75),
-    -10px -10px 20px rgba(255, 255, 255, 0.75);
+    8px 8px 16px rgba(196, 196, 196, 0.75),
+    -8px -8px 16px rgba(255, 255, 255, 0.75);
   border-radius: 15px 15px 15px 15px;
   overflow: hidden;
   box-sizing: border-box;
@@ -182,8 +182,8 @@
   box-shadow:
     inset 8px 8px 8px rgba(196, 196, 196, 0.95),
     inset -8px -8px 8px rgba(255, 255, 255, 0.78),
-    inset 0 -5px 7px rgba(196, 196, 196, 0.55),
-    inset -5px 0 7px rgba(196, 196, 196, 0.55);
+    inset 4px 4px 8px rgba(196, 196, 196, 0.55),
+    inset -4px -4px 8px rgba(196, 196, 196, 0.55);
   pointer-events: none;
   z-index: 10;
 }
@@ -222,7 +222,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI",;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -238,7 +238,7 @@
   line-height: 60px;
   display: inline-block;
   flex-shrink: 0;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .masterSoftwareDevelopment {
   line-height: 60px;
@@ -519,8 +519,8 @@
   top: calc(50% - 3406px);
   left: calc(50% - 567px);
   box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px #fff;
+    8px 8px 16px #c4c4c4,
+    -8px -8px 16px #fff;
   border-radius: 500px;
   background-color: #dfe6e9;
   width: 300px;
@@ -796,7 +796,7 @@
 .prepareForHighDemand {
   width: 100%;
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI",;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -905,8 +905,8 @@
   top: 0px;
   left: calc(50% - 308px);
   box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px #fff;
+    8px 8px 16px #c4c4c4,
+    -8px -8px 16px #fff;
   border-radius: 16px;
   background-color: #dfe6e9;
   width: 616px;
@@ -958,7 +958,7 @@
   height: 10px;
   width: 73px;
   position: relative;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
   border-radius: 32px;
   background: linear-gradient(-90deg, #bf1869, #590b31);
   overflow: hidden;
@@ -974,7 +974,7 @@
   height: 27.71px;
   background: #bf1869;
   clip-path: polygon(100% 50%, 0 0, 0 100%);
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
   z-index: 2;
 }
@@ -1034,8 +1034,8 @@
   top: 0.21px;
   left: calc(50% - 308px);
   box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px #fff;
+    8px 8px 16px #c4c4c4,
+    -8px -8px 16px #fff;
   border-radius: 16px;
   background-color: #dfe6e9;
   width: 616px;
@@ -1193,7 +1193,7 @@
   width: 881px;
   height: 149px;
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI",;
   font-style: normal;
   font-weight: 700;
   font-size: 54px;
@@ -1212,7 +1212,7 @@
   width: 876px;
   height: 80px;
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI", ;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -1271,10 +1271,12 @@
 .frameWrapper12:active {
   transform: translateY(0);
   box-shadow:
-    inset 5px 5px 10px #c6c6c9,
-    inset -5px -5px 10px #ffffff;
+    inset 4px 4px 8px #c6c6c9,
+    inset -4px -4px 8px #ffffff;
 }
-
+.frameWrapper12:active .bookADemo {
+  color: #000000;
+}
 .bookADemoWrapper {
   width: 152px;
   height: 32px;
@@ -1293,7 +1295,7 @@
   width: 152px;
   height: 32px;
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI",;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -1336,9 +1338,9 @@
   position: absolute;
   top: calc(50% - 346px);
   left: calc(50% - 608px);
-  box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px rgba(255, 255, 255, 0.6);
+   box-shadow:
+    8px 8px 16px #c4c4c4,
+    -8px -8px 16px #fff;
   border-radius: 100px;
   background-color: #dfe6e9;
   width: 1216px;
@@ -1371,7 +1373,7 @@
   letter-spacing: 0.03em;
   line-height: 72px;
   text-transform: capitalize;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
 .image24Icon {
   align-self: stretch;
@@ -1406,7 +1408,7 @@
   bottom: 0px;
   left: calc(50% - 720px);
   box-shadow:
-    -10px -10px 20px #fff inset,
+    -8px -8px 16px #fff inset,
     8px 8px 16px #c4c4c4 inset;
   background-color: #dfe6e9;
   width: 1440px;
@@ -1466,7 +1468,7 @@
   position: relative;
   letter-spacing: -0.03em;
   line-height: 34px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
 .sparklesIcon {
   height: 23px;
@@ -1636,7 +1638,7 @@
   left: calc(50% - 720px);
   box-shadow:
     -8px -8px 16px #fff inset,
-    10px 10px 10px #c4c4c4 inset;
+    8px 8px 16px #c4c4c4 inset;
   background-color: #dfe6e9;
   width: 1440px;
   height: 459px;
@@ -1753,7 +1755,7 @@
   background-color: #dfe6e9;
   clip-path: polygon(50% 4%, 98.3% 26.7%, 99% 28.2%, 99% 71.8%, 98.3% 73.3%, 50% 96%, 1.7% 73.3%, 1% 71.8%, 1% 28.2%, 1.7% 26.7%);
 
-  filter: drop-shadow(-8px -8px 12px rgba(255, 255, 255, 0.95)) drop-shadow(8px 8px 14px rgba(196, 196, 196, 0.95));
+  filter: drop-shadow(-8px -8px 16px rgba(255, 255, 255, 0.95)) drop-shadow(8px 8px 16px rgba(196, 196, 196, 0.95));
 
   isolation: isolate;
   overflow: hidden;
@@ -1777,8 +1779,8 @@
   clip-path: inherit;
   background: transparent;
   box-shadow:
-    inset -5px -5px 10px rgba(255, 255, 255, 0.72),
-    inset 5px 5px 10px rgba(198, 198, 201, 0.36);
+    inset -4px -4px 8px rgba(255, 255, 255, 0.72),
+    inset 4px 4px 8px rgba(198, 198, 201, 0.36);
   pointer-events: none;
   z-index: 1;
 }
@@ -1793,8 +1795,8 @@
   clip-path: polygon(50% 0, 98.8% 24.2%, 100% 26%, 100% 74%, 98.8% 75.8%, 50% 100%, 1.2% 75.8%, 0 74%, 0 26%, 1.2% 24.2%);
 
   box-shadow:
-    inset 7px 7px 14px rgba(198, 198, 201, 0.9),
-    inset -7px -7px 14px rgba(255, 255, 255, 0.95);
+    inset 8px 8px 16px rgba(198, 198, 201, 0.9),
+    inset -8px -8px 16px rgba(255, 255, 255, 0.95);
 
   z-index: 2;
   overflow: hidden;
@@ -1884,8 +1886,8 @@
 
 .expandableCardTrigger.isActive {
   box-shadow:
-    inset -6px -6px 12px #ffffff,
-    inset 6px 6px 12px rgba(196, 196, 196, 0.8);
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px rgba(196, 196, 196, 0.8);
 }
 
 .expandableCardPanel {
@@ -1959,7 +1961,7 @@
   box-shadow: none !important;
   color: #bf1869 !important;
   -webkit-text-fill-color: #bf1869 !important;
-  font-family: Inter, "Segoe UI", sans-serif;
+  font-family: Inter, "Segoe UI",;
   font-size: 54px;
   font-weight: 700;
   line-height: 62px;
@@ -2019,8 +2021,8 @@
 .expandableCardTrigger.isActive {
   transform: translateY(-10px);
   box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px #ffffff;
+    8px 8px 16px #c4c4c4,
+    -8px -8px 16px #ffffff;
 }
 
 .frameParent14 {
@@ -3481,3 +3483,572 @@
   outline-offset: 2px;
   border-radius: 4px;
 }
+
+/* ===== FINAL GUARANTEED VISIBLE BREADCRUMB ===== */
+@media screen and (min-width: 769px) {
+  .bootcamp {
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  /*
+    The site/header area is ~80px high.
+    Put breadcrumb BELOW it so it cannot be covered.
+    Breadcrumb: 96px -> 120px
+    Hero: 152px
+    Gap: 32px
+  */
+  .bootcamp > .breadcrumbBar {
+    position: absolute !important;
+    top: 96px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+    height: 24px !important;
+    z-index: 99999 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    color: #31344b !important;
+    font-family: "Segoe UI" !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    pointer-events: auto !important;
+  }
+
+  .bootcamp > .breadcrumbBar .breadcrumbItem {
+    display: inline-flex !important;
+    align-items: center !important;
+    width: auto !important;
+    height: 24px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #31344b !important;
+    font-family: "Segoe UI" !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    letter-spacing: 0.02em !important;
+    white-space: nowrap !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+
+  .bootcamp > .breadcrumbBar .breadcrumbCurrent {
+    color: #2d4cc8 !important;
+    font-weight: 700 !important;
+  }
+
+  .bootcamp > .breadcrumbBar .breadcrumbArrowIcon {
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    flex: 0 0 20px !important;
+    object-fit: contain !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .bootcamp > .bootcampOuterFrame {
+    top: 152px !important;
+  }
+
+  /* Shift following desktop sections by the same amount so spacing stays correct */
+  .bootcamp > .frameParent4 {
+    top: 891px !important;
+  }
+
+  .bootcamp > .frameParent5 {
+    top: 1069px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bootcamp > .breadcrumbBar {
+    position: absolute !important;
+    top: 96px !important;
+    left: 32px !important;
+    width: calc(100% - 64px) !important;
+    height: 24px !important;
+    z-index: 99999 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 0 !important;
+
+    color: #31344b !important;
+    font-family: "Segoe UI" !important;
+  }
+
+  .bootcamp > .breadcrumbBar .breadcrumbItem {
+    display: inline-flex !important;
+    align-items: center !important;
+    height: 24px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+  }
+
+  .bootcamp > .breadcrumbBar .breadcrumbCurrent {
+    color: #2d4cc8 !important;
+    font-weight: 700 !important;
+  }
+
+  .bootcamp > .breadcrumbBar .breadcrumbArrowIcon {
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+    flex: 0 0 20px !important;
+  }
+}
+
+/* =========================================================
+   FIGMA SPACING ONLY
+   IMPORTANT:
+   - No colors changed
+   - No shadows changed
+   - No border/radius changed
+   - No font sizes changed
+   - No card/section design changed
+   - Only left/right positioning and section-to-section spacing
+   ========================================================= */
+
+@media screen and (min-width: 769px) {
+
+  /* ---------- BREADCRUMBS ---------- */
+  /* Figma: left 80px, top 112px, height 24px */
+  .bootcamp > .breadcrumbBar {
+    top: 112px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+    height: 24px !important;
+  }
+
+  /* ---------- HERO ---------- */
+  /*
+     Figma hero:
+     top: 168px
+     width: 1280px
+     Breadcrumb bottom: 136px
+     Gap breadcrumb -> hero: 32px
+  */
+  .bootcamp > .bootcampOuterFrame {
+    top: 168px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+  }
+
+  /* ---------- THREE INTRO CARDS ---------- */
+  /* Figma: top 819px, width 1212px, centered */
+  .bootcamp > .frameParent4 {
+    top: 819px !important;
+    left: calc(50% - 606px) !important;
+    width: 1212px !important;
+  }
+
+  /* ---------- PRACTICAL LEARNING ---------- */
+  /* Figma: top 997px, width 1196px, centered */
+  .bootcamp > .frameParent5 {
+    top: 997px !important;
+    left: calc(50% - 598px) !important;
+    width: 1196px !important;
+  }
+
+  /* ---------- CAREER / HIGHLIGHT STRIP ---------- */
+  /* Figma: top 1856.21px, width 1280px */
+  .bootcamp > .bootcampInner2 {
+    top: 1856.21px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+  }
+
+  /* ---------- BOOTCAMP LEARNING / DETAILS ---------- */
+  /* Figma: top 2230.21px, width 1280px */
+  .bootcamp > .frameParent14 {
+    top: 2230.21px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+  }
+
+  /* ---------- LARGE LOWER FEATURE SECTION ---------- */
+  /* Keep the Figma 1280px content rail */
+  .bootcamp > .frameParent45 {
+    left: calc(50% - 440.5px) !important;
+  }
+
+  /* ---------- FOOTER ---------- */
+  /* Figma footer is full 1440px canvas width */
+  .bootcamp > .frameParent46 {
+    top: 4967px !important;
+    left: calc(50% - 720px) !important;
+    width: 1440px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE ONLY — SPACING / OVERLAP FIX
+   No design, font, color, shadow, border or content changes.
+   ========================================================= */
+
+@media screen and (max-width: 425px) {
+
+  /* Breadcrumb above hero, matching the same Figma spacing logic */
+  .bootcamp > .breadcrumbBar {
+    top: 112px !important;
+    left: 80px !important;
+    width: 1280px !important;
+    height: 24px !important;
+  }
+
+  /* Breadcrumb bottom = 136px; Hero top = 168px; gap = 32px */
+  .bootcamp > .bootcampOuterFrame {
+    top: 168px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+  }
+
+  /* Pull the three-card section closer to the hero */
+  .bootcamp > .frameParent4 {
+    top: 819px !important;
+  }
+
+  /* Remove excess empty space after the three cards */
+  .bootcamp > .frameParent5 {
+    top: 1295px !important;
+  }
+
+  /* Keep all following sections moving together so nothing overlaps */
+  .bootcamp > .bootcampInner2 {
+    top: 2156px !important;
+  }
+
+  .bootcamp > .frameParent14 {
+    top: 2530px !important;
+  }
+
+  .bootcamp > .rectangleParent4 {
+    top: calc(3520px + var(--mobile-accordion-extra)) !important;
+  }
+
+  .bootcamp > .rectangleParent3 {
+    top: calc(4372px + var(--mobile-accordion-extra)) !important;
+  }
+
+  .bootcamp > .frameParent46 {
+    top: calc(4550px + var(--mobile-accordion-extra)) !important;
+  }
+
+  .bootcamp {
+    height: calc(5009px + var(--mobile-accordion-extra)) !important;
+    min-height: calc(5009px + var(--mobile-accordion-extra)) !important;
+  }
+}
+
+/* 320px uses larger intro cards, so only its vertical positions need extra room */
+@media screen and (width: 320px) {
+
+  .bootcamp > .frameParent4 {
+    top: 819px !important;
+  }
+
+  /* Three 440x136 cards + 30px gaps finish around 1287px */
+  .bootcamp > .frameParent5 {
+    top: 1360px !important;
+  }
+
+  .bootcamp > .bootcampInner2 {
+    top: 2221px !important;
+  }
+
+  .bootcamp > .frameParent14 {
+    top: 2595px !important;
+  }
+
+  .bootcamp > .rectangleParent4 {
+    top: calc(3445px + var(--mobile-accordion-extra)) !important;
+  }
+
+  .bootcamp > .rectangleParent3 {
+    top: calc(4297px + var(--mobile-accordion-extra)) !important;
+  }
+
+  .bootcamp > .frameParent46 {
+    top: calc(4475px + var(--mobile-accordion-extra)) !important;
+  }
+
+  .bootcamp {
+    height: calc(4934px + var(--mobile-accordion-extra)) !important;
+    min-height: calc(4934px + var(--mobile-accordion-extra)) !important;
+  }
+}
+
+/* =========================================================
+   DESKTOP ONLY — THREE INTRO CARDS MATCH SUPPLIED PNG
+   No mobile/tablet responsiveness changed.
+   No other section is changed.
+   ========================================================= */
+@media screen and (min-width: 769px) {
+
+  .bootcamp > .frameParent4 {
+    position: absolute !important;
+    top: 819px !important;
+    left: calc(50% - 606px) !important;
+    width: 1212px !important;
+    height: 114px !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 24px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: "Segoe UI" !important;
+  }
+
+  .bootcamp > .frameParent4 > .rectangleGroup {
+    position: relative !important;
+
+    width: 388px !important;
+    min-width: 388px !important;
+    max-width: 388px !important;
+
+    height: 114px !important;
+    min-height: 114px !important;
+    max-height: 114px !important;
+
+    flex: 0 0 388px !important;
+
+    margin: 0 !important;
+    padding: 11px 12px 13px !important;
+
+    border-radius: 100px !important;
+    background-color: #dfe6e9 !important;
+
+    box-shadow:
+      -4px -4px 8px #ffffff,
+      4px 4px 8px #c6c6c6 !important;
+
+    box-sizing: border-box !important;
+    overflow: visible !important;
+    isolation: isolate !important;
+  }
+
+  .bootcamp > .frameParent4 > .rectangleGroup .frameInner {
+    position: absolute !important;
+    top: 12px !important;
+    left: 12px !important;
+
+    width: 362px !important;
+    height: 90px !important;
+
+    margin: 0 !important;
+
+    border-radius: 100px !important;
+    background-color: #dfe6e9 !important;
+
+    box-shadow:
+      -4px -4px 8px #ffffff,
+      4px 4px 8px #c6c6c6 !important;
+
+    z-index: 0 !important;
+  }
+
+  /* Pink decorative artwork used by card 1 and card 3 */
+  .bootcamp > .frameParent4 > .rectangleGroup .rectangleIcon {
+    display: block !important;
+    position: absolute !important;
+
+    top: 11px !important;
+    left: 12px !important;
+
+    width: 131.9px !important;
+    height: 93.5px !important;
+
+    margin: 0 !important;
+    object-fit: contain !important;
+
+    z-index: 1 !important;
+  }
+
+  /* Grey center circle */
+  .bootcamp > .frameParent4 > .rectangleGroup .ellipseDiv {
+    position: absolute !important;
+
+    top: 25px !important;
+    left: 27px !important;
+
+    width: 61px !important;
+    height: 61px !important;
+
+    margin: 0 !important;
+
+    border-radius: 50% !important;
+    background-color: #d9d9d9 !important;
+
+    z-index: 2 !important;
+  }
+
+  /* Numbers 1 / 2 / 3 */
+  .bootcamp > .frameParent4 .div,
+  .bootcamp > .frameParent4 .div2,
+  .bootcamp > .frameParent4 .div3 {
+    position: absolute !important;
+
+    top: 39px !important;
+    height: 36px !important;
+
+    margin: 0 !important;
+
+    color: #31344b !important;
+    font-family: "Segoe UI" !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    line-height: 36px !important;
+    letter-spacing: 0.03em !important;
+
+    text-align: center !important;
+    text-shadow: none !important;
+
+    z-index: 3 !important;
+  }
+
+  .bootcamp > .frameParent4 .div {
+    left: 50px !important;
+    width: 16px !important;
+  }
+
+  .bootcamp > .frameParent4 .div2 {
+    left: 48px !important;
+    width: 20px !important;
+  }
+
+  .bootcamp > .frameParent4 .div3 {
+    left: 48px !important;
+    width: 20px !important;
+  }
+
+  /* Text groups */
+  .bootcamp > .frameParent4 .practicalCodingParent,
+  .bootcamp > .frameParent4 .projectLearningParent,
+  .bootcamp > .frameParent4 .careerReadinessParent {
+    position: absolute !important;
+
+    top: 26px !important;
+    left: 122px !important;
+
+    width: 230px !important;
+    height: 62px !important;
+
+    margin: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+
+    color: #000000 !important;
+    font-family: "Segoe UI" !important;
+    text-align: center !important;
+
+    z-index: 4 !important;
+  }
+
+  /* Titles */
+  .bootcamp > .frameParent4 .practicalCoding,
+  .bootcamp > .frameParent4 .projectLearning,
+  .bootcamp > .frameParent4 .careerReadiness {
+    width: 100% !important;
+    height: 30px !important;
+
+    margin: 0 !important;
+
+    color: #000000 !important;
+    font-family: "Segoe UI" !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    line-height: 30px !important;
+    letter-spacing: 0.03em !important;
+
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  /* Subtitles */
+  .bootcamp > .frameParent4 .problemSolving,
+  .bootcamp > .frameParent4 .handsOnPractice,
+  .bootcamp > .frameParent4 .technologyCareers {
+    width: 100% !important;
+    height: 24px !important;
+
+    margin: 0 !important;
+
+    color: #31344b !important;
+    font-family: "Segoe UI" !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
+    letter-spacing: 0.03em !important;
+
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* =========================================================
+   TYPOGRAPHY SIZE UPDATE ONLY
+   Headings: 36px | Subheadings: 24px
+   No layout/design properties changed.
+   ========================================================= */
+
+/* Main / section headings */
+.masterSoftwareDevelopmentContainer,
+.masterSoftwareDevelopment,
+.intensiveLearning,
+.learnByBuilding,
+.prepareForHighDemand,
+.neurolabsCodingBootcamps2 {
+  font-size: 36px;
+}
+
+/* Subheadings / supporting heading text */
+.neurolabsCodingBootcamps,
+.buildRealProjects,
+.accelerateYourCoding {
+  font-size: 24px;
+}
+
+/* FUTURE-READY TECH CAREERS — HEADING SIZE ONLY */
+.futureReadyTechCareers {
+  font-size: 46px;
+}
+

@@ -30,11 +30,26 @@ const Bootcamp: NextPage = () => {
   } as CSSProperties;
 
   return (
-    <div className={styles.bootcamp} style={accordionStyle}>
+    <>
+      <div className={styles.bootcamp} style={accordionStyle}>
       <b className={styles.text}>
         <br />
       </b>
-      <div className={styles.bootcampOuterFrame}>
+      <nav className={`${styles.frameParent3} ${styles.breadcrumbBar}`} aria-label="Breadcrumb">
+        <span className={styles.breadcrumbItem}>Neuro Labs</span>
+        <Image
+          className={styles.breadcrumbArrowIcon}
+          src="/icons/arrowright.svg"
+          width={20}
+          height={20}
+          alt=""
+          aria-hidden="true"
+        />
+        <span className={`${styles.breadcrumbItem} ${styles.breadcrumbCurrent}`}>
+          Coding Bootcamps
+        </span>
+      </nav>
+<div className={styles.bootcampOuterFrame}>
         <div className={styles.bootcampInner}>
           <div className={styles.rectangleParent}>
             <div className={styles.frameDiv}>
@@ -50,18 +65,6 @@ const Bootcamp: NextPage = () => {
 
             <Image className={styles.image33Icon} src="/images/student.webp" width={366} height={578} sizes="366px" alt="Coding bootcamp student" priority />
           </div>
-        </div>
-      </div>
-      <div className={styles.frameParent3}>
-        <div className={styles.neuroLabsWrapper}>
-          <div className={styles.codingBootcamps}>Neuro Labs</div>
-        </div>
-        <span className={styles.breadcrumbChevron} aria-hidden="true">
-          <span />
-          <span />
-        </span>
-        <div className={styles.arrowRightDoubleParent}>
-          <b className={styles.codingBootcamps}>Coding Bootcamps</b>
         </div>
       </div>
       <div className={styles.frameParent4}>
@@ -217,7 +220,7 @@ const Bootcamp: NextPage = () => {
               <div className={`${styles.frameWrapper6} ${styles.expandableCardPanel} ${openCards.includes(1) ? styles.isOpen : ""}`}>
                 <div className={styles.bootcampLearningTypicallyInParent}>
                   <b className={styles.bootcampLearningTypically}>
-                    Bootcamp learning typically includes:
+                    Bootcamp Learning Lypically Includes:
                     <br />
                   </b>
                   <div className={styles.frameParent17}>
@@ -261,7 +264,11 @@ const Bootcamp: NextPage = () => {
                   </div>
                   <div className={styles.structuredAcceleratedLearnParent}>
                     <div className={styles.structuredAccelerated}>{`Accelerated Learning`}</div>
-                    <div className={styles.fromCodingBasics}>From coding basics to real-world applications.</div>
+                   <div className={styles.fromCodingBasics}>
+  From coding basics to real-world
+  <br />
+  applications.
+</div>
                   </div>
                 </div>
               </div>
@@ -325,7 +332,7 @@ const Bootcamp: NextPage = () => {
             <div className={`${styles.frameWrapper10} ${styles.expandableCardPanel} ${openCards.includes(3) ? styles.isOpen : ""}`}>
               <div className={styles.usedLearningEnvironmentsInParent}>
                 <b className={styles.usedLearningEnvironments}>
-                  Used learning environments, including:
+                  Used Learning Environments Including:
                   <br />
                 </b>
                 <div className={styles.frameParent17}>
@@ -397,13 +404,14 @@ const Bootcamp: NextPage = () => {
           <div className={styles.image21} />
           <div className={styles.futureReadyTechCareersParent}>
             <b className={styles.futureReadyTechCareers}>Future-Ready Tech Careers</b>
-            <Image className={styles.image24Icon} src="/images/tech.webp" width={1216} height={548} sizes="100vw" alt="" />
+            <Image className={styles.image24Icon} src="/images/codingbootcamp.webp" width={1216} height={548} sizes="100vw" alt="" />
           </div>
           <div className={styles.frameChild35} />
         </div>
       </div>
 
     </div>
+    </>
   );
 };
 

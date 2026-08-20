@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import Image from "next/image";
-import styles from "./CodingChallenge.module.css";
+import styles from "./codingchallenge.module.css";
 import InterviewSection from "./InterviewSection";
 import PageScaler from "./PageScaler";
-import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 
 export const metadata: Metadata = {
   title: "Coding Challenges | Neuro Labs",
@@ -73,7 +72,15 @@ export default function CodingChallengePage() {
             <div className={styles.frameWrapper}>
               <div className={styles.frameWrapper3}>
                 <div className={styles.image20Parent}>
-                  <div className={styles.image20} />
+                  <Image
+                    className={styles.image20}
+                   src="/images/codingbackground.webp"
+                    width={1280}
+                    height={800}
+                    sizes="1280px"
+                    alt=""
+                    aria-hidden="true"
+                  />
                   <div className={styles.image21} />
                   <div className={styles.frameParent3}>
                     <div className={styles.frameParent4}>
@@ -274,7 +281,7 @@ export default function CodingChallengePage() {
                 <span className={styles.learning}>Learning</span>
                 <span className={styles.builtForEvery}> Journey</span>
               </b>
-              <div className={styles.neurolabsCodingChallenges}>NeuroLabs Coding Challenges are suitable for:</div>
+              <div className={styles.neurolabsCodingChallenges}>NeuroLabs Coding Challenges are Suitable for:</div>
             </div>
           </div>
           <div className={styles.audienceGrid}>
@@ -302,7 +309,6 @@ export default function CodingChallengePage() {
           </div>
         </div>
       </PageScaler>
-      <TalkToExpertButton />
     </>
   );
 }

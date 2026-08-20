@@ -223,6 +223,7 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               <span className={styles.measurableProgress}>Measurable Progress</span>
             </h2>
             <p className={styles.unclearGoalsCompeting}>Unclear goals, competing priorities, and limited progress visibility can hinder learner motivation and outcomes.</p>
+            <Image className={styles.flatLayStatisticsPresentatiIcon} src="/images/flat-lay-statistics-presentation-with-chart-arrows 1.webp" width={707} height={331} sizes="(min-width: 901px) 520px, 100vw" alt="Learning progress arrows chart" />
           </div>
           <div className={styles.frameParent13}>
             <div className={styles.frameWrapper6}>
@@ -732,9 +733,9 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                       <h3 className={styles.reviewImprove}>{`Review & Improve`}</h3>
                     </div>
                     <p className={styles.reviewRefineAnd}>
-                      Review, Refine and
+                      Review, refine and
                       <br />
-                      Improve{" "}
+                      improve{" "}
                     </p>
                   </div>
                 </div>
@@ -839,31 +840,31 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               <div className={styles.groupYoungBusinesspeopleUsi} />
               <div className={styles.rectangleIcon} aria-hidden="true" />
               <div className={styles.collageCustomerExperienceCoParent}>
-                <Image className={styles.collageCustomerExperienceCoIcon} src="/images/collage-customer-experience-concept 1.webp" width={606} height={473} sizes="100vw" alt="Goal setting and progress growth chart" />
+                <Image className={styles.collageCustomerExperienceCoIcon} src="/images/cheerful-diverse-people-showing-graph-tablet 1.webp" width={606} height={473} sizes="100vw" alt="Goal setting and progress growth chart" />
                 <div className={styles.frameWrapper18}>
                   <div className={styles.frameParent56}>
                     <div className={styles.starParent}>
-                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <Image className={styles.starIcon} src="/icons/hand-pointing-right.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
                       <p className={styles.clearDirection}>Clear Direction</p>
                     </div>
                     <div className={styles.starParent}>
-                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <Image className={styles.starIcon} src="/icons/hand-pointing-right.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
                       <p className={styles.clearDirection}>Higher Motivation</p>
                     </div>
                     <div className={styles.starParent}>
-                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <Image className={styles.starIcon} src="/icons/hand-pointing-right.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
                       <p className={styles.clearDirection}>Better Time Management</p>
                     </div>
                     <div className={styles.starParent}>
-                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <Image className={styles.starIcon} src="/icons/hand-pointing-right.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
                       <p className={styles.clearDirection}>Data-Driven Decisions</p>
                     </div>
                     <div className={styles.starParent}>
-                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <Image className={styles.starIcon} src="/icons/hand-pointing-right.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
                       <p className={styles.clearDirection}>Continuous Improvement</p>
                     </div>
                     <div className={styles.starParent}>
-                      <Image className={styles.starIcon} src="/icons/star.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
+                      <Image className={styles.starIcon} src="/icons/hand-pointing-right.svg" width={34} height={34} sizes="34px" alt="" aria-hidden="true" />
                       <p className={styles.careerReadiness}>Career Readiness</p>
                     </div>
                   </div>
@@ -942,7 +943,7 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
           <div className={styles.frameParent82}>
             <div className={styles.frameParent83}>
               <p className={styles.frameChild40}>Trust &amp; Intelligence</p>
-              <h2 className={styles.turningLearningGoalsContainer}>Personalized!Intelligent! Secure!</h2>
+              <h2 className={styles.turningLearningGoalsContainer}>Personalized!<br/>Intelligent! Secure!</h2>
             </div>
             <div className={styles.frameParent84}>
               <div className={styles.frameParent85}>

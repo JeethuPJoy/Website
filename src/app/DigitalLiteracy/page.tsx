@@ -228,8 +228,8 @@ function DigitalLiteracyTransformIcons() {
     <div className={styles["dl-transform-icons"]}>
       <PillLabel text="Transform" color="#0B9BA0" />
       <div className={styles["dl-transform-row"]}>
-        <PillLabel text="Upskill" color="#BF1869" />
-        <PillLabel text="Adapt" color="#BCCF10" />
+        <PillLabel text="Upskill" color="#67096E" />
+        <PillLabel text="Adapt" color="#907507" />
       </div>
     </div>
   );

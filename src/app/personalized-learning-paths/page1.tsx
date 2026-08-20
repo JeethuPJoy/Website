@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useState, type ReactElement, type CSSProperties } from "react";
+import { useState, type ReactElement, type CSSProperties } from "react";
 import Image from "next/image";
-import styles from "./personalized_learning_paths.module.css";
+import styles from "./personalized-learning-paths.module.css";
 
 function ArrowRightDouble() {
   return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={styles["plp-breadcrumb-arrow"]} aria-hidden="true" focusable="false">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={styles["plp-breadcrumb-arrow"]}>
       <path d="M8.33398 12C8.33398 12 12.334 9.05407 12.334 8C12.334 6.94587 8.33398 4 8.33398 4" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M3.66605 12C3.66605 12 7.66602 9.05407 7.66602 8C7.66602 6.94587 3.66602 4 3.66602 4" stroke="#31344B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
@@ -84,7 +84,7 @@ const stages: StageData[] = [
 
 function CheckCircle({ color, size = 24 }: { color: string; size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className={styles["plp-check-icon"]} aria-hidden="true" focusable="false">
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className={styles["plp-check-icon"]}>
       <circle cx="12" cy="12" r="10" fill={color} />
       <path d="M8 12.5L10.5 15L16 9" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
@@ -93,7 +93,7 @@ function CheckCircle({ color, size = 24 }: { color: string; size?: number }) {
 
 function ArrowRightBig({ color }: { color: string }) {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["plp-stage-arrow"]} aria-hidden="true" focusable="false">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["plp-stage-arrow"]}>
       <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
@@ -101,7 +101,7 @@ function ArrowRightBig({ color }: { color: string }) {
 
 function CheckCircleOutline({ color }: { color: string }) {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["plp-check-icon"]} aria-hidden="true" focusable="false">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["plp-check-icon"]}>
       <circle cx="12" cy="12" r="10" stroke={color} strokeWidth="2" />
       <path d="M8 12.5L10.5 15L16 9" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
@@ -110,7 +110,7 @@ function CheckCircleOutline({ color }: { color: string }) {
 
 function ChevronDouble() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M5 6l7 5.5L19 6" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M5 12.5l7 5.5 7-5.5" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
@@ -119,7 +119,7 @@ function ChevronDouble() {
 
 function ClipboardCheckIcon({ color }: { color: string }) {
   return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
       <path d="M12 6H20a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M13 6a3 3 0 0 1 6 0" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M12.5 18l2.5 2.5L20 15" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -129,7 +129,7 @@ function ClipboardCheckIcon({ color }: { color: string }) {
 
 function AnalyticsUpIcon({ color }: { color: string }) {
   return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
       <rect x="5" y="5" width="22" height="22" rx="4" stroke={color} strokeWidth="2" />
       <path d="M9 20v-4M15 20v-8M21 20v-6" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M9 12l5-4 4 3 5-5" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -139,7 +139,7 @@ function AnalyticsUpIcon({ color }: { color: string }) {
 
 function UserIcon({ color }: { color: string }) {
   return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
       <circle cx="16" cy="11" r="5" stroke={color} strokeWidth="2" />
       <path d="M6 27c0-5.523 4.477-9 10-9s10 3.477 10 9" stroke={color} strokeWidth="2" strokeLinecap="round" />
     </svg>
@@ -148,7 +148,7 @@ function UserIcon({ color }: { color: string }) {
 
 function RefreshIcon({ color }: { color: string }) {
   return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
       <path d="M6 16a10 10 0 0 1 17-7.1L26 12" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M26 6v6h-6" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M26 16a10 10 0 0 1-17 7.1L6 20" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -159,7 +159,7 @@ function RefreshIcon({ color }: { color: string }) {
 
 function ActivityIcon({ color }: { color: string }) {
   return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
       <path d="M4 16h5l3-9 6 18 3-9h7" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
@@ -167,7 +167,7 @@ function ActivityIcon({ color }: { color: string }) {
 
 function TargetIcon({ color }: { color: string }) {
   return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
       <circle cx="14" cy="18" r="10" stroke={color} strokeWidth="2" />
       <circle cx="14" cy="18" r="4" stroke={color} strokeWidth="2" />
       <path d="M21 11l5-5m0 0h-4m4 0v4" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -183,7 +183,7 @@ function MasteryRing({ percent, color }: { percent: number; color: string }) {
   return (
     <div className={styles["plp-mastery-ring-base"]}>
       <div className={styles["plp-mastery-ring"]}>
-        <svg width="176" height="176" viewBox="0 0 176 176" className={styles["plp-mastery-ring-svg"]} aria-hidden="true" focusable="false">
+        <svg width="176" height="176" viewBox="0 0 176 176" className={styles["plp-mastery-ring-svg"]}>
           <circle cx="88" cy="88" r={radius} stroke={color} strokeOpacity="0.08" strokeWidth="20" fill="none" />
           <circle cx="88" cy="88" r={radius} stroke={color} strokeWidth="20" strokeLinecap="round" fill="none" strokeDasharray={circumference} strokeDashoffset={offset} transform="rotate(-90 88 88)" />
         </svg>
@@ -305,7 +305,7 @@ const benefitTabs: BenefitTab[] = [
     id: "learners",
     label: "For Learners",
     imageStyle: "cutout",
-    photo: "/images/group-friends-ready-study 1.webp",
+    photo: "/images/photot-handsome-male-student.webp",
     photoAlt: "Two students holding books",
     checklist: ["Clear learning journey", "Greater confidence", "Practical skill development", "Faster career readiness"],
   },
@@ -321,7 +321,7 @@ const benefitTabs: BenefitTab[] = [
     id: "organizations",
     label: "Training Organizations",
     imageStyle: "cover",
-    photo: "/images/cheerful-speaker-talking-looking-distance 1.webp",
+    photo: "/images/hadsome-male-student-groupmate.webp",
     photoAlt: "Corporate trainer presenting to a seated group in an office",
     checklist: ["Standardized learning journeys", "Skill-based development", "Performance tracking", "Scalable training"],
   },
@@ -408,10 +408,6 @@ function BenefitsSection() {
 export default function PersonalizedLearningPathsPage() {
   const [openStep, setOpenStep] = useState<string | null>(null);
 
-  useEffect(() => {
-    document.title = "Personalized Learning Paths | NeuroLXP";
-  }, []);
-
   return (
     <main className={styles["plp-page"]}>
       <nav className={styles["plp-breadcrumb"]}>
@@ -426,7 +422,7 @@ export default function PersonalizedLearningPathsPage() {
         <span className={styles["plp-hero-pill"]}>Personalized Learning Paths</span>
 
         <h1 className={styles["plp-hero-heading"]}>
-          Empower <span className={styles["plp-hero-heading-accent"]}>Learning Journey</span> Tailored for Success
+          Empower <span className={styles["plp-hero-heading-accent"]}>Learning Journey</span> Tailored For Success
         </h1>
 
         <p className={styles["plp-hero-subtext"]}>NeuroLXP personalizes learning journeys to build skills, knowledge, and career readiness.</p>

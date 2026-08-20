@@ -2,31 +2,45 @@
 
 import type { NextPage } from "next";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { type FormEvent, useMemo, useState } from "react";
-import { getCountries, getCountryCallingCode, isPossiblePhoneNumber, type CountryCode } from "libphonenumber-js";
+import { getCountries, getCountryCallingCode, isValidPhoneNumber, type CountryCode } from "libphonenumber-js";
 import styles from "./contact.module.css";
 
 const subjectOptions = ["General Inquiry", "Product Information", "Technical Support", "Account Support", "Partnership", "Billing", "Feedback", "Other"];
 
 const ContactUs: NextPage = () => {
-  const router = useRouter();
   const [isSubjectOpen, setIsSubjectOpen] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState("");
   const [fullName, setFullName] = useState("");
+  const [nameTouched, setNameTouched] = useState(false);
   const [emailAddress, setEmailAddress] = useState("");
   const [emailTouched, setEmailTouched] = useState(false);
   const [countryCode, setCountryCode] = useState("");
+  const [countryTouched, setCountryTouched] = useState(false);
   const [isCountryOpen, setIsCountryOpen] = useState(false);
   const [countrySearch, setCountrySearch] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [phoneTouched, setPhoneTouched] = useState(false);
+  const [message, setMessage] = useState("");
+  const [messageTouched, setMessageTouched] = useState(false);
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
+  const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
+  const namePattern = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
   const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
+  const isNameValid = fullName.trim().length > 0 && namePattern.test(fullName.trim());
   const isEmailValid = emailAddress.length > 0 && emailPattern.test(emailAddress);
+  const isCountryValid = Boolean(countryCode);
+  const isSubjectValid = Boolean(selectedSubject);
+  const isMessageValid = message.trim().length > 0 && message.length <= 250;
+  const isPrivacyValid = privacyAccepted;
 
+  const showNameError = nameTouched && !isNameValid;
   const showEmailError = emailTouched && !isEmailValid;
+  const showCountryError = countryTouched && !isCountryValid;
+  const showMessageError = messageTouched && !isMessageValid;
 
   const countryOptions = useMemo(() => {
     const displayNames = new Intl.DisplayNames(["en"], { type: "region" });
@@ -42,7 +56,17 @@ const ContactUs: NextPage = () => {
 
   const selectedCountry = countryOptions.find((country) => country.value === countryCode);
 
-  const phoneMaxLength = countryCode === "IN" ? 10 : 15;
+  /*
+   * All countries are validated using their selected country's
+   * numbering plan. The input is capped at 15 digits, which is
+   * the international maximum used by libphonenumber-js.
+   */
+  /*
+   * Do not impose a 10-digit limit globally.
+   * Each selected country has its own valid national number length.
+   * libphonenumber-js performs the country-specific validation below.
+   */
+  const phoneMaxLength = 15;
 
   const filteredCountryOptions = useMemo(() => {
     const searchValue = countrySearch.trim().toLowerCase();
@@ -54,29 +78,190 @@ const ContactUs: NextPage = () => {
     return countryOptions.filter((country) => country.label.toLowerCase().includes(searchValue) || country.shortLabel.toLowerCase().includes(searchValue));
   }, [countryOptions, countrySearch]);
 
-  const internationalPhoneNumber = countryCode && phoneNumber ? `+${getCountryCallingCode(countryCode as CountryCode)}${phoneNumber}` : "";
+  const normalizedPhoneNumber = phoneNumber.replace(/\D/g, "");
 
-  const isPhoneValid = Boolean(countryCode) && Boolean(phoneNumber) && isPossiblePhoneNumber(internationalPhoneNumber);
+  /*
+   * Reject obviously fake/test numbers before the country-specific
+   * numbering-plan validation.
+   *
+   * Examples rejected for every country:
+   * 1234567890
+   * 9876543210
+   * 1111111111
+   * 2222222222
+   * etc.
+   */
+  const isObviouslyInvalidNumber = (number: string) => {
+    if (!number) {
+      return true;
+    }
 
-  const showPhoneError = phoneTouched && !isPhoneValid;
+    // Reject repeated digits such as 1111111111.
+    if (/^(\d)\1+$/.test(number)) {
+      return true;
+    }
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    // Reject the common ascending and descending test sequences.
+    if (
+      number === "1234567890" ||
+      number === "0123456789" ||
+      number === "9876543210"
+    ) {
+      return true;
+    }
+
+    const digits = number.split("").map(Number);
+
+    const isAscendingSequence =
+      digits.length > 1 &&
+      digits.every(
+        (digit, index) =>
+          index === 0 ||
+          digit === digits[index - 1] + 1
+      );
+
+    const isDescendingSequence =
+      digits.length > 1 &&
+      digits.every(
+        (digit, index) =>
+          index === 0 ||
+          digit === digits[index - 1] - 1
+      );
+
+    return (
+      isAscendingSequence ||
+      isDescendingSequence
+    );
+  };
+
+  /*
+   * Country-specific validation for EVERY country.
+   * The selected ISO country is passed directly to
+   * libphonenumber-js, so length and numbering rules come
+   * from the selected country's numbering plan.
+   */
+  /*
+   * Validate the national number against the selected country.
+   * Do not apply a fixed digit length here because countries have
+   * different valid national-number lengths.
+   */
+  const isPhoneValid =
+    Boolean(countryCode) &&
+    Boolean(normalizedPhoneNumber) &&
+    !isObviouslyInvalidNumber(normalizedPhoneNumber) &&
+    isValidPhoneNumber(
+      normalizedPhoneNumber,
+      countryCode as CountryCode
+    );
+
+  const showPhoneError = phoneTouched && Boolean(countryCode) && !isPhoneValid;
+
+  const isFormValid =
+    isNameValid &&
+    isEmailValid &&
+    isCountryValid &&
+    isPhoneValid &&
+    isSubjectValid &&
+    isMessageValid &&
+    isPrivacyValid;
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
+    setNameTouched(true);
     setEmailTouched(true);
-
-    if (!isEmailValid) {
-      document.getElementById("emailAddress")?.focus();
-      return;
-    }
-
+    setCountryTouched(true);
     setPhoneTouched(true);
+    setMessageTouched(true);
 
-    if (!isPhoneValid) {
-      document.getElementById("phoneNumber")?.focus();
+    if (!isFormValid) {
+      if (!isNameValid) {
+        document.getElementById("fullName")?.focus();
+        return;
+      }
+
+      if (!isEmailValid) {
+        document.getElementById("emailAddress")?.focus();
+        return;
+      }
+
+      if (!isCountryValid) {
+        document.getElementById("countryCodeSelect")?.focus();
+        return;
+      }
+
+      if (!isPhoneValid) {
+        document.getElementById("phoneNumber")?.focus();
+        return;
+      }
+
+      if (!isSubjectValid) {
+        document.getElementById("subjectButton")?.focus();
+        return;
+      }
+
+      if (!isMessageValid) {
+        document.getElementById("message")?.focus();
+        return;
+      }
+
       return;
     }
 
-    router.push("/thank-you");
+    try {
+      const response = await fetch("http://localhost:4000/contact-us", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: fullName.trim(),
+          email: emailAddress.trim(),
+          countryCode,
+          phone: normalizedPhoneNumber,
+          subject: selectedSubject,
+          message: message.trim(),
+          consent: privacyAccepted,
+        }),
+      });
+
+      let responseData: unknown = null;
+
+      try {
+        responseData = await response.json();
+      } catch {
+        responseData = null;
+      }
+
+      if (!response.ok) {
+        let errorMessage = "Unable to send your message.";
+
+        if (
+          responseData &&
+          typeof responseData === "object" &&
+          "message" in responseData
+        ) {
+          const responseMessage = responseData.message;
+
+          if (typeof responseMessage === "string") {
+            errorMessage = responseMessage;
+          } else if (Array.isArray(responseMessage)) {
+            errorMessage = responseMessage.join("\n");
+          }
+        }
+
+        throw new Error(errorMessage);
+      }
+
+      setSubmitted(true);
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : "Unable to send your message.";
+
+      window.alert(errorMessage);
+    }
   };
 
   const handleSubjectSelect = (subject: string) => {
@@ -105,7 +290,16 @@ const ContactUs: NextPage = () => {
         </div>
 
         <div className={styles.frameWrapper}>
-          <form className={styles.frameGroup} onSubmit={handleSubmit} noValidate>
+          <form className={`${styles.frameGroup} ${submitted ? styles.successForm : ""}`} onSubmit={handleSubmit} noValidate>
+            {submitted ? (
+              <div className={styles.successMessage} role="status" aria-live="polite">
+                <div className={styles.successMessageTitle}>Thank you for contacting us!</div>
+                <div className={styles.successMessageText}>
+                  We’ve received your message. Our team will review it and get back to you shortly.
+                </div>
+              </div>
+            ) : (
+              <>
             <div className={styles.frameContainer}>
               <div className={styles.frameDiv}>
                 <div className={styles.frameWrapper2}>
@@ -115,16 +309,21 @@ const ContactUs: NextPage = () => {
                         Full Name
                       </label>
 
-                      <div className={`${styles.frameChild} ${fullName ? styles.fieldHasValue : ""}`}>
+                      <div className={`${styles.frameChild} ${fullName ? styles.fieldHasValue : ""} ${showNameError ? styles.fieldHasError : ""}`}>
                         <div className={styles.fieldContent}>
                           <span className={styles.fieldIconCircle}>
                             <Image className={styles.fieldIcon} src="/icons/user.svg" width={20} height={20} alt="" aria-hidden="true" />
                           </span>
 
-                          <input id="fullName" className={styles.contactInput} type="text" name="fullName" autoComplete="name" placeholder="Enter your name" value={fullName} onChange={(event) => setFullName(event.target.value.replace(/[^A-Za-z\s]/g, "").replace(/\s{2,}/g, " "))} inputMode="text" />
+                          <input id="fullName" className={styles.contactInput} type="text" name="fullName" autoComplete="name" placeholder="Enter your name" value={fullName} onChange={(event) => setFullName(event.target.value.replace(/[^A-Za-z\s]/g, "").replace(/\s{2,}/g, " ").slice(0, 80))} onBlur={() => setNameTouched(true)} aria-invalid={showNameError} aria-describedby={showNameError ? "fullNameError" : undefined} inputMode="text" required />
                         </div>
                       </div>
                     </div>
+                    {showNameError && (
+                      <small id="fullNameError" className={styles.validationMessage} role="alert">
+                        Enter your name
+                      </small>
+                    )}
                   </div>
                 </div>
 
@@ -178,7 +377,8 @@ const ContactUs: NextPage = () => {
                   <div className={styles.frameParent3}>
                     <div className={`${styles.frameInner} ${styles.countrySelectField} ${countryCode ? styles.fieldHasValue : ""}`}>
                       <button
-                        className={styles.countryCodeSelect}
+                        id="countryCodeSelect"
+                        className={`${styles.countryCodeSelect} ${showCountryError ? styles.countryCodeSelectError : ""}`}
                         type="button"
                         aria-haspopup="listbox"
                         aria-expanded={isCountryOpen}
@@ -215,6 +415,7 @@ const ContactUs: NextPage = () => {
                                   aria-selected={countryCode === country.value}
                                   onClick={() => {
                                     setCountryCode(country.value);
+                                    setCountryTouched(true);
                                     setPhoneNumber("");
                                     setPhoneTouched(false);
                                     setCountrySearch("");
@@ -267,6 +468,12 @@ const ContactUs: NextPage = () => {
                     </div>
                   </div>
 
+                  {showCountryError && (
+                    <small id="countryCodeError" className={styles.countryValidationMessage} role="alert">
+                      Select a country code
+                    </small>
+                  )}
+
                   {showPhoneError && (
                     <small id="phoneNumberError" className={styles.phoneValidationMessage} role="alert">
                       Enter a valid phone number for the selected country
@@ -279,7 +486,7 @@ const ContactUs: NextPage = () => {
                     Subject
                   </label>
 
-                  <button className={`${styles.frameParent4} ${selectedSubject ? styles.subjectHasValue : ""}`} type="button" aria-labelledby="subjectLabel selectedSubjectValue" aria-haspopup="listbox" aria-expanded={isSubjectOpen} onClick={() => setIsSubjectOpen((open) => !open)}>
+                  <button id="subjectButton" className={`${styles.frameParent4} ${selectedSubject ? styles.subjectHasValue : ""}`} type="button" aria-labelledby="subjectLabel selectedSubjectValue" aria-haspopup="listbox" aria-expanded={isSubjectOpen} onClick={() => setIsSubjectOpen((open) => !open)}>
                     <span className={styles.subjectIconCircle}>
                       <Image className={styles.subjectIcon} src="/icons/message.svg" width={20} height={20} alt="" aria-hidden="true" />
                     </span>
@@ -319,19 +526,49 @@ const ContactUs: NextPage = () => {
                     </div>
                   </div>
 
-                  <div className={styles.frameParent6}>
+                  <div className={`${styles.frameParent6} ${showMessageError ? styles.messageFieldError : ""}`}>
                     <div className={styles.frameWrapper8}>
                       <div className={styles.typeYourMessageHereWrapper}>
-                        <textarea id="message" className={styles.typeYourMessage} name="message" placeholder="Type your message here....." rows={6} />
+                        <textarea
+                          id="message"
+                          className={styles.typeYourMessage}
+                          name="message"
+                          placeholder="Type your message here....."
+                          rows={6}
+                          maxLength={250}
+                          value={message}
+                          onChange={(event) => setMessage(event.target.value.slice(0, 250))}
+                          onBlur={() => setMessageTouched(true)}
+                          aria-invalid={showMessageError}
+                          aria-describedby={showMessageError ? "messageError" : undefined}
+                          required
+                        />
+                        <span className={styles.messageCharacterCount} aria-live="polite">
+                          {message.length}/250
+                        </span>
                       </div>
                     </div>
                   </div>
+                  {showMessageError && (
+                    <small id="messageError" className={styles.messageValidationMessage} role="alert">
+                      Enter a message
+                    </small>
+                  )}
                 </div>
               </div>
 
-              <label className={styles.frameParent7}>
+              <div className={styles.frameParent7}>
                 <span className={styles.checkboxControl}>
-                  <input className={styles.frameChild2} type="checkbox" name="privacyConfirmation" aria-label="I confirm my information and agree to the Privacy Policy" />
+                  <input
+                    className={styles.frameChild2}
+                    type="checkbox"
+                    name="privacyConfirmation"
+                    checked={privacyAccepted}
+                    readOnly
+                    tabIndex={-1}
+                    aria-label="I confirm my information and agree to the Privacy Policy"
+                    required
+                  />
                   <span className={styles.checkboxVisual} aria-hidden="true">
                     <Image className={styles.checkboxTickIcon} src="/icons/tick.svg" width={17} height={17} alt="" aria-hidden="true" />
                   </span>
@@ -341,19 +578,177 @@ const ContactUs: NextPage = () => {
                   <small className={styles.iConfirmMy} style={{ fontSize: "inherit" }}>
                     I confirm my information and agree to the{" "}
                   </small>
-                  <a className={styles.privacyPolicy} href="/privacy-policy">
+                  <button
+                    type="button"
+                    className={styles.privacyPolicy}
+                    onClick={() => setIsPrivacyPolicyOpen(true)}
+                  >
                     Privacy Policy
-                  </a>
+                  </button>
                 </p>
-              </label>
+              </div>
             </div>
 
-            <button className={styles.frameWrapper9} type="submit">
+            {isPrivacyPolicyOpen && (
+              <div
+                className={styles.privacyOverlay}
+                role="presentation"
+                onMouseDown={(event) => {
+                  if (event.target === event.currentTarget) {
+                    setIsPrivacyPolicyOpen(false);
+                  }
+                }}
+              >
+                <div
+                  className={styles.privacyDialog}
+                  role="dialog"
+                  aria-modal="true"
+                  aria-labelledby="contact-privacy-title"
+                  aria-describedby="contact-privacy-description"
+                >
+                  <div className={styles.privacyHeader}>
+                    <div className={styles.privacyHeading}>
+                      <h2 id="contact-privacy-title" className={styles.privacyTitle}>
+                        Privacy Policy
+                      </h2>
+                      <p id="contact-privacy-description" className={styles.privacyDescription}>
+                        Please review the privacy information below before continuing.
+                      </p>
+                    </div>
+
+                    <button
+                      type="button"
+                      className={styles.privacyClose}
+                      onClick={() => setIsPrivacyPolicyOpen(false)}
+                      aria-label="Close privacy policy"
+                    >
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+
+                  <div className={styles.privacyContent}>
+                    <h3>PRIVACY POLICY ACCEPTANCE</h3>
+
+                    <p>
+                      By accessing or using the Platform, I hereby provide my explicit,
+                      informed, and unconditional consent to{" "}
+                      <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong> for the following:
+                    </p>
+
+                    <h4>1. ACKNOWLEDGMENT</h4>
+                    <p>
+                      I have carefully read, fully understood, and voluntarily agree to be
+                      bound by the Terms and Conditions of{" "}
+                      <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong>.
+                    </p>
+
+                    <h4>2. DATA COLLECTION AND USAGE CONSENT</h4>
+                    <p>
+                      I confirm that I have read and understood the Privacy Policy and agree
+                      to its terms.
+                    </p>
+                    <ul>
+                      <li>Identification details</li>
+                      <li>Contact information</li>
+                      <li>Usage data and activity logs</li>
+                      <li>Device and technical data</li>
+                    </ul>
+
+                    <h4>3. DATA COLLECTION AND USAGE CONSENT</h4>
+                    <p>
+                      I consent to the collection and processing of my personal data,
+                      including but not limited to:
+                    </p>
+                    <ul>
+                      <li>Account management and authentication</li>
+                      <li>Service delivery and personalization</li>
+                      <li>Communication and notifications</li>
+                      <li>Legal and regulatory compliance</li>
+                      <li>Security monitoring and fraud prevention</li>
+                    </ul>
+
+                    <h4>4. DATA SECURITY DISCLAIMER</h4>
+                    <ul>
+                      <li>The Company implements reasonable technical and organizational safeguards</li>
+                      <li>However, I acknowledge that no digital system is completely secure</li>
+                      <li>
+                        The Company shall not be liable for data breaches resulting from
+                        sophisticated cyber-attacks beyond reasonable control
+                      </li>
+                    </ul>
+
+                    <h4>5. PAYMENT AND FRAUD PREVENTION DISCLAIMER</h4>
+                    <ul>
+                      <li>
+                        I understand that payment-related communications must be verified
+                        through official Company channels
+                      </li>
+                      <li>
+                        The Company does not accept responsibility for losses due to
+                        fraudulent payment requests or impersonation
+                      </li>
+                    </ul>
+
+                    <h4>6. USER RIGHTS</h4>
+                    <p>Subject to applicable laws, I understand I may:</p>
+                    <ul>
+                      <li>Access my data</li>
+                      <li>Request correction or deletion</li>
+                      <li>Withdraw consent where permissible</li>
+                    </ul>
+
+                    <h4>7. THIRD-PARTY SERVICES</h4>
+                    <p>
+                      I acknowledge that certain services may involve third-party providers,
+                      and the Company is not responsible for their independent practices.
+                    </p>
+
+                    <h4>8. CONSENT VALIDITY</h4>
+                    <p>This consent:</p>
+                    <ul>
+                      <li>Is legally binding</li>
+                      <li>Remains valid until withdrawn (subject to legal obligations)</li>
+                      <li>Applies to all Platform interactions</li>
+                    </ul>
+
+                    <p><strong>MANDATORY CONSENT ACTIONS (IMPLEMENTATION):</strong></p>
+                    <p>I agree to the Privacy Policy</p>
+                    <p>I consent to data processing as described</p>
+
+                    <p><strong>OPTIONAL CONSENTS:</strong></p>
+                    <p>I agree to receive marketing communications</p>
+                    <p>I accept use of cookies and tracking technologies</p>
+
+                    <p><strong>COMPANY DETAILS: PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong></p>
+                    <p className={styles.privacyLastLine}>
+                      <strong>Email: contact@prgeeq.com</strong>
+                    </p>
+                  </div>
+
+                  <div className={styles.privacyFooter}>
+                    <button
+                      type="button"
+                      className={styles.privacyAccept}
+                      onClick={() => {
+                        setPrivacyAccepted(true);
+                        setIsPrivacyPolicyOpen(false);
+                      }}
+                    >
+                      Close &amp; Accept
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <button className={styles.frameWrapper9} type="submit" disabled={!isFormValid || submitted} aria-disabled={!isFormValid || submitted}>
               <div className={styles.sendParent}>
                 <Image className={styles.sendIcon} src="/icons/send.svg" width={24} height={24} alt="" aria-hidden="true" />
                 <strong className={styles.sendMessage}>Send Message</strong>
               </div>
             </button>
+              </>
+            )}
           </form>
         </div>
       </div>
