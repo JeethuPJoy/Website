@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import Image from "next/image";
-import styles from "./codingchallenge.module.css";
+import styles from "./CodingChallenge.module.css";
 import InterviewSection from "./InterviewSection";
 import PageScaler from "./PageScaler";
 
