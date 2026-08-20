@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import styles from './codingchallenge.module.css';
+import styles from './CodingChallenge.module.css';
 
 const VIDEO_SRC = '/videos/interview.mp4';
 const TABLET_MIN = 768;

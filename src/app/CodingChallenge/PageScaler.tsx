@@ -1,7 +1,7 @@
 'use client';
 
 import { useLayoutEffect, useRef, type ReactNode } from 'react';
-import styles from './codingchallenge.module.css';
+import styles from './CodingChallenge.module.css';
 
 const ARTBOARD_WIDTH = 1440;
 const ARTBOARD_HEIGHT = 4820;
