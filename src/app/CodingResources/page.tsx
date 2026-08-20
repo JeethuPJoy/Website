@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import "./coding-resources.css";
+import styles from "./coding-resources.module.css";
 
 const learningCards = [
   "Programming Guides",
@@ -55,13 +55,13 @@ const pillars = [
 
 const CodingResources: NextPage = () => {
   return (
-    <main className="page">
-      <div className="shell">
-        <div className="breadcrumb">
+    <main className={styles.page}>
+      <div className={styles.shell}>
+        <div className={styles.breadcrumb}>
           <span>Neuro Labs</span>
 
           <Image
-            src="/assets/coding-resources.icons/arrow-right-double.svg"
+            src="/icons/arrow-right-double.svg"
             width={16}
             height={16}
             alt=""
@@ -70,12 +70,12 @@ const CodingResources: NextPage = () => {
           <b>Coding Resources</b>
         </div>
 
-        <section className="heroFrame">
-          <div className="hero">
-            <div className="heroShape" />
+        <section className={styles.heroFrame}>
+          <div className={styles.hero}>
+            <div className={styles.heroShape} />
 
-            <div className="heroCopy">
-              <span className="pill">Coding Resources</span>
+            <div className={styles.heroCopy}>
+              <span className={styles.pill}>Coding Resources</span>
 
               <h1>
                 Everything to Learn!
@@ -90,8 +90,8 @@ const CodingResources: NextPage = () => {
             </div>
 
             <Image
-              className="heroImage"
-              src="/assets/coding-resources.icons/coding-resources.png"
+              className={styles.heroImage}
+              src="/icons/coding-resources.png"
               width={1536}
               height={1024}
               priority
@@ -100,7 +100,7 @@ const CodingResources: NextPage = () => {
           </div>
         </section>
 
-        <section className="learning">
+        <section className={styles.learning}>
           <h2>
             Comprehensive Programming
             <br />
@@ -109,16 +109,15 @@ const CodingResources: NextPage = () => {
 
           <p>
             NeuroLabs provides coding resources that support both
-            <br />
             theoretical understanding and hands-on learning.
           </p>
 
-          <div className="learningCards">
+          <div className={styles.learningCards}>
             {learningCards.map((label) => (
-              <div className="learningCard" key={label}>
+              <div className={styles.learningCard} key={label}>
                 <Image
-                  className="learningCardOuter"
-                  src="/assets/coding-resources.icons/Rectangle 40 copy.svg"
+                  className={styles.learningCardOuter}
+                  src="/icons/Rectangle 40 copy.svg"
                   width={248}
                   height={128}
                   sizes="248px"
@@ -126,16 +125,16 @@ const CodingResources: NextPage = () => {
                   aria-hidden="true"
                 />
 
-                <div className="learningCardInner">
-                  <span className="learningCardText">{label}</span>
+                <div className={styles.learningCardInner}>
+                  <span className={styles.learningCardText}>{label}</span>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="practice">
-          <div className="practiceIntro">
+        <section className={styles.practice}>
+          <div className={styles.practiceIntro}>
             <h2>Practice-Oriented Coding Support</h2>
 
             <p>
@@ -146,10 +145,10 @@ const CodingResources: NextPage = () => {
             </p>
           </div>
 
-          <div className="supportGrid">
+          <div className={styles.supportGrid}>
             {supportCards.map((item, index) => (
               <div
-                className={`supportCard accent${index}`}
+                className={`${styles.supportCard} ${styles[`accent${index}`] ?? ""}`}
                 key={item}
               >
                 {item}
@@ -158,34 +157,34 @@ const CodingResources: NextPage = () => {
           </div>
         </section>
 
-        <div className="practiceOval">
+        <div className={styles.practiceOval}>
           Strengthen skills through consistent practice
         </div>
 
-        <section className="pillars">
+        <section className={styles.pillars}>
           {pillars.map((pillar) => (
-            <article className="pillar" key={pillar.number}>
-              <div className="pillarHead">
+            <article className={styles.pillar} key={pillar.number}>
+              <div className={styles.pillarHead}>
                 <b>{pillar.number}</b>
                 <span>{pillar.title}</span>
               </div>
 
               <h3>{pillar.lead}</h3>
 
-              <div className="checkList">
+              <div className={styles.checkList}>
                 {pillar.items.map((item) => (
-                  <div className="checkItem" key={item}>
-                    <span className="checkIconCircle">
+                  <div className={styles.checkItem} key={item}>
+                    <span className={styles.checkIconCircle}>
                       <Image
-                        src="/assets/coding-resources.icons/checkmark-circle-02.svg"
+                        src="/icons/checkmark-circle-02.svg"
                         width={24}
                         height={24}
                         alt=""
-                        className="checkIcon"
+                        className={styles.checkIcon}
                       />
                     </span>
 
-                    <span className="checkText">{item}</span>
+                    <span className={styles.checkText}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -193,10 +192,10 @@ const CodingResources: NextPage = () => {
           ))}
         </section>
 
-        <section className="growthFrame">
-          <div className="growth">
-            <div className="growthCopy">
-              <span className="pill">Programming Growth</span>
+        <section className={styles.growthFrame}>
+          <div className={styles.growth}>
+            <div className={styles.growthCopy}>
+              <span className={styles.pill}>Programming Growth</span>
 
               <h2>
                 NeuroLabs Coding
@@ -210,9 +209,9 @@ const CodingResources: NextPage = () => {
               </p>
             </div>
 
-            <div className="videoVisual">
+            <div className={styles.videoVisual}>
               <video
-                className="growthVideo"
+                className={styles.growthVideo}
                 autoPlay
                 muted
                 loop
@@ -223,7 +222,7 @@ const CodingResources: NextPage = () => {
                 controlsList="nodownload nofullscreen noremoteplayback"
               >
                 <source
-                  src="/assets/coding-resources.icons/coding-resources.mp4"
+                  src="/icons/coding-resources.mp4"
                   type="video/mp4"
                 />
 

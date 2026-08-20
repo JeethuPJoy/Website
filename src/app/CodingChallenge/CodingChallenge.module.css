@@ -118,7 +118,7 @@
 .frameDiv {
   	position: absolute;
   	top: 32px;
-  	left: 93px;
+  	left: 80px;
   	display: flex;
   	align-items: center;
   	gap: 8px;
@@ -165,15 +165,11 @@
 .image20Parent {
   	position: absolute;
   	top: 0px;
-  	left: calc(50% - 602px);
+  	left: calc(50% - 626px);
   	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
   	border-radius: 32px;
   	background-color: rgba(223, 230, 233, 0.8);
-	background-image: url("/image/codingbackground.webp");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-  	width: 1236px;
+  	width: 1252px;
   	height: 550px;
   	overflow: hidden;
   	flex-shrink: 0;
@@ -260,7 +256,7 @@
   	position: absolute;
   	top: 503px;
   	left: 21px;
-  	box-shadow: 8px 8px 16px 0px #c4c4c4, -8px -8px 16px 0px #ffffff;
+  	box-shadow: 10px 10px 20px 0px #c4c4c4, -10px -10px 20px 0px #ffffff;
   	border-radius: 100px;
   	background-color: #dfe6e9;
   	width: 697.7px;
@@ -279,7 +275,7 @@
 }
 .frameParent5 {
   	position: absolute;
-  	top: 810px;
+  	top: 898px;
   	left: 80px;
   	width: 1280px;
   	height: 571px;
@@ -318,12 +314,11 @@
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
-	font-size: 36px;
 }
 .codingChallengesSimulate {
   	width: 926px;
   	position: relative;
-  	font-size: 24px;
+  	font-size: 28px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -334,7 +329,7 @@
   	display: flex;
   	align-items: center;
   	gap: 40px;
-  	font-size: 24px;
+  	font-size: 26px;
   	color: #000;
 }
 .frameWrapper5 {
@@ -354,7 +349,8 @@
   	top: 0px;
   	left: 0px;
   	box-shadow:
-  		8px 8px 16px 0px #c4c4c4, -8px -8px 16px 0px #ffffff !important;
+  		8px 8px 16px 0px #c4c4c4,
+  		-8px -8px 16px 0px #ffffff;
   	border-radius: 50px 50px 0px 50px;
   	background-color: #dfe6e9;
   	width: 290px;
@@ -372,7 +368,7 @@
   	top: 0px;
   	left: calc(50% - 121px);
   	border-radius: 32px 32px 0px 32px;
-  	background-color: #CBCBCB;
+  	background-color: #f2afaa;
   	width: 242px;
   	height: 202px;
   	overflow: hidden;
@@ -445,7 +441,6 @@
 .buildOptimizedSolutions,
 .improveLogicalThinking {
   z-index: 2;
-	font-size: 24px;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -471,7 +466,7 @@
   	top: -8px;
   	left: -8px;
   	border-radius: 50%;
-  	background-color: #828282;
+  	background-color: #c05512;
   	width: 74px;
   	height: 74px;
   	flex-shrink: 0;
@@ -494,7 +489,6 @@
   	width: 188px;
   	height: 73px;
   	flex-shrink: 0;
-	font-size: 24px;
 }
 .frameWrapper9 {
   	position: absolute;
@@ -542,7 +536,6 @@
   	width: 208px;
   	height: 73px;
   	flex-shrink: 0;
-	font-size: 24px;
 }
 .ellipseContainer {
   	position: absolute;
@@ -589,7 +582,7 @@
   	top: 0px;
   	left: calc(50% - 121px);
   	border-radius: 32px;
-  	background-color: #A9B2D6;
+  	background-color: #fbafd480;
   	width: 242px;
   	height: 202px;
   	overflow: hidden;
@@ -600,7 +593,7 @@
   	top: -8px;
   	left: -8px;
   	border-radius: 50%;
-  	background-color: #636B8A;
+  	background-color: #bf1869;
   	width: 70px;
   	height: 70px;
   	flex-shrink: 0;
@@ -615,7 +608,7 @@
 }
 .frameParent8 {
   	position: absolute;
-  	top: 1719px;
+  	top: 1807.17px;
   	left: calc(50% - 640px);
   	display: flex;
   	align-items: center;
@@ -653,12 +646,11 @@
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
-	font-size: 36px;
 }
 .learnCompeteAnd {
   	width: 508px;
   	position: relative;
-  	font-size: 24px;
+  	font-size: 28px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -687,9 +679,9 @@
 }
 .thinkSolveAndContainer {
   	position: absolute;
-  	top: 1477px;
+  	top: 1565.17px;
   	left: calc(50% - 430px);
-  	font-size: 48px;
+  	font-size: 54px;
   	line-height: 62px;
   	display: flex;
   	text-align: center;
@@ -719,7 +711,7 @@
 }
 .frameParent14 {
   	position: absolute;
-  	top: 2129.66px;
+  	top: 2217.66px;
   	left: 77px;
   	width: 1280px;
   	height: 678px;
@@ -732,7 +724,8 @@
   	width: 1280px;
   	height: 430px;
   	box-shadow:
-  		8px 8px 16px 0px #c4c4c4cc inset, -8px -8px 16px 0px #ffffff inset;
+  		8px 8px 16px 0px #c4c4c4cc inset,
+  		-8px -8px 16px 0px #ffffff inset;
   	border-radius: 16px 16px 300px 300px;
   	background-color: #dfe6e9;
   	overflow: visible;
@@ -787,13 +780,12 @@
   	position: relative;
   	letter-spacing: 0.03em;
   	line-height: 60px;
-	font-size: 36px;
 }
 .buildBetterCoding {
   	width: 740px;
   	max-width: 100%;
   	position: relative;
-  	font-size: 24px;
+  	font-size: 28px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -810,7 +802,7 @@
   	justify-content: center;
   	font-size: 32px;
   	color: #000;
-  	font-family: 'Segoe UI',;
+  	font-family: 'Segoe UI', sans-serif;
 }
 .frameParent17 {
   	align-self: stretch;
@@ -828,7 +820,8 @@
   border-radius: 100px;
   background-color: #dfe6e9;
   box-shadow:
-    8px 8px 16px 0px #c4c4c4, -8px -8px 16px 0px #ffffff;
+    10px 10px 20px 0px #c4c4c4,
+    -10px -10px 20px 0px #ffffff;
   border-style: solid;
   border-width: 0 15px;
   border-color: var(--pill-accent);
@@ -865,7 +858,7 @@
 .pillCardLabel {
   position: relative;
   z-index: 1;
-  font-family: 'Segoe UI',;
+  font-family: 'Segoe UI', sans-serif;
   font-size: 32px;
   font-weight: 600;
   font-style: normal;
@@ -908,7 +901,7 @@
   	height: 131px;
   	width: 500px;
   	position: relative;
-  	box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
+  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
   	border-radius: 100px;
   	background-color: #dfe6e9;
   	border-right: 15px solid #bf1869;
@@ -944,7 +937,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
+  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
   	border-radius: 100px;
   	background-color: #dfe6e9;
   	border-right: 15px solid #2a7308;
@@ -967,7 +960,7 @@
   	height: 131px;
   	width: 500px;
   	position: relative;
-box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
+  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
   	border-radius: 100px;
   	background-color: #dfe6e9;
   	border-right: 15px solid #c05512;
@@ -989,7 +982,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   	height: 131px;
   	width: 500px;
   	position: relative;
-  	box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
+  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
   	border-radius: 100px;
   	background-color: #dfe6e9;
   	border-right: 15px solid #2d4cc8;
@@ -1009,7 +1002,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 }
 .frameParent19 {
   	position: absolute;
-  	top: 2927.66px;
+  	top: 3015.66px;
   	left: calc(50% - 640px);
   	width: 1280px;
   	overflow: visible;
@@ -1022,7 +1015,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   text-align: left;
   font-size: 48px;
   color: #31344b;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .interviewLayout {
@@ -1046,7 +1039,8 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   height: 460px;
   width: 100%;
   box-shadow:
-    8px 8px 16px 0px #c4c4c4, -8px -8px 16px 0px #ffffff !important;
+    8px 8px 16px 0px #c4c4c4,
+    -8px -8px 16px 0px #ffffff;
   border-radius: 32px;
   background-color: #dfe6e9;
   padding: 32px;
@@ -1102,7 +1096,6 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   letter-spacing: 0.03em;
   line-height: 60px;
   font-weight: 700;
-	font-size: 36px;
 }
 
 @media (min-width: 768px) {
@@ -1264,7 +1257,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 }
 .frameParent22 {
   	position: absolute;
-  	top: 3483.66px;
+  	top: 3571.66px;
   	left: calc(50% - 565px);
   	width: 1130px;
   	display: flex;
@@ -1274,7 +1267,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   	text-align: center;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI',;
+  	font-family: 'Segoe UI', sans-serif;
   	overflow: visible;
 }
 
@@ -1301,7 +1294,6 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   letter-spacing: 0.03em;
   line-height: 60px;
   font-weight: 700;
-	font-size: 36px;
 }
 
 .builtForEvery {
@@ -1331,7 +1323,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   position: relative;
   text-align: center;
   font-size: 32px;
-  font-family: 'Segoe UI', ;
+  font-family: 'Segoe UI', sans-serif;
   color: var(--audience-color);
   overflow: visible;
   transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
@@ -1341,7 +1333,9 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   position: absolute;
   top: 0;
   left: 0;
-box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
+  box-shadow:
+    10px 10px 20px 0px #c4c4c4,
+    -10px -10px 20px 0px #ffffff;
   border-radius: 100px;
   border: 1px solid #000;
   box-sizing: border-box;
@@ -1417,7 +1411,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   	width: 926px;
   	height: 56px;
   	position: relative;
-  	font-size: 24px;
+  	font-size: 28px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -1442,7 +1436,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
+  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
   	border-radius: 100px;
   	border: 1px solid #000;
   	box-sizing: border-box;
@@ -1525,19 +1519,20 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 }
 .rectangleParent4 {
   	position: absolute;
-  	top: 4167.86px;
+  	top: 4255.86px;
   	left: calc(50% - 640px);
   	width: 1280px;
   	height: 505px;
   	box-shadow:
-  		8px 8px 8px 0px #c4c4c4 inset, -8px -8px 8px 0px #ffffff80 inset !important;
+  		8px 8px 8px 0px #c4c4c4 inset,
+  		-8px -8px 8px 0px #ffffff80 inset;
   	border-radius: 50px;
   	background-color: #dfe6e9;
   	overflow: hidden;
   	text-align: left;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI',;
+  	font-family: 'Segoe UI', sans-serif;
 }
 .colleaguesDiscussingWorkProIcon {
   	position: absolute;
@@ -1585,7 +1580,6 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   	align-items: center;
   	flex-shrink: 0;
   	font-weight: 700;
-	font-size: 36px;
 }
 .challengeYourSkillsContainer2 {
   	width: 100%;
@@ -1600,7 +1594,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 .solveRealCoding {
   	width: 468px;
   	position: relative;
-  	font-size: 24px;
+  	font-size: 28px;
   	letter-spacing: 0.03em;
   	line-height: 40px;
   	color: #2f3547;
@@ -1608,7 +1602,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 }
 .frameParent27 {
   	position: absolute;
-  	top: 4768.86px;
+  	top: 4856.86px;
   	left: calc(50% - 720px);
   	width: 1440px;
   	height: 501px;
@@ -1619,7 +1613,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   	position: absolute;
   	bottom: 0px;
   	left: calc(50% - 720px);
-  	box-shadow: 8px 8px 8px 0px #c4c4c4 inset, -8px -8px 8px 0px #ffffff80 inset;
+  	box-shadow: -10px -10px 20px #fff inset, 10px 10px 10px #c4c4c4 inset;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 459px;
@@ -1930,16 +1924,17 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   border-radius: 28px;
   background-color: #dfe6e9;
   box-shadow:
-    4px 4px 8px 0px #c4c4c4cc inset, -4px -4px 8px 0px #ffffff inset !important;
+    4px 4px 8px 0px #c4c4c4cc inset,
+    -4px -4px 8px 0px #ffffff inset;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 28px;
   box-sizing: border-box;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: none;
+  text-transform: uppercase;
   color: #2d4cc8;
   flex-shrink: 0;
   width: auto;
@@ -1952,7 +1947,8 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 .neurolabsCodingChallenge .frameChild14 {
   background-color: #dfe6e9;
   box-shadow:
-    4px 4px 8px 0px #c4c4c4cc inset, -4px -4px 8px 0px #ffffff inset;
+    4px 4px 8px 0px #c4c4c4cc inset,
+    -4px -4px 8px 0px #ffffff inset;
   border-radius: 28px;
 }
 
@@ -1986,7 +1982,8 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   inset: 0;
   border-radius: inherit;
   box-shadow:
-    4px 4px 8px 0px #c4c4c4cc inset, -4px -4px 8px 0px #ffffff inset;
+    4px 4px 8px 0px #c4c4c4cc inset,
+    -4px -4px 8px 0px #ffffff inset;
   pointer-events: none;
   z-index: 20;
 }
@@ -1998,7 +1995,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: default;
+  cursor: pointer;
   transition: filter 0.25s ease, transform 0.25s ease;
 }
 
@@ -2188,7 +2185,8 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   border-radius: 16px;
   background-color: #dfe6e9;
   box-shadow:
-    4px 4px 8px 0px #c4c4c4cc inset, -4px -4px 8px 0px #ffffff inset;
+    4px 4px 8px 0px #c4c4c4cc inset,
+    -4px -4px 8px 0px #ffffff inset;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2207,7 +2205,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   z-index: 2;
   width: 100%;
   margin: 0;
-  font-family: 'Segoe UI',;
+  font-family: 'Segoe UI', sans-serif;
   font-size: 24px;
   font-weight: 600;
   font-style: normal;
@@ -2320,7 +2318,9 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 @media (hover: hover) and (pointer: fine) {
   .skillCard:hover {
     box-shadow:
-      -4px -4px 8px 0px #c4c4c4cc inset, 4px 4px 8px 0px #ffffff inset, 0 10px 18px rgba(0, 0, 0, 0.08);
+      -4px -4px 8px 0px #c4c4c4cc inset,
+      4px 4px 8px 0px #ffffff inset,
+      0 10px 18px rgba(0, 0, 0, 0.08);
   }
 
   .skillCard-topLeft:hover {
@@ -2360,7 +2360,8 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   .skillCard:active {
     transform: translateY(-4px);
     box-shadow:
-      -4px -4px 8px 0px #c4c4c4cc inset, 4px 4px 8px 0px #ffffff inset;
+      -4px -4px 8px 0px #c4c4c4cc inset,
+      4px 4px 8px 0px #ffffff inset;
   }
 
   .skillCard-topLeft:active .skillCardDot {
@@ -2937,7 +2938,8 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     padding: 40px 20px 48px !important;
     border-radius: 16px 16px 120px 120px !important;
     box-shadow:
-      8px 8px 16px 0px #c4c4c4cc inset, -8px -8px 16px 0px #ffffff inset !important;
+      8px 8px 16px 0px #c4c4c4cc inset,
+      -8px -8px 16px 0px #ffffff inset !important;
     overflow: visible !important;
     isolation: auto !important;
   }
@@ -2963,7 +2965,8 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     border-radius: 28px !important;
     background-color: #dfe6e9 !important;
     box-shadow:
-      4px 4px 8px 0px #c4c4c4cc inset, -4px -4px 8px 0px #ffffff inset !important;
+      4px 4px 8px 0px #c4c4c4cc inset,
+      -4px -4px 8px 0px #ffffff inset !important;
     position: relative !important;
     z-index: 3 !important;
   }
@@ -3229,7 +3232,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   }
 
   .frameParent8 .skillCardLabel {
-    font-family: 'Segoe UI', !important;
+    font-family: 'Segoe UI', sans-serif !important;
     font-size: clamp(15px, 4vw, 22px) !important;
     font-weight: 600 !important;
     line-height: 1.35 !important;
@@ -3697,35 +3700,5 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   .improveLogicalThinking {
     font-size: clamp(13px, 3.6vw, 18px) !important;
   }
-}
-
-/* Second section cards — cursor behavior only */
-.frameParent5 .frameWrapper5,
-.frameParent5 .frameWrapper5 *,
-.frameParent5 .rectangleParent,
-.frameParent5 .rectangleParent * {
-  cursor: default !important;
-}
-
-/* Coding Challenge page — no hand cursor anywhere; hover effects remain active */
-.neurolabsCodingChallenge,
-.neurolabsCodingChallenge *,
-.frameDiv,
-.frameDiv *,
-.frameParent2,
-.frameParent2 *,
-.frameParent5,
-.frameParent5 *,
-.frameParent8,
-.frameParent8 *,
-.frameParent14,
-.frameParent14 *,
-.frameParent19,
-.frameParent19 *,
-.frameParent22,
-.frameParent22 *,
-.rectangleParent4,
-.rectangleParent4 * {
-  cursor: default !important;
 }
 
