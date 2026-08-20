@@ -1276,7 +1276,7 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: 1px;
   overflow: hidden;
 }
 
@@ -1368,8 +1368,8 @@ a:focus-visible {
 
 .learning-module-card-featured {
   width: 500px;
-  height: 550px;
-  padding: 32px;
+  height: 480px;
+  padding: 22px 22px 0 22px ;
 }
 
 .learning-module-image-frame {
@@ -1486,7 +1486,7 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: 18px;
   overflow: hidden;
 }
 
